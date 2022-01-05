@@ -10,6 +10,8 @@ OBJS = index.xml \
        13.03_SpEA.xml \
        21_Vorstand.xml \
        21.01_Vorstandspflichtenheft.xml \
+       21.02_GS_Pflichtenheft.xml \
+       21.03_AVES_Verordnung.xml \
        22_Komissionsreglement.xml \
        31_GPK_Reglement.xml \
        51_Fachvereinsreglement.xml \

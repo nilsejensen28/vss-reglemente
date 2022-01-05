@@ -8,6 +8,8 @@
 	<include path="13.03_SpEA.xml" />
 	<include path="21_Vorstand.xml" />
 	<include path="21.01_Vorstandspflichtenheft.xml" />
+	<include path="21.02_GS_pflichtenheft.xml" />
+	<include path="21.03_AVES_Verordnung.xml" />
 	<include path="22_Komissionsreglement.xml" />
 	<include path="31_GPK_Reglement.xml" />
 	<include path="51_Fachvereinsreglement.xml" />
