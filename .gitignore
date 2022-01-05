@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+
+# Check
+*.chk
+
+# reStructuredText
+*.rst
+
+# Markdown
+*.md
+
+# HTML
+*.html
+*.json
+
+# PDF
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.pdf
+*.tex
+
+# Sphinx
+sphinx/

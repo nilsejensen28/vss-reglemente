@@ -1,0 +1,112 @@
+<regulation id="13.02" title="Gremienreglement über den IT-Ausschuss" short="ITA-Reglement">
+	<section title="Zweck">
+		<articles>
+			<article title="Zweck">
+				Der IT-Ausschuss ist für die strategische IT-Planung sowie für die kontinuierliche Überwachung der IT-Infrastruktur des VSETH verantwortlich.
+			</article>
+		</articles>
+	</section>
+	<section title="Mitglieder">
+		<articles>
+			<article title="Maximale Anzahl">
+				Der IT-Ausschuss besteht maximal aus sieben Mitgliedern.
+			</article>
+			<article title="Mitglieder von Amtes wegen">
+				<paragraphs>
+					<paragraph>
+						Ein Mitglied des VSETH-Vorstands ist von Amtes wegen Mitglied des IT-Ausschusses.
+					</paragraph>
+					<paragraph>
+						Das Mitglied des VSETH-Vorstands wird durch den VSETH-Vorstand aus seinen Reihen bestimmt.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Beobachtende">
+				Zu den Sitzungen werden als Beobachtende mit Antrags- und Rederecht eingeladen:
+				<letters>
+					<letter>
+						Der Informatikgruppensupportleiter oder die Informatikgruppensupportleiterin (ISL) der Informatiksupportgruppe (ISG) des VSETH;
+					</letter>
+					<letter>
+						Der Präsident oder die Präsidentin der Softwareentwicklungskommission (SEK).
+					</letter>
+				</letters>
+			</article>
+		</articles>
+	</section>
+	<section title="Kompetenzen">
+		<articles>
+			<article title="Strategische Planung">
+				<paragraphs>
+					<paragraph>
+						Der IT-Ausschuss ist für die strategische Planung der IT des VSETH verantwortlich. Dies umfasst sowohl Software wie auch Hardware.
+					</paragraph>
+					<paragraph>
+						Der IT-Ausschuss legt bei der Erweiterung der IT Wert auf Verbesserung der Verbandsarbeit und der Angebote des Verbands sowie die Automatisierung bestehender Prozesse.
+					</paragraph>
+					<paragraph>
+						Der IT-Ausschuss sucht aktiv nach Verbesserungspotential bei der IT.
+					</paragraph>
+					<paragraph>
+						Der IT-Ausschuss schlägt dem VSETH-Vorstand eine Anstellungsstruktur für die IT vor und unterstützt den VSETH-Vorstand bei der Auswahl von geeigneten Angestellten.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Kontinuierliche Überwachung">
+				Der IT-Ausschuss ist zusammen mit der Informatiksupportgruppe VSETH für die kontinuierliche Überwachung der IT des VSETH zuständig. Dies umfasst:
+				<letters>
+					<letter>
+						die Sicherstellung eines einwandfreien Betriebs;
+					</letter>
+					<letter>
+						die Überwachung der IT-Sicherheit;
+					</letter>
+					<letter>
+						die Kapazitätsplanung der IT-Infrastruktur.
+					</letter>
+				</letters>
+			</article>
+			<article title="IT-Budget">
+				Der IT-Ausschuss genehmigt während der Erstellung des Budgets alle IT-Ausgaben und IT-Erträgen im VSETH.
+			</article>
+			<article title="Koordination von IT-Projekten">
+				<paragraphs>
+					<paragraph>
+						Der IT-Ausschuss koordiniert die Umsetzung von IT-Projekten im VSETH.
+					</paragraph>
+					<paragraph>
+						Der IT-Ausschuss entscheidet über die Priorisierung von unterschiedlichen Bedürfnissen in Absprache mit den Nutzergruppen.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Austausch mit Nutzergruppen">
+				Der IT-Ausschuss organisiert regelmässige Treffen mit den Nutzergruppen gemäss Art. 4 des Infrastrukturreglements.
+			</article>
+			<article title="Zusammenarbeit mit anderen Organisationen">
+				<paragraphs>
+					<paragraph>
+						Der IT-Ausschuss strebt eine enge Zusammenarbeit mit anderen Organisationen in IT-Fragen an, insbesondere mit studentischen Gruppierungen und den Informatikdiensten der ETH.
+					</paragraph>
+				</paragraphs>
+			</article>
+		</articles>
+	</section>
+	<section title="Schlussbestimmungen">
+		<articles>
+			<article title="Revisionsbestimmung">
+				Dieses Reglement wird vom MR mit absolutem Mehr genehmigt.
+			</article>
+			<article title="Version">
+				<paragraphs>
+					<paragraph>
+						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24. November 2021 einer Totalrevision unterzogen und genehmigt.
+					</paragraph>
+					<paragraph>
+						Es tritt am 1. Januar 2022 in Kraft.
+					</paragraph>
+				</paragraphs>
+			</article>
+		</articles>
+	</section>
+</regulation>
+<!-- vim: set ts=2 sw=2 noet : -->

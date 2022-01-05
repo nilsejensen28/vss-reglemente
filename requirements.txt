@@ -1,0 +1,4 @@
+lxml
+roman
+python-slugify[unidecode]
+sphinx
