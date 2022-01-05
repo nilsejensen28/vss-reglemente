@@ -10,6 +10,7 @@ __pycache__/
 
 # Markdown
 *.md
+!Readme.md
 
 # HTML
 *.html
