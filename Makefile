@@ -15,7 +15,8 @@ OBJS = index.xml \
        22_Komissionsreglement.xml \
        31_GPK_Reglement.xml \
        51_Fachvereinsreglement.xml \
-       52_Vertretungsreglement.xml
+       52_Vertretungsreglement.xml \
+       53_StudOrg.xml
 
 .venv: requirements.txt
 	python -m venv .venv
