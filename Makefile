@@ -81,4 +81,5 @@ sphinx: .venv conf.py $(OBJS:xml=rst)
 
 .PHONY: clean
 clean:
-	rm -rf *.rst *.md *.html sphinx *.aux *.fdb_latex *.fls *.log *.out *.pdf *.tex
+	GLOBIGNORE="Readme.md" && \
+		rm -rf *.rst *.md *.html sphinx *.aux *.fdb_latex *.fls *.log *.out *.pdf *.tex
