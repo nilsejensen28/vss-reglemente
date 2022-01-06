@@ -1,98 +1,157 @@
 #!/usr/bin/env python
+from lxml import etree
 
 class Visitor():
-    def bylaws_start(self, element):
-        raise NotImplementedError("bylaws_start")
+    def process(self, input_filename):
+        self.input_filename = input_filename
+        parser = etree.XMLParser(remove_comments=True)
+        tree = etree.parse(input_filename, parser)
+        self.dispatch(tree.getroot())
 
-    def bylaws_end(self, element):
-        raise NotImplementedError("bylaws_end")
+        return self
 
-    def include_start(self, element):
-        raise NotImplementedError("include_start")
+    def dispatch(self, element):
+        try:
+            match element.tag:
+                case "bylaws":
+                    self.bylaws(element)
+                case "include":
+                    self.include(element)
+                case "regulation":
+                    self.regulation(element)
+                case "section":
+                    self.section(element)
+                case "subsection":
+                    self.subsection(element)
+                case "subsubsection":
+                    self.subsubsection(element)
+                case "articles":
+                    self.articles(element)
+                case "article":
+                    self.article(element)
+                case "paragraphs":
+                    self.paragraphs(element)
+                case "paragraph":
+                    self.paragraph(element)
+                case "letters":
+                    self.letters(element)
+                case "letter":
+                    self.letter(element)
+                case "numerals":
+                    self.numerals(element)
+                case "numeral":
+                    self.numeral(element)
+                case "quote":
+                    self.quote(element)
+                case "link":
+                    self.link(element)
+                case _:
+                    raise RuntimeWarning(f"Unhandled element <{element.tag}>")
+        except Exception as e:
+            message = ""
+            parent = element
+            while parent is not None:
+                attr = " ".join([f'{k}="{v}"' for k, v in parent.attrib.items()])
+                tag = parent.tag
+                if attr:
+                    tag += " " + attr
+                message = f"{self.input_filename}:{parent.sourceline}: in <{tag}>\n" + message
+                parent = parent.getparent()
 
-    def include_end(self, element):
-        raise NotImplementedError("include_end")
+            raise
 
-    def regulation_start(self, element):
-        raise NotImplementedError("regulation_start")
+    def bylaws(self, element):
+        raise NotImplementedError("bylaws")
 
-    def regulation_end(self, element):
-        raise NotImplementedError("regulation_end")
+    def include(self, element):
+        raise NotImplementedError("include")
 
-    def section_start(self, element):
-        raise NotImplementedError("section_start")
+    def regulation(self, element):
+        raise NotImplementedError("regulation")
 
-    def section_end(self, element):
-        raise NotImplementedError("section_end")
+    def section(self, element):
+        raise NotImplementedError("section")
 
-    def subsection_start(self, element):
-        raise NotImplementedError("subsection_start")
+    def subsection(self, element):
+        raise NotImplementedError("subsection")
 
-    def subsection_end(self, element):
-        raise NotImplementedError("subsection_end")
+    def subsubsection(self, element):
+        raise NotImplementedError("subsubsection")
 
-    def subsubsection_start(self, element):
-        raise NotImplementedError("subsubsection_start")
+    def articles(self, element):
+        raise NotImplementedError("articles")
 
-    def subsubsection_end(self, element):
-        raise NotImplementedError("subsubsection_end")
+    def article(self, element):
+        raise NotImplementedError("article")
 
-    def articles_start(self, element):
-        raise NotImplementedError("articles_start")
+    def paragraphs(self, element):
+        raise NotImplementedError("paragraphs")
 
-    def articles_end(self, element):
-        raise NotImplementedError("articles_end")
+    def paragraph(self, element):
+        raise NotImplementedError("paragraph")
 
-    def article_start(self, element):
-        raise NotImplementedError("article_start")
+    def letters(self, element):
+        raise NotImplementedError("letters")
 
-    def article_end(self, element):
-        raise NotImplementedError("article_end")
+    def letter(self, element):
+        raise NotImplementedError("letter")
 
-    def paragraphs_start(self, element):
-        raise NotImplementedError("paragraphs_start")
+    def numerals(self, element):
+        raise NotImplementedError("numerals")
 
-    def paragraphs_end(self, element):
-        raise NotImplementedError("paragraphs_end")
+    def numeral(self, element):
+        raise NotImplementedError("numeral")
 
-    def paragraph_start(self, element):
-        raise NotImplementedError("paragraph_start")
+    def quote(self, element):
+        raise NotImplementedError("quote")
 
-    def paragraph_end(self, element):
-        raise NotImplementedError("paragraph_end")
+    def link(self, element):
+        raise NotImplementedError("link")
 
-    def letters_start(self, element):
-        raise NotImplementedError("letters_start")
+    def bylaws(self, element):
+        raise NotImplementedError("bylaws")
 
-    def letters_end(self, element):
-        raise NotImplementedError("letters_end")
+    def include(self, element):
+        raise NotImplementedError("include")
 
-    def letter_start(self, element):
-        raise NotImplementedError("letter_start")
+    def regulation(self, element):
+        raise NotImplementedError("regulation")
 
-    def letter_end(self, element):
-        raise NotImplementedError("letter_end")
+    def section(self, element):
+        raise NotImplementedError("section")
 
-    def numerals_start(self, element):
-        raise NotImplementedError("numerals_start")
+    def subsection(self, element):
+        raise NotImplementedError("subsection")
 
-    def numerals_end(self, element):
-        raise NotImplementedError("numerals_end")
+    def subsubsection(self, element):
+        raise NotImplementedError("subsubsection")
 
-    def numeral_start(self, element):
-        raise NotImplementedError("numeral_start")
+    def articles(self, element):
+        raise NotImplementedError("articles")
 
-    def numeral_end(self, element):
-        raise NotImplementedError("numeral_end")
+    def article(self, element):
+        raise NotImplementedError("article")
 
-    def quote_start(self, element):
-        raise NotImplementedError("quote_start")
+    def paragraphs(self, element):
+        raise NotImplementedError("paragraphs")
 
-    def quote_end(self, element):
-        raise NotImplementedError("quote_end")
+    def paragraph(self, element):
+        raise NotImplementedError("paragraph")
 
-    def link_start(self, element):
-        raise NotImplementedError("link_start")
+    def letters(self, element):
+        raise NotImplementedError("letters")
 
-    def link_end(self, element):
-        raise NotImplementedError("link_end")
+    def letter(self, element):
+        raise NotImplementedError("letter")
+
+    def numerals(self, element):
+        raise NotImplementedError("numerals")
+
+    def numeral(self, element):
+        raise NotImplementedError("numeral")
+
+    def quote(self, element):
+        raise NotImplementedError("quote")
+
+    def link(self, element):
+        raise NotImplementedError("link")

@@ -14,5 +14,6 @@
 	<include path="31_GPK_Reglement.xml" />
 	<include path="51_Fachvereinsreglement.xml" />
 	<include path="52_Vertretungsreglement.xml" />
+	<include path="53_StudOrg.xml" />
 </bylaws>
 <!-- vim: set ts=2 sw=2 noet : -->

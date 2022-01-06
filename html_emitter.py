@@ -71,13 +71,15 @@ class HtmlEmitter(Visitor):
         self.dedent()
         self.emit_ln('</html>')
 
-    def bylaws_start(self, element):
+    def bylaws(self, element):
         title = element.get("title")
         self.header(title)
         self.emit_ln('<ul>')
         self.indent()
 
-    def bylaws_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.dedent()
         self.emit_ln('</ul>')
         self.dedent()
@@ -85,15 +87,15 @@ class HtmlEmitter(Visitor):
         self.dedent()
         self.emit_ln('</html>')
 
-    def include_start(self, element):
+    def include(self, element):
         path = element.get("path")
         path = re.sub(r"\.xml$", ".html", path)
         self.emit_ln(f'<li><a href="{path}">{path}</a></li>')
 
-    def include_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def regulation_start(self, element):
+    def regulation(self, element):
         title = element.get("title")
         short = element.get("short")
         if short:
@@ -101,46 +103,52 @@ class HtmlEmitter(Visitor):
         self.header(title)
         self.emit_ln(f'<h1>{title}</h1>')
 
-    def regulation_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.footer()
 
-    def section_start(self, element):
+    def section(self, element):
         title = element.get("title")
         self.emit_ln('<section>')
         self.indent()
         self.emit_ln(f'<h2>{title}</h2>')
 
-    def section_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.dedent()
         self.emit_ln('</section>')
 
-    def subsection_start(self, element):
+    def subsection(self, element):
         title = element.get("title")
         self.emit_ln('<section>')
         self.indent()
         self.emit_ln(f'<h3>{title}</h3>')
 
-    def subsection_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.dedent()
         self.emit_ln('</section>')
 
-    def subsubsection_start(self, element):
+    def subsubsection(self, element):
         title = element.get("title")
         self.emit_ln('<section>')
         self.indent()
         self.emit_ln(f'<h4>{title}</h4>')
 
-    def subsubsection_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.dedent()
         self.emit_ln('</section>')
 
-    def articles_start(self, element):
-        pass
+    def articles(self, element):
+        for child in element:
+            self.dispatch(child)
 
-    def articles_end(self, element):
-        pass
-
-    def article_start(self, element):
+    def article(self, element):
         title = element.get("title")
         slug = slugify(title)
         self.ids.append(slug)
@@ -148,87 +156,105 @@ class HtmlEmitter(Visitor):
         self.emit_ln(f'<h5 id="{id}">{title}</h5>')
         self.emit_ln(element.text.strip())
 
-    def article_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.ids.pop()
 
-    def paragraphs_start(self, element):
+    def paragraphs(self, element):
         self.emit_ln('<ol class="paragraphs">')
         self.indent()
         self.paragraph_counter = 1
 
-    def paragraphs_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.paragraph_counter
         self.dedent()
         self.emit_ln('</ol>')
 
-    def paragraph_start(self, element):
+    def paragraph(self, element):
         text = element.text.strip()
         self.ids.append(str(self.paragraph_counter))
         id = ".".join(self.ids)
         self.emit_ln(f'<li id="{id}">{text}')
 
-    def paragraph_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln('</li>')
         self.ids.pop()
         self.paragraph_counter += 1
 
-    def letters_start(self, element):
+    def letters(self, element):
         self.emit_ln('<ol class="letters">')
         self.indent()
         self.letter_counter = 0
 
-    def letters_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.letter_counter
         self.dedent()
         self.emit_ln('</ol>')
 
-    def letter_start(self, element):
+    def letter(self, element):
         text = element.text.strip()
         self.ids.append(ascii_lowercase[self.letter_counter])
         id = ".".join(self.ids)
         self.emit_ln(f'<li id="{id}">{text}')
 
-    def letter_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln('</li>')
         self.ids.pop()
         self.letter_counter += 1
 
-    def numerals_start(self, element):
+    def numerals(self, element):
         self.emit_ln('<ol class="numerals">')
         self.indent()
         self.numeral_counter = 1
 
-    def numerals_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.numeral_counter
         self.dedent()
         self.emit_ln('</li>')
 
-    def numeral_start(self, element):
+    def numeral(self, element):
         text = element.text.strip()
         self.ids.append(str(self.numeral_counter))
         id = ".".join(self.ids)
         self.emit_ln(f'<li id="{id}">{text}')
 
-    def numeral_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln('</li>')
         self.ids.pop()
         self.numeral_counter += 1
 
-    def quote_start(self, element):
+    def quote(self, element):
         self.result += ' <q>'
         self.result += element.text.strip()
 
-    def quote_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.result += '</q> '
         if not is_empty(element.tail):
             self.result += element.tail.strip()
 
-    def link_start(self, element):
+    def link(self, element):
         to = element.get("to")
         self.result += f' <a href="{to}">'
         self.result += element.text.strip()
 
-    def link_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.result += '</a> '
         if not is_empty(element.tail):
             self.result += element.tail.strip()

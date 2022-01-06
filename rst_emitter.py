@@ -29,7 +29,7 @@ class RstEmitter(Visitor):
     def dedent(self):
         self.indents.pop()
 
-    def bylaws_start(self, element):
+    def bylaws(self, element):
         title = element.get("title")
         self.emit_ln('=' * len(title))
         self.emit_ln(title)
@@ -40,18 +40,18 @@ class RstEmitter(Visitor):
         self.emit_ln(":maxdepth: 1")
         self.emit_ln()
 
-    def bylaws_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def include_start(self, element):
+    def include(self, element):
         path = element.get("path")
         path = re.sub(r"\.xml$", "", path)
         self.emit_ln(path)
 
-    def include_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def regulation_start(self, element):
+    def regulation(self, element):
         title = element.get("title")
         short = element.get("short")
         if short:
@@ -61,43 +61,43 @@ class RstEmitter(Visitor):
         self.emit_ln('=' * len(title))
         self.article_counter = 1
 
-    def regulation_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.article_counter
 
-    def section_start(self, element):
+    def section(self, element):
         title = element.get("title")
         self.emit_ln()
         self.emit_ln(title)
         self.emit_ln('=' * len(title))
 
-    def section_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def subsection_start(self, element):
+    def subsection(self, element):
         title = element.get("title")
         self.emit_ln()
         self.emit_ln(title)
         self.emit_ln('-' * len(title))
 
-    def subsection_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def subsubsection_start(self, element):
+    def subsubsection(self, element):
         title = element.get("title")
         self.emit_ln()
         self.emit_ln(title)
         self.emit_ln('"' * len(title))
 
-    def subsubsection_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def articles_start(self, element):
-        pass
+    def articles(self, element):
+        for child in element:
+            self.dispatch(child)
 
-    def articles_end(self, element):
-        pass
-
-    def article_start(self, element):
+    def article(self, element):
         title = element.get("title")
         slug = slugify(title)
         text = element.text.strip()
@@ -109,22 +109,26 @@ class RstEmitter(Visitor):
         self.emit_ln('.' * len(title))
         self.emit(text)
 
-    def article_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln()
         self.ids.pop()
         self.article_counter += 1
 
-    def paragraphs_start(self, element):
+    def paragraphs(self, element):
         self.emit_ln()
         self.emit_ln()
         self.paragraph_counter = 1
 
-    def paragraphs_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.paragraph_counter
         self.emit_ln()
         self.emit_ln()
 
-    def paragraph_start(self, element):
+    def paragraph(self, element):
         text = element.text.strip()
         label = str(self.paragraph_counter)
         self.ids.append(label)
@@ -132,23 +136,27 @@ class RstEmitter(Visitor):
         self.emit(f"{label}. {text}")
         self.indent(len(label) + 1)
 
-    def paragraph_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln()
         self.dedent()
         self.ids.pop()
         self.paragraph_counter += 1
 
-    def letters_start(self, element):
+    def letters(self, element):
         self.emit_ln()
         self.emit_ln()
         self.letter_counter = 0
 
-    def letters_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.letter_counter
         self.emit_ln()
         self.emit_ln()
 
-    def letter_start(self, element):
+    def letter(self, element):
         text = element.text.strip()
         label = ascii_lowercase[self.letter_counter]
         self.ids.append(label)
@@ -156,23 +164,27 @@ class RstEmitter(Visitor):
         self.emit(f"{label}) {text}")
         self.indent(len(label) + 1)
 
-    def letter_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln()
         self.dedent()
         self.ids.pop()
         self.letter_counter += 1
 
-    def numerals_start(self, element):
+    def numerals(self, element):
         self.emit_ln()
         self.emit_ln()
         self.numeral_counter = 1
 
-    def numerals_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.numeral_counter
         self.emit_ln()
         self.emit_ln()
 
-    def numeral_start(self, element):
+    def numeral(self, element):
         text = element.text.strip()
         label = toRoman(self.numeral_counter).lower()
         self.ids.append(label)
@@ -180,28 +192,29 @@ class RstEmitter(Visitor):
         self.emit(f"{label}) {text}")
         self.indent(len(label) + 1)
 
-    def numeral_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.emit_ln()
         self.dedent()
         self.ids.pop()
         self.numeral_counter += 1
 
-    def quote_start(self, element):
+    def quote(self, element):
         self.result += ' "'
         self.result += element.text.strip()
 
-    def quote_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.result += '" '
         if not is_empty(element.tail):
             self.result += element.tail.strip()
 
-    def link_start(self, element):
+    def link(self, element):
         # TODO
-        pass
-
-    def link_end(self, element):
-        # TODO
-        pass
+        for child in element:
+            self.dispatch(child)
 
     def __str__(self):
         result = re.sub('" ([.,])', r'"\1', self.result)

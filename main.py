@@ -6,7 +6,6 @@ from argparse import ArgumentParser
 import re
 from slugify import slugify
 
-from dispatcher import Dispatcher
 from check import Checker
 from html_emitter import HtmlEmitter
 from rst_emitter import RstEmitter
@@ -22,17 +21,17 @@ def main():
 
     match args.format:
         case "rst":
-            result = str(Dispatcher(RstEmitter()).process(args.input))
+            result = str(RstEmitter().process(args.input))
         case "md":
             result = to_md(args.input)
         case "html":
-            result = str(Dispatcher(HtmlEmitter()).process(args.input))
+            result = str(HtmlEmitter().process(args.input))
         case "json":
-            result = str(Dispatcher(JsonEmitter()).process(args.input))
+            result = str(JsonEmitter().process(args.input))
         case "tex":
-            result = str(Dispatcher(LatexEmitter()).process(args.input))
+            result = str(LatexEmitter().process(args.input))
         case "check":
-            Dispatcher(Checker()).process(args.input)
+            Checker().process(args.input)
             result = ""
         case _:
             raise RuntimeWarning

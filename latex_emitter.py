@@ -42,20 +42,20 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\end{document}")
         self.emit_ln(r"\endinput")
 
-    def bylaws_start(self, element):
+    def bylaws(self, element):
         title = element.get("title")
         self.header(title)
 
-    def bylaws_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.footer()
 
-    def include_start(self, element):
-        pass
+    def include(self, element):
+        for child in element:
+            self.dispatch(child)
 
-    def include_end(self, element):
-        pass
-
-    def regulation_start(self, element):
+    def regulation(self, element):
         title = element.get("title")
         short = element.get("short")
         if short:
@@ -63,37 +63,37 @@ class LatexEmitter(Visitor):
         self.header(title)
         self.article_counter = 1
 
-    def regulation_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.footer()
 
-    def section_start(self, element):
+    def section(self, element):
         title = element.get("title")
         self.emit_ln(r"\section{" + title + "}")
 
-    def section_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def subsection_start(self, element):
+    def subsection(self, element):
         title = element.get("title")
         self.emit_ln(r"\subsection{" + title + "}")
 
-    def subsection_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def subsubsection_start(self, element):
+    def subsubsection(self, element):
         title = element.get("title")
         self.emit_ln(r"\subsubsection{" + title + "}")
 
-    def subsubsection_end(self, element):
-        pass
+        for child in element:
+            self.dispatch(child)
 
-    def articles_start(self, element):
-        pass
+    def articles(self, element):
+        for child in element:
+            self.dispatch(child)
 
-    def articles_end(self, element):
-        pass
-
-    def article_start(self, element):
+    def article(self, element):
         title = element.get("title")
         slug = slugify(title)
         self.ids.append(slug)
@@ -104,84 +104,99 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\\")
         self.emit_ln(element.text.strip())
 
-    def article_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.ids.pop()
         self.article_counter += 1
 
-    def paragraphs_start(self, element):
+    def paragraphs(self, element):
         self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}]")
         self.indent()
         self.paragraph_counter = 1
 
-    def paragraphs_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.paragraph_counter
         self.dedent()
         self.emit_ln(r"\end{enumerate}")
 
-    def paragraph_start(self, element):
+    def paragraph(self, element):
         text = element.text.strip()
         self.ids.append(str(self.paragraph_counter))
         self.emit_ln(r"\item " + text)
 
-    def paragraph_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.ids.pop()
         self.paragraph_counter += 1
 
-    def letters_start(self, element):
+    def letters(self, element):
         self.emit_ln(r"\begin{enumerate}[label=\alph*)]")
         self.indent()
         self.letter_counter = 0
 
-    def letters_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.letter_counter
         self.dedent()
         self.emit_ln(r"\end{enumerate}")
 
-    def letter_start(self, element):
+    def letter(self, element):
         text = element.text.strip()
         self.ids.append(ascii_lowercase[self.letter_counter])
         id = ".".join(self.ids)
         self.emit_ln(r"\item " + text)
 
-    def letter_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.ids.pop()
         self.letter_counter += 1
 
-    def numerals_start(self, element):
+    def numerals(self, element):
         self.emit_ln(r"\begin{enumerate}[label=\roman*.]")
         self.indent()
         self.numeral_counter = 1
 
-    def numerals_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         del self.numeral_counter
         self.dedent()
         self.emit_ln(r"\end{enumerate}")
 
-    def numeral_start(self, element):
+    def numeral(self, element):
         text = element.text.strip()
         self.ids.append(str(self.numeral_counter))
         id = ".".join(self.ids)
         self.emit_ln(r"\item " + text)
 
-    def numeral_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.ids.pop()
         self.numeral_counter += 1
 
-    def quote_start(self, element):
+    def quote(self, element):
         text = element.text.strip()
         self.result += r" \enquote{"
         self.result += text
 
-    def quote_end(self, element):
+        for child in element:
+            self.dispatch(child)
+
         self.result += "} "
         if not is_empty(element.tail):
             self.result += element.tail.strip()
 
-    def link_start(self, element):
-        pass
-
-    def link_end(self, element):
-        pass
+    def link(self, element):
+        # TODO
+        for child in element:
+            self.dispatch(child)
 
     def __str__(self):
         # TODO
