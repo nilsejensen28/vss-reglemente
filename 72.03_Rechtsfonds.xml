@@ -1,0 +1,53 @@
+<regulation id="72.03" title="Fondsreglement über den Fonds für Rechtsangelegenheiten" short="Rechtsfonds">
+	<section title="Allgemeines">
+		<articles>
+			<article title="Verwendungszweck">
+				<!-- TODO single paragraph -->
+				<paragraphs>
+					<paragraph>
+						Der Fonds für Rechtsangelegenheiten bezweckt die Wahrung der rechtlichen Interessen des Verbandes und ermöglicht dem VSETH-Vorstand, im Falle von unvorhergesehenen Rechtsstreitigkeiten rasch zu reagieren.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Antragsberechtigte Gremien">
+				<!-- TODO: spurious comma -->
+				Antragsberechtigt sind alle Gremien und Organisationen gemäss Art. 13, Abs. 1 der Statuten.
+			</article>
+			<article title="Zuständiges Organ für Auflösung">
+				Eine Auflösung des Fonds muss durch den VSETH-Vorstand genehmigt werden.
+			</article>
+		</articles>
+	</section>
+	<section title="Spezielle Regelungen">
+		<articles>
+			<article title="Mindestsaldo">
+				<paragraphs>
+					<paragraph>
+						Der Fonds enthält in der Regel einen Betrag von CHF 50000.00.
+					</paragraph>
+					<paragraph>
+						Ist dies nicht der Fall, ist bei genügender Liquidität eine entsprechende Speisung vom VSETH-Vorstand am ordentlichen Mitgliederrat im Herbstsemester zu beantragen.
+					</paragraph>
+				</paragraphs>
+			</article>
+		</articles>
+	</section>
+	<section title="Schlussbestimmungen">
+		<articles>
+			<article title="Revisionsbestimmung">
+				Dieses Reglement wird vom MR mit absolutem Mehr genehmigt.
+			</article>
+			<article title="Version">
+				<paragraphs>
+					<paragraph>
+						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24. November 2021 genehmigt.
+					</paragraph>
+					<paragraph>
+						Es tritt am 1. Januar 2022 in Kraft.
+					</paragraph>
+				</paragraphs>
+			</article>
+		</articles>
+	</section>
+</regulation>
+<!-- vim: set ts=2 sw=2 noet : -->
