@@ -16,7 +16,12 @@ OBJS = index.xml \
        31_GPK_Reglement.xml \
        51_Fachvereinsreglement.xml \
        52_Vertretungsreglement.xml \
-       53_StudOrg.xml
+       53_StudOrg.xml \
+       72.01_Immobilienfonds.xml \
+       72.02_Musikzimmerfonds.xml \
+       72.03_Rechtsfonds.xml \
+       72.04_ETH_Store_AG_Fonds.xml \
+       72.05_Coronafonds.xml
 
 .venv: requirements.txt
 	python -m venv .venv
