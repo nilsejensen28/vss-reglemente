@@ -24,5 +24,6 @@
 	<include path="73_Anstellungsreglement.xml" />
 	<include path="74_Datenschutzreglement.xml" />
 	<include path="75_Erscheinungsbildreglement.xml" />
+	<include path="76_Infrastrukturreglement.xml" />
 </bylaws>
 <!-- vim: set ts=2 sw=2 noet : -->
