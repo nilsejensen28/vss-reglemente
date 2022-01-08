@@ -43,28 +43,24 @@ class RstEmitter(Visitor):
         for child in element:
             self.dispatch(child)
 
-    def include(self, element):
-        path = element.get("path")
-        path = re.sub(r"\.xml$", "", path)
-        self.emit_ln(path)
-
-        for child in element:
-            self.dispatch(child)
-
     def regulation(self, element):
-        title = element.get("title")
-        short = element.get("short")
-        if short:
-            title = f"{title} ({short})"
-        self.emit_ln('=' * len(title))
-        self.emit_ln(title)
-        self.emit_ln('=' * len(title))
-        self.article_counter = 1
+        if element.getparent() is None:
+            title = element.get("title")
+            short = element.get("short")
+            if short:
+                title = f"{title} ({short})"
+            self.emit_ln('=' * len(title))
+            self.emit_ln(title)
+            self.emit_ln('=' * len(title))
+            self.article_counter = 1
 
-        for child in element:
-            self.dispatch(child)
+            for child in element:
+                self.dispatch(child)
 
-        del self.article_counter
+            del self.article_counter
+        else:
+            base = re.sub(r"\.xml$", "", element.base)
+            self.emit_ln(base)
 
     def section(self, element):
         title = element.get("title")
@@ -100,14 +96,14 @@ class RstEmitter(Visitor):
     def article(self, element):
         title = element.get("title")
         slug = slugify(title)
-        text = element.text.strip()
         self.ids.append(slug)
         id = ".".join(self.ids)
         title = f"Art. {self.article_counter} {title}"
         self.emit_ln()
         self.emit_ln(title)
         self.emit_ln('.' * len(title))
-        self.emit(text)
+        if not is_empty(element.text):
+            self.emit(element.text.strip())
 
         for child in element:
             self.dispatch(child)

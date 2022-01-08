@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 
-OBJS = index.xml \
+SRCS = index.xml \
        01_Statuten.xml \
        11_MR.xml \
        12_FR.xml \
@@ -17,7 +17,7 @@ OBJS = index.xml \
        51_Fachvereinsreglement.xml \
        52_Vertretungsreglement.xml \
        53_StudOrg.xml \
-       71_MÖhRe.xml \
+       71_MOEhRe.xml \
        72_Finanzreglement.xml \
        72.01_Immobilienfonds.xml \
        72.02_Musikzimmerfonds.xml \
@@ -40,25 +40,25 @@ OBJS = index.xml \
 all: rst html sphinx json pdf
 
 .PHONY: check
-check: $(OBJS:xml=chk)
+check: $(SRCS:xml=chk)
 
 .PHONY: rst
-rst: $(OBJS:xml=rst)
+rst: $(SRCS:xml=rst)
 
 .PHONY: md
-md: $(OBJS:xml=md)
+md: $(SRCS:xml=md)
 
 .PHONY: html
-html: $(OBJS:xml=html)
+html: $(SRCS:xml=html)
 
 .PHONY: json
-json: $(OBJS:xml=json)
+json: $(SRCS:xml=json)
 
 .PHONY: tex
-tex: $(OBJS:xml=tex)
+tex: $(SRCS:xml=tex)
 
 .PHONY: pdf
-pdf: $(OBJS:xml=pdf)
+pdf: $(SRCS:xml=pdf)
 
 %.chk: %.xml .venv main.py check.py
 	source .venv/bin/activate && \
@@ -88,10 +88,10 @@ pdf: $(OBJS:xml=pdf)
 %.pdf: %.tex
 	latexmk -g -verbose -pdflua $<
 
-sphinx: .venv conf.py $(OBJS:xml=rst)
+sphinx: .venv conf.py $(SRCS:xml=rst)
 	sphinx-build -b html . sphinx
 
 .PHONY: clean
 clean:
 	GLOBIGNORE="Readme.md" && \
-		rm -rf *.rst *.md *.html sphinx *.aux *.fdb_latex *.fls *.log *.out *.pdf *.tex
+		rm -rf *.chk *.rst *.md *.html *.json sphinx *.aux *.fdb_latexmk *.fls *.log *.out *.pdf *.tex

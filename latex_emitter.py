@@ -25,7 +25,7 @@ class LatexEmitter(Visitor):
         assert self.indent_level >= 0
 
     def header(self, title):
-        self.emit_ln(r"\documentclass{scrartcl}")
+        self.emit_ln(r"\documentclass{scrbook}")
         self.emit_ln(r"\usepackage{fontspec}")
         self.emit_ln(r"\setmainfont{Source Sans Pro}")
         self.emit_ln(r"\setsansfont{Source Sans Pro}")
@@ -44,29 +44,32 @@ class LatexEmitter(Visitor):
 
     def bylaws(self, element):
         title = element.get("title")
-        self.header(title)
+        if element.getparent() is None:
+            self.header(title)
+            self.emit_ln(r"\tableofcontents")
 
         for child in element:
             self.dispatch(child)
 
-        self.footer()
-
-    def include(self, element):
-        for child in element:
-            self.dispatch(child)
+        if element.getparent() is None:
+            self.footer()
 
     def regulation(self, element):
         title = element.get("title")
         short = element.get("short")
         if short:
             title = f"{title} ({short})"
-        self.header(title)
+        if element.getparent() is None:
+            self.header(title)
+        else:
+            self.emit_ln(r"\chapter{" + title + "}")
         self.article_counter = 1
 
         for child in element:
             self.dispatch(child)
 
-        self.footer()
+        if element.getparent() is None:
+            self.footer()
 
     def section(self, element):
         title = element.get("title")
@@ -102,7 +105,8 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\textbf{Art.\ " + str(self.article_counter) + ". " + title + "}")
         self.emit_ln(r"\label{" + id + "}")
         self.emit_ln(r"\\")
-        self.emit_ln(element.text.strip())
+        if not is_empty(element.text):
+            self.emit_ln(element.text.strip())
 
         for child in element:
             self.dispatch(child)

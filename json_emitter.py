@@ -3,6 +3,7 @@ from visitor import Visitor
 from string import ascii_lowercase
 from roman import toRoman
 import json
+from check import is_empty
 
 class JsonEmitter(Visitor):
     def __init__(self):
@@ -13,10 +14,6 @@ class JsonEmitter(Visitor):
         self.documents.append(document)
 
     def bylaws(self, element):
-        for child in element:
-            self.dispatch(child)
-
-    def include(self, element):
         for child in element:
             self.dispatch(child)
 
@@ -83,17 +80,19 @@ class JsonEmitter(Visitor):
             self.dispatch(child)
 
     def article(self, element):
-        title = element.get("title")
-        text = element.text.strip()
-        self.ids.append(str(self.article_counter))
-        id = self.ids[0] + "/" + ".".join(self.ids[1:])
-        self.emit({"id": id, "title": title, "text": text, "type": "article"})
+        if not is_empty(element.text):
+            title = element.get("title")
+            text = element.text.strip()
+            self.ids.append(str(self.article_counter))
+            id = self.ids[0] + "/" + ".".join(self.ids[1:])
+            self.emit({"id": id, "title": title, "text": text, "type": "article"})
 
         for child in element:
             self.dispatch(child)
 
         self.article_counter += 1
-        self.ids.pop()
+        if not is_empty(element.text):
+            self.ids.pop()
 
     def paragraphs(self, element):
         self.paragraph_counter = 1

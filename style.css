@@ -5,7 +5,6 @@
 }
 
 body {
-	counter-reset: article;
 	font-family: "Source Sans Pro";
 	width: 1000px;
 	margin: auto;
@@ -13,6 +12,10 @@ body {
 
 q {
 	quotes: "«" "»" "‹" "›";
+}
+
+article {
+	counter-reset: article;
 }
 
 h1 {

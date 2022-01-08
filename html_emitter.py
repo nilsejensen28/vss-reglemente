@@ -73,7 +73,10 @@ class HtmlEmitter(Visitor):
 
     def bylaws(self, element):
         title = element.get("title")
-        self.header(title)
+
+        if element.getparent() is None:
+            self.header(title)
+
         self.emit_ln('<ul>')
         self.indent()
 
@@ -82,31 +85,29 @@ class HtmlEmitter(Visitor):
 
         self.dedent()
         self.emit_ln('</ul>')
-        self.dedent()
-        self.emit_ln('</body>')
-        self.dedent()
-        self.emit_ln('</html>')
 
-    def include(self, element):
-        path = element.get("path")
-        path = re.sub(r"\.xml$", ".html", path)
-        self.emit_ln(f'<li><a href="{path}">{path}</a></li>')
-
-        for child in element:
-            self.dispatch(child)
+        if element.getparent() is None:
+            self.footer()
 
     def regulation(self, element):
+        id = element.get("id")
         title = element.get("title")
         short = element.get("short")
         if short:
             title = f"{title} ({short})"
-        self.header(title)
+        if element.getparent() is None:
+            self.header(title)
+        else:
+            self.ids.append(id)
+        self.emit_ln(f'<article id="{id}">')
         self.emit_ln(f'<h1>{title}</h1>')
 
         for child in element:
             self.dispatch(child)
 
-        self.footer()
+        self.emit_ln("</article>")
+        if element.getparent() is None:
+            self.footer()
 
     def section(self, element):
         title = element.get("title")
@@ -154,7 +155,8 @@ class HtmlEmitter(Visitor):
         self.ids.append(slug)
         id = ".".join(self.ids)
         self.emit_ln(f'<h5 id="{id}">{title}</h5>')
-        self.emit_ln(element.text.strip())
+        if not is_empty(element.text):
+            self.emit_ln(element.text.strip())
 
         for child in element:
             self.dispatch(child)

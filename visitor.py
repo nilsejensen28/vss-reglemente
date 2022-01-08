@@ -1,11 +1,17 @@
 #!/usr/bin/env python
-from lxml import etree
+from lxml import etree, ElementInclude
+
+# https://stackoverflow.com/a/69618810/6337138
+def XinlcudeLoader(href, parse, encoding=None, parser=None):
+    ret = ElementInclude._lxml_default_loader(href, parse, encoding, parser)
+    ret.attrib["{http://www.w3.org/XML/1998/namespace}base"] = href
+    return ret
 
 class Visitor():
     def process(self, input_filename):
         self.input_filename = input_filename
-        parser = etree.XMLParser(remove_comments=True)
-        tree = etree.parse(input_filename, parser)
+        tree = etree.parse(input_filename)
+        ElementInclude.include(tree, loader=XinlcudeLoader)
         self.dispatch(tree.getroot())
 
         return self
@@ -15,8 +21,6 @@ class Visitor():
             match element.tag:
                 case "bylaws":
                     self.bylaws(element)
-                case "include":
-                    self.include(element)
                 case "regulation":
                     self.regulation(element)
                 case "section":
@@ -45,6 +49,8 @@ class Visitor():
                     self.quote(element)
                 case "link":
                     self.link(element)
+                case etree.Comment:
+                    pass
                 case _:
                     raise RuntimeWarning(f"Unhandled element <{element.tag}>")
         except Exception as e:

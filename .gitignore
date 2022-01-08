@@ -25,6 +25,7 @@ __pycache__/
 *.out
 *.pdf
 *.tex
+*.toc
 
 # Sphinx
 sphinx/
