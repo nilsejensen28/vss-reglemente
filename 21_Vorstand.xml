@@ -3,7 +3,7 @@
 		<article title="Mitglieder">
 			<paragraphs>
 				<paragraph>
-					Der Vorstand besteht aus mindestens vier und höchstens aus zwölf Mitgliedern.
+					Der Vorstand besteht aus mindestens vier und höchstens zwölf Mitgliedern.
 				</paragraph>
 				<paragraph>
 					Folgende Ressorts müssen mindestens besetzt sein: Präsidium, Vizepräsidium, Quästur und Geschäftsführendes Sekretariat.
@@ -62,7 +62,7 @@
 			<article title="Präsidium">
 				<paragraphs>
 					<paragraph>
-						Der Präsident oder die Präsidentin des Vorstands ist zugleich Präsident bzw. Präsidentin des Verbandes.
+						Der Präsident oder die Präsidentin des Vorstands ist zugleich Präsident bzw. Präsidentin des Verbands.
 					</paragraph>
 					<paragraph>
 						Er oder sie vertritt den Verband nach aussen, soweit nicht die Statuten oder der Vorstand andere Personen mit dieser Aufgabe betrauen.
@@ -88,7 +88,7 @@
 						Profile geben an, in welchem zeitlichen Ausmass sich die einzelnen Vorstandsmitglieder an der Vorstandsarbeit beteiligen.
 					</paragraph>
 					<paragraph>
-						Alle Kandidierenden müssen vor ihrer Wahl festlegen, welches Vorstandsprofil gemäss Art. 4ff sie wählen. Die geschäftsführende Sekretärin, bzw. der geschäftsführende Sekretär ist von dieser Regelung ausgenommen.
+						Alle Kandidierenden müssen vor ihrer Wahl festlegen, welches Vorstandsprofil gemäss Art. 9ff sie wählen. Die geschäftsführende Sekretärin, bzw. der geschäftsführende Sekretär ist von dieser Regelung ausgenommen.
 					</paragraph>
 					<paragraph>
 						Auf Antrag des Vorstandsmitglieds oder des Präsidenten bzw. der Präsidentin kann der FR das Vorstandsmitglied für die Zukunft in ein anderes Profil einstufen. Dies kann pro Vorstandsmitglied höchstens einmal pro Semester stattfinden.
@@ -303,22 +303,23 @@
 						Die Verordnung zum Informationsmedium umfasst mindestens folgende Punkte:
 						<letters>
 							<letter>
-								Art des Informationsmediums
+								Art des Informationsmediums;
 							</letter>
 							<letter>
-								Erscheinungsrhythmus
+								Erscheinungsrhythmus;
 							</letter>
 							<letter>
-								Aufzählung aller reglementarischen Verpflichtungen
-							</letter>
-							<letter>
-								Verfügbarkeit Jahresbericht
-							</letter>
-							<letter>
-								Verfügbarkeit Statuten
-							</letter>
-							<letter>
-								Sitzungstermine MR
+								Aufzählung aller reglementarischen Verpflichtungen:
+								<numerals>
+									<numeral>
+										Verfügbarkeit Jahresbericht;
+									</numeral>
+									<numeral>
+										Verfügbarkeit Statuten;
+									</numeral>
+									<numeral>
+										Sitzungstermine MR.
+									</numeral>
 							</letter>
 						</letters>
 					</paragraph>
@@ -380,7 +381,7 @@
 	<section title="Berichterstattung">
 		<articles>
 			<article title="Vorstandsmitteilungen">
-				Der Vorstand informiert regelmässig mittels Vorstandsmitteilungen den FR über seine Tätigkeit. Der Bericht umfasst alle relevanten Aktivitäten seit dem letzten FR Zeitpunkt, an welchem berichtet wurde. Ausnahmen von der Informationspflicht sind in Art. 49 des Mitwirkungs- und Öffentlichkeitsreglements geregelt.
+				Der Vorstand informiert regelmässig mittels Vorstandsmitteilungen den FR über seine Tätigkeit. Der Bericht umfasst alle relevanten Aktivitäten seit dem letzten Zeitpunkt, an welchem berichtet wurde. Ausnahmen von der Informationspflicht sind in Art. 49 des Mitwirkungs- und Öffentlichkeitsreglements geregelt.
 			</article>
 			<article title="Halbjahresberichte">
 				<paragraphs>
