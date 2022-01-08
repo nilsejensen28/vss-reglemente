@@ -22,5 +22,6 @@
 	<include path="72.04_ETH_Store_AG_Fonds.xml" />
 	<include path="72.05_Coronafonds.xml" />
 	<include path="73_Anstellungsreglement.xml" />
+	<include path="74_Datenschutzreglement.xml" />
 </bylaws>
 <!-- vim: set ts=2 sw=2 noet : -->
