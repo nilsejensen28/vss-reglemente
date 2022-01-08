@@ -16,6 +16,7 @@
 	<include path="52_Vertretungsreglement.xml" />
 	<include path="53_StudOrg.xml" />
 	<include path="71_MÖhRe.xml" />
+	<include path="72_Finanzreglement.xml" />
 	<include path="72.01_Immobilienfonds.xml" />
 	<include path="72.02_Musikzimmerfonds.xml" />
 	<include path="72.03_Rechtsfonds.xml" />

@@ -18,6 +18,7 @@ OBJS = index.xml \
        52_Vertretungsreglement.xml \
        53_StudOrg.xml \
        71_MÖhRe.xml \
+       72_Finanzreglement.xml \
        72.01_Immobilienfonds.xml \
        72.02_Musikzimmerfonds.xml \
        72.03_Rechtsfonds.xml \
