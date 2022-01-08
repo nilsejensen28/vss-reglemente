@@ -24,7 +24,8 @@ OBJS = index.xml \
        72.04_ETH_Store_AG_Fonds.xml \
        72.05_Coronafonds.xml \
        73_Anstellungsreglement.xml \
-       74_Datenschutzreglement.xml
+       74_Datenschutzreglement.xml \
+       75_Erscheinungsbildreglement.xml
 
 .venv: requirements.txt
 	python -m venv .venv

@@ -23,5 +23,6 @@
 	<include path="72.05_Coronafonds.xml" />
 	<include path="73_Anstellungsreglement.xml" />
 	<include path="74_Datenschutzreglement.xml" />
+	<include path="75_Erscheinungsbildreglement.xml" />
 </bylaws>
 <!-- vim: set ts=2 sw=2 noet : -->
