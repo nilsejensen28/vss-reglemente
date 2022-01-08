@@ -22,7 +22,8 @@ OBJS = index.xml \
        72.02_Musikzimmerfonds.xml \
        72.03_Rechtsfonds.xml \
        72.04_ETH_Store_AG_Fonds.xml \
-       72.05_Coronafonds.xml
+       72.05_Coronafonds.xml \
+       73_Anstellungsreglement.xml
 
 .venv: requirements.txt
 	python -m venv .venv
