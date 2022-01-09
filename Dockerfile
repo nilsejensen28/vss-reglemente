@@ -57,6 +57,7 @@ RUN \
 
 FROM metabuilder as builder
 ENV PATH="${PATH}"
+WORKDIR /app
 
 COPY requirements.txt .
 COPY texlive.txt      .
@@ -67,15 +68,3 @@ RUN \
 	pip install -r requirements.txt; \
 	tlmgr install --reinstall $(cat texlive.txt); \
 	luaotfload-tool --update;
-
-COPY *.py ./
-
-FROM builder
-ENV PATH="${PATH}"
-
-COPY Makefile ./
-COPY *.xml    ./
-
-RUN \
-	set -euxo pipefail; \
-	make -B -i all
