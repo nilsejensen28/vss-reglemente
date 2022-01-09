@@ -256,13 +256,13 @@
 					</paragraph>
 				</paragraphs>
 			</article>
-			<article title="Änderung von Modus und Form einer Abstimmung">
+			<article title="Änderung von Modus und Form einer Abstimmung oder Wahl">
 				<paragraphs>
 					<paragraph>
-						Modus und Form einer Abstimmung können mit einem Ordnungsantrag angepasst werden.
+						Modus und Form einer Abstimmung oder Wahl können mit einem Ordnungsantrag angepasst werden.
 					</paragraph>
 					<paragraph>
-							Über einen Ordnungsantrag auf geheime Wahl wird nicht abgestimmt, sie muss auf Verlangen jedes Delegierten durchgeführt werden. <!-- TODO: Delegierten? -->
+						Über einen Ordnungsantrag auf geheime Wahl wird nicht abgestimmt, sie muss auf Verlangen jedes bzw. jeder Stimmberechtigten durchgeführt werden.
 					</paragraph>
 					<paragraph>
 						Die Art der benötigten Mehrheit kann mit diesem Ordnungsantrag nicht geändert werden.
@@ -275,7 +275,7 @@
 						Bei Annahme des Antrags wird eine Abstimmung oder Wahl wiederholt.
 					</paragraph>
 					<paragraph>
-						Der Antragsteller kann mit dem Antrag auch eine Änderung des Modus der Wahl beantragen.
+						Der Antragsteller oder die Antragstellerin kann mit dem Antrag auch eine Änderung des Modus der Abstimmung oder Wahl beantragen.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -344,13 +344,13 @@
 						Ein einfaches Mehr ist erreicht, wenn mehr Ja- als Nein-Stimmen vorliegen.
 					</paragraph>
 					<paragraph>
-						Ein absolutes Mehr ist erreicht, wenn wenn die Ja-Stimmen mehr als ½ aller abgegebenen Stimmen ausmachen.
+						Ein absolutes Mehr ist erreicht, wenn wenn die Ja-Stimmen mehr als die Hälfte aller abgegebenen Stimmen ausmachen.
 					</paragraph>
 					<paragraph>
-						Eine Zweidrittelmehrheit ist erreicht, wenn die Ja-Stimmen mehr als ⅔ aller abgegebenen Stimmen ausmachen.
+						Eine Zweidrittelmehrheit ist erreicht, wenn die Ja-Stimmen mehr als zwei Drittel aller abgegebenen Stimmen ausmachen.
 					</paragraph>
 					<paragraph>
-						Eine Dreiviertelmehrheit ist erreicht, wenn die Ja-Stimmen mehr als ¾ aller abgegebenen Stimmen ausmachen.
+						Eine Dreiviertelmehrheit ist erreicht, wenn die Ja-Stimmen mehr als drei Viertel aller abgegebenen Stimmen ausmachen.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -424,7 +424,7 @@
 						Die Unterschriftenbögen müssen den vollständigen Wortlaut der Initiative, das Ende der Sammelfrist sowie einen Vermerk über das korrekte Ausfüllen enthalten.
 					</paragraph>
 					<paragraph>
-						Aus dem Unterschriftenbogen müssen Name, Vorname und Matrikelnummer  der unterzeichnenden Verbandsmitglieder hervorgehen. Unterschriften, für welche diese Angaben fehlen, sind ungültig.
+						Aus dem Unterschriftenbogen müssen Name, Vorname und Matrikelnummer der unterzeichnenden Verbandsmitglieder hervorgehen. Unterschriften, für welche diese Angaben fehlen, sind ungültig.
 					</paragraph>
 					<paragraph>
 						Die Initiative gilt als eingereicht, wenn die erforderliche Anzahl Unterschriften innert sechs Wochen nach Beginn der Unterschriftensammlung dem AVES vorliegt.
@@ -440,7 +440,7 @@
 						Diese Prüfung erfolgt innert zwei Wochen nach Hinterlegung der Unterschriftenbögen.
 					</paragraph>
 					<paragraph>
-						Das Resultat der Prüfung wird innert zwei Wochen im Informationsorgan publiziert.
+						Das Resultat der Prüfung wird innert zwei Wochen im Informationsmedium publiziert.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -500,7 +500,7 @@
 						Diese Prüfung erfolgt innert zwei Wochen nach Hinterlegung der Unterschriftenbögen.
 					</paragraph>
 					<paragraph>
-						Das Resultat der Prüfung wird innert zwei Wochen publiziert.
+						Das Resultat der Prüfung wird innert zwei Wochen im Informationsmedium publiziert.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -730,10 +730,10 @@
 						Ein Geschäft gilt als vertraulich, sobald eines der folgenden Kriterien zutrifft:
 						<letters>
 							<letter>
-								verordnete Vertraulichkeit aufgrund übergeordneter Rechtsbestimmungen,
+								verordnete Vertraulichkeit aufgrund übergeordneter Rechtsbestimmungen;
 							</letter>
 							<letter>
-								die Veröffentlichung würde Persönlichkeitsrechte verletzen,
+								die Veröffentlichung würde Persönlichkeitsrechte verletzen;
 							</letter>
 							<letter>
 								die Veröffentlichung würde nicht abgeschlossene oder zukünftige Geschäfte gefährden.
