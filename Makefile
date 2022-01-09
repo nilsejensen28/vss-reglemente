@@ -30,65 +30,65 @@ SRCS = index.xml \
        75_Erscheinungsbildreglement.xml \
        76_Infrastrukturreglement.xml
 
+.PHONY: all
+all: rst html sphinx json pdf
+
 .venv: requirements.txt
 	${PYTHON} -m venv $@
 	source $@/bin/activate && \
 		pip install -r requirements.txt
 	touch $@
 
-.PHONY: all
-all: rst html sphinx json pdf
-
 .PHONY: check
-check: $(SRCS:xml=chk)
+check: ${SRCS:xml=chk}
 
 .PHONY: rst
-rst: $(SRCS:xml=rst)
+rst: ${SRCS:xml=rst}
 
 .PHONY: md
-md: $(SRCS:xml=md)
+md: ${SRCS:xml=md}
 
 .PHONY: html
-html: $(SRCS:xml=html)
+html: ${SRCS:xml=html}
 
 .PHONY: json
-json: $(SRCS:xml=json)
+json: ${SRCS:xml=json}
 
 .PHONY: tex
-tex: $(SRCS:xml=tex)
+tex: ${SRCS:xml=tex}
 
 .PHONY: pdf
-pdf: $(SRCS:xml=pdf)
+pdf: ${SRCS:xml=pdf}
 
-%.chk: %.xml .venv main.py check.py
+%.chk: %.xml main.py check.py
 	source .venv/bin/activate && \
 		./main.py $< --format check
 	touch $@
 
-%.rst: %.xml .venv main.py rst_emitter.py | %.chk
+%.rst: %.xml main.py rst_emitter.py | %.chk
 	source .venv/bin/activate && \
 		./main.py $< --format rst --output $@
 
-%.md: %.xml .venv main.py | %.chk
+%.md: %.xml main.py | %.chk
 	source .venv/bin/activate && \
 		./main.py $< --format md --output $@
 
-%.html: %.xml .venv main.py html_emitter.py | %.chk
+%.html: %.xml main.py html_emitter.py | %.chk
 	source .venv/bin/activate && \
 		./main.py $< --format html --output $@
 
-%.json: %.xml .venv main.py json_emitter.py | %.chk
+%.json: %.xml main.py json_emitter.py | %.chk
 	source .venv/bin/activate && \
 		./main.py $< --format json --output $@
 
-%.tex: %.xml .venv main.py latex_emitter.py | %.chk
+%.tex: %.xml main.py latex_emitter.py | %.chk
 	source .venv/bin/activate && \
 		./main.py $< --format tex --output $@
 
 %.pdf: %.tex
 	latexmk -g -verbose -pdflua $<
 
-sphinx: .venv conf.py $(SRCS:xml=rst)
+sphinx: conf.py ${SRCS:xml=rst}
 	source .venv/bin/activate && \
 		sphinx-build -b html . sphinx
 
@@ -96,3 +96,25 @@ sphinx: .venv conf.py $(SRCS:xml=rst)
 clean:
 	GLOBIGNORE="Readme.md" && \
 		rm -rf *.chk *.rst *.md *.html *.json sphinx *.aux *.fdb_latexmk *.fls *.log *.out *.pdf *.tex
+
+build: all
+	mkdir -p build
+	cp ${SRCS}          build/
+	cp ${SRCS:xml=rst}  build/
+	cp ${SRCS:xml=html} build/
+	cp ${SRCS:xml=json} build/
+	cp ${SRCS:xml=pdf}  build/
+	touch build
+
+.PHONY: docker
+docker:
+	docker build . -t builder
+	docker run \
+		--rm \
+		--volume ${PWD}:/app/src \
+		--volume ${PWD}/out:/app/build \
+		builder \
+		/bin/bash -c "cp src/{Makefile,*.py,*.xml} ./; make -B -i build"
+
+.PHONY: build_reglemente
+build_reglemente: docker

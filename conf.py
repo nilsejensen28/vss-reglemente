@@ -6,4 +6,6 @@ source_suffix = {
 exclude_patterns = [
     ".git/**",
     ".venv/**",
+    "src/**",
+    "build/**",
 ]
