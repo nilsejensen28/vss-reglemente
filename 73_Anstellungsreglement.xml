@@ -2,11 +2,7 @@
 	<section title="Allgemeines">
 		<articles>
 			<article title="Verantwortung">
-				<paragraphs> <!-- TODO: collapse single paragraph -->
-					<paragraph>
-						Der VSETH-Vorstand trägt die oberste Verantwortung über die Angestellten.
-					</paragraph>
-				</paragraphs>
+				Der VSETH-Vorstand trägt die oberste Verantwortung über die Angestellten.
 			</article>
 			<article title="Anstellung und Kündigung">
 				Anstellungen und Kündigungen werden durch den VSETH-Vorstand vorgenommen.
@@ -157,7 +153,7 @@
 						</letters>
 					</paragraph>
 					<paragraph>
-						Für Anstellungen bis zu einem finanziellen Volumen von CHF 2’000 können Arbeitsverträge mündlich abgeschlossen werden.
+						Für Anstellungen bis zu einem finanziellen Volumen von CHF 2’000.00 können Arbeitsverträge mündlich abgeschlossen werden.
 					</paragraph>
 				</paragraphs>
 			</article>
