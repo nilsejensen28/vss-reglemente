@@ -134,46 +134,46 @@
 						An folgenden Verbandsanlässen wird die Präsenz aller gewählten Vorstände erwartet:
 						<letters>
 							<letter>
-								Mitgliederrat
+								Mitgliederrat;
 							</letter>
 							<letter>
-								Strategiewochenende
+								Strategiewochenende;
 							</letter>
 							<letter>
-								Vorstandspizzaplausch
+								Vorstandspizzaplausch;
 							</letter>
 							<letter>
-								Vorstandshosting an der Summerbar
+								Vorstandshosting an der Summerbar;
 							</letter>
 							<letter>
-								Punschausschank
+								Punschausschank;
 							</letter>
 							<letter>
-								Activity Fair
+								Activity Fair;
 							</letter>
 							<letter>
-								Tag der offenen Tür
+								Tag der offenen Tür;
 							</letter>
 							<letter>
-								Osterbrunch
+								Osterbrunch;
 							</letter>
 							<letter>
-								Welcome Wurst
+								Welcome Wurst;
 							</letter>
 							<letter>
-								Ersti-Bags packen
+								Ersti-Bags packen;
 							</letter>
 							<letter>
-								Erstitag
+								Erstitag;
 							</letter>
 							<letter>
-								Prüfungsgoodies verteilen
+								Prüfungsgoodies verteilen;
 							</letter>
 							<letter>
-								Vorstandshosting an Nik's Hütte
+								Vorstandshosting an Nik's Hütte;
 							</letter>
 							<letter>
-								Erstsemestrigenfest
+								Erstsemestrigenfest.
 							</letter>
 						</letters>
 					</paragraph>
@@ -195,31 +195,31 @@
 						Es bestehen die Ressorts:
 						<letters>
 							<letter>
-								Präsidium
+								Präsidium;
 							</letter>
 							<letter>
-								Vizepräsidium
+								Vizepräsidium;
 							</letter>
 							<letter>
 								Quästur
 							</letter>
 							<letter>
-								Geschäftsführendes Sekretariat
+								Geschäftsführendes Sekretariat;
 							</letter>
 							<letter>
-								Hochschulpolitik
+								Hochschulpolitik;
 							</letter>
 							<letter>
-								Infrastruktur
+								Infrastruktur;
 							</letter>
 							<letter>
-								Internal Affairs
+								Internal Affairs;
 							</letter>
 							<letter>
-								Kommunikation
+								Kommunikation;
 							</letter>
 							<letter>
-								Projekte
+								Projekte.
 							</letter>
 						</letters>
 					</paragraph>
@@ -266,7 +266,7 @@
 							Strategie und operative Führung:
 							<letters>
 								<letter>
-									Verantwortung für die strategische und operative Führung des Verbands,
+									Verantwortung für die strategische und operative Führung des Verbands;
 								</letter>
 								<letter>
 									Abhalten eines Strategieseminars des VSETH-Vorstandes pro Semester.
@@ -277,19 +277,19 @@
 							Koordination des VSETH-Vorstands:
 							<letters>
 								<letter>
-									Leitung der Vorstandssitzungen,
+									Leitung der Vorstandssitzungen;
 								</letter>
 								<letter>
-									Delegation spezieller Aufgaben an die Vorstandsmitglieder,
+									Delegation spezieller Aufgaben an die Vorstandsmitglieder;
 								</letter>
 								<letter>
-									Koordination und Überwachung der Arbeit des VSETH-Vorstands im Rahmen des jeweiligen Profils,
+									Koordination und Überwachung der Arbeit des VSETH-Vorstands im Rahmen des jeweiligen Profils;
 								</letter>
 								<letter>
-									Eingreifen bei deutlicher Abweichung vom Profil eines Vorstandsmitglieds,
+									Eingreifen bei deutlicher Abweichung vom Profil eines Vorstandsmitglieds;
 								</letter>
 								<letter>
-									Verantwortung für den Jahresbericht des VSETH-Vorstands,
+									Verantwortung für den Jahresbericht des VSETH-Vorstands;
 								</letter>
 								<letter>
 									Vertretung des VSETH-Vorstands gegenüber dem Fachvereinsrat, dem Mitgliederrat und der GPK.
@@ -300,13 +300,13 @@
 							Mitarbeiterbetreuung:
 							<letters>
 								<letter>
-									Betreuung der Mitarbeitenden zusammen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin,
+									Betreuung der Mitarbeitenden zusammen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin;
 								</letter>
 								<letter>
-									Regelmässige Besprechungen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin,
+									Regelmässige Besprechungen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin;
 								</letter>
 								<letter>
-									Vorgesetzte aller Mitarbeitenden ausser des geschäftsführenden Sekretärs bzw. der geschäftsführenden Sekretärin zusammen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin,
+									Vorgesetzte aller Mitarbeitenden ausser des geschäftsführenden Sekretärs bzw. der geschäftsführenden Sekretärin zusammen mit dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin;
 								</letter>
 								<letter>
 									Vorgesetzte des geschäftsführenden Sekretärs  bzw. der geschäftsführenden Sekretärin zusammen mit der Quästur.
@@ -317,10 +317,10 @@
 							Vertretung in Gremien:
 							<letters>
 								<letter>
-									Sicherstellung der Vertretung in wichtigen Gremien innerhalb und ausserhalb der Hochschule,
+									Sicherstellung der Vertretung in wichtigen Gremien innerhalb und ausserhalb der Hochschule;
 								</letter>
 								<letter>
-									Vertretung im Ausschuss der Hochschulversammlung und auf nationaler Ebene,
+									Vertretung im Ausschuss der Hochschulversammlung und auf nationaler Ebene;
 								</letter>
 								<letter>
 									Verantwortlich für den Kontakt zu und die Betreuung der Vertretungen des VSETH, welche dem Ressort gemäss der Vertretungsliste zugewiesen wurden.
@@ -331,13 +331,13 @@
 							Kontakt nach aussen:
 							<letters>
 								<letter>
-									Wahrung von regelmässigem Kontakt mit den anderen Hochschulgruppen der ETH und anderen Studierendenverbänden in der Schweiz,
+									Wahrung von regelmässigem Kontakt mit den anderen Hochschulgruppen der ETH und anderen Studierendenverbänden in der Schweiz;
 								</letter>
 								<letter>
-									Guter Kontakt zur Schulleitung der ETH,
+									Guter Kontakt zur Schulleitung der ETH;
 								</letter>
 								<letter>
-									Anbringung wichtiger Anliegen bei der Schulleitung der ETH,
+									Anbringung wichtiger Anliegen bei der Schulleitung der ETH;
 								</letter>
 								<letter>
 									Sicherstellung der Interessen des VSETH gegenüber Dritten.
@@ -348,13 +348,13 @@
 							Präsenz an Verbandsanlässen:
 							<letters>
 								<letter>
-									Fachvereinsrat,
+									Fachvereinsrat;
 								</letter>
 								<letter>
-									Hopo-Weekend,
+									Hopo-Weekend;
 								</letter>
 								<letter>
-									Projekti-Weekend,
+									Projekti-Weekend;
 								</letter>
 								<letter>
 									Hopo-Sommertage.
@@ -392,13 +392,13 @@
 							Kontrolle der Finanz- und Betriebsbuchhaltung:
 							<letters>
 								<letter>
-									für den VSETH-Vorstand,
+									für den VSETH-Vorstand;
 								</letter>
 								<letter>
-									für das AVES,
+									für das AVES;
 								</letter>
 								<letter>
-									für die Ausschüsse,
+									für die Ausschüsse;
 								</letter>
 								<letter>
 									für die Kommissionen.
@@ -409,10 +409,10 @@
 							Lohnzahlungen und Lohnausweise:
 							<letters>
 								<letter>
-									Pünktliche Auszahlung der Löhne,
+									Pünktliche Auszahlung der Löhne;
 								</letter>
 								<letter>
-									Ausstellen der Lohnausweise,
+									Ausstellen der Lohnausweise;
 								</letter>
 								<letter>
 									Abrechnung der Sozialversicherung, wie AHV/IV, BVG, Kranken- und Unfallversicherung.
@@ -423,10 +423,10 @@
 							Prüfungsvorbereitungskurse:
 							<letters>
 								<letter>
-									PVK-Lohnauszahlungen,
+									PVK-Lohnauszahlungen;
 								</letter>
 								<letter>
-									Personalverwaltung in Absprache mit den entsprechenden Fachvereinen,
+									Personalverwaltung in Absprache mit den entsprechenden Fachvereinen.
 								</letter>
 							</letters>
 						</paragraph>
@@ -434,13 +434,13 @@
 							5 Budget und Rechnung:
 							<letters>
 								<letter>
-									Erstellung des Budgets für das Folgejahr zusammen mit dem Finanzausschuss,
+									Erstellung des Budgets für das Folgejahr zusammen mit dem Finanzausschuss;
 								</letter>
 								<letter>
-									Erstellung des Jahresabschlusses des Vorjahres,
+									Erstellung des Jahresabschlusses des Vorjahres;
 								</letter>
 								<letter>
-									Veranlassung der Prüfung durch die Rechnungsrevisionsstelle gemäss Art. 11 der Statuten,
+									Veranlassung der Prüfung durch die Rechnungsrevisionsstelle gemäss Art. 11 der Statuten;
 								</letter>
 								<letter>
 									Präsentation des Budgets und der Jahresrechnung am Mitgliederrat.
@@ -451,13 +451,13 @@
 							Spezielle Aufgaben:
 							<letters>
 								<letter>
-									Personalbetreuung des geschäftsführenden Sekretariats zusammen mit dem Präsidium,
+									Personalbetreuung des geschäftsführenden Sekretariats zusammen mit dem Präsidium;
 								</letter>
 								<letter>
-									Steuerabrechnung (MWST, Quellensteuer),
+									Steuerabrechnung (MWST, Quellensteuer);
 								</letter>
 								<letter>
-									Betreuung der Fonds,
+									Betreuung der Fonds;
 								</letter>
 								<letter>
 									Einsitz und Mitarbeit im FinA und SpEA.
@@ -507,7 +507,7 @@
 							Vertretung der Position der Studierenden in Gremien:
 							<letters>
 								<letter>
-									Vertretung der Studierenden in Gremien an der ETH,
+									Vertretung der Studierenden in Gremien an der ETH;
 								</letter>
 								<letter>
 									Vertretung der Studierenden in Gremien auf nationaler Ebene.
@@ -518,10 +518,10 @@
 							Definition der Position des VSETH:
 							<letters>
 								<letter>
-									Einbezug des Fachvereinsrats, der hochschulpolitisch Aktiven der Fachvereine und des Gesamtvorstands,
+									Einbezug des Fachvereinsrats, der hochschulpolitisch Aktiven der Fachvereine und des Gesamtvorstands;
 								</letter>
 								<letter>
-									Breite Abstützung der Position des Verbandes,
+									Breite Abstützung der Position des Verbandes;
 								</letter>
 								<letter>
 									Information an die Studierenden über ihre Möglichkeiten der Mitsprache.
@@ -532,7 +532,7 @@
 							Austausch mit anderen Studierendenverbänden:
 							<letters>
 								<letter>
-									Teilnahme an internationalen Austauschen mit anderen Studierendenverbänden, oder ggf. deren Organisationen,
+									Teilnahme an internationalen Austauschen mit anderen Studierendenverbänden, oder ggf. deren Organisationen;
 								</letter>
 								<letter>
 									Themenbezogener Austausch mit anderen Studierendenverbänden auf dem Hochschulplatz Zürich und des ETH-Bereichs.
@@ -543,10 +543,10 @@
 							Aktive Interessenvertretung:
 							<letters>
 								<letter>
-									Eigeninitiative bei Themen aus Gremien und Politik bei Relevanz für die Studierenden und/oder den VSETH,
+									Eigeninitiative bei Themen aus Gremien und Politik bei Relevanz für die Studierenden und/oder den VSETH;
 								</letter>
 								<letter>
-									Verantwortung für politische Stellungnahmen und Positionen gegenüber Medien in Absprache mit dem Präsidium,
+									Verantwortung für politische Stellungnahmen und Positionen gegenüber Medien in Absprache mit dem Präsidium;
 								</letter>
 								<letter>
 									Lobbying bei den jeweiligen Gremien für die Initiativen und Interessen des VSETH und der Studierenden auf ETH-, nationaler und internationaler Ebene.
@@ -565,13 +565,13 @@
 							Organisation von Verbandsanlässen:
 							<letters>
 								<letter>
-									Workshops am Hopo-Weekend,
+									Workshops am Hopo-Weekend;
 								</letter>
 								<letter>
-									Hopo-Stamm,
+									Hopo-Stamm;
 								</letter>
 								<letter>
-									Hopo-Sommertage,
+									Hopo-Sommertage.
 								</letter>
 							</letters>
 						</paragraph>
@@ -579,7 +579,7 @@
 							Präsenz an Verbandsanlässen:
 							<letters>
 								<letter>
-									Fachvereinsrat,
+									Fachvereinsrat;
 								</letter>
 								<letter>
 									ETH-Days.
@@ -608,16 +608,16 @@
 							Verantwortung für die Verbandsinfrastruktur:
 							<letters>
 								<letter>
-									Verantwortung für das Raummanagement,
+									Verantwortung für das Raummanagement;
 								</letter>
 								<letter>
-									Verantwortung für das Management des Mobiliars,
+									Verantwortung für das Management des Mobiliars;
 								</letter>
 								<letter>
-									Verantwortung für das Management der IT-Infrastruktur,
+									Verantwortung für das Management der IT-Infrastruktur;
 								</letter>
 								<letter>
-									Verantwortung für Material und Lager,
+									Verantwortung für Material und Lager;
 								</letter>
 								<letter>
 									Verantwortung für das Dienstleistungsangebot für die Funktionalität des Verbandes und den Studienalltag.
@@ -628,10 +628,10 @@
 							Koordination zwischen und Mitwirkung in zuständigen Gremien:
 							<letters>
 								<letter>
-									Kommunikation von wichtigen Entscheiden an den Vorstand,
+									Kommunikation von wichtigen Entscheiden an den Vorstand;
 								</letter>
 								<letter>
-									Einbringen der Verbandsstrategie in die jeweiligen Gremien,
+									Einbringen der Verbandsstrategie in die jeweiligen Gremien;
 								</letter>
 								<letter>
 									Einschreiten bei von der Verbandsstrategie abweichenden Entscheiden.
@@ -642,7 +642,7 @@
 							Zusammenarbeit mit der ETH:
 							<letters>
 								<letter>
-									Koordination der Zusammenarbeit bei Bedürfnissen bezüglich Infrastruktur gegenüber der ETH,
+									Koordination der Zusammenarbeit bei Bedürfnissen bezüglich Infrastruktur gegenüber der ETH;
 								</letter>
 								<letter>
 									Anbringen der Interessen der Studierenden bezüglich Infrastruktur bei der ETH, insbesondere gegenüber dem Vizepräsidenten bzw. der Vizepräsidentin für Infrastruktur und den untergeordneten Abteilungen zusammen mit den Ressorts Hochschulpolitik und Präsidium.
@@ -653,7 +653,7 @@
 							Präsenz an Verbandsanlässen:
 							<letters>
 								<letter>
-									Fachvereinsrat bei Bedarf,
+									Fachvereinsrat bei Bedarf;
 								</letter>
 								<letter>
 									Projekti-Weekend.
@@ -682,10 +682,10 @@
 							Betreuung der Fachvereine:
 							<letters>
 								<letter>
-									Ansprechpartner für alle Fachvereine,
+									Ansprechpartner für alle Fachvereine;
 								</letter>
 								<letter>
-									Beratung bei Reglementsänderungen,
+									Beratung bei Reglementsänderungen;
 								</letter>
 								<letter>
 									Erinnerung an Pflichten gegenüber dem VSETH.
@@ -696,10 +696,10 @@
 							Betreuung der Kommissionen:
 							<letters>
 								<letter>
-									Führen einer Liste mit allen wichtigen Informationen, insbesondere Kontaktdaten der Kommissionsmitglieder,
+									Führen einer Liste mit allen wichtigen Informationen, insbesondere Kontaktdaten der Kommissionsmitglieder;
 								</letter>
 								<letter>
-									Erinnerung an Pflichten gegenüber dem VSETH,
+									Erinnerung an Pflichten gegenüber dem VSETH;
 								</letter>
 								<letter>
 									Unterstützung bei Formierung neuer Kommissionen.
@@ -710,16 +710,16 @@
 							Betreuung der studentischen Organisationen:
 							<letters>
 								<letter>
-									Führen einer Liste mit Kontakten zu den anerkannten Organisationen, assoziierten Organisationen, Stiftungen und Genossenschaften des VSETH,
+									Führen einer Liste mit Kontakten zu den anerkannten Organisationen, assoziierten Organisationen, Stiftungen und Genossenschaften des VSETH;
 								</letter>
 								<letter>
-									Betreuung des Prozesses zur Anerkennung und Assoziierung neuer Organisation,
+									Betreuung des Prozesses zur Anerkennung und Assoziierung neuer Organisation;
 								</letter>
 								<letter>
-									Erinnerung an Pflichten gegenüber dem VSETH,
+									Erinnerung an Pflichten gegenüber dem VSETH;
 								</letter>
 								<letter>
-									Überprüfung des Status bei den bestehenden anerkannten und assoziierten Organisationen,
+									Überprüfung des Status bei den bestehenden anerkannten und assoziierten Organisationen;
 								</letter>
 								<letter>
 									Kontakt zu Bewilligungsstelle und Betreuen des Patronatsystems.
@@ -730,7 +730,7 @@
 							Kontakt zu Partnerorganisationen:
 							<letters>
 								<letter>
-									Regelmässiger Kontakt zu den Partnerorganisationen,
+									Regelmässiger Kontakt zu den Partnerorganisationen;
 								</letter>
 								<letter>
 									Aktualisierung der auszutauschenden Dienstleistungen.
@@ -741,10 +741,10 @@
 							Koordination des Göttisystems:
 							<letters>
 								<letter>
-									Koordination und Überprüfung der Göttiposten,
+									Koordination und Überprüfung der Göttiposten;
 								</letter>
 								<letter>
-									Übernahme der Göttiposten von besonders ausgelasteten Vorstandsmitgliedern,
+									Übernahme der Göttiposten von besonders ausgelasteten Vorstandsmitgliedern;
 								</letter>
 								<letter>
 									Götti bzw. Gotte aller anerkannten Organisationen.
@@ -755,7 +755,7 @@
 							Reglemente des VSETH:
 							<letters>
 								<letter>
-									Betreuung der VSETH-Rechtssammlung,
+									Betreuung der VSETH-Rechtssammlung;
 								</letter>
 								<letter>
 									Intensiver Austausch mit der GPK.
@@ -766,7 +766,7 @@
 							Organisation von Verbandsanlässen:
 							<letters>
 								<letter>
-									Vorstandspizzaplausch,
+									Vorstandspizzaplausch;
 								</letter>
 								<letter>
 									"Get to know us" Event für studentische Organisationen.
@@ -777,7 +777,7 @@
 							Präsenz an Verbandsanlässen:
 							<letters>
 								<letter>
-									Fachvereinsrat bei Bedarf,
+									Fachvereinsrat bei Bedarf;
 								</letter>
 								<letter>
 									Hopo-Weekend.
@@ -803,10 +803,10 @@
 							Betreiben der Kommunikationskanäle des Verbandes:
 							<letters>
 								<letter>
-									Angebot an attraktiven Kommunikationskanälen zu den Studierenden,
+									Angebot an attraktiven Kommunikationskanälen zu den Studierenden;
 								</letter>
 								<letter>
-									Betreuung und Verwaltung der Kommunikationskanäle nach aussen,
+									Betreuung und Verwaltung der Kommunikationskanäle nach aussen;
 								</letter>
 								<letter>
 									Betreuung des Informationsorgans.
@@ -817,7 +817,7 @@
 							Betreuung der Verbandszeitung:
 							<letters>
 								<letter>
-									Austausch und die Koordination mit der Redaktion bzgl. Terminen und Inhalt,
+									Austausch und die Koordination mit der Redaktion bzgl. Terminen und Inhalt;
 								</letter>
 								<letter>
 									Regelmässige Teilnahme an den Redaktionssitzungen.
@@ -828,16 +828,16 @@
 							Auftritt des Verbandes:
 							<letters>
 								<letter>
-									Verantwortung für den Auftritt des Verbandes,
+									Verantwortung für den Auftritt des Verbandes;
 								</letter>
 								<letter>
-									Periodische Überprüfung der Einhaltung der Richtlinien zum Erscheinungsbild,
+									Periodische Überprüfung der Einhaltung der Richtlinien zum Erscheinungsbild;
 								</letter>
 								<letter>
-									Beantragung von Mahnungen und Bussen,
+									Beantragung von Mahnungen und Bussen;
 								</letter>
 								<letter>
-									Erhöhung der Bekanntheit,
+									Erhöhung der Bekanntheit;
 								</letter>
 								<letter>
 									Betreuung des Merchandising.
@@ -848,10 +848,10 @@
 							Koordination der Ersti-Tage:
 							<letters>
 								<letter>
-									Ablauf der Einführung der Erstis (BSc, MoEB und Mob) jedes Semester planen,
+									Ablauf der Einführung der Erstis (BSc, MoEB und Mob) jedes Semester planen;
 								</letter>
 								<letter>
-									Absprache mit den Personen und Fachvereinen der Departemente,
+									Absprache mit den Personen und Fachvereinen der Departemente;
 								</letter>
 								<letter>
 									Verantwortlichkeit für Begrüssungsgeschenke.
@@ -862,22 +862,22 @@
 							Organisation von Verbandsanlässen:
 							<letters>
 								<letter>
-									Tag der offenen Tür,
+									Tag der offenen Tür;
 								</letter>
 								<letter>
-									Osterbrunch,
+									Osterbrunch;
 								</letter>
 								<letter>
-									Welcome Wurst,
+									Welcome Wurst;
 								</letter>
 								<letter>
-									Ersti-Bags packen,
+									Ersti-Bags packen;
 								</letter>
 								<letter>
-									Ersti-Tage,
+									Ersti-Tage;
 								</letter>
 								<letter>
-									Prüfungsgoodies verteilen,
+									Prüfungsgoodies verteilen;
 								</letter>
 								<letter>
 									ETH-Days.
@@ -927,19 +927,19 @@
 							Organisation von Verbandsanlässen:
 							<letters>
 								<letter>
-									Summerbar,
+									Summerbar;
 								</letter>
 								<letter>
-									Punschausschank,
+									Punschausschank;
 								</letter>
 								<letter>
-									Activity Fair,
+									Activity Fair;
 								</letter>
 								<letter>
-									Projekti-Weekend,
+									Projekti-Weekend;
 								</letter>
 								<letter>
-									Nik's Hütte,
+									Nik's Hütte;
 								</letter>
 								<letter>
 									Erstsemestrigenfest.
@@ -950,10 +950,10 @@
 							Erstsemestrigenfest:
 							<letters>
 								<letter>
-									Verantwortung für die Planung und Durchführung,
+									Verantwortung für die Planung und Durchführung;
 								</letter>
 								<letter>
-									Zusammenstellung und Leitung des Organisationskomitees,
+									Zusammenstellung und Leitung des Organisationskomitees;
 								</letter>
 								<letter>
 									Nachbearbeitung und Dokumentation.
@@ -972,7 +972,7 @@
 							Services innerhalb des VSETH:
 							<letters>
 								<letter>
-									Unterstützung Betriebsadministration StuZ,
+									Unterstützung Betriebsadministration StuZ;
 								</letter>
 								<letter>
 									Unterstützung der Aktiven bei der Durchführung von Anlässen und Wissensweitergabe.
@@ -983,10 +983,10 @@
 							Neue Veranstaltungen:
 							<letters>
 								<letter>
-									Ideenfindung für neue Veranstaltungen,
+									Ideenfindung für neue Veranstaltungen;
 								</letter>
 								<letter>
-									Umsetzung neuer Projekte,
+									Umsetzung neuer Projekte;
 								</letter>
 								<letter>
 									Etablierung im Ressort Projekte oder ausserhalb bei grossem Anklang unter den Studierenden.
