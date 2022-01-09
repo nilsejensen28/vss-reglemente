@@ -1,4 +1,5 @@
 SHELL := /bin/bash
+PYTHON ?= python3.10
 
 SRCS = index.xml \
        01_Statuten.xml \
@@ -30,11 +31,10 @@ SRCS = index.xml \
        76_Infrastrukturreglement.xml
 
 .venv: requirements.txt
-	python -m venv .venv
-	source .venv/bin/activate && \
-		pip install --upgrade pip && \
+	${PYTHON} -m venv $@
+	source $@/bin/activate && \
 		pip install -r requirements.txt
-	touch .venv
+	touch $@
 
 .PHONY: all
 all: rst html sphinx json pdf
@@ -89,7 +89,8 @@ pdf: $(SRCS:xml=pdf)
 	latexmk -g -verbose -pdflua $<
 
 sphinx: .venv conf.py $(SRCS:xml=rst)
-	sphinx-build -b html . sphinx
+	source .venv/bin/activate && \
+		sphinx-build -b html . sphinx
 
 .PHONY: clean
 clean:
