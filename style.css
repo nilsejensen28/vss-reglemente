@@ -20,11 +20,13 @@ article {
 
 h1 {
 	counter-reset: section;
+	font-size: 2.25em;
 }
 
 h2 {
 	counter-increment: section;
 	counter-reset: subsection;
+	font-size: 2em;
 }
 
 h2::before {
@@ -34,6 +36,7 @@ h2::before {
 h3 {
 	counter-increment: subsection;
 	counter-reset: subsubsection;
+	font-size: 1.75em;
 }
 
 h3::before {
@@ -42,6 +45,7 @@ h3::before {
 
 h4 {
 	counter-increment: subsubsection;
+	font-size: 1.5em;
 }
 
 h4::before {
@@ -50,6 +54,8 @@ h4::before {
 
 h5 {
 	counter-increment: article;
+	font-size: 1.25em;
+	margin-bottom: 0;
 }
 
 h5::before {
@@ -112,5 +118,5 @@ ol.numerals > li {
 }
 
 ol.numerals > li::before {
-	content: counter(numerals, lower-latin) ") ";
+	content: counter(numerals, lower-roman) ") ";
 }
