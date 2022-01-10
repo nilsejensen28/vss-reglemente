@@ -25,8 +25,10 @@ class LatexEmitter(Visitor):
         assert self.indent_level >= 0
 
     def header(self, title):
-        self.emit_ln(r"\documentclass{scrbook}")
+        self.emit_ln(r"\documentclass{scrreprt}")
+        self.emit_ln(r"\KOMAoptions{chapterentrywithdots, parskip}")
         self.emit_ln(r"\usepackage{fontspec}")
+        self.emit_ln(r"\usepackage{microtype}")
         self.emit_ln(r"\setmainfont{Source Sans Pro}")
         self.emit_ln(r"\setsansfont{Source Sans Pro}")
         self.emit_ln(r"\usepackage{polyglossia}")
@@ -64,7 +66,9 @@ class LatexEmitter(Visitor):
         if element.getparent() is None:
             self.header(title)
         else:
-            self.emit_ln(r"\chapter{" + title + "}")
+            self.emit_ln(r"\chapter*{" + title + "}")
+            self.emit_ln(r"\addtocentrydefault{chapter}{}{" + title + "}")
+            self.emit_ln(r"\stepcounter{chapter}")
         self.article_counter = 1
 
         for child in element:
@@ -106,8 +110,8 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\par")
         self.emit_ln(r"\textbf{Art.\ " + str(self.article_counter) + ". " + title + "}")
         self.emit_ln(r"\label{" + id + "}")
-        self.emit_ln(r"\\")
         if not is_empty(element.text):
+            self.emit_ln(r"\\")
             self.emit_ln(element.text.strip())
 
         for child in element:
@@ -117,7 +121,7 @@ class LatexEmitter(Visitor):
         self.article_counter += 1
 
     def paragraphs(self, element):
-        self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}]")
+        self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}, topsep = 0pt, nosep]")
         self.indent()
         self.paragraph_counter = 1
 
@@ -140,7 +144,7 @@ class LatexEmitter(Visitor):
         self.paragraph_counter += 1
 
     def letters(self, element):
-        self.emit_ln(r"\begin{enumerate}[label=\alph*)]")
+        self.emit_ln(r"\begin{enumerate}[label=\alph*), topsep = 0pt, nosep]")
         self.indent()
         self.letter_counter = 0
 
@@ -164,7 +168,7 @@ class LatexEmitter(Visitor):
         self.letter_counter += 1
 
     def numerals(self, element):
-        self.emit_ln(r"\begin{enumerate}[label=\roman*.]")
+        self.emit_ln(r"\begin{enumerate}[label=\roman*., topsep = 0pt, nosep]")
         self.indent()
         self.numeral_counter = 1
 

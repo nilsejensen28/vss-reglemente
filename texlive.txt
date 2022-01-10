@@ -2,6 +2,7 @@ latex-bin
 latexmk
 koma-script
 fontspec
+microtype
 sourcesanspro
 polyglossia
 csquotes
