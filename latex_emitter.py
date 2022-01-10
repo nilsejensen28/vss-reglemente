@@ -199,9 +199,15 @@ class LatexEmitter(Visitor):
         for child in element:
             self.dispatch(child)
 
-        self.result += "} "
         if not is_empty(element.tail):
+            tail = element.tail.strip()
+            if tail[0] in [',', '.', ';']:
+                self.result += "}"
+            else:
+                self.result += "} "
             self.result += element.tail.strip()
+        else:
+            self.result += "} "
 
     def link(self, element):
         to = element.get("to")
@@ -218,6 +224,5 @@ class LatexEmitter(Visitor):
 
 
     def __str__(self):
-        # TODO
         return self.result
 
