@@ -204,9 +204,18 @@ class LatexEmitter(Visitor):
             self.result += element.tail.strip()
 
     def link(self, element):
-        # TODO
+        to = element.get("to")
+        text = element.text.strip()
+        self.emit(r"\href{" + to + "}{" + text)
+
         for child in element:
             self.dispatch(child)
+
+        self.emit("}")
+
+        if not is_empty(element.tail):
+            self.emit(element.tail.strip())
+
 
     def __str__(self):
         # TODO
