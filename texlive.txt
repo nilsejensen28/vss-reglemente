@@ -3,6 +3,7 @@ latexmk
 koma-script
 fontspec
 sourcesanspro
+polyglossia
 csquotes
 hyperref
 enumitem
@@ -30,3 +31,8 @@ refcount
 gettitlestring
 bookmark
 uniquecounter
+makecmds
+xkeyval
+luatexbase
+ctablestack
+hyphen-german

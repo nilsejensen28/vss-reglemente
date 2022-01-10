@@ -29,6 +29,8 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\usepackage{fontspec}")
         self.emit_ln(r"\setmainfont{Source Sans Pro}")
         self.emit_ln(r"\setsansfont{Source Sans Pro}")
+        self.emit_ln(r"\usepackage{polyglossia}")
+        self.emit_ln(r"\setdefaultlanguage[variant=swiss]{german}")
         self.emit_ln(r"\usepackage{csquotes}")
         self.emit_ln(r"\usepackage{hyperref}")
         self.emit_ln(r"\usepackage{enumitem}")
