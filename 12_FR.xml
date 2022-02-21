@@ -1,4 +1,7 @@
 <regulation id="12" title="Gremienreglement über den Fachvereinsrat" short="FR-Reglement">
+	<preamble>
+		Der Mitgliederrat gestützt auf Art. 20 der Statuten beschliesst:
+	</preamble>
 	<section title="Zusammensetzung">
 		<articles>
 			<article title="Teilnehmende">

@@ -77,6 +77,15 @@ class LatexEmitter(Visitor):
         if element.getparent() is None:
             self.footer()
 
+    def preamble(self, element):
+        text = element.text.strip()
+        self.emit(r"\emph{" + text)
+
+        for child in element:
+            self.dispatch(child)
+
+        self.emit_ln("}")
+
     def section(self, element):
         title = element.get("title")
         self.emit_ln(r"\section{" + title + "}")

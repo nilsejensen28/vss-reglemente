@@ -109,6 +109,18 @@ class HtmlEmitter(Visitor):
         if element.getparent() is None:
             self.footer()
 
+    def preamble(self, element):
+        text = element.text.strip()
+        self.emit_ln("<em>")
+        self.indent()
+        self.emit_ln(text)
+
+        for child in element:
+            self.dispatch(child)
+
+        self.dedent()
+        self.emit_ln("</em>")
+
     def section(self, element):
         title = element.get("title")
         self.emit_ln('<section>')

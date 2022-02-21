@@ -1,4 +1,7 @@
 <regulation id="72.05" title="Fondsreglement über den Fonds für Coronaunterstützung" short="Coronafonds">
+	<preamble>
+		Der Mitgliederrat gestützt auf Art. 12 des Finanzreglements beschliesst:
+	</preamble>
 	<section title="Allgemeines">
 		<articles>
 			<article title="Verwendungszweck">
@@ -63,4 +66,4 @@
 		</articles>
 	</section>
 </regulation>
-<!-- vim: set ts=2 sw=2 noet -->
+<!-- vim: set ts=2 sw=2 noet : -->

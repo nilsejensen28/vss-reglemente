@@ -23,6 +23,8 @@ class Visitor():
                     self.bylaws(element)
                 case "regulation":
                     self.regulation(element)
+                case "preamble":
+                    self.preamble(element)
                 case "section":
                     self.section(element)
                 case "subsection":
@@ -69,11 +71,11 @@ class Visitor():
     def bylaws(self, element):
         raise NotImplementedError("bylaws")
 
-    def include(self, element):
-        raise NotImplementedError("include")
-
     def regulation(self, element):
         raise NotImplementedError("regulation")
+
+    def preamble(self, element):
+        raise NotImplementedError("preamble")
 
     def section(self, element):
         raise NotImplementedError("section")
