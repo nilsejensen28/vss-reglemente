@@ -3,17 +3,18 @@ from visitor import Visitor
 
 class Checker(Visitor):
     def bylaws(self, element):
-        assert is_empty(element.text)
-        assert is_empty(element.tail)
-
-    def include(self, element):
-        assert element.getparent().tag == "bylaws"
+        assert element.getparent() is None
         assert is_empty(element.text)
         assert is_empty(element.tail)
 
     def regulation(self, element):
+        assert element.getparent() is None or element.getparent().tag == "bylaws"
         assert not is_empty(element.get("title"))
         assert is_empty(element.text)
+        assert is_empty(element.tail)
+
+    def preamble(self, element):
+        assert element.getparent().tag == "regulation"
         assert is_empty(element.tail)
 
     def section(self, element):

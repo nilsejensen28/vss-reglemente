@@ -1,5 +1,7 @@
 <regulation id="76" title="Reglement über die Infrastruktur des VSETH" short="Infrastrukturreglement">
-	Der Mitgliederrat, gestützt auf Art. 38 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 38 der Statuten, beschliesst:
+	</preamble>
 	<section title="Räume">
 		<articles>
 			<article title="Nutzergruppen">

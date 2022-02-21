@@ -1,5 +1,7 @@
 <regulation id="13" title="Allgemeines Gremienreglement über die Ausschüsse des VSETH" short="Ausschussreglement">
-	Der Mitgliederrat, gestützt auf Art. 22 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 22 der Statuten, beschliesst:
+	</preamble>
 	<section title="Zusammensetzung">
 		<articles>
 			<article title="Mitglieder">

@@ -62,6 +62,15 @@ class RstEmitter(Visitor):
             base = re.sub(r"\.xml$", "", element.base)
             self.emit_ln(base)
 
+    def preamble(self, element):
+        text = element.text.strip()
+        self.emit_ln(f"*{text}")
+
+        for child in element:
+            self.dispatch(child)
+
+        self.emit_ln("*")
+
     def section(self, element):
         title = element.get("title")
         self.emit_ln()

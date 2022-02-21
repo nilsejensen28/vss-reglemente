@@ -1,5 +1,7 @@
 <regulation id="13.02" title="Gremienreglement über den IT-Ausschuss" short="ITA-Reglement">
-	Der Mitgliederrat, gestützt auf Art. 9 des Allgemeinen Ausschussreglements, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 9 des Allgemeinen Ausschussreglements, beschliesst:
+	</preamble>
 	<section title="Zweck">
 		<articles>
 			<article title="Zweck">

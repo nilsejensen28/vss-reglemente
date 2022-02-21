@@ -1,5 +1,7 @@
 <regulation id="51" title="Reglement über die Fachvereine des VSETH" short="Fachvereinsreglement">
-	Der Mitgliederrat, gestützt auf Art. 15 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 15 der Statuten, beschliesst:
+	</preamble>
 	<section title="Mitglieder">
 		<articles>
 			<article title="Ordentliche Mitglieder">

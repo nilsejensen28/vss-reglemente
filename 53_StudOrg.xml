@@ -1,5 +1,7 @@
 <regulation id="53" title="Reglement über die studentischen Organisationen" short="StudOrg-Reglement">
-	Der Mitgliederrat, gestützt auf Art. 40 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 40 der Statuten, beschliesst:
+	</preamble>
 	<section title="Allgemeines">
 		<articles>
 			<article title="Verordnung studentische Organisationen">

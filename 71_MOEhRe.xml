@@ -1,5 +1,7 @@
 <regulation id="71" title="Reglement über die Verfahren der Mitwirkung und das Öffentlichkeitsprinzip im VSETH" short="Mitwirkungs- und Öffentlichkeitsreglement (MÖhRe)">
-	Der Mitgliederrat, gestützt auf Art. 8 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 8 der Statuten, beschliesst:
+	</preamble>
 	<section title="Allgemeines">
 		<articles>
 			<article title="Grundlagen">
@@ -781,4 +783,4 @@
 		</articles>
 	</section>
 </regulation>
-<!-- vim: set ts=2 sw=2 noet -->
+<!-- vim: set ts=2 sw=2 noet : -->

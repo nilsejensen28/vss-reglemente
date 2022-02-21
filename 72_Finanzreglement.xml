@@ -1,5 +1,7 @@
 <regulation id="72" title="Reglement über die Finanzen des VSETH" short="Finanzreglement">
-	Der Mitgliederrat, gestützt auf Art. 10 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 10 der Statuten, beschliesst:
+	</preamble>
 	<section title="Allgemeines">
 		<articles>
 			<article title="Geschäftsperiode">

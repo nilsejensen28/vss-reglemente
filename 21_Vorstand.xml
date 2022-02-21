@@ -1,5 +1,8 @@
 <regulation id="21" title="Gremienreglement über den VSETH-Vorstand" short="Vorstandsreglement">
-	Der Mitgliederrat, gestützt auf Art. 24 der Statuten, beschliesst:
+	<preamble>
+		Der Mitgliederrat, gestützt auf Art. 24 der Statuten, beschliesst:
+	</preamble>
+	<!-- TODO missing section -->
 	<articles>
 		<article title="Mitglieder">
 			<paragraphs>
