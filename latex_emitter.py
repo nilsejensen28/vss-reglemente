@@ -84,15 +84,20 @@ class LatexEmitter(Visitor):
             self.footer()
 
     def regulation(self, element):
+        id = element.get("id")
         title = element.get("title")
         short = element.get("short")
         if short:
-            title = f"{title} ({short})"
+            title = f"{title} ({short}; RSVSETH " + id + ")"
+            short = short + " (RSVSETH " + id + ")"
+        else:
+            title = title + " (RSVSETH " + id + ")"
+            short = title
         if element.getparent() is None:
             self.header(title)
         else:
             self.emit_ln(r"\chapter*{" + title + "}")
-            self.emit_ln(r"\addtocentrydefault{chapter}{}{" + title + "}")
+            self.emit_ln(r"\addtocentrydefault{chapter}{}{" + short + "}")
             self.emit_ln(r"\stepcounter{chapter}")
         self.article_counter = 1
 
