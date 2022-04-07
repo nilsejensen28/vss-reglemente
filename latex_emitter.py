@@ -62,6 +62,7 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\usepackage{enumitem}")
         self.emit_ln(r"\usepackage{graphicx}")
         self.emit_ln(r"\usepackage{svg}")
+        self.emit_ln(r"\setcounter{secnumdepth}{3}")
         self.emit_ln(r"\renewcommand*{\thesection}{\arabic{section}}")
         self.emit_ln(r"\RedeclareSectionCommand[tocindent=1em,tocnumwidth=1.25em]{section}")
         self.emit_ln(r"\RedeclareSectionCommand[tocindent=3.25em,tocnumwidth=2em]{subsection}")
