@@ -35,6 +35,12 @@ class JsonEmitter(Visitor):
         del self.article_counter
         self.ids.pop()
 
+    def preamble(self, element):
+        text = element.text.strip()
+        self.emit({"type": "preamble", "text": text})
+
+        # TODO
+
     def section(self, element):
         title = element.get("title")
         self.ids.append(str(self.section_counter))
