@@ -58,7 +58,7 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\usepackage{polyglossia}")
         self.emit_ln(r"\setdefaultlanguage[variant=swiss]{german}")
         self.emit_ln(r"\usepackage{csquotes}")
-        self.emit_ln(r"\usepackage{hyperref}")
+        self.emit_ln(r"\usepackage[hidelinks]{hyperref}")
         self.emit_ln(r"\usepackage{enumitem}")
         self.emit_ln(r"\usepackage{graphicx}")
         self.emit_ln(r"\usepackage{svg}")
