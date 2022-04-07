@@ -29,6 +29,7 @@ __pycache__/
 *.pdf
 *.tex
 *.toc
+/svg-inkscape
 
 # Sphinx
 sphinx/

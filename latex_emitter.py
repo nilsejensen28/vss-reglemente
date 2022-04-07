@@ -24,6 +24,30 @@ class LatexEmitter(Visitor):
         self.indent_level -= 1
         assert self.indent_level >= 0
 
+    def titlepage(self, title):
+        self.emit_ln(r"\begin{titlepage}")
+        self.indent()
+        self.emit_ln(r"\centering")
+        self.emit_ln(r"\hspace{0pt}")
+        self.emit_ln(r"\vfill")
+        self.emit_ln(r"\includesvg{vseth_Logo_bunt.svg}")
+        self.emit_ln(r"\par")
+        self.emit_ln(r"{\Huge")
+        self.indent()
+        self.emit_ln(r"\textbf{" + title + "}")
+        self.emit_ln(r"\par")
+        self.dedent()
+        self.emit_ln(r"}")
+        self.emit_ln(r"{\LARGE")
+        self.indent()
+        self.emit_ln(r"\today")
+        self.emit_ln(r"\par")
+        self.dedent()
+        self.emit_ln(r"}")
+        self.emit_ln(r"\vfill")
+        self.dedent()
+        self.emit_ln(r"\end{titlepage}")
+
     def header(self, title):
         self.emit_ln(r"\documentclass{scrreprt}")
         self.emit_ln(r"\KOMAoptions{chapterentrydots, parskip}")
@@ -36,10 +60,11 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\usepackage{csquotes}")
         self.emit_ln(r"\usepackage{hyperref}")
         self.emit_ln(r"\usepackage{enumitem}")
-        self.emit_ln(r"\title{" + title + "}")
+        self.emit_ln(r"\usepackage{graphicx}")
+        self.emit_ln(r"\usepackage{svg}")
         self.emit_ln(r"\begin{document}")
         self.indent()
-        self.emit_ln(r"\maketitle")
+        self.titlepage(title)
 
     def footer(self):
         self.dedent()
