@@ -50,7 +50,7 @@ class LatexEmitter(Visitor):
 
     def header(self, title):
         self.emit_ln(r"\documentclass{scrreprt}")
-        self.emit_ln(r"\KOMAoptions{chapterentrydots, parskip}")
+        self.emit_ln(r"\KOMAoptions{DIV = 14, chapterentrydots, parskip}")
         self.emit_ln(r"\usepackage{fontspec}")
         self.emit_ln(r"\usepackage{microtype}")
         self.emit_ln(r"\setmainfont{Source Sans Pro}")
