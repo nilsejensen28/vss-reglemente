@@ -122,13 +122,16 @@ class LatexEmitter(Visitor):
 
     def section(self, element):
         title = element.get("title")
+        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\section{" + title + "}")
+        self.emit_ln(r"\nobreak")
 
         for child in element:
             self.dispatch(child)
 
     def subsection(self, element):
         title = element.get("title")
+        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsection{" + title + "}")
 
         for child in element:
@@ -136,6 +139,7 @@ class LatexEmitter(Visitor):
 
     def subsubsection(self, element):
         title = element.get("title")
+        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsubsection{" + title + "}")
 
         for child in element:
@@ -150,7 +154,7 @@ class LatexEmitter(Visitor):
         slug = slugify(title)
         self.ids.append(slug)
         id = ".".join(self.ids)
-        self.emit_ln(r"\par")
+        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\textbf{Art.\ " + str(self.article_counter) + ". " + title + "}")
         self.emit_ln(r"\label{" + id + "}")
         if not is_empty(element.text):
@@ -159,6 +163,8 @@ class LatexEmitter(Visitor):
 
         for child in element:
             self.dispatch(child)
+
+        self.emit_ln(r"\par")
 
         self.ids.pop()
         self.article_counter += 1
