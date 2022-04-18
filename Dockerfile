@@ -66,5 +66,10 @@ RUN \
 	set -euxo pipefail; \
 	source .venv/bin/activate; \
 	pip install -r requirements.txt; \
+	apt-get update; \
+	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
+		inkscape \
+	; \
+	rm --recursive --force /var/lib/apt/lists/*; \
 	tlmgr install --reinstall $(cat texlive.txt); \
 	luaotfload-tool --update;

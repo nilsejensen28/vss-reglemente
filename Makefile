@@ -85,7 +85,7 @@ pdf: ${SRCS:xml=pdf}
 		./main.py $< --format tex --output $@
 
 %.pdf: %.tex
-	latexmk -g -verbose -pdflua $<
+	latexmk -g -verbose -shell-escape -pdflua $<
 
 sphinx: conf.py ${SRCS:xml=rst}
 	source .venv/bin/activate && \
@@ -113,7 +113,7 @@ docker:
 		--volume ${PWD}:/app/src \
 		--volume ${PWD}/out:/app/build \
 		builder \
-		/bin/bash -c "cp src/{Makefile,*.py,*.xml} ./; make -B -i build"
+		/bin/bash -c "cp src/{Makefile,*.py,*.xml,*.svg} ./; make -B -i build"
 
 .PHONY: build_reglemente
 build_reglemente: docker

@@ -38,3 +38,12 @@ xkeyval
 luatexbase
 ctablestack
 hyphen-german
+lua-uni-algos
+graphics-cfg
+trimspaces
+tools
+xcolor
+transparent
+pgf
+epstopdf-pkg
+catchfile
