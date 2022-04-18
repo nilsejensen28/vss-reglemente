@@ -65,8 +65,9 @@ class LatexEmitter(Visitor):
         self.emit_ln(r"\usepackage{svg}")
         self.emit_ln(r"\setcounter{secnumdepth}{3}")
         self.emit_ln(r"\renewcommand*{\thesection}{\arabic{section}}")
-        self.emit_ln(r"\RedeclareSectionCommand[tocindent=1em,tocnumwidth=1.25em]{section}")
-        self.emit_ln(r"\RedeclareSectionCommand[tocindent=3.25em,tocnumwidth=2em]{subsection}")
+        self.emit_ln(r"\RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}")
+        self.emit_ln(r"\RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}")
+        self.emit_ln(r"\RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}")
         self.emit_ln(r"\begin{document}")
         self.indent()
         self.titlepage(title)
@@ -130,10 +131,12 @@ class LatexEmitter(Visitor):
         for child in element:
             self.dispatch(child)
 
+
     def subsection(self, element):
         title = element.get("title")
         self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsection{" + title + "}")
+        self.emit_ln(r"\nobreak")
 
         for child in element:
             self.dispatch(child)
@@ -142,6 +145,7 @@ class LatexEmitter(Visitor):
         title = element.get("title")
         self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsubsection{" + title + "}")
+        self.emit_ln(r"\nobreak")
 
         for child in element:
             self.dispatch(child)
@@ -155,22 +159,23 @@ class LatexEmitter(Visitor):
         slug = slugify(title)
         self.ids.append(slug)
         id = ".".join(self.ids)
-        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\textbf{Art.\ " + str(self.article_counter) + ". " + title + "}")
         self.emit_ln(r"\label{" + id + "}")
+        self.emit_ln(r"\\")
         if not is_empty(element.text):
-            self.emit_ln(r"\\")
             self.emit_ln(element.text.strip())
 
         for child in element:
             self.dispatch(child)
 
         self.emit_ln(r"\par")
+        self.emit_ln(r"\filbreak")
 
         self.ids.pop()
         self.article_counter += 1
 
     def paragraphs(self, element):
+        self.emit_ln(r"\vspace{-2\parskip}")
         self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}, topsep = 0pt, nosep]")
         self.indent()
         self.paragraph_counter = 1
@@ -194,6 +199,7 @@ class LatexEmitter(Visitor):
         self.paragraph_counter += 1
 
     def letters(self, element):
+        self.emit_ln(r"\vspace{-\parskip}")
         self.emit_ln(r"\begin{enumerate}[label=\alph*), topsep = 0pt, nosep]")
         self.indent()
         self.letter_counter = 0
@@ -218,6 +224,7 @@ class LatexEmitter(Visitor):
         self.letter_counter += 1
 
     def numerals(self, element):
+        self.emit_ln(r"\vspace{-\parskip}")
         self.emit_ln(r"\begin{enumerate}[label=\roman*., topsep = 0pt, nosep]")
         self.indent()
         self.numeral_counter = 1
