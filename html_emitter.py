@@ -273,6 +273,10 @@ class HtmlEmitter(Visitor):
         if not is_empty(element.tail):
             self.result += element.tail.strip()
 
+    def comment(self, element):
+        if not is_empty(element.tail):
+            self.result += element.tail.strip()
+
     def __str__(self):
         result = re.sub('</q> ([.,])', r'</q>\1', self.result)
         result = re.sub('</a> ([.,])', r'</a>\1', result)

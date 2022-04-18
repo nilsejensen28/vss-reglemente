@@ -221,6 +221,10 @@ class RstEmitter(Visitor):
         for child in element:
             self.dispatch(child)
 
+    def comment(self, element):
+        if not is_empty(element.tail):
+            self.result += element.tail.strip()
+
     def __str__(self):
         result = re.sub('" ([.,])', r'"\1', self.result)
         result = re.sub('^\s+$', '', result)

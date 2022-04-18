@@ -170,5 +170,9 @@ class JsonEmitter(Visitor):
         for child in element:
             self.dispatch(child)
 
+    def comment(self, element):
+        # TODO
+        pass
+
     def __str__(self):
         return json.dumps(self.documents, ensure_ascii=False, indent='\t')

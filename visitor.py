@@ -52,7 +52,7 @@ class Visitor():
                 case "link":
                     self.link(element)
                 case etree.Comment:
-                    pass
+                    self.comment(element)
                 case _:
                     raise RuntimeWarning(f"Unhandled element <{element.tag}>")
         except Exception as e:
@@ -163,3 +163,6 @@ class Visitor():
 
     def link(self, element):
         raise NotImplementedError("link")
+
+    def comment(self, element):
+        raise NotImplementedError("comment")

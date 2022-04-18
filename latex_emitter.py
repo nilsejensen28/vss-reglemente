@@ -271,6 +271,9 @@ class LatexEmitter(Visitor):
         if not is_empty(element.tail):
             self.emit(element.tail.strip())
 
+    def comment(self, element):
+        if not is_empty(element.tail):
+            self.result += element.tail.strip()
 
     def __str__(self):
         return self.result
