@@ -176,7 +176,7 @@ class LatexEmitter(Visitor):
 
     def paragraphs(self, element):
         self.emit_ln(r"\vspace{-2\parskip}")
-        self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}, topsep = 0pt, nosep]")
+        self.emit_ln(r"\begin{enumerate}[label=\textsuperscript{\arabic*}, topsep = 0pt, nosep, labelindent = 0pt, leftmargin = *]")
         self.indent()
         self.paragraph_counter = 1
 
