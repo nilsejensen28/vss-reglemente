@@ -113,7 +113,7 @@ docker:
 		--volume ${PWD}:/app/src \
 		--volume ${PWD}/out:/app/build \
 		builder \
-		/bin/bash -c "cp src/{Makefile,*.py,*.xml,*.svg} ./; make -B -i build"
+		/bin/bash -c "cp src/{Makefile,*.py,*.xml,*.svg} ./; make --always-make --keep-going build"
 
 .PHONY: build_reglemente
 build_reglemente: docker
