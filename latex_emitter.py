@@ -124,7 +124,6 @@ class LatexEmitter(Visitor):
 
     def section(self, element):
         title = element.get("title")
-        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\section{" + title + "}")
         self.emit_ln(r"\nobreak")
 
@@ -134,7 +133,6 @@ class LatexEmitter(Visitor):
 
     def subsection(self, element):
         title = element.get("title")
-        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsection{" + title + "}")
         self.emit_ln(r"\nobreak")
 
@@ -143,7 +141,6 @@ class LatexEmitter(Visitor):
 
     def subsubsection(self, element):
         title = element.get("title")
-        self.emit_ln(r"\filbreak")
         self.emit_ln(r"\subsubsection{" + title + "}")
         self.emit_ln(r"\nobreak")
 
@@ -169,7 +166,6 @@ class LatexEmitter(Visitor):
             self.dispatch(child)
 
         self.emit_ln(r"\par")
-        self.emit_ln(r"\filbreak")
 
         self.ids.pop()
         self.article_counter += 1
