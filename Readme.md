@@ -6,6 +6,7 @@
  - Python 3.10 (for `match`)
  - TexLive
  - latexmk
+ - inkscape
 
 ## Compilation
 
