@@ -1,4 +1,3 @@
-lxml
-roman
-python-slugify[unidecode]
-sphinx
+lxml==4.9.1
+roman==3.3
+Jinja2==3.1.2

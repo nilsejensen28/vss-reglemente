@@ -1,0 +1,7 @@
+# VSETH Rechtssammlung
+
+Die gesamte Rechtssammlung des VSETH, jetzt auch durchsuchbar!
+
+{% for regl in bylaws.regulations %}
+{% if '.' in regl.id %}    {% endif %}- [{{regl.title}}]({{regl.id}}.md)
+{% endfor %}
