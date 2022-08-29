@@ -202,6 +202,7 @@ class Subsection:
 
         # values
         self.title = element.get("title")
+        self.sec = sec_counter
         self.number = subsec_counter
         self.articles = []
         self.subsubsections = []
@@ -237,6 +238,8 @@ class Subsubsection:
 
         # values
         self.title = element.get("title")
+        self.sec = sec_counter
+        self.subsec = subsec_counter
         self.number = subsubsec_counter
         self.articles = []
         for child in element:

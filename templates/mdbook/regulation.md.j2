@@ -1,87 +1,129 @@
+{#
+ # Template for individual regulations in an mdBook
+ # 
+ # This template is organized into the document body at the bottom and a set of macros
+ # for all the different classes in bylaws at the top.
+ #
+ # Since this generated Markdown you mus be *extremely* careful with whitespace. If the
+ # indentation seems weird to you then this is most probably intentional and changing it
+ # will lead to funny/garbled output. You probably want to read the whitespace control 
+ # section in the Jinja documentation: https://jinja.palletsprojects.com/en/3.1.x/templates/#whitespace-control
+ #}
+
+
+{#
+ # Section
+ #}
 {% macro section(sec) %}
 ## {{ sec.number }}. {{sec.title}}
 
-{% for art in sec.articles %}
+{% for art in sec.articles -%}
 {{ article(art) }}
-{% endfor %}
-{% for subsec in sec.subsections%}
+{%- endfor %}
+{%- for subsec in sec.subsections -%}
 {{ subsection(subsec) }}
-{% endfor%}
-{% endmacro %}
+{% endfor -%}
+{%- endmacro -%}
 
+{# 
+ # Subsection
+ #}
 {% macro subsection(subsec) %}
-### {{ subsec.number }}. {{subsec.title}}
+### {{ subsec.sec }}.{{ subsec.number }}. {{subsec.title}}
 
-{% for art in subsec.articles %}
+{% for art in subsec.articles -%}
 {{ article(art) }}
-{% endfor %}
-{% for subsubsec in subsec.subsubsections%}
+{%- endfor %}
+{%- for subsubsec in subsec.subsubsections -%}
 {{ subsubsection(subsubsec) }}
-{% endfor%}
-{% endmacro %}
+{% endfor -%}
+{%- endmacro -%}
 
+{# 
+ # Subsubsection
+ #}
 {% macro subsubsection(subsubsec) %}
-### {{ subsubsec.number }}. {{subsubsec.title}}
+#### {{subsubsec.sec }}.{{subsubsec.subsec }}.{{ subsubsec.number }}. {{subsubsec.title}}
 
-{% for art in subsubsec.articles %}
+{% for art in subsubsec.articles -%}
 {{ article(art) }}
-{% endfor %}
-{% endmacro %}
+{% endfor -%}
+{%- endmacro -%}
 
+{# 
+ # Articles
+ #}
 {% macro article(art) -%}
 <article id="art_{{ art.number }}">  
 
 **Art. {{ art.number }} {{ art.title }}**
 
-{% if art.text | length > 0%}
-    {{- set_text(art.text) }}
-{% endif -%}
-{% if art.letters | length > 0 %}
+{% if art.text | length > 0 -%}
+    {{ set_text(art.text) }}
+{%- endif -%}
+
+{%- if art.letters | length > 0 %}
 <ol class="letters">
-    {%- for lit in art.letters %}
+    {%- for lit in art.letters -%}
         {{ letter(lit) }}
-    {%- endfor %}
+    {%- endfor -%}
 </ol>
-{%- if art.letter_tail is not none %}{{art.letter_tail}}{% endif %}
-    {% endif %}
-    {% for abs in art.paragraphs %}
-        {{ paragraph(abs) }}
-    {% endfor %}
+{%- if art.letter_tail is not none %}{{ art.letter_tail }}{% endif %}
+{% endif -%}
+
+{%- for abs in art.paragraphs -%}
+{{ paragraph(abs) }}
+{%- endfor %}
 </article>
 {% endmacro%}
 
-{% macro paragraph(abs) %}
+{# 
+ # Paragraphs
+ #}
+{%- macro paragraph(abs) -%}
 <sup>{{ abs.number }}</sup>
-    {%- if abs.text | length > 0 -%}
+{#- text -#}
+{%- if abs.text | length > 0 -%}
 {{ set_text(abs.text) }}
-    {%- endif -%}
-    {%- if abs.letters | length > 0 %}
-    <ol class="letters">
-        {%- for lit in abs.letters -%}
-        {{ letter(lit) }}
-        {%- endfor %}
+{% endif -%}
+
+{#- letters -#}
+{%- if abs.letters | length > 0 %}
+<ol class="letters">
+{%- for lit in abs.letters -%}
+{{ letter(lit) }}
+{%- endfor -%}
 </ol>
-    {%- if abs.letter_tail is not none %}{{ abs.letter_tail}}{% endif %}
-    {% endif %}
+{%- if abs.letter_tail is not none %}{{ abs.letter_tail }}{% endif %}
+{% endif %}
 {% endmacro %}
 
+{# 
+ # Letters
+ #}
 {% macro letter(lit) %}
 <li>
-{% if lit.text | length > 0 -%}
-    {{ set_text(lit.text) }}
+{%- if lit.text | length > 0 %}
+{{ set_text(lit.text) }}
 {% endif -%}
-    {% for num in lit.numerals %}
-    {{ numeral(num) }}
-    {% endfor %}
+{%- for num in lit.numerals -%}
+{{ numeral(num) }}
+{%- endfor -%}
 </li>
 {% endmacro %}
 
+{# 
+ # Numerals
+ #}
 {% macro numeral(num) %}
 1. {% if num.text | length > 0 -%}
 {{ set_text(num.text) }}
 {%- endif -%}
 {% endmacro %}
 
+{# 
+ # Setting text elements
+ #}
 {%- macro set_text(text_elems, trim=True) -%}
     {%- for elem in text_elems -%}
         {%- if elem is string -%}
@@ -94,15 +136,18 @@
     {%- endfor -%}
 {%- endmacro -%}
 
+{# 
+ # Document Body
+ #}
 <style>
 .letters {
     list-style-type: lower-latin;
 }
 </style>
 
-
 # {{regl.title}}
 
+{# Subtitle with id and short title#}
 **RSVSETH {{regl.id}}
 {%- if regl.short is not none or regl.abbrev is not none -%} (
     {%- if regl.short is not none -%}{{regl.short}}{%- endif -%}
@@ -110,12 +155,11 @@
     {%- if regl.abbrev is not none -%}{{regl.abbrev}}{%- endif -%})
 {%- endif -%}**
 
-{% if regl.preamble is defined%}
-*{{- regl.preamble.text|trim -}}*
-{% endif %}
+{%- if regl.preamble is defined -%}
+*{{ regl.preamble.text|trim }}*
+{%- endif -%}
 
 {% for art in regl.articles %}
-Art.
 {{ article(art) }}
 {% endfor %}
 {% for sec in regl.sections %}
