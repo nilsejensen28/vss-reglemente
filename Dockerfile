@@ -12,18 +12,11 @@ COPY texlive.profile  install-tl/
 RUN \
 	set -euxo pipefail; \
 	apt-get update; \
-	apt-get upgrade --assume-yes; \
-	echo "Installing Python..."; \
 	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-		software-properties-common \
+                texlive-luatex \
+		python3-venv \
 	; \
-	add-apt-repository ppa:deadsnakes; \
-	apt-get update; \
-	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-		python3.10-minimal \
-		python3.10-venv \
-	; \
-	python3.10 -m venv --upgrade-deps .venv; \
+	python3 -m venv --upgrade-deps .venv; \
 	apt-get remove --assume-yes --purge software-properties-common; \
 	apt-get autoremove --assume-yes; \
 	echo "Installing TeXLive..."; \
