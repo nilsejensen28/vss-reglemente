@@ -12,11 +12,33 @@ SRCS = index.xml \
        21_Vorstand.xml \
        21.01_Vorstandspflichtenheft.xml \
        21.02_GS_Pflichtenheft.xml \
+	   21.03_AVES.xml \
+	   21.04_Informationsmedium.xml \
+	   21.05_Mitgliedschaft.xml \
        22_Komissionsreglement.xml \
+	   22.01_Challenge.xml \
+	   22.02_Debattierclub.xml \
+	   22.03_ETH_MUN.xml \
+	   22.04_ExBeKo.xml \
+	   22.05_Filmstelle.xml \
+	   22.06_FLiK.xml \
+	   22.07_FC.xml \
+	   22.08_FK.xml \
+	   22.09_GECo.xml \
+	   22.11_KI.xml \
+	   22.12_Kulturstelle.xml \
+	   22.13_Nightline.xml \
+	   22.14_PapperlaPub.xml \
+	   22.15_Polykum.xml \
+	   22.16_SSC.xml \
+	   22.17_SPOD.xml \
+	   22.18_TQ.xml \
+	   22.19_SEK.xml \
        31_GPK_Reglement.xml \
        51_Fachvereinsreglement.xml \
        52_Vertretungsreglement.xml \
        53_StudOrg.xml \
+	   53.01_StudOrg.xml \
        71_MOEhRe.xml \
        72_Finanzreglement.xml \
        72.01_Immobilienfonds.xml \

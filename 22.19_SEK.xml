@@ -1,0 +1,111 @@
+<regulation id="21.19" title="Verordnung über die Softwareentwicklungskommission" short="Kommissionsverordnung SEK">
+    <preamble>
+		Der VSETH-Vorstand, gestützt auf Art. 8 des Allgemeinen Kommissionsreglements, beschliesst:
+	</preamble>
+    <section title="Zweck">
+        <articles>
+            <article title="Zweck">
+                Die Kommission <quote>Softwareentwicklungskommission</quote>, nachfolgend <quote>SEK</quote> genannt, bezweckt:
+                <letters>
+                    <letter>
+                        die Entwicklung neuer Softwareprojekte und den Betrieb bestehender IT-Services, die die Arbeit des VSETH und ihm nahestehender Organisationen unterstützen oder Dienstleistungen für Studierende bieten;
+                    </letter>
+                    <letter>
+                        das Anbieten von Weiterbildungen und Möglichkeiten zum Sammeln von praktischer Erfahrung bei der Softwareentwicklung und dem Softwarebetrieb;
+                    </letter>
+                    <letter>
+                        die Förderung und Pflege einer aktiven Software-Community im Umfeld der VSETH Softwareentwicklungsplattform und der VSETH-IT.
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
+    <section title="Kommissionsorgane">
+        <articles>
+            <article title="Kommissionsvorstand">
+                <paragraphs>
+                    <paragraph>
+                        Das Präsidium setzt sich aus dem Präsidenten bzw. der Präsidentin und dem Vizepräsidenten bzw. der Vizepräsidentin zusammen. Das Vizepräsidium unterstützt den Präsidenten bzw. die Präsidentin und übernimmt in seiner bzw. ihrer Abwesenheit alle Pflichten des Präsidiums.
+                    </paragraph>
+                    <paragraph>
+                        Der Vorstand besteht aus maximal zehn weiteren Vorstandsmitgliedern.
+                    </paragraph>
+                    <paragraph>
+                        Die reguläre Amtsperiode aller Vorstandsmitglieder richtet sich nach dem Allgemeinen Kommissionsreglement.
+                    </paragraph>
+                    <paragraph>
+                        Der Vorstand kann für die Unterstützung seiner Arbeit weitere Kommissionsaktive ohne Stimmrecht ernennen.
+                    </paragraph>
+                    <paragraph>
+                        Der Kommissionsvorstand ist für die Verwaltung der Berechtigungen für Kommissionsaktive zuständig.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Weitere Kommissionsorgane">
+                Es bestehen keine weiteren Kommissionsorgane.
+            </article>
+        </articles>
+    </section>
+    <section title="Aufgaben">
+        <articles>
+            <article title="Tätigkeit">
+                <paragraphs>
+                    <paragraph>
+                        Die Kommission plant und entwickelt Softwareapplikationen im und um den VSETH. Im Fokus stehen dabei die in Abs. 2 genannten Bereiche. 
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission konzentriert sich auf die Entwicklung von Software zur Anwendung in studentischen Organisationen im Umfeld des VSETH und zum Erbringen von Dienstleistungen für Studierende der ETH Zürich. 
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission führt regelmässig Events im Sinne des Kommissionszwecks gemäss Art. 1 durch.
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission entwickelt Softwareprojekte ausschliesslich gemäss der Softwareentwicklungsweisung des VSETH.
+                    </paragraph>
+                    <paragraph>
+                        Weitere Veranstaltungen und Projekte können im Rahmen der zur Verfügung stehenden Ressourcen durchgeführt werden, sofern sie dem in Art. 1 formulierten Zweck entsprechen.
+                    </paragraph>
+                    <paragraph>            
+                        Die Kommission wirbt auf geeignete Weise für ihre Tätigkeit und Anlässe.
+                    </paragraph>
+                    <paragraph>
+                        Die Hauptzielgruppe der Kommission sind Studierende der ETH Zürich.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Zusammenarbeit">
+                <paragraphs>
+                    <paragraph>
+                        Die Kommission ist um eine aktive Zusammenarbeit mit externen Partnern und Partnerinnen aus Forschung und Wirtschaft bemüht.
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission involviert den IT-Ausschuss (ITA) in wichtigen strategischen Entscheidungen und arbeitet eng mit dem ITA zusammen.
+                    </paragraph>
+                    <paragraph>
+                        Das Präsidium der SEK ist angehalten, an den Sitzungen des ITA als Beobachtender bzw. Beobachtende gemäss Art. 4 des ITA-Reglements teilzunehmen.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Finanzielle Mittel">
+                Die Kommission ist nicht gewinnorientiert, aber um Kostenneutralität bemüht.
+            </article>
+        </articles>
+    </section>
+    <section title="Schlussbestimmungen">
+        <articles>
+            <article title="Revisionsbestimmungen">
+                Diese Verordnung wird vom VSETH-Vorstand mit absoluter Mehrheit erlassen. 
+            </article>
+            <article title="Version">
+                <paragraphs>
+                    <paragraph>
+                        Diese Verordnung wurde vom VSETH-Vorstand an seiner Sitzung vom 13. September 2022 genehmigt.
+                    </paragraph>
+                    <paragraph>
+                        Sie tritt am 19. September 2022 in Kraft.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+</regulation>
