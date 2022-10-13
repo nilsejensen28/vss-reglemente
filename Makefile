@@ -39,7 +39,7 @@ SRCS = index.xml \
        52_Vertretungsreglement.xml \
        53_StudOrg.xml \
 	   53.01_StudOrg.xml \
-       71_MOEhRe.xml \
+       71_Mitwirkungs-_und_Öffentlichkeitsreglement.xml \
        72_Finanzreglement.xml \
        72.01_Immobilienfonds.xml \
        72.02_Musikzimmerfonds.xml \
