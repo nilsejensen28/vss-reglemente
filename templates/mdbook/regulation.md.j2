@@ -56,12 +56,7 @@
 {% macro article(art) -%}
 <article id="art_{{ art.number }}">  
 
-<<<<<<< HEAD
 **Art. {{ art.number }} {{ art.title }}**  
-=======
-**Art. {{ art.number }} {{ art.title }}**
-
->>>>>>> 416e14a (Implemented LaTeX codegen)
 {{ set_text(art.text) }}
 
 {%- if art.letters | length > 0 %}
@@ -83,15 +78,7 @@
  #}
 {%- macro paragraph(abs) -%}
 <sup>{{ abs.number }}</sup>
-<<<<<<< HEAD
 {{- set_text(abs.text) }}  {% if abs.letters | length > 0 %}{# Needs to be on the same row #}
-=======
-{#- text -#}
-{{ set_text(abs.text) }}
-
-{#- letters -#}
-{%- if abs.letters | length > 0 %}
->>>>>>> 416e14a (Implemented LaTeX codegen)
 <ol class="letters">
 {%- for lit in abs.letters -%}
 {{ letter(lit) }}
@@ -106,11 +93,7 @@
 {% macro letter(lit) -%}
 <li>
 {{ set_text(lit.text) }}
-<<<<<<< HEAD
 {% for num in lit.numerals -%}
-=======
-{%- for num in lit.numerals -%}
->>>>>>> 416e14a (Implemented LaTeX codegen)
 {{ numeral(num) }}
 {%- endfor -%}
 </li>
@@ -119,15 +102,9 @@
 {# 
  # Numerals
  #}
-<<<<<<< HEAD
 {% macro numeral(num) -%}
 1. {{ set_text(num.text) }}
 {%- endmacro %}
-=======
-{% macro numeral(num) %}
-1. {{ set_text(num.text) }}
-{% endmacro %}
->>>>>>> 416e14a (Implemented LaTeX codegen)
 
 {# 
  # Setting text elements
