@@ -58,9 +58,7 @@
 
 **Art. {{ art.number }} {{ art.title }}**
 
-{% if art.text | length > 0 -%}
-    {{ set_text(art.text) }}
-{%- endif -%}
+{{ set_text(art.text) }}
 
 {%- if art.letters | length > 0 %}
 <ol class="letters">
@@ -83,9 +81,7 @@
 {%- macro paragraph(abs) -%}
 <sup>{{ abs.number }}</sup>
 {#- text -#}
-{%- if abs.text | length > 0 -%}
 {{ set_text(abs.text) }}
-{% endif -%}
 
 {#- letters -#}
 {%- if abs.letters | length > 0 %}
@@ -103,9 +99,7 @@
  #}
 {% macro letter(lit) %}
 <li>
-{%- if lit.text | length > 0 %}
 {{ set_text(lit.text) }}
-{% endif -%}
 {%- for num in lit.numerals -%}
 {{ numeral(num) }}
 {%- endfor -%}
@@ -116,9 +110,7 @@
  # Numerals
  #}
 {% macro numeral(num) %}
-1. {% if num.text | length > 0 -%}
-{{ set_text(num.text) }}
-{%- endif -%}
+1. {{ set_text(num.text) }}
 {% endmacro %}
 
 {# 
@@ -129,11 +121,17 @@
         {%- if elem is string -%}
 {% if trim %}{{ elem|trim }}{% else %}{{ elem }}{% endif %}
         {%- elif "Link" in elem.__class__.__name__ %}
-[{{elem.link_text}}]({{elem.to}}){%- if elem.tail|length > 0 %}{{ set_text(elem.tail, trim=False) }}{%- endif -%}
+[{{elem.link_text}}]({{elem.to}}){{ set_tail(elem.tail) }}
         {%- elif "Quote" in elem.__class__.__name__ %}
-<q>{{ elem.quote|trim }}</q>{%- if elem.tail|length > 0 %}{{ set_text(elem.tail, trim=False) }}{%- endif -%}
+<q>{{ elem.quote|trim }}</q>{{ set_tail(elem.tail) }}
         {%- endif -%}
     {%- endfor -%}
+{%- endmacro -%}
+
+{%- macro set_tail(tail) -%}
+{%- if tail | length > 0 -%}
+{{ set_text(tail, trim=False) }}
+{%- endif -%}
 {%- endmacro -%}
 
 {# 
@@ -156,7 +154,7 @@
 {%- endif -%}**
 
 {%- if regl.preamble is defined -%}
-*{{ regl.preamble.text|trim }}*
+*{{ set_text(regl.preamble.text) }}*
 {%- endif -%}
 
 {% for art in regl.articles %}

@@ -12,6 +12,7 @@ class ParseException(Exception):
 def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_comments=True)):
     ret = ElementInclude._lxml_default_loader(href, parse, encoding, parser)
     ret.attrib["{http://www.w3.org/XML/1998/namespace}base"] = href
+    ret.attrib["filename"] = href
     return ret
 
 
@@ -22,10 +23,13 @@ num_counter = 0
 sec_counter = 0
 subsec_counter = 0
 subsubsec_counter = 0
+filename = None
 
 
 def parse(input_filename):
     tree = etree.parse(input_filename, parser=etree.XMLParser(remove_comments=True))
+    global filename
+    filename = input_filename
     ElementInclude.include(tree, loader=XinlcudeLoader)
     try:
         match tree.getroot().tag:
@@ -78,7 +82,7 @@ class Bylaws:
 
 class Regulations:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter, filename
         # Sanity
         assert(element.tag == "regulation")
 
@@ -108,6 +112,12 @@ class Regulations:
         self.id = element.get("id")
         self.is_toplevel = element.getparent() is not None
 
+        if is_empty(element.get("filename")):
+            self.filename = filename
+        else:
+            self.filename = element.get("filename")
+        self.filename = self.filename.replace(".xml", "")
+
         self.articles = []
         self.sections = []
         for child in element:
@@ -134,11 +144,21 @@ class Preamble:
         # Well-formedness
         if not is_empty(element.tail):
             raise ParseException("a preamble may not have a tail", element)
-        if len(element) > 0:
-            raise ParseException("a preamble may not have any children", element)
 
         # Values
-        self.text = element.text
+        self.text = []
+        if not is_empty(element.text):
+            self.text.append(element.text)
+
+        for child in element:
+            match child:
+                case "link":
+                    self.text.append(Link(child))
+                case "quote":
+                    self.text.append(Quote(child))
+                case _:
+                    raise ParseException("invalid preamble child <{}>".format(child.tag), element)
+
 
 
 class Section:

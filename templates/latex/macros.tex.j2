@@ -1,0 +1,171 @@
+
+((* macro titlepage(title, id=None, subtitle=None) -*))
+\begin{titlepage}
+    \centering
+    \hspace{0pt}
+    \vfill
+    \includesvg{vseth_Logo_bunt.svg}
+    \par
+    {\Huge \textbf{(( title ))} \par }
+    ((* if subtitle is not none and id is not none *))
+    {\LARGE \textbf{RSVSETH (( id ))} ( ((- subtitle -)) )}
+    ((* elif subtitle is none and id is not none *))
+    {\LARGE \textbf{RSVSETH (( id ))}}
+    ((* endif *))
+    {\LARGE \today \par }
+    \vfill
+\end{titlepage}
+((* endmacro *))
+
+((* macro section(sec) -*))
+\section{(( sec.title ))}
+\nobreak
+
+((* for art in sec.articles -*))
+((- article(art) ))
+((* endfor *))
+((* for subsec in sec.subsections -*))
+(( subsection(subsec) -))
+((* endfor -*))
+((* endmacro *))
+
+((* macro subsection(subsec) -*))
+\subsection{(( subsec.title ))}
+\nobreak
+
+((* for art in subsec.articles -*))
+((- article(art) ))
+((* endfor *))
+((* for subsubsec in subsec.subsubsections -*))
+(( subsubsection(subsubsec) -))
+((* endfor -*))
+((* endmacro *))
+
+((* macro subsubsection(subsubsec) -*))
+\subsubsection{(( subsubsec.title))}
+\nobreak
+
+((* for art in subsubsec.articles -*))
+((- article(art) ))
+((* endfor -*))
+((* endmacro -*))
+
+((* macro article(art) -*))
+\begin{article}{(( art.number ))}{(( art.title ))}
+  \\\nopagebreak (( set_text(art.text) ))\nopagebreak
+  ((* if art.letters | length > 0 -*))
+  \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
+  ((* for lit in art.letters -*))
+    ((- letter(lit) -))
+  ((* endfor -*))
+  \end{letters}
+  ((* endif -*))
+  ((*- if art.paragraphs | length > 0 -*))
+  \vspace{-2\parskip}\vspace{\partopsep}\begin{paragraphs}
+    ((* for abs in art.paragraphs *))
+    ((- paragraph(abs) -))\nopagebreak
+    ((* endfor -*))
+  \end{paragraphs}
+  ((* endif -*))
+\end{article}
+((* endmacro *))
+
+((* macro paragraph(abs) -*))
+\item (( set_text(abs.text) -))
+
+  ((*- if abs.letters | length > 0 *))
+  \begin{letters}
+  ((* for lit in abs.letters -*))
+    ((- letter(lit) -))
+  ((* endfor -*))
+  \end{letters}
+  ((* endif *))
+((* endmacro *))
+
+((* macro letter(lit) -*))
+\item (( set_text(lit.text) -))
+
+  ((*- if lit.numerals | length > 0 *))
+  \begin{numerals}
+  ((* for num in lit.numerals -*))
+    ((- numeral(num) -))
+  ((* endfor -*))
+  \end{numerals}
+  ((* endif *))
+((* endmacro *))
+
+((* macro numeral(num) -*))
+\item (( set_text(num.text) -))
+((* endmacro *))
+
+((*- macro set_text(text_elems, trim=True) -*))
+  ((*- for elem in text_elems -*))
+    ((*- if elem is string -*))
+((* if trim *))(( elem|trim ))((* else *))(( elem ))((* endif *))
+    ((*- elif "Link" in elem.__class__.__name__ *))
+\href{(( elem.to ))}{(( elem.link_text ))}(( set_tail(elem.tail) ))
+    ((*- elif "Quote" in elem.__class__.__name__ *))
+\enquote{(( elem.quote|trim ))}(( set_tail(elem.tail) ))
+    ((*- endif -*))
+  ((*- endfor -*))
+((*- endmacro -*))
+
+((*- macro set_tail(tail) -*))
+((*- if tail | length > 0 -*))
+(( set_text(tail, trim=False) ))
+((*- endif -*))
+((*- endmacro -*))
+
+((* macro header() *))
+\documentclass{scrreprt}
+\KOMAoptions{DIV = 14, chapterentrydots, parskip}
+\usepackage[utf8]{inputenc}
+\usepackage[OT1]{fontenc}
+\usepackage{microtype}
+\usepackage[ngerman]{babel}
+\usepackage{csquotes}
+\usepackage[all]{nowidow}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{svg}
+\usepackage[default,regular,bold]{sourcesanspro}
+\setcounter{secnumdepth}{3}
+\renewcommand*{\thesection}{\arabic{section}}
+\RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
+\RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}
+\RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}
+
+
+\newenvironment{article}[2]{\textbf{Art.\ #1. #2}}{\par}
+
+\newlist{paragraphs}{enumerate}{1}
+\setlist[paragraphs]{
+  label        = {\textsuperscript{\arabic*}},
+  ref          = {Abs.\ \arabic*},
+  leftmargin   = 0pt,
+  before*      = \nopagebreak,
+  first*       = \nopagebreak,
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+	noitemsep
+}
+
+\newlist{letters}{enumerate}{1}
+\setlist[letters]{
+  label = {\alph*)},
+  ref   = {lit.\ \alph*.},
+  noitemsep,
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+}
+
+\newlist{numerals}{enumerate}{1}
+\setlist[numerals]{
+  label = {\roman*)},
+  ref   = {\roman*},
+  noitemsep,
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+}
+((* endmacro *))

@@ -1,0 +1,40 @@
+((#
+  # Template for a LaTeX regulation
+  #
+  # Since LaTeX does not play nicely with {% %}, use ((* *))
+  #))
+
+((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, set_text, set_tail with context *))
+
+(( header() ))
+
+\begin{document}
+((- titlepage(bylaws.title) ))
+\tableofcontents
+
+((* for regl in bylaws.regulations *))
+((* set shortid *))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev )); ((* endif *))(( regl.id -))
+((* endset *))
+((* set subtitle *))
+  ((*- if regl.short is not none -*))(( regl.short ))((*- endif -*))
+  ((*- if regl.short is not none and regl.abbrev is not none -*)); ((* endif *))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev ))((*- endif -*))
+((* endset *))
+((* if regl.short is not none *))
+\chapter*{(( regl.title ))\\( ((- subtitle )); RSVSETH (( shortid -)) )}
+\addtocentrydefault{chapter}{}{(( regl.short )) (RSVSETH (( shortid -)) )}
+((* else *))
+\chapter*{(( regl.title ))\\(RSVSETH (( shortid -)) )}
+\addtocentrydefault{chapter}{}{(( regl.title )) (RSVSETH (( shortid -)) )}
+((* endif *))
+\stepcounter{chapter}
+
+((* for art in regl.articles -*))
+((- article(art) ))
+((* endfor *))
+((* for sec in regl.sections -*))
+((- section(sec) -))
+((* endfor *))
+((* endfor *))
+\end{document}
