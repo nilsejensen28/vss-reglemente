@@ -83,6 +83,11 @@ ol.paragraphs > li::before {
 	line-height: normal;
 }
 
+p.para {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
 ol.letters {
 	list-style: none;
 	counter-reset: letters;

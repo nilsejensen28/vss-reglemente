@@ -368,7 +368,7 @@ class Letter:
 
         # well-formedness
         if not is_empty(element.tail):
-            raise ParseException("a paragraph may not have a tail", element)
+            raise ParseException("a letter may not have a tail", element)
         
         # reset counter
         num_counter = 0

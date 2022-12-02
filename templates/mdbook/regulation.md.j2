@@ -66,12 +66,11 @@
         {{ letter(lit) }}
     {%- endfor -%}
 </ol>
-{%- if art.letter_tail is not none %}{{ art.letter_tail }}{% endif %}
 {% endif -%}
 
 {%- for abs in art.paragraphs -%}
-{{ paragraph(abs) }}
-{%- endfor %}
+{{ paragraph(abs) }}   
+{% endfor %}
 </article>
 {% endmacro%}
 
@@ -90,7 +89,6 @@
 {{ letter(lit) }}
 {%- endfor -%}
 </ol>
-{%- if abs.letter_tail is not none %}{{ abs.letter_tail }}{% endif %}
 {% endif %}
 {% endmacro %}
 
@@ -100,7 +98,7 @@
 {% macro letter(lit) %}
 <li>
 {{ set_text(lit.text) }}
-{%- for num in lit.numerals -%}
+{% for num in lit.numerals -%}
 {{ numeral(num) }}
 {%- endfor -%}
 </li>
@@ -109,12 +107,15 @@
 {# 
  # Numerals
  #}
-{% macro numeral(num) %}
+{% macro numeral(num) -%}
 1. {{ set_text(num.text) }}
-{% endmacro %}
+{%- endmacro %}
 
 {# 
  # Setting text elements
+ # In almost all cases we want trim=True. But when we set the tail
+ # (i.e. text after quote) we have to keep any leading spaces and
+ # therefore have to use trim=False.
  #}
 {%- macro set_text(text_elems, trim=True) -%}
     {%- for elem in text_elems -%}
@@ -141,19 +142,24 @@
 .letters {
     list-style-type: lower-latin;
 }
+
+p.para {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 </style>
 
 # {{regl.title}}
 
 {# Subtitle with id and short title#}
 **RSVSETH {{regl.id}}
-{%- if regl.short is not none or regl.abbrev is not none -%} (
+{%- if regl.short is not none or regl.abbrev is not none %} (
     {%- if regl.short is not none -%}{{regl.short}}{%- endif -%}
     {%- if regl.short is not none and regl.abbrev is not none -%}; {% endif %}
     {%- if regl.abbrev is not none -%}{{regl.abbrev}}{%- endif -%})
 {%- endif -%}**
 
-{%- if regl.preamble is defined -%}
+{% if regl.preamble is defined %}
 *{{ set_text(regl.preamble.text) }}*
 {%- endif -%}
 
