@@ -31,37 +31,41 @@
         </articles>
     </section>
     <section title="Erscheinungsart und -rhythmus">
-        <article title="Erscheinungsart">
-            Der Newsletter wird per E-Mail an alle Mitglieder zugestellt.
-        </article>
-        <article title="Erscheinungsrhythmus">
-            <paragraphs>
-                <paragraph>
-                    Der Newsletter erscheint während des Semesters  alle zwei Wochen. Ausserhalb des Semesters erscheint er mindestens einmal im Monat.
-                </paragraph>
-                <paragraph>
-                    Die Erscheinungsdaten werden vom Ressort Kommunikation jeweils am Anfang des Semesters, respektive am Anfang der vorlesungsfreien Zeit festgelegt und den Organen des VSETH, den Fachvereinen, sowie den anerkannten und assoziierten Organisationen kommuniziert.
-                </paragraph>
-            </paragraphs>
-        </article>
+        <articles>
+            <article title="Erscheinungsart">
+                Der Newsletter wird per E-Mail an alle Mitglieder zugestellt.
+            </article>
+            <article title="Erscheinungsrhythmus">
+                <paragraphs>
+                    <paragraph>
+                        Der Newsletter erscheint während des Semesters  alle zwei Wochen. Ausserhalb des Semesters erscheint er mindestens einmal im Monat.
+                    </paragraph>
+                    <paragraph>
+                        Die Erscheinungsdaten werden vom Ressort Kommunikation jeweils am Anfang des Semesters, respektive am Anfang der vorlesungsfreien Zeit festgelegt und den Organen des VSETH, den Fachvereinen, sowie den anerkannten und assoziierten Organisationen kommuniziert.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
     </section>
     <section title="Organisation">
-        <article title="Redaktion">
-            Die Redaktion wird durch das Ressort Kommunikation des VSETH-Vorstandes gebildet.
-        </article>
-        <article title="Inhalte">
-            <paragraphs>
-                <paragraph>
-                    Der Newsletter enthält Beiträge des VSETH, der Kommissionen, Fachvereine, anerkannten und assoziierten Organisationen, sowie in Ausnahmefällen von ETH-Stellen und Externen.
-                </paragraph>
-                <paragraph>
-                    Es besteht weder Anspruch auf Publikation noch auf ein festgelegtes Erscheinungsdatum eines Beitrags. Der Entscheid liegt beim Ressort Kommunikation.
-                </paragraph>
-                <paragraph>
-                    Der VSETH übernimmt keine Haftung für die publizierten Beiträge.
-                </paragraph>
-            </paragraphs>
-        </article>
+        <articles>
+            <article title="Redaktion">
+                Die Redaktion wird durch das Ressort Kommunikation des VSETH-Vorstandes gebildet.
+            </article>
+            <article title="Inhalte">
+                <paragraphs>
+                    <paragraph>
+                        Der Newsletter enthält Beiträge des VSETH, der Kommissionen, Fachvereine, anerkannten und assoziierten Organisationen, sowie in Ausnahmefällen von ETH-Stellen und Externen.
+                    </paragraph>
+                    <paragraph>
+                        Es besteht weder Anspruch auf Publikation noch auf ein festgelegtes Erscheinungsdatum eines Beitrags. Der Entscheid liegt beim Ressort Kommunikation.
+                    </paragraph>
+                    <paragraph>
+                        Der VSETH übernimmt keine Haftung für die publizierten Beiträge.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
     </section>
     <section title="Schlussbestimmungen">
         <articles>
