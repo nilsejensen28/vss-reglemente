@@ -2,12 +2,6 @@
 from lxml import etree, ElementInclude
 
 
-class ParseException(Exception):
-    def __init__(self, message: str, element: etree.ElementBase) -> None:
-        self.message = message
-        self.element = element
-
-
 # https://stackoverflow.com/a/69618810/6337138
 def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_comments=True)):
     ret = ElementInclude._lxml_default_loader(href, parse, encoding, parser)
@@ -26,32 +20,54 @@ subsubsec_counter = 0
 filename = None
 
 
+def throw_error(message: str, element: etree.ElementBase):
+    print("Error: {}".format(message)) 
+    print("element: {}".format(element))
+    print("Tag backtrace:")
+    parent = element
+    location = ""
+    while parent is not None:
+        tag = parent.tag
+
+        match tag:
+            case "article":
+                location = "Art. {} {}".format(art_counter, location)
+            case "paragraph":
+                location = "Abs. {} {}".format(abs_counter, location)
+            case "letter":
+                location = "lit. {}) {}".format(lit_counter, location)
+            case "numeral":
+                location = "num. {}) {}".format(num_counter, location)
+            case "regulation":
+                try:
+                    location = "{} {}".format(location, parent.get("title"))
+                except Exception:
+                    continue
+
+        attr = " ".join([f'{k}="{v}"' for k, v in parent.attrib.items()])
+        if attr:
+            tag += " " + attr
+        print(f"  <{tag}>")
+
+        parent = parent.getparent()
+
+    print("Location: {}".format(location))
+
+    exit(1)
+
+
 def parse(input_filename):
     tree = etree.parse(input_filename, parser=etree.XMLParser(remove_comments=True))
     global filename
     filename = input_filename
     ElementInclude.include(tree, loader=XinlcudeLoader)
-    try:
-        match tree.getroot().tag:
-            case "bylaws":
-                return Bylaws(tree.getroot())
-            case "regulations":
-                return Regulations(tree.getroot())
-            case _:
-                raise ParseException("Only bylaws and regulations can be root", tree.getroot())
-
-    except ParseException as e:
-        message = e.message
-        parent = e.element
-        while parent is not None:
-            attr = " ".join([f'{k}="{v}"' for k, v in parent.attrib.items()])
-            tag = parent.tag
-            if attr:
-                tag += " " + attr
-            message = f"{input_filename}:{parent.sourceline}: in <{tag}>\n" + message
-            parent = parent.getparent()
-
-        raise
+    match tree.getroot().tag:
+        case "bylaws":
+            return Bylaws(tree.getroot())
+        case "regulations":
+            return Regulations(tree.getroot())
+        case _:
+            throw_error("Only bylaws and regulations can be root", tree.getroot())
 
 
 class Bylaws:
@@ -62,11 +78,11 @@ class Bylaws:
 
         # Well-formedness
         if not is_empty(element.text):
-            raise ParseException("Bylaws may not contain text", element)
+            throw_error("Bylaws may not contain text", element)
         if not is_empty(element.tail):
-            raise ParseException("Bylaws may not have a tail", element)
+            throw_error("Bylaws may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("Bylaws must contain a title", element)
+            throw_error("Bylaws must contain a title", element)
 
         # Values
         self.title = element.get("title")
@@ -77,7 +93,7 @@ class Bylaws:
                 case "regulation":
                     self.regulations.append(Regulations(child))
                 case _:
-                    raise ParseException("Bylaws only contain regulations", element)
+                    throw_error("Bylaws only contain regulations", element)
 
 
 class Regulations:
@@ -88,13 +104,13 @@ class Regulations:
 
         # Well-formedness
         if not is_empty(element.text):
-            raise ParseException("a regulation may not contain text", element)
+            throw_error("a regulation may not contain text", element)
         if not is_empty(element.tail):
-            raise ParseException("a regulation may not have a tail", element)
+            throw_error("a regulation may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("a regulation must have a title", element)
+            throw_error("a regulation must have a title", element)
         if is_empty(element.get("id")):
-            raise ParseException("a regulation must contain an id", element)
+            throw_error("a regulation must contain an id", element)
 
         # reset counters
         art_counter, sec_counter = 0, 0
@@ -130,9 +146,9 @@ class Regulations:
                     if is_empty(self.sections):
                         self.articles = process_articles(child)
                     else:
-                        raise ParseException("a regulation may only contain articles before any sections", element)
+                        throw_error("a regulation may only contain articles before any sections", element)
                 case _:
-                    raise ParseException("a regulation only contain articles, a preamble and sections", element)
+                    throw_error("a regulation only contain articles, a preamble and sections", element)
 
 
 class Preamble:
@@ -143,7 +159,7 @@ class Preamble:
 
         # Well-formedness
         if not is_empty(element.tail):
-            raise ParseException("a preamble may not have a tail", element)
+            throw_error("a preamble may not have a tail", element)
 
         # Values
         self.text = []
@@ -157,7 +173,7 @@ class Preamble:
                 case "quote":
                     self.text.append(Quote(child))
                 case _:
-                    raise ParseException("invalid preamble child <{}>".format(child.tag), element)
+                    throw_error("invalid preamble child <{}>".format(child.tag), element)
 
 
 
@@ -169,11 +185,11 @@ class Section:
 
         # Well-formedness
         if not is_empty(element.text):
-            raise ParseException("a section my not contain text on its own", element)
+            throw_error("a section my not contain text on its own", element)
         if not is_empty(element.tail):
-            raise ParseException("a section my not have a tail", element)
+            throw_error("a section my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("a section must have a title", element)
+            throw_error("a section must have a title", element)
 
         # reset counters
         subsec_counter = 0
@@ -193,11 +209,11 @@ class Section:
                     if self.subsections == []:
                         self.articles = process_articles(child)
                     else:
-                        raise ParseException("a section my only contain articles before any subsections", element)
+                        throw_error("a section my only contain articles before any subsections", element)
                 case "subsection":
                     self.subsections.append(Subsection(child))
                 case _:
-                    raise ParseException("a section may only cointain articles and subsections", element)
+                    throw_error("a section may only cointain articles and subsections", element)
 
 
 class Subsection:
@@ -208,11 +224,11 @@ class Subsection:
 
         # Well-formedness
         if not is_empty(element.text):
-            raise ParseException("a subsection my not contain text on its own", element)
+            throw_error("a subsection my not contain text on its own", element)
         if not is_empty(element.tail):
-            raise ParseException("a subsection my not have a tail", element)
+            throw_error("a subsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("a subsection must have a title", element)
+            throw_error("a subsection must have a title", element)
 
         # reset counters
         subsubsec_counter = 0
@@ -232,11 +248,11 @@ class Subsection:
                     if self.subsubsections == []:
                         self.articles = process_articles(child)
                     else:
-                        raise ParseException("a subsection my only contain articles before any subsections", element)
+                        throw_error("a subsection my only contain articles before any subsections", element)
                 case "subsubsection":
                     self.subsubsections.append(Subsubsection(child))
                 case _:
-                    raise ParseException("a subsection may only cointain articles and subsubsections", element)
+                    throw_error("a subsection may only cointain articles and subsubsections", element)
 
 
 class Subsubsection:
@@ -247,11 +263,11 @@ class Subsubsection:
 
         # Well-formedness
         if not is_empty(element.text):
-            raise ParseException("a subsubsection my not contain text on its own", element)
+            throw_error("a subsubsection my not contain text on its own", element)
         if not is_empty(element.tail):
-            raise ParseException("a subsubsection my not have a tail", element)
+            throw_error("a subsubsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("a subsubsection must have a title", element)
+            throw_error("a subsubsection must have a title", element)
 
         # increment counter
         subsubsec_counter += 1
@@ -267,7 +283,7 @@ class Subsubsection:
                 case "articles":
                     self.articles = process_articles(child)
                 case _:
-                    raise ParseException("a subsubsection may only cointain articles", element)
+                    throw_error("a subsubsection may only cointain articles", element)
 
 
 class Article:
@@ -278,9 +294,9 @@ class Article:
 
         # well-formedness
         if not is_empty(element.tail):
-            raise ParseException("an article may not have a tail", element)
+            throw_error("an article may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
-            raise ParseException("an article needs a title", element)
+            throw_error("an article needs a title", element)
 
         # reset counters
         abs_counter, lit_counter = 0, 0
@@ -304,12 +320,12 @@ class Article:
             match child.tag:
                 case "paragraphs":
                     if not self.letters == []:
-                        raise ParseException("an article can only have one of paragraphs or letters as direct descendents", element)
+                        throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
                     
                     self.paragraphs = process_paragraphs(child)
                 case "letters":
                     if not self.paragraphs == []:
-                        raise ParseException("an article can only have one of paragraphs or letters as direct descendents", element)
+                        throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
                     
                     self.letters, self.letters_tail = process_letters(child)
                 case "link":
@@ -317,7 +333,7 @@ class Article:
                 case "quote":
                     self.text.append(Quote(child))
                 case _:
-                    raise ParseException("invalid article child {}".format(child.tag), element)
+                    throw_error("invalid article child {}".format(child.tag), element)
 
 
 
@@ -329,7 +345,7 @@ class Paragraph:
 
         # well-formedness
         if not is_empty(element.tail):
-            raise ParseException("a paragraph may not have a tail", element)
+            throw_error("a paragraph may not have a tail (tail: {})".format(element.tail), element)
 
         # reset counters
         lit_counter = 0
@@ -356,7 +372,7 @@ class Paragraph:
                 case "quote":
                     self.text.append(Quote(child))
                 case _:
-                    raise ParseException("invalid paragraph child <{}>".format(child.tag), element)
+                    throw_error("invalid paragraph child <{}>".format(child.tag), element)
 
 
 
@@ -368,7 +384,7 @@ class Letter:
 
         # well-formedness
         if not is_empty(element.tail):
-            raise ParseException("a letter may not have a tail", element)
+            throw_error("a letter may not have a tail (tail: {})".format(element.tail), element)
         
         # reset counter
         num_counter = 0
@@ -394,7 +410,7 @@ class Letter:
                 case "quote":
                     self.text.append(Quote(child))
                 case _:
-                    raise ParseException("invalid letter child {}".format(child.tag), element)
+                    throw_error("invalid letter child {}".format(child.tag), element)
 
 
 class Numeral:
@@ -405,7 +421,7 @@ class Numeral:
 
         # well-formedness
         if not is_empty(element.tail):
-            raise ParseException("a numeral may not have a tail", element)
+            throw_error("a numeral may not have a tail (tail: {})".format(element.tail), element)
 
         # increment numeral counter
         num_counter += 1
@@ -425,7 +441,7 @@ class Numeral:
                 case "quote":
                     self.text.append(Quote(child))
                 case _:
-                    raise ParseException("invalid numeral child {}".format(child.tag), element)
+                    throw_error("invalid numeral child {}".format(child.tag), element)
 
 
 class Link:
@@ -436,9 +452,9 @@ class Link:
 
         # well-formedness
         if is_empty(element.text):
-            raise ParseException("a link must have a text", element)
+            throw_error("a link must have a text", element)
         if is_empty(element.get("to")):
-            raise ParseException("a link needs a destination", element)
+            throw_error("a link needs a destination", element)
 
         # values
         self.to = element.get("to")
@@ -455,7 +471,7 @@ class Link:
                 case "quote":
                     self.tail.append(Quote(child))
                 case _:
-                    raise ParseException("invalid link child <{}>".format(child.tag), element)
+                    throw_error("invalid link child <{}>".format(child.tag), element)
 
 
 class Quote:
@@ -466,7 +482,7 @@ class Quote:
 
         # well-formedness
         if is_empty(element.text):
-            raise ParseException("a quote must have a text", element)
+            throw_error("a quote must have a text", element)
 
         # values
         self.quote = element.text
@@ -482,7 +498,7 @@ class Quote:
                 case "quote":
                     self.tail.append(Quote(child))
                 case _:
-                    raise ParseException("invalid link child <{}>".format(child.tag), element)
+                    throw_error("invalid link child <{}>".format(child.tag), element)
                     
 
 def process_articles(element: etree.ElementBase) -> list[Article]:
@@ -491,9 +507,9 @@ def process_articles(element: etree.ElementBase) -> list[Article]:
 
     # Well-formedness
     if not is_empty(element.text):
-        raise ParseException("articles may not contain text", element)
+        throw_error("articles may not contain text", element)
     if not is_empty(element.tail):
-        raise ParseException("articles may not contain a tail", element)
+        throw_error("articles may not contain a tail (tail: {})".format(element.tail), element)
 
     articles = []
     for child in element:
@@ -501,7 +517,7 @@ def process_articles(element: etree.ElementBase) -> list[Article]:
             case "article":
                 articles.append(Article(child))
             case _:
-                raise ParseException("articles may only contain articles (duh)")
+                throw_error("articles may only contain articles (duh)", child)
 
     return articles
 
@@ -512,9 +528,9 @@ def process_paragraphs(element: etree.ElementBase) -> list[Paragraph]:
 
     # Well-formedness
     if not is_empty(element.text):
-        raise ParseException("paragraphs may not contain text", element)
+        throw_error("paragraphs may not contain text", element)
     if not is_empty(element.tail):
-        raise ParseException("paragraphs may not contain a tail", element)
+        throw_error("paragraphs may not contain a tail (tail: {})".format(element.tail), element)
 
     paragraphs = []
     for child in element:
@@ -522,7 +538,7 @@ def process_paragraphs(element: etree.ElementBase) -> list[Paragraph]:
             case "paragraph":
                 paragraphs.append(Paragraph(child))
             case _:
-                raise ParseException("paragraphs may only contain paragraphs (duh)")
+                throw_error("paragraphs may only contain paragraphs (duh)", child)
 
     return paragraphs
 
@@ -533,7 +549,7 @@ def process_letters(element: etree.ElementBase) -> tuple[list[Letter], str|None]
 
     # Well-formedness
     if not is_empty(element.text):
-        raise ParseException("letters may not contain text", element)
+        throw_error("letters may not contain text", element)
     if not is_empty(element.tail):
         tail = element.tail
     else:
@@ -545,7 +561,7 @@ def process_letters(element: etree.ElementBase) -> tuple[list[Letter], str|None]
             case "letter":
                 letters.append(Letter(child))
             case _:
-                raise ParseException("letters may only contain letters (duh)")
+                throw_error("letters may only contain letters (duh)", child)
 
     return letters, tail
 
@@ -556,9 +572,9 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
 
     # Well-formedness
     if not is_empty(element.text):
-        raise ParseException("numerals may not contain text", element)
+        throw_error("numerals may not contain text", element)
     if not is_empty(element.tail):
-        raise ParseException("numerals may not contain a tail", element)
+        throw_error("numerals may not contain a tail (tail: {})".format(element.tail), element)
 
     numerals = []
     for child in element:
@@ -566,7 +582,7 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
             case "numeral":
                 numerals.append(Numeral(child))
             case _:
-                raise ParseException("numerals may only contain numerals (duh)")
+                throw_error("numerals may only contain numerals (duh)", child)
 
     return numerals
 
