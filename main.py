@@ -3,6 +3,8 @@ from lxml import etree
 from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
 import os
+import pathlib
+import re
 
 import bylaws
 
@@ -41,6 +43,7 @@ def main():
             jinja_env.variable_end_string = "))"
             jinja_env.comment_start_string = "((#"
             jinja_env.comment_end_string = "#))"
+            jinja_env.filters['escape_tex'] = escape_tex
 
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")
@@ -52,7 +55,23 @@ def main():
         case _:
             raise NotImplementedError()
 
+# Filter for latex escaping
+# Source: https://stackoverflow.com/questions/43495728/escaping-slashes-for-jinja2-and-latex
+LATEX_SUBS = (
+    (re.compile(r'\\'), r'\\textbackslash'),
+    (re.compile(r'([{}_#%&$])'), r'\\\1'),
+    (re.compile(r'~'), r'\~{}'),
+    (re.compile(r'\^'), r'\^{}'),
+    (re.compile(r'"'), r"''"),
+    (re.compile(r'\.\.\.+'), r'\\ldots'),
+    (re.compile(r'/'), r'\/')
+)
 
+def escape_tex(value):
+    newval = str(value)
+    for pattern, replacement in LATEX_SUBS:
+        newval = pattern.sub(replacement, newval)
+    return newval
 
 if __name__ == "__main__":
     main()

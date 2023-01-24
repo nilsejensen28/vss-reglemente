@@ -1,16 +1,16 @@
 
-((* macro titlepage(title, id=None, subtitle=None) -*))
+((* macro titlepage(title, asset_path, id=None, subtitle=None) -*))
 \begin{titlepage}
     \centering
     \hspace{0pt}
     \vfill
-    \includesvg{vseth_Logo_bunt.svg}
+    \includesvg{(( asset_path ))/vseth_Logo_bunt.svg}
     \par
-    {\Huge \textbf{(( title ))} \par }
+    {\Huge \textbf{(( title | escape_tex ))} \par }
     ((* if subtitle is not none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id ))} ( ((- subtitle -)) )}
+    {\LARGE \textbf{RSVSETH (( id | escape_tex ))} ( ((- subtitle | escape_tex -)) )}
     ((* elif subtitle is none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id ))}}
+    {\LARGE \textbf{RSVSETH (( id | escape_tex ))}}
     ((* endif *))
     {\LARGE \today \par }
     \vfill
@@ -18,7 +18,7 @@
 ((* endmacro *))
 
 ((* macro section(sec) -*))
-\section{(( sec.title ))}
+\section{(( sec.title | escape_tex ))}
 \nobreak
 
 ((* for art in sec.articles -*))
@@ -30,7 +30,7 @@
 ((* endmacro *))
 
 ((* macro subsection(subsec) -*))
-\subsection{(( subsec.title ))}
+\subsection{(( subsec.title | escape_tex ))}
 \nobreak
 
 ((* for art in subsec.articles -*))
@@ -42,7 +42,7 @@
 ((* endmacro *))
 
 ((* macro subsubsection(subsubsec) -*))
-\subsubsection{(( subsubsec.title))}
+\subsubsection{(( subsubsec.title | escape_tex ))}
 \nobreak
 
 ((* for art in subsubsec.articles -*))
@@ -51,7 +51,7 @@
 ((* endmacro -*))
 
 ((* macro article(art) -*))
-\begin{article}{(( art.number ))}{(( art.title ))}
+\begin{article}{(( art.number | escape_tex ))}{(( art.title | escape_tex ))}
   \\\nopagebreak (( set_text(art.text) ))\nopagebreak
   ((* if art.letters | length > 0 -*))
   \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
@@ -101,11 +101,11 @@
 ((*- macro set_text(text_elems, trim=True) -*))
   ((*- for elem in text_elems -*))
     ((*- if elem is string -*))
-((* if trim *))(( elem|trim ))((* else *))(( elem ))((* endif *))
+((* if trim *))(( elem | trim | escape_tex ))((* else *))(( elem | escape_tex ))((* endif *))
     ((*- elif "Link" in elem.__class__.__name__ *))
-\href{(( elem.to ))}{(( elem.link_text ))}(( set_tail(elem.tail) ))
+\href{(( elem.to ))}{(( elem.link_text | escape_tex ))}(( set_tail(elem.tail) ))
     ((*- elif "Quote" in elem.__class__.__name__ *))
-\enquote{(( elem.quote|trim ))}(( set_tail(elem.tail) ))
+\enquote{(( elem.quote | trim | escape_tex ))}(( set_tail(elem.tail) ))
     ((*- endif -*))
   ((*- endfor -*))
 ((*- endmacro -*))

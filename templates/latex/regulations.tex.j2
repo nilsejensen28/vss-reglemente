@@ -11,13 +11,13 @@
 \begin{document}
 ((* if regl.short is not none or regl.abbrev is not none *))
 ((* set subtitle *))
-  ((*- if regl.short is not none -*))(( regl.short ))((*- endif -*))
+  ((*- if regl.short is not none -*))(( regl.short | escape_tex ))((*- endif -*))
   ((*- if regl.short is not none and regl.abbrev is not none -*)); ((* endif *))
-  ((*- if regl.abbrev is not none -*))(( regl.abbrev ))((*- endif -*))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex ))((*- endif -*))
 ((* endset *))
-(( titlepage(regl.title, regl.id, subtitle) -))
+(( titlepage(regl.title, asset_path, regl.id, subtitle) -))
 ((* else -*))
-(( titlepage(regl.title, regl.id ) ))
+(( titlepage(regl.title, asset_path, regl.id ) ))
 ((* endif -*))
 
 ((* if regl.preamble is defined *))

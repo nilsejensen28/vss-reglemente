@@ -9,24 +9,24 @@
 (( header() ))
 
 \begin{document}
-((- titlepage(bylaws.title) ))
+((- titlepage(bylaws.title, asset_path) ))
 \tableofcontents
 
 ((* for regl in bylaws.regulations *))
 ((* set shortid *))
-  ((*- if regl.abbrev is not none -*))(( regl.abbrev )); ((* endif *))(( regl.id -))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
 ((* endset *))
 ((* set subtitle *))
-  ((*- if regl.short is not none -*))(( regl.short ))((*- endif -*))
+  ((*- if regl.short is not none -*))(( regl.short | escape_tex ))((*- endif -*))
   ((*- if regl.short is not none and regl.abbrev is not none -*)); ((* endif *))
-  ((*- if regl.abbrev is not none -*))(( regl.abbrev ))((*- endif -*))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex ))((*- endif -*))
 ((* endset *))
 ((* if regl.short is not none *))
-\chapter*{(( regl.title ))\\( ((- subtitle )); RSVSETH (( shortid -)) )}
-\addtocentrydefault{chapter}{}{(( regl.short )) (RSVSETH (( shortid -)) )}
+\chapter*{(( regl.title | escape_tex ))\\( ((- subtitle )); RSVSETH (( shortid | escape_tex -)) )}
+\addtocentrydefault{chapter}{}{(( regl.short | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
 ((* else *))
-\chapter*{(( regl.title ))\\(RSVSETH (( shortid -)) )}
-\addtocentrydefault{chapter}{}{(( regl.title )) (RSVSETH (( shortid -)) )}
+\chapter*{(( regl.title | escape_tex ))\\(RSVSETH (( shortid | escape_tex -)) )}
+\addtocentrydefault{chapter}{}{(( regl.title | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
 ((* endif *))
 \stepcounter{chapter}
 
