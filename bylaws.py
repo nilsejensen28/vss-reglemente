@@ -64,8 +64,8 @@ def parse(input_filename):
     match tree.getroot().tag:
         case "bylaws":
             return Bylaws(tree.getroot())
-        case "regulations":
-            return Regulations(tree.getroot())
+        case "regulation":
+            return Regulation(tree.getroot())
         case _:
             throw_error("Only bylaws and regulations can be root", tree.getroot())
 
@@ -91,12 +91,12 @@ class Bylaws:
         for child in element:
             match child.tag:
                 case "regulation":
-                    self.regulations.append(Regulations(child))
+                    self.regulations.append(Regulation(child))
                 case _:
                     throw_error("Bylaws only contain regulations", element)
 
 
-class Regulations:
+class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter, filename
         # Sanity
