@@ -1,3 +1,22 @@
+###############################################################################
+# Makefile for the VSETH-Rechtssammlung
+#
+# Authors: Michal Sudwoj, Manuel Hässig
+#
+# Builds can be done locally using the targets "all", "mdbook", "pdf", and "latex".
+# In case of missing depedencies or fear of clutter (or for the lulz) builds
+# can be performed in a docker container via the "docker" target. Per default
+# the docker target builds the target "all" and outputs the results in the
+# usual output folder.
+#
+# Argument variables:
+#  - OUT_PATH: specifies folder where the build files are written to
+#  - DOCKER_IMAGE_NAME: name of the docker image used for docker builds
+#  - DOCKER_MAKE_TARGET: make target executed in a docker build (default: all)
+#
+###############################################################################
+
+
 OUT_PATH ?= $(PWD)/out
 PDF_PATH = ${OUT_PATH}/pdf
 LATEX_PATH = ${OUT_PATH}/latex
@@ -6,7 +25,7 @@ ASSET_PATH = $(PWD)/assets
 
 DOCKER_IMAGE_NAME ?= reglemente-builder
 DOCKER_INTERNAL_OUT_PATH = /out
-MAKE_TARGET ?= all
+DOCKER_MAKE_TARGET ?= all
 
 LATEXOPTS = -interaction=nonstopmode -shell-escape -file-line-error
 LATEXMKOPTS = -outdir=${PDF_PATH} -norc -use-make -latexoption=${LATEXOPTS}
@@ -18,16 +37,22 @@ SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | se
 .PHONY: all
 all: mdbook pdf
 
+# An mdbook is only made from the entire Rechtssammlung.
+# VSETH_Rechtssammlung.xml is the first file in ${SRCS}. Therefore, $< will only build that file.
 .PHONY: mdbook
 mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py)
 	python3 main.py --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
 
+# PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
+# all files individually.
 .PHONY: tex
-%.tex: ${SRCS} templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
-	python3 main.py --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
+tex: ${SRCS:.xml=.tex}
 
 .PHONY: pdf
 pdf: ${SRCS:.xml=.pdf}
+
+%.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
+	python3 main.py --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
 
 %.pdf: %.tex | tex
 	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/$<
@@ -38,7 +63,7 @@ docker: Dockerfile
 	docker run \
 		--rm \
 		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
-		-e MAKE_TARGET=$(MAKE_TARGET) \
+		-e DOCKER_MAKE_TARGET=$(DOCKER_MAKE_TARGET) \
 		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
 		$(DOCKER_IMAGE_NAME)
 

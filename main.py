@@ -29,6 +29,10 @@ def main():
 
     match args.format:
         case "mdbook":
+            # Forbid making an mdbook with only one regulation.
+            if isinstance(rsvseth, bylaws.Regulation):
+                raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
+
             summary_template = jinja_env.get_template("summary.md.j2")
             regl_template = jinja_env.get_template("regulation.md.j2")
             with open("{}/SUMMARY.md".format(args.output_folder), "w", encoding="utf-8") as f:
@@ -48,9 +52,11 @@ def main():
 
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")
-            with open("{}/VSETH_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
-                f.write(bylaws_template.render(bylaws=rsvseth, asset_path=args.asset_path))
-            for regl in rsvseth.regulations:
+            if isinstance(rsvseth, bylaws.Bylaws):
+                with open("{}/VSETH_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
+                    f.write(bylaws_template.render(bylaws=rsvseth, asset_path=args.asset_path))
+            else:
+                regl = rsvseth
                 with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl, asset_path=args.asset_path))
         case _:
