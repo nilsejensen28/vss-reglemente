@@ -13,6 +13,7 @@ def main():
     parser.add_argument("input")
     parser.add_argument("-o", "--output-folder", required=True)
     parser.add_argument("-f", "--format", choices=["mdbook", "latex"], required=True)
+    parser.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
     args = parser.parse_args()
 
     # create output folder
@@ -47,11 +48,11 @@ def main():
 
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")
-            with open("{}/vseth-rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
-                f.write(bylaws_template.render(bylaws=rsvseth))
+            with open("{}/VSETH_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
+                f.write(bylaws_template.render(bylaws=rsvseth, asset_path=args.asset_path))
             for regl in rsvseth.regulations:
                 with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
-                    f.write(regl_template.render(regl=regl))
+                    f.write(regl_template.render(regl=regl, asset_path=args.asset_path))
         case _:
             raise NotImplementedError()
 
