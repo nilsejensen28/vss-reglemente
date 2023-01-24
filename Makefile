@@ -1,141 +1,54 @@
-SHELL := /bin/bash
-PYTHON ?= python3.10
+OUT_PATH ?= $(PWD)/out
+PDF_PATH = ${OUT_PATH}/pdf
+LATEX_PATH = ${OUT_PATH}/latex
+MDBOOK_PATH = ${OUT_PATH}/mdbook
+ASSET_PATH = $(PWD)/assets
 
-SRCS = index.xml \
-       01_Statuten.xml \
-       11_MR.xml \
-       12_FR.xml \
-       13_Ausschuss.xml \
-       13.01_FinA.xml \
-       13.02_ITA.xml \
-       13.03_SpEA.xml \
-       21_Vorstand.xml \
-       21.01_Vorstandspflichtenheft.xml \
-       21.02_GS_Pflichtenheft.xml \
-	   21.03_AVES.xml \
-	   21.04_Informationsmedium.xml \
-	   21.05_Mitgliedschaft.xml \
-       22_Komissionsreglement.xml \
-	   22.01_Challenge.xml \
-	   22.02_Debattierclub.xml \
-	   22.03_ETH_MUN.xml \
-	   22.04_ExBeKo.xml \
-	   22.05_Filmstelle.xml \
-	   22.06_FLiK.xml \
-	   22.07_FC.xml \
-	   22.08_FK.xml \
-	   22.09_GECo.xml \
-	   22.11_KI.xml \
-	   22.12_Kulturstelle.xml \
-	   22.13_Nightline.xml \
-	   22.14_PapperlaPub.xml \
-	   22.15_Polykum.xml \
-	   22.16_SSC.xml \
-	   22.17_SPOD.xml \
-	   22.18_TQ.xml \
-	   22.19_SEK.xml \
-       31_GPK_Reglement.xml \
-       51_Fachvereinsreglement.xml \
-       52_Vertretungsreglement.xml \
-       53_StudOrg.xml \
-	   53.01_StudOrg.xml \
-       71_Mitwirkungs-_und_Öffentlichkeitsreglement.xml \
-       72_Finanzreglement.xml \
-       72.01_Immobilienfonds.xml \
-       72.02_Musikzimmerfonds.xml \
-       72.03_Rechtsfonds.xml \
-       72.04_ETH_Store_AG_Fonds.xml \
-       72.05_Coronafonds.xml \
-       73_Anstellungsreglement.xml \
-       74_Datenschutzreglement.xml \
-       75_Erscheinungsbildreglement.xml \
-       76_Infrastrukturreglement.xml
+DOCKER_IMAGE_NAME ?= reglemente-builder
+DOCKER_INTERNAL_OUT_PATH = /out
+MAKE_TARGET ?= all
+
+LATEXOPTS = -interaction=nonstopmode -shell-escape -file-line-error
+LATEXMKOPTS = -outdir=${PDF_PATH} -norc -use-make -latexoption=${LATEXOPTS}
+
+# We extraxt the list of sources from VSETH_Rechtssammlung.xml. This way we don't need to make changes twice.
+SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | sed -r 's/.*href="(.+)".*/\1/' | tr "\n" " ")
+
 
 .PHONY: all
-all: rst html sphinx json pdf
+all: mdbook pdf
 
-.venv: requirements.txt
-	${PYTHON} -m venv $@
-	source $@/bin/activate && \
-		pip install -r requirements.txt
-	touch $@
-
-.PHONY: check
-check: ${SRCS:xml=chk}
-
-.PHONY: rst
-rst: ${SRCS:xml=rst}
-
-.PHONY: md
-md: ${SRCS:xml=md}
-
-.PHONY: html
-html: ${SRCS:xml=html}
-
-.PHONY: json
-json: ${SRCS:xml=json}
+.PHONY: mdbook
+mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py)
+	python3 main.py --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
 
 .PHONY: tex
-tex: ${SRCS:xml=tex}
+%.tex: ${SRCS} templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
+	python3 main.py --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
 
 .PHONY: pdf
-pdf: ${SRCS:xml=pdf}
+pdf: ${SRCS:.xml=.pdf}
 
-%.chk: %.xml main.py check.py
-	source .venv/bin/activate && \
-		./main.py $< --format check
-	touch $@
+%.pdf: %.tex | tex
+	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/$<
 
-%.rst: %.xml main.py rst_emitter.py | %.chk
-	source .venv/bin/activate && \
-		./main.py $< --format rst --output $@
-
-%.md: %.xml main.py | %.chk
-	source .venv/bin/activate && \
-		./main.py $< --format md --output $@
-
-%.html: %.xml main.py html_emitter.py | %.chk
-	source .venv/bin/activate && \
-		./main.py $< --format html --output $@
-
-%.json: %.xml main.py json_emitter.py | %.chk
-	source .venv/bin/activate && \
-		./main.py $< --format json --output $@
-
-%.tex: %.xml main.py latex_emitter.py | %.chk
-	source .venv/bin/activate && \
-		./main.py $< --format tex --output $@
-
-%.pdf: %.tex
-	latexmk -g -verbose -shell-escape -pdflua $<
-
-sphinx: conf.py ${SRCS:xml=rst}
-	source .venv/bin/activate && \
-		sphinx-build -b html . sphinx
+.PHONY: docker
+docker: Dockerfile
+	docker build . -t $(DOCKER_IMAGE_NAME)
+	docker run \
+		--rm \
+		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
+		-e MAKE_TARGET=$(MAKE_TARGET) \
+		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
+		$(DOCKER_IMAGE_NAME)
 
 .PHONY: clean
 clean:
-	GLOBIGNORE="Readme.md" && \
-		rm -rf *.chk *.rst *.md *.html *.json sphinx *.aux *.fdb_latexmk *.fls *.log *.out *.pdf *.tex
+	cd ${LATEX_PATH} && latexmk -c ${LATEXMKOPTS} && cd $(PWD)
 
-build: all
-	mkdir -p build
-	cp ${SRCS}          build/
-	cp ${SRCS:xml=rst}  build/
-	cp ${SRCS:xml=html} build/
-	cp ${SRCS:xml=json} build/
-	cp ${SRCS:xml=pdf}  build/
-	touch build
-
-.PHONY: docker
-docker:
-	docker build . -t builder
-	docker run \
-		--rm \
-		--volume ${PWD}:/app/src \
-		--volume ${PWD}/out:/app/build \
-		builder \
-		/bin/bash -c "cp src/{Makefile,*.py,*.xml,*.svg} ./; make --always-make --keep-going build"
-
-.PHONY: build_reglemente
-build_reglemente: docker
+.PHONY: dist-clean
+dist-clean:
+	cd ${LATEX_PATH} && latexmk -C ${LATEXMKOPTS} || true && cd $(PWD)
+	${RM} -r $(wildcard ${PDF_PATH}/*)
+	${RM} -r $(wildcard ${LATEX_PATH}/*)
+	${RM} -r $(wildcard ${MDBOOK_PATH}/*)
