@@ -5,6 +5,9 @@ description = "Die Rechtssammlung des VSETH."
 src = ""
 lang = "de"
 
+[build]
+create-missing = false
+
 [output.html]
 default-theme = "light"
 mathjax-support = false
@@ -16,7 +19,7 @@ git-repository-icon = "fa-gitlab"
 enable = false
 
 [output.html.fold]
-enable = true
+enable = false
 
 [output.html.search]
 enable = true            # enables the search feature

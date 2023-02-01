@@ -6,6 +6,8 @@
  #}
 # VSETH Rechtssammlung
 
+<a href="/{{bylaws.filename}}.pdf" target="_blank" rel="noopener noreferrer">PDF-Version</a>
+
 {% for regl in bylaws.regulations %}
-{% if '.' in regl.id %}    {% endif %}- [{{regl.title}}]({{regl.id}}.md)
+{% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.id}}.md)
 {% endfor %}

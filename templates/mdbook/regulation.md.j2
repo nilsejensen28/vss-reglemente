@@ -153,6 +153,8 @@ p.para {
     {%- if regl.abbrev is not none -%}{{regl.abbrev}}{%- endif -%})
 {%- endif -%}**
 
+<a href="/{{regl.filename}}.pdf" target="_blank" rel="noopener noreferrer">PDF-Version</a>
+
 {% if regl.preamble is defined %}
 *{{ set_text(regl.preamble.text) }}*
 {%- endif -%}

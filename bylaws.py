@@ -86,6 +86,11 @@ class Bylaws:
 
         # Values
         self.title = element.get("title")
+        if is_empty(element.get("filename")):
+            self.filename = filename
+        else:
+            self.filename = element.get("filename")
+        self.filename = self.filename.replace(".xml", "")
 
         self.regulations = []
         for child in element:
