@@ -3,20 +3,30 @@
 # specifies the target in that Makefile and $OUTPUT specifies where the
 # compiled PDFs will be copied to.
 
+# Build mdbook from source
+FROM rust:1.67-slim-bookworm as mdbook
+
+ENV MDBOOK_VERSION 0.4.25
+RUN cargo install mdbook --version ${MDBOOK_VERSION} --target x86_64-unknown-linux-gnu
+
+
+# Setup the container to actually build the rechtssammlung
 FROM texlive/texlive:latest as build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt install -y python3-pip
+RUN apt update && apt install -y python3-pip wget
+
+# install mdbook
+COPY --from=mdbook /usr/local/cargo/bin/mdbook /usr/bin/mdbook
+RUN mdbook --version
 
 WORKDIR /app
 
 COPY requirements.txt ./
-
 RUN pip install -r requirements.txt
 
 COPY . .
 
-
-# Copy everything to output
-CMD make OUT_PATH=$OUTPUT $MAKE_TARGET
+# Invocation through shell is ok as we are only building stuff in production.
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET"]

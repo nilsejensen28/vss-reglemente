@@ -21,6 +21,7 @@ OUT_PATH ?= $(PWD)/out
 PDF_PATH = ${OUT_PATH}/pdf
 LATEX_PATH = ${OUT_PATH}/latex
 MDBOOK_PATH = ${OUT_PATH}/mdbook
+HTML_PATH = ${MDBOOK_PATH}/book
 ASSET_PATH = $(PWD)/assets
 
 DOCKER_IMAGE_NAME ?= reglemente-builder
@@ -35,13 +36,23 @@ SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | se
 
 
 .PHONY: all
-all: mdbook pdf
+all: html pdf
+
+# We build the HTML representation by building an mdbook
+.PHONY: html
+html: mdbook
+	mdbook build ${MDBOOK_PATH}
 
 # An mdbook is only made from the entire Rechtssammlung.
 # VSETH_Rechtssammlung.xml is the first file in ${SRCS}. Therefore, $< will only build that file.
 .PHONY: mdbook
-mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py)
+mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-init
 	python3 main.py --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
+
+# Initialize the mdbook folder by copying config files and assets
+mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*)
+	cp config/book.toml ${MDBOOK_PATH}/
+# cp -r ${ASSET_PATH}/mdbook/* ${MDBOOK_PATH}/
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
@@ -54,18 +65,24 @@ pdf: ${SRCS:.xml=.pdf}
 %.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
 	python3 main.py --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
 
-%.pdf: %.tex | tex
+%.pdf: %.tex
 	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/$<
 
-.PHONY: docker
-docker: Dockerfile
-	docker build . -t $(DOCKER_IMAGE_NAME)
+.PHONY: test
+test: all
+	mdbook serve ${MDBOOK_PATH}
+
+.PHONY: build-docker
+build-docker: docker
 	docker run \
 		--rm \
 		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
 		-e DOCKER_MAKE_TARGET=$(DOCKER_MAKE_TARGET) \
 		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
 		$(DOCKER_IMAGE_NAME)
+
+docker: Dockerfile
+	docker build . -t $(DOCKER_IMAGE_NAME)
 
 .PHONY: clean
 clean:
