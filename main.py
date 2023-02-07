@@ -41,7 +41,7 @@ def main():
             with open("{}/{}.md".format(args.output_folder, rsvseth.filename), "w", encoding="utf-8") as f:
                 f.write(bylaws_template.render(bylaws=rsvseth))
             for regl in rsvseth.regulations:
-                with open("{}/{}.md".format(args.output_folder, regl.id), "w", encoding="utf-8") as f:
+                with open("{}/{}.md".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl))
         case "latex":
             # adjust start and end strings to be compatible with LaTeX
