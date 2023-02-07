@@ -15,7 +15,7 @@ FROM texlive/texlive:latest as build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
-RUN apt update && apt install -y python3-pip wget
+RUN apt update && apt install -y python3-pip inkscape
 
 # install mdbook
 COPY --from=mdbook /usr/local/cargo/bin/mdbook /usr/bin/mdbook
