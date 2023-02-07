@@ -1,19 +1,9 @@
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 ((* macro titlepage(title, asset_path, id=None, subtitle=None) -*))
-=======
-((* macro titlepage(title, id=None, subtitle=None) -*))
->>>>>>> 416e14a (Implemented LaTeX codegen)
-=======
-((* macro titlepage(title, id=None, subtitle=None) -*))
->>>>>>> 019bedc (Implemented LaTeX codegen)
 \begin{titlepage}
     \centering
     \hspace{0pt}
     \vfill
-<<<<<<< HEAD
-<<<<<<< HEAD
     \includesvg{(( asset_path ))/vseth_Logo_bunt.svg}
     \par
     {\Huge \textbf{(( title | escape_tex ))} \par }
@@ -21,20 +11,6 @@
     {\LARGE \textbf{RSVSETH (( id | escape_tex ))} ( ((- subtitle | escape_tex -)) )}
     ((* elif subtitle is none and id is not none *))
     {\LARGE \textbf{RSVSETH (( id | escape_tex ))}}
-=======
-=======
->>>>>>> 019bedc (Implemented LaTeX codegen)
-    \includesvg{vseth_Logo_bunt.svg}
-    \par
-    {\Huge \textbf{(( title ))} \par }
-    ((* if subtitle is not none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id ))} ( ((- subtitle -)) )}
-    ((* elif subtitle is none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id ))}}
-<<<<<<< HEAD
->>>>>>> 416e14a (Implemented LaTeX codegen)
-=======
->>>>>>> 019bedc (Implemented LaTeX codegen)
     ((* endif *))
     {\LARGE \today \par }
     \vfill
@@ -42,15 +18,7 @@
 ((* endmacro *))
 
 ((* macro section(sec) -*))
-<<<<<<< HEAD
-<<<<<<< HEAD
 \section{(( sec.title | escape_tex ))}
-=======
-\section{(( sec.title ))}
->>>>>>> 416e14a (Implemented LaTeX codegen)
-=======
-\section{(( sec.title ))}
->>>>>>> 019bedc (Implemented LaTeX codegen)
 \nobreak
 
 ((* for art in sec.articles -*))
