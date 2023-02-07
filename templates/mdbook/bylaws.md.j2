@@ -6,7 +6,10 @@
  #}
 # VSETH Rechtssammlung
 
-[{{ bylaws.title }}]({{ bylaws.filename }}.md)
+<a href="/{{bylaws.filename}}.pdf" target="_blank" rel="noopener noreferrer">PDF-Version</a>
+
+Willkommen in der Rechtssammlung des VSETH! Hier finden sie die Statuten sowie alle Reglemente
+und Verordnungen des VSETH.
 
 {% for regl in bylaws.regulations %}
 {% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.id}}.md)

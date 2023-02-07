@@ -34,9 +34,12 @@ def main():
                 raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
 
             summary_template = jinja_env.get_template("summary.md.j2")
+            bylaws_template = jinja_env.get_template("bylaws.md.j2")
             regl_template = jinja_env.get_template("regulation.md.j2")
             with open("{}/SUMMARY.md".format(args.output_folder), "w", encoding="utf-8") as f:
                 f.write(summary_template.render(bylaws=rsvseth))
+            with open("{}/{}.md".format(args.output_folder, rsvseth.filename), "w", encoding="utf-8") as f:
+                f.write(bylaws_template.render(bylaws=rsvseth))
             for regl in rsvseth.regulations:
                 with open("{}/{}.md".format(args.output_folder, regl.id), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl))

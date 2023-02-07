@@ -53,7 +53,6 @@ mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-i
 mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*)
 	mkdir -p ${MDBOOK_PATH}
 	cp config/book.toml ${MDBOOK_PATH}/
-# cp -r ${ASSET_PATH}/mdbook/* ${MDBOOK_PATH}/
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
