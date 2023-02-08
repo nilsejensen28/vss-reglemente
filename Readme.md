@@ -1,16 +1,65 @@
 # VSETH Rechtssammlung
 
-## Prerequisites
+The VSETH Rechtssammlung is generated from XML schemas into different formats (currently an 
+[mdbook](https://rust-lang.github.io/mdBook/) and PDF via LaTeX). To edit the Rechtssammlung
+you only need to know how to generate the documents and how the schema works (see Setup, Generating,
+Schema). If you want to change other things see Developing.
 
+{:toc}
+
+## Overview
+In this repo we maintain the VSETH Rechtssammlung as a collection of XML documents. These
+XML documents allow us to easily generate different file formats from one source of truth.
+Using [a Python script](main.py) we parse the XML structure into
+[an abstract representation of Python classes](bylaws.py) which is then used to render
+Jinja templates.
+
+Currently, we support the generation of PDFs by generating and compiling LaTeX files, and
+the generation of an [mdbook](https://rust-lang.github.io/mdBook), which serves as a searchable
+website that allows for linking directly into articles.
+
+
+## Setup
+The easiest setup only needs [docker](https://www.docker.com/get-started/) and
+[make](https://www.gnu.org/software/make/). Generally, this is what you want.
+
+
+### Local Setup (docker-less)
+ To build the Rechtssammlung without docker for better local testing you need the following software:
  - make
- - Python 3.10 (for `match`)
+ - Python >=3.10
+ - Python Pip
  - TexLive
- - latexmk
+ - latexmk (should be included in a TeXLive distribution)
  - inkscape
+ - [mdbook](https://rust-lang.github.io/mdBook/)
 
-## Compilation
+First create a pyhton virtual environment with
+```bash
+$ python -m venv .venv
+```
+and activate the environment with
+```bash
+$ source .venv/bin/activate
+```
 
-Just run `make` in the base directory.
+Then, install the required python packages using
+```bash
+$ pip install -r requirements.txt
+```
+Now you are ready to go.
+
+
+## Generating Documents
+To generate all document formats using docker run `make build-docker`.
+
+To generate all document formats locally without docker run `make`.
+
+### Checking Document Generation without building locally
+If you have no local setups (e.g. if you are a mere IA-Vorstand), you can commit your changes to 
+a new branch and push the new branch. Then, you can check the output of the latest build for your
+branch on [Teamcity](https://teamcity.vseth.ethz.ch/buildConfiguration/id0100Reglemente_Reglemente_Sip?mode=builds#all-projects)
+(the builds take more than 5 minutes before they will fail in case you made a mistake).
 
 ## Adding a new regulation
 
