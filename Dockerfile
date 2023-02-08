@@ -1,68 +1,32 @@
-FROM ubuntu:latest as metabuilder
-SHELL ["/bin/bash", "-c"]
-ARG DEBIAN_FRONTEND="noninteractive"
+# This Dockerfile builds the Rechtssammlung by making use of the Makefile
+# in the Rechtssammlung folder. The environment variable $MAKE_TARGET
+# specifies the target in that Makefile and $OUTPUT specifies where the
+# compiled PDFs will be copied to.
 
-ARG TEXLIVE_INSTALL_PREFIX="/app/texlive"
-ARG TEXLIVE_INSTALL_TEXDIR="${TEXLIVE_INSTALL_PREFIX}"
-ENV PATH="${TEXLIVE_INSTALL_TEXDIR}/bin/x86_64-linux:${PATH}"
+# Build mdbook from source
+FROM rust:1.67-slim-bookworm as mdbook
+
+ENV MDBOOK_VERSION 0.4.25
+RUN cargo install mdbook --version ${MDBOOK_VERSION} --target x86_64-unknown-linux-gnu
+
+
+# Setup the container to actually build the rechtssammlung
+FROM texlive/texlive:latest as build
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt update && apt install -y python3-pip inkscape
+
+# install mdbook
+COPY --from=mdbook /usr/local/cargo/bin/mdbook /usr/bin/mdbook
+RUN mdbook --version
 
 WORKDIR /app
-COPY texlive.profile  install-tl/
 
-RUN \
-	set -euxo pipefail; \
-	apt-get update; \
-	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-                texlive-luatex \
-		python3-venv \
-	; \
-	python3 -m venv --upgrade-deps .venv; \
-	apt-get remove --assume-yes --purge software-properties-common; \
-	apt-get autoremove --assume-yes; \
-	echo "Installing TeXLive..."; \
-	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-		ca-certificates \
-		libencode-perl \
-		perl-modules \
-		wget \
-		gpg \
-	; \
-	mkdir --parents install-tl; \
-	cd install-tl; \
-	wget --no-verbose \
-		http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz \
-	; \
-	tar \
-		--extract \
-		--strip-components=1 \
-		--gunzip \
-		--file=install-tl-unx.tar.gz \
-	; \
-	./install-tl --profile texlive.profile; \
-	cd ..; \
-	rm --recursive --force install-tl; \
-	echo "Installing Make..."; \
-	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-		make \
-	; \
-	echo "Cleaning up..."; \
-	rm --recursive --force /var/lib/apt/lists/*;
+COPY requirements.txt ./
+RUN pip install -r requirements.txt
 
-FROM metabuilder as builder
-ENV PATH="${PATH}"
-WORKDIR /app
+COPY . .
 
-COPY requirements.txt .
-COPY texlive.txt      .
-
-RUN \
-	set -euxo pipefail; \
-	source .venv/bin/activate; \
-	pip install -r requirements.txt; \
-	apt-get update; \
-	apt-get install --assume-yes --no-install-recommends --no-install-suggests \
-		inkscape \
-	; \
-	rm --recursive --force /var/lib/apt/lists/*; \
-	tlmgr install --reinstall $(cat texlive.txt); \
-	luaotfload-tool --update;
+# Invocation through shell is ok as we are only building stuff in production.
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET"]

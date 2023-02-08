@@ -1,178 +1,87 @@
 #! /usr/bin/env python
 from lxml import etree
-from string import ascii_lowercase
-from roman import toRoman
+from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
+import os
+import pathlib
 import re
-from slugify import slugify
 
-from check import Checker
-from html_emitter import HtmlEmitter
-from rst_emitter import RstEmitter
-from json_emitter import JsonEmitter
-from latex_emitter import LatexEmitter
+import bylaws
 
 def main():
     parser = ArgumentParser()
     parser.add_argument("input")
-    parser.add_argument("-o", "--output")
-    parser.add_argument("-f", "--format", default="rst")
+    parser.add_argument("-o", "--output-folder", required=True)
+    parser.add_argument("-f", "--format", choices=["mdbook", "latex"], required=True)
+    parser.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
     args = parser.parse_args()
 
+    # create output folder
+    os.makedirs(args.output_folder, exist_ok=True)
+
+    rsvseth = bylaws.parse(args.input)
+
+
+    jinja_env = Environment(
+        loader=FileSystemLoader("templates/{}".format(args.format)),
+        keep_trailing_newline=False,
+    )
+
     match args.format:
-        case "rst":
-            result = str(RstEmitter().process(args.input))
-        case "md":
-            result = to_md(args.input)
-        case "html":
-            result = str(HtmlEmitter().process(args.input))
-        case "json":
-            result = str(JsonEmitter().process(args.input))
-        case "tex":
-            result = str(LatexEmitter().process(args.input))
-        case "check":
-            Checker().process(args.input)
-            result = ""
+        case "mdbook":
+            # Forbid making an mdbook with only one regulation.
+            if isinstance(rsvseth, bylaws.Regulation):
+                raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
+
+            summary_template = jinja_env.get_template("summary.md.j2")
+            bylaws_template = jinja_env.get_template("bylaws.md.j2")
+            regl_template = jinja_env.get_template("regulation.md.j2")
+            with open("{}/SUMMARY.md".format(args.output_folder), "w", encoding="utf-8") as f:
+                f.write(summary_template.render(bylaws=rsvseth))
+            with open("{}/{}.md".format(args.output_folder, rsvseth.filename), "w", encoding="utf-8") as f:
+                f.write(bylaws_template.render(bylaws=rsvseth))
+            for regl in rsvseth.regulations:
+                with open("{}/{}.md".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
+                    f.write(regl_template.render(regl=regl))
+        case "latex":
+            # adjust start and end strings to be compatible with LaTeX
+            jinja_env.block_start_string = "((*"
+            jinja_env.block_end_string = "*))"
+            jinja_env.variable_start_string = "(("
+            jinja_env.variable_end_string = "))"
+            jinja_env.comment_start_string = "((#"
+            jinja_env.comment_end_string = "#))"
+            jinja_env.filters['escape_tex'] = escape_tex
+
+            bylaws_template = jinja_env.get_template("bylaws.tex.j2")
+            regl_template = jinja_env.get_template("regulations.tex.j2")
+            if isinstance(rsvseth, bylaws.Bylaws):
+                with open("{}/VSETH_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
+                    f.write(bylaws_template.render(bylaws=rsvseth, asset_path=args.asset_path))
+            else:
+                regl = rsvseth
+                with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
+                    f.write(regl_template.render(regl=regl, asset_path=args.asset_path))
         case _:
-            raise RuntimeWarning
+            raise NotImplementedError()
 
-    if args.output:
-        with open(args.output, "w") as f:
-            f.write(result)
-    else:
-        print(result)
+# Filter for latex escaping
+# Source: https://stackoverflow.com/questions/43495728/escaping-slashes-for-jinja2-and-latex
+LATEX_SUBS = (
+    (re.compile(r'\\'), r'\\textbackslash'),
+    (re.compile(r'([{}_#%&$])'), r'\\\1'),
+    (re.compile(r'~'), r'\~{}'),
+    (re.compile(r'\^'), r'\^{}'),
+    (re.compile(r'"'), r"''"),
+    (re.compile(r'\.\.\.+'), r'\\ldots'),
+    (re.compile(r'/'), r'\/')
+)
 
-def to_md(input_filename):
-    result = ""
-    indents = []
-    for event, element in etree.iterparse(input_filename, events=("start", "end")):
-        match element.tag, event:
-            case "bylaws", "start":
-                title = element.get("title")
-                result += f"# {title}" + '\n'
-                result += "```{toctree}" + '\n'
-                assert element.text is None or element.text.strip() == ''
-            case "bylaws", "end":
-                result += "```"
-                assert element.tail is None or element.tail.strip() == ''
-            case "include", "start":
-                path = element.get("path")
-                path = re.sub(r"\.xml$", "", path)
-                result += path + '\n'
-                assert element.text is None or element.text.strip() == ''
-            case "include", "end":
-                assert element.tail is None or element.tail.strip() == ''
-            case "regulation", "start":
-                title = element.get("title")
-                short = element.get("short")
-                if short:
-                    title = f"{title} ({short})"
-                result += f"\n# {title}\n"
-                assert element.text is None or element.text.strip() == ''
-                article_counter = 1
-            case "regulation", "end":
-                assert element.tail is None or element.tail.strip() == ''
-                del article_counter
-            case "section", "start":
-                title = element.get("title")
-                result += f"\n## {title}\n"
-                assert element.text is None or element.text.strip() == ''
-            case "section", "end":
-                assert element.tail is None or element.tail.strip() == ''
-            case "subsection", "start":
-                title = element.get("title")
-                result += f"\n### {title}\n"
-                assert element.text is None or element.text.strip() == ''
-            case "subsection", "end":
-                assert element.tail is None or element.tail.strip() == ''
-            case "subsubsection", "start":
-                title = element.get("title")
-                result += f"\n#### {title}\n"
-                assert element.text is None or element.text.strip() == ''
-            case "subsubsection", "end":
-                assert element.tail is None or element.tail.strip() == ''
-            case "articles", "start":
-                assert element.text is None or element.text.strip() == ''
-            case "articles", "end":
-                assert element.tail is None or element.tail.strip() == ''
-            case "article", "start":
-                title = element.get("title")
-                result += f"\n##### Art. {article_counter} {title}\n"
-                article_counter += 1
-                result += element.text.strip()
-            case "article", "end":
-                assert element.tail is None or element.tail.strip() == ''
-                result += '\n'
-            case "paragraphs", "start":
-                assert element.text is None or element.text.strip() == ''
-                result += "\n\n"
-                paragraph_counter = 1
-            case "paragraphs", "end":
-                assert element.tail is None or element.tail.strip() == ''
-                result += "\n\n"
-                del paragraph_counter
-            case "paragraph", "start":
-                text = element.text.strip()
-                label = f" {paragraph_counter}."
-                result += label + " " + text
-                indents.append(' ' * len(label))
-            case "paragraph", "end":
-                indents.pop()
-                if element.tail is not None and element.tail.strip() != '':
-                    result += element.tail.strip()
-                result += '\n'
-                paragraph_counter += 1
-            case "letters", "start":
-                assert element.text is None or element.text.strip() == ''
-                result += "\n\n"
-                letter_counter = 0
-            case "letters", "end":
-                assert element.tail is None or element.tail.strip() == ''
-                result += "\n\n"
-                del letter_counter
-            case "letter", "start":
-                text = element.text.strip()
-                label = " " + ascii_lowercase[letter_counter] + ")"
-                result += ''.join(indents) + label + " " + text
-                indents.append(' ' * len(label))
-            case "letter", "end":
-                indents.pop()
-                if element.tail is not None and element.tail.strip() != '':
-                    result += ''.join(indents) + element.tail.strip()
-                result += '\n'
-                letter_counter += 1
-            case "numerals", "start":
-                assert element.text is None or element.text.strip() == ''
-                result += "\n\n"
-                numeral_counter = 1
-            case "numerals", "end":
-                assert element.tail is None or element.tail.strip() == ''
-                result += "\n\n"
-                del numeral_counter
-            case "numeral", "start":
-                text = element.text.strip()
-                label = toRoman(numeral_counter).lower() + ")"
-                result += ''.join(indents) + label + " " + text
-                indents.append(' ' * len(label))
-            case "numeral", "end":
-                indents.pop()
-                if element.tail is not None and element.tail.strip() != '':
-                    result += ''.join(indents) + element.tail.strip()
-                result += '\n'
-                numeral_counter += 1
-            case "quote", "start":
-                result += ' "'
-                result += element.text.strip()
-            case "quote", "end":
-                result += '" '
-                if element.tail is not None and element.tail.strip() != '':
-                    result += element.tail.strip()
-            case _, _:
-                raise RuntimeWarning(f"Unhandled event {event} for element {element.tag}")
-
-    result = re.sub('" ([.,])', r'"\1', result)
-    result = re.sub(r"\n\n\n*", "\n\n", result, 0, re.MULTILINE)
-    return result
+def escape_tex(value):
+    newval = str(value)
+    for pattern, replacement in LATEX_SUBS:
+        newval = pattern.sub(replacement, newval)
+    return newval
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,35 @@
+((#
+  # Template for a LaTeX regulation
+  # 
+  # Since LaTeX does not play nicely with {% %}, use ((* *))
+  #))
+
+((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, set_text, set_tail with context*))
+
+(( header() ))
+
+\begin{document}
+((* if regl.short is not none or regl.abbrev is not none *))
+((* set subtitle *))
+  ((*- if regl.short is not none -*))(( regl.short | escape_tex ))((*- endif -*))
+  ((*- if regl.short is not none and regl.abbrev is not none -*)); ((* endif *))
+  ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex ))((*- endif -*))
+((* endset *))
+(( titlepage(regl.title, asset_path, regl.id, subtitle) -))
+((* else -*))
+(( titlepage(regl.title, asset_path, regl.id ) ))
+((* endif -*))
+
+((* if regl.preamble is defined *))
+\emph{((- set_text(regl.preamble.text ) -))}
+((* endif *))
+
+((* for art in regl.articles -*))
+  ((- article(art) ))
+((* endfor -*))
+((* for sec in regl.sections -*))
+  ((- section(sec) -))
+((* endfor *))
+
+\end{document}
+ 
