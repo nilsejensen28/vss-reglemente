@@ -5,7 +5,7 @@ The VSETH Rechtssammlung is generated from XML schemas into different formats (c
 you only need to know how to generate the documents and how the schema works (see Setup, Generating,
 Schema). If you want to change other things see Developing.
 
-{:toc}
+[[_TOC_]]
 
 ## Overview
 In this repo we maintain the VSETH Rechtssammlung as a collection of XML documents. These
@@ -34,7 +34,7 @@ The easiest setup only needs [docker](https://www.docker.com/get-started/) and
  - inkscape
  - [mdbook](https://rust-lang.github.io/mdBook/)
 
-First create a pyhton virtual environment with
+First create a Python virtual environment with
 ```bash
 $ python -m venv .venv
 ```
@@ -64,7 +64,7 @@ branch on [Teamcity](https://teamcity.vseth.ethz.ch/buildConfiguration/id0100Reg
 ## Adding a new regulation
 
  1. Create a new XML file. Use `00_example.xml` as a reference.
- 2. Check for syntax errors by running `make xx_my_new_regulation.chk`.
- 3. If all is well, add the file to `SRCS` in `Makefile`, as well as an entry in `index.xml`.
- 4. Compile everything: `make all`.
+ 2. Edit your file to match the decided contents.
+ 3. If all is well, add an entry of your newest file in `VSETH_Rechtssammlung.xml`.
+ 4. Generate all documents and check for errors (see above).
  5. Report any errors that you cannot fix to https://gitlab.ethz.ch/vseth/0100-Reglemente/reglemente/-/issues
