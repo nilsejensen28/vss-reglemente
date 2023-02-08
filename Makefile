@@ -31,7 +31,7 @@ DOCKER_MAKE_TARGET ?= all
 LATEXOPTS = -interaction=nonstopmode -shell-escape -file-line-error
 LATEXMKOPTS = -outdir=${PDF_PATH} -norc -use-make -latexoption=${LATEXOPTS}
 
-# We extraxt the list of sources from VSETH_Rechtssammlung.xml. This way we don't need to make changes twice.
+# We extract the list of sources from VSETH_Rechtssammlung.xml. This way we don't need to make changes twice.
 SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | sed -r 's/.*href="(.+)".*/\1/' | tr "\n" " ")
 
 
