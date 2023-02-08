@@ -12,5 +12,5 @@ Willkommen in der Rechtssammlung des VSETH! Hier finden sie die Statuten sowie a
 und Verordnungen des VSETH.
 
 {% for regl in bylaws.regulations %}
-{% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.id}}.md)
+{% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.filename}}.md)
 {% endfor %}
