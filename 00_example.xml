@@ -11,10 +11,16 @@
 				<paragraph>
 					A &lt;paragraph&gt; must be contained in &lt;paragraphs&gt;.
 				</paragraph>
+				<paragraph inserted="">
+					This paragraph is inserted.
+				</paragraph>
 				<paragraph>
 					&lt;paragraphs&gt; must be contained in an &lt;article&gt;.
 				</paragraph>
 			</paragraphs>
+		</article>
+		<article title="Inserted Article" inserted="">
+			This article is inserted.
 		</article>
 		<article title="Letters and numerals">
 			An &lt;article&gt; or &lt;paragraph&gt; may contain &lt;letters&gt;, like so:
@@ -22,11 +28,17 @@
 				<letter>
 					items should end with appropriate punctuation, by convention a semicolon;
 				</letter>
+				<letter inserted="">
+					Items inserted after some time must be marked with the attribute "inserted".
+				</letter>
 				<letter>
 					A &lt;letter&gt; may contain &lt;numerals&gt;, like so:
 					<numerals>
 						<numeral>
 							all rules about &lt;letters&gt; apply to &lt;numerals&gt;;
+						</numeral>
+						<numeral inserted="">
+							numerals may also be inserted;
 						</numeral>
 						<numeral>
 							a &lt;numeral&gt; may not contain any other list.

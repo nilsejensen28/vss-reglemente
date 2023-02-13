@@ -9,14 +9,20 @@ def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_com
     ret.attrib["filename"] = href
     return ret
 
-
+# Global counters to track the number of relevant items.
+# These counters need to be updated appropriately by the respective classes.
 art_counter = 0
+inserted_art_counter = 0
 abs_counter = 0
+inserted_abs_counter = 0
 lit_counter = 0
+inserted_lit_counter = 0
 num_counter = 0
+inserted_num_counter = 0
 sec_counter = 0
 subsec_counter = 0
 subsubsec_counter = 0
+
 filename = None
 
 
@@ -103,7 +109,8 @@ class Bylaws:
 
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter, filename
+        global sec_counter, art_counter, inserted_art_counter, filename
+
         # Sanity
         assert(element.tag == "regulation")
 
@@ -118,7 +125,7 @@ class Regulation:
             throw_error("a regulation must contain an id", element)
 
         # reset counters
-        art_counter, sec_counter = 0, 0
+        art_counter, inserted_art_counter, sec_counter = 0, 0, 0
 
         # Values
         self.title = element.get("title")
@@ -148,7 +155,7 @@ class Regulation:
                 case "section":
                     self.sections.append(Section(child))
                 case "articles":
-                    if is_empty(self.sections):
+                    if len(self.sections) == 0:
                         self.articles = process_articles(child)
                     else:
                         throw_error("a regulation may only contain articles before any sections", element)
@@ -158,7 +165,6 @@ class Regulation:
 
 class Preamble:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "preamble")
 
@@ -184,7 +190,7 @@ class Preamble:
 
 class Section:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter
         # Sanity
         assert(element.tag == "section")
 
@@ -223,7 +229,7 @@ class Section:
 
 class Subsection:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsection")
 
@@ -262,7 +268,7 @@ class Subsection:
 
 class Subsubsection:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsubsection")
 
@@ -293,7 +299,7 @@ class Subsubsection:
 
 class Article:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global art_counter, inserted_art_counter, abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
         # Sanity
         assert(element.tag == "article")
 
@@ -302,16 +308,29 @@ class Article:
             throw_error("an article may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("an article needs a title", element)
+        if element.get("inserted") is not None and element.get("inserted") != "":
+            throw_error("the attribute inserted must either be an empty string or not present", element)
 
         # reset counters
-        abs_counter, lit_counter = 0, 0
+        abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter = 0, 0, 0, 0
 
         # increment article counter
-        art_counter += 1
+        if element.get("inserted") == "":
+            # We have an inserted article. Therefore, we do not increment the normal article counter.
+            inserted_art_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal article.
+            self.inserted = False
+            art_counter += 1
+            if inserted_art_counter > 0:
+                # This is a normal article and the previous article was inserted. Therefore, reset inserted counter.
+                inserted_art_counter = 0
 
         # values
         self.title = element.get("title")
         self.number = art_counter
+        self.inserted_number = inserted_art_counter
 
         self.text = []
         self.paragraphs = []
@@ -344,22 +363,35 @@ class Article:
 
 class Paragraph:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
         # Sanity
         assert(element.tag == "paragraph")
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a paragraph may not have a tail (tail: {})".format(element.tail), element)
+        if element.get("inserted") is not None and element.get("inserted") != "":
+            throw_error("the attribute inserted must either be an empty string or not present", element)
 
         # reset counters
-        lit_counter = 0
+        lit_counter, inserted_lit_counter = 0, 0
 
         # increment paragraph number
-        abs_counter += 1
+        if element.get("inserted") == "":
+            # We have an inserted paragraph. Therefore, we do not increment the normal paragraph counter.
+            inserted_abs_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal paragraph.
+            self.inserted = False
+            abs_counter += 1
+            if inserted_abs_counter > 0:
+                # This is a normal paragraph and the previous paragraph was inserted. Therefore, reset inserted counter.
+                inserted_abs_counter = 0
 
         # values
         self.number = abs_counter
+        self.inserted_number = inserted_abs_counter
 
         self.text = []
         self.letters = []
@@ -383,22 +415,35 @@ class Paragraph:
 
 class Letter:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global lit_counter, num_counter, inserted_lit_counter, inserted_num_counter
         # Sanity
         assert(element.tag == "letter")
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a letter may not have a tail (tail: {})".format(element.tail), element)
+        if element.get("inserted") is not None and element.get("inserted") != "":
+            throw_error("the attribute inserted must either be an empty string or not present", element)
         
         # reset counter
-        num_counter = 0
+        num_counter, inserted_num_counter = 0, 0
 
         # increment letter counter
-        lit_counter += 1
+        if element.get("inserted") == "":
+            # We have an inserted letter. Therefore, we do not increment the normal letter counter.
+            inserted_lit_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal letter.
+            self.inserted = False
+            lit_counter += 1
+            if inserted_lit_counter > 0:
+                # This is a normal letter and the previous letter was inserted. Therefore, reset inserted counter.
+                inserted_lit_counter = 0
 
         # values
         self.number = lit_counter
+        self.inserted_number = inserted_lit_counter
         
         self.text = []
         self.numerals = []
@@ -420,19 +465,32 @@ class Letter:
 
 class Numeral:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global num_counter, inserted_num_counter
         # Sanity
         assert(element.tag == "numeral")
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a numeral may not have a tail (tail: {})".format(element.tail), element)
+        if element.get("inserted") is not None and element.get("inserted") != "":
+            throw_error("the attribute inserted must either be an empty string or not present", element)
 
         # increment numeral counter
-        num_counter += 1
+        if element.get("inserted") == "":
+            # We have an inserted numeral. Therefore, we do not increment the normal numeral counter.
+            inserted_num_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal numeral.
+            self.inserted = False
+            num_counter += 1
+            if inserted_num_counter > 0:
+                # This is a normal numeral and the previous numeral was inserted. Therefore, reset inserted counter.
+                inserted_num_counter = 0
 
         # values
         self.number = num_counter
+        self.inserted_number = inserted_num_counter
 
         self.text = []
 

@@ -26,6 +26,8 @@ def main():
         loader=FileSystemLoader("templates/{}".format(args.format)),
         keep_trailing_newline=False,
     )
+    jinja_env.filters['num2letter'] = num2letter
+    jinja_env.filters['num2latin'] = num2latin
 
     match args.format:
         case "mdbook":
@@ -82,6 +84,17 @@ def escape_tex(value):
     for pattern, replacement in LATEX_SUBS:
         newval = pattern.sub(replacement, newval)
     return newval
+
+# Filter to convert numbers to lowercase letters. Zero is converted to the empty string.
+def num2letter(counter):
+    if counter == 0:
+        return ""
+    else:
+        return chr(ord('`') + counter)
+
+# Filter to convert numbers to latin numerals. Zero is converted to the empty string.
+def num2latin(counter):
+    return ["", "bis", "ter", "quarter", "quinquies", "sexies", "septies", "octies", "novies", "decies", "undecies", "duodecies", "terdecies", "quaterdecies"][counter]
 
 if __name__ == "__main__":
     main()
