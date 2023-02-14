@@ -315,6 +315,7 @@ class Article:
         abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter = 0, 0, 0, 0
 
         # increment article counter
+        self.ended_inserted = False # is true iff the preceding article was inserted and the current is not
         if element.get("inserted") == "":
             # We have an inserted article. Therefore, we do not increment the normal article counter.
             inserted_art_counter += 1
@@ -326,6 +327,7 @@ class Article:
             if inserted_art_counter > 0:
                 # This is a normal article and the previous article was inserted. Therefore, reset inserted counter.
                 inserted_art_counter = 0
+                self.ended_inserted = True
 
         # values
         self.title = element.get("title")
@@ -377,6 +379,7 @@ class Paragraph:
         lit_counter, inserted_lit_counter = 0, 0
 
         # increment paragraph number
+        self.ended_inserted = False # true iff the preceding paragraph is inserted and the current is not
         if element.get("inserted") == "":
             # We have an inserted paragraph. Therefore, we do not increment the normal paragraph counter.
             inserted_abs_counter += 1
@@ -388,6 +391,7 @@ class Paragraph:
             if inserted_abs_counter > 0:
                 # This is a normal paragraph and the previous paragraph was inserted. Therefore, reset inserted counter.
                 inserted_abs_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = abs_counter
@@ -429,6 +433,7 @@ class Letter:
         num_counter, inserted_num_counter = 0, 0
 
         # increment letter counter
+        self.ended_inserted = False # true if the preceding letter was inserted and the current is not
         if element.get("inserted") == "":
             # We have an inserted letter. Therefore, we do not increment the normal letter counter.
             inserted_lit_counter += 1
@@ -440,6 +445,7 @@ class Letter:
             if inserted_lit_counter > 0:
                 # This is a normal letter and the previous letter was inserted. Therefore, reset inserted counter.
                 inserted_lit_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = lit_counter
@@ -476,6 +482,7 @@ class Numeral:
             throw_error("the attribute inserted must either be an empty string or not present", element)
 
         # increment numeral counter
+        self.ended_inserted = False # true if the preceding numeral is inserted and the current is not
         if element.get("inserted") == "":
             # We have an inserted numeral. Therefore, we do not increment the normal numeral counter.
             inserted_num_counter += 1
@@ -487,6 +494,7 @@ class Numeral:
             if inserted_num_counter > 0:
                 # This is a normal numeral and the previous numeral was inserted. Therefore, reset inserted counter.
                 inserted_num_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = num_counter
