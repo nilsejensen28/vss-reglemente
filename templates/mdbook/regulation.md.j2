@@ -92,7 +92,7 @@
 {% macro letter(lit) -%}
 <dt>{{ lit.number | num2letter }}{% if lit.inserted %}<sup>{{ lit.inserted_number | num2latin }}</sup>{% endif %}.</dt>
 <dd>
-{{ set_text(lit.text) }}
+<div>{{ set_text(lit.text) }}</div>
 {%- if lit.numerals | length > 0 %}
 <dl class="numeral">
 {% for num in lit.numerals -%}
