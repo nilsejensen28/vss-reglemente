@@ -237,7 +237,7 @@ j
 \newlist{letters}{enumerate}{1}
 \setlist[letters]{
   label        = {\alph*.},
-  ref          = {lit.\ \alph*.},
+  ref          = {lit.\ \alph*},
   labelindent  = 3em, % How much to indent the list.
   labelwidth   = 2em, % Needs to be a known value to calculate the labelindent for the inserted list.
   labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
@@ -255,7 +255,7 @@ j
 \newlist{insertedletters}{enumerate}{1}
 \setlist[insertedletters]{
   label        = {\alph{lettersi}\textsuperscript{\latin*}.},
-  ref          = {lit.\ \alph{lettersi}\textsuperscript{\latin*}.},
+  ref          = {lit.\ \alph{lettersi}\textsuperscript{\latin*}},
   labelindent  = -3em, % Place label at the same place (labelwidth + labelsep of letters)
   labelsep     = 1em,  % Ensure the separation from the label.
   leftmargin   = 0em,  % Ensure that the text starts at the same place as letters.
@@ -271,7 +271,7 @@ j
 
 \newlist{numerals}{enumerate}{1}
 \setlist[numerals]{
-  label        = {\arabic*)},
+  label        = {\arabic*.},
   ref          = {\arabic*},
   align        = left,
   labelindent  = 0em, % Do not indent any more.
@@ -289,7 +289,7 @@ j
 % This list needs to be aligned to match the indentation of numerals.
 \newlist{insertednumerals}{enumerate}{1}
 \setlist[insertednumerals]{
-  label        = {\arabic{numeralsi}\textsuperscript{\latin*})},
+  label        = {\arabic{numeralsi}\textsuperscript{\latin*}.},
   ref          = {Ziff. \arabic{numeralsi}\textsuperscript{\latin*}},
   align        = left,
   labelindent  = -3em, % Place label at the same place.
