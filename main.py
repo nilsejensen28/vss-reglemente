@@ -87,6 +87,11 @@ def escape_tex(value):
 
 # Filter to convert numbers to lowercase letters. Zero is converted to the empty string.
 def num2letter(counter):
+    if counter < 0:
+        raise ValueError("expected positive value")
+    if counter > 26:
+        raise ValueError("cannot convert numbers larger than 26 to letters")
+
     if counter == 0:
         return ""
     else:
@@ -94,6 +99,11 @@ def num2letter(counter):
 
 # Filter to convert numbers to latin numerals. Zero is converted to the empty string.
 def num2latin(counter):
+    if counter < 0:
+        raise ValueError("expected positive value")
+    if counter > 14:
+        raise ValueError("cannot convert numbers larger than 14 to latin numeral (if you see this, the Rechtssammlung is in big trouble...)")
+
     return ["", "bis", "ter", "quarter", "quinquies", "sexies", "septies", "octies", "novies", "decies", "undecies", "duodecies", "terdecies", "quaterdecies"][counter]
 
 if __name__ == "__main__":
