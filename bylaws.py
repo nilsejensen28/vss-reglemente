@@ -410,8 +410,7 @@ class Paragraph:
         self.inserted_number = inserted_abs_counter
 
         self.text = []
-        self.letters = [    
-    ]
+        self.letters = []
         self.letters_tail = None
 
         if not is_empty(element.text):
