@@ -54,17 +54,17 @@
  # Articles
  #}
 {% macro article(art) -%}
-<article id="art_{{ art.number }}">  
+<article id="art_{{ art.number }}{{ art.inserted_number | num2letter }}">  
 
-**Art. {{ art.number }} {{ art.title }}**  
+**Art. {{ art.number }}{{ art.inserted_number | num2letter }} {{ art.title }}**  
 {{ set_text(art.text) }}
 
 {%- if art.letters | length > 0 %}
-<ol class="letters">
+<dl class="letters">
     {%- for lit in art.letters -%}
         {{ letter(lit) }}
     {%- endfor -%}
-</ol>
+</dl>
 {% endif -%}
 
 {%- for abs in art.paragraphs -%}
@@ -77,13 +77,12 @@
  # Paragraphs
  #}
 {%- macro paragraph(abs) -%}
-<sup>{{ abs.number }}</sup>
-{{- set_text(abs.text) }}  {% if abs.letters | length > 0 %}{# Needs to be on the same row #}
-<ol class="letters">
+<sup>{{ abs.number }}{{ abs.inserted_number | num2latin }}</sup> {{ set_text(abs.text) }}  {% if abs.letters | length > 0 %}{# Needs to be on the same line #}
+<dl class="letters">
 {%- for lit in abs.letters -%}
 {{ letter(lit) }}
 {%- endfor -%}
-</ol>
+</dl>
 {% endif %}
 {% endmacro %}
 
@@ -91,20 +90,26 @@
  # Letters
  #}
 {% macro letter(lit) -%}
-<li>
-{{ set_text(lit.text) }}
+<dt>{{ lit.number | num2letter }}{% if lit.inserted %}<sup>{{ lit.inserted_number | num2latin }}</sup>{% endif %}.</dt>
+<dd>
+<div>{{ set_text(lit.text) }}</div>
+{%- if lit.numerals | length > 0 %}
+<dl class="numeral">
 {% for num in lit.numerals -%}
 {{ numeral(num) }}
 {%- endfor -%}
-</li>
+</dl>
+{%- endif %}
+</dd>
 {% endmacro %}
 
 {# 
  # Numerals
  #}
 {% macro numeral(num) -%}
-1. {{ set_text(num.text) }}
-{%- endmacro %}
+<dt>{{ num.number }}{% if num.inserted %}<sup>{{ num.inserted_number | num2latin }}</sup>{% endif %}.</dt>
+<dd>{{ set_text(num.text) }}</dd>
+{% endmacro %}
 
 {# 
  # Setting text elements
@@ -133,8 +138,25 @@
  # Document Body
  #}
 <style>
-.letters {
-    list-style-type: lower-latin;
+dl {
+    display: inline-block;
+    margin-top: 4px;
+    margin-left: 20px;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+
+dt {
+    clear: left;
+    float: left;
+    line-height: 1.6;
+}
+
+dd {
+    line-height: 1.6;
+    min-height: 1.7rem;
+    margin-left: 50px;
+    clear: right;
 }
 
 p.para {

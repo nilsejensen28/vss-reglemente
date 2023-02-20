@@ -49,9 +49,10 @@
 ((- article(art) ))
 ((* endfor -*))
 ((* endmacro -*))
+j
 
 ((* macro article(art) -*))
-\begin{article}{(( art.number | escape_tex ))}{(( art.title | escape_tex ))}
+\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))}{(( art.title | escape_tex ))}
   \\\nopagebreak (( set_text(art.text) ))\nopagebreak
   ((* if art.letters | length > 0 -*))
   \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
@@ -71,6 +72,12 @@
 ((* endmacro *))
 
 ((* macro paragraph(abs) -*))
+((* if abs.inserted_number == 1 *))
+\begin{insertedparagraphs}
+((*- endif -*))
+((*- if abs.ended_inserted *))
+\end{insertedparagraphs}
+((*- endif *))
 \item (( set_text(abs.text) -))
 
   ((*- if abs.letters | length > 0 *))
@@ -82,7 +89,14 @@
   ((* endif *))
 ((* endmacro *))
 
+
 ((* macro letter(lit) -*))
+((* if lit.inserted_number == 1 *))
+\begin{insertedletters}
+((*- endif -*))
+((*- if lit.ended_inserted *))
+\end{insertedletters}
+((*- endif *))
 \item (( set_text(lit.text) -))
 
   ((*- if lit.numerals | length > 0 *))
@@ -95,6 +109,12 @@
 ((* endmacro *))
 
 ((* macro numeral(num) -*))
+((* if num.inserted_number == 1 *))
+\begin{insertednumerals}
+((*- endif -*))
+((*- if num.ended_inserted *))
+\end{insertednumerals}
+((*- endif *))
 \item (( set_text(num.text) -))
 ((* endmacro *))
 
@@ -136,36 +156,152 @@
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}
 \RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}
 
+% Define a counter representation (like arabic) for latin numerals (from chapter 8 of the enumitem manual)
+% The numerals are arbitrarily limited to 12 as everything above is both too wide and too unreasonable for
+% mhaessig's taste.
+\makeatletter
+\def\latin#1{\expandafter\@latin\csname c@#1\endcsname}
+\def\@latin#1{\ifcase#1\or
+			bis
+		\or
+			ter
+		\or
+			quater
+		\or
+			quinquies
+		\or
+			sexies
+		\or
+			septies
+		\or
+			octies
+		\or
+			novies
+		\or
+			decies
+		\or
+			undecies
+		\or
+			duodecies\fi}
+\makeatother
+\AddEnumerateCounter{\latin}{\@latin}{duodecies}
+
 
 \newenvironment{article}[2]{\textbf{Art.\ #1. #2}}{\par}
 
+% Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{paragraphs}{enumerate}{1}
 \setlist[paragraphs]{
   label        = {\textsuperscript{\arabic*}},
   ref          = {Abs.\ \arabic*},
-  leftmargin   = 0pt,
+  align        = left,
+  leftmargin   = 0em,   % Make sure text flows all the way to the left page margin.
+  labelindent  = 0em,   % Make sure the labels are all the way on the left page margin.
+  labelsep     = 0.5ex, % Label separation of about a space.
+  labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
+  itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
   before*      = \nopagebreak,
   first*       = \nopagebreak,
   beginpenalty = 100000,
   midpenalty   = 1000,
-	noitemsep
+  noitemsep,
+  nosep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
 }
+
+% Paragraphs are aligned all the way on the left page margin and text flows around the labels.
+\newlist{insertedparagraphs}{enumerate}{1}
+\setlist[insertedparagraphs]{
+  label        = {\textsuperscript{\arabic{paragraphsi}\latin*}},
+  ref          = {Abs.\ \arabic{enumi}\textsuperscript{\latin*}},
+  align        = left,
+  leftmargin   = 0em,   % Make sure text flows all the way to the left page margin.
+  labelindent  = 0em,   % Make sure the labels are all the way on the left page margin.
+  labelsep     = 0.5ex, % Label separation of about a space.
+  labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
+  itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
+  before*      = \nopagebreak,
+  first*       = \nopagebreak,
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+  noitemsep,
+  nosep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
+}
+
+% The list definitions below need a solid understanding of the chapter on horizontal spacing
+% in the enumitem manual (https://mirror.foobar.to/CTAN/macros/latex/contrib/enumitem/enumitem.pdf).
 
 \newlist{letters}{enumerate}{1}
 \setlist[letters]{
-  label = {\alph*)},
-  ref   = {lit.\ \alph*.},
-  noitemsep,
+  label        = {\alph*.},
+  ref          = {lit.\ \alph*},
+  labelindent  = 3em, % How much to indent the list.
+  labelwidth   = 2em, % Needs to be a known value to calculate the labelindent for the inserted list.
+  labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+  itemindent   = 0em, % The labels are never wider than the labelwidth we fixed above, therefore we can fix this.
+  leftmargin   = !,   % Calculate margin to fit the fixed values.
+  align        = left,
   beginpenalty = 100000,
   midpenalty   = 1000,
+  noitemsep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
+}
+
+% This list needs to be aligned to match the indentation of letters.
+\newlist{insertedletters}{enumerate}{1}
+\setlist[insertedletters]{
+  label        = {\alph{lettersi}\textsuperscript{\latin*}.},
+  ref          = {lit.\ \alph{lettersi}\textsuperscript{\latin*}},
+  labelindent  = -3em, % Place label at the same place (labelwidth + labelsep of letters)
+  labelsep     = 1em,  % Ensure the separation from the label.
+  leftmargin   = 0em,  % Ensure that the text starts at the same place as letters.
+  labelwidth   = *,    % Ensure that the label can overflow if the latin numeral is large.
+  itemindent   = !,    % Calculate to fit the fixed values.
+  align        = left,
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+  noitemsep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
 }
 
 \newlist{numerals}{enumerate}{1}
 \setlist[numerals]{
-  label = {\roman*)},
-  ref   = {\roman*},
-  noitemsep,
+  label        = {\arabic*.},
+  ref          = {\arabic*},
+  align        = left,
+  labelindent  = 0em, % Do not indent any more.
+  labelwidth   = 2em, % Needs to be a known value to calculate the labelindent for the inserted list.
+  labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+  itemindent   = 0em, % The labels are never wider than the labelwidth we fixed above, therefore we can fix this.
+  leftmargin   = !,   % Calculate margin to fit the fixed values.
   beginpenalty = 100000,
   midpenalty   = 1000,
+  noitemsep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
 }
+
+% This list needs to be aligned to match the indentation of numerals.
+\newlist{insertednumerals}{enumerate}{1}
+\setlist[insertednumerals]{
+  label        = {\arabic{numeralsi}\textsuperscript{\latin*}.},
+  ref          = {Ziff. \arabic{numeralsi}\textsuperscript{\latin*}},
+  align        = left,
+  labelindent  = -3em, % Place label at the same place.
+  labelsep     = 1em,  % Ensure separation between label and content.
+  leftmargin   = 0em,  % Ensure that the text starts at the same place as numerals.
+  labelwidth   = *,    % Ensure that the label can overflow if the latin numeral is large.
+  itemindent   = !,    % Calculate to fit the fixed values.
+  beginpenalty = 100000,
+  midpenalty   = 1000,
+  noitemsep,
+  % Uncomment line below to bebug horizontal spacing.
+  %first*       = \DrawEnumitemLabel,
+}
+
 ((* endmacro *))

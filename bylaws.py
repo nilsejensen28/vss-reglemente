@@ -9,14 +9,20 @@ def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_com
     ret.attrib["filename"] = href
     return ret
 
-
+# Global counters to track the number of relevant items.
+# These counters need to be updated appropriately by the respective classes.
 art_counter = 0
+inserted_art_counter = 0
 abs_counter = 0
+inserted_abs_counter = 0
 lit_counter = 0
+inserted_lit_counter = 0
 num_counter = 0
+inserted_num_counter = 0
 sec_counter = 0
 subsec_counter = 0
 subsubsec_counter = 0
+
 filename = None
 
 
@@ -75,6 +81,7 @@ class Bylaws:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "bylaws")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
@@ -83,6 +90,7 @@ class Bylaws:
             throw_error("Bylaws may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("Bylaws must contain a title", element)
+        ensure_inserted_not_present(element)
 
         # Values
         self.title = element.get("title")
@@ -103,9 +111,11 @@ class Bylaws:
 
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter, filename
+        global sec_counter, art_counter, inserted_art_counter, filename
+
         # Sanity
         assert(element.tag == "regulation")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
@@ -116,9 +126,10 @@ class Regulation:
             throw_error("a regulation must have a title", element)
         if is_empty(element.get("id")):
             throw_error("a regulation must contain an id", element)
+        ensure_inserted_not_present(element)
 
         # reset counters
-        art_counter, sec_counter = 0, 0
+        art_counter, inserted_art_counter, sec_counter = 0, 0, 0
 
         # Values
         self.title = element.get("title")
@@ -148,7 +159,7 @@ class Regulation:
                 case "section":
                     self.sections.append(Section(child))
                 case "articles":
-                    if is_empty(self.sections):
+                    if len(self.sections) == 0:
                         self.articles = process_articles(child)
                     else:
                         throw_error("a regulation may only contain articles before any sections", element)
@@ -158,13 +169,14 @@ class Regulation:
 
 class Preamble:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "preamble")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.tail):
             throw_error("a preamble may not have a tail", element)
+        ensure_inserted_not_present(element)
 
         # Values
         self.text = []
@@ -184,9 +196,10 @@ class Preamble:
 
 class Section:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter
         # Sanity
         assert(element.tag == "section")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
@@ -195,6 +208,7 @@ class Section:
             throw_error("a section my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a section must have a title", element)
+        ensure_inserted_not_present(element)
 
         # reset counters
         subsec_counter = 0
@@ -223,9 +237,10 @@ class Section:
 
 class Subsection:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsection")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
@@ -234,6 +249,7 @@ class Subsection:
             throw_error("a subsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a subsection must have a title", element)
+        ensure_inserted_not_present(element)
 
         # reset counters
         subsubsec_counter = 0
@@ -262,9 +278,10 @@ class Subsection:
 
 class Subsubsection:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsubsection")
+        self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
@@ -273,6 +290,7 @@ class Subsubsection:
             throw_error("a subsubsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a subsubsection must have a title", element)
+        ensure_inserted_not_present(element)
 
         # increment counter
         subsubsec_counter += 1
@@ -293,25 +311,40 @@ class Subsubsection:
 
 class Article:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global art_counter, inserted_art_counter, abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
         # Sanity
         assert(element.tag == "article")
+        self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("an article may not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("an article needs a title", element)
+        ensure_inserted_is_empty(element)
 
         # reset counters
-        abs_counter, lit_counter = 0, 0
+        abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter = 0, 0, 0, 0
 
         # increment article counter
-        art_counter += 1
+        self.ended_inserted = False # is true iff the preceding article was inserted and the current is not
+        if element.get("inserted") == "":
+            # We have an inserted article. Therefore, we do not increment the normal article counter.
+            inserted_art_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal article.
+            self.inserted = False
+            art_counter += 1
+            if inserted_art_counter > 0:
+                # This is a normal article and the previous article was inserted. Therefore, reset inserted counter.
+                inserted_art_counter = 0
+                self.ended_inserted = True
 
         # values
         self.title = element.get("title")
         self.number = art_counter
+        self.inserted_number = inserted_art_counter
 
         self.text = []
         self.paragraphs = []
@@ -344,22 +377,37 @@ class Article:
 
 class Paragraph:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
         # Sanity
         assert(element.tag == "paragraph")
+        self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a paragraph may not have a tail (tail: {})".format(element.tail), element)
+        ensure_inserted_is_empty(element)
 
         # reset counters
-        lit_counter = 0
+        lit_counter, inserted_lit_counter = 0, 0
 
         # increment paragraph number
-        abs_counter += 1
+        self.ended_inserted = False # true iff the preceding paragraph is inserted and the current is not
+        if element.get("inserted") == "":
+            # We have an inserted paragraph. Therefore, we do not increment the normal paragraph counter.
+            inserted_abs_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal paragraph.
+            self.inserted = False
+            abs_counter += 1
+            if inserted_abs_counter > 0:
+                # This is a normal paragraph and the previous paragraph was inserted. Therefore, reset inserted counter.
+                inserted_abs_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = abs_counter
+        self.inserted_number = inserted_abs_counter
 
         self.text = []
         self.letters = []
@@ -383,22 +431,37 @@ class Paragraph:
 
 class Letter:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global lit_counter, num_counter, inserted_lit_counter, inserted_num_counter
         # Sanity
         assert(element.tag == "letter")
+        self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a letter may not have a tail (tail: {})".format(element.tail), element)
+        ensure_inserted_is_empty(element)
         
         # reset counter
-        num_counter = 0
+        num_counter, inserted_num_counter = 0, 0
 
         # increment letter counter
-        lit_counter += 1
+        self.ended_inserted = False # true if the preceding letter was inserted and the current is not
+        if element.get("inserted") == "":
+            # We have an inserted letter. Therefore, we do not increment the normal letter counter.
+            inserted_lit_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal letter.
+            self.inserted = False
+            lit_counter += 1
+            if inserted_lit_counter > 0:
+                # This is a normal letter and the previous letter was inserted. Therefore, reset inserted counter.
+                inserted_lit_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = lit_counter
+        self.inserted_number = inserted_lit_counter
         
         self.text = []
         self.numerals = []
@@ -420,19 +483,34 @@ class Letter:
 
 class Numeral:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        global num_counter, inserted_num_counter
         # Sanity
         assert(element.tag == "numeral")
+        self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
             throw_error("a numeral may not have a tail (tail: {})".format(element.tail), element)
+        ensure_inserted_is_empty(element)
 
         # increment numeral counter
-        num_counter += 1
+        self.ended_inserted = False # true if the preceding numeral is inserted and the current is not
+        if element.get("inserted") == "":
+            # We have an inserted numeral. Therefore, we do not increment the normal numeral counter.
+            inserted_num_counter += 1
+            self.inserted = True
+        else:
+            # We have a normal numeral.
+            self.inserted = False
+            num_counter += 1
+            if inserted_num_counter > 0:
+                # This is a normal numeral and the previous numeral was inserted. Therefore, reset inserted counter.
+                inserted_num_counter = 0
+                self.ended_inserted = True
 
         # values
         self.number = num_counter
+        self.inserted_number = inserted_num_counter
 
         self.text = []
 
@@ -454,12 +532,14 @@ class Link:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "link")
+        self.element = element
 
         # well-formedness
         if is_empty(element.text):
             throw_error("a link must have a text", element)
         if is_empty(element.get("to")):
             throw_error("a link needs a destination", element)
+        ensure_inserted_not_present(element)
 
         # values
         self.to = element.get("to")
@@ -484,10 +564,12 @@ class Quote:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "quote")
+        self.element = element
 
         # well-formedness
         if is_empty(element.text):
             throw_error("a quote must have a text", element)
+        ensure_inserted_not_present(element)
 
         # values
         self.quote = element.text
@@ -515,6 +597,7 @@ def process_articles(element: etree.ElementBase) -> list[Article]:
         throw_error("articles may not contain text", element)
     if not is_empty(element.tail):
         throw_error("articles may not contain a tail (tail: {})".format(element.tail), element)
+    ensure_inserted_not_present(element)
 
     articles = []
     for child in element:
@@ -536,6 +619,7 @@ def process_paragraphs(element: etree.ElementBase) -> list[Paragraph]:
         throw_error("paragraphs may not contain text", element)
     if not is_empty(element.tail):
         throw_error("paragraphs may not contain a tail (tail: {})".format(element.tail), element)
+    ensure_inserted_not_present(element)
 
     paragraphs = []
     for child in element:
@@ -555,6 +639,7 @@ def process_letters(element: etree.ElementBase) -> tuple[list[Letter], str|None]
     # Well-formedness
     if not is_empty(element.text):
         throw_error("letters may not contain text", element)
+    ensure_inserted_not_present(element)
     if not is_empty(element.tail):
         tail = element.tail
     else:
@@ -580,6 +665,7 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
         throw_error("numerals may not contain text", element)
     if not is_empty(element.tail):
         throw_error("numerals may not contain a tail (tail: {})".format(element.tail), element)
+    ensure_inserted_not_present(element)
 
     numerals = []
     for child in element:
@@ -591,6 +677,13 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
 
     return numerals
 
+def ensure_inserted_is_empty(element):
+    if element.get("inserted") is not None and element.get("inserted") != "":
+        throw_error("the attribute inserted must either be an empty string or not present", element)
+
+def ensure_inserted_not_present(element):
+    if element.get("inserted") is not None:
+        throw_error("the attribute \"inserted\" must not be present in a {}".format(element.tag), element)
 
 def is_empty(s):
     return s is None or s.strip() == ''
