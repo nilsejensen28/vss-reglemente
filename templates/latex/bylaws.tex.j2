@@ -30,6 +30,10 @@
 ((* endif *))
 \stepcounter{chapter}
 
+((* if regl.preamble is defined *))
+\emph{((- set_text(regl.preamble.text) -))}
+((* endif *))
+
 ((* for art in regl.articles -*))
 ((- article(art) ))
 ((* endfor *))
