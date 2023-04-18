@@ -3,7 +3,7 @@ title = "VSETH-Rechtssammlung"
 author = ["Verband der Studierenden an der ETH Zürich"]
 description = "Die Rechtssammlung des VSETH."
 src = ""
-lang = "de"
+lang = "de-CH"
 
 [build]
 create-missing = false
