@@ -57,7 +57,7 @@
 <article id="art_{{ art.number }}{{ art.inserted_number | num2letter }}">  
 
 **Art. {{ art.number }}{{ art.inserted_number | num2letter }} {{ art.title }}**
-<a href="art_{{ art.number }}{{ art.inserted_number | num2letter }}" title="Link zu Art. {{art.number}}{{ art.inserted_number | num2letter }} {% if regl.short is not none %}{{regl.short}}{% else %}{{ regl.title }}{% endif %}">
+<a href="#art_{{ art.number }}{{ art.inserted_number | num2letter }}" title="Link zu Art. {{art.number}}{{ art.inserted_number | num2letter }} {% if regl.short is not none %}{{regl.short}}{% else %}{{ regl.title }}{% endif %}">
     <i id="art_link" class="fa fa-link"></i>
 </a>   
 {{ set_text(art.text) }}
