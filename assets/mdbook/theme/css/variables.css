@@ -1,0 +1,82 @@
+
+/* Globals */
+
+:root {
+    --red: #fe4a49;
+    --orange: #ff9505;
+    --yellow: #ffc914;
+    --green: #0cf574;
+    --teal: #40bcd8;
+    --cyan: #009fe3;
+    --salsa-red: #f03a47;
+    --giants-club: #af5b5b;
+    --white-smoke: #f6f4f3;
+    --space-cadet: #183059;
+    --congruent: #e34400;
+    --white: #fff;
+    --gray: #919699;
+    --gray-dark: #5e6366;
+    --primary: #009FE3;
+    --secondary: #e0e2e2;
+    --success: #0cf574;
+    --info: #40bcd8;
+    --warning: #ff9505;
+    --danger: #f03a47;
+    --white: #fff;
+    --light: #fff;
+    --dark: #000;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 600px;
+    --breakpoint-md: 900px;
+    --breakpoint-lg: 1200px;
+    --breakpoint-xl: 1640px;
+    --font-family-sans-serif: "Source Sans Pro", Lato, Arial, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: "Source Code Pro", "Lucida Console", Monaco, monospace;
+    --sidebar-width: 300px;
+    --page-padding: 15px;
+    --content-max-width: 750px;
+    --menu-bar-height: 56px;
+}
+
+/* Themes */
+
+.vseth {
+    --bg: hsl(0, 0%, 100%);
+    --fg: hsl(0, 0%, 0%);
+
+    --sidebar-bg: var(--white-smoke);
+    --sidebar-fg: #000000;
+    --sidebar-non-existant: #aaaaaa;
+    --sidebar-active: var(--cyan);
+    --sidebar-spacer: #f4f4f4;
+
+    --scrollbar: var(--gray-dark);
+
+    --icons: #747474;
+    --icons-hover: var(--salsa-red);
+
+    --links: var(--cyan);
+
+    --inline-code-color: #301900;
+
+    --theme-popup-bg: #fafafa;
+    --theme-popup-border: #cccccc;
+    --theme-hover: #e6e6e6;
+
+    --quote-bg: hsl(197, 37%, 96%);
+    --quote-border: hsl(197, 37%, 91%);
+
+    --table-border-color: hsl(0, 0%, 95%);
+    --table-header-bg: hsl(0, 0%, 80%);
+    --table-alternate-bg: hsl(0, 0%, 97%);
+
+    --searchbar-border-color: var(--gray);
+    --searchbar-bg: #fafafa;
+    --searchbar-fg: #000;
+    --searchbar-shadow-color: #aaa;
+    --searchresults-header-fg: #666;
+    --searchresults-border-color: #888;
+    --searchresults-li-bg: #e4f2fe;
+    --search-mark-bg: var(--teal);
+}
+
