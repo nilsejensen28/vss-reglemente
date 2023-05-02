@@ -140,34 +140,6 @@
 {# 
  # Document Body
  #}
-<style>
-dl {
-    display: inline-block;
-    margin-top: 4px;
-    margin-left: 20px;
-    margin-bottom: 1rem;
-    padding: 0;
-}
-
-dt {
-    clear: left;
-    float: left;
-    line-height: 1.6;
-}
-
-dd {
-    line-height: 1.6;
-    min-height: 1.7rem;
-    margin-left: 50px;
-    clear: right;
-}
-
-p.para {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-</style>
-
 # {{regl.title}}
 
 {# Subtitle with id and short title#}
@@ -178,7 +150,9 @@ p.para {
     {%- if regl.abbrev is not none -%}{{regl.abbrev}}{%- endif -%})
 {%- endif -%}**
 
-<a href="/{{regl.filename}}.pdf" target="_blank" rel="noopener noreferrer">PDF-Version</a>
+<a href="/{{regl.filename}}.pdf" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-file"></i> PDF-Version
+</a>
 
 {% if regl.preamble is defined %}
 *{{ set_text(regl.preamble.text) }}*

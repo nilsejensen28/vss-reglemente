@@ -21,6 +21,7 @@ OUT_PATH ?= $(PWD)/out
 PDF_PATH = ${OUT_PATH}/pdf
 LATEX_PATH = ${OUT_PATH}/latex
 MDBOOK_PATH = ${OUT_PATH}/mdbook
+NAVBAR_PATH = ${OUT_PATH}/navbar
 HTML_PATH = ${MDBOOK_PATH}/book
 ASSET_PATH = $(PWD)/assets
 
@@ -33,6 +34,8 @@ LATEXMKOPTS = -outdir=${PDF_PATH} -norc -use-make -latexoption=${LATEXOPTS}
 
 # We extract the list of sources from VSETH_Rechtssammlung.xml. This way we don't need to make changes twice.
 SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | sed -r 's/.*href="(.+)".*/\1/' | tr "\n" " ")
+
+MDBOOK_ASSETS = $(shell find ${ASSET_PATH}/mdbook -type f)
 
 
 .PHONY: all
@@ -50,9 +53,16 @@ mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-i
 	python3 main.py --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
 
 # Initialize the mdbook folder by copying config files and assets
-mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*)
+mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*) ${MDBOOK_ASSETS} clean-mdbook navbar
 	mkdir -p ${MDBOOK_PATH}
 	cp config/book.toml ${MDBOOK_PATH}/
+	cp -r ${ASSET_PATH}/mdbook/theme ${MDBOOK_PATH}/vseth
+	cp ${ASSET_PATH}/mdbook/*.css ${MDBOOK_PATH}/
+	cp ${NAVBAR_PATH}/*.hbs ${MDBOOK_PATH}/vseth/
+
+navbar: templates/navbar/$(wildcard *.html.j2) $(wildcard *.py)
+	mkdir -p ${NAVBAR_PATH}
+	python3 main.py --asset-path ${ASSET_PATH} --format navbar --output-folder ${NAVBAR_PATH} $<
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
@@ -88,9 +98,12 @@ docker: Dockerfile
 clean:
 	cd ${LATEX_PATH} && latexmk -c ${LATEXMKOPTS} && cd $(PWD)
 
+.PHONY: clean-mdbook
+clean-mdbook:
+	${RM} -r $(wildcard ${MDBOOK_PATH}/*)
+	${RM} -r $(wildcard ${NAVBAR_PATH}/*)
+
 .PHONY: dist-clean
-dist-clean:
-	cd ${LATEX_PATH} && latexmk -C ${LATEXMKOPTS} || true && cd $(PWD)
+dist-clean: clean-mdbook
 	${RM} -r $(wildcard ${PDF_PATH}/*)
 	${RM} -r $(wildcard ${LATEX_PATH}/*)
-	${RM} -r $(wildcard ${MDBOOK_PATH}/*)

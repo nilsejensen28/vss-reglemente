@@ -9,11 +9,15 @@ lang = "de-CH"
 create-missing = false
 
 [output.html]
-default-theme = "light"
+theme = "vseth"
+default-theme = "vseth"
+preferred-dark-theme = "vseth"
 mathjax-support = false
 no-section-label = true
 git-repository-url = "https://gitlab.ethz.ch/vseth/0100-Reglemente/reglemente"
 git-repository-icon = "fa-gitlab"
+copy-fonts = false
+additional-css = ["legal.css", "navbar.css"]
 
 [output.html.print]
 enable = false

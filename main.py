@@ -2,9 +2,11 @@
 from lxml import etree
 from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
+import json
 import os
 import pathlib
 import re
+import urllib
 
 import bylaws
 
@@ -12,14 +14,13 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("input")
     parser.add_argument("-o", "--output-folder", required=True)
-    parser.add_argument("-f", "--format", choices=["mdbook", "latex"], required=True)
+    parser.add_argument("-f", "--format", choices=["mdbook", "latex", "navbar"], required=True)
     parser.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
     args = parser.parse_args()
 
     # create output folder
     os.makedirs(args.output_folder, exist_ok=True)
 
-    rsvseth = bylaws.parse(args.input)
 
 
     jinja_env = Environment(
@@ -31,6 +32,7 @@ def main():
 
     match args.format:
         case "mdbook":
+            rsvseth = bylaws.parse(args.input)
             # Forbid making an mdbook with only one regulation.
             if isinstance(rsvseth, bylaws.Regulation):
                 raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
@@ -55,6 +57,8 @@ def main():
             jinja_env.comment_end_string = "#))"
             jinja_env.filters['escape_tex'] = escape_tex
 
+            rsvseth = bylaws.parse(args.input)
+
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")
             if isinstance(rsvseth, bylaws.Bylaws):
@@ -64,6 +68,12 @@ def main():
                 regl = rsvseth
                 with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl, asset_path=args.asset_path))
+        case "navbar":
+            navbar_template = jinja_env.get_template("navbar.html.j2")
+            with urllib.request.urlopen("https://static.vseth.ethz.ch/assets/vseth-0100-verband/config.json") as response:
+                externalNavbarData = json.loads(response.read())
+                with open("{}/header.hbs".format(args.output_folder), "w", encoding="utf-8") as f:
+                    f.write(navbar_template.render(primaryNavBarData=externalNavbarData))
         case _:
             raise NotImplementedError()
 
