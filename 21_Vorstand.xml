@@ -128,6 +128,9 @@
 					<paragraph>
 						Die empfohlene Studienleistung beträgt 0 ECTS.
 					</paragraph>
+					<paragraph>
+						Zusätzlich zu den Ferienwochen stehen keine weiteren Lernwochen gemäss Art. 13 zur Verfügung.
+					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Profil “Mittel”"> <!-- TODO -->
@@ -152,6 +155,9 @@
 					<paragraph>
 						Die empfohlene Studienbelastung beträgt 12 ECTS pro Semester.
 					</paragraph>
+					<paragraph>
+						Zusätzlich zu den Ferienwochen stehen 5 Lernwochen pro Jahr gemäss Art. 13 zur Verfügung.
+					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Profil “Minimal”"> <!-- TODO -->
@@ -172,6 +178,9 @@
 					</paragraph>
 					<paragraph>
 						Die empfohlene Studienbelastung beträgt 24 ECTS pro Semester.
+					</paragraph>
+					<paragraph>
+						Zusätzlich zu den Ferienwochen stehen 14 Lernwochen pro Jahr gemäss Art. 13 zur Verfügung.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -194,10 +203,10 @@
 			<article title="Lernwochen">
 				<paragraphs>
 					<paragraph>
-						Den gewählten Vorstandsmitgliedern stehen proportional zur empfohlenen Studienbelastung Lernwochen zu, in denen das Studium höchste Priorität hat.
+						Den gewählten Vorstandsmitgliedern stehen abhängig von ihrem jeweiligen Profil zusätzlich zu den Ferien Lernwochen zu, in denen das Studium höchste Priorität hat.
 					</paragraph>
 					<paragraph>
-						Pro 4 ECTS an empfohlener Studienbelastung stehen 1.5 Lernwochen zur Verfügung.
+						Die Anzahl der Vorstandsmitgliedern zustehenden Lernwochen ist in den jeweiligen Profilen definiert.
 					</paragraph>
 					<paragraph>
 						Auch in Lernwochen wird grundsätzlich die Teilnahme an Vorstandssitzungen sowie das Lesen und Beantworten von E-Mails und die telefonische Erreichbarkeit erwartet.
