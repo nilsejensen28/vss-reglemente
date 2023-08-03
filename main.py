@@ -14,7 +14,7 @@ def main():
     parser = ArgumentParser()
     parser.add_argument("input")
     parser.add_argument("-o", "--output-folder", required=True)
-    parser.add_argument("-f", "--format", choices=["mdbook", "latex", "navbar"], required=True)
+    parser.add_argument("-f", "--format", choices=["mdbook", "latex", "navbar", "csv"], required=True)
     parser.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
     args = parser.parse_args()
 
@@ -47,6 +47,7 @@ def main():
             for regl in rsvseth.regulations:
                 with open("{}/{}.md".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl))
+
         case "latex":
             # adjust start and end strings to be compatible with LaTeX
             jinja_env.block_start_string = "((*"
@@ -68,6 +69,21 @@ def main():
                 regl = rsvseth
                 with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
                     f.write(regl_template.render(regl=regl, asset_path=args.asset_path))
+
+        case "csv":
+            rsvseth = bylaws.parse(args.input)
+
+            csv_template = jinja_env.get_template("regulation.csv.j2")
+
+            if isinstance(rsvseth, bylaws.Bylaws):
+                for regl in rsvseth.regulations:
+                    with open("{}/{}.csv".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
+                        f.write(csv_template.render(regl=regl))
+            else:
+                regl = rsvseth
+                with open("{}/{}.csv".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
+                    f.write(csv_template.render(regl=regl))
+
         case "navbar":
             navbar_template = jinja_env.get_template("navbar.html.j2")
             with urllib.request.urlopen("https://static.vseth.ethz.ch/assets/vseth-0100-verband/config.json") as response:

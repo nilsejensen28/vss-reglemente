@@ -19,6 +19,7 @@
 
 OUT_PATH ?= $(PWD)/out
 PDF_PATH = ${OUT_PATH}/pdf
+CSV_PATH = ${OUT_PATH}/csv
 LATEX_PATH = ${OUT_PATH}/latex
 MDBOOK_PATH = ${OUT_PATH}/mdbook
 NAVBAR_PATH = ${OUT_PATH}/navbar
@@ -40,6 +41,10 @@ MDBOOK_ASSETS = $(shell find ${ASSET_PATH}/mdbook -type f)
 
 .PHONY: all
 all: html pdf
+
+.PHONY: csv
+csv: ${SRCS} templates/csv/$(wildcard *.csv.j2) $(wildcard *.py)
+	python3 main.py --asset-path ${ASSET_PATH} --format csv --output-folder ${CSV_PATH} $<
 
 # We build the HTML representation by building an mdbook
 .PHONY: html
