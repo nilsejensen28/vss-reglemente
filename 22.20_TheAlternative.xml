@@ -46,14 +46,17 @@
     <section title="Aufgaben">
         <articles>
             <article title="Tätigkeit">
-                <paragraphs>
-                    <paragraph>
-                        Die Kommission organisiert die periodisch wiederkehrenden LinuxDays und Kurse und Workshops über Free and Open Source-Software. Zudem unterstützt die Kommission die Studierenden bei ihren Fragen und Problemen zu solcher Software. 
-                    </paragraph>
-                </paragraphs>
+                Die Kommission organisiert die periodisch wiederkehrenden LinuxDays und Kurse und Workshops über Free and Open Source Software. Zudem unterstützt die Kommission die Studierenden bei ihren Fragen und Problemen zu solcher Software. 
             </article>
             <article title="Finanzielle Mittel">
-                Die Kommission ist nicht gewinnorientiert, aber um Kostenneutralität bemüht.
+                <paragraphs>
+                    <paragraph>
+                        Die Kommission ist nicht gewinnorientiert, aber um Kostenneutralität bemüht.
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission strebt eine Unterstützung durch den VSUZH, die ETH Zürich und die Universität Zürich an.
+                    </paragraph>
+                </paragraphs>
             </article>
         </articles>
     </section>
