@@ -4,7 +4,7 @@
 # compiled PDFs will be copied to.
 
 # Build mdbook from source
-FROM rust:1.67-slim-bookworm as mdbook
+FROM rust:1.72-slim-bookworm as mdbook
 
 ENV MDBOOK_VERSION 0.4.25
 RUN cargo install mdbook --version ${MDBOOK_VERSION} --target x86_64-unknown-linux-gnu
