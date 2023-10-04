@@ -1,0 +1,80 @@
+<regulation id="22.20" title="Verordnung über die Kommission TheAlternative" short="Kommissionsverordnung TheAlternative">
+    <preamble>
+		Der VSETH-Vorstand, gestützt auf Art. 8 des Allgemeinen Kommissionsreglements, beschliesst:
+	</preamble>
+    <section title="Zweck">
+        <articles>
+            <article title="Zweck">
+                Die Kommission <quote>TheAlternative</quote> bezweckt:
+                <letters>
+                    <letter>
+                        die Förderung der digitalen Nachhaltigkeit und Free and Open Source Software (FOSS);
+                    </letter>
+                    <letter>
+                        die Pflege der Community rund um Linux und FOSS im Hochschulplatz Zürich;
+                    </letter>
+                    <letter>
+                        die Organisation des periodisch wiederkehrenden LinuxDays.
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
+    <section title="Kommissionsorgane">
+        <articles>
+            <article title="Kommissionsvorstand">
+                <paragraphs>
+                    <paragraph>
+                        Das Präsidium setzt sich aus dem Präsidenten bzw. der Präsidentin und dem Vizepräsidenten bzw. der Vizepräsidentin zusammen. Das Vizepräsidium unterstützt den Präsidenten bzw. die Präsidentin und übernimmt in seiner bzw. ihrer Abwesenheit alle Pflichten des Präsidiums.
+                    </paragraph>
+                    <paragraph>
+                        Der Vorstand besteht aus maximal sechs weiteren Vorstandsmitgliedern.
+                    </paragraph>
+                    <paragraph>
+                        Die reguläre Amtsperiode aller Vorstandsmitglieder richtet sich nach dem Allgemeinen Kommissionsreglement.
+                    </paragraph>
+                    <paragraph>
+                        Der Vorstand kann für die Unterstützung seiner Arbeit weitere Kommissionsaktive ohne Stimmrecht ernennen.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Weitere Kommissionsorgane">
+                Es bestehen keine weiteren Kommissionsorgane.
+            </article>
+        </articles>
+    </section>
+    <section title="Aufgaben">
+        <articles>
+            <article title="Tätigkeit">
+                Die Kommission organisiert die periodisch wiederkehrenden LinuxDays und Kurse und Workshops über Free and Open Source Software. Zudem unterstützt die Kommission die Studierenden bei ihren Fragen und Problemen zu solcher Software. 
+            </article>
+            <article title="Finanzielle Mittel">
+                <paragraphs>
+                    <paragraph>
+                        Die Kommission ist nicht gewinnorientiert, aber um Kostenneutralität bemüht.
+                    </paragraph>
+                    <paragraph>
+                        Die Kommission strebt eine Unterstützung durch den VSUZH, die ETH Zürich und die Universität Zürich an.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title="Schlussbestimmungen">
+        <articles>
+            <article title="Revisionsbestimmungen">
+                Diese Verordnung wird vom VSETH-Vorstand mit absoluter Mehrheit erlassen. 
+            </article>
+            <article title="Version">
+                <paragraphs>
+                    <paragraph>
+                        Diese Verordnung wurde vom VSETH-Vorstand an seiner Sitzung vom 14. September 2023 genehmigt.
+                    </paragraph>
+                    <paragraph>
+                        Sie tritt am 18. September 2023 in Kraft.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+</regulation>
