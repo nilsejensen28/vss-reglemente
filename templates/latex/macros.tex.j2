@@ -126,7 +126,15 @@ j
 
 ((* macro changeFootnote(chng) -*))
 ((*- if chng -*))
-\footnotetext{(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date )), in Kraft seit (( chng.implementation_date | format_date )).}
+\footnotetext{(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date ))
+((*- if chng.motion_link and chng.minutes_link -*))
+\ (\href{(( chng.motion_link ))}{Antrag}, \href{(( chng.minutes_link ))}{Protokoll})
+((*- elif chng.motion_link -*))
+\ (\href{(( chng.motion_link ))}{Antrag})
+((*- elif chng.minutes_link -*))
+\ (\href{(( chng.minutes_link ))}{Protokoll})
+((*- endif -*))
+, (( chng.effect_str )) seit (( chng.implementation_date | format_date )).}
 ((*- endif -*))
 ((*- endmacro *))
 

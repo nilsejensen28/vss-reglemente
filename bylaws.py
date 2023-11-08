@@ -709,10 +709,8 @@ class ChangeFootnote:
         except Exception as e:
             throw_error(f"the implementation_date attribute \"{element.get('implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
 
-        self.motion_link = None
         if not is_empty(element.get("motion_link")):
             self.motion_link = element.get("motion_link")
-        self.minutes_link = None
         if not is_empty(element.get("minutes_link")):
             self.minutes_link = element.get("minutes_link")
 
