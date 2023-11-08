@@ -376,7 +376,7 @@ class Article:
                     self.text.append(Footnote(child))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child)
-                    self.text.append(ChangeFootnote(child))
+                    self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid article child {}".format(child.tag), element)
 
@@ -433,6 +433,9 @@ class Paragraph:
                     self.text.append(Quote(child))
                 case "footnote":
                     self.text.append(Footnote(child))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child)
+                    self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid paragraph child <{}>".format(child.tag), element)
 
@@ -488,6 +491,9 @@ class Letter:
                     self.text.append(Quote(child))
                 case "footnote":
                     self.text.append(Footnote(child))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child)
+                    self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid letter child {}".format(child.tag), element)
 
@@ -536,6 +542,9 @@ class Numeral:
                     self.text.append(Quote(child))
                 case "footnote":
                     self.text.append(Footnote(child))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child)
+                    self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid numeral child {}".format(child.tag), element)
 

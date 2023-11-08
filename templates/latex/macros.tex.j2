@@ -78,7 +78,7 @@ j
 ((*- if abs.ended_inserted *))
 \end{insertedparagraphs}
 ((*- endif *))
-\item (( set_text(abs.text) -))
+\item (( set_text(abs.text) -))(( changeFootnoteMark(abs.changeFootnote) ))(( changeFootnote(abs.changeFootnote) -))
 
   ((*- if abs.letters | length > 0 *))
   \begin{letters}
@@ -97,7 +97,7 @@ j
 ((*- if lit.ended_inserted *))
 \end{insertedletters}
 ((*- endif *))
-\item (( set_text(lit.text) -))
+\item (( set_text(lit.text) -))(( changeFootnoteMark(lit.changeFootnote) ))(( changeFootnote(lit.changeFootnote) -))
 
   ((*- if lit.numerals | length > 0 *))
   \begin{numerals}
@@ -115,7 +115,7 @@ j
 ((*- if num.ended_inserted *))
 \end{insertednumerals}
 ((*- endif *))
-\item (( set_text(num.text) -))
+\item (( set_text(num.text) -))(( changeFootnoteMark(num.changeFootnote) ))(( changeFootnote(num.changeFootnote) -))
 ((* endmacro *))
 
 ((* macro changeFootnoteMark(chng) -*))
