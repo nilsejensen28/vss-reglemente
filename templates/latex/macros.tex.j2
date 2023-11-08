@@ -52,7 +52,7 @@
 j
 
 ((* macro article(art) -*))
-\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))}{(( art.title | escape_tex ))}
+\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title | escape_tex ))}(( changeFootnote(art.changeFootnote) ))
   \\\nopagebreak (( set_text(art.text) ))\nopagebreak
   ((* if art.letters | length > 0 -*))
   \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
@@ -118,14 +118,34 @@ j
 \item (( set_text(num.text) -))
 ((* endmacro *))
 
+((* macro changeFootnoteMark(chng) -*))
+((*- if chng -*))
+\footnotemark
+((*- endif *))
+((*- endmacro *))
+
+((* macro changeFootnote(chng) -*))
+((*- if chng -*))
+\footnotetext{(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date )), in Kraft seit (( chng.implementation_date | format_date )).}
+((*- endif -*))
+((*- endmacro *))
+
 ((*- macro set_text(text_elems, trim=True) -*))
   ((*- for elem in text_elems -*))
     ((*- if elem is string -*))
 ((* if trim *))(( elem | trim | escape_tex ))((* else *))(( elem | escape_tex ))((* endif *))
-    ((*- elif "Link" in elem.__class__.__name__ *))
+    ((*- elif "Link" == elem.__class__.__name__ *))
 \href{(( elem.to ))}{(( elem.link_text | escape_tex ))}(( set_tail(elem.tail) ))
-    ((*- elif "Quote" in elem.__class__.__name__ *))
-\enquote{(( elem.quote | trim | escape_tex ))}(( set_tail(elem.tail) ))
+    ((*- elif "Quote" == elem.__class__.__name__ *))
+``(( elem.quote | trim | escape_tex ))''(( set_tail(elem.tail) ))
+    ((*- elif "Footnote" == elem.__class__.__name__ -*))
+\footnote{(( elem.footnote | trim | escape_tex))}(( set_tail(elem.tail) ))
+    ((*- elif "ChangeFootnote" == elem.__class__.__name__ *))
+      ((*- if elem.action == "deleted" -*))
+\textellipsis
+      ((*- else -*))
+(( set_text(elem.tail) ))
+      ((*- endif -*))
     ((*- endif -*))
   ((*- endfor -*))
 ((*- endmacro -*))
@@ -142,14 +162,12 @@ j
 \usepackage[utf8]{inputenc}
 \usepackage[OT1]{fontenc}
 \usepackage{microtype}
-\usepackage[ngerman]{babel}
-\usepackage{csquotes}
 \usepackage[all]{nowidow}
-\usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage[default,regular,bold]{sourcesanspro}
+\usepackage[hidelinks]{hyperref}
 \setcounter{secnumdepth}{3}
 \renewcommand*{\thesection}{\arabic{section}}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
@@ -187,7 +205,7 @@ j
 \AddEnumerateCounter{\latin}{\@latin}{duodecies}
 
 
-\newenvironment{article}[2]{\textbf{Art.\ #1. #2}}{\par}
+\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}}{\par}
 
 % Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{paragraphs}{enumerate}{1}

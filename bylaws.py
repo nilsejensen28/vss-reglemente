@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 from lxml import etree, ElementInclude
+from datetime import date
 
 
 # https://stackoverflow.com/a/69618810/6337138
@@ -350,6 +351,7 @@ class Article:
         self.paragraphs = []
         self.letters = []
         self.letters_tail = None
+        self.footnotes = []
 
         if not is_empty(element.text):
             self.text.append(element.text)
@@ -370,6 +372,11 @@ class Article:
                     self.text.append(Link(child))
                 case "quote":
                     self.text.append(Quote(child))
+                case "footnote":
+                    self.text.append(Footnote(child))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child)
+                    self.text.append(ChangeFootnote(child))
                 case _:
                     throw_error("invalid article child {}".format(child.tag), element)
 
@@ -424,6 +431,8 @@ class Paragraph:
                     self.text.append(Link(child))
                 case "quote":
                     self.text.append(Quote(child))
+                case "footnote":
+                    self.text.append(Footnote(child))
                 case _:
                     throw_error("invalid paragraph child <{}>".format(child.tag), element)
 
@@ -477,6 +486,8 @@ class Letter:
                     self.text.append(Link(child))
                 case "quote":
                     self.text.append(Quote(child))
+                case "footnote":
+                    self.text.append(Footnote(child))
                 case _:
                     throw_error("invalid letter child {}".format(child.tag), element)
 
@@ -523,6 +534,8 @@ class Numeral:
                     self.text.append(Link(child))
                 case "quote":
                     self.text.append(Quote(child))
+                case "footnote":
+                    self.text.append(Footnote(child))
                 case _:
                     throw_error("invalid numeral child {}".format(child.tag), element)
 
@@ -555,6 +568,8 @@ class Link:
                     self.tail.append(Link(child))
                 case "quote":
                     self.tail.append(Quote(child))
+                case "footnote":
+                    self.tail.append(Footnote(child))
                 case _:
                     throw_error("invalid link child <{}>".format(child.tag), element)
 
@@ -584,8 +599,147 @@ class Quote:
                     self.tail.append(Link(child))
                 case "quote":
                     self.tail.append(Quote(child))
+                case "footnote":
+                    self.tail.append(Footnote(child))
                 case _:
                     throw_error("invalid link child <{}>".format(child.tag), element)
+                    
+
+class Footnote:
+    def __init__(self, element: etree.ElementBase) -> None:
+        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
+        # Sanity
+        assert(element.tag == "footnote")
+        self.element = element
+
+        # well-formedness
+        if is_empty(element.text):
+            throw_error("a footnote must have a text", element)
+        ensure_inserted_not_present(element)
+
+        # values
+        self.footnote = element.text
+        self.number = 0
+
+        self.tail = []
+        if not is_empty(element.tail):
+            self.tail.append(element.tail)
+        
+        for child in element:
+            match child.tag:
+                case "link":
+                    self.tail.append(Link(child))
+                case "quote":
+                    self.tail.append(Quote(child))
+                case "footnote":
+                    self.tail.append(Footnote(child))
+                case _:
+                    throw_error("invalid link child <{}>".format(child.tag), element)
+
+class ChangeFootnote:
+    ACTIONS = {"changed": "Fassung gemäss dem",
+               "deleted": "Aufgehoben durch den",
+               "inserted": "Eingefügt durch den"}
+    GREMIEN = {"MR": "des Mitgliederrats",
+                   "FR": "des Fachvereinsrats",
+                   "Vorstand": "des VSETH-Vorstands",
+                   "FinA": "des Finanzausschusses",
+                   "ITA": "des IT-Ausschusses",
+                   "SpEA": "des Spesen- und Entschädigungsausschusses",
+                   "VEA": "des VSS-Evaluationsausschusses",
+                   "GPK": "der Geschäftsprüfungskommission",
+                   "Challenge": "der Kommission Challenge",
+                   "Debattierclub": "der Kommission Debattierclub",
+                   "MUN": "der Kommission ETH Model United Nations",
+                   "ExBeKo": "der ExBeerience-Kommission",
+                   "Filmstelle": "der Kommission Flimstelle",
+                   "FLiK": "der Freiluftlichtbildschau-Kommission",
+                   "F&C": "der Forum & Contact Kommission",
+                   "FK": "der Fotokommission",
+                   "GECo": "der Kommission Gaming and Entertainment Committee",
+                   "KI": "der Kommission für Immobilien",
+                   "Kulturstelle": "der Kommission Kulturstelle",
+                   "Nightline": "der Kommission Nightline",
+                   "Pub": "der Kommission PapperlaPub",
+                   "Polykum": "der Kommission Polykum",
+                   "SSC": "der Kommission Student Sustainability Commission",
+                   "TheAlt": "der Kommission TheAlternative",
+                   "TQ": "der Kommission Tankzquotient",
+                   "SEK": "der Softwareentwicklungskommission"
+                   }
+
+    def __init__(self, element: etree.ElementBase):
+        # Sanity
+        assert(element.tag in self.ACTIONS.keys())
+        self.element = element
+
+        # well-formedness
+        if is_empty(element.get("gremium")):
+            throw_error("a change footnote must contain a gremium attribute", element)
+        if element.get("gremium") not in self.GREMIEN.keys():
+            throw_error(f"the gremium attribute \"{element.get('gremium')}\" of the change footnote is not one of the known gremien ({self.GREMIEN.keys()})", element)
+        if is_empty(element.get("agenda_item")):
+            throw_error("a change footnote must contain an agenda_item attribute", element)
+        if is_empty(element.get("meeting_date")):
+            throw_error("a change footnote must contain a meeting_date attribute", element)
+        if is_empty(element.get("implementation_date")):
+            throw_error("a change footnote must contain an implementation_date attribute", element)
+        if not is_empty(element.text):
+            throw_error("a change footnote must not contain text", element)
+        ensure_inserted_not_present(element)
+        if element.tag == "deleted" and not is_empty(element.tail):
+            throw_error("a deleted element may not have any content", element)
+
+
+        # Inherited fields
+        self.footnote = ""
+        self.number = 0
+
+        # values
+        self.action = element.tag
+        self.gremium = element.get("gremium")
+        self.agenda_item = element.get("agenda_item")
+        try:
+            self.meeting_date = date.fromisoformat(element.get("meeting_date"))
+        except Exception as e:
+            throw_error(f"the meeting_date attribute \"{element.get('meeting_date')}\" is not a valid ISO 8601 date string: {e}", element)
+
+        try:
+            self.implementation_date = date.fromisoformat(element.get("implementation_date"))
+        except Exception as e:
+            throw_error(f"the implementation_date attribute \"{element.get('implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
+
+        self.motion_link = None
+        if not is_empty(element.get("motion_link")):
+            self.motion_link = element.get("motion_link")
+        self.minutes_link = None
+        if not is_empty(element.get("minutes_link")):
+            self.minutes_link = element.get("minutes_link")
+
+        try:
+            self.action_str = self.ACTIONS[self.action]
+        except Exception:
+            throw_error("unreachable: actions should be checked", element)
+
+        match self.action:
+            case "changed" | "inserted":
+                self.effect_str = "in Kraft"
+            case "deleted":
+                self.effect_str = "mit Wirkung"
+
+        try:
+            self.gremium_str = self.GREMIEN[self.gremium]
+        except Exception:
+            throw_error("unreachable: gremien should be checked", element)
+
+        self.tail = []
+        if not is_empty(element.tail):
+            self.tail.append(element.tail)
+
+        for child in element:
+            match child:
+                case _:
+                    throw_error("a change footnote must not have children", element)
                     
 
 def process_articles(element: etree.ElementBase) -> list[Article]:

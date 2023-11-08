@@ -2,6 +2,7 @@
 from lxml import etree
 from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
+from datetime import date
 import json
 import os
 import pathlib
@@ -29,6 +30,7 @@ def main():
     )
     jinja_env.filters['num2letter'] = num2letter
     jinja_env.filters['num2latin'] = num2latin
+    jinja_env.filters['format_date'] = format_date
 
     match args.format:
         case "mdbook":
@@ -131,6 +133,9 @@ def num2latin(counter):
         raise ValueError("cannot convert numbers larger than 14 to latin numeral (if you see this, the Rechtssammlung is in big trouble...)")
 
     return ["", "bis", "ter", "quarter", "quinquies", "sexies", "septies", "octies", "novies", "decies", "undecies", "duodecies", "terdecies", "quaterdecies"][counter]
+    
+def format_date(date: date):
+    return date.strftime("%d.%m.%Y")
 
 if __name__ == "__main__":
     main()
