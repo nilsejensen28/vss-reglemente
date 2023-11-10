@@ -110,6 +110,11 @@ class Bylaws:
                     throw_error("Bylaws only contain regulations", element)
 
 
+    def collect_footnotes_pass(self):
+        for regl in self.regulations:
+            regl.collect_footnotes_pass()
+
+
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, art_counter, inserted_art_counter, filename
@@ -168,6 +173,14 @@ class Regulation:
                     throw_error("a regulation only contain articles, a preamble and sections", element)
 
 
+    def collect_footnotes_pass(self):
+        if hasattr(self, "preamble"):
+            self.preamble.collect_footnotes_pass()
+        for art in self.articles:
+            art.collect_footnotes_pass()
+        for sec in self.sections:
+            sec.collect_footnotes_pass()
+
 class Preamble:
     def __init__(self, element: etree.ElementBase) -> None:
         # Sanity
@@ -180,6 +193,7 @@ class Preamble:
         ensure_inserted_not_present(element)
 
         # Values
+        self.footnotes = []
         self.text = []
         if not is_empty(element.text):
             self.text.append(element.text)
@@ -190,9 +204,22 @@ class Preamble:
                     self.text.append(Link(child))
                 case "quote":
                     self.text.append(Quote(child))
+                case "footnote":
+                    self.text.append(Footnote(child))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote(ChangeFootnote(child))
+                    self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid preamble child <{}>".format(child.tag), element)
 
+    def collect_footnotes_pass(self):
+        for elem in self.text:
+            if isinstance(elem, Footnote):
+                self.footnotes.append(elem)
+        
+        # Change footnote goes at the end of the preamble.
+        if hasattr(self, "changeFootnote"):
+            self.footnotes.append(self.changeFootnote)
 
 
 class Section:
@@ -235,6 +262,13 @@ class Section:
                 case _:
                     throw_error("a section may only cointain articles and subsections", element)
 
+    def collect_footnotes_pass(self):
+        for art in self.articles:
+            art.collect_footnotes_pass()
+        
+        for subsec in self.subsections:
+            subsec.collect_footnotes_pass()
+
 
 class Subsection:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -276,6 +310,13 @@ class Subsection:
                 case _:
                     throw_error("a subsection may only cointain articles and subsubsections", element)
 
+    def collect_footnotes_pass(self):
+        for art in self.articles:
+            art.collect_footnotes_pass()
+
+        for subsubsec in self.subsubsections:
+            subsubsec.collect_footnotes_pass()
+
 
 class Subsubsection:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -308,6 +349,10 @@ class Subsubsection:
                     self.articles = process_articles(child)
                 case _:
                     throw_error("a subsubsection may only cointain articles", element)
+
+    def collect_footnotes_pass(self):
+        for art in self.articles:
+            art.collect_footnotes_pass()
 
 
 class Article:
@@ -380,6 +425,20 @@ class Article:
                 case _:
                     throw_error("invalid article child {}".format(child.tag), element)
 
+    def collect_footnotes_pass(self):
+        # In articles the change footnote goes first.
+        if hasattr(self, "changeFootnote"):
+            self.footnotes.append(self.changeFootnote)
+
+        for elem in self.text:
+            if isinstance(elem, Footnote):
+                self.footnotes.append(elem)
+
+        for abs in self.paragraphs:
+            self.footnotes.extend(abs.collect_footnotes_pass())
+
+        for lit in self.letters:
+            self.footnotes.extend(lit.collect_footnotes_pass())
 
 
 class Paragraph:
@@ -439,6 +498,20 @@ class Paragraph:
                 case _:
                     throw_error("invalid paragraph child <{}>".format(child.tag), element)
 
+    def collect_footnotes_pass(self):
+        footnotes = []
+        for elem in self.text:
+            if isinstance(elem, Footnote):
+                footnotes.append(elem)
+
+        # In paragraphs the change footnote goes at the end of the text.
+        if hasattr(self, "changeFootnotes"):
+            footnotes.append(self.changeFootnote)
+
+        for lit in self.letters:
+            footnotes.extend(lit.collect_footnotes_pass())
+        
+        return footnotes
 
 
 class Letter:
@@ -497,6 +570,20 @@ class Letter:
                 case _:
                     throw_error("invalid letter child {}".format(child.tag), element)
 
+    def collect_footnotes_pass(self):
+        footnotes = []
+        for elem in self.text:
+            if isinstance(elem, Footnote):
+                footnotes.append(elem)
+
+        if hasattr(self, "changeFootnote"):
+            footnotes.append(self.changeFootnote)
+
+        for num in self.numerals:
+            footnotes.extend(num.collect_footnotes_pass())
+
+        return footnotes
+
 
 class Numeral:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -547,7 +634,18 @@ class Numeral:
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid numeral child {}".format(child.tag), element)
+    
+    def collect_footnotes_pass(self):
+        footnotes = []
+        for elem in self.text:
+            if isinstance(elem, Footnote):
+                footnotes.append(elem)
 
+        # Change footnotes come at the end of the text in numerals.
+        if hasattr(self, "changeFootnote"):
+            footnotes.append(self.changeFootnote)
+
+        return footnotes
 
 class Link:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -643,7 +741,8 @@ class Footnote:
                 case "footnote":
                     self.tail.append(Footnote(child))
                 case _:
-                    throw_error("invalid link child <{}>".format(child.tag), element)
+                    throw_error("invalid footnote child <{}>".format(child.tag), element)
+
 
 class ChangeFootnote:
     ACTIONS = {"changed": "Fassung gemäss dem",
