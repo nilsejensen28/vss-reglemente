@@ -114,6 +114,10 @@ class Bylaws:
         for regl in self.regulations:
             regl.collect_footnotes_pass()
 
+    def number_footnotes_pass(self):
+        for regl in self.regulations:
+            regl.number_footnotes_pass()
+
 
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -181,6 +185,16 @@ class Regulation:
         for sec in self.sections:
             sec.collect_footnotes_pass()
 
+    def number_footnotes_pass(self):
+        if hasattr(self, "preamble"):
+            self.preamble.number_footnotes_pass()
+        
+        for art in self.articles:
+            art.number_footnotes_pass()
+
+        for sec in self.sections:
+            sec.number_footnotes_pass()
+
 class Preamble:
     def __init__(self, element: etree.ElementBase) -> None:
         # Sanity
@@ -220,6 +234,10 @@ class Preamble:
         # Change footnote goes at the end of the preamble.
         if hasattr(self, "changeFootnote"):
             self.footnotes.append(self.changeFootnote)
+    
+    def number_footnotes_pass(self):
+        for i, footnote in enumerate(self.footnotes, 1):
+            footnote.number = i
 
 
 class Section:
@@ -317,6 +335,13 @@ class Subsection:
         for subsubsec in self.subsubsections:
             subsubsec.collect_footnotes_pass()
 
+    def number_footnotes_pass(self):
+        for art in self.articles:
+            art.number_footnotes_pass()
+
+        for subsubsec in self.subsubsections:
+            subsubsec.number_footnotes_pass()
+
 
 class Subsubsection:
     def __init__(self, element: etree.ElementBase) -> None:
@@ -353,6 +378,10 @@ class Subsubsection:
     def collect_footnotes_pass(self):
         for art in self.articles:
             art.collect_footnotes_pass()
+    
+    def number_footnotes_pass(self):
+        for art in self.articles:
+            art.number_footnotes_pass()
 
 
 class Article:
@@ -439,6 +468,10 @@ class Article:
 
         for lit in self.letters:
             self.footnotes.extend(lit.collect_footnotes_pass())
+
+    def number_footnotes_pass(self):
+        for i, footnote in enumerate(self.footnotes):
+            footnote.number = i
 
 
 class Paragraph:
