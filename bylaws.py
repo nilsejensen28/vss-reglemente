@@ -790,7 +790,7 @@ class ChangeFootnote:
                "inserted": "Eingefügt durch den"}
     GREMIEN = {"MR": "des Mitgliederrats",
                    "FR": "des Fachvereinsrats",
-                   "Vorstand": "des VSETH-Vorstands",
+                   "VS": "des VSETH-Vorstands",
                    "FinA": "des Finanzausschusses",
                    "ITA": "des IT-Ausschusses",
                    "SpEA": "des Spesen- und Entschädigungsausschusses",
