@@ -175,15 +175,30 @@ j
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage[default,regular,bold]{sourcesanspro}
-\usepackage[colorlinks]{hyperref}
+\usepackage{xcolor}
+\definecolor{vsethcyan}{cmyk}{100,0,0,0}
+\definecolor{salsared}{cmyk}{0,89,66,0}
+
+
+% Must be the last package loaded.
+\usepackage{hyperref}
+\hypersetup{
+  % colors
+  colorlinks={true},
+  linkcolor={vsethcyan},
+  urlcolor={vsethcyan},
+  % bookmarks in PDF
+  bookmarksnumbered={true},
+} 
+
+% More error context
+\errorcontextlines=10
+
 \setcounter{secnumdepth}{3}
 \renewcommand*{\thesection}{\arabic{section}}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}
 \RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}
-
-% More error context
-\errorcontextlines=10
 
 % Define a counter representation (like arabic) for latin numerals (from chapter 8 of the enumitem manual)
 % The numerals are arbitrarily limited to 12 as everything above is both too wide and too unreasonable for
