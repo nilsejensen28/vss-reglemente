@@ -147,7 +147,7 @@ j
     ((*- elif "Quote" == elem.__class__.__name__ *))
 ``(( elem.quote | trim | escape_tex ))''(( set_tail(elem.tail) ))
     ((*- elif "Footnote" == elem.__class__.__name__ -*))
-\footnote{(( elem.footnote | trim | escape_tex))}(( set_tail(elem.tail) ))
+\footnote{(( elem.text | trim | escape_tex))}(( set_tail(elem.tail) ))
     ((*- elif "ChangeFootnote" == elem.__class__.__name__ *))
       ((*- if elem.action == "deleted" -*))
 \textellipsis

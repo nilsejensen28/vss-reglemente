@@ -35,6 +35,8 @@ def main():
     match args.format:
         case "mdbook":
             rsvseth = bylaws.parse(args.input)
+            rsvseth.collect_footnotes_pass()
+            rsvseth.number_footnotes_pass()
             # Forbid making an mdbook with only one regulation.
             if isinstance(rsvseth, bylaws.Regulation):
                 raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")

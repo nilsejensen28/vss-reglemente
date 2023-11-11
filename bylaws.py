@@ -286,6 +286,13 @@ class Section:
         
         for subsec in self.subsections:
             subsec.collect_footnotes_pass()
+     
+    def number_footnotes_pass(self): 
+        for art in self.articles:
+            art.number_footnotes_pass()
+
+        for subsec in self.subsections:
+            subsec.number_footnotes_pass()
 
 
 class Subsection:
@@ -470,7 +477,7 @@ class Article:
             self.footnotes.extend(lit.collect_footnotes_pass())
 
     def number_footnotes_pass(self):
-        for i, footnote in enumerate(self.footnotes):
+        for i, footnote in enumerate(self.footnotes, 1):
             footnote.number = i
 
 
@@ -538,7 +545,7 @@ class Paragraph:
                 footnotes.append(elem)
 
         # In paragraphs the change footnote goes at the end of the text.
-        if hasattr(self, "changeFootnotes"):
+        if hasattr(self, "changeFootnote"):
             footnotes.append(self.changeFootnote)
 
         for lit in self.letters:
@@ -758,7 +765,7 @@ class Footnote:
         ensure_inserted_not_present(element)
 
         # values
-        self.footnote = element.text
+        self.text = element.text
         self.number = 0
 
         self.tail = []

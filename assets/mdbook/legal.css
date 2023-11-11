@@ -4,7 +4,7 @@ dl {
     display: inline-block;
     margin-top: 4px;
     margin-left: 20px;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -21,7 +21,22 @@ dd {
     clear: right;
 }
 
+article {
+    margin-bottom: 1.5rem;
+}
+
 p.para {
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+.footnotes {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.footnotes p, article p {
+    margin: 0;
 }
