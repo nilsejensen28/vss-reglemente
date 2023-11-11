@@ -1,5 +1,4 @@
 #! /usr/bin/env python
-from lxml import etree
 from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
 from datetime import date
