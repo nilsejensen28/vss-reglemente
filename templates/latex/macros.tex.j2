@@ -149,6 +149,7 @@ j
     ((*- elif "Footnote" == elem.__class__.__name__ -*))
 \footnote{(( elem.text | trim | escape_tex))}(( set_tail(elem.tail) ))
     ((*- elif "ChangeFootnote" == elem.__class__.__name__ *))
+      ((#- Change footnotes are typeset the elements. Therefore, we only typest ellipsis if the element was deleted or the text following. -#))
       ((*- if elem.action == "deleted" -*))
 \textellipsis
       ((*- else -*))

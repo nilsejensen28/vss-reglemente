@@ -63,7 +63,7 @@ branch on [Teamcity](https://teamcity.vseth.ethz.ch/buildConfiguration/id0100Reg
 
 ## Adding a new regulation
 
- 1. Create a new XML file. Use `00_example.xml` as a reference.
+ 1. Create a new XML file. Use `00_example.xml` as a reference (or `22.00_Beispiel.xml` for committee regulations).
  2. Edit your file to match the decided contents.
  3. If all is well, add an entry of your newest file in `VSETH_Rechtssammlung.xml`.
  4. Generate all documents and check for errors (see above).

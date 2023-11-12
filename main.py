@@ -34,8 +34,11 @@ def main():
     match args.format:
         case "mdbook":
             rsvseth = bylaws.parse(args.input)
+            
+            # Mdbook needs manual numbering and footnote collection.
             rsvseth.collect_footnotes_pass()
             rsvseth.number_footnotes_pass()
+
             # Forbid making an mdbook with only one regulation.
             if isinstance(rsvseth, bylaws.Regulation):
                 raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
@@ -135,6 +138,7 @@ def num2latin(counter):
 
     return ["", "bis", "ter", "quarter", "quinquies", "sexies", "septies", "octies", "novies", "decies", "undecies", "duodecies", "terdecies", "quaterdecies"][counter]
     
+# Filter to convert pyhton date objects to dd.mm.YYYY strings.
 def format_date(date: date):
     return date.strftime("%d.%m.%Y")
 

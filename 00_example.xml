@@ -20,15 +20,21 @@
 			</paragraphs>
 		</article>
 		<article title="Inserted Article" inserted="">
-			This article is inserted.
+			<inserted gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
+			This article is inserted. The next will be deleted.
+		</article>
+		<article>
+			<deleted gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
 		</article>
 		<article title="Letters and numerals">
 			An &lt;article&gt; or &lt;paragraph&gt; may contain &lt;letters&gt;, like so:
 			<letters>
 				<letter>
+					<changed gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
 					items should end with appropriate punctuation, by convention a semicolon;
 				</letter>
 				<letter inserted="">
+					<inserted gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
 					Items inserted after some time must be marked with the attribute "inserted".
 				</letter>
 				<letter>

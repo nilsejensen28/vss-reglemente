@@ -3,6 +3,7 @@ from lxml import etree, ElementInclude
 from datetime import date
 
 
+# Enable including xml documents using xinclude.
 # https://stackoverflow.com/a/69618810/6337138
 def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_comments=True)):
     ret = ElementInclude._lxml_default_loader(href, parse, encoding, parser)
@@ -27,6 +28,7 @@ subsubsec_counter = 0
 filename = None
 
 
+# Custom error function that prints a lot of context helpful when debuging a malformed regulation.
 def throw_error(message: str, element: etree.ElementBase):
     print("Error: {}".format(message)) 
     print("element: {}".format(element))
@@ -63,6 +65,7 @@ def throw_error(message: str, element: etree.ElementBase):
     exit(1)
 
 
+# Parses an XML document to a Bylaws or Regulation object depending on the top level element.
 def parse(input_filename):
     tree = etree.parse(input_filename, parser=etree.XMLParser(remove_comments=True))
     global filename
@@ -77,6 +80,36 @@ def parse(input_filename):
             throw_error("Only bylaws and regulations can be root", tree.getroot())
 
 
+# Regulation AST
+# --------------
+#
+# All regulation/bylaws components are parsed into objects representing a regulation abstract syntax tree (AST)
+# which are then typeset using Jinja templates for different output formats.
+#
+# During initial parsing each component is initialized with its constructor that takes an `etree.ElementBase`.
+# Constructors follow a few steps. First a sanity chech to make sure the element tag is what we expect it to be.
+# Then follows a well-formedness check where we make sure that the element contains all values that are expected
+# and does not contain any values it should not. Next, the values from the XML element are incorporated into the
+# object. The very last step is to iterate over all children of the element and initializing the next objects. In
+# case of unexpected children, an error is thrown.
+#
+# After initial parsing further processing if often needed. We do this with passes over the AST similar to compiler
+# passes. Each pass serves a distinct purpose. Passes are basically a fold operation over the entire AST.
+# Currently, the following passes are implemented:
+#  - collect_footnotes_pass(): Collects footnotes to the component where they are displayed (e.g. articles in case of mdbook)
+#  - number_footnotes_pass(): Numbers the footnotes in each component that displays footnotes.
+
+"""
+Bylaws: top level object for the collection of all regulations
+
+It is mainly a container object. Only regulations are valid children.
+
+Attributes:
+- title: Title of the bylaws
+- filename: File name of the XML source containing this element
+- regulations: Ordered list of regulations contained in the bylaws
+- element: XML element represented by this object
+"""
 class Bylaws:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
@@ -119,6 +152,23 @@ class Bylaws:
             regl.number_footnotes_pass()
 
 
+"""
+Regulation: container for contents of regulations
+
+Valid children: articles, section, preamble
+
+Attributes:
+ - title: Full title of the regulations
+ - short: Short title of the regulations
+ - abbrev: Abbreviation of the regulation title
+ - id: RSVSETH id of the regulation
+ - is_toplevel: True if the regulation was parsed standalone from its file
+ - filename: File name of the XML source for this regulation
+ - preamble: Only defined if a preamble is present
+ - articles: Ordered list of articles that come before a potential section
+ - sections: Ordered list of sections
+ - element: XML element represented by this object
+"""
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, art_counter, inserted_art_counter, filename
@@ -195,6 +245,23 @@ class Regulation:
         for sec in self.sections:
             sec.number_footnotes_pass()
 
+"""
+Preamble 
+
+Block of text that can have footnotes. Also displays footnotes at the end in mdbook.
+
+Valid children:
+ - inserted, changed, deleted: change footnote, at most one
+ - link
+ - quote
+ - footnote
+
+Attributes:
+ - footnotes: Ordered list of footnotes as they should be displayed. Filled by collect_footnotes_pass().
+ - text: Ordered list of text elements.
+ - changeFootnote: a change footnote that is only defined if one is present
+ - element: XML element represented by this object
+"""
 class Preamble:
     def __init__(self, element: etree.ElementBase) -> None:
         # Sanity
@@ -240,6 +307,20 @@ class Preamble:
             footnote.number = i
 
 
+"""
+Section
+
+Does not have text. May contain articles before potential subsections. Does not display footnotes.
+
+Valid children: articles, subsection
+
+Attributes:
+ - title: section title
+ - number: section number
+ - articles: ordered list of articles
+ - subsections: ordered list of subsections
+ - element: XML element represented by this object
+"""
 class Section:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter
@@ -295,6 +376,21 @@ class Section:
             subsec.number_footnotes_pass()
 
 
+"""
+Subsection
+
+Does not have text. May contain articles before potential subsubsections. Does not display footnotes.
+
+Valid children: articles, subsubsection
+
+Attributes:
+ - title: subsection title
+ - number: subsection number
+ - sec: section number of the section that contains this subsection
+ - articles: ordered list of articles
+ - subsubsections: ordered list of subsubsections
+ - element: XML element represented by this object
+"""
 class Subsection:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter
@@ -350,6 +446,21 @@ class Subsection:
             subsubsec.number_footnotes_pass()
 
 
+"""
+Subsubection
+
+Does not have text. Contains articles. Does not display footnotes.
+
+Valid children: articles
+
+Attributes:
+ - title: subsubsection title
+ - number: subsubsection number
+ - sec: section number of the section that contains this subsubsection
+ - subsec: subsection number of the subsection that contains this subsubsection
+ - articles: ordered list of articles
+ - element: XML element represented by this object
+"""
 class Subsubsection:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter
@@ -391,6 +502,30 @@ class Subsubsection:
             art.number_footnotes_pass()
 
 
+"""
+Article
+
+Can contain text, at most one change footnote, paragraphs, and letters in case the
+article does not contain any paragraphs. Displays footnotes in mdbook.
+
+Valid children: 
+ - paragraphs, letters, link, quote, footnote
+ - inserted, deleted, changed: at most one change footnote 
+
+Attributes:
+ - title: article title
+ - number: article number
+ - inserted_number: number of inserted articles (used for bis, ter numbering)
+ - inserted: True iff this article is inserted and gets inserted numbering
+ - ended_inserted: True iff the preceding article was inserted and this article is not.
+ - text: ordered list of text elements.
+ - paragraphs: ordered list of paragraphs
+ - letters: ordered list of letters (only if paragraphs is empty)
+ - letters_tail: text after letters
+ - footnotes: footnotes displayed after this aricle in mdbook
+ - changeFootnote: a change footnote that is only defined if one is present
+ - element: XML element represented by this object
+"""
 class Article:
     def __init__(self, element: etree.ElementBase) -> None:
         global art_counter, inserted_art_counter, abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
@@ -462,7 +597,7 @@ class Article:
                     throw_error("invalid article child {}".format(child.tag), element)
 
     def collect_footnotes_pass(self):
-        # In articles the change footnote goes first.
+        # In articles the change footnote goes after the article number and therefore before any other footnote.
         if hasattr(self, "changeFootnote"):
             self.footnotes.append(self.changeFootnote)
 
@@ -481,6 +616,26 @@ class Article:
             footnote.number = i
 
 
+"""
+Paragraph
+
+Can contain text, letters, and at most one change footnote. Footnotes are collected to be displayed in article.
+
+Valid children: 
+ - letters, link, quote, footnote
+ - inserted, deleted, changed: at most one change footnote 
+
+Attributes:
+ - number: paragraph number
+ - inserted_number: number of inserted paragraph (used for bis, ter numbering)
+ - inserted: True iff this paragraph is inserted and gets inserted numbering
+ - ended_inserted: True iff the preceding paragraph was inserted and this paragraph is not.
+ - text: ordered list of text elements.
+ - letters: ordered list of letters (only if paragraphs is empty)
+ - letters_tail: text after letters
+ - changeFootnote: a change footnote that is only defined if one is present
+ - element: XML element represented by this object
+"""
 class Paragraph:
     def __init__(self, element: etree.ElementBase) -> None:
         global abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
@@ -554,6 +709,25 @@ class Paragraph:
         return footnotes
 
 
+"""
+Letter
+
+Can contain text, numerals, and at most one change footnote. Footnotes are collected to be displayed in article.
+
+Valid children: 
+ - numerals, link, quote, footnote
+ - inserted, deleted, changed: at most one change footnote 
+
+Attributes:
+ - number: number to be represented as latin letter
+ - inserted_number: number of inserted letter (used for bis, ter numbering)
+ - inserted: True iff this letter is inserted and gets inserted numbering
+ - ended_inserted: True iff the preceding letter was inserted and this letter is not.
+ - text: ordered list of text elements.
+ - numerals: ordered list of letters (only if paragraphs is empty)
+ - changeFootnote: a change footnote that is only defined if one is present
+ - element: XML element represented by this object
+"""
 class Letter:
     def __init__(self, element: etree.ElementBase) -> None:
         global lit_counter, num_counter, inserted_lit_counter, inserted_num_counter
@@ -616,6 +790,7 @@ class Letter:
             if isinstance(elem, Footnote):
                 footnotes.append(elem)
 
+        # The change footnote goes at the end of the text.
         if hasattr(self, "changeFootnote"):
             footnotes.append(self.changeFootnote)
 
@@ -625,6 +800,24 @@ class Letter:
         return footnotes
 
 
+"""
+Numeral
+
+Can contain text and at most one change footnote. Footnotes are collected to be displayed in article.
+
+Valid children: 
+ - link, quote, footnote
+ - inserted, deleted, changed: at most one change footnote 
+
+Attributes:
+ - number: number of the numeral
+ - inserted_number: number of inserted numeral (used for bis, ter numbering)
+ - inserted: True iff this numeral is inserted and gets inserted numbering
+ - ended_inserted: True iff the preceding numeral was inserted and this numeral is not.
+ - text: ordered list of text elements.
+ - changeFootnote: a change footnote that is only defined if one is present
+ - element: XML element represented by this object
+"""
 class Numeral:
     def __init__(self, element: etree.ElementBase) -> None:
         global num_counter, inserted_num_counter
@@ -687,6 +880,19 @@ class Numeral:
 
         return footnotes
 
+"""
+Link
+
+Text element to ber rendered as hyperlink.
+
+Valid children: link, quote, footnote
+
+Attributes:
+ - to: link destination
+ - link_text: text that will link to the destination
+ - tail: ordered list of text elements that follow this link
+ - element: XML element represented by this object
+"""
 class Link:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
@@ -721,6 +927,18 @@ class Link:
                     throw_error("invalid link child <{}>".format(child.tag), element)
 
 
+"""
+Quote
+
+Text element to quote a text segement.
+
+Valid children: link, quote, footnote
+
+Attributes:
+ - quote: the text to be surrounded in quotes
+ - tail: ordered list of text elements that follow this link
+ - element: XML element represented by this object
+"""
 class Quote:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
@@ -752,6 +970,19 @@ class Quote:
                     throw_error("invalid link child <{}>".format(child.tag), element)
                     
 
+"""
+Footnote
+
+Text element to render a footnote at a particular text location.
+
+Valid children: link, quote, footnote
+
+Attributes:
+ - text: the footnote text
+ - number: the number for the footnote mark
+ - tail: ordered list of text elements that follow this link
+ - element: XML element represented by this object
+"""
 class Footnote:
     def __init__(self, element: etree.ElementBase) -> None:
         global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
@@ -784,6 +1015,33 @@ class Footnote:
                     throw_error("invalid footnote child <{}>".format(child.tag), element)
 
 
+"""
+ChangeFootnote
+
+Footnote to note how articles, etc. have changed over time. The tags "inserted", "changed", "deleted" are both
+represented by this object. A element may have at most one change footnote. If the action is "deleted", the
+element may not contain any other content.
+The footnote mark of this footnote is rendered at a specific place, different for
+each element (e.g. articles get their change footnote on the article number).
+
+A change footnote will be rendered as text in the following way:
+f"{actions_str} Beschluss in Tratankdum {agenda_item} der Sitzung {gremium_str} vom {meeting_date}
+  ({motion_link}, {minutes_link}), {effect_str} seit {implementation_date}."
+
+Valid children
+ - number: number for the footnote mark (set by number_footnotes_pass()) 
+ - action: one of the keys from the ACTIONS dict
+ - action_str: appropriate text for change action (from ACTIONS dict)
+ - gremium: abbreviation for a body changing the element (one of the keys from GREMIEN dict)
+ - gremium_str: long name with appropriate article for Genitiv (from GREMIEN dict)
+ - agenda_item: number (preferred) or name of the agenda item that changes the element
+ - meeting_date: date of the meeting in YYYY-mm-dd format
+ - implementation_date: date where the change takes effect in YYYY-mm-dd format
+ - motion_link: link to the motion document outlining the change (only defined if present)
+ - minutes_link: link to the minnutes of the meeting that decided this change (only defined if present)
+ - tail: ordered list of text elements that follow this link
+ - element: XML element represented by this object
+"""
 class ChangeFootnote:
     ACTIONS = {"changed": "Fassung gemäss dem",
                "deleted": "Aufgehoben durch den",
@@ -838,12 +1096,8 @@ class ChangeFootnote:
         if element.tag == "deleted" and not is_empty(element.tail):
             throw_error("a deleted element may not have any content", element)
 
-
-        # Inherited fields
-        self.footnote = ""
-        self.number = 0
-
         # values
+        self.number = 0
         self.action = element.tag
         self.gremium = element.get("gremium")
         self.agenda_item = element.get("agenda_item")
@@ -888,6 +1142,7 @@ class ChangeFootnote:
                     throw_error("a change footnote must not have children", element)
                     
 
+# Functions to flatten container tags (articles, paragraphs, letters, numerals)
 def process_articles(element: etree.ElementBase) -> list[Article]:
     # Sanity
     assert(element.tag == "articles")
@@ -977,6 +1232,7 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
 
     return numerals
 
+# Helper functions
 def ensure_inserted_is_empty(element):
     if element.get("inserted") is not None and element.get("inserted") != "":
         throw_error("the attribute inserted must either be an empty string or not present", element)
