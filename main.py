@@ -107,8 +107,7 @@ LATEX_SUBS = (
     (re.compile(r'~'), r'\~{}'),
     (re.compile(r'\^'), r'\^{}'),
     (re.compile(r'"'), r"''"),
-    (re.compile(r'\.\.\.+'), r'\\ldots'),
-    (re.compile(r'/'), r'\/')
+    (re.compile(r'\.\.\.+'), r'\\ldots')
 )
 
 def escape_tex(value):
