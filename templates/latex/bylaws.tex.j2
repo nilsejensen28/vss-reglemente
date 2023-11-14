@@ -4,7 +4,7 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, changeFootnoteMark, changeFootnote, set_text, set_tail with context *))
+((* from "macros.tex.j2" import header, section, subseciton, subsubsection, article, paragraph, letter, numeral, changeFootnoteMark, changeFootnote, set_text, set_tail with context *))
 
 (( header(asset_path, False) ))
 
@@ -16,7 +16,7 @@
     \includesvg{(( asset_path ))/vseth_Logo_bylines_Verband.svg}
     \par
     {\usekomafont{title} \textbf{(( title | escape_tex ))} \par }
-    {\usekomafont{subtitle} \today \par }
+    {\usekomafont{subtitle} (( bylaws.date_last_update | format_date )) \par }
     \vfill
 \end{titlepage}
 

@@ -1,22 +1,3 @@
-
-((* macro titlepage(title, asset_path, id=None, subtitle=None) -*))
-\begin{titlepage}
-    \centering
-    \hspace{0pt}
-    \vfill
-    \includesvg{(( asset_path ))/vseth_Logo_bunt.svg}
-    \par
-    {\Huge \textbf{(( title | escape_tex ))} \par }
-    ((* if subtitle is not none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id | escape_tex ))} ( ((- subtitle | escape_tex -)) )}
-    ((* elif subtitle is none and id is not none *))
-    {\LARGE \textbf{RSVSETH (( id | escape_tex ))}}
-    ((* endif *))
-    {\LARGE \today \par }
-    \vfill
-\end{titlepage}
-((* endmacro *))
-
 ((* macro section(sec) -*))
 \section{(( sec.title | escape_tex ))}
 \nobreak
@@ -177,6 +158,9 @@ j
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{setspace}
 \usepackage{float}
 \usepackage{lastpage}
 \usepackage{scrlayer-scrpage}
@@ -239,6 +223,7 @@ j
 }
 
 % Header/footer
+\setkomafont{pageheadfoot}{\sffamily}
 \cfoot*{
     \textbf{- \thepage\ / \pageref*{LastPage} -} \\
     \noindent\textcolor{vsethcyan}{\rule\textwidth{1mm}} \\
@@ -250,12 +235,13 @@ j
 
 ((* if do_header is true *))
 % First page
-%\ohead[
-%        \hfill
-%        \begin{tabular}{>{\raggedright}p{1.1cm}p{3.5cm}}
-%            {\fontseries{m}\selectfont \textcolor{vsethcyan}{D}} & \@documentdate \\
-%        \end{tabular}
-%]{}
+\makeatletter
+\ohead[
+        \begin{tabular}{>{\raggedright}p{1.1cm}p{2.5cm}}
+            {\fontseries{m}\selectfont \textcolor{vsethcyan}{D}} & \@documentdate \\ & \\
+        \end{tabular}
+]{}
+\makeatother
 ((* endif *))
 
 % Behavior of \maketitle
