@@ -6,10 +6,20 @@
 
 ((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, changeFootnoteMark, changeFootnote, set_text, set_tail with context *))
 
-(( header() ))
+(( header(asset_path, False) ))
 
 \begin{document}
-((- titlepage(bylaws.title, asset_path) ))
+\begin{titlepage}
+    \centering
+    \hspace{0pt}
+    \vfill
+    \includesvg{(( asset_path ))/vseth_Logo_bylines_Verband.svg}
+    \par
+    {\usekomafont{title} \textbf{(( title | escape_tex ))} \par }
+    {\usekomafont{subtitle} \today \par }
+    \vfill
+\end{titlepage}
+
 \tableofcontents
 
 ((* for regl in bylaws.regulations *))
@@ -22,10 +32,14 @@
   ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex ))((*- endif -*))
 ((* endset *))
 ((* if regl.short is not none *))
-\chapter*{(( regl.title | escape_tex ))\\( ((- subtitle )); RSVSETH (( shortid | escape_tex -)) )}
+\chapter*{(( regl.title | escape_tex ))}
+\vspace*{-0.5cm}
+{\usekomafont{subtitle} ((- subtitle )); RSVSETH (( shortid | escape_tex -))}
 \addtocentrydefault{chapter}{}{(( regl.short | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
 ((* else *))
-\chapter*{(( regl.title | escape_tex ))\\(RSVSETH (( shortid | escape_tex -)) )}
+\chapter*{(( regl.title | escape_tex ))}
+\vspace*{-0.5cm}
+{\usekomafont{subtitle} RSVSETH (( shortid | escape_tex -))}
 \addtocentrydefault{chapter}{}{(( regl.title | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
 ((* endif *))
 \stepcounter{chapter}
