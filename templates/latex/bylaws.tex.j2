@@ -4,7 +4,7 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, set_text, set_tail with context *))
+((* from "macros.tex.j2" import header, section, subseciton, subsubsection, titlepage, article, paragraph, letter, numeral, changeFootnoteMark, changeFootnote, set_text, set_tail with context *))
 
 (( header() ))
 
@@ -31,7 +31,7 @@
 \stepcounter{chapter}
 
 ((* if regl.preamble is defined *))
-\emph{((- set_text(regl.preamble.text) -))}
+\emph{((- set_text(regl.preamble.text) -))(( changeFootnoteMark(regl.preamble.changeFootnote) ))(( changeFootnote(regl.preamble.changeFootnote) ))}
 ((* endif *))
 
 ((* for art in regl.articles -*))

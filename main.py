@@ -1,7 +1,7 @@
 #! /usr/bin/env python
-from lxml import etree
 from jinja2 import Environment, FileSystemLoader
 from argparse import ArgumentParser
+from datetime import date
 import json
 import os
 import pathlib
@@ -29,10 +29,16 @@ def main():
     )
     jinja_env.filters['num2letter'] = num2letter
     jinja_env.filters['num2latin'] = num2latin
+    jinja_env.filters['format_date'] = format_date
 
     match args.format:
         case "mdbook":
             rsvseth = bylaws.parse(args.input)
+            
+            # Mdbook needs manual numbering and footnote collection.
+            rsvseth.collect_footnotes_pass()
+            rsvseth.number_footnotes_pass()
+
             # Forbid making an mdbook with only one regulation.
             if isinstance(rsvseth, bylaws.Regulation):
                 raise RuntimeError("An mdbook must always be made for the entire Rechtssammlung")
@@ -101,8 +107,7 @@ LATEX_SUBS = (
     (re.compile(r'~'), r'\~{}'),
     (re.compile(r'\^'), r'\^{}'),
     (re.compile(r'"'), r"''"),
-    (re.compile(r'\.\.\.+'), r'\\ldots'),
-    (re.compile(r'/'), r'\/')
+    (re.compile(r'\.\.\.+'), r'\\ldots')
 )
 
 def escape_tex(value):
@@ -131,6 +136,10 @@ def num2latin(counter):
         raise ValueError("cannot convert numbers larger than 14 to latin numeral (if you see this, the Rechtssammlung is in big trouble...)")
 
     return ["", "bis", "ter", "quarter", "quinquies", "sexies", "septies", "octies", "novies", "decies", "undecies", "duodecies", "terdecies", "quaterdecies"][counter]
+    
+# Filter to convert pyhton date objects to dd.mm.YYYY strings.
+def format_date(date: date):
+    return date.strftime("%d.%m.%Y")
 
 if __name__ == "__main__":
     main()

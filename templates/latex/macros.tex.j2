@@ -52,7 +52,7 @@
 j
 
 ((* macro article(art) -*))
-\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))}{(( art.title | escape_tex ))}
+\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
   \\\nopagebreak (( set_text(art.text) ))\nopagebreak
   ((* if art.letters | length > 0 -*))
   \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
@@ -78,7 +78,7 @@ j
 ((*- if abs.ended_inserted *))
 \end{insertedparagraphs}
 ((*- endif *))
-\item (( set_text(abs.text) -))
+\item (( set_text(abs.text) -))(( changeFootnote(abs.changeFootnote) -))
 
   ((*- if abs.letters | length > 0 *))
   \begin{letters}
@@ -97,7 +97,7 @@ j
 ((*- if lit.ended_inserted *))
 \end{insertedletters}
 ((*- endif *))
-\item (( set_text(lit.text) -))
+\item (( set_text(lit.text) -))(( changeFootnote(lit.changeFootnote) -))
 
   ((*- if lit.numerals | length > 0 *))
   \begin{numerals}
@@ -115,17 +115,46 @@ j
 ((*- if num.ended_inserted *))
 \end{insertednumerals}
 ((*- endif *))
-\item (( set_text(num.text) -))
+\item (( set_text(num.text) -))(( changeFootnote(num.changeFootnote) -))
 ((* endmacro *))
+
+((* macro changeFootnoteMark(chng) -*))
+((*- if chng -*))
+\footnotemark
+((*- endif *))
+((*- endmacro *))
+
+((* macro changeFootnote(chng, complete=True) -*))
+((*- if chng -*))
+\footnote((* if complete is false *))text((* endif *)){(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date ))
+((*- if chng.motion_link and chng.minutes_link *))
+(\href{(( chng.motion_link | escape_tex ))}{Antrag}, \href{(( chng.minutes_link | escape_tex ))}{Protokoll})
+((*- elif chng.motion_link *))
+(\href{(( chng.motion_link | escape_tex ))}{Antrag})
+((*- elif chng.minutes_link *))
+(\href{(( chng.minutes_link | escape_tex ))}{Protokoll})
+((*- endif -*))
+, (( chng.effect_str )) seit (( chng.implementation_date | format_date )).}
+((*- endif -*))
+((*- endmacro *))
 
 ((*- macro set_text(text_elems, trim=True) -*))
   ((*- for elem in text_elems -*))
     ((*- if elem is string -*))
 ((* if trim *))(( elem | trim | escape_tex ))((* else *))(( elem | escape_tex ))((* endif *))
-    ((*- elif "Link" in elem.__class__.__name__ *))
+    ((*- elif "Link" == elem.__class__.__name__ *))
 \href{(( elem.to ))}{(( elem.link_text | escape_tex ))}(( set_tail(elem.tail) ))
-    ((*- elif "Quote" in elem.__class__.__name__ *))
-\enquote{(( elem.quote | trim | escape_tex ))}(( set_tail(elem.tail) ))
+    ((*- elif "Quote" == elem.__class__.__name__ *))
+``(( elem.quote | trim | escape_tex ))''(( set_tail(elem.tail) ))
+    ((*- elif "Footnote" == elem.__class__.__name__ -*))
+\footnote{(( elem.text | trim | escape_tex))}(( set_tail(elem.tail) ))
+    ((*- elif "ChangeFootnote" == elem.__class__.__name__ *))
+      ((#- Change footnotes are typeset the elements. Therefore, we only typest ellipsis if the element was deleted or the text following. -#))
+      ((*- if elem.action == "deleted" -*))
+\textellipsis
+      ((*- else -*))
+(( set_text(elem.tail) ))
+      ((*- endif -*))
     ((*- endif -*))
   ((*- endfor -*))
 ((*- endmacro -*))
@@ -142,14 +171,30 @@ j
 \usepackage[utf8]{inputenc}
 \usepackage[OT1]{fontenc}
 \usepackage{microtype}
-\usepackage[ngerman]{babel}
-\usepackage{csquotes}
 \usepackage[all]{nowidow}
-\usepackage[hidelinks]{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{svg}
 \usepackage[default,regular,bold]{sourcesanspro}
+\usepackage{xcolor}
+\definecolor{vsethcyan}{cmyk}{100,0,0,0}
+\definecolor{salsared}{cmyk}{0,89,66,0}
+
+
+% Must be the last package loaded.
+\usepackage{hyperref}
+\hypersetup{
+  % colors
+  colorlinks={true},
+  linkcolor={vsethcyan},
+  urlcolor={vsethcyan},
+  % bookmarks in PDF
+  bookmarksnumbered={true},
+} 
+
+% More error context
+\errorcontextlines=10
+
 \setcounter{secnumdepth}{3}
 \renewcommand*{\thesection}{\arabic{section}}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
@@ -187,7 +232,7 @@ j
 \AddEnumerateCounter{\latin}{\@latin}{duodecies}
 
 
-\newenvironment{article}[2]{\textbf{Art.\ #1. #2}}{\par}
+\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}}{\par}
 
 % Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{paragraphs}{enumerate}{1}
