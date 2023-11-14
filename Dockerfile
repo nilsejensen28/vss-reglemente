@@ -4,7 +4,7 @@
 # compiled PDFs will be copied to.
 
 # Build mdbook from source
-FROM rust:1.72-slim-bookworm as mdbook
+FROM rust:1.73-slim-bookworm as mdbook
 
 # renovate: datasource=crate depName=mdbook
 ENV MDBOOK_VERSION 0.4.25
