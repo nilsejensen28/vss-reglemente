@@ -1,4 +1,4 @@
-<regulation id="00" title="Bespiel-Reglement" short="Bsp">
+<regulation id="00" title="Bespiel-Reglement" short="Bsp" original_implementation_date="2022-01-01">
 	<articles>
 		<article title="Text">
 			Text must be contained in an &lt;article&gt; or finer element.

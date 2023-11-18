@@ -148,7 +148,7 @@ class Bylaws:
             latest_changes.append(regl.latest_change_pass())
 
         # This is safe because all regulations have the original implementation date
-        self.date_last_change = max(latest_changes)
+        self.date_last_update = max(latest_changes)
 
 
 """
