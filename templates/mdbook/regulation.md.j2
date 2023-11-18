@@ -205,7 +205,7 @@
 <a href="/{{regl.filename}}.pdf" target="_blank" rel="noopener noreferrer">
     <i class="fa fa-file"></i> PDF-Version
 </a>
-
+<div class="right">Stand: {{ regl.date_last_update | format_date }}</div>
 {% if regl.preamble is defined %}
 *{{ set_text(regl.preamble.text) }}{{ changeFootnoteMark(regl.preamble) }}*
 {{ footnotes(regl.preamble.footnotes) }}
