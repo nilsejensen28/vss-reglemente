@@ -476,6 +476,7 @@ class Subsection:
 
         self.number = number 
         self.inserted_number = inserted_number
+        self.sec = self.parent.number
 
         for art in self.articles:
             art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
@@ -565,6 +566,8 @@ class Subsubsection:
 
         self.number = number 
         self.inserted_number = inserted_number
+        self.sec = self.parent.parent.number
+        self.subsec = self.parent.number
 
         for art in self.articles:
             art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
