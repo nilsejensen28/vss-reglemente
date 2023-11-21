@@ -213,12 +213,12 @@ class Regulation:
         for child in element:
             match child.tag:
                 case "preamble":
-                    self.preamble = Preamble(child)
+                    self.preamble = Preamble(child, self)
                 case "section":
-                    self.sections.append(Section(child))
+                    self.sections.append(Section(child, self))
                 case "articles":
                     if len(self.sections) == 0:
-                        self.articles = process_articles(child)
+                        self.articles = process_articles(child, self)
                     else:
                         throw_error("a regulation may only contain articles before any sections", element)
                 case _:
@@ -269,7 +269,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Preamble:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
         # Sanity
         assert(element.tag == "preamble")
         self.element = element
@@ -280,6 +280,7 @@ class Preamble:
         ensure_inserted_not_present(element)
 
         # Values
+        self.parent = parent
         self.footnotes = []
         self.text = []
         if not is_empty(element.text):
@@ -328,7 +329,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Section:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
         # Sanity
         assert(element.tag == "section")
         self.element = element
@@ -343,6 +344,7 @@ class Section:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.title = element.get("title")
         self.number = 0
         self.inserted_number = 0
@@ -354,11 +356,11 @@ class Section:
             match child.tag:
                 case "articles":
                     if self.subsections == []:
-                        self.articles = process_articles(child)
+                        self.articles = process_articles(child, self)
                     else:
                         throw_error("a section my only contain articles before any subsections", element)
                 case "subsection":
-                    self.subsections.append(Subsection(child))
+                    self.subsections.append(Subsection(child, self))
                 case _:
                     throw_error("a section may only cointain articles and subsections", element)
 
@@ -420,7 +422,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Subsection:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent: Section) -> None:
         global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsection")
@@ -436,6 +438,7 @@ class Subsection:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.title = element.get("title")
         self.sec = 0
         self.number = 0
@@ -448,11 +451,11 @@ class Subsection:
             match child.tag:
                 case "articles":
                     if self.subsubsections == []:
-                        self.articles = process_articles(child)
+                        self.articles = process_articles(child, self)
                     else:
                         throw_error("a subsection my only contain articles before any subsections", element)
                 case "subsubsection":
-                    self.subsubsections.append(Subsubsection(child))
+                    self.subsubsections.append(Subsubsection(child, self))
                 case _:
                     throw_error("a subsection may only cointain articles and subsubsections", element)
 
@@ -514,7 +517,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Subsubsection:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent: Subsection) -> None:
         # Sanity
         assert(element.tag == "subsubsection")
         self.element = element
@@ -529,6 +532,7 @@ class Subsubsection:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.title = element.get("title")
         self.sec = 0
         self.subsec = 0
@@ -540,7 +544,7 @@ class Subsubsection:
         for child in element:
             match child.tag:
                 case "articles":
-                    self.articles = process_articles(child)
+                    self.articles = process_articles(child, self)
                 case _:
                     throw_error("a subsubsection may only cointain articles", element)
 
@@ -601,7 +605,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Article:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
         assert(element.tag == "article")
         self.element = element
@@ -614,6 +618,7 @@ class Article:
         ensure_inserted_is_empty(element)
 
         # values
+        self.parent = parent
         self.title = element.get("title")
         self.number = 0
         self.inserted_number = 0
@@ -634,20 +639,20 @@ class Article:
                     if not self.letters == []:
                         throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
                     
-                    self.paragraphs = process_paragraphs(child)
+                    self.paragraphs = process_paragraphs(child, self)
                 case "letters":
                     if not self.paragraphs == []:
                         throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
                     
-                    self.letters, self.letters_tail = process_letters(child)
+                    self.letters, self.letters_tail = process_letters(child, self)
                 case "link":
-                    self.text.append(Link(child))
+                    self.text.append(Link(child, self))
                 case "quote":
-                    self.text.append(Quote(child))
+                    self.text.append(Quote(child, self))
                 case "footnote":
-                    self.text.append(Footnote(child))
+                    self.text.append(Footnote(child, self))
                 case "inserted" | "deleted" | "changed":
-                    self.changeFootnote = ChangeFootnote(child)
+                    self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid article child {}".format(child.tag), element)
@@ -721,8 +726,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Paragraph:
-    def __init__(self, element: etree.ElementBase) -> None:
-        global abs_counter, inserted_abs_counter, lit_counter, inserted_lit_counter
+    def __init__(self, element: etree.ElementBase, parent: Article) -> None:
         # Sanity
         assert(element.tag == "paragraph")
         self.element = element
@@ -733,6 +737,7 @@ class Paragraph:
         ensure_inserted_is_empty(element)
 
         # values
+        self.parent = parent
         self.number = 0
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
@@ -747,15 +752,15 @@ class Paragraph:
         for child in element:
             match child.tag:
                 case "letters":
-                    self.letters, self.letters_tail = process_letters(child)
+                    self.letters, self.letters_tail = process_letters(child, self)
                 case "link":
-                    self.text.append(Link(child))
+                    self.text.append(Link(child, self))
                 case "quote":
-                    self.text.append(Quote(child))
+                    self.text.append(Quote(child, self))
                 case "footnote":
-                    self.text.append(Footnote(child))
+                    self.text.append(Footnote(child, self))
                 case "inserted" | "deleted" | "changed":
-                    self.changeFootnote = ChangeFootnote(child)
+                    self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid paragraph child <{}>".format(child.tag), element)
@@ -820,7 +825,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Letter:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
         assert(element.tag == "letter")
         self.element = element
@@ -831,6 +836,7 @@ class Letter:
         ensure_inserted_is_empty(element)
         
         # values
+        self.parent = parent
         self.number = 0
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
@@ -844,15 +850,15 @@ class Letter:
         for child in element:
             match child.tag:
                 case "numerals":
-                    self.numerals = process_numerals(child)
+                    self.numerals = process_numerals(child, self)
                 case "link":
-                    self.text.append(Link(child))
+                    self.text.append(Link(child, self))
                 case "quote":
-                    self.text.append(Quote(child))
+                    self.text.append(Quote(child, self))
                 case "footnote":
-                    self.text.append(Footnote(child))
+                    self.text.append(Footnote(child, self))
                 case "inserted" | "deleted" | "changed":
-                    self.changeFootnote = ChangeFootnote(child)
+                    self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid letter child {}".format(child.tag), element)
@@ -916,7 +922,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Numeral:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent: Letter) -> None:
         # Sanity
         assert(element.tag == "numeral")
         self.element = element
@@ -927,6 +933,7 @@ class Numeral:
         ensure_inserted_is_empty(element)
 
         # values
+        self.parent = parent
         self.number = 0
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
@@ -939,13 +946,13 @@ class Numeral:
         for child in element:
             match child.tag:
                 case "link":
-                    self.text.append(Link(child))
+                    self.text.append(Link(child, self))
                 case "quote":
-                    self.text.append(Quote(child))
+                    self.text.append(Quote(child, self))
                 case "footnote":
-                    self.text.append(Footnote(child))
+                    self.text.append(Footnote(child, self))
                 case "inserted" | "deleted" | "changed":
-                    self.changeFootnote = ChangeFootnote(child)
+                    self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid numeral child {}".format(child.tag), element)
@@ -996,7 +1003,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Link:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
         assert(element.tag == "link")
         self.element = element
@@ -1009,6 +1016,7 @@ class Link:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.to = element.get("to")
         self.link_text = element.text
 
@@ -1019,11 +1027,11 @@ class Link:
         for child in element:
             match child.tag:
                 case "link":
-                    self.tail.append(Link(child))
+                    self.tail.append(Link(child, self))
                 case "quote":
-                    self.tail.append(Quote(child))
+                    self.tail.append(Quote(child, self))
                 case "footnote":
-                    self.tail.append(Footnote(child))
+                    self.tail.append(Footnote(child, self))
                 case _:
                     throw_error("invalid link child <{}>".format(child.tag), element)
 
@@ -1041,7 +1049,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Quote:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
         assert(element.tag == "quote")
         self.element = element
@@ -1052,6 +1060,7 @@ class Quote:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.quote = element.text
 
         self.tail = []
@@ -1061,11 +1070,11 @@ class Quote:
         for child in element:
             match child.tag:
                 case "link":
-                    self.tail.append(Link(child))
+                    self.tail.append(Link(child, self))
                 case "quote":
-                    self.tail.append(Quote(child))
+                    self.tail.append(Quote(child, self))
                 case "footnote":
-                    self.tail.append(Footnote(child))
+                    self.tail.append(Footnote(child, self))
                 case _:
                     throw_error("invalid link child <{}>".format(child.tag), element)
                     
@@ -1084,7 +1093,7 @@ Attributes:
  - element: XML element represented by this object
 """
 class Footnote:
-    def __init__(self, element: etree.ElementBase) -> None:
+    def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
         assert(element.tag == "footnote")
         self.element = element
@@ -1095,6 +1104,7 @@ class Footnote:
         ensure_inserted_not_present(element)
 
         # values
+        self.parent = parent
         self.text = element.text
         self.number = 0
 
@@ -1105,11 +1115,11 @@ class Footnote:
         for child in element:
             match child.tag:
                 case "link":
-                    self.tail.append(Link(child))
+                    self.tail.append(Link(child, self))
                 case "quote":
-                    self.tail.append(Quote(child))
+                    self.tail.append(Quote(child, self))
                 case "footnote":
-                    self.tail.append(Footnote(child))
+                    self.tail.append(Footnote(child, self))
                 case _:
                     throw_error("invalid footnote child <{}>".format(child.tag), element)
 
@@ -1173,7 +1183,7 @@ class ChangeFootnote:
                    "SEK": "der Softwareentwicklungskommission"
                    }
 
-    def __init__(self, element: etree.ElementBase):
+    def __init__(self, element: etree.ElementBase, parent):
         # Sanity
         assert(element.tag in self.ACTIONS.keys())
         self.element = element
@@ -1196,6 +1206,7 @@ class ChangeFootnote:
             throw_error("a deleted element may not have any content", element)
 
         # values
+        self.parent = parent
         self.number = 0
         self.action = element.tag
         self.gremium = element.get("gremium")
@@ -1242,7 +1253,7 @@ class ChangeFootnote:
                     
 
 # Functions to flatten container tags (articles, paragraphs, letters, numerals)
-def process_articles(element: etree.ElementBase) -> list[Article]:
+def process_articles(element: etree.ElementBase, parent) -> list[Article]:
     # Sanity
     assert(element.tag == "articles")
 
@@ -1257,14 +1268,14 @@ def process_articles(element: etree.ElementBase) -> list[Article]:
     for child in element:
         match child.tag:
             case "article":
-                articles.append(Article(child))
+                articles.append(Article(child, parent))
             case _:
                 throw_error("articles may only contain articles (duh)", child)
 
     return articles
 
 
-def process_paragraphs(element: etree.ElementBase) -> list[Paragraph]:
+def process_paragraphs(element: etree.ElementBase, parent: Article) -> list[Paragraph]:
     # Sanity
     assert(element.tag == "paragraphs")
 
@@ -1279,14 +1290,14 @@ def process_paragraphs(element: etree.ElementBase) -> list[Paragraph]:
     for child in element:
         match child.tag:
             case "paragraph":
-                paragraphs.append(Paragraph(child))
+                paragraphs.append(Paragraph(child, parent))
             case _:
                 throw_error("paragraphs may only contain paragraphs (duh)", child)
 
     return paragraphs
 
 
-def process_letters(element: etree.ElementBase) -> tuple[list[Letter], str|None]:
+def process_letters(element: etree.ElementBase, parent) -> tuple[list[Letter], str|None]:
     # Sanity
     assert(element.tag == "letters")
 
@@ -1303,14 +1314,14 @@ def process_letters(element: etree.ElementBase) -> tuple[list[Letter], str|None]
     for child in element:
         match child.tag:
             case "letter":
-                letters.append(Letter(child))
+                letters.append(Letter(child, parent))
             case _:
                 throw_error("letters may only contain letters (duh)", child)
 
     return letters, tail
 
 
-def process_numerals(element: etree.ElementBase) -> list[Numeral]:
+def process_numerals(element: etree.ElementBase, parent: Letter) -> list[Numeral]:
     # Sanity
     assert(element.tag == "numerals")
 
@@ -1325,7 +1336,7 @@ def process_numerals(element: etree.ElementBase) -> list[Numeral]:
     for child in element:
         match child.tag:
             case "numeral":
-                numerals.append(Numeral(child))
+                numerals.append(Numeral(child, parent))
             case _:
                 throw_error("numerals may only contain numerals (duh)", child)
 
