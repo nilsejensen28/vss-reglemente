@@ -26,13 +26,13 @@ def throw_error(message: str, element: etree.ElementBase):
 
         match tag:
             case "article":
-                location = "Art. {} {}".format(art_counter, location)
+                location = "Art. {} {}".format(parent.title, location)
             case "paragraph":
-                location = "Abs. {} {}".format(abs_counter, location)
+                location = "Abs. {}".format(location)
             case "letter":
-                location = "lit. {}) {}".format(lit_counter, location)
+                location = "lit. {}".format(location)
             case "numeral":
-                location = "num. {}) {}".format(num_counter, location)
+                location = "num. {}".format(location)
             case "regulation":
                 try:
                     location = "{} {}".format(location, parent.get("title"))
@@ -98,7 +98,6 @@ Attributes:
 """
 class Bylaws:
     def __init__(self, element: etree.ElementBase) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter, art_counter, abs_counter, lit_counter, num_counter
         # Sanity
         assert(element.tag == "bylaws")
         self.element = element
@@ -351,6 +350,7 @@ class Section:
                     throw_error("a section may only cointain articles and subsections", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted section.
             inserted_number += 1
@@ -365,9 +365,11 @@ class Section:
                 # The section before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
 
+        # Propagate counters
         for art in self.articles:
             art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
     
@@ -409,7 +411,6 @@ Attributes:
 """
 class Subsection:
     def __init__(self, element: etree.ElementBase, parent: Section) -> None:
-        global sec_counter, subsec_counter, subsubsec_counter
         # Sanity
         assert(element.tag == "subsection")
         self.element = element
@@ -446,6 +447,7 @@ class Subsection:
                     throw_error("a subsection may only cointain articles and subsubsections", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted subsection.
             inserted_number += 1
@@ -460,10 +462,12 @@ class Subsection:
                 # The subsection before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
         self.sec = self.parent.number
 
+        # Propagate counters
         for art in self.articles:
             art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
     
@@ -536,6 +540,7 @@ class Subsubsection:
                     throw_error("a subsubsection may only cointain articles", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted subsubsection.
             inserted_number += 1
@@ -550,11 +555,13 @@ class Subsubsection:
                 # The subsubsection before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
         self.sec = self.parent.parent.number
         self.subsec = self.parent.number
 
+        # Propagate counters
         for art in self.articles:
             art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
     
@@ -647,6 +654,7 @@ class Article:
                     throw_error("invalid article child {}".format(child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted article.
             inserted_number += 1
@@ -661,9 +669,11 @@ class Article:
                 # The article before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
 
+        # Propagate counters
         abs_counter, abs_inserted_counter = 0, 0
         for abs in self.paragraphs:
             abs_counter, abs_inserted_counter = abs.numbering_pass(abs_counter, abs_inserted_counter)
@@ -755,6 +765,7 @@ class Paragraph:
                     throw_error("invalid paragraph child <{}>".format(child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted paragraph.
             inserted_number += 1
@@ -769,9 +780,11 @@ class Paragraph:
                 # The paragraph before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
 
+        # Propagate counters
         lit_counter, lit_inserted_counter = 0, 0
         for lit in self.letters:
             lit_counter, lit_inserted_counter = lit.numbering_pass(lit_counter, lit_inserted_counter)
@@ -853,6 +866,7 @@ class Letter:
                     throw_error("invalid letter child {}".format(child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted letter.
             inserted_number += 1
@@ -867,9 +881,11 @@ class Letter:
                 # The letter before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
 
+        # Propagate counters
         num_counter, num_inserted_counter = 0, 0
         for num in self.numerals:
             num_counter, num_inserted_counter = num.numbering_pass(num_counter, num_inserted_counter)
@@ -947,6 +963,7 @@ class Numeral:
                     throw_error("invalid numeral child {}".format(child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
+        # Increment counters
         if self.inserted:
             # This is an inserted numeral.
             inserted_number += 1
@@ -961,6 +978,7 @@ class Numeral:
                 # The numberal before this one was also normal.
                 self.ended_inserted = False
 
+        # Set counters
         self.number = number 
         self.inserted_number = inserted_number
     
@@ -1136,7 +1154,7 @@ Valid children
  - meeting_date: date of the meeting in YYYY-mm-dd format
  - implementation_date: date where the change takes effect in YYYY-mm-dd format
  - motion_link: link to the motion document outlining the change (only defined if present)
- - minutes_link: link to the minnutes of the meeting that decided this change (only defined if present)
+ - minutes_link: link to the minutes of the meeting that decided this change (only defined if present)
  - tail: ordered list of text elements that follow this link
  - element: XML element represented by this object
 """
