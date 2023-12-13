@@ -11,20 +11,6 @@ def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_com
     ret.attrib["filename"] = href
     return ret
 
-# Global counters to track the number of relevant items.
-# These counters need to be updated appropriately by the respective classes.
-art_counter = 0
-inserted_art_counter = 0
-abs_counter = 0
-inserted_abs_counter = 0
-lit_counter = 0
-inserted_lit_counter = 0
-num_counter = 0
-inserted_num_counter = 0
-sec_counter = 0
-subsec_counter = 0
-subsubsec_counter = 0
-
 filename = None
 
 
