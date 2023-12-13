@@ -36,6 +36,7 @@ def main():
             rsvseth = bylaws.parse(args.input)
             
             # Mdbook needs manual numbering and footnote collection.
+            rsvseth.numbering_pass()
             rsvseth.collect_footnotes_pass()
             rsvseth.number_footnotes_pass()
 
@@ -65,6 +66,7 @@ def main():
             jinja_env.filters['escape_tex'] = escape_tex
 
             rsvseth = bylaws.parse(args.input)
+            rsvseth.numbering_pass()
 
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")
