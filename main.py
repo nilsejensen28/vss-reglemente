@@ -39,6 +39,7 @@ def main():
             rsvseth.numbering_pass()
             rsvseth.collect_footnotes_pass()
             rsvseth.number_footnotes_pass()
+            rsvseth.latest_change_pass()
 
             # Forbid making an mdbook with only one regulation.
             if isinstance(rsvseth, bylaws.Regulation):
@@ -67,6 +68,7 @@ def main():
 
             rsvseth = bylaws.parse(args.input)
             rsvseth.numbering_pass()
+            rsvseth.latest_change_pass()
 
             bylaws_template = jinja_env.get_template("bylaws.tex.j2")
             regl_template = jinja_env.get_template("regulations.tex.j2")

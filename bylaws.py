@@ -93,6 +93,7 @@ It is mainly a container object. Only regulations are valid children.
 Attributes:
 - title: Title of the bylaws
 - filename: File name of the XML source containing this element
+- date_last_update: Date when the last change was implemented. Initialized with today as a backup and filled in a separate pass.
 - regulations: Ordered list of regulations contained in the bylaws
 - element: XML element represented by this object
 """
@@ -119,6 +120,8 @@ class Bylaws:
             self.filename = element.get("filename")
         self.filename = self.filename.replace(".xml", "")
 
+        self.date_last_change = date.today()
+
         self.regulations = []
         for child in element:
             match child.tag:
@@ -138,6 +141,14 @@ class Bylaws:
     def number_footnotes_pass(self):
         for regl in self.regulations:
             regl.number_footnotes_pass()
+    
+    def latest_change_pass(self):
+        latest_changes = []
+        for regl in self.regulations:
+            latest_changes.append(regl.latest_change_pass())
+
+        # This is safe because all regulations have the original implementation date
+        self.date_last_update = max(latest_changes)
 
 
 """
@@ -152,6 +163,8 @@ Attributes:
  - id: RSVSETH id of the regulation
  - is_toplevel: True if the regulation was parsed standalone from its file
  - filename: File name of the XML source for this regulation
+ - original_implementation_date: Date when the regulation was originally implemented (when it was created or after a total revision)
+ - date_last_update: Date when the last change was implemented. Initialized with today as a backup and filled in a separate pass.
  - preamble: Only defined if a preamble is present
  - articles: Ordered list of articles that come before a potential section
  - sections: Ordered list of sections
@@ -172,6 +185,8 @@ class Regulation:
             throw_error("a regulation must have a title", element)
         if is_empty(element.get("id")):
             throw_error("a regulation must contain an id", element)
+        if is_empty(element.get("original_implementation_date")):
+            throw_error("a regulation must specify its original implementation date", element)
         ensure_inserted_not_present(element)
 
         # Values
@@ -192,6 +207,12 @@ class Regulation:
         else:
             self.filename = element.get("filename")
         self.filename = self.filename.replace(".xml", "")
+
+        try:
+            self.original_implementation_date = date.fromisoformat(element.get("original_implementation_date"))
+        except Exception as e:
+            throw_error(f"the original_implementation_date attribute \"{element.get('original_implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
+        self.date_last_update = date.today()
 
         self.articles = []
         self.sections = []
@@ -235,6 +256,23 @@ class Regulation:
 
         for sec in self.sections:
             sec.number_footnotes_pass()
+    
+    def latest_change_pass(self):
+        latest_changes = [self.original_implementation_date]
+
+        if hasattr(self, "preamble"):
+            latest_changes += self.preamble.latest_change_pass()
+
+        for art in self.articles:
+            latest_changes += art.latest_change_pass()
+
+        for sec in self.sections:
+            latest_changes += sec.latest_change_pass()
+
+        # This is safe because we have at least one element in the list.
+        self.date_last_update = max(latest_changes)
+
+        return self.date_last_update
 
 """
 Preamble 
@@ -297,6 +335,12 @@ class Preamble:
     def number_footnotes_pass(self):
         for i, footnote in enumerate(self.footnotes, 1):
             footnote.number = i
+
+    def latest_change_pass(self):
+        if hasattr(self, "changeFootnote"):
+            return [self.changeFootnote.implementation_date]
+        else:
+            return []
 
 
 """
@@ -392,6 +436,21 @@ class Section:
 
         for subsec in self.subsections:
             subsec.number_footnotes_pass()
+
+    def latest_change_pass(self):
+        latest_changes = []
+
+        for art in self.articles:
+            latest_changes += art.latest_change_pass()
+
+        for subsec in self.subsections:
+            latest_changes += subsec.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
+
 
 
 """
@@ -491,6 +550,20 @@ class Subsection:
         for subsubsec in self.subsubsections:
             subsubsec.number_footnotes_pass()
 
+    def latest_change_pass(self):
+        latest_changes = []
+
+        for art in self.articles:
+            latest_changes += art.latest_change_pass()
+
+        for subsubsec in self.subsubsections:
+            latest_changes += subsubsec.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
+
 
 """
 Subsubection
@@ -574,6 +647,17 @@ class Subsubsection:
     def number_footnotes_pass(self):
         for art in self.articles:
             art.number_footnotes_pass()
+
+    def latest_change_pass(self):
+        latest_changes = []
+
+        for art in self.articles:
+            latest_changes += art.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
 
 
 """
@@ -703,6 +787,23 @@ class Article:
         for i, footnote in enumerate(self.footnotes, 1):
             footnote.number = i
 
+    def latest_change_pass(self):
+        latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
+
+        for par in self.paragraphs:
+            latest_changes += par.latest_change_pass()
+
+        for lit in self.letters:
+            latest_changes += lit.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
+
 
 """
 Paragraph
@@ -806,6 +907,20 @@ class Paragraph:
         
         return footnotes
 
+    def latest_change_pass(self):
+        latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
+
+        for lit in self.letters:
+            latest_changes += lit.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
+
 
 """
 Letter
@@ -907,6 +1022,20 @@ class Letter:
 
         return footnotes
 
+    def latest_change_pass(self):
+        latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
+
+        for num in self.numerals:
+            latest_changes += num.latest_change_pass()
+
+        if latest_changes == []:
+            return []
+        else:
+            return [max(latest_changes)]
+
 
 """
 Numeral
@@ -995,6 +1124,12 @@ class Numeral:
             footnotes.append(self.changeFootnote)
 
         return footnotes
+
+    def latest_change_pass(self):
+        if hasattr(self, "changeFootnote"):
+            return [self.changeFootnote.implementation_date]
+        else:
+            return []
 
 """
 Link
@@ -1360,4 +1495,3 @@ def ensure_inserted_not_present(element):
 
 def is_empty(s):
     return s is None or s.strip() == ''
-
