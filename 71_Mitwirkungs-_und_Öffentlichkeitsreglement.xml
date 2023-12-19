@@ -755,7 +755,8 @@
 						Das geführte Protokoll und alle dem betreffenden Geschäft zugeordneten Dokumente sind in diesem Fall vertraulich und dürfen nicht veröffentlicht werden.
 					</paragraph>
 					<paragraph>
-						Vertrauliche Protokolle dürfen einzig von den aktuellen Mitgliedern des betreffenden Organs, der GPK und, im Falle von Organen des VSETH, vom VSETH-Vorstand eingesehen werden.
+						<changed gremium="MR" agenda_item="20" meeting_date="2023-11-22" implementation_date="2023-12-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309264410/20_Antrag.pdf"/>
+						Vertrauliche Protokolle dürfen einzig von den aktuellen Mitgliedern des betreffenden Organs und der GPK eingesehen werden. Zusätzlich kann der VSETH-Vorstand vertrauliche Protokolle aller Organe des VSETH ausser der GPK einsehen.
 					</paragraph>
 					<paragraph>
 						Im Streitfall entscheidet die GPK über die Vertraulichkeit eines Geschäfts.
