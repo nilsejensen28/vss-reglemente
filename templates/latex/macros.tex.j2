@@ -1,5 +1,9 @@
+((* macro secnum(s) -*))
+(( s.number ))((* if s.inserted *))(( s.inserted_number | num2letter ))((* endif *)).
+((*- endmacro *))
+
 ((* macro section(sec) -*))
-\section{(( sec.title | escape_tex ))}
+\section[(( secnum(sec) ))~(( sec.title | escape_tex ))]{(( secnum(sec) ))(( changeFootnoteMark(sec.changeFootnote) ))~(( sec.title | escape_tex ))}(( changeFootnote(sec.changeFootnote, False) ))
 \nobreak
 
 ((* for art in sec.articles -*))
@@ -11,7 +15,7 @@
 ((* endmacro *))
 
 ((* macro subsection(subsec) -*))
-\subsection{(( subsec.title | escape_tex ))}
+\subsection[(( secnum(subsec.parent) ))(( secnum(subsec) ))~(( subsec.title | escape_tex ))]{(( secnum(subsec.parent) ))(( secnum(subsec) ))(( changeFootnoteMark(subsec.changeFootnote) ))~(( subsec.title | escape_tex ))}(( changeFootnote(subsec.changeFootnote, False) ))
 \nobreak
 
 ((* for art in subsec.articles -*))
@@ -23,7 +27,7 @@
 ((* endmacro *))
 
 ((* macro subsubsection(subsubsec) -*))
-\subsubsection{(( subsubsec.title | escape_tex ))}
+\subsubsection[(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))~(( subsubsec.title | escape_tex ))]{(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))(( changeFootnoteMark(subsubsec.changeFootnote) ))~(( subsubsec.title | escape_tex ))}(( changeFootnote(subsubsec.changeFootnote, False) ))
 \nobreak
 
 ((* for art in subsubsec.articles -*))
@@ -100,9 +104,7 @@ j
 ((* endmacro *))
 
 ((* macro changeFootnoteMark(chng) -*))
-((*- if chng -*))
-\footnotemark
-((*- endif *))
+((*- if chng -*))\protect\footnotemark((* endif *))
 ((*- endmacro *))
 
 ((* macro changeFootnote(chng, complete=True) -*))
@@ -195,8 +197,8 @@ j
 }
 \makeatother
 
-\setcounter{secnumdepth}{3}
-\renewcommand*{\thesection}{\arabic{section}}
+\setcounter{secnumdepth}{0}
+%\renewcommand*{\thesection}{\arabic{section}}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}
 \RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}

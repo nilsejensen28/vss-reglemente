@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from xxlimited import foo
 from lxml import etree, ElementInclude
 from datetime import date
 
@@ -312,13 +313,13 @@ class Preamble:
         for child in element:
             match child:
                 case "link":
-                    self.text.append(Link(child))
+                    self.text.append(Link(child, self))
                 case "quote":
-                    self.text.append(Quote(child))
+                    self.text.append(Quote(child, self))
                 case "footnote":
-                    self.text.append(Footnote(child))
+                    self.text.append(Footnote(child, self))
                 case "inserted" | "deleted" | "changed":
-                    self.changeFootnote(ChangeFootnote(child))
+                    self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
                     throw_error("invalid preamble child <{}>".format(child.tag), element)
@@ -346,7 +347,7 @@ class Preamble:
 """
 Section
 
-Does not have text. May contain articles before potential subsections. Does not display footnotes.
+Does not have text. May contain articles before potential subsections. Can be inserted and may have a change footnote.
 
 Valid children: articles, subsection
 
@@ -370,7 +371,6 @@ class Section:
             throw_error("a section my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a section must have a title", element)
-        ensure_inserted_not_present(element)
 
         # values
         self.parent = parent
@@ -381,6 +381,7 @@ class Section:
         self.ended_inserted = False
         self.articles = []
         self.subsections = []
+        self.footnotes = []
         for child in element:
             match child.tag:
                 case "articles":
@@ -390,6 +391,8 @@ class Section:
                         throw_error("a section my only contain articles before any subsections", element)
                 case "subsection":
                     self.subsections.append(Subsection(child, self))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child, self)
                 case _:
                     throw_error("a section may only cointain articles and subsections", element)
 
@@ -424,6 +427,10 @@ class Section:
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
+        # Change footnote goes right under the section title.
+        if hasattr(self, "changeFootnote"):
+            self.footnotes.append(self.changeFootnote)
+
         for art in self.articles:
             art.collect_footnotes_pass()
         
@@ -431,6 +438,9 @@ class Section:
             subsec.collect_footnotes_pass()
      
     def number_footnotes_pass(self): 
+        for i, footnote in enumerate(self.footnotes, 1):
+            footnote.number = i
+
         for art in self.articles:
             art.number_footnotes_pass()
 
@@ -439,6 +449,9 @@ class Section:
 
     def latest_change_pass(self):
         latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
 
         for art in self.articles:
             latest_changes += art.latest_change_pass()
@@ -456,7 +469,7 @@ class Section:
 """
 Subsection
 
-Does not have text. May contain articles before potential subsubsections. Does not display footnotes.
+Does not have text. May contain articles before potential subsubsections. Can be inserted and may have a change footnote.
 
 Valid children: articles, subsubsection
 
@@ -481,7 +494,6 @@ class Subsection:
             throw_error("a subsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a subsection must have a title", element)
-        ensure_inserted_not_present(element)
 
         # values
         self.parent = parent
@@ -493,6 +505,7 @@ class Subsection:
         self.ended_inserted = False
         self.articles = []
         self.subsubsections = []
+        self.footnotes = []
         for child in element:
             match child.tag:
                 case "articles":
@@ -502,6 +515,8 @@ class Subsection:
                         throw_error("a subsection my only contain articles before any subsections", element)
                 case "subsubsection":
                     self.subsubsections.append(Subsubsection(child, self))
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child, self)
                 case _:
                     throw_error("a subsection may only cointain articles and subsubsections", element)
 
@@ -537,6 +552,9 @@ class Subsection:
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
+        if hasattr(self, "changeFootnote"):
+            self.footnotes.append(self.changeFootnote)
+
         for art in self.articles:
             art.collect_footnotes_pass()
 
@@ -544,6 +562,9 @@ class Subsection:
             subsubsec.collect_footnotes_pass()
 
     def number_footnotes_pass(self):
+        for i, footnote in enumerate(self.footnotes, 1):
+            footnote.number = i
+
         for art in self.articles:
             art.number_footnotes_pass()
 
@@ -552,6 +573,9 @@ class Subsection:
 
     def latest_change_pass(self):
         latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
 
         for art in self.articles:
             latest_changes += art.latest_change_pass()
@@ -568,7 +592,7 @@ class Subsection:
 """
 Subsubection
 
-Does not have text. Contains articles. Does not display footnotes.
+Does not have text. Contains articles. Can be inserted and may have a change footnote.
 
 Valid children: articles
 
@@ -593,7 +617,6 @@ class Subsubsection:
             throw_error("a subsubsection my not have a tail (tail: {})".format(element.tail), element)
         if is_empty(element.get("title")):
             throw_error("a subsubsection must have a title", element)
-        ensure_inserted_not_present(element)
 
         # values
         self.parent = parent
@@ -604,11 +627,14 @@ class Subsubsection:
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
         self.ended_inserted = False
+        self.footnotes = []
         self.articles = []
         for child in element:
             match child.tag:
                 case "articles":
                     self.articles = process_articles(child, self)
+                case "inserted" | "deleted" | "changed":
+                    self.changeFootnote = ChangeFootnote(child, self)
                 case _:
                     throw_error("a subsubsection may only cointain articles", element)
 
@@ -641,15 +667,24 @@ class Subsubsection:
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
+        if hasattr(self, "changeFootnote"):
+            self.footnotes.append(self.changeFootnote)
+
         for art in self.articles:
             art.collect_footnotes_pass()
     
     def number_footnotes_pass(self):
+        for i, footnote in enumerate(self.footnotes, 1):
+            footnote.number = i
+
         for art in self.articles:
             art.number_footnotes_pass()
 
     def latest_change_pass(self):
         latest_changes = []
+
+        if hasattr(self, "changeFootnote"):
+            latest_changes.append(self.changeFootnote.implementation_date)
 
         for art in self.articles:
             latest_changes += art.latest_change_pass()
