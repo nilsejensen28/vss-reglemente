@@ -1419,6 +1419,13 @@ class ChangeFootnote:
         except Exception:
             throw_error("unreachable: gremien should be checked", element)
 
+        # Check that the elements containing a change footnote conform to some rules.
+
+        # A deleted element may only contain the change footnote.
+        if self.action == "deleted":
+            if len(self.parent.element) > 1:
+                throw_error("a deleted element must not have any content", element)
+
         self.tail = []
         if not is_empty(element.tail):
             self.tail.append(element.tail)
