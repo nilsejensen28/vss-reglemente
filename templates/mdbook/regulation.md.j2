@@ -15,7 +15,8 @@
  # Section
  #}
 {% macro section(sec) %}
-## {{ sec.number }}. {{sec.title}}
+## {{ sec.number }}{{ sec.inserted_number | num2letter }}{{ changeFootnoteMark(sec) }}. {{sec.title}}
+{{ footnotes(sec.footnotes) }}
 
 {% for art in sec.articles -%}
 {{ article(art) }}
@@ -29,7 +30,8 @@
  # Subsection
  #}
 {% macro subsection(subsec) %}
-### {{ subsec.sec }}.{{ subsec.number }}. {{subsec.title}}
+### {{ subsec.sec }}{{subsec.parent.inserted_number | num2letter}}.{{ subsec.number }}{{ subsec.inserted_number | num2letter }}{{ changeFootnoteMark(subsec) }}. {{subsec.title}}
+{{ footnotes(subsec.footnotes) }}
 
 {% for art in subsec.articles -%}
 {{ article(art) }}
@@ -43,7 +45,8 @@
  # Subsubsection
  #}
 {% macro subsubsection(subsubsec) %}
-#### {{subsubsec.sec }}.{{subsubsec.subsec }}.{{ subsubsec.number }}. {{subsubsec.title}}
+#### {{subsubsec.sec }}{{ subsubsec.parent.parent.inserted_number | num2letter }}.{{subsubsec.subsec }}{{ subsubsec.parent.inserted_number | num2letter }}.{{ subsubsec.number }}{{ subsubsec.inserted_number | num2letter }}{{ changeFootnoteMark(subsubsec) }}. {{subsubsec.title}}
+{{ footnotes(subsubsec.footnotes) }}
 
 {% for art in subsubsec.articles -%}
 {{ article(art) }}
