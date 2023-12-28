@@ -183,7 +183,8 @@
 						Sie erstellt einen Abschlussbericht zuhanden des FR, des Rekursführers sowie des beschuldigten Organs. Falls der Rekurs den FR betrifft, erstellt sie den Bericht zuhanden des MR.
 					</paragraph>
 					<paragraph>
-						Kann der Rekurs nicht innerhalb von vier Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen und Organe innert dieser Frist über den Zwischenstand.
+						<changed gremium="MR" agenda_item="18" meeting_date="2023-11-22" implementation_date="2023-11-23" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309264412/18_Antrag.pdf"/>
+						Kann der Rekurs nicht innerhalb von vier Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen, Organe und Fachvereine innert dieser Frist über den Zwischenstand.
 					</paragraph>
 				</paragraphs>
 			</article>
