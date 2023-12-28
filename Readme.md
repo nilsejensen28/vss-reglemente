@@ -68,3 +68,9 @@ branch on [Teamcity](https://teamcity.vseth.ethz.ch/buildConfiguration/id0100Reg
  3. If all is well, add an entry of your newest file in `VSETH_Rechtssammlung.xml`.
  4. Generate all documents and check for errors (see above).
  5. Report any errors that you cannot fix to https://gitlab.ethz.ch/vseth/0100-Reglemente/reglemente/-/issues
+
+## Troubleshooting
+
+### Your text or link contains "&"
+Unfortunately, XML uses "&" as an escape character. Therefore, you need to replace "&" with "&amp;" to make things work.
+See 22.07_FC.xml for an example.
