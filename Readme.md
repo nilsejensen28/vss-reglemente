@@ -69,6 +69,21 @@ branch on [Teamcity](https://teamcity.vseth.ethz.ch/buildConfiguration/id0100Reg
  4. Generate all documents and check for errors (see above).
  5. Report any errors that you cannot fix to https://gitlab.ethz.ch/vseth/0100-Reglemente/reglemente/-/issues
 
+## Adding minute links to existing change footnotes
+Because some minutes take very long until they are available (e.g. MR), we provide a way to add
+them easily after the fact. You can update the minute link for every change footnote of a single 
+meeting date of a Gremium. Simply use the `insert-minutes` subcommand:
+```bash
+python main.py --gremium MR --date 2023-05-03 --minutes-link some-link
+```
+This will add the attribute `minutes_link="some-link"` to all change footnotes for the MR with
+meeting date 03.05.2023 or update existsing `minutes_link` attributes to that link.
+
+Note: If a Gremium holds multiple meetings on the same day where changes to the Rechtssammlung
+are decided (extremely unlikely: only know case ao MR during Budget MR 2018), you need to add
+the links manually in the XML files. This subcommand can not distinguish between different meetings
+of the same Gremium on the same day.
+
 ## Troubleshooting
 
 ### Your text or link contains "&"
