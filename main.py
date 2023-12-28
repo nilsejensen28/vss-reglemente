@@ -12,16 +12,30 @@ import bylaws
 
 def main():
     parser = ArgumentParser()
-    parser.add_argument("input")
-    parser.add_argument("-o", "--output-folder", required=True)
-    parser.add_argument("-f", "--format", choices=["mdbook", "latex", "navbar", "csv"], required=True)
-    parser.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
+    subparsers = parser.add_subparsers(dest="subcommand", required=True)
+    parser_gen = subparsers.add_parser("generate", help="Generate documents in different formats")
+    parser_gen.add_argument("input")
+    parser_gen.add_argument("-o", "--output-folder", required=True)
+    parser_gen.add_argument("-f", "--format", choices=["mdbook", "latex", "navbar", "csv"], required=True)
+    parser_gen.add_argument("-a", "--asset-path", type=pathlib.Path, required=True)
+    parser_minutes = subparsers.add_parser("insert-minutes", help="Insert minutes into the Rechtssammlung")
+    parser_minutes.add_argument("-g", "--gremium", required=True)
+    parser_minutes.add_argument("-d", "--date", required=True)
+    parser_minutes.add_argument("-m", "--minutes-link", required=True)
     args = parser.parse_args()
 
+    match args.subcommand:
+        case "generate":
+            generate(args)
+        case "insert-minutes":
+            insert_minutes(args)
+        case _:
+            raise NotImplementedError()
+
+
+def generate(args):
     # create output folder
     os.makedirs(args.output_folder, exist_ok=True)
-
-
 
     jinja_env = Environment(
         loader=FileSystemLoader("templates/{}".format(args.format)),
@@ -144,6 +158,28 @@ def num2latin(counter):
 # Filter to convert pyhton date objects to dd.mm.YYYY strings.
 def format_date(date: date):
     return date.strftime("%d.%m.%Y")
+     
+
+def insert_minutes(args):
+    print("Inserting minutes for {} on {} into the Rechtssammlung".format(args.gremium, args.date))
+
+    xml_files = []
+    for file in os.listdir("."):
+        if file.endswith(".xml"):
+            xml_files.append(file)
+
+    for xml_file in xml_files:
+        with open(xml_file, "r", encoding="utf-8") as f:
+            xml = f.read()
+            # Add the minutes link to all change footnotes for the given gremium and date.
+            # Update the link if it already exists.
+            xml, count = re.subn(
+                r'<(inserted|deleted|changed)(.*gremium="{}")(.*meeting_date="{}")(.*minutes_link="[^"]*")?(.*[^>]*)?>'.format(args.gremium, args.date), 
+                   r'<\1\2\3 minutes_link="{}"\5>'.format(args.minutes_link), xml)
+        with open(xml_file, "w", encoding="utf-8") as f:
+            f.write(xml)
+
+        print("Updated {} change footnotes in {}".format(count, xml_file))
 
 if __name__ == "__main__":
     main()
