@@ -325,10 +325,15 @@
 			<article title="Verbandskostendeckel">
 				<paragraphs>
 					<paragraph>
-						Pro Antrag können vom VSETH-Vorstand jeweils maximal CHF 5'000.00 Aufwand und Ertrag gesprochen werden. Unter zusätzlicher Zustimmung des Finanzausschusses können pro Antrag jeweils bis zu CHF 20'000.00 Aufwand und Ertrag gesprochen werden.
+						<changed gremium="MR" agenda_item="21" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309264414/21_Antrag.pdf"/>
+						Pro Antrag können vom VSETH-Vorstand jeweils maximal CHF 2'500.00 Aufwand und Ertrag gesprochen werden. Unter zusätzlicher Zustimmung des Finanzausschusses können pro Antrag jeweils bis zu CHF 20'000.00 Aufwand und Ertrag gesprochen werden.
 					</paragraph>
 					<paragraph>
-						Ab einer Ausnutzung von 50% des Ertrags bzw. des Aufwands des Kostendeckels muss der Finanzausschuss jedem Antrag zustimmen.
+						<deleted gremium="MR" agenda_item="21" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309264414/21_Antrag.pdf"/>
+					</paragraph>
+					<paragraph inserted="">
+						<inserted gremium="MR" agenda_item="21" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309264414/21_Antrag.pdf"/>
+						Der VSETH-Vorstand informiert den Finanzausschuss über alle von ihm genehmigten Anträge.
 					</paragraph>
 					<paragraph>
 						Anträge, welche Spesen gemäss Art. 26f enthalten, sind zusätzlich durch den Spesen- und Entschädigungsausschuss zu genehmigen.
