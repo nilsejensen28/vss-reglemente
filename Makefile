@@ -44,7 +44,7 @@ all: html pdf
 
 .PHONY: csv
 csv: ${SRCS} templates/csv/$(wildcard *.csv.j2) $(wildcard *.py)
-	python3 main.py --asset-path ${ASSET_PATH} --format csv --output-folder ${CSV_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --format csv --output-folder ${CSV_PATH} $<
 
 # We build the HTML representation by building an mdbook
 .PHONY: html
@@ -55,7 +55,7 @@ html: mdbook
 # VSETH_Rechtssammlung.xml is the first file in ${SRCS}. Therefore, $< will only build that file.
 .PHONY: mdbook
 mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-init
-	python3 main.py --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
 
 # Initialize the mdbook folder by copying config files and assets
 mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*) ${MDBOOK_ASSETS} clean-mdbook navbar
@@ -67,7 +67,7 @@ mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*) ${MDBOOK_ASSETS
 
 navbar: templates/navbar/$(wildcard *.html.j2) $(wildcard *.py)
 	mkdir -p ${NAVBAR_PATH}
-	python3 main.py --asset-path ${ASSET_PATH} --format navbar --output-folder ${NAVBAR_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --format navbar --output-folder ${NAVBAR_PATH} $<
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
@@ -78,7 +78,7 @@ tex: ${SRCS:.xml=.tex}
 pdf: ${SRCS:.xml=.pdf}
 
 %.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
-	python3 main.py --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
 
 %.pdf: %.tex
 	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/$<
