@@ -102,7 +102,8 @@
                         Die Abteilung Buchhaltung führt die Buchhaltung des Verbands.
                     </paragraph>
                     <paragraph>
-                        Die Buchhaltung ist für das Tagesgeschäft zuständig, stellt Rechnungen im Namen des VSETH und kontrolliert den Zahlungseingang. Sie stellt gemeinsam mit der Quästur die fristgerechte Bezahlung eingehender Rechnungen und Auslagenrückerstattungen sicher und bearbeitet zusammen mit der Quästur eingehende Mahnungen.
+                        <changed gremium="Vorstand" agenda_item="vs_item" meeting_date="2023-12-20" implementation_date="2024-01-01"/>
+                        Die Aufgaben und Rechte der Abteilung Buchhaltung richten sich nach dem Finanzreglement.
                     </paragraph>
                 </paragraphs>
             </article>
@@ -137,7 +138,7 @@
     <section title="Abteilung ISG">
         <articles>
             <article title="Aufgaben der ISG">
-                Der Aufbau und die Aufgaben der Abteilung ISG sind in der ISG-Verordnung geregelt. Diese wird gemäss Art. 8 Abs. 1 des Infrastrukturreglements auf Antrag des IT-Ausschuss durch den VSETH-Vorstand erlassen.
+                Der Aufbau und die Aufgaben der Abteilung ISG sind in der ISG-Verordnung geregelt. Diese wird gemäss Art. 8 Abs. 1 des Infrastrukturreglements auf Antrag des Teams IT durch den VSETH-Vorstand erlassen.
             </article>
         </articles>
     </section>
