@@ -138,6 +138,7 @@
     <section title="Abteilung ISG">
         <articles>
             <article title="Aufgaben der ISG">
+                <changed gremium="VS" agenda_item="vs_item" meeting_date="2023-12-20" implementation_date="2024-01-01"/>
                 Der Aufbau und die Aufgaben der Abteilung ISG sind in der ISG-Verordnung geregelt. Diese wird gemäss Art. 8 Abs. 1 des Infrastrukturreglements auf Antrag des Teams IT durch den VSETH-Vorstand erlassen.
             </article>
         </articles>
