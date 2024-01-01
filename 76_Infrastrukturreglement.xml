@@ -13,7 +13,8 @@
 						Der VSETH-Vorstand führt eine Raumzuteilungsliste, welche die dem VSETH zugewiesenen Räume den Nutzerguppen zuweist.
 					</paragraph>
 					<paragraph>
-						Anpassungen beschliesst er nach Konsultation der beteiligten Nutzergruppen.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Anpassungen beschliesst er nach Konsultation der beteiligten Nutzergruppen und des Teams Infrastruktur.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -31,6 +32,10 @@
 	</section>
 	<section title="IT">
 		<articles>
+			<article title="Kooperation mit der ETH" inserted="">
+				<inserted gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+				Das Team IT und die Informatiksupportgruppe (ISG) des VSETH streben eine enge Zusammenarbeit mit anderen Organisationen in IT-Fragen an, insbesondere mit studentischen Gruppierungen und den Informatikdiensten der ETH.
+			</article>
 			<article title="Nutzergruppen">
 				<paragraphs>
 					<paragraph>
@@ -40,17 +45,20 @@
 						Studentische Organisation können unter Bedingungen Zugang zu einzelnen Dienstleistungen erhalten.
 					</paragraph>
 					<paragraph>
-						Der IT-Ausschuss regelt die Einzelheiten in einer Verordnung.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Das Team IT regelt die Einzelheiten in einer Verordnung.
 					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Dienstleistungsangebot">
 				<paragraphs>
 					<paragraph>
-						Der IT-Ausschuss führt die strategische Planung für das zentrale IT-Dienstleistungsangebot des VSETH.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Das Team IT führt die strategische Planung für das zentrale IT-Dienstleistungsangebot des VSETH.
 					</paragraph>
 					<paragraph>
-						Bei Änderungen am Dienstleistungsangebot, welche signifikante Auswirkungen auf die Nutzergruppen haben, sind die Nutzergruppen durch den IT-Ausschuss zu informieren.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Bei Änderungen am Dienstleistungsangebot, welche signifikante Auswirkungen auf die Nutzergruppen haben, sind die Nutzergruppen durch das Team IT zu informieren.
 					</paragraph>
 					<paragraph>
 						Sollte eine solche Änderung für eine Nutzergruppe unverträglich sein, dann kann sie ein Wiedererwägungsgesuch an den FR stellen.
@@ -58,28 +66,33 @@
 				</paragraphs>
 			</article>
 			<article title="Externe Beschaffung">
-				Der IT-Ausschuss prüft und bewilligt alle IT-Aufträge des VSETH an externe Dienstleister.
+				<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+				Das Team IT prüft und bewilligt alle IT-Aufträge des VSETH an externe Dienstleister.
 			</article>
 			<article title="BOT VSETH">
 				<paragraphs>
 					<paragraph>
-						Der IT-Ausschuss legt die spezifischen Bestimmungen über die Nutzung der IT des VSETH in der Verordnung über die Nutzung der Informations- und Kommunikationstechnologie (BOT VSETH) fest.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Das Team IT legt die spezifischen Bestimmungen über die Nutzung der IT des VSETH in der Verordnung über die Nutzung der Informations- und Kommunikationstechnologie (BOT VSETH) fest.
 					</paragraph>
 					<paragraph>
 						Die IT-Dienstleistungen des VSETH dürfen nicht zu privaten Zwecken genutzt werden. Die BOT VSETH regelt allfällige Ausnahmen. Die ausnahmsweise private Nutzung der IT des VSETH begründet kein schützenswertes Interesse im Verhältnis mit Abs. 3 und 4.
 					</paragraph>
 					<paragraph>
-						Unter besonderen Umständen kann eine Nutzergruppe Zugriff auf Daten einer Person innerhalb ihrer Nutzergruppe erlangen. Gründe dafür sind längere Krankheit, Nichterfüllung des Pflichtenhefts oder rufschädigendes Verhalten gegenüber der Nutzergruppe oder dem VSETH sowie IT-Sicherheit.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Unter besonderen Umständen kann eine Nutzergruppe Zugriff auf Daten einer Person innerhalb ihrer Nutzergruppe erlangen. Gründe dafür sind längere Krankheit, Nichterfüllung der Aufgaben oder rufschädigendes Verhalten gegenüber der Nutzergruppe oder dem VSETH sowie IT-Sicherheit.
 					</paragraph>
 					<paragraph>
-						Die GPK entscheidet auf Antrag des VSETH-Vorstands oder des IT-Ausschusses über den Zugriff auf die Daten dieser Person.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Die GPK entscheidet auf Antrag des VSETH-Vorstands über den Zugriff auf die Daten dieser Person.
 					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Verordnung über die Informatiksupportgruppe">
+				<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
 				<paragraphs>
 					<paragraph>
-						Der VSETH-Vorstand erlässt auf Antrag des IT-Ausschuss die Verordnung über die Informatiksupportgruppe (ISG).
+						Der VSETH-Vorstand erlässt auf Antrag des Teams IT die Verordnung über die Informatiksupportgruppe (ISG).
 					</paragraph>
 					<paragraph>
 						Diese beinhaltet mindestens Bestimmungen zu:
@@ -88,7 +101,7 @@
 								Beschreibung der Tätigkeiten der ISG;
 							</letter>
 							<letter>
-								Klärung der Zuständigkeiten zwischen ISG und IT-Ausschuss.
+								Klärung der Zuständigkeiten zwischen ISG und Team IT.
 							</letter>
 						</letters>
 					</paragraph>
@@ -97,7 +110,8 @@
 			<article title="Softwareentwicklung auf der VSETH IT">
 				<paragraphs>
 					<paragraph>
-						Der VSETH-Vorstand legt gemeinsam mit dem IT-Ausschuss in einer Weisung Regeln und Technologiestandards fest, welche bei Softwareentwicklungen einzuhalten sind.
+						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
+						Das Team IT legt in einer Weisung Regeln und Technologiestandards fest, welche bei Softwareentwicklungen einzuhalten sind.
 					</paragraph>
 					<paragraph>
 						Der VSETH erhält eine vertraglich festgehaltene, transferierbare, vervielfachbare, weltweite, zeitlich unbefristete, unentgeltliche und funktional uneingeschränkte Lizenz zur Nutzung und Weiterentwicklung von Software, die im Rahmen des Engagements im VSETH entwickelt wird. Diese Lizenz gilt auch und insbesondere, wenn auf Grundlage von Software, die ursprünglich im Rahmen des Engagements im VSETH entwickelt wurde, später ein kommerzielles Produkt entsteht.

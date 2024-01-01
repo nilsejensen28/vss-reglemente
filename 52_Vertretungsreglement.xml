@@ -40,7 +40,8 @@
 						Der VSETH-Vorstand führt eine Vertretungsliste mit allen Vertretungen, ausser jenen nach Art. 2.
 					</paragraph>
 					<paragraph>
-						Bei Mutationen schlägt der VSETH-Vorstand nach Konsultation des FR dem MR eine Anpassung vor. Dieser beschliesst die Anpassung.
+						<changed gremium="MR" agenda_item="15.5t" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657649/15_5t_Vertretungen.pdf"/>
+						Bei Mutationen schlägt der VSETH-Vorstand dem MR eine Anpassung vor. Dieser beschliesst die Anpassung.
 					</paragraph>
 					<paragraph>
 						Vertretungen, für die von diesem Reglement abweichende Bestimmungen gelten, sind in der Vertretungsliste markiert.
@@ -63,7 +64,11 @@
 						Relevanz der Vertretung;
 					</letter>
 					<letter>
-						von Amtes wegen besetzte Sitze.
+						von Amtes wegen besetzte Sitze;
+					</letter>
+					<letter>
+						<inserted gremium="MR" agenda_item="15.5t" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657649/15_5t_Vertretungen.pdf"/>
+						verantwortliches Ressort.
 					</letter>
 				</letters>
 			</article>
@@ -164,7 +169,7 @@
 						Bei vakanten und neu entstandenen Vertretungen kann der FR eine Vertretung ad interim bis zur nächsten Sitzung des MR wählen.
 					</paragraph>
 					<paragraph>
-						Zusätzlich kann der VSETH-Vorstand bei Vertretungen, welche nicht als “besonders relevant” deklariert wurden, eine Vertretung ad interim bis zur nächsten Sitzung des MR wählen.
+						Zusätzlich kann der VSETH-Vorstand bei Vertretungen, welche nicht als <quote>besonders relevant</quote> deklariert wurden, eine Vertretung ad interim bis zur nächsten Sitzung des MR wählen.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -188,6 +193,10 @@
 					</paragraph>
 					<paragraph>
 						Wird das bezeichnete Amt von mehreren Personen bekleidet, so wird die Vertreterin oder der Vertreter durch den VSETH-Vorstand in Absprache mit diesen Personen bestimmt.
+					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5t" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657649/15_5t_Vertretungen.pdf"/>
+						Sitze von Amtes wegen dürfen nur Vorstandsmitgliedern in VSETH-Vorstandsressorts oder Ausschussmitgliedern zufallen.
 					</paragraph>
 				</paragraphs>
 			</article>

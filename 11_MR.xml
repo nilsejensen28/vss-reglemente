@@ -47,7 +47,8 @@
 						Beide Personen müssen VSETH-Mitglieder sein.
 					</paragraph>
 					<paragraph>
-						Beide Personen dürfen weder Mitglieder des VSETH-Vorstands, noch der GPK, noch stimmberechtigte Delegierte des Mitgliederrats sein.
+						<changed gremium="MR" agenda_item="15.5b" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657667/15_5b_MR.pdf"/>
+						Beide Personen dürfen weder Mitglieder des VSETH-Vorstands, noch stimmberechtigte Delegierte des Mitgliederrats sein.
 					</paragraph>
 					<paragraph>
 						Die reguläre Amtsperiode des MR-Präsidiums beginnt und endet jeweils an der Wahlsitzung des MR.
@@ -59,7 +60,12 @@
 						Das MR-Präsidium besitzt folgende Pflichten:
 						<letters>
 							<letter>
-								Vorbereitung, Einberufung und Leitung der Sitzung.
+								<changed gremium="MR" agenda_item="15.5b" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657667/15_5b_MR.pdf"/>
+								Vorbereitung, Einberufung und Leitung der Sitzungen des Mitgliederrats.
+							</letter>
+							<letter>
+								<inserted gremium="MR" agenda_item="15.5b" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657667/15_5b_MR.pdf"/>
+								Vorbereitung und Einberufung der Sitzungen des Kommissionsrats gemäss Art. 21 des Allgemeinen Kommissionsreglements.
 							</letter>
 						</letters>
 					</paragraph>
@@ -244,7 +250,7 @@
 	<section title="Ordentliche Geschäfte der Vollsitzung des Herbstsemesters">
 		<articles>
 			<article title="Bestätigung der Kommissionen">
-				Auf Antrag des VSETH-Vorstands werden die Kommissionen bestätigt.
+				<deleted gremium="MR" agenda_item="15.5b" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657667/15_5b_MR.pdf"/>
 			</article>
 			<article title="Jahresbudget">
 				Auf Antrag des VSETH-Vorstands wird das Jahresbudget genehmigt.

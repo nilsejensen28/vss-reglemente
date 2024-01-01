@@ -15,7 +15,19 @@
 				Der Spesen- und Entschädigungsausschuss besteht maximal aus sieben Mitgliedern.
 			</article>
 			<article title="Mitglieder von Amtes wegen">
-				Der VSETH-Quästor oder die VSETH-Quästorin ist von Amtes wegen Mitglied des Spesen- und Entschädigungsausschusses.
+				<paragraphs>
+					<paragraph>
+						Der VSETH-Quästor oder die VSETH-Quästorin ist von Amtes wegen Mitglied des Spesen- und Entschädigungsausschusses.
+					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5f" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657663/15_5f_SpEA.pdf"/>
+						Eine Mitarbeit ausserhalb von Entscheidungsfindung und Koordination mit dem VSETH-Vorstand ist optional.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Beobachtende" inserted="">
+				<inserted gremium="MR" agenda_item="15.5f" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657663/15_5f_SpEA.pdf"/>
+				Die Mitglieder des Teams Quästur sind Beobachtende des Spesen- und Entschädigungsausschusses.
 			</article>
 		</articles>
 	</section>

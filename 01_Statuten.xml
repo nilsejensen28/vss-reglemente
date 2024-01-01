@@ -4,7 +4,7 @@
 			<article title="Rechtsform, Name, Sitz">
 				<paragraphs>
 					<paragraph>
-						Der <quote>Verband der Studierenden an der Eidgenössischen Technischen Hochschule</quote>, nachfolgend <quote>VSETH</quote> genannt, ist ein Verein im Sinne von <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_52">Art. 52ff</link> und <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_60">Art. 60ff ZGB</link> mit Sitz in Zürich.
+						Der <quote>Verband der Studierenden an der Eidgenössischen Technischen Hochschule</quote>, nachfolgend <quote>VSETH</quote> genannt, ist ein Verein im Sinne von <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_52">Art. 52ff.</link> und <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_60">Art. 60ff. ZGB</link> mit Sitz in Zürich.
 					</paragraph>
 					<paragraph>
 						Der VSETH ist im Jahr 1862 unter dem Namen <quote>Polytechnischer Verein zu Zürich</quote> gegründet worden.
@@ -75,7 +75,7 @@
 				</paragraphs>
 			</article>
 			<article title="Erlöschen der Mitgliedschaft">
-				Die Mitgliedschaft erlischt per Beginn des Folgesemester durch:
+				Die Mitgliedschaft erlischt per Beginn des Folgesemesters durch:
 				<letters>
 					<letter>
 						fehlende Erneuerung der Mitgliedschaft;
@@ -216,12 +216,17 @@
 									<numeral>
 										VSETH-Vorstand;
 									</numeral>
+									<numeral inserted="">
+										<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+										Teams;
+									</numeral>
 									<numeral>
 										Kommissionen;
 									</numeral>
 									<numeral>
 										Geschäftsprüfungskommission (GPK);
 									</numeral>
+									
 								</numerals>
 							</letter>
 							<letter>
@@ -297,7 +302,8 @@
 										aus 40 weiteren Delegierten, die auf die Fachvereine proportional zu deren Anzahl ordentlicher Mitglieder zum Zeitpunkt der letzten Einschreibefrist der ETH Zürich verteilt werden;
 									</letter>
 									<letter>
-										aus einem oder einer Delegierten jeder Kommission, welche vom Mitgliederrat bestätigt wurde;
+										<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+										aus einer Anzahl Delegierten der Kommissionen, die der grössten Fachvereinsdelegation entspricht;									
 									</letter>
 									<letter>
 										aus einem oder einer Delegierten der Angestellten des VSETH, gemäss dem <quote>Anstellungsreglement</quote> des VSETH;
@@ -305,7 +311,8 @@
 								</letters>
 							</paragraph>
 							<paragraph>
-								Weiter nehmen die Mitglieder des VSETH-Vorstands, der GPK, der Ausschüsse und des FR-Präsidiums als Beobachtende am Mitgliederrat teil.
+								<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+								Weiter nehmen die Mitglieder des VSETH-Vorstands, der GPK, der Ausschüsse, des FR-Präsidiums, der Teams und der Kommissionsvorstände als Beobachtende am Mitgliederrat teil.
 							</paragraph>
 						</paragraphs>
 					</article>
@@ -389,10 +396,48 @@
 					</article>
 				</articles>
 			</subsubsection>
+			<subsubsection title="Teams" inserted="">
+				<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+				<articles>
+					<article title="Definition" inserted="">
+						<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+						<paragraphs>
+							<paragraph>
+								Teams unterstützen den VSETH-Vorstand bei der Arbeit seiner Ressorts gemäss Art. 7 des Vorstandsreglements.
+							</paragraph>
+							<paragraph>
+								Ein Team arbeitet in genau einem Ressort.
+							</paragraph>
+							<paragraph>
+								Die Teams sind Teil der Exekutive des Verbands.
+							</paragraph>
+						</paragraphs>
+					</article>
+					<article title="Allgemeines Teamreglement" inserted="">
+						<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+						<paragraphs>
+							<paragraph>
+								Der Mitgliederrat erlässt das <quote>Allgemeine Gremienreglement über die Teams des VSETH</quote>, nachfolgend <quote>Allgemeines Teamreglement</quote> genannt.
+							</paragraph>
+							<paragraph>
+								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
+							</paragraph>
+						</paragraphs>
+					</article>
+				</articles>
+			</subsubsection>
 			<subsubsection title="Kommissionen">
 				<articles>
 					<article title="Definition">
-						Der Mitgliederrat und der VSETH-Vorstand können zur Entlastung und Ergänzung des VSETH-Vorstands für bestimmte Geschäfte eine Kommission einsetzen. Die Kommissionen sind Teil der Exekutive des Verbands.
+						<paragraphs>
+							<paragraph>
+								<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
+								Der Mitgliederrat und der VSETH-Vorstand können zur Entlastung und Ergänzung des VSETH-Vorstands und der Teams für bestimmte Geschäfte eine Kommission einsetzen.
+							</paragraph>
+							<paragraph>
+								Die Kommissionen sind Teil der Exekutive des Verbands.
+							</paragraph>
+						</paragraphs>
 					</article>
 					<article title="Allgemeines Kommissionsreglement">
 						<paragraphs>

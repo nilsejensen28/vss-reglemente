@@ -44,6 +44,17 @@
 					</paragraph>
 				</paragraphs>
 			</article>
+			<article title="Beobachtende" inserted="">
+				<inserted gremium="MR" agenda_item="15.5d" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657665/15_5d_AlgAusschuss.pdf"/>
+				<paragraphs>
+					<paragraph>
+						Beobachtende können im spezifischen Ausschussreglement definiert werden.
+					</paragraph>
+					<paragraph>
+						Diese sind antrags-, aber nicht stimmberechtigt.
+					</paragraph>
+				</paragraphs>
+			</article>
 		</articles>
 	</section>
 	<section title="Organisation">
@@ -127,7 +138,8 @@
 						Auf Begehren eines Ausschussmitglieds ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von drei Wochen statt.
 					</paragraph>
 					<paragraph>
-						Die Traktandenliste wird den Ausschussmitgliedern, dem VSETH-Vorstand, dem FR und der GPK zugestellt.
+						<changed gremium="MR" agenda_item="15.5d" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657665/15_5d_AlgAusschuss.pdf"/>
+						Die Traktandenliste wird den Ausschussmitgliedern, den Beobachtenden, dem VSETH-Vorstand, dem FR und der GPK zugestellt.
 					</paragraph>
 					<paragraph>
 						Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.

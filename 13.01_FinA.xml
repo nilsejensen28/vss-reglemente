@@ -1,12 +1,15 @@
-<regulation id="13.01" title="Gremienreglement über den Finanzausschuss" short="FinA-Reglement" original_implementation_date="2022-01-01">
-	<preamble>
-		Der Mitgliederrat, gestützt auf Art. 9 des Allgemeinen Ausschussreglements, beschliesst:
-	</preamble>
+<regulation
+		id="13.01"
+		title="Gremienreglement über den Finanzausschuss"
+		short="FinA-Reglement"
+		original_implementation_date="2022-01-01">
+	<preamble> Der Mitgliederrat, gestützt auf Art. 9 des Allgemeinen Ausschussreglements,
+		beschliesst: </preamble>
 	<section title="Zweck">
 		<articles>
-			<article title="Zweck">
-				Der Finanzausschuss ist für die strategische Budget- und Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSETH verantwortlich.
-			</article>
+			<article title="Zweck"> Der Finanzausschuss ist für die strategische Budget- und
+				Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSETH
+				verantwortlich. </article>
 		</articles>
 	</section>
 	<section title="Mitglieder">
@@ -16,60 +19,78 @@
 				Der Finanzausschuss besteht aus maximal zwölf Mitgliedern.
 			</article>
 			<article title="Mitglieder von Amtes wegen">
-				Der VSETH-Quästor bzw. die VSETH-Quästorin ist von Amtes wegen Mitglied des Finanzausschusses.
+				<paragraphs>
+					<paragraph> Der VSETH-Quästor bzw. die VSETH-Quästorin ist von Amtes wegen
+						Mitglied des Finanzausschusses. </paragraph>
+					<paragraph>
+						<inserted
+								gremium="MR"
+								agenda_item="15.5e"
+								meeting_date="2023-11-22"
+								implementation_date="2024-01-01"
+								motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657664/15_5e_FinA.pdf" />
+						Eine Mitarbeit ausserhalb von Entscheidungsfindung und Koordination mit dem
+						VSETH-Vorstand ist optional. </paragraph>
+				</paragraphs>
 			</article>
+			<article
+					title="Beobachtende"
+					inserted="">
+				<inserted
+						gremium="MR"
+						agenda_item="15.5e"
+						meeting_date="2023-11-22"
+						implementation_date="2024-01-01"
+						motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657664/15_5e_FinA.pdf" />
+				Die Mitglieder des Teams Quästur sind Beobachtende des Finanzausschusses. </article>
 		</articles>
 	</section>
 	<section title="Kompetenzen">
 		<articles>
 			<article title="Budget">
 				<paragraphs>
-					<paragraph>
-						Der Finanzausschuss leitet zusammen mit der VSETH-Quästur den Prozess für die Budgeterstellung und die Budgetprüfung.
-					</paragraph>
-					<paragraph>
-						Der Finanzausschuss hat die Möglichkeit zu jeder Kostenstelle und zu jedem finanzwirksamen Antrag an den MR eine Empfehlung abzugeben.
-					</paragraph>
+					<paragraph> Der Finanzausschuss leitet zusammen mit der VSETH-Quästur den
+						Prozess für die Budgeterstellung und die Budgetprüfung. </paragraph>
+					<paragraph> Der Finanzausschuss hat die Möglichkeit, zu jeder Kostenstelle und
+						zu jedem finanzwirksamen Antrag an den MR eine Empfehlung abzugeben. </paragraph>
 				</paragraphs>
 			</article>
 			<article title="Kontinuierliche Überwachung">
-				<paragraphs>
-					<paragraph>
-						Der Finanzausschuss hat für die kontinuierliche Überwachung der Finanzen die volle Einsicht in die Buchhaltungsunterlagen.
-					</paragraph>
-					<paragraph>
-						Der Finanzausschuss berichtet mindestens einmal pro Quartal am FR über die Finanzlage des VSETH.
-					</paragraph>
-				</paragraphs>
+				<deleted
+						gremium="MR"
+						agenda_item="15.5e"
+						meeting_date="2023-11-22"
+						implementation_date="2024-01-01"
+						motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657664/15_5e_FinA.pdf" />
 			</article>
 			<article title="Rechnung">
 				<paragraphs>
 					<paragraph>
-						Der Finanzausschuss unterstützt die VSETH-Quästur bei der Rechnungsprüfung.
-					</paragraph>
-					<paragraph>
-						Der Finanzausschuss hat die Möglichkeit zu jeder Kostenstelle eine Empfehlung abzugeben.
-					</paragraph>
+						<changed
+								gremium="MR"
+								agenda_item="15.5e"
+								meeting_date="2023-11-22"
+								implementation_date="2024-01-01"
+								motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657664/15_5e_FinA.pdf" />
+						Der Finanzausschuss nimmt die Rechnungsprüfung mit Unterstützung der
+						VSETH-Quästur vor. </paragraph>
+					<paragraph> Der Finanzausschuss hat die Möglichkeit, zu jeder Kostenstelle eine
+						Empfehlung abzugeben. </paragraph>
 				</paragraphs>
 			</article>
-			<article title="Finanzplanung">
-				Der Finanzausschuss ist für die strategische Finanzplanung des VSETH verantwortlich.
-			</article>
+			<article title="Finanzplanung"> Der Finanzausschuss ist für die strategische
+				Finanzplanung des VSETH verantwortlich. </article>
 		</articles>
 	</section>
 	<section title="Schlussbestimmungen">
 		<articles>
-			<article title="Revisionsbestimmung">
-				Dieses Reglement wird vom MR mit absolutem Mehr genehmigt.
-			</article>
+			<article title="Revisionsbestimmung"> Dieses Reglement wird vom MR mit absolutem Mehr
+				genehmigt. </article>
 			<article title="Version">
 				<paragraphs>
-					<paragraph>
-						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24. November 2021 einer Totalrevision unterzogen und genehmigt.
-					</paragraph>
-					<paragraph>
-						Es tritt am 1. Januar 2022 in Kraft.
-					</paragraph>
+					<paragraph> Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24.
+						November 2021 einer Totalrevision unterzogen und genehmigt. </paragraph>
+					<paragraph> Es tritt am 1. Januar 2022 in Kraft. </paragraph>
 				</paragraphs>
 			</article>
 		</articles>

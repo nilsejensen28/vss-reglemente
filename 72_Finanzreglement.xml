@@ -32,6 +32,10 @@
 					<paragraph>
 						Der Finanzausschuss genehmigt die Detailbudgets aller Kostenstellen, bei welchen die Summe aus budgetierten Erträgen und Aufwänden nicht grösser als CHF 100'000.00 ist.
 					</paragraph>
+					<paragraph inserted="">
+						<inserted gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+						Das Team IT überprüft zusätzlich während der Erstellung des Budgets alle IT-Ausgaben und IT-Erträge im VSETH.
+					</paragraph>
 					<paragraph>
 						Der MR genehmigt an seiner Vollsitzung des Herbstsemesters das Budget für die folgende Geschäftsperiode. Dabei genehmigt er einzeln:
 						<letters>
@@ -59,7 +63,7 @@
 								Nennung der Kostenstellen;
 							</letter>
 							<letter>
-								Auflistungen der vorgeschlagen Änderungen inklusive Erläuterung aufgeschlüsselt nach Sachkonten und Beträgen.
+								Auflistungen der vorgeschlagenen Änderungen inklusive Erläuterung aufgeschlüsselt nach Sachkonten und Beträgen.
 							</letter>
 						</letters>
 					</paragraph>
@@ -90,6 +94,9 @@
 								pro weiterem beteiligten Fachverein zusätzlich CHF 1'000.00.
 							</letter>
 						</letters>
+					</paragraph>
+					<paragraph inserted="">
+						<inserted gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
 						Die Unterstützung erfolgt dabei entweder in Form einer Direktzahlung oder einer betraglich limitierten Defizitgarantie.
 					</paragraph>
 					<paragraph>
@@ -251,7 +258,7 @@
 						Der MR entscheidet auf Antrag des VSETH-Vorstands oder des Finanzausschusses über die Bildung und Auflösung von Finanzanlagen.
 					</paragraph>
 					<paragraph>
-						Alle vorhandenen Finanzanlagen sind als Anhang zu Budget und zur Rechnung dem MR zur Kenntnisnahme vorzulegen.
+						Alle vorhandenen Finanzanlagen sind als Anhang zum Budget und zur Rechnung dem MR zur Kenntnisnahme vorzulegen.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -372,7 +379,8 @@
 						Diese haben für ihre Kostenstelle folgende Pflichten:
 						<letters>
 							<letter>
-								Ansprechperson für die VSETH-Quästur, die Buchhaltung und den Finanzausschuss;
+								<changed gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+								Ansprechperson für die VSETH-Quästur, das Team Quästur, die Buchhaltung und den Finanzausschuss;
 							</letter>
 							<letter>
 								In Auftraggeben der Rechnungsstellung an Dritte;
@@ -418,9 +426,39 @@
 							<letter>
 								das Kommissionspräsidium einer Kommission zu zweien oder ein Mitglied des Kommissionspräsidiums und die kostenstellenverantwortliche Person, ausgenommen sind dabei Arbeitsverträge, Verträge mit einer Vertragsdauer von über einem Jahr und Verträge oder Bestellungen mit einem Betrag von über CHF 10'000.00. Die jeweilige Kommissionsverordnung kann strengere Grenzen festlegen.
 							</letter>
+							<letter>
+								<inserted gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+								das Teampräsidium und ein weiteres Teammitglied, ausgenommen sind dabei Arbeitsverträge, Verträge mit einer Vertragsdauer von über einem Jahr und Verträge oder Bestellungen mit einem Betrag von über CHF 20'000.00. Das jeweilige Ressort-Reglement kann strengere Grenzen festlegen.
+							</letter>
 						</letters>
 					</paragraph>
 				</paragraphs>
+			</article>
+			<article title="Einsicht in die Buchhaltung" inserted="">
+				<inserted gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+				<paragraphs>
+					<paragraph>
+						Der Finanzausschuss hat für die kontinuierliche Überwachung der Finanzen die volle Einsicht in die Buchhaltungsunterlagen.
+					</paragraph>
+					<paragraph>
+						Das Team Quästur hat die zur Wahrnehmung seiner Aufgaben notwendige Einsicht in die Buchhaltungsunterlagen.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Tagesgeschäft" inserted="">
+				<inserted gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+				Der Quästor bzw. die Quästorin ist, mit Unterstützung vom Geschäftsführenden Sekretariat und der Abteilung Buchhaltung, für das Tagesgeschäft zuständig. Dies umfasst insbesondere:
+				<letters>
+					<letter>
+						Die Kontrolle des Zahlungseinganges;
+					</letter>
+					<letter>
+						Die Rechnungsstellung. Die Rechnungsstellung durch andere Angestellte im Bereich ihrer Abteilung ist zulässig;
+					</letter>
+					<letter>
+						Die Sicherstellung der fristgemässen Bezahlung eingehender Rechnungen.
+					</letter>
+				</letters>
 			</article>
 		</articles>
 	</section>
@@ -527,7 +565,8 @@
 						Der FR kann auf Antrag des VSETH-Vorstands ein Sitzungsgeld für Trainees sprechen.
 					</paragraph>
 					<paragraph>
-						Um eine Auszeit von der Vorstandstätigkeit zu nehmen, welche länger als die im Pflichtenhefts definierten ist, kann auf Antrag des entsprechenden VSETH-Vorstandsmitglieds der VSETH-Vorstand das Sitzungsgeld für die Dauer der Auszeit aussetzen. Dabei muss die Arbeit des VSETH-Vorstands weiterhin gewährleistet sein.
+							<changed gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+						Um eine Auszeit von der Vorstandstätigkeit zu nehmen, welche länger ist, als im Vorstandsreglement vorgesehen, kann auf Antrag des entsprechenden VSETH-Vorstandsmitglieds der VSETH-Vorstand das Sitzungsgeld für die Dauer der Auszeit aussetzen. Dabei muss die Arbeit des VSETH-Vorstands weiterhin gewährleistet sein.
 					</paragraph>
 					<paragraph>
 						Ein VSETH-Vorstandsmitglied darf teilweise oder komplett auf sein monatliches Sitzungsgeld verzichten. Die entsprechende Verzichtserklärung wird dem Präsidenten bzw. der Präsidentin sowie der Quästur schriftlich eingereicht. Der Verzicht ist rückwirkend für vergangene und begonnene Monate nicht widerrufbar. Der VSETH-Vorstand wird an der nächsten Vorstandssitzung über den Verzicht informiert. Dieser wird protokolliert. Das Traktandum darf auf Wunsch des betroffenen Vorstandsmitglieds als vertraulich eingestuft werden.
@@ -563,7 +602,8 @@
 						Sind die Auslagen ungerechtfertigt, insbesondere wenn sie diesem Reglement widersprechen, kann das ausbezahlte Geld zurückgefordert werden.
 					</paragraph>
 					<paragraph>
-						Die GPK entscheidet auf Antrag des VSETH-Vorstands, des Spesen- und Entschädigungsausschusses oder des Finanzausschusses über die Rückforderung.
+						<changed gremium="MR" agenda_item="15.5u" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657648/15_5u_Finanzreglement.pdf"/>
+						Die GPK entscheidet auf Antrag des VSETH-Vorstands, des Teams Quästur, des Spesen- und Entschädigungsausschusses oder des Finanzausschusses über die Rückforderung.
 					</paragraph>
 				</paragraphs>
 			</article>

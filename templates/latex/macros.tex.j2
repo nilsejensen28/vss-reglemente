@@ -355,7 +355,7 @@ j
 % This list needs to be aligned to match the indentation of letters.
 \newlist{insertedletters}{enumerate}{1}
 \setlist[insertedletters]{
-  label        = {\alph{lettersi}\textsuperscript{\latin*}.},
+  label        = {\alph{lettersi}.\textsuperscript{\hspace{-2pt}\latin*}\hspace{2pt}}, %The hspace ensures that the dot is not too far away from the letter.
   ref          = {lit.\ \alph{lettersi}\textsuperscript{\latin*}},
   labelindent  = -3em, % Place label at the same place (labelwidth + labelsep of letters)
   labelsep     = 1em,  % Ensure the separation from the label.
@@ -390,7 +390,7 @@ j
 % This list needs to be aligned to match the indentation of numerals.
 \newlist{insertednumerals}{enumerate}{1}
 \setlist[insertednumerals]{
-  label        = {\arabic{numeralsi}\textsuperscript{\latin*}.},
+  label        = {\arabic{numeralsi}.\textsuperscript{\hspace{-2pt}\latin*}\hspace{3.5pt}}, %The hspace ensures that the dot is not too far away from the numeral.
   ref          = {Ziff. \arabic{numeralsi}\textsuperscript{\latin*}},
   align        = left,
   labelindent  = -3em, % Place label at the same place.
