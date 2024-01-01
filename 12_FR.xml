@@ -31,7 +31,11 @@
 								die weiteren Vorstandsmitglieder der Fachvereine und des VSETH;
 							</letter>
 							<letter>
-								das MR-Präsidium.
+								das MR-Präsidium;
+							</letter>
+							<letter>
+								<inserted gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
+								die Teams.
 							</letter>
 						</letters>
 					</paragraph>
@@ -39,16 +43,17 @@
 						Zu den Sitzungen werden als Gäste eingeladen:
 						<letters>
 							<letter>
-								weitere von den Fachvereinen eingeladene Personen;
+								<changed gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
+								weitere von den Fachvereinen, vom FR-Präsidium oder vom VSETH-Vorstand eingeladene Personen;
 							</letter>
 							<letter>
 								alle Vertretungen des VSETH gemäss der Vertretungsliste;
 							</letter>
 							<letter>
-								die assoziierten Organisationen;
+								die assoziierten Organisationen.
 							</letter>
 							<letter>
-								vom FR-Präsidium oder VSETH-Vorstand eingeladene Personen.
+								<deleted gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
 							</letter>
 						</letters>
 					</paragraph>
@@ -70,8 +75,8 @@
 						Beide Personen dürfen FR-Delegierte sein. In der Regel wird in diesem Fall das Stimmrecht nicht wahrgenommen. Beide Personen dürfen nicht Mitglied des VSETH-Vorstands sein.
 					</paragraph>
 					<paragraph>
-						<changed gremium="MR" agenda_item="11." meeting_date="2022-05-04" implementation_date="2022-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2022-05-04+FS?preview=/100499678/100499691/20220326%20Antrag%20FR-Reglement.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2022-05-04+FS?preview=/100499678/164626604/Protokoll%20Voll-MR%20FS22%20Vers_2022-09-21.pdf" />
-						Die reguläre Amtsperiode des FR-Präsidiums beträgt jeweils ein Semester. Sie beginnt und endet jeweils am Montag der ersten Semesterwoche.
+						<changed gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
+						Die reguläre Amtsperiode des FR-Präsidiums beträgt jeweils ein Semester. Sie beginnt und endet jeweils am Dienstag der ersten Semesterwoche.
 					</paragraph>
 					<paragraph inserted="">
 						<inserted  gremium="MR" agenda_item="11." meeting_date="2022-05-04" implementation_date="2022-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2022-05-04+FS?preview=/100499678/100499691/20220326%20Antrag%20FR-Reglement.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2022-05-04+FS?preview=/100499678/164626604/Protokoll%20Voll-MR%20FS22%20Vers_2022-09-21.pdf" />
@@ -87,10 +92,10 @@
 								Vorbereitung, Einberufung und Leitung der Sitzung;
 							</letter>
 							<letter>
-								Austausch mit dem VSETH-Vorstand und den Fachvereinen;
+								Austausch mit dem VSETH-Vorstand und den Fachvereinen.
 							</letter>
 							<letter>
-								Organisation von Anlässen zum hochschulpolitischen Austausch.
+								<deleted gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
 							</letter>
 						</letters>
 					</paragraph>
@@ -147,7 +152,8 @@
 						Während des Semesters finden mindestens fünf ordentliche Fachvereinsratssitzungen statt. Während der vorlesungsfreien Zeit im Sommer und im Winter findet jeweils mindestens eine Sitzung statt. Das FR-Präsidium achtet auf eine regelmässige Verteilung.
 					</paragraph>
 					<paragraph>
-						Eine ausserordentliche Sitzung kann auf Begehren von mindestens zwei FR-Delegierten, dem VSETH-Vorstand oder dem FR-Präsidium einberufen werden.
+						<changed gremium="MR" agenda_item="15.5c" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657666/15_5c_FR.pdf"/>
+						Eine ausserordentliche Sitzung kann auf Begehren von mindestens zwei FR-Delegierten, dem VSETH-Vorstand, der GPK oder dem FR-Präsidium einberufen werden.
 					</paragraph>
 				</paragraphs>
 			</article>

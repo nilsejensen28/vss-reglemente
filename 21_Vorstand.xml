@@ -32,6 +32,10 @@
 					<paragraph>
 						Vorstandsmitglieder können ausnahmsweise Mitglieder der Kategorien b oder g gemäss Art. 4 der Statuten sein, sofern diese Gruppe im Vorstand nicht mehr als zwei Mitglieder ausmacht. Sie dürfen keine Aufgaben in den Ressorts Präsidium und Hochschulpolitik übernehmen. Mitglieder der Kategorie g müssen eine zur Basisprüfung äquivalente Studienleistung bestanden haben.
 					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Der Quästor bzw. die Quästorin darf nicht gleichzeitig Quästor bzw. Quästorin in einem Fachverein, einer assoziierten Organisation oder einer Partnerorganisation des VSETH sein.
+					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Vorstandmitglieder ad Interim">
@@ -84,6 +88,62 @@
 					</paragraph>
 					<paragraph>
 						Die Verteilung der Ressorts auf die Vorstandsmitglieder erfolgt durch den Vorstand.
+					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Es bestehen die Ressorts:
+						<letters>
+							<letter>
+								Präsidium;
+							</letter>	
+							<letter>
+								Vizepräsidium;
+							</letter>
+							<letter>
+								Quästur;
+							</letter>
+							<letter>
+								Geschäftsführendes Sekretariat;
+							</letter>
+							<letter>
+								Events;
+							</letter>
+							<letter>
+								Hochschulpolitik;
+							</letter>
+							<letter>
+								Infrastruktur;
+							</letter>
+							<letter>
+								IT;
+							</letter>
+							<letter>
+								Internal Affairs;
+							</letter>
+							<letter>
+								Kommunikation.
+							</letter>
+						</letters>
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Ressortverteilung" inserted="">
+				<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+				<paragraphs>
+					<paragraph>
+						Die Verteilung der Ressorts wird an der ersten Vorstandssitzung nach der Wahl beschlossen.
+					</paragraph>
+					<paragraph>
+						Die Ressorts Präsidium, Vizepräsidium, Quästur und Geschäftsführendes Sekretariat werden direkt bei der Wahl oder Anstellung festgelegt und können nicht von anderen Personen ausgeübt werden.
+					</paragraph>
+					<paragraph>
+						Die übrigen Ressorts können unter Berücksichtigung der persönlichen Vorlieben, der Arbeitslast und der gewählten Profile frei verteilt werden.
+					</paragraph>
+					<paragraph>
+						Die Wahl von bis zu zwei Ressorts abgesehen vom Präsidium und der Quästur ist möglich.
+					</paragraph>
+					<paragraph>
+						Die Arbeitsaufteilung innerhalb der Ressorts geschieht individuell in jedem Ressort. Der übrige Vorstand wird über die Aufteilung informiert.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -225,13 +285,17 @@
 					</paragraph>
 				</paragraphs>
 			</article>
-			<article title="Pflichten des VSETH-Vorstands">
+			<article title="Aufgaben des VSETH-Vorstands">
+				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
 				<paragraphs>
 					<paragraph>
-						Der Mitgliederrat legt die spezifischen Bestimmungen zu den unterschiedlichen Pflichten der Profile, zu den Aufgaben des Vorstands und seiner Ressorts im “Reglement über die Pflichten des VSETH-Vorstands” fest.
+						Der Mitgliederrat legt die spezifischen Bestimmungen zu den Aufgaben des Vorstandes im <quote>Reglement über die Aufgaben des VSETH-Vorstandes</quote> fest.
 					</paragraph>
 					<paragraph>
-						Der Mitgliederrat erlässt für das Geschäftsführende Sekretariat ein separates “Reglement über die Pflichten des Geschäftsführenden Sekretariats”.
+						Der Mitgliederrat erlässt für jedes Ressort des Vorstandes, mit Ausnahme des Vizepräsidiums, ein separates <quote>Reglement über die Arbeit im Ressort</quote>.
+					</paragraph>
+					<paragraph>
+						Dieses enthält mindestens Angaben zu den Aufgaben des Ressorts und deren Priorisierung.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -251,7 +315,8 @@
 						Auf Begehren eines Vorstandsmitglieds ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von fünf Tagen statt.
 					</paragraph>
 					<paragraph>
-						Die Traktandenliste wird den Vorstandsmitgliedern, sämtlichen Fachvereinen, Kommissionen und Ausschüssen sowie der GPK zugestellt.
+						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Die Traktandenliste wird den Vorstandsmitgliedern, sämtlichen Fachvereinen, Teams, Kommissionen und Ausschüssen sowie der GPK zugestellt.
 					</paragraph>
 					<paragraph>
 						Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.
@@ -280,7 +345,8 @@
 						Protokolle werden nach der Genehmigung gemäss Art. 47 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
 					</paragraph>
 					<paragraph>
-						Protokolle werden nach der Genehmigung sämtlichen Fachvereinen, Kommissionen und Ausschüssen sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
+						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Protokolle werden nach der Genehmigung sämtlichen Fachvereinen, Teams, Kommissionen und Ausschüssen sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -291,7 +357,8 @@
 			<article title="Aufsicht, Weisungsrecht">
 				<paragraphs>
 					<paragraph>
-						Der Vorstand übt die Aufsicht über die verschiedenen Ressorts, das AVES, die Kommissionen, die Vertretungen, das Informationsmedium, die Dossierverantwortlichen und die Arbeitsgruppen aus.
+						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Der Vorstand übt die Aufsicht über die verschiedenen Ressorts, das AVES, die Kommissionen, die Vertretungen, das Informationsmedium, die Teams und die Arbeitsgruppen aus.
 					</paragraph>
 					<paragraph>
 						Der Vorstand hat gegenüber diesen Gremien ein Weisungsrecht.
@@ -299,14 +366,7 @@
 				</paragraphs>
 			</article>
 			<article title="Verordnungen, Ausführungsbestimmungen">
-				<paragraphs>
-					<paragraph>
-						Wo die Statuten oder Reglemente ihn dazu ermächtigen, erlässt der Vorstand die entsprechenden Verordnungen.
-					</paragraph>
-					<paragraph>
-						Der Vorstand kann in seinem Kompetenzbereich Ausführungsbestimmungen gemäss Art. 51 der Statuten erlassen.
-					</paragraph>
-				</paragraphs>
+				<deleted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
 			</article>
 			<article title="Informationsmedium">
 				<paragraphs>
@@ -344,33 +404,17 @@
 				</paragraphs>
 			</article>
 			<article title="Dossierverantwortliche">
-				<paragraphs>
-					<paragraph>
-						Der Vorstand kann zu seiner Unterstützung Dossierverantwortliche ernennen, welche ein Dossier ehrenamtlich übernehmen.
-					</paragraph>
-					<paragraph>
-						Der Vorstand hält die spezifischen Zuständigkeiten eines Dossierverantwortlichen schriftlich fest, wobei mindestens folgende Punkte zu regeln sind:
-						<letters>
-							<letter>
-								Aufgabenbeschreibung;
-							</letter>
-							<letter>
-								Laufzeit des Dossiers;
-							</letter>
-							<letter>
-								Kontaktperson im Vorstand;
-							</letter>
-							<letter>
-								Berichterstattung.
-							</letter>
-						</letters>
-					</paragraph>
-				</paragraphs>
+				<deleted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+			</article>
+			<article title="Teams" inserted="">
+				<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+				Jedes Ressort des Vorstands kann durch maximal ein Team nach Art. 24a der Statuten unterstützt werden.
 			</article>
 			<article title="Arbeitsgruppen">
 				<paragraphs>
 					<paragraph>
-						Der Vorstand kann Arbeitsgruppen einsetzen, welche den Vorstand bei der Ausübung eines Geschäfts unterstützen.
+						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Der Vorstand kann zeitlich begrenzte Arbeitsgruppen einsetzen, um zur Ausführung eines spezifischen Geschäftes weitere Personen hinzuzuziehen.
 					</paragraph>
 					<paragraph>
 						Der Vorstand hält die spezifischen Zuständigkeiten einer Arbeitsgruppe schriftlich fest, wobei mindestens folgende Punkte zu regeln sind:
@@ -379,7 +423,8 @@
 								Aufgabenbeschreibung;
 							</letter>
 							<letter>
-								Laufzeit der Arbeitsgruppe;
+								<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+								geplantes Enddatum;
 							</letter>
 							<letter>
 								Kontaktperson im Vorstand;
@@ -392,6 +437,10 @@
 					<paragraph>
 						Die Leitung einer Arbeitsgruppe wird vom Vorstand bestimmt.
 					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Beim Erreichen des geplanten Enddatums entscheidet der Vorstand über die Auflösung, die Festlegung eines neuen Enddatums oder die Fortführung des Geschäfts in anderer Form.
+					</paragraph>
 				</paragraphs>
 			</article>
 		</articles>
@@ -399,20 +448,38 @@
 	<section title="Berichterstattung">
 		<articles>
 			<article title="Vorstandsmitteilungen">
-				Der Vorstand informiert regelmässig mittels Vorstandsmitteilungen den FR über seine Tätigkeit. Der Bericht umfasst alle relevanten Aktivitäten seit dem letzten Zeitpunkt, an welchem berichtet wurde. Ausnahmen von der Informationspflicht sind in Art. 49 des Mitwirkungs- und Öffentlichkeitsreglements geregelt.
+				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+				<paragraphs>
+					<paragraph>
+						Der Vorstand informiert regelmässig mittels Vorstandsmitteilungen den FR über seine Tätigkeit. Der Bericht umfasst alle relevanten Aktivitäten der Vorstandsmitglieder und ihrer Teams seit dem letzten Zeitpunkt, an welchem berichtet wurde. Ausnahmen von der Informationspflicht sind in Art. 49 des Mitwirkungs- und Öffentlichkeitsreglements geregelt.
+					</paragraph>
+					<paragraph>
+						Die Vorstandsmitteilungen gemäss Abs. 1 bilden die Grundlage für die Rechtfertigung der Vorstands- und Teamarbeit vor dem FR.
+					</paragraph>
+				</paragraphs>
 			</article>
 			<article title="Halbjahresberichte">
 				<paragraphs>
 					<paragraph>
-						Im Halbjahresbericht des Vorstands führt jedes Ressort seine behandelten Geschäfte auf.
+						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Im Halbjahresbericht des Vorstands führt jedes Ressort seine behandelten Geschäfte auf. Dies umfasst die Arbeit der Vorstandsmitglieder und des Teams in einem Ressort.
+					</paragraph>
+					<paragraph inserted="">
+						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Zusätzlich zum Halbjahresbericht des Ressorts gemäss Abs. 1 hat jedes Vorstandsmitglied zuhanden des MR einen persönlichen Halbjahresbericht über die eigene Tätigkeit im Verband abzugeben.
 					</paragraph>
 					<paragraph>
 						Der erste Bericht behandelt die Periode von Januar bis zum Ende der regulären Amtsperiode gemäss Art. 2. Der zweite Bericht behandelt die Periode ab Beginn der regulären Amtsperiode bis und mit Dezember.
 					</paragraph>
+					<paragraph>
+						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+						Der persönliche und ressortspezifische Halbjahresbericht bilden zusammen die Grundlage für die Entlastung des Vorstandsmitglieds.
+					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Jahresbericht">
-				Der Jahresbericht setzt sich aus den beiden Halbjahresberichten des Vorstands zusammen.
+				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
+				Der Jahresbericht setzt sich aus den ressortspezifischen Halbjahresberichten des Vorstands in einem Kalenderjahr zusammen.
 			</article>
 		</articles>
 	</section>

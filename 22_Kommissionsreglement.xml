@@ -88,6 +88,9 @@
 					<paragraph>
 						Das Präsidium vertritt die Kommission nach aussen, ist verantwortlich für die Berichterstattung, beruft alle Sitzungen ein und leitet diese. Das Präsidium kann die Sitzungsleitung einem anderen Vorstandsmitglied der Kommission übertragen.
 					</paragraph>
+					<paragraph>
+						Das Kommissionspräsidium ist verpflichtet zur Teilnahme am Mitglieder- und Kommissionsrat oder entsendet im Verhinderungsfall eine Stellvertretung aus dem Kommissionsvorstand.
+					</paragraph>
 				</paragraphs>
 			</article>
 			<article title="Pflichten der Kommissionsaktiven">
@@ -109,13 +112,13 @@
 			<article title="Bestätigung">
 				<paragraphs>
 					<paragraph>
-						Jede Kommission muss vom MR an der Vollsitzung im Herbstsemester bestätigt werden.
+						Jede Kommission muss vom VSETH-Vorstand am Anfang jedes Semesters bestätigt werden.
 					</paragraph>
 					<paragraph>
-						Falls sie nicht bestätigt werden, werden sie aufgelöst.
+						Falls sie nicht bestätigt werden, wird ein Antrag auf ihre Auflösung an die darauffolgende Sitzung des MR gestellt.
 					</paragraph>
 					<paragraph>
-						Bereits vom MR bestätigte Kommissionen können nur vom MR aufgelöst werden.
+						Bereits vom VSETH-Vorstand bestätigte Kommissionen können nur vom MR per Antrag aufgelöst werden.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -135,7 +138,7 @@
 						Auf Begehren eines oder einer Kommissionsaktiven ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von drei Wochen statt.
 					</paragraph>
 					<paragraph>
-						Die Traktandenliste wird den Kommissionsaktiven und dem VSETH-Vorstand zugestellt.
+						Die Traktandenliste wird den Kommissionsaktiven, dem VSETH-Vorstand und dem zugeordneten Team zugestellt.
 					</paragraph>
 					<paragraph>
 						Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.
@@ -175,10 +178,27 @@
 			<article title="Berichterstattung der Zusammensetzung">
 				Die aktuelle Zusammensetzung und Änderungen der Vorstandsmitglieder der Kommission müssen dem VSETH-Vorstand umgehend gemeldet werden.
 			</article>
-			<article title="Austausch mit dem VSETH-Vorstand">
+			<article title="Ressortzugehörigkeit">
 				<paragraphs>
 					<paragraph>
-						Die Kommission hält engen Kontakt mit dem VSETH-Vorstand und informiert ihn laufend über ihre Tätigkeit.
+						Jeder Kommission ist als Ansprechpartner ein Ressort des VSETH-Vorstands zugewiesen.
+					</paragraph>
+					<paragraph>
+						Der VSETH-Vorstand führt eine öffentliche Liste mit dieser Einteilung.
+					</paragraph>
+					<paragraph>
+						Änderungen an der Liste beschliesst der VSETH-Vorstand  in Absprache mit den betroffenen Kommissionsvorständen.
+					</paragraph>
+					<paragraph>
+						Der VSETH-Vorstand teilt dem FR Änderungen mit.
+					</paragraph>
+				</paragraphs>
+
+			</article>
+			<article title="Austausch mit Ressorts">
+				<paragraphs>
+					<paragraph>
+						Die Kommission hält engen Kontakt mit dem ihr zugeordneten Ressort und informiert es laufend über ihre Tätigkeit.
 					</paragraph>
 					<paragraph>
 						Bei ausserordentlichen Ereignissen und wichtigen Entscheidungen, welche die Kommission langfristig prägen, die Kommissionsarbeit stark beeinträchtigen oder mit unmittelbaren rechtlichen, finanziellen oder hochschulpolitischen Folgen für den VSETH verbunden sind, konsultiert sie den VSETH-Vorstand.
@@ -196,6 +216,117 @@
 			</article>
 		</articles>
 	</section>
+	<section title="Kommissionsrat (KR)">
+		<articles>
+			<article title="Zusammensetzung">
+				<paragraphs>
+					<paragraph>
+						Der <quote>Kommissionsrat</quote>, nachfolgend <quote>KR</quote> genannt, setzt sich aus den stimmberechtigten Delegierten sowie Beobachtenden zusammen.
+					</paragraph>
+					<paragraph>
+						Jede durch den VSETH-Vorstand bestätigte Kommission entsendet einen Delegierten oder eine Delegierte.
+					</paragraph>
+					<paragraph>
+						Zu den Sitzungen werden die nicht vom VSETH-Vorstand bestätigten Kommissionen als Beobachtende eingeladen.
+					</paragraph>
+					<paragraph>
+						 Zu den Sitzungen werden als Gäste eingeladen:
+						<letters>
+							<letter>
+								die GPK;
+							</letter>
+							<letter>
+								der VSETH-Vorstand;
+							</letter>
+							<letter>
+								das MR-Präsidium;
+							</letter>
+							<letter>
+								weitere vom MR-Präsidium eingeladene Personen.
+							</letter>
+						</letters>
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Sitzungsdaten">
+				<paragraphs>
+					<paragraph>
+						Der KR tagt jeweils zwischen Versand der Einladung und Durchführung jeder Sitzung des MR.
+					</paragraph>
+					<paragraph>
+						Eine ausserordentliche Sitzung kann auf Begehren von mindestens einem Drittel der Delegierten oder durch den VSETH-Vorstand einberufen werden. In diesem Fall hat eine Sitzung innerhalb von 3 Wochen stattzufinden.
+					</paragraph>
+					<paragraph>
+						Die Sitzungstermine der ordentlichen Sitzungen werden zusammen mit den Daten der MR-Sitzungen festgelegt und bekannt gegeben.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Einladung">
+				<paragraphs>
+					<paragraph>
+						Das MR-Präsidium ist für die Festlegung der Sitzungsdaten und Einladung zu allen Sitzungen zuständig.
+					</paragraph>
+					<paragraph>
+						Die Einladung für ordentliche Sitzungen ist den Delegierten, ihren Stellvertretungen und den Beobachtenden und Gästen zusammen mit der Einladung zum MR zuzustellen.
+					</paragraph>
+					<paragraph>
+						Die Einladung für ausserordentliche Sitzungen ist den Delegierten, ihren Stellvertretungen und den Beobachtenden und Gästen mindestens 2 Wochen vor dem Sitzungsdatum des KR zuzustellen.
+					</paragraph>
+					<paragraph>
+						Traktanden ausserhalb der Vorbesprechung des MR müssen dem MR-Präsidium spätestens 5 Tage vor dem Sitzungsdatum des KR mitgeteilt werden und sind Bestandteil der Einladung.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Sitzung">
+				<paragraphs>
+					<paragraph>
+						Die Sitzungsleitung wird durch den KR aus den Reihen der KR-Delegierten bestimmt.
+					</paragraph>
+					<paragraph>
+						Der KR ist beschlussfähig, wenn mindestens ein Drittel seiner Delegierten anwesend sind.
+					</paragraph>
+					<paragraph>
+						An jeder Sitzung des KR ist ein Argumentationsprotokoll nach Art. 45 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
+					</paragraph>
+					<paragraph>
+						Protokolle werden nach der Genehmigung gemäss Art. 47 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Geschäfte">
+				<paragraphs>
+					<paragraph>
+						Der KR bespricht Geschäfte des nächsten MR vor.
+					</paragraph>
+					<paragraph>
+						Die Sitzungsleitung kann im Namen des KR Änderungsanträge zuhanden des MR stellen, wenn der KR dies beschliesst.
+					</paragraph>
+					<paragraph>
+						Der KR kann Empfehlungen zuhanden des MR abgeben.
+					</paragraph>
+					<paragraph>
+						Auf Wunsch eines Delegierten bzw. einer Delegierten des KR wird das Stimmenverhältnis zu einer Empfehlung ebenfalls dem MR mitgeteilt.
+					</paragraph>
+					<paragraph>
+						Der KR wählt die MR-Delegierten der Kommissionen nach  Art. 17 der Statuten.
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Wahl der MR-Delegierten">
+				<paragraphs>
+					<paragraph>
+						Passives Wahlrecht für die MR-Delegation der Kommissionen haben Vorstandsmitglieder der vom VSETH-Vorstand bestätigten Kommissionen.
+					</paragraph>
+					<paragraph>
+						VSETH-Vorstandsmitglieder können nicht in die MR-Delegation gewählt werden.
+					</paragraph>
+					<paragraph>
+						Bei der Wahl der MR-Delegierten ist auf die Repräsentation der verschiedenen Ansichten und Interessen der Kommissionen zu achten.
+					</paragraph>
+				</paragraphs>
+			</article>
+		</articles>
+	</section>
 	<section title="Schlussbestimmungen">
 		<articles>
 			<article title="Revisionsbestimmung">
@@ -204,10 +335,10 @@
 			<article title="Version">
 				<paragraphs>
 					<paragraph>
-						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24. November 2021 genehmigt.
+						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 22. November 2023 einer Teilrevision unterzogen und genehmigt.
 					</paragraph>
 					<paragraph>
-						Es tritt am 1. Januar 2022 in Kraft.
+						Es tritt am 1. Januar 2024 in Kraft.
 					</paragraph>
 				</paragraphs>
 			</article>

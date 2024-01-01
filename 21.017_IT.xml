@@ -1,0 +1,132 @@
+<regulation id="21.017" title="Reglement über die Arbeit im Ressort IT" short="Ressort-Reglement IT" original_implementation_date="2024-01-01">
+    <preamble>
+		Der Mitgliederrat, gestützt auf Art. 14 des Vorstandsreglements, beschliesst: 
+	</preamble>
+    <section title="Allgemeines">
+        <articles>
+            <article title="Arbeitsbereich">
+                <paragraphs>
+                    <paragraph>
+                        Das Ressort IT umfasst die Verantwortung für die IT-Infrastruktur des VSETH. Dies beinhaltet die strategische Planung und die kontinuierliche Überwachung.
+                    </paragraph>
+                    <paragraph>
+                        Das Ressort IT wird durch die Informatiksupportgruppe (ISG) des VSETH unterstützt, welche die technischen Aufgaben wahrnimmt.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title="Team IT">
+        <articles>
+            <article title="Teammitglieder">
+                Das Team IT besteht aus maximal sieben Mitgliedern.
+            </article>
+            <article title="Mitglieder von Amtes wegen">
+                Der Informatikgruppensupportleiter oder die Informatikgruppensupportleiterin (ISL) der Informatiksupportgruppe (ISG) des VSETH ist von Amtes wegen Mitglied des Teams IT.
+            </article>
+            <article title="Geltungsbereich">
+                <paragraphs>
+                    <paragraph>
+                        Dieses Reglement beinhaltet Aufgaben, Vorgehensweisen und allgemeine Ziele des Ressorts IT und aller in ihm wirkenden Personen.
+                    </paragraph>
+                    <paragraph>
+                         Die Vorstandsmitglieder im Ressort IT sind verantwortlich für die Ausführung der Aufgaben bzw. deren Wahrnehmung durch Mitglieder des Teams.
+                    </paragraph>
+                    <paragraph>
+                        Aufgaben, die durch dieses Reglement den Vorstandsmitgliedern zugewiesen werden, sind durch sie selbst wahrzunehmen.
+                    </paragraph>
+                    <paragraph>
+                        Die Aufgaben sind in Kernaufgaben und weitere Aufgaben aufgeteilt. Bei fehlenden Kapazitäten im Team sind die Kernaufgaben zu priorisieren.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title="Kernaufgaben">
+        <articles>
+            <article title="Übersicht der IT">
+                <paragraphs>
+                    <paragraph>
+                        Die Vorstandsmitglieder im Ressort IT bilden die Schnittstelle zwischen VSETH-Vorstand und der ISG des VSETH und sorgen für regelmässigen Austausch.
+                    </paragraph>
+                    <paragraph>
+                        Sie behalten die Übersicht über laufende Projekte.
+                    </paragraph>
+                    <paragraph>
+                        Sie sind erste Ansprechpersonen für weitere VSETH-Vorstandsmitglieder bei strategischen IT-Belangen.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Planung und Koordination des IT-Angebots">
+                Das Team IT ist für die strategische Planung der IT des VSETH bezüglich Software und Hardware zuständig. Dies umfasst insbesondere:
+                <letters>
+                    <letter>
+                        Planung, Koordination und Priorisierung von Projekten in der IT in Absprache mit den verschiedenen Nutzergruppen gemäss Art. 4 des Infrastrukturreglements.
+                    </letter>
+                    <letter>
+                        Ausarbeitung einer Anstellungsstruktur für die ISG des VSETH zuhanden des VSETH-Vorstandes und Unterstützung bei der Auswahl von geeigneten Angestellten.
+                    </letter>
+                    <letter>
+                        Mitwirkung beim Budgetierungsprozess im IT-Bereich gemäss Art. 3 des Finanzreglements.
+                    </letter>
+                </letters>
+            </article>
+            <article title="Verbandsinterner Informationsaustausch">
+                <paragraphs>
+                    <paragraph>
+                        Das Team IT informiert die Nutzergruppen gemäss Art. 4 des Infrastrukturreglements über bestehende und neue IT-Angebote.
+                    </paragraph>
+                    <paragraph>
+                        Es organisiert regelmässige Treffen mit den Nutzergruppen.
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Überwachung">
+                Das Team IT ist in enger Zusammenarbeit mit der ISG für die Überwachung der IT-Infrastruktur verantwortlich. Dies umfasst insbesondere:
+                <letters> 
+                    <letter>
+                        die Sicherstellung eines einwandfreien Betriebs;
+                    </letter>
+                    <letter>
+                        die Überwachung der IT-Sicherheit;
+                    </letter>
+                    <letter>
+                        die Kapazitätsplanung der IT-Infrastruktur.
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
+    <section title="Weitere Aufgaben">
+        <articles>
+            <article title="Erweiterung des IT-Angebots">
+                Das Team IT strebt die Verbesserung der IT-Infrastruktur an. Dies umfasst:
+                <letters>
+                    <letter>
+                        die Erweiterung der IT zugunsten der Verbesserung der Verbandsarbeit und Automatisierung bestehender Prozesse;
+                    </letter>
+                    <letter>
+                        die aktive Suche nach Verbesserungspotential.
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
+    <section title="Schlussbestimmungen">
+        <articles>
+            <article title="Revisionsbestimmungen">
+                Dieses Reglement wird vom MR mit absolutem Mehr genehmigt. 
+            </article>
+            <article title="Version">
+                <paragraphs>
+                    <paragraph>
+                        Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 22. November 2023 genehmigt.
+                    </paragraph>
+                    <paragraph>
+                        Es tritt am 1. Januar 2024 in Kraft.
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+</regulation>

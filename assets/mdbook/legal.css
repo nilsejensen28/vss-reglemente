@@ -40,3 +40,10 @@ p.para {
 .footnotes p, article p {
     margin: 0;
 }
+
+h2 ~ .footnotes,
+h3 ~ .footnotes,
+h4 ~ .footnotes {
+    margin-top: -1rem;
+    margin-bottom: 1.4rem;
+}
