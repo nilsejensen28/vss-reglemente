@@ -9,5 +9,5 @@
 [{{ bylaws.title }}]({{ bylaws.filename }}.md)
 
 {% for regl in bylaws.regulations %}
-{% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.filename}}.md)
+{% if '.' in regl.id %}    {%if regl.id|length > 5 %}   {% endif %}{% endif %}- [{{regl.id}} {{regl.title}}]({{regl.filename}}.md)
 {% endfor %}
