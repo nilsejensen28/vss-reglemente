@@ -141,7 +141,7 @@ class Bylaws:
 
     def number_footnotes_pass(self):
         for regl in self.regulations:
-            regl.number_footnotes_pass()
+            regl.number_footnotes_pass(0)
     
     def latest_change_pass(self):
         latest_changes = []
@@ -248,15 +248,17 @@ class Regulation:
         for sec in self.sections:
             sec.collect_footnotes_pass()
 
-    def number_footnotes_pass(self):
+    def number_footnotes_pass(self, counter: int) -> int:
         if hasattr(self, "preamble"):
-            self.preamble.number_footnotes_pass()
+            counter = self.preamble.number_footnotes_pass(counter)
         
         for art in self.articles:
-            art.number_footnotes_pass()
+            counter = art.number_footnotes_pass(counter)
 
         for sec in self.sections:
-            sec.number_footnotes_pass()
+            counter = sec.number_footnotes_pass(counter)
+
+        return counter
     
     def latest_change_pass(self):
         latest_changes = [self.original_implementation_date]
@@ -333,9 +335,12 @@ class Preamble:
         if hasattr(self, "changeFootnote"):
             self.footnotes.append(self.changeFootnote)
     
-    def number_footnotes_pass(self):
-        for i, footnote in enumerate(self.footnotes, 1):
-            footnote.number = i
+    def number_footnotes_pass(self, counter: int) -> int:
+        for footnote in self.footnotes:
+            counter += 1
+            footnote.number = counter
+
+        return counter
 
     def latest_change_pass(self):
         if hasattr(self, "changeFootnote"):
@@ -437,15 +442,18 @@ class Section:
         for subsec in self.subsections:
             subsec.collect_footnotes_pass()
      
-    def number_footnotes_pass(self): 
-        for i, footnote in enumerate(self.footnotes, 1):
-            footnote.number = i
+    def number_footnotes_pass(self, counter: int) -> int:
+        for footnote in self.footnotes:
+            counter += 1
+            footnote.number = counter
 
         for art in self.articles:
-            art.number_footnotes_pass()
+            counter = art.number_footnotes_pass(counter)
 
         for subsec in self.subsections:
-            subsec.number_footnotes_pass()
+            counter = subsec.number_footnotes_pass(counter)
+
+        return counter
 
     def latest_change_pass(self):
         latest_changes = []
@@ -561,15 +569,18 @@ class Subsection:
         for subsubsec in self.subsubsections:
             subsubsec.collect_footnotes_pass()
 
-    def number_footnotes_pass(self):
-        for i, footnote in enumerate(self.footnotes, 1):
-            footnote.number = i
+    def number_footnotes_pass(self, counter) -> int:
+        for footnote in self.footnotes:
+            counter += 1
+            footnote.number = counter
 
         for art in self.articles:
-            art.number_footnotes_pass()
+            counter = art.number_footnotes_pass(counter)
 
         for subsubsec in self.subsubsections:
-            subsubsec.number_footnotes_pass()
+            counter = subsubsec.number_footnotes_pass(counter)
+
+        return counter
 
     def latest_change_pass(self):
         latest_changes = []
@@ -673,12 +684,15 @@ class Subsubsection:
         for art in self.articles:
             art.collect_footnotes_pass()
     
-    def number_footnotes_pass(self):
-        for i, footnote in enumerate(self.footnotes, 1):
-            footnote.number = i
+    def number_footnotes_pass(self, counter: int) -> int:
+        for footnote in self.footnotes:
+            counter += 1
+            footnote.number = counter
 
         for art in self.articles:
-            art.number_footnotes_pass()
+            counter = art.number_footnotes_pass(counter)
+
+        return counter
 
     def latest_change_pass(self):
         latest_changes = []
@@ -818,9 +832,12 @@ class Article:
         for lit in self.letters:
             self.footnotes.extend(lit.collect_footnotes_pass())
 
-    def number_footnotes_pass(self):
-        for i, footnote in enumerate(self.footnotes, 1):
-            footnote.number = i
+    def number_footnotes_pass(self, counter: int) -> int:
+        for footnote in self.footnotes:
+            counter += 1
+            footnote.number = counter
+
+        return counter
 
     def latest_change_pass(self):
         latest_changes = []
