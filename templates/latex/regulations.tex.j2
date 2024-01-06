@@ -6,7 +6,7 @@
 
 ((* from "macros.tex.j2" import header, section, subseciton, subsubsection, article, paragraph, letter, numeral, set_text, set_tail, changeFootnote, changeFootnoteMark with context*))
 
-(( header(asset_path) ))
+\documentclass[headers]{assets/latex/vseth-bylaws}
 
 \title{(( regl.title | escape_tex ))}
 ((* set shortid *))
@@ -24,7 +24,6 @@
 ((* endif *))
 
 \setdate{(( regl.date_last_update | format_date ))}
-
 \begin{document}
 \maketitle
 
