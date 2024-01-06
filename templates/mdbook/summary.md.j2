@@ -2,12 +2,16 @@
  # Template for SUMMARY.md for an mdBook
  #
  # This functions as an index for the mdBook.
- # A regulation is put in a deeper level in the hierarchy if it has a dot in the id.
+ # A regulation is put in a deeper level in the hierarchy if it has a dot in the id. It goes one level deeper for every character more than 2 after the dot.
  #}
 # VSETH Rechtssammlung
 
 [{{ bylaws.title }}]({{ bylaws.filename }}.md)
 
 {% for regl in bylaws.regulations %}
-{% if '.' in regl.id %}    {% endif %}- [{{regl.id}} {{regl.title}}]({{regl.filename}}.md)
+{% set parts = regl.id.split('.') %} 
+{% set level = parts[1]|length %} 
+{% set level = level - 1 %} 
+{% set spaces = '   ' * level %} 
+{{spaces}}- [{{regl.id}} {{regl.title}}]({{regl.filename}}.md)
 {% endfor %}
