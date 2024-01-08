@@ -39,21 +39,17 @@ SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | se
 MDBOOK_ASSETS = $(shell find ${ASSET_PATH}/mdbook -type f)
 
 
-.PHONY: all
 all: html pdf
 
-.PHONY: csv
 csv: ${SRCS} templates/csv/$(wildcard *.csv.j2) $(wildcard *.py)
 	python3 main.py generate --asset-path ${ASSET_PATH} --format csv --output-folder ${CSV_PATH} $<
 
 # We build the HTML representation by building an mdbook
-.PHONY: html
 html: mdbook
 	mdbook build ${MDBOOK_PATH}
 
 # An mdbook is only made from the entire Rechtssammlung.
 # VSETH_Rechtssammlung.xml is the first file in ${SRCS}. Therefore, $< will only build that file.
-.PHONY: mdbook
 mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-init
 	python3 main.py generate --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
 
@@ -71,10 +67,8 @@ navbar: templates/navbar/$(wildcard *.html.j2) $(wildcard *.py)
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
-.PHONY: tex
 tex: ${SRCS:.xml=.tex}
 
-.PHONY: pdf
 pdf: ${SRCS:.xml=.pdf}
 
 %.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
