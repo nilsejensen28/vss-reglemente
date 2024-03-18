@@ -96,7 +96,7 @@ def generate(args):
 
         case "csv":
             rsvseth = bylaws.parse(args.input)
-
+            rsvseth.numbering_pass()
             csv_template = jinja_env.get_template("regulation.csv.j2")
 
             if isinstance(rsvseth, bylaws.Bylaws):
