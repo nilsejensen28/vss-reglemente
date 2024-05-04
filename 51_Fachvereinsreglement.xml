@@ -67,7 +67,19 @@
 			<article title="Organe eines Fachvereins">
 				<paragraphs>
 					<paragraph>
-						Als Organe eines Fachvereins bestehen mindestens die Versammlung der Mitglieder und der Fachvereinsvorstand.
+						<changed gremium="MR" agenda_item="14.d" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/372179005/14.d_Antrag%20FV-Reglement%20Revisionsstelle.pdf" minutes_link="" />
+						Als Organe eines Fachvereins bestehen mindestens 
+							<letters>
+								<letter> 
+									die Versammlung der Mitglieder;
+								</letter>
+								<letter>
+									der Fachvereinsvorstand;
+								</letter>
+								<letter>
+									die Rechnungsrevision.
+								</letter>
+							</letters>
 					</paragraph>
 					<paragraph>
 						Die Versammlung der Mitglieder ist mindestens einmal pro Semester einzuberufen.
@@ -85,6 +97,28 @@
 								Vertretungen des Studiengangs in Gremien der Departemente, insbesondere Departementskonferenz und Unterrichtskommissionen, sowie in Berufungskommissionen.
 							</letter>
 						</letters>
+					</paragraph>
+				</paragraphs>
+			</article>
+			<article title="Rechnungsrevision" inserted="">
+				<added gremium="MR" agenda_item="14.d" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/372179005/14.d_Antrag%20FV-Reglement%20Revisionsstelle.pdf" minutes_link="" />
+				<paragraphs>
+					<paragraph>
+						Die Rechnungsrevision prüft die Buchhaltung und Rechnung des Fachvereins und empfiehlt der Versammlung der Mitglieder die Annahme der Rechnung und die Entlastung der zuständigen Organe.
+					</paragraph>
+					<paragraph>
+						Die Rechnungsrevision besteht aus entweder:
+							<letters>
+								<letter>
+									mindestens zwei Personen, welche nicht Teil des Fachvereinsvorstands sind oder;
+								</letter>
+								<letter>
+									einer externen Revisionsstelle.
+								</letter>
+							</letters>
+					</paragraph>
+					<paragraph>
+						Die Rechnungsrevision wird von der Versammlung der Mitglieder gewählt. Bei einer Vakanz kann der VSETH-Vorstand eine Rechnungsrevision für den Fachverein wählen. Eine Ersatzwahl durch den Fachvereinsvorstand ist ausgeschlossen.
 					</paragraph>
 				</paragraphs>
 			</article>
