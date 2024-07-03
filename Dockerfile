@@ -32,4 +32,4 @@ RUN mkdir /out
 COPY . .
 
 # Invocation through shell is ok as we are only building stuff in production.
-CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R 1000:1000 $OUTPUT"]
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R $UID:$UID $OUTPUT"]
