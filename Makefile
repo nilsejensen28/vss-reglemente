@@ -85,13 +85,14 @@ test: all
 build-docker: docker
 	docker run \
 		--rm \
+		-u $(shell id -u) \
 		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
 		-e DOCKER_MAKE_TARGET=$(DOCKER_MAKE_TARGET) \
 		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
 		$(DOCKER_IMAGE_NAME)
 
 docker: Dockerfile
-	docker build . -t $(DOCKER_IMAGE_NAME)
+	docker build --build-arg="UID=$(shell id -u)" . -t $(DOCKER_IMAGE_NAME)
 
 .PHONY: clean
 clean:

@@ -3,6 +3,8 @@
 # specifies the target in that Makefile and $OUTPUT specifies where the
 # compiled PDFs will be copied to.
 
+ARG UID=1000
+
 # Build mdbook from source
 FROM rust:1.77-slim-bookworm as mdbook
 
@@ -21,13 +23,19 @@ RUN apt update && apt install -y python3-pip inkscape
 # Install mdbook
 COPY --from=mdbook /usr/local/cargo/bin/mdbook /usr/bin/mdbook
 RUN mdbook --version
-
 WORKDIR /app
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt --break-system-packages
 
-COPY . .
+# Make sure the non-root user can access the files in the container and
+# the output volume.
+RUN chown -R 1000:1000 /app
+RUN mkdir /out && chown -R 1000:1000 /out
+ 
+USER 1000
+
+COPY --chown=1000:1000 . .
 
 # Invocation through shell is ok as we are only building stuff in production.
 CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET"]
