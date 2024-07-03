@@ -27,15 +27,9 @@ WORKDIR /app
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt --break-system-packages
+RUN mkdir /out
 
-# Make sure the non-root user can access the files in the container and
-# the output volume.
-RUN chown -R 1000:1000 /app
-RUN mkdir /out && chown -R 1000:1000 /out
- 
-USER 1000
-
-COPY --chown=1000:1000 . .
+COPY . .
 
 # Invocation through shell is ok as we are only building stuff in production.
-CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET"]
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R 1000:1000 $OUTPUT"]

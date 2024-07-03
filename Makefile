@@ -83,9 +83,9 @@ test: all
 
 .PHONY: build-docker
 build-docker: docker
+	mkdir -p $(OUT_PATH)
 	docker run \
 		--rm \
-		-u $(shell id -u) \
 		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
 		-e DOCKER_MAKE_TARGET=$(DOCKER_MAKE_TARGET) \
 		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
