@@ -91,7 +91,8 @@ build-docker: docker
 		$(DOCKER_IMAGE_NAME)
 
 docker: Dockerfile
-	docker build . -t $(DOCKER_IMAGE_NAME)
+	docker build --build-arg="UID=$(shell id -u)" . -t $(DOCKER_IMAGE_NAME)
+	mkdir -p $(OUT_PATH)
 
 .PHONY: clean
 clean:
