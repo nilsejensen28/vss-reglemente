@@ -3,8 +3,6 @@
 # specifies the target in that Makefile and $OUTPUT specifies where the
 # compiled PDFs will be copied to.
 
-ARG UID=1000
-
 # Build mdbook from source
 FROM rust:1.77-slim-bookworm as mdbook
 
@@ -27,8 +25,9 @@ WORKDIR /app
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt --break-system-packages
+RUN mkdir /out
 
 COPY . .
 
 # Invocation through shell is ok as we are only building stuff in production.
-CMD make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R $UID:$UID $OUTPUT
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R $UID:$GID $OUTPUT"]

@@ -83,16 +83,18 @@ test: all
 
 .PHONY: build-docker
 build-docker: docker
+	mkdir -p $(OUT_PATH)
 	docker run \
 		--rm \
 		-e OUTPUT=$(DOCKER_INTERNAL_OUT_PATH) \
 		-e DOCKER_MAKE_TARGET=$(DOCKER_MAKE_TARGET) \
+		-e UID=$(shell id -u) \
+		-e GID=$(shell id -g) \
 		-v $(OUT_PATH):$(DOCKER_INTERNAL_OUT_PATH) \
 		$(DOCKER_IMAGE_NAME)
 
 docker: Dockerfile
-	docker build --build-arg="UID=$(shell id -u)" . -t $(DOCKER_IMAGE_NAME)
-	mkdir -p $(OUT_PATH)
+	docker build . -t $(DOCKER_IMAGE_NAME)
 
 .PHONY: clean
 clean:
