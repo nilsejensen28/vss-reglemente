@@ -92,7 +92,7 @@ build-docker: docker
 		$(DOCKER_IMAGE_NAME)
 
 docker: Dockerfile
-	docker build --build-arg="UID=$(shell id -u)" . -t $(DOCKER_IMAGE_NAME)
+	docker build --build-arg="UID=$(shell id -u)" --build-arg="GID=$(shell id -g)" . -t $(DOCKER_IMAGE_NAME)
 
 .PHONY: clean
 clean:
