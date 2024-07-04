@@ -3,9 +3,6 @@
 # specifies the target in that Makefile and $OUTPUT specifies where the
 # compiled PDFs will be copied to.
 
-ARG UID=1000
-ARG GID=1000
-
 # Build mdbook from source
 FROM rust:1.77-slim-bookworm as mdbook
 
