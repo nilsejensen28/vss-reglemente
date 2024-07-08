@@ -23,7 +23,7 @@
 			<inserted gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
 			This article is inserted. The next will be deleted.
 		</article>
-		<article>
+		<article title="Deleted Article">
 			<deleted gremium="FR" agenda_item="3." meeting_date="2023-04-01" implementation_date="2023-05-01" />
 		</article>
 		<article title="Letters and numerals">
@@ -55,6 +55,7 @@
 					the last item should end with a period.
 				</letter>
 			</letters>
+			Text after letters.
 		</article>
 	</articles>
 	<section title="Sectioning commands">

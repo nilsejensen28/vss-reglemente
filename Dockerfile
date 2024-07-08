@@ -4,7 +4,7 @@
 # compiled PDFs will be copied to.
 
 # Build mdbook from source
-FROM rust:1.75-slim-bookworm as mdbook
+FROM rust:1.79-slim-bookworm as mdbook
 
 # renovate: datasource=crate depName=mdbook
 ENV MDBOOK_VERSION 0.4.25
@@ -21,13 +21,13 @@ RUN apt update && apt install -y python3-pip inkscape
 # Install mdbook
 COPY --from=mdbook /usr/local/cargo/bin/mdbook /usr/bin/mdbook
 RUN mdbook --version
-
 WORKDIR /app
 
 COPY requirements.txt ./
 RUN pip install -r requirements.txt --break-system-packages
+RUN mkdir /out
 
 COPY . .
 
 # Invocation through shell is ok as we are only building stuff in production.
-CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET"]
+CMD ["sh", "-c", "make OUT_PATH=$OUTPUT $MAKE_TARGET && chown -R $UID:$GID $OUTPUT"]

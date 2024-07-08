@@ -36,7 +36,7 @@
 				<inserted gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
 				Das Team IT und die Informatiksupportgruppe (ISG) des VSETH streben eine enge Zusammenarbeit mit anderen Organisationen in IT-Fragen an, insbesondere mit studentischen Gruppierungen und den Informatikdiensten der ETH.
 			</article>
-			<article title="Nutzergruppen">
+			<article title="Nutzendengruppen">
 				<paragraphs>
 					<paragraph>
 						Die IT des VSETH kann von allen Gremien und Organisationen gemäss Art. 13 Abs. 1 der Statuten genutzt werden.
@@ -45,8 +45,8 @@
 						Studentische Organisation können unter Bedingungen Zugang zu einzelnen Dienstleistungen erhalten.
 					</paragraph>
 					<paragraph>
-						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
-						Das Team IT regelt die Einzelheiten in einer Verordnung.
+						<changed gremium="MR" agenda_item="14.a" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/366313493/14.a_Antrag_Infrastrukturreglement_Verordnungen.pdf" minutes_link="" />
+						Der VSETH-Vorstand legt die Einzelheiten in einer Verordnung fest.
 					</paragraph>
 				</paragraphs>
 			</article>
@@ -72,8 +72,8 @@
 			<article title="BOT VSETH">
 				<paragraphs>
 					<paragraph>
-						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
-						Das Team IT legt die spezifischen Bestimmungen über die Nutzung der IT des VSETH in der Verordnung über die Nutzung der Informations- und Kommunikationstechnologie (BOT VSETH) fest.
+						<changed gremium="MR" agenda_item="14.a" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/366313493/14.a_Antrag_Infrastrukturreglement_Verordnungen.pdf" minutes_link="" />
+						Der VSETH-Vorstand legt die spezifischen Bestimmungen über die Nutzung der IT des VSETH in der Verordnung über die Nutzung der Informations- und Kommunikationstechnologie (BOT VSETH) fest.
 					</paragraph>
 					<paragraph>
 						Die IT-Dienstleistungen des VSETH dürfen nicht zu privaten Zwecken genutzt werden. Die BOT VSETH regelt allfällige Ausnahmen. Die ausnahmsweise private Nutzung der IT des VSETH begründet kein schützenswertes Interesse im Verhältnis mit Abs. 3 und 4.
@@ -92,7 +92,8 @@
 				<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
 				<paragraphs>
 					<paragraph>
-						Der VSETH-Vorstand erlässt auf Antrag des Teams IT die Verordnung über die Informatiksupportgruppe (ISG).
+						<changed gremium="MR" agenda_item="14.a" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/366313493/14.a_Antrag_Infrastrukturreglement_Verordnungen.pdf" minutes_link="" />
+						Der VSETH-Vorstand erlässt die Verordnung über die Informatiksupportgruppe (ISG).
 					</paragraph>
 					<paragraph>
 						Diese beinhaltet mindestens Bestimmungen zu:
@@ -110,8 +111,8 @@
 			<article title="Softwareentwicklung auf der VSETH IT">
 				<paragraphs>
 					<paragraph>
-						<changed gremium="MR" agenda_item="15.5x" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657645/15_5x_InfrastrukturReglement.pdf"/>
-						Das Team IT legt in einer Weisung Regeln und Technologiestandards fest, welche bei Softwareentwicklungen einzuhalten sind.
+						<changed gremium="MR" agenda_item="14.a" meeting_date="2024-04-30" implementation_date="2024-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2024-04-30+FS?preview=/338788419/366313493/14.a_Antrag_Infrastrukturreglement_Verordnungen.pdf" minutes_link="" />
+						Der VSETH-Vorstand legt in einer Verordnung Regeln und Technologiestandards fest, welche bei Softwareentwicklungen einzuhalten sind.
 					</paragraph>
 					<paragraph>
 						Der VSETH erhält eine vertraglich festgehaltene, transferierbare, vervielfachbare, weltweite, zeitlich unbefristete, unentgeltliche und funktional uneingeschränkte Lizenz zur Nutzung und Weiterentwicklung von Software, die im Rahmen des Engagements im VSETH entwickelt wird. Diese Lizenz gilt auch und insbesondere, wenn auf Grundlage von Software, die ursprünglich im Rahmen des Engagements im VSETH entwickelt wurde, später ein kommerzielles Produkt entsteht.
