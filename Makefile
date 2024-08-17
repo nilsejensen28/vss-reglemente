@@ -71,15 +71,11 @@ navbar: templates/navbar/$(wildcard *.html.j2) $(wildcard *.py)
 
 tex: ${SRCS:.xml=.tex}
  
-pdf : ${SRCS:.xml=.pdf} 	
-	build-allpdf
+pdf : ${SRCS:.xml=.tex} 
+	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/*.tex
 
 %.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
 	python3 main.py generate --asset-path ${ASSET_PATH} --language de --format latex --output ${LATEX_PATH} $<
-
-
-%.pdf: %.tex
-	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/*.tex
 
 .PHONY: test
 test: all
