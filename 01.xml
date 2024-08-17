@@ -1,0 +1,714 @@
+<regulation id="01" title_de="Statuten" short_de="Statuten" title_fr="Statuts" short_fr="Statuts" original_implementation_date="2025-01-01">
+    <section title_de="Allgemeine Bestimmungen" title_fr="Allgemeine Bestimmungen">
+        <articles>
+            <article title_de="Rechtsform, Name, Sitz" title_fr="Forme juridique, nom et siège">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der <quote>Verband der Schweizer Studierendenschaften</quote>, nachfolgend <quote>VSS</quote> genannt, ist ein Verein im Sinne von Art. 52ff und Art. 60ff ZGB mit Sitz in Bern. </text>
+                        <text language="fr"> L’<quote> Union des Etudiant·e·s de Suisse </quote> , ci-après <quote> UNES </quote>, est une association au sens des art. 52 ss et 60 ss du Code civil suisse, avec siège à Berne. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der VSS ist parteipolitisch und konfessionell neutral. </text>
+                        <text language="fr"> L’UNES est neutre en ce qui concerne la politique partisane et sur le plan confessionnel. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Zweck" title_fr="But">
+                <text language="de"> Der VSS bezweckt: </text>
+                <text language="fr"> L’UNES a pour but: </text>
+                <letters>
+                    <letter>
+                        <text language="de"> die ideellen und materiellen Interessen der Studierenden auf nationaler und internationaler Ebene zu vertreten; </text>
+                        <text language="fr"> de représenter les intérêts idéaux et matériels des étudiant·e·s sur le plan national et international; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> die Gleichstellung, insbesondere an Hochschulen, unter Studierenden zu fördern; </text>
+                        <text language="fr"> de promouvoir l’égalité entre les étudiant·e·s , particulièrement dans les hautes écoles; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> die Chancengleichheit und insbesondere die Möglichkeit zum allgemeinen Zugang zu und Abschluss der Hochschulbildung zu fördern; </text>
+                        <text language="fr"> de promouvoir l’égalité des chances et, en particulier, la possibilité pour tou·te·s d'accéder à l’enseignement supérieur et de l’achever ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> den Austausch mit nationalen und internationalen Studierendenorganisationen, mit Behörden, Standesvertretungen und anderen Interessenvertretungen. </text>
+                        <text language="fr"> les échanges avec des organisations estudiantines nationales et internationales, avec les autorités, avec les représentant·e·s des corps des hautes écoles et avec d’autres groupes d'intérêt. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Tätigkeit" title_fr="Activités">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS arbeitet im Sinne des in Art. 2 definierten Zwecks. </text>
+                        <text language="fr"> L'UNES travaille dans le sens du but défini à l'art. 2. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei seiner Arbeit vertritt der VSS Studierende aus der ersten und zweiten Bildungsstufe gemäss Art. 11ff Verordnung des Hochschulrates über die Koordination der Lehre an den Schweizer Hochschulen aus folgenden höheren Schweizer Bildungsanstalten: </text>
+                        <text language="fr"> Dans son travail, l'UNES représente les étudiant·e·s du premier et du deuxième degré de formation selon les articles 11 et suivants de l'Ordonnance du Conseil des hautes écoles sur la coordination de l'enseignement dans les hautes écoles suisses des hautes écoles suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Universitäre Hochschulen; </text>
+                                <text language="fr"> hautes écoles universitaires ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Eidgenössische Technische Hochschulen; </text>
+                                <text language="fr"> écoles polytechniques fédérales ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Fachhochschulen; </text>
+                                <text language="fr"> hautes écoles spécialisées ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Pädagogische Hochschulen. </text>
+                                <text language="fr"> hautes écoles pédagogiques. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der VSS arbeitet nicht diskriminierend. </text>
+                        <text language="fr"> L’UNES travaille de manière non-discriminatoire. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der VSS respektiert die Unabhängigkeit seiner Mitglieder und unterstützt sie bei gemeinsamen Aktionen und Einzelaktivitäten. </text>
+                        <text language="fr"> L'UNES respecte l'indépendance de ses membres et les soutient lors d’actions communes et dans leurs activités individuelles. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Zusammenarbeit" title_fr="Coopération">
+                <text language="de"> Der VSS kann sich Organisationen anschliessen, die gleiche oder ähnliche Ziele verfolgen. </text>
+                <text language="fr"> L'UNES peut s'associer à des organisations qui poursuivent des objectifs identiques ou similaires. </text>
+            </article>
+            <article title_de="Verbandssprachen" title_fr="Langues de l'association">
+                <text language="de"> Die Verbandssprachen des VSS sind Deutsch, Französisch und Italienisch. </text>
+                <text language="fr"> Les langues de l'association sont le français, l'allemand et l'italien. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Mitgliedschaft" title_fr="Membres">
+        <articles>
+            <article title_de="Mitgliedschaft" title_fr="Membres">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS kennt folgende Arten von Mitgliedern: </text>
+                        <text language="fr"> L'UNES connait les types de membres suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> ordentliche Mitglieder, nachfolgenden “Sektionen” genannt; </text>
+                                <text language="fr"> les membres ordinaires, ci-après <quote> sections </quote>; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> assoziierte Mitglieder. </text>
+                                <text language="fr"> les membres associés. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitgliedschaft ist nur für juristische Personen möglich. </text>
+                        <text language="fr"> L'affiliation n'est possible que pour les personnes morales. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Mitglieder entrichten einen Mitgliederbeitrag, dessen Höhe im Mitgliedschaftsreglement festgelegt wird. </text>
+                        <text language="fr"> Les membres s'acquittent d'une cotisation dont le montant est fixé dans le règlement des membres. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Sektionen" title_fr="Sections">
+                <text language="de"> Als Sektionen können folgende Organisationen aufgenommen werden: </text>
+                <text language="fr"> Les organisations suivantes peuvent être admises en tant que sections : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> Studierendenorganisationen an akkreditierten Hochschulen in der Schweiz; </text>
+                        <text language="fr"> organisations d'étudiant·e·s des hautes écoles accréditées en Suisse ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Studierendenorganisationen an höheren Bildungsanstalten, die bisher nicht akkreditiert sind; </text>
+                        <text language="fr"> organisations d'étudiant·e·s d’établissements d'enseignement supérieur qui ne sont pas encore accrédités ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> nationale Dachverbände von Studierendenorganisationen an akkreditierten Hochschulen. </text>
+                        <text language="fr"> associations faîtières nationales d'organisations d'étudiant·e·s des établissements d'enseignement supérieur accrédités. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Assoziierte Mitglieder" title_fr="Membres associés">
+                <text language="de"> Organisationen, die wichtige regionale oder fachspezifische Interessen von Studierenden vertreten, können als assoziierte Mitglieder aufgenommen werden. </text>
+                <text language="fr"> Les organisations qui représentent des intérêts régionaux ou spécifiques importants des étudiant·e·s peuvent être admises en tant que membres associés. </text>
+            </article>
+            <article title_de="Mitgliedschaftsreglement" title_fr="Règlement des membres">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zur Mitgliedschaft im VSS im <quote>Reglement über die Mitgliedschaft im VSS</quote>, nachfolgend <quote>Mitgliedschaftsreglement</quote> genannt, fest. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s fixe les dispositions spécifiques relatives à l'admission à l'UNES dans le <quote> Règlement sur l’admission des membres à l'UNES </quote>, ci-après dénommé <quote> Règlement des membres </quote>. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Dieses enthält mindestens Angaben zu: </text>
+                        <text language="fr"> Celui-ci contient au moins des informations sur : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> den Voraussetzungen für eine Mitgliedschaft; </text>
+                                <text language="fr"> les conditions d'admission ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> dem Aufnahmeprozess von Mitgliedern; </text>
+                                <text language="fr"> le processus d'admission ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> der Höhe des Mitgliederbeitrags; </text>
+                                <text language="fr"> le montant de la cotisation des membres; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> dem Ausschluss von Mitgliedern; </text>
+                                <text language="fr"> l'exclusion de membres ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> dem Austritt von Mitgliedern; </text>
+                                <text language="fr"> la démission de membres ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> dem Erlöschen der Mitgliedschaft. </text>
+                                <text language="fr"> perte de la qualité de membre. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Mitwirkung der Mitglieder" title_fr="Participation des membres">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Mitglieder haben folgende Rechte der Mitwirkung: </text>
+                        <text language="fr"> Les membres ont les droits de participation suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> das Recht auf Antrag, Vorstoss, Beschwerde und Rekurs; </text>
+                                <text language="fr"> droit de motion, d’intervention, de plainte et de recours ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> das Recht auf Öffentlichkeit; </text>
+                                <text language="fr"> droit à la transparence ; </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sektionen haben zudem folgende Rechte der Mitwirkung: </text>
+                        <text language="fr"> Les sections ont en outre les droits de participation suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Entsendung von Delegierten in die Delegiertenversammlung; </text>
+                                <text language="fr"> Envoi de délégué·e·s à l'Assemblée des Délégué·e·s ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Entsendung von einer Delegierten beziehungsweise einem Delegierten in den Sektionsrat. </text>
+                                <text language="fr"> Envoi d’un ou une délégué·e au Conseil des Sections. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Mitwirkungs- und Öffentlichkeitsreglement" title_fr="Règlement sur la participation et la transparence">
+                <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zu den Rechten der Mitglieder im <quote>Reglement über die Verfahren der Mitwirkung und das Öffentlichkeitsprinzip im VSS</quote>, nachfolgend <quote>Mitwirkungs- und Öffentlichkeitsreglement</quote> genannt, fest. </text>
+                <text language="fr"> L'Assemblée des Délégué·e·s fixe les dispositions spécifiques relatives aux droits des membres dans le <quote> Règlement sur les procédures de participation et le principe de transparence à l’UNES </quote>, ci-après <quote> Règlement sur la participation et la transparence </quote>. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Mittel" title_fr="Moyens">
+        <articles>
+            <article title_de="Mittel" title_fr="Moyens">
+                <text language="de"> Zur Verfolgung des Verbandszwecks verfügt der VSS über folgende Mittel: </text>
+                <text language="fr"> Pour poursuivre le but de l'association, l'UNES dispose des moyens suivants : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> Mitgliederbeiträge gemäss Art. 6; </text>
+                        <text language="fr"> cotisations des membres selon l'art. 6 ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Einer Finanzhilfen für die Betriebsstruktur und regelmässige Aktivitäten von Dachverbänden und Koordinationsplattformen nach Art. 7 des Kinder- und Jugendförderungsgesetzes des BSV; </text>
+                        <text language="fr"> aide financière pour des tâches de gestion et des activités régulières des associations faîtières et des plateformes de coordination selon l’art 7 de la loi sur l’encouragement de l’enfance et de la jeunesse de l’OFAS ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Weitere Einnahmequellen, darunter Spenden und Sponsoring. </text>
+                        <text language="fr"> autres sources de revenus, notamment des dons et du sponsoring. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Finanzreglement" title_fr="Règlement des finances">
+                <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zum Umgang mit finanziellen Mitteln im “Reglement über die Finanzen des VSS”, nachfolgend “Finanzreglement” genannt, fest. </text>
+                <text language="fr"> L’Assemblée des Délégué·e·s fixe les dispositions spécifiques relatives à la gestion des ressources financières dans le <quote> Règlement des finances de l'UNES </quote>, ci-après <quote> Règlement des finances </quote>. </text>
+            </article>
+            <article title_de="Rechnungsrevisionsstelle" title_fr="Organe de révision">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS hat eine verbandsunabhängige Rechnungsrevisionsstelle. </text>
+                        <text language="fr"> L'UNES dispose d'un organe de révision des comptes indépendant de l'association. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Rechnungsrevisionsstelle wird auf Antrag des VSS-Vorstands von der Delegiertenversammlung für ein Jahr gewählt. Sie unterliegt keiner Amtszeitbeschränkung. </text>
+                        <text language="fr"> L'organe de révision des comptes est élu pour un an par l'Assemblée des Délégué·e·s sur proposition du comité de l'UNES. Son mandat n'est pas limité dans le temps. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Haftung" title_fr="Garantie">
+                <text language="de"> Für Verbindlichkeiten des VSS haftet nur das Verbandsvermögen. Die Haftung der Mitglieder ist beschränkt auf den Mitgliederbeitrag. Mitglieder, welche keinen Mitgliederbeitrag bezahlen, haften nicht für den VSS. </text>
+                <text language="fr"> Les obligations de l'UNES sont garanties uniquement par la fortune de l’association. Les obligations des membres sont limitées à la cotisation de membre. Les membres qui ne paient pas de cotisation ne sont pas responsables pour l'UNES. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Organisation" title_fr="Organisation">
+        <articles>
+            <article title_de="Aufbau" title_fr="Structure">
+                <text language="de"> Der VSS besteht aus: </text>
+                <text language="fr"> L’UNES se compose de : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> den Organen: </text>
+                        <text language="fr"> les organes: </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Delegiertenversammlung (DV); </text>
+                        <text language="fr"> Assemblée des Délégué·e·s (AD) ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Sektionsrat (SR); </text>
+                        <text language="fr"> Conseil des Sections ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Finanzkommission (CoFi); </text>
+                        <text language="fr"> Commission des finances (CoFi) ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Vorstand; </text>
+                        <text language="fr"> Comité exécutif ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Thematischen Kommissionen; </text>
+                        <text language="fr"> commissions thématiques ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Geschäftsprüfungskommission (GPK); </text>
+                        <text language="fr"> Commission de contrôle (CdC) ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> den Vertretungen; </text>
+                        <text language="fr"> les représentations ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> den Arbeitsgruppen (AG) </text>
+                        <text language="fr"> les groupes de travail (GT) ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> der Geschäftsstelle: </text>
+                        <text language="fr"> le bureau : </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> Generalsekretariat; </text>
+                        <text language="fr"> le secrétariat général; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> weitere Mitarbeitende. </text>
+                        <text language="fr"> autre collaborateur·trice·s. </text>
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+        <subsection title_de="Organe" title_fr="Organes">
+            <subsubsection title_de="Delegiertenversammlung (DV)" title_fr="Assemblée des Délégué·e·s (AD)">
+                <articles>
+                    <article title_de="Definition" title_fr="Definition">
+                        <text language="de"> Die Delegiertenversammlung (DV) ist das oberste Organ des Verbands. Sie ist befugt, über alle Belange des VSS zu verhandeln und zu beschliessen. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s (AD) est l'organe suprême de l’UNES. Elle est habilitée à traiter et à prendre des décisions concernant toutes les questions qui touchent de l'UNES. </text>
+                    </article>
+                    <article title_de="Zusammensetzung" title_fr="Composition">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung setzt sich aus den stimmberechtigten Delegierten der Sektionen zusammen. </text>
+                                <text language="fr"> L'Assemblée des Délégué·e·s se compose des délégué·e·s des sections, des membres associés ainsi que des autres organes. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Die Anzahl Delegierter einer Sektion wird nach der Anzahl Mitglieder dieser Sektion berechnet. Die Berechnung erfolgt nach folgendem Schlüssel: </text>
+                                <text language="fr"> Le nombre des délégué·e·s par section est fixé sur la base du nombre des membres de celle-ci. Il se calcule selon la grille suivante: </text>
+                                <letters>
+                                    <letter>
+                                        <text language="de"> bis 1'000 Mitglieder 1 Delegierte beziehungsweise Delegierter; </text>
+                                        <text language="fr"> jusqu'à 1'000 membres 1 délégué, resp. déléguée </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> 1'001-2'500 Mitglieder 2 Delegierte; </text>
+                                        <text language="fr"> 1'001-2'500 membres 2 délégué·e·s </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> 2'501-5'000 Mitglieder 3 Delegierte; </text>
+                                        <text language="fr"> 2'501-5'000 membres 3 délégué·e·s </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> 5'001-7'500 Mitglieder 4 Delegierte; </text>
+                                        <text language="fr"> 5'001-7'500 membres 4 délégué·e·s </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> 7'501-10'000 Mitglieder 5 Delegierte; </text>
+                                        <text language="fr"> 7'501-10'000 membres 5 délégué·e·s </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> 10'001-15'000 Mitglieder 6 Delegierte; </text>
+                                        <text language="fr"> 10'001-15'000 membres 6 délégué·e·s </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> über 15'000 Mitglieder 7 Delegierte. </text>
+                                        <text language="fr"> plus que 15'000 membres 7 délégué·e·s </text>
+                                    </letter>
+                                </letters>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Für die Anzahl Mitglieder ist die Definition nach Art. 15 des Mitgliedschaftsreglement, massgebend. </text>
+                                <text language="fr"> Le nombre de membres est défini à l'art. 15 du règlement des membres. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Ist eine Person in mehreren Sektionen Mitglied, so kann sie nur einer Sektion angerechnet werden. Sie wird dabei grundsätzlich der Sektion der Hochschule oder der höheren Bildungsanstalt angerechnet, an der sie immatrikuliert ist. </text>
+                                <text language="fr"> Si une personne est membre de plusieurs sections, elle ne peut être comptabilisée que dans une seule section. Elle est alors en principe comptée dans la section de la haute école ou de l'établissement d'enseignement supérieur dans lequel elle est immatriculée. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Weiter nehmen als Beobachtende an der Delegiertenversammlung folgende Personen teil: </text>
+                                <text language="fr"> En outre, les personnes suivantes participent à l'Assemblée des Délégué·e·s en tant qu'observateur·trice·s : </text>
+                                <letters>
+                                    <letter>
+                                        <text language="de"> die Mitglieder des VSS-Vorstands; </text>
+                                        <text language="fr"> les membres du Comité de l'UNES ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> die Mitglieder der GPK; </text>
+                                        <text language="fr"> les membres de la CdC ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> die Mitglieder der Finanzkommission; </text>
+                                        <text language="fr"> les membres de la Commission des finances ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> die Mitglieder der thematischen Kommissionen; </text>
+                                        <text language="fr"> les membres des commissions thématiques ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> die Mitglieder der assoziierten Mitglieder; </text>
+                                        <text language="fr"> les membres associés ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> das Generalsekretariat. </text>
+                                        <text language="fr"> le secrétariat général. </text>
+                                    </letter>
+                                </letters>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title_de="DV-Reglement" title_fr="Règlement de l'AD">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Alle weiteren Bestimmungen regelt die Delegiertenversammlung selbstständig im <quote>Gremienreglement über die Delegiertenversammlung</quote>, nachfolgend <quote>DV-Reglement</quote> genannt. </text>
+                                <text language="fr"> Toutes les autres dispositions sont réglées de manière autonome par l'Assemblée des délégués dans le <quote> Règlement d’organe de l'Assemblée des Délégué·e·s </quote>, ci-après <quote> Règlement de l'AD </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Sektionsrat (SR)" title_fr="Conseil des Sections (CdS)">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Der Sektionsrat (SR) ist im Rahmen der ihm durch das <quote>Sektionsrat-Reglement</quote> zugesprochenen Kompetenzen befugt, über bestimmte Belange des VSS zu entscheiden. </text>
+                                <text language="fr"> Le Conseil des Sections (CdS) est habilité, dans le cadre des compétences qui lui sont attribuées par le <quote> Règlement du Conseil des Sections </quote>, à prendre des décisions concernant certains aspects de l'UNES. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Der Sektionsrat übt im Rahmen des Tagesgeschäfts die legislative Kontrolle über die Verbandstätigkeit aus. </text>
+                                <text language="fr"> Le conseil de section exerce un contrôle législatif sur les activités de l'association dans le cadre de la gestion quotidienne. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Der Sektionsrat fördert Information und Zusammenarbeit zwischen den Mitgliedern und den Organen des VSS sowie zwischen den Mitgliedern untereinander. </text>
+                                <text language="fr"> Le conseil de section encourage l'information et la collaboration entre les membres et les organes de l'UNES ainsi qu'entre les membres eux-mêmes. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title_de="Sektionsrat-Reglement" title_fr="Règlement du Conseil des Sections">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über den Sektionsrat</quote>, nachfolgend <quote>Sektionsrat-Reglement</quote> genannt. </text>
+                                <text language="fr"> L'Assemblée des Délégué·e·s édicte le <quote> Règlement d’organe du Conseil des Sections </quote>, ci-après <quote> Règlement du Conseil des Sections </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zur Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Finanzkommission (CoFi)" title_fr="Commission des finances (CoFi)">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <text language="de"> Die Finanzkommission (CoFi) ist für die strategische Budget- und Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSS verantwortlich. </text>
+                        <text language="fr"> La Commission des finances (CoFi) est responsable de la planification stratégique du budget et des finances ainsi que de la surveillance continue des finances de l'UNES. </text>
+                    </article>
+                    <article title_de="Finanzkommissionsreglement" title_fr="Règlement de la Commission des finances">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über die Finanzkommission</quote>, nachfolgend <quote>Finanzkommissionsreglement</quote> genannt. </text>
+                                <text language="fr"> L'Assemblée des Délégué·e·s édicte le <quote> Règlement d’organe de la Commission des finances </quote>, ci-après <quote> Règlement de la Commission des finances </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Vorstand" title_fr="Comité exécutif">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <text language="de"> Der VSS-Vorstand leitet als Exekutive den VSS. Er führt die Geschäfte des VSS und vollzieht die von der Delegiertenversammlung und dem Sektionsrat gefassten Beschlüsse. </text>
+                        <text language="fr"> Le Comité exécutif de l'UNES dirige l'UNES en tant qu'organe exécutif. Il gère les affaires de l'UNES et exécute les décisions prises par l'Assemblée des Délégué·e·s et le Conseil des Sections. </text>
+                    </article>
+                    <article title_de="Vorstandsreglement" title_fr="Règlement du Comité exécutif">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über den VSS-Vorstand</quote>, nachfolgend <quote>Vorstandsreglement</quote> genannt. </text>
+                                <text language="fr"> L'Assemblée des Délégué·e·s édicte le <quote> Règlement d’organe du Comité exécutif de l'UNES </quote>, ci-après <quote> Règlement du Comité </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Thematische Kommissionen" title_fr="Commissions thématiques">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <text language="de"> Die Delegiertenversammlung kann zur Entlastung und Ergänzung des Vorstands für bestimmte Geschäfte eine thematische Kommission einsetzen. Die thematischen Kommissionen sind Teil der Exekutive des Verbands. </text>
+                        <text language="fr"> L'Assemblée des délégué·e·s peut mettre en place une commission thématique pour décharger et compléter le Comité exécutif pour certaines affaires. Les commissions thématiques font partie de l'exécutif de l'Union. </text>
+                    </article>
+                    <article title_de="Allgemeines Kommissionsreglement" title_fr="Règlement général des commissions">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zu den Kommissionen im <quote>Allgemeinen Gremienreglement über die thematischen Kommissionen des VSS</quote>, nachfolgend <quote>Allgemeines Kommissionsreglement</quote> genannt, fest. </text>
+                                <text language="fr"> L'Assemblée des délégué·e·s fixe les dispositions spécifiques relatives aux commissions dans le <quote> Règlement général des organes sur les commissions thématiques de l’UNES </quote>, ci-après <quote> Règlement général des commissions </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Geschäftsprüfungskommission (GPK)" title_fr="Commission de contrôle (CdC)">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <text language="de"> Die Geschäftsprüfungskommission (GPK) ist die Judikative und überwacht die Verbandstätigkeit des VSS. </text>
+                        <text language="fr"> La Commission de contrôle (CdC) est le pouvoir judiciaire et surveille les activités de l'UNES. </text>
+                    </article>
+                    <article title_de="GPK-Reglement" title_fr="Règlement de la CdC">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über die Geschäftsprüfungskommission</quote>, nachfolgend <quote>GPK-Reglement</quote> genannt. </text>
+                                <text language="fr"> L'Assemblée des Délégué·e·s édicte le <quote> Règlement d’organe sur la Commission de contrôle </quote>, ci-après dénommé <quote> Règlement de la CdC </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                                <text language="fr"> Celui-ci contient au moins des informations sur la composition, la prise de décision, les compétences matérielles et les rapports. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+        </subsection>
+        <subsection title_de="Vertretungen" title_fr="Représentations">
+            <articles>
+                <article title_de="Definition" title_fr="Définition">
+                    <text language="de"> Die Vertretungen repräsentieren den VSS im Auftrag des VSS-Vorstands in spezifischen Gremien ausserhalb des Verbands. </text>
+                    <text language="fr"> Les représentations représentent l'UNES, sur mandat du comité de l’UNES, dans des organes spécifiques en dehors de l'Union. </text>
+                </article>
+                <article title_de="Vertretungsreglement" title_fr="Règlement des représentations">
+                    <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zu den Vertretungen im <quote>Reglement über die Vertretungen des VSS</quote>, nachfolgend <quote>Vertretungsreglement</quote> genannt, fest. </text>
+                    <text language="fr"> L'Assemblée des Délégué·e·s fixe les dispositions spécifiques relatives aux représentations dans le <quote> Règlement sur les représentations de l'UNES </quote>, ci-après <quote> Règlement des représentations </quote>. </text>
+                </article>
+            </articles>
+        </subsection>
+        <subsection title_de="Arbeitsgruppen" title_fr="Groupes de travail">
+            <articles>
+                <article title_de="Definition" title_fr="Définition">
+                    <text language="de"> Die Delegiertenversammlung kann zeitlich begrenzte Arbeitsgruppen einsetzen. </text>
+                    <text language="fr"> L'Assemblée des Délégué·e·s peut mettre en place des groupes de travail limités dans le temps. </text>
+                </article>
+                <article title_de="Pflichtenheft" title_fr="Cahier des charges">
+                    <text language="de"> Die Delegiertenversammlung legt weitere Bestimmungen zu jeder Arbeitsgruppe in einem Pflichtenheft fest. Dieses enthält mindestens Angaben zu: </text>
+                    <text language="fr"> L'Assemblée des Délégué·e·s fixe des dispositions supplémentaires pour chaque groupe de travail dans un cahier des charges. Celui-ci contient au moins des indications sur </text>
+                    <letters>
+                        <letter>
+                            <text language="de"> Laufzeit; </text>
+                            <text language="fr"> durée de fonctionnement ; </text>
+                        </letter>
+                        <letter>
+                            <text language="de"> Zusammensetzung; </text>
+                            <text language="fr"> composition ; </text>
+                        </letter>
+                        <letter>
+                            <text language="de"> Auftrag; </text>
+                            <text language="fr"> mission ; </text>
+                        </letter>
+                        <letter>
+                            <text language="de"> Berichterstattung. </text>
+                            <text language="fr"> rapports. </text>
+                        </letter>
+                    </letters>
+                </article>
+            </articles>
+        </subsection>
+        <subsection title_de="Geschäftsstelle" title_fr="Bureau">
+            <subsubsection title_de="Allgemeines" title_fr="Généralités">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Geschäftsstelle unterstützt den VSS-Vorstand in administrativen Belangen und bei Projekten. </text>
+                                <text language="fr"> Le bureau soutient le comité de l’UNES dans les questions administratives et les projets. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Sie wird vom Generalsekretariat geleitet. </text>
+                                <text language="fr"> Il est dirigé par le Secrétariat général. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title_de="Anstellungen" title_fr="Engagements">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Geschäftsstelle besteht aus Mitarbeitenden. </text>
+                                <text language="fr"> Le bureau se compose de collaborateur·trice·s. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Die Mitglieder des Generalsekretariats sind die direkten Vorgesetzten sämtlicher Mitarbeitenden des VSS. </text>
+                                <text language="fr"> Les membres du Secrétariat général sont les supérieurs directs de tou·te·s les collaborateur·trice·s de l'UNES. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title_de="Anstellungsreglement" title_fr="Règlement d’engagement">
+                        <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zur Anstellung von Mitarbeitenden im <quote>Reglement über die Anstellungen des VSS</quote>, nachfolgend <quote>Anstellungsreglement</quote> genannt, fest. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s fixe les dispositions spécifiques relatives à l'engagement des collaborateur·trice·s dans le <quote> Règlement relatif à l'engagement au sein de l'UNES </quote>, ci-après <quote> Règlement d’engagement </quote>. </text>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title_de="Generalsekretariat" title_fr="Secrétariat général">
+                <articles>
+                    <article title_de="Definition" title_fr="Définition">
+                        <text language="de"> Dem Generalsekretariat obliegt die operative Verbandsführung nach Vorgaben des Vorstands. </text>
+                        <text language="fr"> Le Secrétariat général est chargé de la gestion opérationnelle de l’Union, conformément aux directives du Comité exécutif. </text>
+                    </article>
+                    <article title_de="GS-Reglement" title_fr="Règlement du SG">
+                        <paragraphs>
+                            <paragraph>
+                                <text language="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zum Generalsekretariat im <quote>Reglement über das Generalsekretariat des VSS</quote>, nachfolgend <quote>GS-Reglement</quote> genannt, fest. </text>
+                                <text language="fr"> L'Assemblée des délégué·e·s fixe les dispositions spécifiques relatives au Secrétariat général dans le <quote> Règlement du Secrétariat général de l'UNES </quote>, ci-après <quote> Règlement du SG </quote>. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text language="de"> Es enthält mindestens Angaben zur Zusammensetzung und den Pflichten. </text>
+                                <text language="fr"> Il contient au moins des informations sur sa composition et ses devoirs. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+        </subsection>
+    </section>
+    <section title_de="Präzisierung der Statuten und Revisionsbestimmungen" title_fr="précision des statuts et dispositions relatives à la révision">
+        <articles>
+            <article title_de="Präzisierung der Statuten" title_fr="Précision des statuts">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Zur Präzisierung der vorliegenden Statuten können Reglemente erlassen werden. Reglemente sind für alle Beteiligten im gleichen Masse verbindlich wie die vorliegenden Statuten. </text>
+                        <text language="fr"> Des règlements peuvent être édictés pour préciser les présents statuts. Les règlements sont contraignants pour tou·te·s les participant·e·s dans la même mesure que les présents statuts. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Reglemente können einzig von der Delegiertenversammlung erlassen werden. </text>
+                        <text language="fr"> Les règlements ne peuvent être édictés que par l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sie bedürfen einer expliziten Grundlage in den Statuten oder einem anderen Reglement. </text>
+                        <text language="fr"> Ils nécessitent une base explicite dans les statuts ou un autre règlement. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Reglemente dürfen den Statuten und anderen Reglementen nicht widersprechen. Im Zweifelsfall gehen die Statuten dem Reglement vor. </text>
+                        <text language="fr"> Les règlements ne doivent pas être en contradiction avec les statuts et les autres règlements. En cas de doute, les statuts prévalent sur le règlement. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Änderung der Statuten" title_fr="Modification des statuts">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Änderungen an den Statuten werden, mit Ausnahme von Art. XX, von der Delegiertenversammlung mit Zweidrittelmehrheit genehmigt. </text>
+                        <text language="fr"> Les modifications des statuts, à l'exception de l'art. XXsont approuvées par l'Assemblée des Délégué·e·s à la majorité des deux tiers. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit. </text>
+                        <text language="fr"> Sur demande, chaque article est voté séparément à la majorité absolue, l'ensemble des modifications étant ensuite soumis à un vote final à la majorité des deux tiers. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Reglemente auf Grundlage der Statuten" title_fr="Règlements basés sur les statuts">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Alle Reglemente, die die Delegiertenversammlung auf Grundlage der vorliegenden Statuten erlässt, werden mit einer Zweidrittelmehrheit genehmigt. </text>
+                        <text language="fr"> Tous les règlements édictés par l'Assemblée des Délégué·e·s sur la base des présents statuts sont approuvés à la majorité des deux tiers. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit. </text>
+                        <text language="fr"> Sur demande, chaque article est voté séparément à la majorité absolue, l'ensemble des modifications étant ensuite soumis à un vote final à la majorité des deux tiers. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Publizierung" title_fr="Publication">
+                <text language="de"> Die Statuten und Reglemente werden auf geeignetem Weg publiziert. </text>
+                <text language="fr"> Les statuts et les règlements sont publiés par les moyens appropriés. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Auflösung" title_fr="Dissolution">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung kann mit einer Dreiviertelmehrheit die Auflösung des VSS beschliessen. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s peut décider de la dissolution de l'UNES à la majorité des trois quarts. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei Auflösung des VSS werden die Verbandsakten gesichtet und gebunden dem Bundesarchiv vermacht. </text>
+                        <text language="fr"> En cas de dissolution de l'UNES, les documents de l'Union sont triés et reliés pour être légués aux Archives fédérales. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das Verbandsvermögen wird einer wegen Gemeinnützigkeit oder öffentlichen Zwecks steuerbefreiten juristischen Person mit Sitz in der Schweiz vermacht. Die Delegiertenversammlung bestimmt, an welche juristische Person. </text>
+                        <text language="fr"> La fortune de l'Union est léguée à une personne morale exonérée d'impôts en raison de son utilité publique ou de son but public et ayant son siège en Suisse. L'Assemblée des Délégué·e·s choisit la personne morale. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Im Falle einer Fusion mit einem anderen Verband kann diese nur mit einem anderen wegen Gemeinnützigkeit oder öffentlichen Zwecks von der Steuerpflicht befreiten juristischen Person mit Sitz in der Schweiz erfolgen. </text>
+                        <text language="fr"> En cas de fusion avec une autre association, celle-ci ne peut avoir lieu qu’avec une association exonérée d’impôts en raison de la poursuite de buts d’utilité publique ou de service public et dont le siège est en Suisse. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Änderungen am vorliegenden Artikel benötigen in Abweichung zu den Bestimmungen in Art. XX eine Dreiviertelmehrheit der Delegiertenversammlung. </text>
+                        <text language="fr"> Les modifications du présent article nécessitent, en dérogation aux dispositions de l'art. XX, une majorité des trois quarts de l'Assemblée des Délégué·e·s est requise. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Diese Statuten wurden der 183. Delegiertenversammlung einer Totalrevision unterzogen und genehmigt. </text>
+                        <text language="fr"> Ces statuts ont été soumis à une révision totale et approuvés par la 183e Assemblée des délégués. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sie ersetzen die Statuten von 2014 und treten am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Ils remplacent les statuts de 2014 et entrent en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+</regulation>

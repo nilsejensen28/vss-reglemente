@@ -1,5 +1,5 @@
 ###############################################################################
-# Makefile for the VSETH-Rechtssammlung
+# Makefile for the VSS-Rechtssammlung
 #
 # Authors: Michal Sudwoj, Manuel Hässig
 #
@@ -31,10 +31,10 @@ DOCKER_INTERNAL_OUT_PATH = /out
 DOCKER_MAKE_TARGET ?= all
 
 LATEXOPTS = -interaction=nonstopmode -shell-escape -file-line-error
-LATEXMKOPTS = -outdir=${PDF_PATH} -norc -f -latexoption=${LATEXOPTS}
+LATEXMKOPTS = -outdir=${PDF_PATH} -norc -f -latexoption=${LATEXOPTS} 
 
-# We extract the list of sources from VSETH_Rechtssammlung.xml. This way we don't need to make changes twice.
-SRCS = VSETH_Rechtssammlung.xml $(shell grep href= VSETH_Rechtssammlung.xml | sed -r 's/.*href="(.+)".*/\1/' | tr "\n" " ")
+# We extract the list of sources from VSS_Rechtssammlung.xml. This way we don't need to make changes twice.
+SRCS = VSS_Rechtssammlung.xml $(shell grep href= VSS_Rechtssammlung.xml | sed -r 's/.*href="(.+)".*/\1/' | tr "\n" " ")
 
 MDBOOK_ASSETS = $(shell find ${ASSET_PATH}/mdbook -type f)
 
@@ -42,7 +42,7 @@ MDBOOK_ASSETS = $(shell find ${ASSET_PATH}/mdbook -type f)
 all: html pdf
 
 csv: ${SRCS} templates/csv/$(wildcard *.csv.j2) $(wildcard *.py)
-	python3 main.py generate --asset-path ${ASSET_PATH} --format csv --output-folder ${CSV_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --language de --format csv --output-folder ${CSV_PATH} $<
 
 # We build the HTML representation by building an mdbook
 html: mdbook
@@ -51,7 +51,7 @@ html: mdbook
 # An mdbook is only made from the entire Rechtssammlung.
 # VSETH_Rechtssammlung.xml is the first file in ${SRCS}. Therefore, $< will only build that file.
 mdbook: ${SRCS} templates/mdbook/$(wildcard *.md.j2) $(wildcard *.py) | mdbook-init
-	python3 main.py generate --asset-path ${ASSET_PATH} --format mdbook --output-folder ${MDBOOK_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --language de --format mdbook --output-folder ${MDBOOK_PATH} $<
 
 # Initialize the mdbook folder by copying config files and assets
 mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*) ${MDBOOK_ASSETS} clean-mdbook navbar
@@ -63,19 +63,23 @@ mdbook-init: config/book.toml $(wildcard ${ASSET_PATH}/mdbook/*) ${MDBOOK_ASSETS
 
 navbar: templates/navbar/$(wildcard *.html.j2) $(wildcard *.py)
 	mkdir -p ${NAVBAR_PATH}
-	python3 main.py generate --asset-path ${ASSET_PATH} --format navbar --output-folder ${NAVBAR_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --language de --format navbar --output-folder ${NAVBAR_PATH} $<
 
 # PDFs are also built individually. Therefore, we use suffix replacement and pattern rules to build
 # all files individually.
-tex: ${SRCS:.xml=.tex}
 
-pdf: ${SRCS:.xml=.pdf}
+
+tex: ${SRCS:.xml=.tex}
+ 
+pdf : ${SRCS:.xml=.pdf} 	
+	build-allpdf
 
 %.tex: %.xml templates/latex/$(wildcard *.tex.j2) $(wildcard *.py)
-	python3 main.py generate --asset-path ${ASSET_PATH} --format latex --output ${LATEX_PATH} $<
+	python3 main.py generate --asset-path ${ASSET_PATH} --language de --format latex --output ${LATEX_PATH} $<
+
 
 %.pdf: %.tex
-	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/$<
+	latexmk -pdf ${LATEXMKOPTS} ${LATEX_PATH}/*.tex
 
 .PHONY: test
 test: all

@@ -1,773 +1,579 @@
-<regulation id="01" title="VSETH-Statuten" original_implementation_date="2022-01-01">
-	<section title="Allgemeines">
-		<articles>
-			<article title="Rechtsform, Name, Sitz">
-				<paragraphs>
-					<paragraph>
-						Der <quote>Verband der Studierenden an der Eidgenössischen Technischen Hochschule</quote>, nachfolgend <quote>VSETH</quote> genannt, ist ein Verein im Sinne von <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_52">Art. 52ff.</link> und <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_60">Art. 60ff. ZGB</link> mit Sitz in Zürich.
-					</paragraph>
-					<paragraph>
-						Der VSETH ist im Jahr 1862 unter dem Namen <quote>Polytechnischer Verein zu Zürich</quote> gegründet worden.
-					</paragraph>
-					<paragraph>
-						Der VSETH ist parteipolitisch und konfessionell neutral.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Zweck">
-				Der Verband bezweckt:
-				<letters>
-					<letter>
-						die Wahrung der studentischen Interessen, insbesondere die der Studierenden an der ETH Zürich, die er nach innen und aussen vertritt;
-					</letter>
-					<letter>
-						die Schaffung und Förderung von Dienstleistungen für die Studierenden;
-					</letter>
-					<letter>
-						die Förderung kultureller und wissenschaftlicher Belange;
-					</letter>
-					<letter>
-						die Teilnahme an bildungs- und wissenschaftspolitischen Diskussionen.
-					</letter>
-				</letters>
-			</article>
-			<article title="Zusammenarbeit">
-				Der VSETH kann sich Organisationen anschliessen, die gleiche oder ähnliche Ziele verfolgen.
-			</article>
-		</articles>
-	</section>
-	<section title="Mitgliedschaft">
-		<articles>
-			<article title="Mitgliedschaft">
-				<paragraphs>
-					<paragraph>
-						Folgende Personen können die Mitgliedschaft erwerben:
-						<letters>
-							<letter>
-								Bachelor- und Masterstudierende, sowie Studierende der didaktischen Ausbildung der ETH Zürich;
-							</letter>
-							<letter>
-								Doktorierende der ETH Zürich und der Forschungsanstalten;
-							</letter>
-							<letter>
-								Angestellte des VSETH;
-							</letter>
-							<letter>
-								Lehrlinge und Praktikanten der ETH Zürich und der Forschungsanstalten;
-							</letter>
-							<letter>
-								Studierende, die einen befristeten Mobilitätsaufenthalt an der ETH machen;
-							</letter>
-							<letter>
-								Studierende, die einen Weiterbildungsstudiengang an der ETH Zürich absolvieren;
-							</letter>
-							<letter>
-								Fachstudierende und Hörende an der ETH Zürich.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Die Mitgliedschaft muss jedes Semester von Neuem erworben werden.
-					</paragraph>
-					<paragraph>
-						Der VSETH-Vorstand regelt den Prozess für den Erwerb der Mitgliedschaft in einer Verordnung.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Erlöschen der Mitgliedschaft">
-				Die Mitgliedschaft erlischt per Beginn des Folgesemesters durch:
-				<letters>
-					<letter>
-						fehlende Erneuerung der Mitgliedschaft;
-					</letter>
-					<letter>
-						selbsterklärten Austritt;
-					</letter>
-					<letter>
-						Todesfall.
-					</letter>
-				</letters>
-			</article>
-			<article title="Ausschluss">
-				<paragraphs>
-					<paragraph>
-						Der Ausschluss eines Mitglieds, welches die Interessen des Verbands geschädigt hat, kann vom VSETH-Vorstand oder vom jeweiligen Fachverein beim Mitgliederrat beantragt werden.
-					</paragraph>
-					<paragraph>
-						Vor einem Ausschluss muss das auszuschliessende Mitglied vom Mitgliederrat zur Anhörung eingeladen werden.
-					</paragraph>
-					<paragraph>
-						Der Beschluss des Ausschlusses benötigt eine Zweidrittelmehrheit und gilt per sofort. Er wird dem betroffenen Mitglied schriftlich mitgeteilt.
-					</paragraph>
-					<paragraph>
-						Der erneute Erwerb der Mitgliedschaft ist nur möglich, wenn der Mitgliederrat den Ausschluss aufhebt.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Mitgliederbeitrag">
-				<paragraphs>
-					<paragraph>
-						Der VSETH erhebt folgende semesterweise Mitgliederbeiträge:
-						<letters>
-							<letter>
-								CHF 10.00 für Mitglieder der Kategorien a und d gemäss Art. 4;
-							</letter>
-							<letter>
-								CHF 35.00 für Mitglieder der Kategorien b, f und g gemäss Art. 4;
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Vom Mitgliederbeitrag befreit sind Mitglieder der Kategorien c und e gemäss Art. 4.
-					</paragraph>
-					<paragraph>
-						Bei selbsterklärtem Austritt besteht kein Anspruch auf Rückerstattung eines bereits gezahlten Mitgliederbeitrags.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Rechte">
-				<paragraphs>
-					<paragraph>
-						Mitglieder haben folgende Rechte der Mitwirkung:
-						<letters>
-							<letter>
-								die ordentliche Mitwirkung in ihrem Fachverein, sofern sie Mitglied in einem solchen sind;
-							</letter>
-							<letter>
-								passives Wahlrecht für die Gremien und Vertretungen des VSETH. Spezifische Regelungen können in den entsprechenden Reglementen definiert werden;
-							</letter>
-							<letter>
-								Teilnahme an der Urabstimmung;
-							</letter>
-							<letter>
-								das Recht auf Antrag, Vorstoss, Initiative, Referendum, Beschwerde und Rekurs;
-							</letter>
-							<letter>
-								das Recht auf Öffentlichkeit.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Der Mitgliederrat legt die spezifischen Bestimmungen zu den Rechten der Mitglieder im <quote>Reglement über die Verfahren der Mitwirkung und das Öffentlichkeitsprinzip im VSETH</quote>, nachfolgend <quote>Mitwirkungs- und Öffentlichkeitsreglement</quote> genannt, fest.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Mittel">
-		<articles>
-			<article title="Mittel">
-				Zur Verfolgung des Verbandszwecks verfügt der VSETH über folgende Mittel:
-				<letters>
-					<letter>
-						Mitgliederbeiträge gemäss Art. 7;
-					</letter>
-					<letter>
-						einen öffentlich-rechtlichen Pflichtbeitrag aller an der ETH Zürich immatrikulierten Studierenden pro Semester. Dieser ist in der Gebührenverordnung der ETH Zürich festgelegt, welche von der Schulleitung der ETH Zürich erlassen wird. Mit diesem Beitrag wird die VSETH-Mitgliedschaft jedoch nicht erworben;
-					</letter>
-					<letter>
-						einen Kommissionsmitgliederbeitrag von CHF 10.00 pro Semester für ehemalige Mitglieder in den Kommissionen. Mit diesem Beitrag wird die VSETH-Mitgliedschaft nicht erworben.
-					</letter>
-					<letter>
-						weitere Einnahmequellen, darunter Spenden und Sponsoring.
-					</letter>
-				</letters>
-			</article>
-			<article title="Finanzreglement">
-				Der Mitgliederrat legt die spezifischen Bestimmungen zum Umgang mit finanziellen Mitteln im <quote>Reglement über die Finanzen des VSETH</quote>, nachfolgend <quote>Finanzreglement</quote> genannt, fest.
-			</article>
-			<article title="Rechnungsrevisionsstelle">
-				<paragraphs>
-					<paragraph>
-						Der VSETH hat eine verbandsunabhängige Rechnungsrevisionsstelle.
-					</paragraph>
-					<paragraph>
-						Die Rechnungsrevisionsstelle wird auf Antrag des VSETH-Vorstands vom Mitgliederrat für ein Jahr gewählt. Sie unterliegt keiner Amtszeitbeschränkung.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Haftung">
-				Für Verbindlichkeiten des VSETH haftet nur das Verbandsvermögen. Die Haftung der Mitglieder ist beschränkt auf den Mitgliederbeitrag. Mitglieder, welche keinen Mitgliederbeitrag bezahlen, haften nicht für den VSETH.
-			</article>
-		</articles>
-	</section>
-	<section title="Organisation">
-		<articles>
-			<article title="Aufbau">
-				<paragraphs>
-					<paragraph>
-						Der VSETH besteht aus:
-						<letters>
-							<letter>
-								den Fachvereinen;
-							</letter>
-							<letter>
-								den Organen:
-								<numerals>
-									<numeral>
-										Mitgliederrat (MR);
-									</numeral>
-									<numeral>
-										Fachvereinsrat (FR);
-									</numeral>
-									<numeral>
-										Ausschüsse;
-									</numeral>
-									<numeral>
-										VSETH-Vorstand;
-									</numeral>
-									<numeral inserted="">
-										<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-										Teams;
-									</numeral>
-									<numeral>
-										Kommissionen;
-									</numeral>
-									<numeral>
-										Geschäftsprüfungskommission (GPK);
-									</numeral>
-									
-								</numerals>
-							</letter>
-							<letter>
-								Vertretungen;
-							</letter>
-							<letter>
-								dem Allgemeinen Verbandssekretariat (AVES).
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Weiter stehen im Verhältnis zum VSETH:
-						<letters>
-							<letter>
-								die studentischen Organisationen;
-							</letter>
-							<letter>
-								vom VSETH gewidmete Stiftungen;
-							</letter>
-							<letter>
-								Partnerorganisationen.
-							</letter>
-						</letters>
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-		<subsection title="Fachvereine">
-			<articles>
-				<article title="Definition">
-					<paragraphs>
-						<paragraph>
-							Ein Fachverein ist eine Sektion des VSETH, dessen Mitglieder eine oder mehrere Fachrichtungen umfassen.
-						</paragraph>
-						<paragraph>
-							Er ist ein selbstständiger Verein gemäss <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_52">Art. 52ff</link> und <link to="https://www.fedlex.admin.ch/eli/cc/24/233_245_233/de#art_60">Art. 60ff ZGB</link>.
-						</paragraph>
-						<paragraph>
-							Ein Fachverein vertritt die Interessen seiner Mitglieder im Auftrag des VSETH.
-						</paragraph>
-						<paragraph>
-							Über die Aufnahme oder den Ausschluss eines Fachvereins entscheidet der Mitgliederrat mit Zweidrittelmehrheit. Massgebend ist die Erfüllung aller statutarischen Bestimmungen des VSETH.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Fachvereinsreglement">
-					<paragraphs>
-						<paragraph>
-								Der Mitgliederrat legt die Rechte und Pflichten zwischen dem VSETH und seinen Fachvereinen im <quote>Reglement über die Fachvereine des VSETH</quote>, nachfolgend <quote>Fachvereinsreglement</quote> genannt, fest.
-						</paragraph>
-						<paragraph>
-								Das Fachvereinsreglement kann bestimmte Reglemente, Verordnungen und Ausführungsbestimmungen des VSETH für die Fachvereine für verbindlich erklären.
-						</paragraph>
-					</paragraphs>
-				</article>
-			</articles>
-		</subsection>
-		<subsection title="Organe">
-			<subsubsection title="Mitgliederrat (MR)">
-				<articles>
-					<article title="Definition">
-						Der Mitgliederrat (MR) ist die grosse Parlamentskammer und damit das oberste Organ des Verbands. Er ist befugt über alle Belange des VSETH zu verhandeln und zu beschliessen.
-					</article>
-					<article title="Zusammensetzung">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat setzt sich aus folgenden stimmberechtigten Delegierten zusammen:
-								<letters>
-									<letter>
-										aus drei festen Delegierten jedes Fachvereins, wovon einer oder eine der bzw. die FR-Delegierte sein soll;
-									</letter>
-									<letter>
-										aus 40 weiteren Delegierten, die auf die Fachvereine proportional zu deren Anzahl ordentlicher Mitglieder zum Zeitpunkt der letzten Einschreibefrist der ETH Zürich verteilt werden;
-									</letter>
-									<letter>
-										<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-										aus einer Anzahl Delegierten der Kommissionen, die der grössten Fachvereinsdelegation entspricht;									
-									</letter>
-									<letter>
-										aus einem oder einer Delegierten der Angestellten des VSETH, gemäss dem <quote>Anstellungsreglement</quote> des VSETH;
-									</letter>
-								</letters>
-							</paragraph>
-							<paragraph>
-								<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-								Weiter nehmen die Mitglieder des VSETH-Vorstands, der GPK, der Ausschüsse, des FR-Präsidiums, der Teams und der Kommissionsvorstände als Beobachtende am Mitgliederrat teil.
-							</paragraph>
-						</paragraphs>
-					</article>
-					<article title="MR-Reglement">
-						<paragraphs>
-							<paragraph>
-								Alle weiteren Bestimmungen regelt der Mitgliederrat selbstständig im <quote>Gremienreglement über den Mitgliederrat</quote>, nachfolgend <quote>MR-Reglement</quote> genannt.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="Fachvereinsrat (FR)">
-				<articles>
-					<article title="Definition">
-						<paragraphs>
-							<paragraph>
-								Der Fachvereinsrat (FR) ist die kleine Parlamentskammer und ist im Rahmen der ihm durch das <quote>FR-Reglement</quote> zugesprochenen Kompetenzen befugt, über bestimmte Belange des VSETH zu entscheiden.
-							</paragraph>
-							<paragraph>
-								Der Fachvereinsrat übt im Rahmen des Tagesgeschäfts die legislative Kontrolle über die Verbandstätigkeit aus.
-							</paragraph>
-							<paragraph>
-								Der Fachvereinsrat fördert Information und Zusammenarbeit unter den Fachvereinen sowie zwischen den Fachvereinen und den Organen des VSETH.
-							</paragraph>
-						</paragraphs>
-					</article>
-					<article title="FR-Reglement">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat erlässt das <quote>Gremienreglement über den Fachvereinsrat</quote>, nachfolgend <quote>FR-Reglement</quote> genannt.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="Ausschüsse">
-				<articles>
-					<article title="Definition">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat kann Ausschüsse einsetzen, welche spezifische legislative Geschäfte behandeln, die nicht vom gesamten Mitgliederrat effizient wahrgenommen werden können.
-							</paragraph>
-							<paragraph>
-								Der Mitgliederrat kann zur Unterstützung von weiteren Organen zusätzliche Aufgaben an die Ausschüsse übertragen.
-							</paragraph>
-						</paragraphs>
-					</article>
-					<article title="Allgemeines Ausschussreglement">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat legt die spezifischen Bestimmungen zu den Ausschüssen im <quote>Allgemeinen Gremienreglement über die Ausschüsse des VSETH</quote>, nachfolgend <quote>Allgemeines Ausschussreglement</quote> genannt, fest.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="VSETH-Vorstand">
-				<articles>
-					<article title="Definition">
-						Der VSETH-Vorstand leitet als Exekutive den VSETH. Er führt die Geschäfte des VSETH und vollzieht die von Mitgliederrat und Fachvereinsrat gefassten Beschlüsse.
-					</article>
-					<article title="Vorstandsreglement">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat erlässt das <quote>Gremienreglement über den VSETH-Vorstand</quote>, nachfolgend <quote>Vorstandsreglement</quote> genannt.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="Teams" inserted="">
-				<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-				<articles>
-					<article title="Definition" inserted="">
-						<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-						<paragraphs>
-							<paragraph>
-								Teams unterstützen den VSETH-Vorstand bei der Arbeit seiner Ressorts gemäss Art. 7 des Vorstandsreglements.
-							</paragraph>
-							<paragraph>
-								Ein Team arbeitet in genau einem Ressort.
-							</paragraph>
-							<paragraph>
-								Die Teams sind Teil der Exekutive des Verbands.
-							</paragraph>
-						</paragraphs>
-					</article>
-					<article title="Allgemeines Teamreglement" inserted="">
-						<inserted gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat erlässt das <quote>Allgemeine Gremienreglement über die Teams des VSETH</quote>, nachfolgend <quote>Allgemeines Teamreglement</quote> genannt.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="Kommissionen">
-				<articles>
-					<article title="Definition">
-						<paragraphs>
-							<paragraph>
-								<changed gremium="MR" agenda_item="15.5a" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657668/15_5a_Statuten.pdf"/>
-								Der Mitgliederrat und der VSETH-Vorstand können zur Entlastung und Ergänzung des VSETH-Vorstands und der Teams für bestimmte Geschäfte eine Kommission einsetzen.
-							</paragraph>
-							<paragraph>
-								Die Kommissionen sind Teil der Exekutive des Verbands.
-							</paragraph>
-						</paragraphs>
-					</article>
-					<article title="Allgemeines Kommissionsreglement">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat legt die spezifischen Bestimmungen zu den Kommissionen im <quote>Allgemeinen Gremienreglement über die Kommissionen des VSETH</quote>, nachfolgend <quote>Allgemeines Kommissionsreglement</quote> genannt, fest.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-			<subsubsection title="Geschäftsprüfungskommission (GPK)">
-				<articles>
-					<article title="Definition">
-						Die Geschäftsprüfungskommission (GPK) ist die Judikative und überwacht die Verbandstätigkeit des VSETH.
-					</article>
-					<article title="GPK-Reglement">
-						<paragraphs>
-							<paragraph>
-								Der Mitgliederrat erlässt das <quote>Gremienreglement über die Geschäftsprüfungskommission</quote>, nachfolgend <quote>GPK-Reglement</quote> genannt.
-							</paragraph>
-							<paragraph>
-								Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung.
-							</paragraph>
-						</paragraphs>
-					</article>
-				</articles>
-			</subsubsection>
-		</subsection>
-		<subsection title="Vertretungen">
-			<articles>
-				<article title="Definition">
-					Die Vertretungen repräsentieren den VSETH im Auftrag des VSETH-Vorstands in spezifischen Gremien ausserhalb des Verbands. 
-				</article>
-				<article title="Vertretungsreglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen zu den Vertretungen im <quote>Reglement über die Vertretungen des VSETH</quote>, nachfolgend <quote>Vertretungsreglement</quote> genannt, fest.
-				</article>
-			</articles>
-		</subsection>
-		<subsection title="Administration">
-			<articles>
-				<article title="Definition">
-					<paragraphs>
-						<paragraph>
-							Das <quote>Allgemeine Verbandssekretariat</quote> (AVES) unterstützt den VSETH-Vorstand in administrativen Belangen.
-						</paragraph>
-						<paragraph>
-							Es wird von der Geschäftsführenden Sekretärin bzw. dem Geschäftsführenden Sekretär geleitet.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Geschäftsführendes Sekretariat">
-					<paragraphs>
-						<paragraph>
-							Der Geschäftsführende Sekretär bzw. die Geschäftsführende Sekretärin ist von Amtes wegen Teil des VSETH-Vorstands.
-						</paragraph>
-						<paragraph>
-							Die Anstellungsdauer der Geschäftsführenden Sekretärin bzw. des Geschäftsführenden Sekretärs beträgt maximal fünf Jahre. Die Anstellungsdauer kann vom VSETH-Vorstand mit einer Zweidrittelmehrheit um maximal zwei Jahre verlängert werden.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Organisation des AVES">
-					<paragraphs>
-						<paragraph>
-							Der VSETH-Vorstand legt die spezifischen Bestimmungen zur Organisation des Allgemeines Verbandssekretariats in der <quote>AVES-Verordnung</quote> fest.
-						</paragraph>
-						<paragraph>
-							Diese enthält mindestens Angaben zu den Abteilungen des AVES und deren jeweiligen Aufgaben.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Anstellungsreglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen zur Anstellung von Mitarbeitenden im <quote>Reglement über die Anstellungen des VSETH</quote>, nachfolgend <quote>Anstellungsreglement</quote> genannt, fest.
-				</article>
-				<article title="Datenschutzreglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen zum Datenschutz innerhalb des VSETH im <quote>Reglement über den Datenschutz des VSETH</quote>, nachfolgend <quote>Datenschutzreglement</quote> genannt, fest.
-				</article>
-				<article title="Erscheinungsbildreglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen zum Erscheinungsbild des VSETH im <quote>Reglement über das Erscheinungsbild des VSETH</quote>, nachfolgend <quote>Erscheinungsbildreglement</quote> genannt, fest.
-				</article>
-				<article title="Informationsmedium">
-					<paragraphs>
-						<paragraph>
-							Der Mitgliederrat bezeichnet ein Informationsmedium, welches allen Verbandsmitgliedern zugestellt wird.
-						</paragraph>
-						<paragraph>
-							Der VSETH-Vorstand erlässt die dazugehörige Verordnung.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Infrastrukturreglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen über die Infrastruktur des VSETH im <quote>Reglement über die Infrastruktur des VSETH</quote>, nachfolgend <quote>Infrastrukturreglement</quote> genannt, fest.
-				</article>
-			</articles>
-		</subsection>
-		<subsection title="Studentische Organisationen">
-			<articles>
-				<article title="Definition">
-					Als studentische Organisationen (StudOrgs) werden juristische Personen bezeichnet, die selbstständig Dienstleistungen für die Studierenden an der ETH Zürich oder den VSETH erbringen.
-				</article>
-				<article title="StudOrg-Reglement">
-					Der Mitgliederrat legt die spezifischen Bestimmungen im Umgang mit studentischen Organisationen, insbesondere deren Rechte und Pflichten im Verhältnis zum VSETH, im <quote>Reglement über die studentischen Organisationen</quote>, nachfolgend <quote>StudOrg-Reglement</quote> genannt, fest.
-				</article>
-			</articles>
-		</subsection>
-		<subsection title="Vom VSETH gewidmete Stiftungen">
-			<articles>
-				<article title="Definition">
-					Der VSETH kann einem Aspekt des Verbandszwecks Stiftungen widmen. Über die Errichtung einer Stiftung entscheidet der Mitgliederrat.
-				</article>
-				<article title="Organisation">
-					Die Stiftungsurkunde beinhaltet mindestens, dass die Wahl der Delegierten des VSETH im Stiftungsrat als Vertretung gemäss dem Vertretungsreglement zu erfolgen hat.
-				</article>
-			</articles>
-		</subsection>
-		<subsection title="Partnerorganisationen">
-			<articles>
-				<article title="Definition">
-					<paragraphs>
-						<paragraph>
-							Der VSETH kann mit äquivalenten studentischen Vertretungen auf dem Hochschulplatz Zürich oder des ETH-Bereichs einen Partnerschaftsvertrag abschliessen.
-						</paragraph>
-						<paragraph>
-							Mit der Partnerschaft soll die Zusammenarbeit zwischen dem VSETH und der Partnerorganisation vereinfacht werden, um Dienstleistungen für alle Studierenden auf dem Hochschulplatz Zürich oder des ETH-Bereichs anzubieten.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Partnerschaft">
-					<paragraphs>
-						<paragraph>
-							Der Mitgliederrat ratifiziert den vom VSETH-Vorstand und der designierten Partnerorganisation gemeinsam ausgearbeiteten Vertrag.
-						</paragraph>
-						<paragraph>
-							Der Vertrag enthält mindestens die Bestimmungen gemäss Art. 45.
-						</paragraph>
-						<paragraph>
-							Stimmt der Mitgliederrat einem Antrag auf Auflösung der Partnerschaft zu, so wird dieser Vertrag schnellstmöglich gekündigt. Der VSETH-Vorstand kann diesen in dringenden Fällen bei klaren Vertragsverletzungen auch sofort kündigen.
-						</paragraph>
-					</paragraphs>
-				</article>
-				<article title="Vertragsinhalt">
-					<paragraphs>
-						<paragraph>
-							Beide Vertragsparteien bleiben selbstständig. Es wird keine Haftung für die Handlungen und Verbindlichkeiten der jeweils anderen Partei übernommen.
-						</paragraph>
-						<paragraph>
-							Die gemeinsamen Tätigkeiten mit der Partnerorganisation dürfen den Interessen des VSETH nicht widersprechen.
-						</paragraph>
-						<paragraph>
-							Der Vertrag enthält Regelungen über das Erscheinungsbild und den Datenschutz der beiden Partnerorganisationen.
-						</paragraph>
-						<paragraph>
-							Die Partnerorganisationen stellen sich gegenseitig ihre Jahresberichte zu.
-						</paragraph>
-					</paragraphs>
-				</article>
-			</articles>
-		</subsection>
-	</section>
-	<section title="Berichterstattung">
-		<articles>
-			<article title="Berichterstattung">
-				<paragraphs>
-					<paragraph>
-						Alle Organe des VSETH gemäss Art. 13 erstellen auf die erste Sitzung des Mitgliederrats nach Ablauf der Geschäftsperiode einen Jahresbericht über die abgelaufene Geschäftsperiode.
-					</paragraph>
-					<paragraph>
-						Inhalt und Verantwortung sowie zusätzliche Zwischenberichte können in den Reglementen geregelt werden.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Jahresbericht">
-				<paragraphs>
-					<paragraph>
-						Der Jahresbericht des VSETH enthält alle einzelnen Jahresberichte.
-					</paragraph>
-					<paragraph>
-						Der Jahresbericht ist für alle Mitglieder zugänglich.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Reglemente, Verordnungen und Ausführungsbestimmungen">
-		<articles>
-			<article title="Präzisierung der Statuten">
-				<paragraphs>
-					<paragraph>
-						Zur Präzisierung der vorliegenden Statuten können Reglemente, Verordnungen und Ausführungsbestimmungen gemäss Art. 49ff erlassen werden.
-					</paragraph>
-					<paragraph>
-						Reglemente, Verordnungen und Ausführungsbestimmungen sind für alle Beteiligten im gleichen Masse verbindlich wie die vorliegenden Statuten.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Reglemente">
-				<paragraphs>
-					<paragraph>
-						Reglemente können einzig vom Mitgliederrat erlassen werden.
-					</paragraph>
-					<paragraph>
-						Sie bedürfen einer expliziten Grundlage in den Statuten oder einem anderen Reglement.
-					</paragraph>
-					<paragraph>
-						Reglemente dürfen den Statuten und anderen Reglementen nicht widersprechen. Im Zweifelsfall gehen die Statuten dem Reglement vor.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Verordnungen">
-				<paragraphs>
-					<paragraph>
-						Der Fachvereinsrat, die Ausschüsse und der VSETH-Vorstand können Verordnungen erlassen.
-					</paragraph>
-					<paragraph>
-						Sie bedürfen einer expliziten Grundlage in den Statuten oder einem Reglement.
-					</paragraph>
-					<paragraph>
-						Verordnungen dürfen Reglementen nicht widersprechen. Im Zweifelsfall geht das Reglement der Verordnung vor.
-					</paragraph>
-					<paragraph>
-						Der Erlass von Verordnungen bedarf der vorgängigen Genehmigung durch die GPK.
-					</paragraph>
-					<paragraph>
-						Verordnungen müssen jeweils dem VSETH-Vorstand und allen anderen Betroffenen vor Inkraftsetzung zugestellt werden.
-					</paragraph>
-					<paragraph>
-						Verordnungen können durch Beschluss des Mitgliederrats ausser Kraft gesetzt werden.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Ausführungsbestimmungen">
-				<paragraphs>
-					<paragraph>
-						Alle Organe gemäss Art. 13 können in ihrem jeweiligen Kompetenzbereich Ausführungsbestimmungen erlassen, welche die verbindliche Anwendung der Statuten, Reglemente und Verordnungen präzisieren.
-					</paragraph>
-					<paragraph>
-						Ausführungsbestimmungen haben einzig prozeduralen oder technischen Charakter. Sie dürfen keine neuen Rechte oder Pflichten begründen.
-					</paragraph>
-					<paragraph>
-						Sie müssen jeweils dem VSETH-Vorstand und allen anderen Betroffenen vor Inkraftsetzung zugestellt werden. 
-					</paragraph>
-					<paragraph>
-						Ausführungsbestimmungen können durch Beschluss des Mitgliederrats ausser Kraft gesetzt werden.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Revisionsbestimmungen">
-		<articles>
-			<article title="Statuten">
-				<paragraphs>
-					<paragraph>
-						Änderungen an den Statuten werden, mit Ausnahme von Art. 54 und Art. 55, vom Mitgliederrat mit Zweidrittelmehrheit genehmigt.
-					</paragraph>
-					<paragraph>
-						Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit.
-					</paragraph>
-					<paragraph>
-						Der entsprechende Antrag ist mindestens 14 Tage vor der Sitzung allen Teilnehmenden gemäss Art. 17 zuzustellen.
-					</paragraph>
-					<paragraph>
-						Erfolgt der Beschluss durch eine Urabstimmung gemäss der im Mitwirkungs- und Öffentlichkeitsreglement festgelegten Bestimmungen, benötigen Änderungen an den Statuten zusätzlich zum absoluten Mehr der Stimmenden die Zustimmung der Mehrzahl der Fachvereine sowie eine Stimmbeteiligung von mindestens 30%.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Reglemente auf Grundlage der Statuten">
-				<paragraphs>
-					<paragraph>
-						Alle Reglemente, die der Mitgliederrat auf Grundlage der vorliegenden Statuten erlässt, werden mit einer Zweidrittelmehrheit genehmigt.
-					</paragraph>
-					<paragraph>
-						Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Auflösung">
-		<articles>
-			<article title="Auflösung des VSETH">
-				<paragraphs>
-					<paragraph>
-						Ein Antrag auf Auflösung des VSETH muss dem Mitgliederrat zur Vorberatung vorgelegt werden.
-					</paragraph>
-					<paragraph>
-						<changed gremium="MR" agenda_item="19.b" meeting_date="2023-05-03" implementation_date="2023-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/252444939/19b.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/272498689/Protokoll%20Voll-MR%20FS23.pdf" />
-						Unterstützt der Mitgliederrat den Antrag mit Dreiviertelmehrheit, so muss das MR-Präsidium den Auflösungsbeschluss der Urabstimmung unterbreiten.
-					</paragraph>
-					<paragraph>
-						Der Auflösungsbeschluss wird rechtskräftig, wenn das absolute Mehr der Stimmenden und der Fachvereine erreicht wird, sowie die Stimmbeteiligung mindestens 40% beträgt.
-					</paragraph>
-					<paragraph>
-						Änderungen am vorliegenden Artikel benötigen in Abweichung zu den Bestimmungen in Art. 52 eine Dreiviertelmehrheit des Mitgliederrats.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Verbandsakten und Vermögen">
-				<paragraphs>
-					<paragraph>
-						Bei Auflösung des VSETH werden die Verbandsakten gesichtet und gebunden der wissenschaftshistorischen Sammlung der ETH Zürich vermacht.
-					</paragraph>
-					<paragraph>
-						Das Verbandsvermögen wird bis zur Gründung eines dem VSETH entsprechenden Vereins hinterlegt. Der Mitgliederrat bestimmt bei welcher Institution.
-					</paragraph>
-					<paragraph>
-						Änderungen am vorliegenden Artikel benötigen in Abweichung zu den Bestimmungen in Art. 52 eine Dreiviertelmehrheit des Mitgliederrats.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Schlussbestimmungen">
-		<articles>
-			<article title="Version">
-				<paragraphs>
-					<paragraph>
-						Diese Statuten wurden vom Mitgliederrat an seiner Sitzung vom 24. November 2021 einer Totalrevision unterzogen und genehmigt.
-					</paragraph>
-					<paragraph>
-						Sie ersetzen die Statuten vom 1. Januar 2019 und treten am 1. Januar 2022 in Kraft.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Publizierung">
-				Die Statuten werden auf geeignetem Weg publiziert.
-			</article>
-		</articles>
-	</section>
+<regulation id="01" title="Statuten" short="Statuten" original_implementation_date="2025-01-01">
+    <section title="Allgemeine Bestimmungen">
+        <articles>
+            <article title="Rechtsform, Name, Sitz">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Der <quote>Verband der Schweizer Studierendenschaften</quote>, nachfolgend <quote>VSS</quote> genannt, ist ein Verein im Sinne von Art. 52ff und Art. 60ff ZGB mit Sitz in Bern. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Der VSS ist parteipolitisch und konfessionell neutral. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Zweck">
+                <text lang="de"> Der VSS bezweckt: </text>
+                <letters>
+                    <letter>
+                        <text lang="de"> die ideellen und materiellen Interessen der Studierenden auf nationaler und internationaler Ebene zu vertreten; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> die Gleichstellung, insbesondere an Hochschulen, unter Studierenden zu fördern; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> die Chancengleichheit und insbesondere die Möglichkeit zum allgemeinen Zugang zu und Abschluss der Hochschulbildung zu fördern; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> den Austausch mit nationalen und internationalen Studierendenorganisationen, mit Behörden, Standesvertretungen und anderen Interessenvertretungen. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title="Tätigkeit">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Der VSS arbeitet im Sinne des in Art. 2 definierten Zwecks. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Bei seiner Arbeit vertritt der VSS Studierende aus der ersten und zweiten Bildungsstufe gemäss Art. 11ff Verordnung des Hochschulrates über die Koordination der Lehre an den Schweizer Hochschulen aus folgenden höheren Schweizer Bildungsanstalten: </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> Universitäre Hochschulen; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> Eidgenössische Technische Hochschulen; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> Fachhochschulen; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> Pädagogische Hochschulen. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Der VSS arbeitet nicht diskriminierend. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Der VSS respektiert die Unabhängigkeit seiner Mitglieder und unterstützt sie bei gemeinsamen Aktionen und Einzelaktivitäten. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Zusammenarbeit">
+                <text lang="de"> Der VSS kann sich Organisationen anschliessen, die gleiche oder ähnliche Ziele verfolgen. </text>
+            </article>
+            <article title="Verbandssprachen">
+                <text lang="de"> Die Verbandssprachen des VSS sind Deutsch, Französisch und Italienisch. </text>
+            </article>
+        </articles>
+    </section>
+    <section title="Mitgliedschaft">
+        <articles>
+            <article title="Mitgliedschaft">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Der VSS kennt folgende Arten von Mitgliedern: </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> ordentliche Mitglieder, nachfolgenden “Sektionen” genannt; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> assoziierte Mitglieder. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Die Mitgliedschaft ist nur für juristische Personen möglich. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Mitglieder entrichten einen Mitgliederbeitrag, dessen Höhe im Mitgliedschaftsreglement festgelegt wird. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Sektionen">
+                <text lang="de"> Als Sektionen können folgende Organisationen aufgenommen werden: </text>
+                <letters>
+                    <letter>
+                        <text lang="de"> Studierendenorganisationen an akkreditierten Hochschulen in der Schweiz; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Studierendenorganisationen an höheren Bildungsanstalten, die bisher nicht akkreditiert sind; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> nationale Dachverbände von Studierendenorganisationen an akkreditierten Hochschulen. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title="Assoziierte Mitglieder">
+                <text lang="de"> Organisationen, die wichtige regionale oder fachspezifische Interessen von Studierenden vertreten, können als assoziierte Mitglieder aufgenommen werden. </text>
+            </article>
+            <article title="Mitgliedschaftsreglement">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zur Mitgliedschaft im VSS im <quote>Reglement über die Mitgliedschaft im VSS</quote>, nachfolgend <quote>Mitgliedschaftsreglement</quote> genannt, fest. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Dieses enthält mindestens Angaben zu: </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> den Voraussetzungen für eine Mitgliedschaft; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> dem Aufnahmeprozess von Mitgliedern; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> der Höhe des Mitgliederbeitrags; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> dem Ausschluss von Mitgliedern; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> dem Austritt von Mitgliedern; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> dem Erlöschen der Mitgliedschaft. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Mitwirkung der Mitglieder">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Mitglieder haben folgende Rechte der Mitwirkung: </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> das Recht auf Antrag, Vorstoss, Beschwerde und Rekurs; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> das Recht auf Öffentlichkeit; </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Sektionen haben zudem folgende Rechte der Mitwirkung: </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> Entsendung von Delegierten in die Delegiertenversammlung; </text>
+                            </letter>
+                            <letter>
+                                <text lang="de"> Entsendung von einer Delegierten beziehungsweise einem Delegierten in den Sektionsrat. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Mitwirkungs- und Öffentlichkeitsreglement">
+                <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zu den Rechten der Mitglieder im <quote>Reglement über die Verfahren der Mitwirkung und das Öffentlichkeitsprinzip im VSS</quote>, nachfolgend <quote>Mitwirkungs- und Öffentlichkeitsreglement</quote> genannt, fest. </text>
+                <letters> </letters>
+            </article>
+        </articles>
+    </section>
+    <section title="Mittel">
+        <articles>
+            <article title="Mittel">
+                <text lang="de"> Zur Verfolgung des Verbandszwecks verfügt der VSS über folgende Mittel: </text>
+                <letters>
+                    <letter>
+                        <text lang="de"> Mitgliederbeiträge gemäss Art. XX; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Einer Finanzhilfen für die Betriebsstruktur und regelmässige Aktivitäten von Dachverbänden und Koordinationsplattformen nach Art. 7 Abs. 1 KJFG des BSV; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Weitere Einnahmequellen, darunter Spenden und Sponsoring. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title="Finanzreglement">
+                <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zum Umgang mit finanziellen Mitteln im “Reglement über die Finanzen des VSS”, nachfolgend “Finanzreglement” genannt, fest. </text>
+            </article>
+            <article title="Rechnungsrevisionsstelle">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Der VSS hat eine verbandsunabhängige Rechnungsrevisionsstelle. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Die Rechnungsrevisionsstelle wird auf Antrag des VSS-Vorstands von der Delegiertenversammlung für ein Jahr gewählt. Sie unterliegt keiner Amtszeitbeschränkung. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Haftung">
+                <text lang="de"> Für Verbindlichkeiten des VSS haftet nur das Verbandsvermögen. Die Haftung der Mitglieder ist beschränkt auf den Mitgliederbeitrag. Mitglieder, welche keinen Mitgliederbeitrag bezahlen, haften nicht für den VSS. </text>
+            </article>
+        </articles>
+    </section>
+    <section title="Organisation">
+        <articles>
+            <article title="Aufbau">
+                <text lang="de"> Der VSS besteht aus: </text>
+                <letters>
+                    <letter>
+                        <text lang="de"> den Organen: </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Delegiertenversammlung (DV); </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Sektionsrat (SR); </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Finanzkommission (CoFi); </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Vorstand; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Thematischen Kommissionen; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Geschäftsprüfungskommission (GPK); </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> den Vertretungen; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> den Arbeitsgruppen (AG) </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> der Geschäftsstelle: </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> Generalsekretariat; </text>
+                    </letter>
+                    <letter>
+                        <text lang="de"> weitere Mitarbeitende. </text>
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+        <subsection title="Organe">
+            <subsubsection title="Delegiertenversammlung (DV)">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Die Delegiertenversammlung (DV) ist das oberste Organ des Verbands. Sie ist befugt, über alle Belange des VSS zu verhandeln und zu beschliessen. </text>
+                    </article>
+                    <article title="Zusammensetzung">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung setzt sich aus den stimmberechtigten Delegierten der Sektionen zusammen. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Die Anzahl Delegierter einer Sektion wird nach der Anzahl Mitglieder dieser Sektion berechnet. Die Berechnung erfolgt nach folgendem Schlüssel: </text>
+                                <letters>
+                                    <letter>
+                                        <text lang="de"> bis 1'000 Mitglieder 1 Delegierte beziehungsweise Delegierter; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> 1'001-2'500 Mitglieder 2 Delegierte; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> 2'501-5'000 Mitglieder 3 Delegierte; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> 5'001-7'500 Mitglieder 4 Delegierte; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> 7'501-10'000 Mitglieder 5 Delegierte; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> 10'001-15'000 Mitglieder 6 Delegierte; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> über 15'000 Mitglieder 7 Delegierte. </text>
+                                    </letter>
+                                </letters>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Für die Anzahl Mitglieder ist die Definition nach Art. 15 des Mitgliedschaftsreglement, massgebend. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Ist eine Person in mehreren Sektionen Mitglied, so kann sie nur einer Sektion angerechnet werden. Sie wird dabei grundsätzlich der Sektion der Hochschule oder der höheren Bildungsanstalt angerechnet, an der sie immatrikuliert ist. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Weiter nehmen als Beobachtende an der Delegiertenversammlung folgende Personen teil: </text>
+                                <letters>
+                                    <letter>
+                                        <text lang="de"> die Mitglieder des VSS-Vorstands; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> die Mitglieder der GPK; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> die Mitglieder der Finanzkommission; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> die Mitglieder der thematischen Kommissionen; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> die Mitglieder der assoziierten Mitglieder; </text>
+                                    </letter>
+                                    <letter>
+                                        <text lang="de"> das Generalsekretariat. </text>
+                                    </letter>
+                                </letters>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title="DV-Reglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Alle weiteren Bestimmungen regelt die Delegiertenversammlung selbstständig im <quote>Gremienreglement über die Delegiertenversammlung</quote>, nachfolgend <quote>DV-Reglement</quote> genannt. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Sektionsrat (SR)">
+                <articles>
+                    <article title="Definition">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Der Sektionsrat (SR) ist im Rahmen der ihm durch das <quote>Sektionsrat-Reglement</quote> zugesprochenen Kompetenzen befugt, über bestimmte Belange des VSS zu entscheiden. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Der Sektionsrat übt im Rahmen des Tagesgeschäfts die legislative Kontrolle über die Verbandstätigkeit aus. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Der Sektionsrat fördert Information und Zusammenarbeit zwischen den Mitgliedern und den Organen des VSS sowie zwischen den Mitgliedern untereinander. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title="Sektionsrat-Reglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über den Sektionsrat</quote>, nachfolgend <quote>Sektionsrat-Reglement</quote> genannt. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Dieses enthält mindestens Angaben zur Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Finanzkommission (CoFi)">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Die Finanzkommission (CoFi) ist für die strategische Budget- und Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSS verantwortlich. </text>
+                    </article>
+                    <article title="Finanzkommissionsreglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über die Finanzkommission</quote>, nachfolgend <quote>Finanzkommissionsreglement</quote> genannt. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Vorstand">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Der VSS-Vorstand leitet als Exekutive den VSS. Er führt die Geschäfte des VSS und vollzieht die von der Delegiertenversammlung und dem Sektionsrat gefassten Beschlüsse. </text>
+                    </article>
+                    <article title="Vorstandsreglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über den VSS-Vorstand</quote>, nachfolgend <quote>Vorstandsreglement</quote> genannt. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Thematische Kommissionen">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Die Delegiertenversammlung kann zur Entlastung und Ergänzung des Vorstands für bestimmte Geschäfte eine thematische Kommission einsetzen. Die thematischen Kommissionen sind Teil der Exekutive des Verbands. </text>
+                    </article>
+                    <article title="Allgemeines Kommissionsreglement">
+                        <text lang="de"> 1 Der Mitgliederrat legt die spezifischen Bestimmungen zu den Kommissionen im <quote>Allgemeinen Gremienreglement über die thematischen Kommissionen des VSS</quote>, nachfolgend <quote>Allgemeines Kommissionsreglement</quote> genannt, fest. </text>
+                        <letters>
+                            <letter>
+                                <text lang="de"> 2 Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </letter>
+                        </letters>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Geschäftsprüfungskommission (GPK)">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Die Geschäftsprüfungskommission (GPK) ist die Judikative und überwacht die Verbandstätigkeit des VSS. </text>
+                    </article>
+                    <article title="GPK-Reglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung erlässt das <quote>Gremienreglement über die Geschäftsprüfungskommission</quote>, nachfolgend <quote>GPK-Reglement</quote> genannt. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Dieses enthält mindestens Angaben zu Zusammensetzung, Beschlussfindung, materiellen Kompetenzen und Berichterstattung. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+        </subsection>
+        <subsection title="Vertretungen">
+            <articles>
+                <article title="Definition">
+                    <text lang="de"> Die Vertretungen repräsentieren den VSS im Auftrag des VSS-Vorstands in spezifischen Gremien ausserhalb des Verbands. </text>
+                </article>
+                <article title="Vertretungsreglement">
+                    <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zu den Vertretungen im <quote>Reglement über die Vertretungen des VSS</quote>, nachfolgend <quote>Vertretungsreglement</quote> genannt, fest. </text>
+                </article>
+            </articles>
+        </subsection>
+        <subsection title="Arbeitsgruppen">
+            <articles>
+                <article title="Definition">
+                    <text lang="de"> Die Delegiertenversammlung kann zeitlich begrenzte Arbeitsgruppen einsetzen. </text>
+                </article>
+                <article title="Pflichtenheft">
+                    <text lang="de"> Die Delegiertenversammlung legt weitere Bestimmungen zu jeder Arbeitsgruppe in einem Pflichtenheft fest. Dieses enthält mindestens Angaben zu: </text>
+                    <letters>
+                        <letter>
+                            <text lang="de"> Laufzeit; </text>
+                        </letter>
+                        <letter>
+                            <text lang="de"> Zusammensetzung; </text>
+                        </letter>
+                        <letter>
+                            <text lang="de"> Auftrag; </text>
+                        </letter>
+                        <letter>
+                            <text lang="de"> Berichterstattung. </text>
+                        </letter>
+                    </letters>
+                </article>
+            </articles>
+        </subsection>
+        <subsection title="Geschäftsstelle">
+            <subsubsection title="Allgemeines">
+                <articles>
+                    <article title="Definition">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Geschäftsstelle unterstützt den VSS-Vorstand in administrativen Belangen und bei Projekten. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Sie wird vom Generalsekretariat geleitet. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title="Anstellungen">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Geschäftsstelle besteht aus Mitarbeitenden. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Die Mitglieder des Generalsekretariats sind die direkten Vorgesetzten sämtlicher Mitarbeitenden des VSS. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                    <article title="Anstellungsreglement">
+                        <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zur Anstellung von Mitarbeitenden im <quote>Reglement über die Anstellungen des VSS</quote>, nachfolgend <quote>Anstellungsreglement</quote> genannt, fest. </text>
+                    </article>
+                </articles>
+            </subsubsection>
+            <subsubsection title="Generalsekretariat">
+                <articles>
+                    <article title="Definition">
+                        <text lang="de"> Dem Generalsekretariat obliegt die operative Verbandsführung nach Vorgaben des Vorstands. </text>
+                    </article>
+                    <article title="GS-Reglement">
+                        <paragraphs>
+                            <paragraph>
+                                <text lang="de"> Die Delegiertenversammlung legt die spezifischen Bestimmungen zum Generalsekretariat im <quote>Reglement über das Generalsekretariat des VSS</quote>, nachfolgend <quote>GS-Reglement</quote> genannt, fest. </text>
+                            </paragraph>
+                            <paragraph>
+                                <text lang="de"> Es enthält mindestens Angaben zur Zusammensetzung und den Pflichten. </text>
+                            </paragraph>
+                        </paragraphs>
+                    </article>
+                </articles>
+            </subsubsection>
+        </subsection>
+    </section>
+    <section title="Präzisierung der Statuten und Revisionsbestimmungen">
+        <articles>
+            <article title="Präzisierung der Statuten">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Zur Präzisierung der vorliegenden Statuten können Reglemente erlassen werden. Reglemente sind für alle Beteiligten im gleichen Masse verbindlich wie die vorliegenden Statuten. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Reglemente können einzig von der Delegiertenversammlung erlassen werden. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Sie bedürfen einer expliziten Grundlage in den Statuten oder einem anderen Reglement. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Reglemente dürfen den Statuten und anderen Reglementen nicht widersprechen. Im Zweifelsfall gehen die Statuten dem Reglement vor. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Änderung der Statuten">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Änderungen an den Statuten werden, mit Ausnahme von Art. XX, von der Delegiertenversammlung mit Zweidrittelmehrheit genehmigt. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit. </text>
+                        <letters> </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Reglemente auf Grundlage der Statuten">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Alle Reglemente, die die Delegiertenversammlung auf Grundlage der vorliegenden Statuten erlässt, werden mit einer Zweidrittelmehrheit genehmigt. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Über jeden Artikel wird auf Verlangen einzeln mit absolutem Mehr abgestimmt, die gesamten Änderungen unterliegen sodann einer Schlussabstimmung mit Zweidrittelmehrheit. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Publizierung">
+                <text lang="de"> Die Statuten und Reglemente werden auf geeignetem Weg publiziert. </text>
+            </article>
+        </articles>
+    </section>
+    <section title="Schlussbestimmungen">
+        <articles>
+            <article title="Auflösung">
+                <paragraphs>
+                    <paragraph>
+                        <text lang="de"> Die Delegiertenversammlung kann mit einer Dreiviertelmehrheit die Auflösung des VSS beschliessen. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Bei Auflösung des VSS werden die Verbandsakten gesichtet und gebunden dem Bundesarchiv vermacht. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Das Verbandsvermögen wird einer wegen Gemeinnützigkeit oder öffentlichen Zwecks steuerbefreiten juristischen Person mit Sitz in der Schweiz vermacht. Die Delegiertenversammlung bestimmt, an welche juristische Person. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Im Falle einer Fusion mit einem anderen Verband kann diese nur mit einem anderen wegen Gemeinnützigkeit oder öffentlichen Zwecks von der Steuerpflicht befreiten juristischen Person mit Sitz in der Schweiz erfolgen. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text lang="de"> Änderungen am vorliegenden Artikel benötigen in Abweichung zu den Bestimmungen in Art. XX eine Dreiviertelmehrheit der Delegiertenversammlung. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title="Version">
+                <text lang="de"> 1 Diese Statuten wurden der 183. Delegiertenversammlung einer Totalrevision unterzogen und genehmigt. </text>
+                <letters>
+                    <letter>
+                        <text lang="de"> 2 Sie ersetzen die Statuten von 2014 und treten am 01.01.2025 in Kraft. </text>
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
 </regulation>
-<!-- vim: set ts=2 sw=2 noet : -->

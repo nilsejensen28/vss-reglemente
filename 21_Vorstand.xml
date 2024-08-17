@@ -1,504 +1,347 @@
-<regulation id="21" title="Gremienreglement über den VSETH-Vorstand" short="Vorstandsreglement" original_implementation_date="2022-01-01">
-	<preamble>
-		Der Mitgliederrat, gestützt auf Art. 24 der Statuten, beschliesst:
-	</preamble>
-	<section title="Zusammensetzung">
-		<articles>
-			<article title="Mitglieder">
-				<paragraphs>
-					<paragraph>
-						Der Vorstand besteht aus mindestens vier und höchstens zwölf Mitgliedern.
-					</paragraph>
-					<paragraph>
-						Folgende Ressorts müssen mindestens besetzt sein: Präsidium, Vizepräsidium, Quästur und Geschäftsführendes Sekretariat.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Amtsperiode, Amtszeit">
-				<paragraphs>
-					<paragraph>
-						Die reguläre Amtsperiode eines Vorstandsmitglieds beginnt und endet jeweils am Dienstag der ersten Semesterwoche des Herbstsemesters.
-					</paragraph>
-					<paragraph>
-						Die totale Amtszeit eines Vorstandsmitglieds, mit Ausnahme des Geschäftsführenden Sekretärs bzw. der Geschäftsführenden Sekretärin, ist auf drei Jahre beschränkt.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Wählbarkeit">
-				<paragraphs>
-					<paragraph>
-						Vorstandsmitglieder müssen, vorbehaltlich Abs. 2, VSETH-Mitglieder der Kategorie a gemäss Art. 4 der Statuten sein und müssen eine Basisprüfung oder eine äquivalente Studienleistung bestanden haben.
-					</paragraph>
-					<paragraph>
-						Vorstandsmitglieder können ausnahmsweise Mitglieder der Kategorien b oder g gemäss Art. 4 der Statuten sein, sofern diese Gruppe im Vorstand nicht mehr als zwei Mitglieder ausmacht. Sie dürfen keine Aufgaben in den Ressorts Präsidium und Hochschulpolitik übernehmen. Mitglieder der Kategorie g müssen eine zur Basisprüfung äquivalente Studienleistung bestanden haben.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Der Quästor bzw. die Quästorin darf nicht gleichzeitig Quästor bzw. Quästorin in einem Fachverein, einer assoziierten Organisation oder einer Partnerorganisation des VSETH sein.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Vorstandmitglieder ad Interim">
-				<paragraphs>
-					<paragraph>
-						Als Vorstandsmitglieder ad interim werden Personen bezeichnet, welche zwischen den MR-Sitzungen vom FR gewählt werden.
-					</paragraph>
-					<paragraph>
-						Vorstandsmitglieder ad interim haben die gleichen Rechte und Pflichten wie vom MR gewählte Vorstandsmitglieder.
-					</paragraph>
-					<paragraph>
-						Es können maximal drei Vorstandsmitglieder ad interim zur selben Zeit im Amt sein.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Trainee">
-				<paragraphs>
-					<paragraph>
-						Als Trainees werden Personen bezeichnet, welche Interesse an der Vorstandstätigkeit haben und einen umfassenden Einblick in den Vorstand erhalten möchten.
-					</paragraph>
-					<paragraph>
-						Trainees können vom Vorstand ernannt werden.
-					</paragraph>
-					<paragraph>
-						Es können nur Mitglieder als Trainees ernannt werden, welche die Bedingungen gemäss Art. 3 erfüllen.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Organisation">
-		<articles>
-			<article title="Präsidium">
-				<paragraphs>
-					<paragraph>
-						Der Präsident oder die Präsidentin des Vorstands ist zugleich Präsident bzw. Präsidentin des Verbands.
-					</paragraph>
-					<paragraph>
-						Er oder sie vertritt den Verband nach aussen, soweit nicht die Statuten oder der Vorstand andere Personen mit dieser Aufgabe betrauen.
-					</paragraph>
-					<paragraph>
-						Der Vizepräsident oder die Vizepräsidentin ist die Stellvertretung des Präsidenten oder der Präsidentin. Er oder sie kann den Präsidenten oder die Präsidentin in sämtlichen Belangen unterstützen.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Ressorts">
-				<paragraphs>
-					<paragraph>
-						Die Geschäfte des Vorstands sind in Ressorts aufgeteilt.
-					</paragraph>
-					<paragraph>
-						Die Verteilung der Ressorts auf die Vorstandsmitglieder erfolgt durch den Vorstand.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Es bestehen die Ressorts:
-						<letters>
-							<letter>
-								Präsidium;
-							</letter>	
-							<letter>
-								Vizepräsidium;
-							</letter>
-							<letter>
-								Quästur;
-							</letter>
-							<letter>
-								Geschäftsführendes Sekretariat;
-							</letter>
-							<letter>
-								Events;
-							</letter>
-							<letter>
-								Hochschulpolitik;
-							</letter>
-							<letter>
-								Infrastruktur;
-							</letter>
-							<letter>
-								IT;
-							</letter>
-							<letter>
-								Internal Affairs;
-							</letter>
-							<letter>
-								Kommunikation.
-							</letter>
-						</letters>
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Ressortverteilung" inserted="">
-				<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-				<paragraphs>
-					<paragraph>
-						Die Verteilung der Ressorts wird an der ersten Vorstandssitzung nach der Wahl beschlossen.
-					</paragraph>
-					<paragraph>
-						Die Ressorts Präsidium, Vizepräsidium, Quästur und Geschäftsführendes Sekretariat werden direkt bei der Wahl oder Anstellung festgelegt und können nicht von anderen Personen ausgeübt werden.
-					</paragraph>
-					<paragraph>
-						Die übrigen Ressorts können unter Berücksichtigung der persönlichen Vorlieben, der Arbeitslast und der gewählten Profile frei verteilt werden.
-					</paragraph>
-					<paragraph>
-						Die Wahl von bis zu zwei Ressorts abgesehen vom Präsidium und der Quästur ist möglich.
-					</paragraph>
-					<paragraph>
-						Die Arbeitsaufteilung innerhalb der Ressorts geschieht individuell in jedem Ressort. Der übrige Vorstand wird über die Aufteilung informiert.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Profile">
-				<paragraphs>
-					<paragraph>
-						Profile geben an, in welchem zeitlichen Ausmass sich die einzelnen Vorstandsmitglieder an der Vorstandsarbeit beteiligen.
-					</paragraph>
-					<paragraph>
-						Alle Kandidierenden müssen vor ihrer Wahl festlegen, welches Vorstandsprofil gemäss Art. 9ff sie wählen. Die geschäftsführende Sekretärin, bzw. der geschäftsführende Sekretär ist von dieser Regelung ausgenommen.
-					</paragraph>
-					<paragraph>
-						Auf Antrag des Vorstandsmitglieds oder des Präsidenten bzw. der Präsidentin kann der FR das Vorstandsmitglied für die Zukunft in ein anderes Profil einstufen. Dies kann pro Vorstandsmitglied höchstens einmal pro Semester stattfinden.
-					</paragraph>
-					<paragraph>
-						Bei zu hoher Arbeitslast in einem Ressort ist mit dem Präsidenten bzw. der Präsidentin bei der Prioritätensetzung Rücksprache zu halten und eine Entlastung durch andere Vorstandsmitglieder zu erwägen.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Profil “Maximal”"> <!-- TODO -->
-				<paragraphs>
-					<paragraph>
-						Folgende Leistungen werden von Vorständen im Profil <quote>Maximal</quote> erwartet:
-						<letters>
-							<letter>
-								Präsenz an den meisten Verbandsanlässen (Ausnahmen aus wichtigen Gründen möglich);
-							</letter>
-							<letter>
-								Umsetzung neuer Projekte;
-							</letter>
-							<letter>
-								Fünf Tage Büroanwesenheit, wovon wenn möglich ein Tag an jedem Hauptstandort;
-							</letter>
-							<letter>
-								Mittlere Wochenarbeitszeit von 40h;
-							</letter>
-							<letter>
-								In Ausnahmesituationen innerhalb kurzer Zeit verfügbar.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Die empfohlene Studienleistung beträgt 0 ECTS.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="19.e" meeting_date="2023-05-03" implementation_date="2023-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/252444933/19e.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/272498689/Protokoll%20Voll-MR%20FS23.pdf" />
-						Zusätzlich zu den Ferienwochen stehen keine weiteren Lernwochen gemäss Art. 13 zur Verfügung.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Profil “Mittel”"> <!-- TODO -->
-				<paragraphs>
-					<paragraph>
-						Folgende Leistungen werden von Vorständen im Profil <quote>Mittel</quote> erwartet:
-						<letters>
-							<letter>
-								Präsenz an vielen Verbandsanlässen;
-							</letter>
-							<letter>
-								Umsetzung neuer Projekte;
-							</letter>
-							<letter>
-								Drei Tage Büroanwesenheit, wovon wenn möglich ein Tag an jedem Hauptstandort;
-							</letter>
-							<letter>
-								Mittlere Wochenarbeitszeit 30h.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Die empfohlene Studienbelastung beträgt 12 ECTS pro Semester.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="19.e" meeting_date="2023-05-03" implementation_date="2023-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/252444933/19e.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/272498689/Protokoll%20Voll-MR%20FS23.pdf" />
-						Zusätzlich zu den Ferienwochen stehen 5 Lernwochen pro Jahr gemäss Art. 13 zur Verfügung.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Profil “Minimal”"> <!-- TODO -->
-				<paragraphs>
-					<paragraph>
-						Folgende Leistungen werden von Vorständen im Profil “Minimal” erwartet:
-						<letters>
-							<letter>
-								Präsenz an einigen Verbandsanlässen;
-							</letter>
-							<letter>
-								Ein Tag Büroanwesenheit;
-							</letter>
-							<letter>
-								Mittlere Wochenarbeitszeit 20h.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Die empfohlene Studienbelastung beträgt 24 ECTS pro Semester.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="19.e" meeting_date="2023-05-03" implementation_date="2023-06-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/252444933/19e.pdf" minutes_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-05-03+FS?preview=/223674432/272498689/Protokoll%20Voll-MR%20FS23.pdf" />
-						Zusätzlich zu den Ferienwochen stehen 14 Lernwochen pro Jahr gemäss Art. 13 zur Verfügung.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Ferienregelung">
-				<paragraphs>
-					<paragraph>
-						Alle gewählten Vorstände haben die Möglichkeit bis zu vier Wochen Ferien zu nehmen.
-					</paragraph>
-					<paragraph>
-						Die Wochen sind in Absprache mit dem Präsidenten bzw. der Präsidentin, respektive für den Präsidenten oder die Präsidentin in Absprache mit dem Vizepräsidenten bzw. der Vizepräsidentin und dem geschäftsführenden Sekretär bzw. der geschäftsführenden Sekretärin, zu wählen.
-					</paragraph>
-					<paragraph>
-						In der Regel sollen maximal zwei zusammenhängende Wochen Ferien genommen werden.
-					</paragraph>
-					<paragraph>
-						Die Ferien sollen in der Regel in der vorlesungsfreien Zeit geplant werden und kein wichtiger Verbandsanlass soll in dieser Zeit liegen.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Lernwochen">
-				<paragraphs>
-					<paragraph>
-						Den gewählten Vorstandsmitgliedern stehen abhängig von ihrem jeweiligen Profil zusätzlich zu den Ferien Lernwochen zu, in denen das Studium höchste Priorität hat.
-					</paragraph>
-					<paragraph>
-						Die Anzahl der Vorstandsmitgliedern zustehenden Lernwochen ist in den jeweiligen Profilen definiert.
-					</paragraph>
-					<paragraph>
-						Auch in Lernwochen wird grundsätzlich die Teilnahme an Vorstandssitzungen sowie das Lesen und Beantworten von E-Mails und die telefonische Erreichbarkeit erwartet.
-					</paragraph>
-					<paragraph>
-						Weitere Sitzungen und Treffen sollen nach Möglichkeit ausserhalb der Lernwochen oder auf Randstunden gelegt werden.
-					</paragraph>
-					<paragraph>
-						Projekte der Ressorts, welche während der Lernzeit oder kurz danach anfallen, müssen sorgfältig geplant und sinnvoll umgesetzt werden.
-					</paragraph>
-					<paragraph>
-						Die Einteilung der Lernwochen geschieht in Absprache mit dem Präsidium frühzeitig.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Aufgaben des VSETH-Vorstands">
-				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-				<paragraphs>
-					<paragraph>
-						Der Mitgliederrat legt die spezifischen Bestimmungen zu den Aufgaben des Vorstandes im <quote>Reglement über die Aufgaben des VSETH-Vorstandes</quote> fest.
-					</paragraph>
-					<paragraph>
-						Der Mitgliederrat erlässt für jedes Ressort des Vorstandes, mit Ausnahme des Vizepräsidiums, ein separates <quote>Reglement über die Arbeit im Ressort</quote>.
-					</paragraph>
-					<paragraph>
-						Dieses enthält mindestens Angaben zu den Aufgaben des Ressorts und deren Priorisierung.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Sitzungen">
-		<articles>
-			<article title="Termine">
-				Vorstandssitzungen finden in der Regel einmal wöchentlich, mindestens aber einmal im Monat statt.
-			</article>
-			<article title="Einberufung">
-				<paragraphs>
-					<paragraph>
-						Das Präsidium lädt zur Sitzung ein.
-					</paragraph>
-					<paragraph>
-						Auf Begehren eines Vorstandsmitglieds ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von fünf Tagen statt.
-					</paragraph>
-					<paragraph>
-						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Die Traktandenliste wird den Vorstandsmitgliedern, sämtlichen Fachvereinen, Teams, Kommissionen und Ausschüssen sowie der GPK zugestellt.
-					</paragraph>
-					<paragraph>
-						Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Beschlussfindung">
-				<paragraphs>
-					<paragraph>
-						Der Vorstand entscheidet als Kollegium.
-					</paragraph>
-					<paragraph>
-						Der Vorstand vertritt die Beschlüsse gemeinsam gegen aussen.
-					</paragraph>
-					<paragraph>
-						Der Vorstand ist beschlussfähig, wenn mindestens drei Fünftel der Vorstandsmitglieder anwesend sind.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Protokoll">
-				<paragraphs>
-					<paragraph>
-						Es ist an jeder Vorstandssitzung ein Diskussionsprotokoll nach Art. 44 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
-					</paragraph>
-					<paragraph>
-						Protokolle werden nach der Genehmigung gemäss Art. 47 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
-					</paragraph>
-					<paragraph>
-						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Protokolle werden nach der Genehmigung sämtlichen Fachvereinen, Teams, Kommissionen und Ausschüssen sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Kompetenzen">
-		<articles>
-			<article title="Aufsicht, Weisungsrecht">
-				<paragraphs>
-					<paragraph>
-						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Der Vorstand übt die Aufsicht über die verschiedenen Ressorts, das AVES, die Kommissionen, die Vertretungen, das Informationsmedium, die Teams und die Arbeitsgruppen aus.
-					</paragraph>
-					<paragraph>
-						Der Vorstand hat gegenüber diesen Gremien ein Weisungsrecht.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Verordnungen, Ausführungsbestimmungen">
-				<deleted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-			</article>
-			<article title="Informationsmedium">
-				<paragraphs>
-					<paragraph>
-						Der Vorstand ist für die Führung des Informationsmediums verantwortlich.
-					</paragraph>
-					<paragraph>
-						Das Informationsmedium muss alle reglementarisch vorgeschriebenen Mitteilungen des VSETH termingerecht veröffentlichen.
-					</paragraph>
-					<paragraph>
-						Die Verordnung zum Informationsmedium umfasst mindestens folgende Punkte:
-						<letters>
-							<letter>
-								Art des Informationsmediums;
-							</letter>
-							<letter>
-								Erscheinungsrhythmus;
-							</letter>
-							<letter>
-								Aufzählung aller reglementarischen Verpflichtungen:
-								<numerals>
-									<numeral>
-										Verfügbarkeit Jahresbericht;
-									</numeral>
-									<numeral>
-										Verfügbarkeit Statuten;
-									</numeral>
-									<numeral>
-										Sitzungstermine MR.
-									</numeral>
-								</numerals>
-							</letter>
-						</letters>
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Dossierverantwortliche">
-				<deleted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-			</article>
-			<article title="Teams" inserted="">
-				<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-				Jedes Ressort des Vorstands kann durch maximal ein Team nach Art. 24a der Statuten unterstützt werden.
-			</article>
-			<article title="Arbeitsgruppen">
-				<paragraphs>
-					<paragraph>
-						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Der Vorstand kann zeitlich begrenzte Arbeitsgruppen einsetzen, um zur Ausführung eines spezifischen Geschäftes weitere Personen hinzuzuziehen.
-					</paragraph>
-					<paragraph>
-						Der Vorstand hält die spezifischen Zuständigkeiten einer Arbeitsgruppe schriftlich fest, wobei mindestens folgende Punkte zu regeln sind:
-						<letters>
-							<letter>
-								Aufgabenbeschreibung;
-							</letter>
-							<letter>
-								<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-								geplantes Enddatum;
-							</letter>
-							<letter>
-								Kontaktperson im Vorstand;
-							</letter>
-							<letter>
-								Berichterstattung.
-							</letter>
-						</letters>
-					</paragraph>
-					<paragraph>
-						Die Leitung einer Arbeitsgruppe wird vom Vorstand bestimmt.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Beim Erreichen des geplanten Enddatums entscheidet der Vorstand über die Auflösung, die Festlegung eines neuen Enddatums oder die Fortführung des Geschäfts in anderer Form.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
-	<section title="Berichterstattung">
-		<articles>
-			<article title="Vorstandsmitteilungen">
-				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-				<paragraphs>
-					<paragraph>
-						Der Vorstand informiert regelmässig mittels Vorstandsmitteilungen den FR über seine Tätigkeit. Der Bericht umfasst alle relevanten Aktivitäten der Vorstandsmitglieder und ihrer Teams seit dem letzten Zeitpunkt, an welchem berichtet wurde. Ausnahmen von der Informationspflicht sind in Art. 49 des Mitwirkungs- und Öffentlichkeitsreglements geregelt.
-					</paragraph>
-					<paragraph>
-						Die Vorstandsmitteilungen gemäss Abs. 1 bilden die Grundlage für die Rechtfertigung der Vorstands- und Teamarbeit vor dem FR.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Halbjahresberichte">
-				<paragraphs>
-					<paragraph>
-						<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Im Halbjahresbericht des Vorstands führt jedes Ressort seine behandelten Geschäfte auf. Dies umfasst die Arbeit der Vorstandsmitglieder und des Teams in einem Ressort.
-					</paragraph>
-					<paragraph inserted="">
-						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Zusätzlich zum Halbjahresbericht des Ressorts gemäss Abs. 1 hat jedes Vorstandsmitglied zuhanden des MR einen persönlichen Halbjahresbericht über die eigene Tätigkeit im Verband abzugeben.
-					</paragraph>
-					<paragraph>
-						Der erste Bericht behandelt die Periode von Januar bis zum Ende der regulären Amtsperiode gemäss Art. 2. Der zweite Bericht behandelt die Periode ab Beginn der regulären Amtsperiode bis und mit Dezember.
-					</paragraph>
-					<paragraph>
-						<inserted gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-						Der persönliche und ressortspezifische Halbjahresbericht bilden zusammen die Grundlage für die Entlastung des Vorstandsmitglieds.
-					</paragraph>
-				</paragraphs>
-			</article>
-			<article title="Jahresbericht">
-				<changed gremium="MR" agenda_item="15.5g" meeting_date="2023-11-22" implementation_date="2024-01-01" motion_link="https://wiki.vseth.ethz.ch/display/0902MR/2023-11-22+Budget?preview=/296091745/309657662/15_5g_Vorstand.pdf"/>
-				Der Jahresbericht setzt sich aus den ressortspezifischen Halbjahresberichten des Vorstands in einem Kalenderjahr zusammen.
-			</article>
-		</articles>
-	</section>
-	<section title="Schlussbestimmungen">
-		<articles>
-			<article title="Revisionsbestimmung">
-				Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 53 der Statuten.
-			</article>
-			<article title="Version">
-				<paragraphs>
-					<paragraph>
-						Dieses Reglement wurde vom Mitgliederrat an seiner Sitzung vom 24. November 2021 einer Totalrevision unterzogen und genehmigt.
-					</paragraph>
-					<paragraph>
-						Es tritt am 1. Januar 2022 in Kraft.
-					</paragraph>
-				</paragraphs>
-			</article>
-		</articles>
-	</section>
+<regulation id="21" title="Gremienreglement über den Vorstand" short="Vorstandsreglement" original_implementation_date="2025-01-01">
+<section title="Zusammensetzung">
+<articles>
+<article title="Zusammensetzung">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Der Vorstand setzt sich aus dem Co-Präsidium und fünf weiteren Vorstandsmitgliedern zusammen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Bleiben Sitze vakant, muss es bei einer allfälligen Besetzung durch Nachwahlen ohne Abwahlen möglich sein, die Quoten einzuhalten.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Quoten im Vorstand">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Bei einem vollbesetzten Vorstand muss darauf geachtet werden, dass:
+</text>
+<letters>
+<letter>
+<text lang="de">
+keine Geschlechtsidentität mit mehr als 4 Sitzen vertreten ist und;
+</text>
+</letter>
+<letter>
+<text lang="de">
+zwei Sprachregionen des Verbandes mit mindestens zwei Personen vertreten sind.
+</text>
+</letter>
+</letters>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Hochschultypus “Fachhochschule” hat einen Vertretungsanspruch von einem Sitz im Vorstand. Er kann auf diesen Anspruch verzichten.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+ Der Hochschultypus “Pädagogische Hochschule” hat einen Vertretungsanspruch von einem Sitz im Vorstand. Er kann auf diesen Anspruch verzichten.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Hochschultypus “Eidgenössische Technische Hochschule” hat einen Vertretungsanspruch von einem Sitz im Vorstand. Er kann auf diesen Anspruch verzichten.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Quoten im Co-Präsidium">
+<text lang="de">
+Bei einem vollbesetzten Co-Präsidium:
+</text>
+<letters>
+<letter>
+<text lang="de">
+dürfen beide Personen nicht gleicher Geschlechtsidentität sein und;
+</text>
+</letter>
+<letter>
+<text lang="de">
+sollen nach Möglichkeit zwei Sprachregionen des Verbands vertreten sein.
+</text>
+</letter>
+</letters>
+</article>
+</articles>
+</section>
+<section title="Organisation">
+<articles>
+<article title="Co-Präsidium">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Das Co-Präsidium des Vorstands ist zugleich Co-Präsidium des Verbands.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Das Co-Präsidium  vertritt den Verband nach aussen, soweit nicht die Statuten oder der Vorstand andere Personen mit dieser Aufgabe betrauen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Die Mitglieder des Co-Präsidiums teilen sich die Arbeit wie folgt auf:
+</text>
+<letters>
+<letter>
+<text lang="de">
+Ein Co-Präsidiumsmitglied waltet als direkte*r Vorgesetzte*r des Generalsekretariats und ist für dessen Führung sowie für die Finanzen zuständig. Ausserdem nimmt es die Stellvertretung und Mitverantwortung von Vorstandsressorts wahr.
+</text>
+</letter>
+<letter>
+<text lang="de">
+Ein Co-Präsidiumsmitglied ist für die Führung des Vorstands sowie für die Vertretungen des VSS zuständig. Ausserdem nimmt es die Stellvertretung und Mitverantwortung von Vorstandsressorts wahr.
+</text>
+</letter>
+</letters>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Ressorts">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Die Geschäfte des Vorstands sind in Ressorts aufgeteilt.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Die Verteilung und der Inhalt der Ressorts erfolgt durch den Vorstand.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Die Inhalte der Ressorts müssen den Prioritäten der Verbandsarbeit entsprechen.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title="Aufgaben">
+<articles>
+<article title="Allgemeine Aufgaben">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Der VSS-Vorstand trägt als Gremium die Verantwortung für die Geschäfte des Verbandes. Ihm obliegt die strategische Verbandsführung gemäss den Entscheidungen der DV und des Sektionsrats.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Vorstand vertritt den VSS nach aussen als Kollegialgremium.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Jedes Vorstandsmitglied ist  verpflichtet, sich über die Tätigkeiten der anderen Vorstandsmitglieder zu informieren.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Die Vorstandsmitglieder führen ihre Aufgaben selbständig nach Massgabe ihrer Pflichten aus.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Vorstandsmitglieder vertreten den Vorstand in ihrem Arbeitsbereich und, falls vorhanden, die ihnen zugewiesenen Kommissionen.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Aufgaben Co-Präsidium">
+<text lang="de">
+Das Co-Präsidium
+</text>
+<letters>
+<letter>
+<text lang="de">
+koordiniert die Arbeit des Vorstands;
+</text>
+</letter>
+<letter>
+<text lang="de">
+leitet die Sektionsratssitzungen;
+</text>
+</letter>
+<letter>
+<text lang="de">
+ist für die Personalführung des Generalsekretariats zuständig;
+</text>
+</letter>
+<letter>
+<text lang="de">
+stellt den Informationsfluss zwischen den Vorstandsmitgliedern und dem Generalsekretariat sicher.
+</text>
+</letter>
+</letters>
+</article>
+<article title="Austausch">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Der Vorstand hält regelmässigen Kontakt zu bildungspolitischen Gremien, Institutionen und Organisationen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Er pflegt die Beziehungen zu den Kommissionen mit einer verantwortlichen Person pro Kommission.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Er setzt bei Bedarf Expertisegruppen zu seiner Beratung ein.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Präsenz an Sitzungen">
+<text lang="de">
+Der Vorstand:
+</text>
+<letters>
+<letter>
+<text lang="de">
+nimmt aktiv an den Vorstandssitzungen teil;
+</text>
+</letter>
+<letter>
+<text lang="de">
+nimmt nach Bedarf an den Sitzungen des Sektionsrats teil;
+</text>
+</letter>
+<letter>
+<text lang="de">
+nimmt an den Delegiertenversammlungen teil;
+</text>
+</letter>
+<letter>
+<text lang="de">
+bereitet die Sektionsratssitzungen und die Delegiertenversammlungen zusammen mit dem Generalsekretariat vor.
+</text>
+</letter>
+</letters>
+</article>
+<article title="Angestellte">
+<text lang="de">
+Der Vorstand stellt Mitarbeitende ein, amtet als Arbeitgeber sämtlichen beim VSS angestellten Personals und ist für die Erstellung und Anpassung der Lohnsysteme zuständig.
+</text>
+</article>
+<article title="Berichterstattung">
+<text lang="de">
+Der Vorstand informiert mittels Jahresbericht über seine Tätigkeiten.
+</text>
+</article>
+</articles>
+</section>
+<section title="Sitzungen">
+<articles>
+<article title="Termine">
+<text lang="de">
+Der Vorstand trifft sich in der Regel einmal alle zwei Wochen zur Besprechung der laufenden Geschäfte. Bei Bedarf werden zusätzliche Sitzungen durchgeführt.
+</text>
+</article>
+<article title="Durchführung">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Die Sitzungsleitung und Einladung obliegen dem Co-Präsidium. Ist kein Mitglied des Co-Präsidiums anwesend, bestimmt der Vorstand ein anderes Vorstandsmitglied als Sitzungsleitung.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Das Generalsekretariat ist mit beratender Stimme vertreten. 
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Weitere Personen können eingeladen werden.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Beschlussfindung">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Vorstandsmitglieder haben Stimm- und Antragsrecht.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Das Generalsekretariat hat Antragsrecht.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Vorstand entscheidet als Kollegium.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Vorstand vertritt die Beschlüsse gemeinsam nach aussen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Der Vorstand ist beschlussfähig, wenn mehr als die Hälfte des Vorstandes anwesend ist.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title="Protokoll">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Es ist an jeder Vorstandssitzung ein Diskussionsprotokoll nach Art. 35 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Das Generalsekretariat ist verantwortlich für die Erstellung des Protokolls.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Protokolle werden nach der Genehmigung sämtlichen Sektionen und Organen  sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title="Schlussbestimmungen">
+<articles>
+<article title="Revisionsbestimmungen">
+<text lang="de">
+Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
+</text>
+</article>
+<article title="Version">
+<paragraphs>
+<paragraph>
+<text lang="de">
+Dieses Reglement wurde von der 183.  Delegiertenversammlung erlassen.
+</text>
+</paragraph>
+<paragraph>
+<text lang="de">
+Es tritt am 01.01.2025 in Kraft.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
 </regulation>
-<!-- vim: set ts=2 sw=2 noet : -->

@@ -281,7 +281,7 @@ def parse_paragraphs(text: dict, xml_file: str):
                     current_paragraph[language] = current_paragraph[language][2:]
         else:
             for language in LANGUAGES:
-                current_paragraph[language] += line[language]
+                current_paragraph[language] += "\n" + line[language]
     # Parse the last paragraph
     if current_paragraph[LANGUAGES[0]] != "":
         open_tag("paragraph", xml_file)

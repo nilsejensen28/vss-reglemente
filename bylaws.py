@@ -12,12 +12,15 @@ def XinlcudeLoader(href, parse, encoding=None, parser=etree.XMLParser(remove_com
     ret.attrib["filename"] = href
     return ret
 
-filename = None
 
+filename = None
+LANGUAGES = ["de", "fr"]
 
 # Custom error function that prints a lot of context helpful when debuging a malformed regulation.
+
+
 def throw_error(message: str, element: etree.ElementBase):
-    print("Error: {}".format(message)) 
+    print("Error: {}".format(message))
     print("element: {}".format(element))
     print("Tag backtrace:")
     parent = element
@@ -54,7 +57,8 @@ def throw_error(message: str, element: etree.ElementBase):
 
 # Parses an XML document to a Bylaws or Regulation object depending on the top level element.
 def parse(input_filename):
-    tree = etree.parse(input_filename, parser=etree.XMLParser(remove_comments=True))
+    tree = etree.parse(
+        input_filename, parser=etree.XMLParser(remove_comments=True))
     global filename
     filename = input_filename
     ElementInclude.include(tree, loader=XinlcudeLoader)
@@ -64,7 +68,8 @@ def parse(input_filename):
         case "regulation":
             return Regulation(tree.getroot())
         case _:
-            throw_error("Only bylaws and regulations can be root", tree.getroot())
+            throw_error("Only bylaws and regulations can be root",
+                        tree.getroot())
 
 
 # Regulation AST
@@ -98,23 +103,29 @@ Attributes:
 - regulations: Ordered list of regulations contained in the bylaws
 - element: XML element represented by this object
 """
+
+
 class Bylaws:
     def __init__(self, element: etree.ElementBase) -> None:
         # Sanity
-        assert(element.tag == "bylaws")
+        assert (element.tag == "bylaws")
         self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
             throw_error("Bylaws may not contain text", element)
         if not is_empty(element.tail):
-            throw_error("Bylaws may not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("Bylaws must contain a title", element)
+            throw_error("Bylaws may not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(f"Bylaws must contain a title_{language}", element)
         ensure_inserted_not_present(element)
 
         # Values
-        self.title = element.get("title")
+        self.title = dict()
+        for language in LANGUAGES:
+            self.title[language] = element.get(f"title_{language}")
         if is_empty(element.get("filename")):
             self.filename = filename
         else:
@@ -142,7 +153,7 @@ class Bylaws:
     def number_footnotes_pass(self):
         for regl in self.regulations:
             regl.number_footnotes_pass(0)
-    
+
     def latest_change_pass(self):
         latest_changes = []
         for regl in self.regulations:
@@ -171,35 +182,49 @@ Attributes:
  - sections: Ordered list of sections
  - element: XML element represented by this object
 """
+
+
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
         # Sanity
-        assert(element.tag == "regulation")
+        assert (element.tag == "regulation")
         self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
             throw_error("a regulation may not contain text", element)
         if not is_empty(element.tail):
-            throw_error("a regulation may not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("a regulation must have a title", element)
+            throw_error("a regulation may not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"a regulation must have a {language} title", element)
         if is_empty(element.get("id")):
             throw_error("a regulation must contain an id", element)
         if is_empty(element.get("original_implementation_date")):
-            throw_error("a regulation must specify its original implementation date", element)
+            throw_error(
+                "a regulation must specify its original implementation date", element)
         ensure_inserted_not_present(element)
 
         # Values
-        self.title = element.get("title")
-        if is_empty(element.get("short")):
-            self.short = None
-        else:
-            self.short = element.get("short")
-        if is_empty(element.get("abbrev")):
-            self.abbrev = None
-        else:
-            self.abbrev = element.get("abbrev")
+        self.title = dict()
+        self.short = dict()
+        self.abbrev = dict()
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"a regulation must have a {language} title", element)
+            self.title[language] = element.get(f"title_{language}")
+            if is_empty(element.get(f"short_{language}")):
+                self.short[language] = None
+            else:
+                self.short[language] = element.get(f"short_{language}")
+            if is_empty(element.get(f"abbrev_{language}")):
+                self.abbrev[language] = None
+            else:
+                self.abbrev[language] = element.get(f"abbrev_{language}")
+
         self.id = element.get("id")
         self.is_toplevel = element.getparent() is not None
 
@@ -210,9 +235,11 @@ class Regulation:
         self.filename = self.filename.replace(".xml", "")
 
         try:
-            self.original_implementation_date = date.fromisoformat(element.get("original_implementation_date"))
+            self.original_implementation_date = date.fromisoformat(
+                element.get("original_implementation_date"))
         except Exception as e:
-            throw_error(f"the original_implementation_date attribute \"{element.get('original_implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
+            throw_error(
+                f"the original_implementation_date attribute \"{element.get('original_implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
         self.date_last_update = date.today()
 
         self.articles = []
@@ -227,18 +254,22 @@ class Regulation:
                     if len(self.sections) == 0:
                         self.articles = process_articles(child, self)
                     else:
-                        throw_error("a regulation may only contain articles before any sections", element)
+                        throw_error(
+                            "a regulation may only contain articles before any sections", element)
                 case _:
-                    throw_error("a regulation only contain articles, a preamble and sections", element)
+                    throw_error(
+                        "a regulation only contain articles, a preamble and sections", element)
 
     def numbering_pass(self):
         art_counter, art_inserted_counter = 0, 0
         for art in self.articles:
-            art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
-    
+            art_counter, art_inserted_counter = art.numbering_pass(
+                art_counter, art_inserted_counter)
+
         sec_counter, sec_inserted_counter = 0, 0
         for sec in self.sections:
-            sec_counter, sec_inserted_counter, art_counter, art_inserted_counter = sec.numbering_pass(sec_counter, sec_inserted_counter, art_counter, art_inserted_counter)
+            sec_counter, sec_inserted_counter, art_counter, art_inserted_counter = sec.numbering_pass(
+                sec_counter, sec_inserted_counter, art_counter, art_inserted_counter)
 
     def collect_footnotes_pass(self):
         if hasattr(self, "preamble"):
@@ -251,7 +282,7 @@ class Regulation:
     def number_footnotes_pass(self, counter: int) -> int:
         if hasattr(self, "preamble"):
             counter = self.preamble.number_footnotes_pass(counter)
-        
+
         for art in self.articles:
             counter = art.number_footnotes_pass(counter)
 
@@ -259,7 +290,7 @@ class Regulation:
             counter = sec.number_footnotes_pass(counter)
 
         return counter
-    
+
     def latest_change_pass(self):
         latest_changes = [self.original_implementation_date]
 
@@ -276,6 +307,7 @@ class Regulation:
         self.date_last_update = max(latest_changes)
 
         return self.date_last_update
+
 
 """
 Preamble 
@@ -294,10 +326,12 @@ Attributes:
  - changeFootnote: a change footnote that is only defined if one is present
  - element: XML element represented by this object
 """
+
+
 class Preamble:
     def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
         # Sanity
-        assert(element.tag == "preamble")
+        assert (element.tag == "preamble")
         self.element = element
 
         # Well-formedness
@@ -324,17 +358,18 @@ class Preamble:
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
-                    throw_error("invalid preamble child <{}>".format(child.tag), element)
+                    throw_error("invalid preamble child <{}>".format(
+                        child.tag), element)
 
     def collect_footnotes_pass(self):
         for elem in self.text:
             if isinstance(elem, Footnote):
                 self.footnotes.append(elem)
-        
+
         # Change footnote goes at the end of the preamble.
         if hasattr(self, "changeFootnote"):
             self.footnotes.append(self.changeFootnote)
-    
+
     def number_footnotes_pass(self, counter: int) -> int:
         for footnote in self.footnotes:
             counter += 1
@@ -363,23 +398,30 @@ Attributes:
  - subsections: ordered list of subsections
  - element: XML element represented by this object
 """
+
+
 class Section:
     def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
         # Sanity
-        assert(element.tag == "section")
+        assert (element.tag == "section")
         self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
             throw_error("a section my not contain text on its own", element)
         if not is_empty(element.tail):
-            throw_error("a section my not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("a section must have a title", element)
+            throw_error("a section my not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"a section must have a {language} title", element)
 
         # values
         self.parent = parent
-        self.title = element.get("title")
+        self.title = dict()
+        for language in LANGUAGES:
+            self.title[language] = element.get(f"title_{language}")
         self.number = 0
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
@@ -393,13 +435,15 @@ class Section:
                     if self.subsections == []:
                         self.articles = process_articles(child, self)
                     else:
-                        throw_error("a section my only contain articles before any subsections", element)
+                        throw_error(
+                            "a section my only contain articles before any subsections", element)
                 case "subsection":
                     self.subsections.append(Subsection(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                 case _:
-                    throw_error("a section may only cointain articles and subsections", element)
+                    throw_error(
+                        "a section may only cointain articles and subsections", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -418,17 +462,19 @@ class Section:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
 
         # Propagate counters
         for art in self.articles:
-            art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
-    
+            art_counter, art_inserted_counter = art.numbering_pass(
+                art_counter, art_inserted_counter)
+
         subsec_counter, subsec_inserted_counter = 0, 0
         for subsec in self.subsections:
-            subsec_counter, subsec_inserted_counter, art_counter, art_inserted_counter = subsec.numbering_pass(subsec_counter, subsec_inserted_counter, art_counter, art_inserted_counter)
-    
+            subsec_counter, subsec_inserted_counter, art_counter, art_inserted_counter = subsec.numbering_pass(
+                subsec_counter, subsec_inserted_counter, art_counter, art_inserted_counter)
+
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
@@ -438,10 +484,10 @@ class Section:
 
         for art in self.articles:
             art.collect_footnotes_pass()
-        
+
         for subsec in self.subsections:
             subsec.collect_footnotes_pass()
-     
+
     def number_footnotes_pass(self, counter: int) -> int:
         for footnote in self.footnotes:
             counter += 1
@@ -473,7 +519,6 @@ class Section:
             return [max(latest_changes)]
 
 
-
 """
 Subsection
 
@@ -489,23 +534,29 @@ Attributes:
  - subsubsections: ordered list of subsubsections
  - element: XML element represented by this object
 """
+
+
 class Subsection:
     def __init__(self, element: etree.ElementBase, parent: Section) -> None:
         # Sanity
-        assert(element.tag == "subsection")
+        assert (element.tag == "subsection")
         self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
             throw_error("a subsection my not contain text on its own", element)
         if not is_empty(element.tail):
-            throw_error("a subsection my not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("a subsection must have a title", element)
-
+            throw_error("a subsection my not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"a subsection must have a {language} title", element)
         # values
         self.parent = parent
-        self.title = element.get("title")
+        self.title = dict()
+        for language in LANGUAGES:
+            self.title[language] = element.get(f"title_{language}")
         self.sec = 0
         self.number = 0
         self.inserted_number = 0
@@ -520,13 +571,15 @@ class Subsection:
                     if self.subsubsections == []:
                         self.articles = process_articles(child, self)
                     else:
-                        throw_error("a subsection my only contain articles before any subsections", element)
+                        throw_error(
+                            "a subsection my only contain articles before any subsections", element)
                 case "subsubsection":
                     self.subsubsections.append(Subsubsection(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                 case _:
-                    throw_error("a subsection may only cointain articles and subsubsections", element)
+                    throw_error(
+                        "a subsection may only cointain articles and subsubsections", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -545,18 +598,20 @@ class Subsection:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
         self.sec = self.parent.number
 
         # Propagate counters
         for art in self.articles:
-            art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
-    
+            art_counter, art_inserted_counter = art.numbering_pass(
+                art_counter, art_inserted_counter)
+
         subsubsec_counter, subsubsec_inserted_counter = 0, 0
         for subsubsec in self.subsubsections:
-            subsubsec_counter, subsubsec_inserted_counter, art_counter, art_inserted_counter = subsubsec.numbering_pass(subsubsec_counter, subsubsec_inserted_counter, art_counter, art_inserted_counter)
-    
+            subsubsec_counter, subsubsec_inserted_counter, art_counter, art_inserted_counter = subsubsec.numbering_pass(
+                subsubsec_counter, subsubsec_inserted_counter, art_counter, art_inserted_counter)
+
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
@@ -615,23 +670,31 @@ Attributes:
  - articles: ordered list of articles
  - element: XML element represented by this object
 """
+
+
 class Subsubsection:
     def __init__(self, element: etree.ElementBase, parent: Subsection) -> None:
         # Sanity
-        assert(element.tag == "subsubsection")
+        assert (element.tag == "subsubsection")
         self.element = element
 
         # Well-formedness
         if not is_empty(element.text):
-            throw_error("a subsubsection my not contain text on its own", element)
+            throw_error(
+                "a subsubsection my not contain text on its own", element)
         if not is_empty(element.tail):
-            throw_error("a subsubsection my not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("a subsubsection must have a title", element)
+            throw_error("a subsubsection my not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"a subsubsection must have a {language} title", element)
 
         # values
         self.parent = parent
-        self.title = element.get("title")
+        self.title = dict()
+        for language in LANGUAGES:
+            self.title[language] = element.get(f"title_{language}")
         self.sec = 0
         self.subsec = 0
         self.number = 0
@@ -647,7 +710,8 @@ class Subsubsection:
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                 case _:
-                    throw_error("a subsubsection may only cointain articles", element)
+                    throw_error(
+                        "a subsubsection may only cointain articles", element)
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -666,15 +730,16 @@ class Subsubsection:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
         self.sec = self.parent.parent.number
         self.subsec = self.parent.number
 
         # Propagate counters
         for art in self.articles:
-            art_counter, art_inserted_counter = art.numbering_pass(art_counter, art_inserted_counter)
-    
+            art_counter, art_inserted_counter = art.numbering_pass(
+                art_counter, art_inserted_counter)
+
         return number, inserted_number, art_counter, art_inserted_counter
 
     def collect_footnotes_pass(self):
@@ -683,7 +748,7 @@ class Subsubsection:
 
         for art in self.articles:
             art.collect_footnotes_pass()
-    
+
     def number_footnotes_pass(self, counter: int) -> int:
         for footnote in self.footnotes:
             counter += 1
@@ -733,22 +798,29 @@ Attributes:
  - changeFootnote: a change footnote that is only defined if one is present
  - element: XML element represented by this object
 """
+
+
 class Article:
     def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
-        assert(element.tag == "article")
+        assert (element.tag == "article")
         self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
-            throw_error("an article may not have a tail (tail: {})".format(element.tail), element)
-        if is_empty(element.get("title")):
-            throw_error("an article needs a title", element)
+            throw_error("an article may not have a tail (tail: {})".format(
+                element.tail), element)
+        for language in LANGUAGES:
+            if is_empty(element.get(f"title_{language}")):
+                throw_error(
+                    f"an article must have a {language} title", element)
         ensure_inserted_is_empty(element)
 
         # values
         self.parent = parent
-        self.title = element.get("title")
+        self.title = dict()
+        for language in LANGUAGES:
+            self.title[language] = element.get(f"title_{language}")
         self.number = 0
         self.inserted_number = 0
         self.inserted = element.get("inserted") == ""
@@ -766,25 +838,25 @@ class Article:
             match child.tag:
                 case "paragraphs":
                     if not self.letters == []:
-                        throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
-                    
+                        throw_error(
+                            "an article can only have one of paragraphs or letters as direct descendents", element)
+
                     self.paragraphs = process_paragraphs(child, self)
                 case "letters":
                     if not self.paragraphs == []:
-                        throw_error("an article can only have one of paragraphs or letters as direct descendents", element)
-                    
-                    self.letters, self.letters_tail = process_letters(child, self)
-                case "link":
-                    self.text.append(Link(child, self))
-                case "quote":
-                    self.text.append(Quote(child, self))
-                case "footnote":
-                    self.text.append(Footnote(child, self))
+                        throw_error(
+                            "an article can only have one of paragraphs or letters as direct descendents", element)
+
+                    self.letters, self.letters_tail = process_letters(
+                        child, self)
+                case "text":
+                    self.text.append(Text(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
-                    throw_error("invalid article child {}".format(child.tag), element)
+                    throw_error("invalid article child {}".format(
+                        child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
         # Increment counters
@@ -803,18 +875,20 @@ class Article:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
 
         # Propagate counters
         abs_counter, abs_inserted_counter = 0, 0
         for abs in self.paragraphs:
-            abs_counter, abs_inserted_counter = abs.numbering_pass(abs_counter, abs_inserted_counter)
-    
+            abs_counter, abs_inserted_counter = abs.numbering_pass(
+                abs_counter, abs_inserted_counter)
+
         lit_counter, lit_inserted_counter = 0, 0
         for lit in self.letters:
-            lit_counter, lit_inserted_counter = lit.numbering_pass(lit_counter, lit_inserted_counter)
-    
+            lit_counter, lit_inserted_counter = lit.numbering_pass(
+                lit_counter, lit_inserted_counter)
+
         return number, inserted_number
 
     def collect_footnotes_pass(self):
@@ -877,15 +951,18 @@ Attributes:
  - changeFootnote: a change footnote that is only defined if one is present
  - element: XML element represented by this object
 """
+
+
 class Paragraph:
     def __init__(self, element: etree.ElementBase, parent: Article) -> None:
         # Sanity
-        assert(element.tag == "paragraph")
+        assert (element.tag == "paragraph")
         self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
-            throw_error("a paragraph may not have a tail (tail: {})".format(element.tail), element)
+            throw_error("a paragraph may not have a tail (tail: {})".format(
+                element.tail), element)
         ensure_inserted_is_empty(element)
 
         # values
@@ -904,18 +981,16 @@ class Paragraph:
         for child in element:
             match child.tag:
                 case "letters":
-                    self.letters, self.letters_tail = process_letters(child, self)
-                case "link":
-                    self.text.append(Link(child, self))
-                case "quote":
-                    self.text.append(Quote(child, self))
-                case "footnote":
-                    self.text.append(Footnote(child, self))
+                    self.letters, self.letters_tail = process_letters(
+                        child, self)
+                case "text":
+                    self.text.append(Text(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
-                    throw_error("invalid paragraph child <{}>".format(child.tag), element)
+                    throw_error("invalid paragraph child <{}>".format(
+                        child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
         # Increment counters
@@ -934,14 +1009,15 @@ class Paragraph:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
 
         # Propagate counters
         lit_counter, lit_inserted_counter = 0, 0
         for lit in self.letters:
-            lit_counter, lit_inserted_counter = lit.numbering_pass(lit_counter, lit_inserted_counter)
-    
+            lit_counter, lit_inserted_counter = lit.numbering_pass(
+                lit_counter, lit_inserted_counter)
+
         return number, inserted_number
 
     def collect_footnotes_pass(self):
@@ -956,7 +1032,7 @@ class Paragraph:
 
         for lit in self.letters:
             footnotes.extend(lit.collect_footnotes_pass())
-        
+
         return footnotes
 
     def latest_change_pass(self):
@@ -993,17 +1069,20 @@ Attributes:
  - changeFootnote: a change footnote that is only defined if one is present
  - element: XML element represented by this object
 """
+
+
 class Letter:
     def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
-        assert(element.tag == "letter")
+        assert (element.tag == "letter")
         self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
-            throw_error("a letter may not have a tail (tail: {})".format(element.tail), element)
+            throw_error("a letter may not have a tail (tail: {})".format(
+                element.tail), element)
         ensure_inserted_is_empty(element)
-        
+
         # values
         self.parent = parent
         self.number = 0
@@ -1012,7 +1091,7 @@ class Letter:
         self.ended_inserted = False
         self.text = []
         self.numerals = []
-        
+
         if not is_empty(element.text):
             self.text.append(element.text)
 
@@ -1020,17 +1099,14 @@ class Letter:
             match child.tag:
                 case "numerals":
                     self.numerals = process_numerals(child, self)
-                case "link":
-                    self.text.append(Link(child, self))
-                case "quote":
-                    self.text.append(Quote(child, self))
-                case "footnote":
-                    self.text.append(Footnote(child, self))
+                case "text":
+                    self.text.append(Text(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
-                    throw_error("invalid letter child {}".format(child.tag), element)
+                    throw_error("invalid letter child {}".format(
+                        child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
         # Increment counters
@@ -1049,14 +1125,15 @@ class Letter:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
 
         # Propagate counters
         num_counter, num_inserted_counter = 0, 0
         for num in self.numerals:
-            num_counter, num_inserted_counter = num.numbering_pass(num_counter, num_inserted_counter)
-    
+            num_counter, num_inserted_counter = num.numbering_pass(
+                num_counter, num_inserted_counter)
+
         return number, inserted_number
 
     def collect_footnotes_pass(self):
@@ -1107,15 +1184,18 @@ Attributes:
  - changeFootnote: a change footnote that is only defined if one is present
  - element: XML element represented by this object
 """
+
+
 class Numeral:
     def __init__(self, element: etree.ElementBase, parent: Letter) -> None:
         # Sanity
-        assert(element.tag == "numeral")
+        assert (element.tag == "numeral")
         self.element = element
 
         # well-formedness
         if not is_empty(element.tail):
-            throw_error("a numeral may not have a tail (tail: {})".format(element.tail), element)
+            throw_error("a numeral may not have a tail (tail: {})".format(
+                element.tail), element)
         ensure_inserted_is_empty(element)
 
         # values
@@ -1131,17 +1211,14 @@ class Numeral:
 
         for child in element:
             match child.tag:
-                case "link":
-                    self.text.append(Link(child, self))
-                case "quote":
-                    self.text.append(Quote(child, self))
-                case "footnote":
-                    self.text.append(Footnote(child, self))
+                case "text":
+                    self.text.append(Text(child, self))
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
                 case _:
-                    throw_error("invalid numeral child {}".format(child.tag), element)
+                    throw_error("invalid numeral child {}".format(
+                        child.tag), element)
 
     def numbering_pass(self, number: int, inserted_number: int):
         # Increment counters
@@ -1160,11 +1237,11 @@ class Numeral:
                 self.ended_inserted = False
 
         # Set counters
-        self.number = number 
+        self.number = number
         self.inserted_number = inserted_number
-    
+
         return number, inserted_number
-    
+
     def collect_footnotes_pass(self):
         footnotes = []
         for elem in self.text:
@@ -1183,6 +1260,45 @@ class Numeral:
         else:
             return []
 
+
+class Text:
+
+    def __init__(self, element: etree.ElementBase, parent) -> None:
+        # Sanity
+        assert (element.tag == "text")
+        self.element = element
+
+        # well-formedness
+        if is_empty(element.text):
+            throw_error("text must have content", element)
+        ensure_inserted_not_present(element)
+
+        # Text must have a language tag
+        if is_empty(element.get("language")):
+            throw_error("text must have a language tag", element)
+        self.language = element.get("language")
+
+        # values
+        self.parent = parent
+        self.text = element.text
+
+        self.tail = []
+        if not is_empty(element.tail):
+            self.tail.append(element.tail)
+
+        for child in element:
+            match child.tag:
+                case "link":
+                    self.tail.append(Link(child, self))
+                case "quote":
+                    self.tail.append(Quote(child, self))
+                case "footnote":
+                    self.tail.append(Footnote(child, self))
+                case _:
+                    throw_error("invalid link child <{}>".format(
+                        child.tag), element)
+
+
 """
 Link
 
@@ -1196,10 +1312,12 @@ Attributes:
  - tail: ordered list of text elements that follow this link
  - element: XML element represented by this object
 """
+
+
 class Link:
     def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
-        assert(element.tag == "link")
+        assert (element.tag == "link")
         self.element = element
 
         # well-formedness
@@ -1217,7 +1335,7 @@ class Link:
         self.tail = []
         if not is_empty(element.tail):
             self.tail.append(element.tail)
-        
+
         for child in element:
             match child.tag:
                 case "link":
@@ -1227,7 +1345,8 @@ class Link:
                 case "footnote":
                     self.tail.append(Footnote(child, self))
                 case _:
-                    throw_error("invalid link child <{}>".format(child.tag), element)
+                    throw_error("invalid link child <{}>".format(
+                        child.tag), element)
 
 
 """
@@ -1242,10 +1361,12 @@ Attributes:
  - tail: ordered list of text elements that follow this link
  - element: XML element represented by this object
 """
+
+
 class Quote:
     def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
-        assert(element.tag == "quote")
+        assert (element.tag == "quote")
         self.element = element
 
         # well-formedness
@@ -1260,7 +1381,7 @@ class Quote:
         self.tail = []
         if not is_empty(element.tail):
             self.tail.append(element.tail)
-        
+
         for child in element:
             match child.tag:
                 case "link":
@@ -1270,8 +1391,9 @@ class Quote:
                 case "footnote":
                     self.tail.append(Footnote(child, self))
                 case _:
-                    throw_error("invalid link child <{}>".format(child.tag), element)
-                    
+                    throw_error("invalid link child <{}>".format(
+                        child.tag), element)
+
 
 """
 Footnote
@@ -1286,10 +1408,12 @@ Attributes:
  - tail: ordered list of text elements that follow this link
  - element: XML element represented by this object
 """
+
+
 class Footnote:
     def __init__(self, element: etree.ElementBase, parent) -> None:
         # Sanity
-        assert(element.tag == "footnote")
+        assert (element.tag == "footnote")
         self.element = element
 
         # well-formedness
@@ -1305,7 +1429,7 @@ class Footnote:
         self.tail = []
         if not is_empty(element.tail):
             self.tail.append(element.tail)
-        
+
         for child in element:
             match child.tag:
                 case "link":
@@ -1315,7 +1439,8 @@ class Footnote:
                 case "footnote":
                     self.tail.append(Footnote(child, self))
                 case _:
-                    throw_error("invalid footnote child <{}>".format(child.tag), element)
+                    throw_error("invalid footnote child <{}>".format(
+                        child.tag), element)
 
 
 """
@@ -1345,60 +1470,67 @@ Valid children
  - tail: ordered list of text elements that follow this link
  - element: XML element represented by this object
 """
+
+
 class ChangeFootnote:
     ACTIONS = {"changed": "Fassung gemäss dem",
                "deleted": "Aufgehoben durch den",
                "inserted": "Eingefügt durch den"}
     GREMIEN = {"MR": "des Mitgliederrats",
-                   "FR": "des Fachvereinsrats",
-                   "VS": "des VSETH-Vorstands",
-                   "FinA": "des Finanzausschusses",
-                   "SpEA": "des Spesen- und Entschädigungsausschusses",
-                   "VEA": "des VSS-Evaluationsausschusses",
-                   "GPK": "der Geschäftsprüfungskommission",
-                   "Team Quästur": "des Teams Quästur",
-                   "Team Events": "des Teams Events",
-                   "Team HoPo": "des Teams Hochschulpolitik",
-                   "Team Infra": "des Teams Infrastruktur",
-                   "Team IT": "des Teams IT",
-                   "Team IA": "des Teams Internal Affairs",
-                   "Team Kommu": "des Teams Kommunikation",
-                   "Challenge": "der Kommission Challenge",
-                   "Debattierclub": "der Kommission Debattierclub",
-                   "MUN": "der Kommission ETH Model United Nations",
-                   "ExBeKo": "der ExBeerience-Kommission",
-                   "Filmstelle": "der Kommission Flimstelle",
-                   "FLiK": "der Freiluftlichtbildschau-Kommission",
-                   "F&C": "der Forum & Contact Kommission",
-                   "FK": "der Fotokommission",
-                   "GECo": "der Kommission Gaming and Entertainment Committee",
-                   "KI": "der Kommission für Immobilien",
-                   "Kulturstelle": "der Kommission Kulturstelle",
-                   "Nightline": "der Kommission Nightline",
-                   "Pub": "der Kommission PapperlaPub",
-                   "Polykum": "der Kommission Polykum",
-                   "SSC": "der Kommission Student Sustainability Committee",
-                   "TheAlt": "der Kommission TheAlternative",
-                   "TQ": "der Kommission Tanzquotient",
-                   "SEK": "der Softwareentwicklungskommission"
-                   }
+               "FR": "des Fachvereinsrats",
+               "VS": "des VSETH-Vorstands",
+               "FinA": "des Finanzausschusses",
+               "SpEA": "des Spesen- und Entschädigungsausschusses",
+               "VEA": "des VSS-Evaluationsausschusses",
+               "GPK": "der Geschäftsprüfungskommission",
+               "Team Quästur": "des Teams Quästur",
+               "Team Events": "des Teams Events",
+               "Team HoPo": "des Teams Hochschulpolitik",
+               "Team Infra": "des Teams Infrastruktur",
+               "Team IT": "des Teams IT",
+               "Team IA": "des Teams Internal Affairs",
+               "Team Kommu": "des Teams Kommunikation",
+               "Challenge": "der Kommission Challenge",
+               "Debattierclub": "der Kommission Debattierclub",
+               "MUN": "der Kommission ETH Model United Nations",
+               "ExBeKo": "der ExBeerience-Kommission",
+               "Filmstelle": "der Kommission Flimstelle",
+               "FLiK": "der Freiluftlichtbildschau-Kommission",
+               "F&C": "der Forum & Contact Kommission",
+               "FK": "der Fotokommission",
+               "GECo": "der Kommission Gaming and Entertainment Committee",
+               "KI": "der Kommission für Immobilien",
+               "Kulturstelle": "der Kommission Kulturstelle",
+               "Nightline": "der Kommission Nightline",
+               "Pub": "der Kommission PapperlaPub",
+               "Polykum": "der Kommission Polykum",
+               "SSC": "der Kommission Student Sustainability Committee",
+               "TheAlt": "der Kommission TheAlternative",
+               "TQ": "der Kommission Tanzquotient",
+               "SEK": "der Softwareentwicklungskommission"
+               }
 
     def __init__(self, element: etree.ElementBase, parent):
         # Sanity
-        assert(element.tag in self.ACTIONS.keys())
+        assert (element.tag in self.ACTIONS.keys())
         self.element = element
 
         # well-formedness
         if is_empty(element.get("gremium")):
-            throw_error("a change footnote must contain a gremium attribute", element)
+            throw_error(
+                "a change footnote must contain a gremium attribute", element)
         if element.get("gremium") not in self.GREMIEN.keys():
-            throw_error(f"the gremium attribute \"{element.get('gremium')}\" of the change footnote is not one of the known gremien ({self.GREMIEN.keys()})", element)
+            throw_error(
+                f"the gremium attribute \"{element.get('gremium')}\" of the change footnote is not one of the known gremien ({self.GREMIEN.keys()})", element)
         if is_empty(element.get("agenda_item")):
-            throw_error("a change footnote must contain an agenda_item attribute", element)
+            throw_error(
+                "a change footnote must contain an agenda_item attribute", element)
         if is_empty(element.get("meeting_date")):
-            throw_error("a change footnote must contain a meeting_date attribute", element)
+            throw_error(
+                "a change footnote must contain a meeting_date attribute", element)
         if is_empty(element.get("implementation_date")):
-            throw_error("a change footnote must contain an implementation_date attribute", element)
+            throw_error(
+                "a change footnote must contain an implementation_date attribute", element)
         if not is_empty(element.text):
             throw_error("a change footnote must not contain text", element)
         ensure_inserted_not_present(element)
@@ -1414,12 +1546,15 @@ class ChangeFootnote:
         try:
             self.meeting_date = date.fromisoformat(element.get("meeting_date"))
         except Exception as e:
-            throw_error(f"the meeting_date attribute \"{element.get('meeting_date')}\" is not a valid ISO 8601 date string: {e}", element)
+            throw_error(
+                f"the meeting_date attribute \"{element.get('meeting_date')}\" is not a valid ISO 8601 date string: {e}", element)
 
         try:
-            self.implementation_date = date.fromisoformat(element.get("implementation_date"))
+            self.implementation_date = date.fromisoformat(
+                element.get("implementation_date"))
         except Exception as e:
-            throw_error(f"the implementation_date attribute \"{element.get('implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
+            throw_error(
+                f"the implementation_date attribute \"{element.get('implementation_date')}\" is not a valid ISO 8601 date string: {e}", element)
 
         if not is_empty(element.get("motion_link")):
             self.motion_link = element.get("motion_link")
@@ -1447,7 +1582,8 @@ class ChangeFootnote:
         # A deleted element may only contain the change footnote.
         if self.action == "deleted":
             if len(self.parent.element) > 1:
-                throw_error("a deleted element must not have any content", element)
+                throw_error(
+                    "a deleted element must not have any content", element)
 
         self.tail = []
         if not is_empty(element.tail):
@@ -1456,19 +1592,21 @@ class ChangeFootnote:
         for child in element:
             match child:
                 case _:
-                    throw_error("a change footnote must not have children", element)
-                    
+                    throw_error(
+                        "a change footnote must not have children", element)
+
 
 # Functions to flatten container tags (articles, paragraphs, letters, numerals)
 def process_articles(element: etree.ElementBase, parent) -> list[Article]:
     # Sanity
-    assert(element.tag == "articles")
+    assert (element.tag == "articles")
 
     # Well-formedness
     if not is_empty(element.text):
         throw_error("articles may not contain text", element)
     if not is_empty(element.tail):
-        throw_error("articles may not contain a tail (tail: {})".format(element.tail), element)
+        throw_error("articles may not contain a tail (tail: {})".format(
+            element.tail), element)
     ensure_inserted_not_present(element)
 
     articles = []
@@ -1484,13 +1622,14 @@ def process_articles(element: etree.ElementBase, parent) -> list[Article]:
 
 def process_paragraphs(element: etree.ElementBase, parent: Article) -> list[Paragraph]:
     # Sanity
-    assert(element.tag == "paragraphs")
+    assert (element.tag == "paragraphs")
 
     # Well-formedness
     if not is_empty(element.text):
         throw_error("paragraphs may not contain text", element)
     if not is_empty(element.tail):
-        throw_error("paragraphs may not contain a tail (tail: {})".format(element.tail), element)
+        throw_error("paragraphs may not contain a tail (tail: {})".format(
+            element.tail), element)
     ensure_inserted_not_present(element)
 
     paragraphs = []
@@ -1499,14 +1638,15 @@ def process_paragraphs(element: etree.ElementBase, parent: Article) -> list[Para
             case "paragraph":
                 paragraphs.append(Paragraph(child, parent))
             case _:
-                throw_error("paragraphs may only contain paragraphs (duh)", child)
+                throw_error(
+                    "paragraphs may only contain paragraphs (duh)", child)
 
     return paragraphs
 
 
-def process_letters(element: etree.ElementBase, parent) -> tuple[list[Letter], str|None]:
+def process_letters(element: etree.ElementBase, parent) -> tuple[list[Letter], str | None]:
     # Sanity
-    assert(element.tag == "letters")
+    assert (element.tag == "letters")
 
     # Well-formedness
     if not is_empty(element.text):
@@ -1530,13 +1670,14 @@ def process_letters(element: etree.ElementBase, parent) -> tuple[list[Letter], s
 
 def process_numerals(element: etree.ElementBase, parent: Letter) -> list[Numeral]:
     # Sanity
-    assert(element.tag == "numerals")
+    assert (element.tag == "numerals")
 
     # Well-formedness
     if not is_empty(element.text):
         throw_error("numerals may not contain text", element)
     if not is_empty(element.tail):
-        throw_error("numerals may not contain a tail (tail: {})".format(element.tail), element)
+        throw_error("numerals may not contain a tail (tail: {})".format(
+            element.tail), element)
     ensure_inserted_not_present(element)
 
     numerals = []
@@ -1550,13 +1691,19 @@ def process_numerals(element: etree.ElementBase, parent: Letter) -> list[Numeral
     return numerals
 
 # Helper functions
+
+
 def ensure_inserted_is_empty(element):
     if element.get("inserted") is not None and element.get("inserted") != "":
-        throw_error("the attribute inserted must either be an empty string or not present", element)
+        throw_error(
+            "the attribute inserted must either be an empty string or not present", element)
+
 
 def ensure_inserted_not_present(element):
     if element.get("inserted") is not None:
-        throw_error("the attribute \"inserted\" must not be present in a {}".format(element.tag), element)
+        throw_error("the attribute \"inserted\" must not be present in a {}".format(
+            element.tag), element)
+
 
 def is_empty(s):
     return s is None or s.strip() == ''

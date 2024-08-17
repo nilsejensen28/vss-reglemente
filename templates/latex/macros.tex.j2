@@ -1,151 +1,213 @@
 ((* macro secnum(s) -*))
-(( s.number ))((* if s.inserted *))(( s.inserted_number | num2letter ))((* endif *)).
+  (( s.number ))((* if s.inserted *))(( s.inserted_number | num2letter ))((* endif *)).
 ((*- endmacro *))
 
-((* macro section(sec) -*))
-\section[(( secnum(sec) ))~(( sec.title | escape_tex ))]{(( secnum(sec) ))(( changeFootnoteMark(sec.changeFootnote) ))~(( sec.title | escape_tex ))}(( changeFootnote(sec.changeFootnote, False) ))
-\nobreak
+((* macro language_code_to_babel(language) -*))
+  ((* if language == "de" *))
+    (( "nswissgerman" ))
+  ((* elif language == "fr" *))
+    (( "frenchb" ))
+  ((* elif language == "it" *))
+    (( "italian" ))
+  ((* elif language == "en" *))
+    (( "english" ))
+  ((* endif *))
+((*- endmacro*))
 
-((* for art in sec.articles -*))
-((- article(art) ))
-((* endfor *))
-((* for subsec in sec.subsections -*))
-(( subsection(subsec) -))
-((* endfor -*))
+((* macro set_multilingual_title(title, languages) -*))
+  ((* set ns = namespace(title="") *))
+  ((* for language in languages -*))
+    ((* set ns.title = ns.title + title[language] + " --- " *))
+    ((* if loop.last *))((* set ns.title = ns.title[:-4] *))((* endif *))
+  ((* endfor *))
+  (( set_text(ns.title, trim=true) ))
 ((* endmacro *))
 
-((* macro subsection(subsec) -*))
-\subsection[(( secnum(subsec.parent) ))(( secnum(subsec) ))~(( subsec.title | escape_tex ))]{(( secnum(subsec.parent) ))(( secnum(subsec) ))(( changeFootnoteMark(subsec.changeFootnote) ))~(( subsec.title | escape_tex ))}(( changeFootnote(subsec.changeFootnote, False) ))
-\nobreak
-
-((* for art in subsec.articles -*))
-((- article(art) ))
-((* endfor *))
-((* for subsubsec in subsec.subsubsections -*))
-(( subsubsection(subsubsec) -))
-((* endfor -*))
+((* macro set_multilingual_articles(articles, languages) -*))
+  ((* for art in articles *))
+    ((* for language in languages *))\begin{customminipage}
+    (( article_monolingual(art, language) ))
+    \end{customminipage}
+    \hfill
+    ((* endfor *))
+    ((* if not loop.last *))\par((* endif *))
+  ((* endfor *))
 ((* endmacro *))
 
-((* macro subsubsection(subsubsec) -*))
-\subsubsection[(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))~(( subsubsec.title | escape_tex ))]{(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))(( changeFootnoteMark(subsubsec.changeFootnote) ))~(( subsubsec.title | escape_tex ))}(( changeFootnote(subsubsec.changeFootnote, False) ))
-\nobreak
+((* macro header(title, date) -*))
+  \title{(( set_multilingual_title(title) | escape_tex ))}
+  \setdate{(( date | format_date ))}
+  \begin{document}
+  \maketitle
+((* endmacro *))
 
-((* for art in subsubsec.articles -*))
-((- article(art) ))
-((* endfor -*))
-((* endmacro -*))
-j
+((* macro section_bilingual(sec, languages) -*))
+  \section[(( secnum(sec) ))~(( set_multilingual_title(sec.title, languages) ))]{(( secnum(sec) ))(( changeFootnoteMark(sec.changeFootnote) ))~(( set_multilingual_title(sec.title, languages) ))}(( changeFootnote(sec.changeFootnote, False) ))
+  \nobreak
 
-((* macro article(art) -*))
-\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
-  \\\nopagebreak (( set_text(art.text) ))\nopagebreak
-  ((* if art.letters | length > 0 -*))
-  \vspace{-\parskip}\vspace{\partopsep}\begin{letters}
-  ((* for lit in art.letters -*))
-    ((- letter(lit) -))
+  (( set_multilingual_articles(sec.articles, languages) -))
+  ((* for subsec in sec.subsections -*))
+    (( subsection_bilingual(subsec, languages) -))
   ((* endfor -*))
-  \end{letters}
+((* endmacro *))
+
+((* macro section_monolingual(sec, language) -*))
+  \section[(( secnum(sec) ))~(( sec.title[language] | escape_tex ))]{(( secnum(sec) ))(( changeFootnoteMark(sec.changeFootnote) ))~(( sec.title[language] | escape_tex ))}(( changeFootnote(sec.changeFootnote, False) ))
+  \nobreak
+  ((* for art in sec.articles -*))
+    ((- article_monolingual(art, "fr") ))
+  ((* endfor *))
+  ((* for subsec in sec.subsections -*))
+    (( subsection_monolingual(subsec, language) -))
+  ((* endfor -*))
+((* endmacro *))
+
+((* macro subsection_monolingual(subsec, language) -*))
+  \subsection[(( secnum(subsec.parent) ))(( secnum(subsec) ))~(( subsec.title[language] | escape_tex ))]{(( secnum(subsec.parent) ))(( secnum(subsec) ))(( changeFootnoteMark(subsec.changeFootnote) ))~(( subsec.title[language] | escape_tex ))}(( changeFootnote(subsec.changeFootnote, False) ))
+  \nobreak
+  ((* for art in subsec.articles -*))
+    ((- article_monolingual(art, language) ))
+  ((* endfor *))
+  ((* for subsubsec in subsec.subsubsections -*))
+    (( subsubsection_monolingual(subsubsec, language) -))
+  ((* endfor -*))
+((* endmacro *))
+
+((* macro subsection_bilingual(subsec, languages) -*))
+  \subsection[(( secnum(subsec.parent) ))(( secnum(subsec) ))~(( set_multilingual_title(subsec.title, languages) ))]{(( secnum(subsec.parent) ))(( secnum(subsec) ))(( changeFootnoteMark(subsec.changeFootnote) ))~(( set_multilingual_title(subsec.title, languages) ))}(( changeFootnote(subsec.changeFootnote, False) ))
+  \nobreak
+  (( set_multilingual_articles(subsec.articles, languages) -))
+  ((* for subsubsec in subsec.subsubsections -*))
+    (( subsubsection_bilingual(subsubsec, languages) -))
+  ((* endfor -*))
+((* endmacro *))
+
+((* macro subsubsection_monolingual(subsubsec, language) -*))
+  \subsubsection[(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))~(( subsubsec.title[language] | escape_tex ))]{(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))(( changeFootnoteMark(subsubsec.changeFootnote) ))~(( subsubsec.title[language] | escape_tex ))}(( changeFootnote(subsubsec.changeFootnote, False) ))
+  \nobreak
+  ((* for art in subsubsec.articles -*))
+    ((- article_monolingual(art, "fr") ))
+  ((* endfor -*))
+((* endmacro -*))
+
+((* macro subsubsection_bilingual(subsubsec, languages) -*))
+  \subsubsection[(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))~(( set_multilingual_title(subsubsec.title, languages) ))]{(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))(( changeFootnoteMark(subsubsec.changeFootnote) ))~(( set_multilingual_title(subsubsec.title, languages) ))}(( changeFootnote(subsubsec.changeFootnote, False) ))
+  (( set_multilingual_articles(subsubsec.articles, languages) -))
+((* endmacro *))
+
+((* macro article_monolingual(art, language) -*))
+\begin{minipage}{\textwidth}
+\begin{otherlanguage}{(( language_code_to_babel(language) ))}
+\begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title[language] | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
+  ((* for text in art.text -*))((- handle_text(text, language) ))((* endfor -*))
+  ((* if art.letters | length > 0 -*))
+    \vspace{-\parskip}\vspace{\partopsep}
+    \begin{letters}
+    ((* for lit in art.letters -*))
+      ((- letter(lit, language) -))
+    ((* endfor -*))
+    \end{letters}
   ((* endif -*))
   ((*- if art.paragraphs | length > 0 -*))
-  \vspace{-2\parskip}\vspace{\partopsep}\begin{paragraphs}
-    ((* for abs in art.paragraphs *))
-    ((- paragraph(abs) -))\nopagebreak
-    ((* endfor -*))
+  \begin{paragraphs}
+  ((* for abs in art.paragraphs -*))((- paragraph(abs, language) -))((* endfor -*))
   \end{paragraphs}
   ((* endif -*))
 \end{article}
+\end{otherlanguage}
+\end{minipage}
 ((* endmacro *))
 
-((* macro paragraph(abs) -*))
-((* if abs.inserted_number == 1 *))
-\begin{insertedparagraphs}
-((*- endif -*))
-((*- if abs.ended_inserted *))
-\end{insertedparagraphs}
-((*- endif *))
-\item (( set_text(abs.text) -))(( changeFootnote(abs.changeFootnote) -))
-
+((* macro paragraph(abs, language) -*))
+  ((* if abs.inserted_number == 1 *))
+    \begin{insertedparagraphs}
+  ((*- endif -*))
+  ((*- if abs.ended_inserted *))
+    \end{insertedparagraphs}
+  ((*- endif *))
+  \item ((* for text in abs.text *))((- handle_text(text, language) ))((* endfor -*))
+  (( changeFootnote(abs.changeFootnote) -))
   ((*- if abs.letters | length > 0 *))
-  \begin{letters}
+    \begin{letters}
   ((* for lit in abs.letters -*))
-    ((- letter(lit) -))
+    ((- letter(lit, language) -))
   ((* endfor -*))
   \end{letters}
   ((* endif *))
 ((* endmacro *))
 
 
-((* macro letter(lit) -*))
-((* if lit.inserted_number == 1 *))
-\begin{insertedletters}
-((*- endif -*))
-((*- if lit.ended_inserted *))
-\end{insertedletters}
-((*- endif *))
-\item (( set_text(lit.text) -))(( changeFootnote(lit.changeFootnote) -))
-
+((* macro letter(lit, language) -*))
+  ((* if lit.inserted_number == 1 *))
+    \begin{insertedletters}
+  ((*- endif -*))
+  ((*- if lit.ended_inserted *))
+    \end{insertedletters}
+  ((*- endif *))
+  \item 
+  ((* for text in lit.text *))
+    ((- handle_text(text, language) ))
+  ((* endfor -*))(( changeFootnote(lit.changeFootnote) -))
   ((*- if lit.numerals | length > 0 *))
-  \begin{numerals}
-  ((* for num in lit.numerals -*))
-    ((- numeral(num) -))
-  ((* endfor -*))
-  \end{numerals}
+    \begin{numerals}
+    ((* for num in lit.numerals -*))
+      ((- numeral(num, language) -))
+    ((* endfor -*))
+    \end{numerals}
   ((* endif *))
 ((* endmacro *))
 
-((* macro numeral(num) -*))
-((* if num.inserted_number == 1 *))
-\begin{insertednumerals}
-((*- endif -*))
-((*- if num.ended_inserted *))
-\end{insertednumerals}
-((*- endif *))
-\item (( set_text(num.text) -))(( changeFootnote(num.changeFootnote) -))
+((* macro numeral(num, language) -*))
+  ((* if num.inserted_number == 1 *))
+    \begin{insertednumerals}
+  ((*- endif -*))
+  ((*- if num.ended_inserted *))
+    \end{insertednumerals}
+  ((*- endif *))
+  \item (( handle_text(num.text, language) -))(( changeFootnote(num.changeFootnote) -))
+((* endmacro *))
+
+((* macro handle_text(text_element, language) -*))
+  ((*if text_element.language == language *))
+    (( set_text(text_element.text) -))
+    ((*- if text_element.tail | length > 0 -*))(( set_tail(text_element.tail) ))
+    ((*- endif *))
+  ((* endif *))
 ((* endmacro *))
 
 ((* macro changeFootnoteMark(chng) -*))
-((*- if chng -*))\protect\footnotemark((* endif *))
+  ((*- if chng -*))\protect\footnotemark((* endif *))
 ((*- endmacro *))
 
 ((* macro changeFootnote(chng, complete=True) -*))
-((*- if chng -*))
-\footnote((* if complete is false *))text((* endif *)){(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date ))
-((*- if chng.motion_link and chng.minutes_link *))
-(\href{(( chng.motion_link | escape_tex ))}{Antrag}, \href{(( chng.minutes_link | escape_tex ))}{Protokoll})
-((*- elif chng.motion_link *))
-(\href{(( chng.motion_link | escape_tex ))}{Antrag})
-((*- elif chng.minutes_link *))
-(\href{(( chng.minutes_link | escape_tex ))}{Protokoll})
-((*- endif -*))
-, (( chng.effect_str )) seit (( chng.implementation_date | format_date )).}
-((*- endif -*))
+  ((*- if chng -*))
+    \footnote((* if complete is false *))text((* endif *)){(( chng.action_str | trim | escape_tex )) Beschluss (( chng.gremium_str | trim | escape_tex )) in Traktandum (( chng.agenda_item | trim | escape_tex)) in der Sitzung vom (( chng.meeting_date | format_date ))
+    ((*- if chng.motion_link and chng.minutes_link *))
+      (\href{(( chng.motion_link | escape_tex ))}{Antrag}, \href{(( chng.minutes_link | escape_tex ))}{Protokoll})
+    ((*- elif chng.motion_link *))
+      (\href{(( chng.motion_link | escape_tex ))}{Antrag})
+    ((*- elif chng.minutes_link *))
+      (\href{(( chng.minutes_link | escape_tex ))}{Protokoll})
+    ((*- endif -*))
+    , (( chng.effect_str )) seit (( chng.implementation_date | format_date )).}
+  ((*- endif -*))
 ((*- endmacro *))
 
-((*- macro set_text(text_elems, trim=True) -*))
-  ((*- for elem in text_elems -*))
-    ((*- if elem is string -*))
-((* if trim *))(( elem | trim | escape_tex ))((* else *))(( elem | escape_tex ))((* endif *))
-    ((*- elif "Link" == elem.__class__.__name__ *))
-\href{(( elem.to ))}{(( elem.link_text | escape_tex ))}(( set_tail(elem.tail) ))
-    ((*- elif "Quote" == elem.__class__.__name__ *))
-``(( elem.quote | trim | escape_tex ))''(( set_tail(elem.tail) ))
-    ((*- elif "Footnote" == elem.__class__.__name__ -*))
-\footnote{(( elem.text | trim | escape_tex))}(( set_tail(elem.tail) ))
+((*- macro set_text(elem, trim=False) -*))
+  ((*- if elem is string -*))
+    ((* if trim *))(( elem | trim | escape_tex ))((* else *))(( elem | escape_tex ))((* endif *))
+    ((*- elif "Link" == elem.__class__.__name__ *))\href{(( elem.to ))}{(( elem.link_text | escape_tex ))}(( set_tail(elem.tail) ))
+    ((*- elif "Quote" == elem.__class__.__name__ *))``(( elem.quote | trim | escape_tex ))''(( set_tail(elem.tail) ))
+    ((*- elif "Footnote" == elem.__class__.__name__ -*))\footnote{(( elem.text | trim | escape_tex))}(( set_tail(elem.tail) ))
     ((*- elif "ChangeFootnote" == elem.__class__.__name__ *))
-      ((#- Change footnotes are typeset the elements. Therefore, we only typest ellipsis if the element was deleted or the text following. -#))
-      ((*- if elem.action == "deleted" -*))
-\textellipsis
-      ((*- else -*))
-(( set_text(elem.tail) ))
-      ((*- endif -*))
-    ((*- endif -*))
-  ((*- endfor -*))
+    ((#- Change footnotes are typeset the elements. Therefore, we only typest ellipsis if the element was deleted or the text following. -#))
+    ((*- if elem.action == "deleted" -*))\textellipsis
+    ((*- else -*))(( set_text(elem.tail) ))((*- endif -*))
+  ((*- endif -*))
 ((*- endmacro -*))
 
 ((*- macro set_tail(tail) -*))
-((*- if tail | length > 0 -*))
-(( set_text(tail, trim=False) ))
-((*- endif -*))
+  ((*- if tail | length > 0 -*))((* for tail_element in tail *))(( set_text(tail_element) )) ((* endfor *))((*- endif *))
 ((*- endmacro -*))
 
 

@@ -1,0 +1,8 @@
+<bylaws title_de="VSS Rechtssammlung - Vorschlag"
+	title_fr="Recueil des Reglement de l'UNES - Proposition"
+	xmlns:xi="http://www.w3.org/2001/XInclude">
+	<xi:include href="01.xml" />
+	<xi:include href="41.xml" />
+	<xi:include href="43.xml" />
+</bylaws>
+<!-- vim: set ts=2 sw=2 noet : -->
