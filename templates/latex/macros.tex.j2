@@ -3,15 +3,7 @@
 ((*- endmacro *))
 
 ((* macro language_code_to_babel(language) -*))
-  ((* if language == "de" *))
-    (( "nswissgerman" ))
-  ((* elif language == "fr" *))
-    (( "frenchb" ))
-  ((* elif language == "it" *))
-    (( "italian" ))
-  ((* elif language == "en" *))
-    (( "english" ))
-  ((* endif *))
+  ((* if language == "de" -*))nswissgerman((* elif language == "fr" -*))french((* elif language == "it" -*))italian((* elif language == "en" -*))english((* endif -*))
 ((*- endmacro*))
 
 ((* macro set_multilingual_title(title, languages) -*))
@@ -97,7 +89,7 @@
 
 ((* macro article_monolingual(art, language) -*))
 \begin{minipage}{\textwidth}
-\begin{otherlanguage}{(( language_code_to_babel(language) ))}
+\begin{otherlanguage}{((language_code_to_babel(language)))}
 \begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title[language] | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
   ((* for text in art.text -*))((- handle_text(text, language) ))((* endfor -*))
   ((* if art.letters | length > 0 -*))

@@ -37,7 +37,7 @@
 \RequirePackage{fontenc}
 \RequirePackage{microtype}
 \RequirePackage[all]{nowidow}
-\RequirePackage[nswissgerman, frenchb]{babel}
+\RequirePackage[nswissgerman, french]{babel}
 \RequirePackage{geometry}
 \RequirePackage{enumitem}
 \RequirePackage{graphicx}
