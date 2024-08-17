@@ -25,12 +25,12 @@
     ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( set_multilingual_title(regl.abbrev, GLOBAL_LANGUAGE_LIST) | escape_tex ))((*- endif -*))
   ((* endset *))
   ((* if regl.short[GLOBAL_LANGUAGE] is not none *))
-    \chapter*{(( set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex ))}
+    \chapter*{((set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex))}
     \vspace*{-0.5cm}
     {\usekomafont{subtitle} ((- subtitle )); RSVSS (( shortid | escape_tex -))}
     \addtocentrydefault{chapter}{}{(( set_multilingual_title(regl.short, GLOBAL_LANGUAGE_LIST) | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}
   ((* else *))
-    \chapter*{(( set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex ))}
+    \chapter*{((set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex))}
     \vspace*{-0.5cm}
     {\usekomafont{subtitle} RSVSS (( shortid | escape_tex -))}
     \addtocentrydefault{chapter}{}{(( set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}

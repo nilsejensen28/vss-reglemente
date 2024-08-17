@@ -16,23 +16,23 @@
 
 ((* for regl in bylaws.regulations *))
   ((* set shortid *))
-    ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
+    ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
   ((* endset *))
   ((* set subtitle *))
-    ((*- if regl.short is not none -*))(( regl.short | escape_tex ))((*- endif -*))
-    ((*- if regl.short is not none and regl.abbrev is not none -*)); ((* endif *))
-    ((*- if regl.abbrev is not none -*))(( regl.abbrev | escape_tex ))((*- endif -*))
+    ((*- if regl.short[GLOBAL_LANGUAGE] is not none -*))(( regl.short[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
+    ((*- if regl.short[GLOBAL_LANGUAGE] is not none and regl.abbrev[GLOBAL_LANGUAGE] is not none -*)); ((* endif *))
+    ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
   ((* endset *))
   ((* if regl.short is not none *))
-    \chapter*{(( regl.title_de | escape_tex ))}
+    \chapter*{(( regl.title[GLOBAL_LANGUAGE] | escape_tex ))}
     \vspace*{-0.5cm}
-    {\usekomafont{subtitle} ((- subtitle )); RSVSETH (( shortid | escape_tex -))}
-    \addtocentrydefault{chapter}{}{(( regl.short | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
+    {\usekomafont{subtitle} ((- subtitle )); RSVSS (( shortid | escape_tex -))}
+    \addtocentrydefault{chapter}{}{(( regl.short[GLOBAL_LANGUAGE] | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}
   ((* else *))
-    \chapter*{(( regl.title_de | escape_tex ))}
+    \chapter*{(( regl.title[GLOBAL_LANGUAGE] | escape_tex ))}
     \vspace*{-0.5cm}
-    {\usekomafont{subtitle} RSVSETH (( shortid | escape_tex -))}
-    \addtocentrydefault{chapter}{}{(( regl.title_de | escape_tex )) (RSVSETH (( shortid | escape_tex -)) )}
+    {\usekomafont{subtitle} RSVSS (( shortid | escape_tex -))}
+    \addtocentrydefault{chapter}{}{(( regl.title[GLOBAL_LANGUAGE] | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}
   ((* endif *))
   \stepcounter{chapter}
   

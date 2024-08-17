@@ -7,13 +7,13 @@
 ((*- endmacro*))
 
 ((* macro set_multilingual_title(title, languages) -*))
-  ((* set ns = namespace(title="") *))
+  ((* set ns = namespace(title="") -*))
   ((* for language in languages -*))
     ((* set ns.title = ns.title + title[language] + " --- " *))
     ((* if loop.last *))((* set ns.title = ns.title[:-4] *))((* endif *))
-  ((* endfor *))
-  (( set_text(ns.title, trim=true) ))
-((* endmacro *))
+  ((* endfor -*))
+  ((set_text(ns.title, trim=true)))
+((* endmacro -*))
 
 ((* macro set_multilingual_articles(articles, languages) -*))
   ((* for art in articles *))
@@ -88,7 +88,7 @@
 ((* endmacro *))
 
 ((* macro article_monolingual(art, language) -*))
-\begin{minipage}{\textwidth}
+\begin{minipage}[t]{\textwidth}
 \begin{otherlanguage}{((language_code_to_babel(language)))}
 \begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title[language] | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
   ((* for text in art.text -*))((- handle_text(text, language) ))((* endfor -*))
