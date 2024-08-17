@@ -91,6 +91,7 @@ def generate(args):
             jinja_env.lstrip_blocks = True
             jinja_env.trim_blocks = True
             jinja_env.globals["GLOBAL_LANGUAGE"] = LANGUAGES[0]
+            jinja_env.globals["GLOBAL_LANGUAGE_LIST"] = LANGUAGES
             jinja_env.filters['escape_tex'] = escape_tex
 
             rsvss = bylaws.parse(args.input)
@@ -107,6 +108,9 @@ def generate(args):
                 # with open("{}/VSS_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
                 # f.write(bylaws_template.render(
                 # bylaws=rsvss, asset_path=args.asset_path))
+                # Check that we have at most two set languages
+                if len(LANGUAGES) > 2:
+                    jinja_env.globals["GLOBAL_LANGUAGE_LIST"] = ["de", "fr"]
                 with open("{}/VSS_Rechtssammlung_multilingual.tex".format(args.output_folder), "w", encoding="utf-8") as f:
                     f.write(bylaws_multilingual_template.render(
                         bylaws=rsvss, asset_path=args.asset_path))
