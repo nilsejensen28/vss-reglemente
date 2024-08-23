@@ -175,7 +175,6 @@
 % Behavior of \maketitle
 \makeatletter
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
-	\vspace*{0.5cm} % for some reasor the effective space is twice as large
 	\begin{flushleft}
 		{\usekomafont{title} \@title}\par\vspace*{14pt}{\usekomafont{subtitle} \@subtitle}
 	\end{flushleft}\egroup\thispagestyle{plain.scrheadings}\vspace*{4pt}
@@ -232,28 +231,13 @@
 		{\end{minipage}}
 \makeatother
 
-\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak}{\par}
+\if@bylaws@monolingual
+	\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak}{\par}
+\else
+	\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak\vspace{-\baselineskip}}{\par}
+\fi
 % Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{paragraphs}{enumerate}{1}
-\setlist[paragraphs]{
-	label        = {\textsuperscript{\arabic*}},
-	ref          = {Abs.\ \arabic*},
-	align        = left,
-	leftmargin   = 0em,   % Make sure text flows all the way to the left page margin.
-	labelindent  = 0em,   % Make sure the labels are all the way on the left page margin.
-	labelsep     = 0.5ex, % Label separation of about a space.
-	labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
-	itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
-	before*      = \vspace{-\baselineskip}\nopagebreak,
-	first*       = \nopagebreak,
-	topsep       = 0pt,   % Do not add any space between the text and the paragraphs.
-	beginpenalty = 100000,
-	midpenalty   = 1000,
-	noitemsep,
-	nosep,
-	% Uncomment line below to bebug horizontal spacing.
-	%first*       = \DrawEnumitemLabel,
-}
 
 % Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{insertedparagraphs}{enumerate}{1}
@@ -280,22 +264,80 @@
 % in the enumitem manual (https://mirror.foobar.to/CTAN/macros/latex/contrib/enumitem/enumitem.pdf).
 
 \newlist{letters}{enumerate}{1}
-\setlist[letters]{
-	label        = {\alph*.},
-	ref          = {lit.\ \alph*},
-	topsep       = 0pt,   % Do not add any space between the text and the letters.
-	labelindent  = 1em, % How much to indent the list.
-	labelwidth   = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
-	labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
-	itemindent   = 0em, % The labels are never wider than the labelwidth we fixed above, therefore we can fix this.
-	leftmargin   = !,   % Calculate margin to fit the fixed values.
-	align        = left,
-	beginpenalty = 100000,
-	midpenalty   = 1000,
-	noitemsep,
-	% Uncomment line below to bebug horizontal spacing.
-	%first*       = \DrawEnumitemLabel,
-}
+%Make indent smaller for double sided documents
+\if@bylaws@monolingual
+	\setlist[paragraphs]{
+		label        = {\textsuperscript{\arabic*}},
+		ref          = {Abs.\ \arabic*},
+		align        = left,
+		leftmargin   = 0em,   % Make sure text flows all the way to the left page margin.
+		labelindent  = 0em,   % Make sure the labels are all the way on the left page margin.
+		labelsep     = 0.5ex, % Label separation of about a space.
+		labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
+		itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
+		before*      = \vspace{-\baselineskip}\nopagebreak,
+		first*       = \nopagebreak,
+		topsep       = 0pt,   % Do not add any space between the text and the paragraphs.
+		beginpenalty = 100000,
+		midpenalty   = 1000,
+		noitemsep,
+		nosep,
+		% Uncomment line below to bebug horizontal spacing.
+		%first*       = \DrawEnumitemLabel,
+	}
+	\setlist[letters]{
+		label        = {\alph*.},
+		ref          = {lit.\ \alph*},
+		topsep       = 0pt,   % Do not add any space between the text and the letters.
+		labelindent  = 1em, % How much to indent the list.
+		labelwidth   = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+		labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+		itemindent   = 0em, % The labels are never wider than the labelwidth we fixed above, therefore we can fix this.
+		leftmargin   = !,   % Calculate margin to fit the fixed values.
+		align        = left,
+		beginpenalty = 100000,
+		midpenalty   = 1000,
+		noitemsep,
+		% Uncomment line below to bebug horizontal spacing.
+		%first*       = \DrawEnumitemLabel,
+	}
+\else
+	\setlist[letters]{
+		label        = {\alph*.},
+		ref          = {lit.\ \alph*},
+		topsep       = 0pt,   % Do not add any space between the text and the letters.
+		labelindent  = 0.3em, % How much to indent the list.
+		labelwidth   = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+		labelsep     = 1em, % Needs to be a known value to calculate the labelindent for the inserted list.
+		itemindent   = 0em, % The labels are never wider than the labelwidth we fixed above, therefore we can fix this.
+		leftmargin   = !,   % Calculate margin to fit the fixed values.
+		align        = left,
+		beginpenalty = 100000,
+		midpenalty   = 1000,
+		noitemsep,
+		% Uncomment line below to bebug horizontal spacing.
+		%first*       = \DrawEnumitemLabel,
+	}
+	\setlist[paragraphs]{
+		label        = {\textsuperscript{\arabic*}},
+		ref          = {Abs.\ \arabic*},
+		align        = left,
+		leftmargin   = 0em,   % Make sure text flows all the way to the left page margin.
+		labelindent  = 0em,   % Make sure the labels are all the way on the left page margin.
+		labelsep     = 0.5ex, % Label separation of about a space.
+		labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
+		itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
+		before*      = \nopagebreak,
+		first*       = \nopagebreak,
+		topsep       = 0pt,   % Do not add any space between the text and the paragraphs.
+		beginpenalty = 100000,
+		midpenalty   = 1000,
+		noitemsep,
+		nosep,
+		% Uncomment line below to bebug horizontal spacing.
+		%first*       = \DrawEnumitemLabel,
+	}
+\fi
 
 % This list needs to be aligned to match the indentation of letters.
 \newlist{insertedletters}{enumerate}{1}

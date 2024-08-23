@@ -4,18 +4,18 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section_monolingual, article_mononlingual with context *))
+((* from "macros.tex.j2" import header, section_bilingual, article_mononlingual, set_multilingual_title with context *))
 
-\documentclass[headers, monolingual=true]{assets/latex/vseth-bylaws}
+\documentclass[monolingual=false]{assets/latex/vseth-bylaws}
 
-\title{(( regl.title[GLOBAL_LANGUAGE] | escape_tex ))}
+\title{(( set_multilingual_title(regl.title, GLOBAL_LANGUAGE_LIST) | escape_tex ))}
 ((* set shortid *))
-  ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
+  ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( set_multilingual_title(regl.abbrev, GLOBAL_LANGUAGE_LIST) | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
 ((* endset *))
 ((* set subtitle *))
-  ((*- if regl.short[GLOBAL_LANGUAGE] is not none -*))(( regl.short[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
+  ((*- if regl.short[GLOBAL_LANGUAGE] is not none -*))(( set_multilingual_title(regl.short, GLOBAL_LANGUAGE_LIST) | escape_tex ))((*- endif -*))
   ((*- if regl.short[GLOBAL_LANGUAGE] is not none and regl.abbrev[GLOBAL_LANGUAGE] is not none -*)); ((* endif *))
-  ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
+  ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( set_multilingual_title(regl.abbrev, GLOBAL_LANGUAGE_LIST) | escape_tex ))((*- endif -*))
 ((* endset *))
 ((* if regl.short[GLOBAL_LANGUAGE] is not none *))
 \subtitle{((- subtitle )); RSVSETH (( shortid | escape_tex -))}
@@ -32,10 +32,10 @@
 ((* endif *))
 
 ((* for art in regl.articles -*))
-  ((- article_monolingual(art, GLOBAL_LANGUAGE) ))
-((* endfor -*))
+  ((- article_multiling(art, GLOBAL_LANGUAGE_LIST) ))
+((* endfor *))
 ((* for sec in regl.sections -*))
-  ((- section_monolingual(sec, GLOBAL_LANGUAGE) -))
+  ((- section_bilingual(sec, GLOBAL_LANGUAGE_LIST) -))
 ((* endfor *))
 
 \end{document}

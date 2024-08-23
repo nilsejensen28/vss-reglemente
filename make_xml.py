@@ -13,7 +13,7 @@ LANGUAGES = ["de", "fr"]
 def main():
     logging.basicConfig()
     logging.getLogger().setLevel(LOGGING_LEVEL)
-    FILES = INPUT_DIR + "files_test.json"
+    FILES = INPUT_DIR + "files.json"
     files = json.load(open(FILES))
     for file in files["reglemente"]:
         name_short_de = file["name_short_de"]
@@ -339,6 +339,8 @@ def parse_text(text: str, xml_file: str, language):
     open_tag("text", xml_file, attributes={"language": language})
     # Check that there are no double spaces
     text = text.replace("  ", " ")
+    text = text.replace("«", '"')
+    text = text.replace("»", '"')
     parts = text.split('"')
     if len(parts) % 2 != 1:
         logging.log(logging.WARNING,

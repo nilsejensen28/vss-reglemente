@@ -104,6 +104,8 @@ def generate(args):
                 "bylaws.tex.j2")
             regl_template = jinja_env.get_template(
                 "regulations.tex.j2")
+            regl_multilingual_template = jinja_env.get_template(
+                "regulations_multilingual.tex.j2")
             if isinstance(rsvss, bylaws.Bylaws):
                 # with open("{}/VSS_Rechtssammlung.tex".format(args.output_folder), "w", encoding="utf-8") as f:
                 # f.write(bylaws_template.render(
@@ -121,9 +123,16 @@ def generate(args):
                             bylaws=rsvss, asset_path=args.asset_path))
             else:
                 regl = rsvss
-                with open("{}/{}.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
-                    f.write(regl_template.render(
+                if len(LANGUAGES) > 2:
+                    jinja_env.globals["GLOBAL_LANGUAGE_LIST"] = ["de", "fr"]
+                with open("{}/{}_multilingual.tex".format(args.output_folder, regl.filename), "w", encoding="utf-8") as f:
+                    f.write(regl_multilingual_template.render(
                         regl=regl, asset_path=args.asset_path))
+                for language in LANGUAGES:
+                    jinja_env.globals["GLOBAL_LANGUAGE"] = language
+                    with open("{}/{}_{}.tex".format(args.output_folder, regl.filename, language), "w", encoding="utf-8") as f:
+                        f.write(regl_template.render(
+                            regl=regl, asset_path=args.asset_path))
 
         case "csv":
             rsvss = bylaws.parse(args.input)

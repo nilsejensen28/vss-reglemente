@@ -2,7 +2,17 @@
 	title_fr="Recueil des Reglement de l'UNES - Proposition"
 	xmlns:xi="http://www.w3.org/2001/XInclude">
 	<xi:include href="01.xml" />
+	<xi:include href="11.xml" />
+	<xi:include href="12.xml" />
+	<xi:include href="13.xml" />
+	<xi:include href="21.xml" />
+	<xi:include href="22.xml" />
+	<xi:include href="23.xml" />
+	<xi:include href="24.xml" />
+	<xi:include href="31.xml" />
 	<xi:include href="41.xml" />
+	<xi:include href="42.xml" />
 	<xi:include href="43.xml" />
+	<xi:include href="44.xml" />
 </bylaws>
 <!-- vim: set ts=2 sw=2 noet : -->

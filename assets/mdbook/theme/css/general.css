@@ -1,6 +1,10 @@
 /* Base styles and content styles */
 
 @import 'variables.css';
+@import 'language_picker.css';
+
+
+
 
 :root {
     font-size: 16px;
@@ -159,6 +163,19 @@ kbd {
     padding: 4px 5px;
     vertical-align: middle;
 }
+
+#language-list {
+    left: auto;
+    right: 10px;
+  }
+  
+    [dir="rtl"] #language-list {
+        left: 10px;
+        right: auto;
+    }  
+#language-list a {
+    color: inherit;
+  }
 
 :not(.footnote-definition) + .footnote-definition,
 .footnote-definition + :not(.footnote-definition) {

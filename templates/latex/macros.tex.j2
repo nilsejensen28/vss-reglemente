@@ -9,7 +9,7 @@
 ((* macro set_multilingual_title(title, languages) -*))
   ((* set ns = namespace(title="") -*))
   ((* for language in languages -*))
-    ((* set ns.title = ns.title + title[language] + " --- " *))
+    ((* set ns.title = ns.title + title[language] + " -- " *))
     ((* if loop.last *))((* set ns.title = ns.title[:-4] *))((* endif *))
   ((* endfor -*))
   ((set_text(ns.title, trim=true)))
