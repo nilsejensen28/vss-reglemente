@@ -1,686 +1,398 @@
 <regulation id="11" title_de="Gremienreglement über die Delegiertenversammlung" short_de="DV-Reglement" title_fr="Règlement sur l'Assemblée des délégués" short_fr="Reglement de l'AD" original_implementation_date="2025-01-01">
-<section title_de="Zusammensetzung" title_fr="Composition">
-<articles>
-<article title_de="Teilnehmende" title_fr="Participant·e·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Delegiertenversammlung setzt sich aus der Sitzungsleitung, den Delegierten und deren Stellvertretungen sowie Beobachtenden zusammen.
-</text>
-<text language="fr">
-L'Assemblée des Délégué·e·s est composée de la présidence de séance, des délégué·e·s et de leurs suppléant·e·s ainsi que d'observateur·trice·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Delegierten und Beobachtenden sind in Art. 18 der Statuten bestimmt.
-</text>
-<text language="fr">
-Les délégué·e·s et les observateur·trice·s sont défini·e·s à l'article 18 des statuts.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Den Sitzungen können folgende Personen als Gäste beisitzen:
-</text>
-<text language="fr">
-Les personnes suivantes peuvent assister aux séances en tant qu'invité·e·s :
-</text>
-<letters>
-<letter>
-<text language="de">
-vom Vorstand eingeladene Personen;
-</text>
-<text language="fr">
-les personnes invitées par le Comité exécutif ; 
-</text>
-</letter>
-<letter>
-<text language="de">
-alle Vertretungen des VSS gemäss der Vertretungsliste;
-</text>
-<text language="fr">
-toutes les représentations de l'UNES selon la liste de représentation ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Kandidierende in ein zur Wahl stehendes Amt;
-</text>
-<text language="fr">
-les candidat·e·s à une fonction soumise à une élection ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Angestellte des VSS.
-</text>
-<text language="fr">
-les employé·e·s de l'UNES.
-</text>
-</letter>
-</letters>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Organisation" title_fr="Organisation">
-<articles>
-<article title_de="Sitzungsleitung" title_fr="Présidence de séance">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung besteht aus einer oder mehreren Personen.
-</text>
-<text language="fr">
-La présidence de séance est composée d'une ou plusieurs personnes.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Sie dürfen weder Mitglieder des Vorstands, der GPK, noch stimmberechtigte Delegierte der Delegiertenversammlung sein.
-</text>
-<text language="fr">
-Celles-ci ne peuvent ni être membres du Comité exécutif ou de la CdC, ni être délégué·e·s ayant le droit de vote à l'Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung leitet die Sitzungen der Delegiertenversammlung 
-</text>
-<text language="fr">
-La présidence de séance dirige les séances de l'Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung hat Antrags- und Rederecht.
-</text>
-<text language="fr">
-La présidence de séance jouit d'un droit de motion et de parole.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Vorstand schlägt der Delegiertenversammlung eine Sitzungsleitung vor, diese wird von der Delegiertenversammlung bestätigt. 
-</text>
-<text language="fr">
-Le Comité exécutif propose à l'Assemblée des Délégué·e·s une présidence de séance, celle-ci sera soumise à la confirmation de l'Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Delegiertenversammlung kann bei einer Nichtbestätigung eine andere Sitzungsleitung wählen.
-</text>
-<text language="fr">
-En cas de non-confirmation, l'Assemblée des Délégué·e·s peut élire une autre présidence de séance.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Delegierte" title_fr="Délégué·e·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Delegierten haben Antrags- und Rederecht sowie Stimmrecht.
-</text>
-<text language="fr">
-Les délégué·s·s jouissent d'un droit de motion et de parole ainsi que d'un droit de vote. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Sie müssen Mitglieder der entsendenden Sektion sein und an der entsprechenden Bildungsanstalt auf Bachelor- oder Master Stufe immatrikuliert sein. 
-</text>
-<text language="fr">
-Ils/Elles doivent être membres de la section qui les envoie et être immatriculé·e·s en bachelor ou en master dans l'établissement d'enseignement correspondant.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beobachtende" title_fr="Observateur·trice·s">
-<text language="de">
-Die Beobachtenden besitzen Antrags- und Rederecht.
-</text>
-<text language="fr">
-Les observateur·trice·s jouissent d'un droit de motion et de parole.
-</text>
-</article>
-<article title_de="Gäste" title_fr="Invité·e·s">
-<text language="de">
-Die Gäste besitzen Rederecht. Falls sie Mitglied einer VSS-Sektion sind, haben sie ebenfalls Antragsrecht.
-</text>
-<text language="fr">
-Les invité·e·s jouissent d'un droit de parole. S'ils/Si elles sont membres d'une section de l'UNES, ils/elles jouissent également d'un droit de motion. 
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Sitzungen" title_fr="Séances">
-<articles>
-<article title_de="Termine" title_fr="Dates">
-<paragraphs>
-<paragraph>
-<text language="de">
-Es findet eine ordentliche Sitzung der Delegiertenversammlung pro Semester statt.
-</text>
-<text language="fr">
-Une séance ordinaire de l'Assemblée des Délégué·e·s a lieu par semestre.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Eine ausserordentliche Sitzung kann auf Begehren des Vorstands, der GPK, eines Fünftels aller Sektionen oder des Sektionsrates einberufen werden. Eine ausserordentliche Sitzung hat spätestens 21 Tage nach Einreichen des Begehrens stattzufinden.
-</text>
-<text language="fr">
-Une séance extraordinaire peut être convoquée à la demande du Comité exécutif, de la CdC, d'un cinquième de toutes les sections ou du Conseil des Sections. La séance extraordinaire doit se tenir au plus tard 21 jours après le dépôt de la demande.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Einberufung" title_fr="Convocation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Vorstand bestimmt, in Absprache mit dem Sektionsrat, die genauen Termine der Delegiertenversammlung. Er kommuniziert diese Termine frühzeitig.
-</text>
-<text language="fr">
-Le Comité exécutif fixe, en concertation avec le Conseil des Sections, les dates exactes de l'Assemblée des Délégué·e·s. Il communique ces dates suffisamment à l'avance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Traktanden und materielle Anträge müssen beim Vorstand eintreffen:
-</text>
-<text language="fr">
-L'ordre du jour et les motions matérielles doivent parvenir au Comité exécutif :
-</text>
-<letters>
-<letter>
-<text language="de">
-bei einer ordentlichen Sitzung mindestens 21 Tage vor der Sitzung;
-</text>
-<text language="fr">
-au moins 21 jours avant la séance pour une séance ordinaire
-</text>
-</letter>
-<letter>
-<text language="de">
-bei einer ausserordentlichen Sitzung zusammen mit dem Sitzungsbegehren.
-</text>
-<text language="fr">
-en même temps que la demande de réunion pour une séance extraordinaire.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Einladung und alle relevanten Unterlagen für ordentliche und ausserordentliche Sitzungen sind den Delegierten, ihren Stellvertretungen und den Beobachtenden mindestens 14 Tage vor der Sitzung auf geeignetem Weg zuzustellen.
-</text>
-<text language="fr">
-L'invitation et tous les documents pertinents pour les séances ordinaires et extraordinaires doivent être transmis aux délégué·e·s, à leurs suppléant·e·s et aux observateur·trice·s au moins 14 jours avant la séance par un moyen approprié.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Vorstand ist für den Versand der Einladung zuständig.
-</text>
-<text language="fr">
-Le Comité exécutif est responsable de l'envoi de l'invitation.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschlussfähigkeit" title_fr="Quorum">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Delegiertenversammlung ist beschlussfähig, wenn mindestens zwei Mitglieder der GPK, und entweder:
-</text>
-<text language="fr">
-L'Assemblée des Délégué·e·s est habilitée à prendre des décisions, lorsque au moins deux membres de la CdC, et : 
-</text>
-<letters>
-<letter>
-<text language="de">
-mindestens ein Drittel der Delegierten anwesend ist und mindestens die Hälfte der Sektionen vertreten ist, oder;
-</text>
-<text language="fr">
-soit au moins un tiers des délégué·e·s est présent et au moins la moitié des sections est représentée ;
-</text>
-</letter>
-<letter>
-<text language="de">
-mindestens die Hälfte der Delegierten anwesend ist.
-</text>
-<text language="fr">
-soit au moins la moitié des délégué·e·s est présente.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Sind nicht genügend Mitglieder der GPK anwesend, so wählt die ansonsten beschlussfähige Delegiertenversammlung zu Beginn der Sitzung an Stelle der abwesenden GPK-Mitglieder eine Tages-GPK, welche während der Sitzung dessen Aufgaben übernimmt.
-</text>
-<text language="fr">
-S'il n'y a pas suffisamment de membres de la CdC, l'Assemblée des Délégué·e·s, en mesure de prendre des décisions, élit une CdC journalière en début de séance à la place des membres de la CdC absent·e·s ; celle-ci assume les fonctions de ces dernier·ère·s pendant la séance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ist die Sitzung nicht beschlussfähig, so muss innert 21 Tagen eine weitere Sitzung stattfinden. Die Einladung dazu ist spätestens 7 Tage vor der Sitzung zu verschicken. Diese Delegiertenversammlung ist in jedem Fall beschlussfähig.
-</text>
-<text language="fr">
-Si le quorum n'est pas atteint lors de la séance, une autre séance doit avoir lieu dans les 21 jours. L'invitation à celle-ci doit être envoyée au plus tard 7 jours avant la réunion. Cette Assemblée des Délégué·e·s est, dans tous les cas, habilitée à prendre des décisions.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die GPK prüft die Beschlussfähigkeit laufend.
-</text>
-<text language="fr">
-La CdC contrôle le quorum de façon continue.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ist die Beschlussfähigkeit nicht mehr gegeben, so ist die Sitzung zu unterbrechen.
-</text>
-<text language="fr">
-Si le quorum n'est plus atteint, la séance doit être interrompue.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Protokoll" title_fr="Procès-verbal">
-<paragraphs>
-<paragraph>
-<text language="de">
-Es sind an jeder Sitzung der Delegiertenversammlung ein Wortprotokoll sowie ein Beschlussprotokoll nach Art. 34, resp. Art. 37 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
-</text>
-<text language="fr">
-Un procès-verbal intégral ainsi qu'un procès-verbal des décisions doivent être rédigés lors de chaque séance de l'Assemblée des Délégué·e·s, conformément à l'art. 34, resp. art. 37 du règlement relatif à la participation et à la transparence
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
-</text>
-<text language="fr">
-Les procès-verbaux sont publiés après leur approbation, conformément à l'art. 38 du règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschlussfindung" title_fr="Prise de décision">
-<text language="de">
-Die Sitzungsleitung kann ohne Auszählen der Stimmen erklären, ob die Mehrheit vorhanden ist. Im Zweifelsfall oder auf Begehren muss ausgezählt werden.
-</text>
-<text language="fr">
-La présidence de séance peut déclarer la majorité atteinte sans compter les voix. En cas de doute ou sur demande, un comptage des voix doit être avoir lieu. 
-</text>
-</article>
-<article title_de="Wortmeldungen" title_fr="Interventions">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung erteilt das Rederecht. Sie erteilt Rederecht, soweit möglich, nicht nachfolgend zwei Personen des gleichen Geschlechtsidentität.
-</text>
-<text language="fr">
-La présidence de séance accorde le droit à la parole. Dans la mesure du possible, elle n'accorde pas le droit à la parole à deux personnes ayant la même identité de genre à la suite.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
- Die GPK besitzt jederzeit das Rederecht.
-</text>
-<text language="fr">
-La CdC jouit d'un droit de parole à tout moment.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Wortmeldungen müssen den in Beratung stehenden Gegenstand behandeln. 
-</text>
-<text language="fr">
-Les interventions doivent concerner l'objet en cours de discussion.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Modalitäten der Abhaltung" title_fr="Modalités pour la tenue des séances">
-<paragraphs>
-<paragraph>
-<text language="de">
-In der Regel werden die Sitzungen in Präsenz abgehalten.
-</text>
-<text language="fr">
-En règle générale, les séances ont lieu en présentiel.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Beschluss des Vorstands kann eine Sitzung virtuell abgehalten werden.
-</text>
-<text language="fr">
-Sur décision du Comité exécutif, une séance peut avoir lieu de façon virtuelle. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Personen, die an einer Sitzung virtuell teilnehmen, gelten als anwesend im Sinne der Reglemente.
-</text>
-<text language="fr">
-Les personnes qui participent virtuellement à une séance sont considérées comme présentes au sens des règlements.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Ordentliche Geschäfte aller Sitzungen" title_fr="Affaires ordinaires de toutes les séances">
-<articles>
-<article title_de="Bestimmung der Stimmenzählenden" title_fr="Désignation des scrutateur·trice·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung bestimmt die Stimmenzählenden.
-</text>
-<text language="fr">
-La présidence de séance désigne les scrutateur·trice·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Verlangen werden diese gewählt.
-</text>
-<text language="fr">
-Sur demande, ces dernier·ère·s sont élu·e·s. 
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Genehmigung der Traktandenliste" title_fr="Approbation de l'ordre du jour">
-<text language="de">
-Auf Antrag des Vorstands wird die Traktandenliste genehmigt.
-</text>
-<text language="fr">
-À la demande du Comité exécutif, l'ordre du jour est approuvé.
-</text>
-</article>
-<article title_de="Genehmigung des Protokolls der letzten Sitzung" title_fr="Approbation du procès-verbal de la dernière réunion">
-<text language="de">
-Auf Antrag des Vorstands wird das Protokoll der letzten Sitzung genehmigt.
-</text>
-<text language="fr">
-À la demande du Comité exécutif, le procès-verbal de la dernière séance est approuvé.
-</text>
-</article>
-<article title_de="Protokollführung" title_fr="Rédaction du procès-verbal">
-<text language="de">
-Auf Antrag des Vorstands wird die Protokollführung gewählt.
-</text>
-<text language="fr">
-À la demande du Comité exécutif, une élection a lieu pour la rédaction du procès-verbal.
-</text>
-</article>
-<article title_de="Mitteilungen" title_fr="Communications">
-<paragraphs>
-<paragraph>
-<text language="de">
-Alle Organe gemäss Art. xx der Statuten sowie die Sektionen informieren die Delegiertenversammlung über wichtige aktuelle Sachverhalte.
-</text>
-<text language="fr">
-Tous les organes, conformément à l'art. xx des statuts, ainsi que les sections informent l'Assemblée des Délégué·e·s des faits actuels importants.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es können bei Mitteilungen keine materiellen Beschlüsse gefasst werden.
-</text>
-<text language="fr">
-Aucune décision matérielle ne peut être prise lors de communications.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Ersatzwahlen" title_fr="Élections de remplacement">
-<text language="de">
-Ersatzwahlen können an jeder Sitzung stattfinden.
-</text>
-<text language="fr">
-Des élections de remplacement peuvent avoir lieu à chaque séance.
-</text>
-</article>
-<article title_de="Bestätigungswahlen" title_fr="Élections de confirmation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Vom Sektionsrat gewählte Interimsmitglieder des Vorstands, der GPK und der Kommissionen sowie von Sektionsrat interim gewählte Vertretungen sind an der nächsten Sitzung der Delegiertenversammlung zu bestätigen.
-</text>
-<text language="fr">
-Les membres intérimaires du Comité exécutif, de la CdC et des commissions élu·e·s par le Conseil des Sections ainsi que les représentant·e·s élu·e·s par le Conseil des Sections par intérim doivent être confirmé·e·s lors de la prochaine séance de l'Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei Nicht-Bestätigung kann eine andere Person neu gewählt werden.
-</text>
-<text language="fr">
-En cas de non-confirmation, une autre personne peut être élue.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Ordentliche Geschäfte der Sitzung im Frühjahrssemester" title_fr="Affaires ordinaires de la séance de printemps">
-<articles>
-<article title_de="Wahlen" title_fr="Élections">
-<text language="de">
- 1 Die Delegiertenversammlung wählt an der ordentlichen Sitzung im Frühjahrssemester:
-</text>
-<text language="fr">
- 1 Lors de la session ordinaire du semestre de printemps, l'Assemblée des Délégué·e·s élit :
-</text>
-<letters>
-<letter>
-<text language="de">
-den Vorstand;
-</text>
-<text language="fr">
-le Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Mitglieder und Präsidien der Kommissionen;
-</text>
-<text language="fr">
-les membres et les présidences des commissions ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die GPK;
-</text>
-<text language="fr">
-la CdC ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Rechnungsrevisionsstelle.
-</text>
-<text language="fr">
-l'organe de révision des comptes.
-</text>
-</letter>
-<letter>
-<text language="de">
-2 Die Kandidierenden für das Co-Präsidium und die Kommissionspräsidien werden in gesonderten Wahlgängen gewählt.
-</text>
-<text language="fr">
-2 Les candidat·e·s à la co-présidence et aux présidences de commission sont élu·e·s lors de scrutins distincts.
-</text>
-</letter>
-</letters>
-</article>
-<article title_de="Jahresbericht" title_fr="Rapport annuel">
-<paragraphs>
-<paragraph>
-<text language="de">
-Auf Antrag der einzelnen Organe werden deren Jahresberichte genehmigt.
-</text>
-<text language="fr">
-Sur demande des différents organes, leurs rapports annuels sont approuvés.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Wird der entsprechende Jahresbericht abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen.
-</text>
-<text language="fr">
-Si le rapport annuel correspondant est rejeté, l'Assemblée des Délégué·e·s décide de la marche à suivre.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Jahresrechnung" title_fr="Comptes annuels">
-<paragraphs>
-<paragraph>
-<text language="de">
-Auf Antrag des Vorstands wird die Jahresrechnung genehmigt. 
-</text>
-<text language="fr">
-Sur demande du Comité exécutif, les comptes annuels sont approuvés.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Wird die Jahresrechnung abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen.
-</text>
-<text language="fr">
-Si les comptes annuels sont rejetés, l'Assemblée des Délégué·e·s décide de la marche à suivre.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Entlastung" title_fr="Décharge">
-<text language="de">
-Auf Antrag des Vorstands wird den einzelnen Organen gemäss Art. XX der Statuten, mit Ausnahme der Delegiertenversammlung selbst, die Entlastung erteilt, sofern die entsprechenden Jahresberichte und die Jahresrechnung genehmigt wurden.
-</text>
-<text language="fr">
-Sur demande du Comité exécutif, la décharge est accordée aux différents organes, conformément à l'art. XX des statuts, à l'exception de l'Assemblée des Délégué·e·s elle-même, et à condition que les rapports annuels correspondants et les comptes annuels aient été approuvés.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Ordentliche Geschäfte der Sitzung im Herbstsemester" title_fr="Affaires ordinaires de la séance d'automne">
-<articles>
-<article title_de="Jahresbudget" title_fr="Budget annuel">
-<paragraphs>
-<paragraph>
-<text language="de">
-Auf Antrag des Vorstands wird das Jahresbudget genehmigt. 
-</text>
-<text language="fr">
-Sur demande du Comité exécutif, le budget annuel est approuvé.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Wird das Jahresbudget abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen.
-</text>
-<text language="fr">
-Si le budget annuel est rejeté, l'Assemblée des Délégué·e·s décide de la marche à suivre.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Jahresziele" title_fr="Objectifs annuels">
-<text language="de">
-Auf Antrag des Vorstands werden die Jahresziele genehmigt.
-</text>
-<text language="fr">
-Sur demande du Comité exécutif, les objectifs annuels sont approuvés.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Weitere Geschäfte" title_fr="Autres affaires">
-<articles>
-<article title_de="Abwahl" title_fr="Destitution">
-<text language="de">
-Die vorzeitige Abwahl eines Mitglieds des Vorstands, einer thematischen Kommission oder der GPK kann an jeder DV mit Zweidrittelmehrheit erfolgen.
-</text>
-<text language="fr">
-La destitution anticipée d'un·e membre du Comité exécutif, d'une commission thématique ou de la CdC peut avoir lieu lors de chaque AD à la majorité des deux tiers.
-</text>
-</article>
-<article title_de="Geschäfte aus anderen Reglementen" title_fr="Affaires d'autres règlements">
-<text language="de">
-Die Delegiertenversammlung kann jedes Geschäft behandeln, welches ihr in den Statuten oder einem Reglement zugewiesen wird, oder keinem anderen Organ explizit zugewiesen ist
-</text>
-<text language="fr">
-L'Assemblée des Délégué·e·s peut traiter toute affaire qui lui est attribuée par les statuts ou un règlement, ou qui n'est pas explicitement attribuée à un autre organe. 
-</text>
-</article>
-<article title_de="Varia" title_fr="Divers">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Delegiertenversammlung kann unter Varia frei diskutieren. 
-</text>
-<text language="fr">
-L'Assemblée des Délégué·e·s peut discuter librement sous le point <quote> Divers </quote>.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es können bei Varia keine materiellen Beschlüsse gefasst werden.
-</text>
-<text language="fr">
-Aucune décision matérielle ne peut être prise sous le point <quote> Divers </quote>.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <section title_de="Zusammensetzung" title_fr="Composition">
+        <articles>
+            <article title_de="Teilnehmende" title_fr="Participant·e·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung setzt sich aus der Sitzungsleitung, den Delegierten und deren Stellvertretungen sowie Beobachtenden zusammen. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s est composée de la présidence de séance, des délégué·e·s et de leurs suppléant·e·s ainsi que d'observateur·trice·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Delegierten und Beobachtenden sind in Art. 18 der Statuten bestimmt. </text>
+                        <text language="fr"> Les délégué·e·s et les observateur·trice·s sont défini·e·s à l'article 18 des statuts. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Den Sitzungen können folgende Personen als Gäste beisitzen: </text>
+                        <text language="fr"> Les personnes suivantes peuvent assister aux séances en tant qu'invité·e·s : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> vom Vorstand eingeladene Personen; </text>
+                                <text language="fr"> les personnes invitées par le Comité exécutif ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> alle Vertretungen des VSS gemäss der Vertretungsliste; </text>
+                                <text language="fr"> toutes les représentations de l'UNES selon la liste de représentation ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Kandidierende in ein zur Wahl stehendes Amt; </text>
+                                <text language="fr"> les candidat·e·s à une fonction soumise à une élection ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Angestellte des VSS. </text>
+                                <text language="fr"> les employé·e·s de l'UNES. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Organisation" title_fr="Organisation">
+        <articles>
+            <article title_de="Sitzungsleitung" title_fr="Présidence de séance">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung besteht aus einer oder mehreren Personen. </text>
+                        <text language="fr"> La présidence de séance est composée d'une ou plusieurs personnes. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sie dürfen weder Mitglieder des Vorstands, der GPK, noch stimmberechtigte Delegierte der Delegiertenversammlung sein. </text>
+                        <text language="fr"> Celles-ci ne peuvent ni être membres du Comité exécutif ou de la CdC, ni être délégué·e·s ayant le droit de vote à l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung leitet die Sitzungen der Delegiertenversammlung </text>
+                        <text language="fr"> La présidence de séance dirige les séances de l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung hat Antrags- und Rederecht. </text>
+                        <text language="fr"> La présidence de séance jouit d'un droit de motion et de parole. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand schlägt der Delegiertenversammlung eine Sitzungsleitung vor, diese wird von der Delegiertenversammlung bestätigt. </text>
+                        <text language="fr"> Le Comité exécutif propose à l'Assemblée des Délégué·e·s une présidence de séance, celle-ci sera soumise à la confirmation de l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung kann bei einer Nichtbestätigung eine andere Sitzungsleitung wählen. </text>
+                        <text language="fr"> En cas de non-confirmation, l'Assemblée des Délégué·e·s peut élire une autre présidence de séance. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Delegierte" title_fr="Délégué·e·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegierten haben Antrags- und Rederecht sowie Stimmrecht. </text>
+                        <text language="fr"> Les délégué·s·s jouissent d'un droit de motion et de parole ainsi que d'un droit de vote. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sie müssen Mitglieder der entsendenden Sektion sein und an der entsprechenden Bildungsanstalt auf Bachelor- oder Master Stufe immatrikuliert sein. </text>
+                        <text language="fr"> Ils/Elles doivent être membres de la section qui les envoie et être immatriculé·e·s en bachelor ou en master dans l'établissement d'enseignement correspondant. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beobachtende" title_fr="Observateur·trice·s">
+                <text language="de"> Die Beobachtenden besitzen Antrags- und Rederecht. </text>
+                <text language="fr"> Les observateur·trice·s jouissent d'un droit de motion et de parole. </text>
+            </article>
+            <article title_de="Gäste" title_fr="Invité·e·s">
+                <text language="de"> Die Gäste besitzen Rederecht. Falls sie Mitglied einer VSS-Sektion sind, haben sie ebenfalls Antragsrecht. </text>
+                <text language="fr"> Les invité·e·s jouissent d'un droit de parole. S'ils/Si elles sont membres d'une section de l'UNES, ils/elles jouissent également d'un droit de motion. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Sitzungen" title_fr="Séances">
+        <articles>
+            <article title_de="Termine" title_fr="Dates">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Es findet eine ordentliche Sitzung der Delegiertenversammlung pro Semester statt. </text>
+                        <text language="fr"> Une séance ordinaire de l'Assemblée des Délégué·e·s a lieu par semestre. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Eine ausserordentliche Sitzung kann auf Begehren des Vorstands, der GPK, eines Fünftels aller Sektionen oder des Sektionsrates einberufen werden. Eine ausserordentliche Sitzung hat spätestens 21 Tage nach Einreichen des Begehrens stattzufinden. </text>
+                        <text language="fr"> Une séance extraordinaire peut être convoquée à la demande du Comité exécutif, de la CdC, d'un cinquième de toutes les sections ou du Conseil des Sections. La séance extraordinaire doit se tenir au plus tard 21 jours après le dépôt de la demande. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Einberufung" title_fr="Convocation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Vorstand bestimmt, in Absprache mit dem Sektionsrat, die genauen Termine der Delegiertenversammlung. Er kommuniziert diese Termine frühzeitig. </text>
+                        <text language="fr"> Le Comité exécutif fixe, en concertation avec le Conseil des Sections, les dates exactes de l'Assemblée des Délégué·e·s. Il communique ces dates suffisamment à l'avance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Traktanden und materielle Anträge müssen beim Vorstand eintreffen: </text>
+                        <text language="fr"> L'ordre du jour et les motions matérielles doivent parvenir au Comité exécutif : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> bei einer ordentlichen Sitzung mindestens 21 Tage vor der Sitzung; </text>
+                                <text language="fr"> au moins 21 jours avant la séance pour une séance ordinaire </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> bei einer ausserordentlichen Sitzung zusammen mit dem Sitzungsbegehren. </text>
+                                <text language="fr"> en même temps que la demande de réunion pour une séance extraordinaire. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Einladung und alle relevanten Unterlagen für ordentliche und ausserordentliche Sitzungen sind den Delegierten, ihren Stellvertretungen und den Beobachtenden mindestens 14 Tage vor der Sitzung auf geeignetem Weg zuzustellen. </text>
+                        <text language="fr"> L'invitation et tous les documents pertinents pour les séances ordinaires et extraordinaires doivent être transmis aux délégué·e·s, à leurs suppléant·e·s et aux observateur·trice·s au moins 14 jours avant la séance par un moyen approprié. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist für den Versand der Einladung zuständig. </text>
+                        <text language="fr"> Le Comité exécutif est responsable de l'envoi de l'invitation. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschlussfähigkeit" title_fr="Quorum">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung ist beschlussfähig, wenn mindestens zwei Mitglieder der GPK, und entweder: </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s est habilitée à prendre des décisions, lorsque au moins deux membres de la CdC, et : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> mindestens ein Drittel der Delegierten anwesend ist und mindestens die Hälfte der Sektionen vertreten ist, oder; </text>
+                                <text language="fr"> soit au moins un tiers des délégué·e·s est présent et au moins la moitié des sections est représentée ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> mindestens die Hälfte der Delegierten anwesend ist. </text>
+                                <text language="fr"> soit au moins la moitié des délégué·e·s est présente. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sind nicht genügend Mitglieder der GPK anwesend, so wählt die ansonsten beschlussfähige Delegiertenversammlung zu Beginn der Sitzung an Stelle der abwesenden GPK-Mitglieder eine Tages-GPK, welche während der Sitzung dessen Aufgaben übernimmt. </text>
+                        <text language="fr"> S'il n'y a pas suffisamment de membres de la CdC, l'Assemblée des Délégué·e·s, en mesure de prendre des décisions, élit une CdC journalière en début de séance à la place des membres de la CdC absent·e·s ; celle-ci assume les fonctions de ces dernier·ère·s pendant la séance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ist die Sitzung nicht beschlussfähig, so muss innert 21 Tagen eine weitere Sitzung stattfinden. Die Einladung dazu ist spätestens 7 Tage vor der Sitzung zu verschicken. Diese Delegiertenversammlung ist in jedem Fall beschlussfähig. </text>
+                        <text language="fr"> Si le quorum n'est pas atteint lors de la séance, une autre séance doit avoir lieu dans les 21 jours. L'invitation à celle-ci doit être envoyée au plus tard 7 jours avant la réunion. Cette Assemblée des Délégué·e·s est, dans tous les cas, habilitée à prendre des décisions. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die GPK prüft die Beschlussfähigkeit laufend. </text>
+                        <text language="fr"> La CdC contrôle le quorum de façon continue. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ist die Beschlussfähigkeit nicht mehr gegeben, so ist die Sitzung zu unterbrechen. </text>
+                        <text language="fr"> Si le quorum n'est plus atteint, la séance doit être interrompue. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Protokoll" title_fr="Procès-verbal">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Es sind an jeder Sitzung der Delegiertenversammlung ein Wortprotokoll sowie ein Beschlussprotokoll nach Art. 34, resp. Art. 37 des Mitwirkungs- und Öffentlichkeitsreglements zu führen. </text>
+                        <text language="fr"> Un procès-verbal intégral ainsi qu'un procès-verbal des décisions doivent être rédigés lors de chaque séance de l'Assemblée des Délégué·e·s, conformément à l'art. 34, resp. art. 37 du règlement relatif à la participation et à la transparence </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht. </text>
+                        <text language="fr"> Les procès-verbaux sont publiés après leur approbation, conformément à l'art. 38 du règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschlussfindung" title_fr="Prise de décision">
+                <text language="de"> Die Sitzungsleitung kann ohne Auszählen der Stimmen erklären, ob die Mehrheit vorhanden ist. Im Zweifelsfall oder auf Begehren muss ausgezählt werden. </text>
+                <text language="fr"> La présidence de séance peut déclarer la majorité atteinte sans compter les voix. En cas de doute ou sur demande, un comptage des voix doit être avoir lieu. </text>
+            </article>
+            <article title_de="Wortmeldungen" title_fr="Interventions">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung erteilt das Rederecht. Sie erteilt Rederecht, soweit möglich, nicht nachfolgend zwei Personen des gleichen Geschlechtsidentität. </text>
+                        <text language="fr"> La présidence de séance accorde le droit à la parole. Dans la mesure du possible, elle n'accorde pas le droit à la parole à deux personnes ayant la même identité de genre à la suite. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die GPK besitzt jederzeit das Rederecht. </text>
+                        <text language="fr"> La CdC jouit d'un droit de parole à tout moment. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wortmeldungen müssen den in Beratung stehenden Gegenstand behandeln. </text>
+                        <text language="fr"> Les interventions doivent concerner l'objet en cours de discussion. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Modalitäten der Abhaltung" title_fr="Modalités pour la tenue des séances">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> In der Regel werden die Sitzungen in Präsenz abgehalten. </text>
+                        <text language="fr"> En règle générale, les séances ont lieu en présentiel. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Auf Beschluss des Vorstands kann eine Sitzung virtuell abgehalten werden. </text>
+                        <text language="fr"> Sur décision du Comité exécutif, une séance peut avoir lieu de façon virtuelle. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Personen, die an einer Sitzung virtuell teilnehmen, gelten als anwesend im Sinne der Reglemente. </text>
+                        <text language="fr"> Les personnes qui participent virtuellement à une séance sont considérées comme présentes au sens des règlements. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Ordentliche Geschäfte aller Sitzungen" title_fr="Affaires ordinaires de toutes les séances">
+        <articles>
+            <article title_de="Bestimmung der Stimmenzählenden" title_fr="Désignation des scrutateur·trice·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung bestimmt die Stimmenzählenden. </text>
+                        <text language="fr"> La présidence de séance désigne les scrutateur·trice·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Auf Verlangen werden diese gewählt. </text>
+                        <text language="fr"> Sur demande, ces dernier·ère·s sont élu·e·s. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Genehmigung der Traktandenliste" title_fr="Approbation de l'ordre du jour">
+                <text language="de"> Auf Antrag des Vorstands wird die Traktandenliste genehmigt. </text>
+                <text language="fr"> À la demande du Comité exécutif, l'ordre du jour est approuvé. </text>
+            </article>
+            <article title_de="Genehmigung des Protokolls der letzten Sitzung" title_fr="Approbation du procès-verbal de la dernière réunion">
+                <text language="de"> Auf Antrag des Vorstands wird das Protokoll der letzten Sitzung genehmigt. </text>
+                <text language="fr"> À la demande du Comité exécutif, le procès-verbal de la dernière séance est approuvé. </text>
+            </article>
+            <article title_de="Protokollführung" title_fr="Rédaction du procès-verbal">
+                <text language="de"> Auf Antrag des Vorstands wird die Protokollführung gewählt. </text>
+                <text language="fr"> À la demande du Comité exécutif, une élection a lieu pour la rédaction du procès-verbal. </text>
+            </article>
+            <article title_de="Mitteilungen" title_fr="Communications">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Alle Organe gemäss Art. 16 der Statuten sowie die Sektionen informieren die Delegiertenversammlung über wichtige aktuelle Sachverhalte. </text>
+                        <text language="fr"> Tous les organes, conformément à l'art. 16 des statuts, ainsi que les sections informent l'Assemblée des Délégué·e·s des faits actuels importants. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es können bei Mitteilungen keine materiellen Beschlüsse gefasst werden. </text>
+                        <text language="fr"> Aucune décision matérielle ne peut être prise lors de communications. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Ersatzwahlen" title_fr="Élections de remplacement">
+                <text language="de"> Ersatzwahlen können an jeder Sitzung stattfinden. </text>
+                <text language="fr"> Des élections de remplacement peuvent avoir lieu à chaque séance. </text>
+            </article>
+            <article title_de="Bestätigungswahlen" title_fr="Élections de confirmation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Vom Sektionsrat gewählte Interimsmitglieder des Vorstands, der GPK und der Kommissionen sowie von Sektionsrat interim gewählte Vertretungen sind an der nächsten Sitzung der Delegiertenversammlung zu bestätigen. </text>
+                        <text language="fr"> Les membres intérimaires du Comité exécutif, de la CdC et des commissions élu·e·s par le Conseil des Sections ainsi que les représentant·e·s élu·e·s par le Conseil des Sections par intérim doivent être confirmé·e·s lors de la prochaine séance de l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei Nicht-Bestätigung kann eine andere Person neu gewählt werden. </text>
+                        <text language="fr"> En cas de non-confirmation, une autre personne peut être élue. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Ordentliche Geschäfte der Sitzung im Frühjahrssemester" title_fr="Affaires ordinaires de la séance de printemps">
+        <articles>
+            <article title_de="Wahlen" title_fr="Élections">
+                <text language="de"> 1 Die Delegiertenversammlung wählt an der ordentlichen Sitzung im Frühjahrssemester: </text>
+                <text language="fr"> 1 Lors de la session ordinaire du semestre de printemps, l'Assemblée des Délégué·e·s élit : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> den Vorstand; </text>
+                        <text language="fr"> le Comité exécutif ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> die Mitglieder und Präsidien der Kommissionen; </text>
+                        <text language="fr"> les membres et les présidences des commissions ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> die GPK; </text>
+                        <text language="fr"> la CdC ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> die Rechnungsrevisionsstelle. </text>
+                        <text language="fr"> l'organe de révision des comptes. </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> 2 Die Kandidierenden für das Co-Präsidium und die Kommissionspräsidien werden in gesonderten Wahlgängen gewählt. </text>
+                        <text language="fr"> 2 Les candidat·e·s à la co-présidence et aux présidences de commission sont élu·e·s lors de scrutins distincts. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Jahresbericht" title_fr="Rapport annuel">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Auf Antrag der einzelnen Organe werden deren Jahresberichte genehmigt. </text>
+                        <text language="fr"> Sur demande des différents organes, leurs rapports annuels sont approuvés. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wird der entsprechende Jahresbericht abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen. </text>
+                        <text language="fr"> Si le rapport annuel correspondant est rejeté, l'Assemblée des Délégué·e·s décide de la marche à suivre. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Jahresrechnung" title_fr="Comptes annuels">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Auf Antrag des Vorstands wird die Jahresrechnung genehmigt. </text>
+                        <text language="fr"> Sur demande du Comité exécutif, les comptes annuels sont approuvés. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wird die Jahresrechnung abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen. </text>
+                        <text language="fr"> Si les comptes annuels sont rejetés, l'Assemblée des Délégué·e·s décide de la marche à suivre. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Entlastung" title_fr="Décharge">
+                <text language="de"> Auf Antrag des Vorstands wird den einzelnen Organen gemäss Art. XX der Statuten, mit Ausnahme der Delegiertenversammlung selbst, die Entlastung erteilt, sofern die entsprechenden Jahresberichte und die Jahresrechnung genehmigt wurden. </text>
+                <text language="fr"> Sur demande du Comité exécutif, la décharge est accordée aux différents organes, conformément à l'art. XX des statuts, à l'exception de l'Assemblée des Délégué·e·s elle-même, et à condition que les rapports annuels correspondants et les comptes annuels aient été approuvés. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Ordentliche Geschäfte der Sitzung im Herbstsemester" title_fr="Affaires ordinaires de la séance d'automne">
+        <articles>
+            <article title_de="Jahresbudget" title_fr="Budget annuel">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Auf Antrag des Vorstands wird das Jahresbudget genehmigt. </text>
+                        <text language="fr"> Sur demande du Comité exécutif, le budget annuel est approuvé. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wird das Jahresbudget abgelehnt, so beschliesst die Delegiertenversammlung über das weitere Vorgehen. </text>
+                        <text language="fr"> Si le budget annuel est rejeté, l'Assemblée des Délégué·e·s décide de la marche à suivre. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Jahresziele" title_fr="Objectifs annuels">
+                <text language="de"> Auf Antrag des Vorstands werden die Jahresziele genehmigt. </text>
+                <text language="fr"> Sur demande du Comité exécutif, les objectifs annuels sont approuvés. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Weitere Geschäfte" title_fr="Autres affaires">
+        <articles>
+            <article title_de="Abwahl" title_fr="Destitution">
+                <text language="de"> Die vorzeitige Abwahl eines Mitglieds des Vorstands, einer thematischen Kommission oder der GPK kann an jeder DV mit Zweidrittelmehrheit erfolgen. </text>
+                <text language="fr"> La destitution anticipée d'un·e membre du Comité exécutif, d'une commission thématique ou de la CdC peut avoir lieu lors de chaque AD à la majorité des deux tiers. </text>
+            </article>
+            <article title_de="Geschäfte aus anderen Reglementen" title_fr="Affaires d'autres règlements">
+                <text language="de"> Die Delegiertenversammlung kann jedes Geschäft behandeln, welches ihr in den Statuten oder einem Reglement zugewiesen wird, oder keinem anderen Organ explizit zugewiesen ist </text>
+                <text language="fr"> L'Assemblée des Délégué·e·s peut traiter toute affaire qui lui est attribuée par les statuts ou un règlement, ou qui n'est pas explicitement attribuée à un autre organe. </text>
+            </article>
+            <article title_de="Varia" title_fr="Divers">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung kann unter Varia frei diskutieren. </text>
+                        <text language="fr"> L'Assemblée des Délégué·e·s peut discuter librement sous le point <quote> Divers </quote>. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es können bei Varia keine materiellen Beschlüsse gefasst werden. </text>
+                        <text language="fr"> Aucune décision matérielle ne peut être prise sous le point <quote> Divers </quote>. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>

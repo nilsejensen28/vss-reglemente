@@ -1,406 +1,226 @@
 <regulation id="44" title_de="Reglement über die Anstellungen im VSS" short_de="Anstellungsreglement" title_fr="Reglement relatif aux emplois a l'UNES" short_fr="Reglement d'emploi" original_implementation_date="2025-01-01">
-<section title_de="Allgemeines" title_fr="Généralités">
-<articles>
-<article title_de="Verantwortung" title_fr="Responsabilité">
-<text language="de">
-Der Vorstand trägt die oberste Verantwortung über die Angestellten.
-</text>
-<text language="fr">
-Le Comité exécutif assume la responsabilité supérieure sur les employé·e·s.
-</text>
-</article>
-<article title_de="Anstellung und Kündigung" title_fr="Engagement et licenciement">
-<text language="de">
-Anstellungen und Kündigungen werden durch den Vorstand, im Rahmen vom Budget, vorgenommen.
-</text>
-<text language="fr">
-Les engagements et les licenciements sont effectués par le Comité exécutif dans le cadre du budget.
-</text>
-</article>
-<article title_de="Probezeit" title_fr="Période d'essai">
-<paragraphs>
-<paragraph>
-<text language="de">
-Soweit im Anstellungsvertrag nicht anders geregelt gelten folgende Probezeiten:
-</text>
-<text language="fr">
-Sauf disposition contraire dans le contrat de travail, les périodes d'essai sont les suivantes :
-</text>
-<letters>
-<letter>
-<text language="de">
-Unbefristete Anstellung oder befristete Anstellungen über 12 Monate: 3 Monate ;
-</text>
-<text language="fr">
-engagement à durée indéterminée ou à durée déterminée de plus de 12 mois : 3 mois ;
-</text>
-</letter>
-<letter>
-<text language="de">
-befristete Anstellung von 3-12 Monaten: 1 Monat;
-</text>
-<text language="fr">
-engagement d'une durée déterminée de 3 à 12 mois : 1 mois ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Befristete Anstellung unter 3 Monaten: 2 Wochen.
-</text>
-<text language="fr">
-engagement à durée déterminée de moins de 3 mois : 2 semaines.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Vor Beendigung der Probezeit hat zwischen der angestellten Person und dem*der direkten Vorgesetzten ein Auswertungsgespräch stattzufinden.
-</text>
-<text language="fr">
-Avant la fin de la période d'essai, un entretien évaluatif doit avoir lieu entre l'employé·e et son/sa supérieur·e hiérarchique direct·e.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Für die fristgerechte Einberufung und Durchführung dieses Gespräches ist die*der direkte Vorgesetzte zuständig.
-</text>
-<text language="fr">
-Le ou la supérieur·e hiérarchique direct·e est responsable de la convocation et de la tenue de cet entretien dans les délais impartis.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Arbeitsvertrag" title_fr="Contrat de travail">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Arbeitsvertrag bedarf der Schriftform. Dieses legt mindestens folgendes fest:
-</text>
-<text language="fr">
-Le contrat de travail se fait par écrit. Dans celui-ci figurent au moins les éléments suivants :
-</text>
-<letters>
-<letter>
-<text language="de">
-die Art der Anstellung;
-</text>
-<text language="fr">
-la nature du travail ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Dauer der Anstellung;
-</text>
-<text language="fr">
-la durée de l'engagement ;
-</text>
-</letter>
-<letter>
-<text language="de">
-dem Umfang der Anstellung;
-</text>
-<text language="fr">
-le volume de travail ;
-</text>
-</letter>
-<letter>
-<text language="de">
-den Lohn;
-</text>
-<text language="fr">
-le salaire ;
-</text>
-</letter>
-<letter>
-<text language="de">
-den Aufgabenbeschrieb;
-</text>
-<text language="fr">
-la description des tâches ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Kündigungsfrist.
-</text>
-<text language="fr">
-le délai de préavis.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Er ist konform zu den Reglementen des VSS und den gesetzlichen Bestimmungen.
-</text>
-<text language="fr">
-Il est conforme aux règlements de l'UNES et aux dispositions légales.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die bei Vertragsabschluss geltenden Reglemente des VSS, sowie ein Pflichtenheft sind Teil des Arbeitsvertrags.
-</text>
-<text language="fr">
-Les règlements en vigueur au sein de l'UNES au moment de la conclusion du contrat ainsi qu'un cahier des charges font partie du contrat de travail.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Änderungen und Ergänzungen des Arbeitsvertrags haben schriftlich zu erfolgen.
-</text>
-<text language="fr">
-Les modifications du contrat de travail ainsi que les ajouts à ce dernier doivent être faits par écrit.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es gelten die Bestimmungen zur Zeichnungsberechtigung gemäss Art. 2 des Finanzreglements.
-</text>
-<text language="fr">
-Les dispositions relatives au droit de signature selon l'art. 2 du règlement des finances s'appliquent.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Ausschreibung" title_fr="Appel d'offres">
-<text language="de">
-Offene Stellen werden öffentlich ausgeschrieben.
-</text>
-<text language="fr">
-Les postes vacants sont publiés publiquement.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Arbeitszeit" title_fr="Temps de travail">
-<articles>
-<article title_de="Arbeitszeit und Präsenzzeit" title_fr="Temps de travail et heures de présence">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Arbeitszeit für eine Anstellung beträgt 40 Wochenstunden bei 100%. Der Arbeitsvertrag kann Ausnahmen vorsehen.
-</text>
-<text language="fr">
-Le temps de travail pour un engagement à 100% est de 40 heures par semaine. Le contrat de travail peut prévoir des exceptions.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Vorstand erlässt Richtlinien welche mindestens folgendes regeln:
-</text>
-<text language="fr">
-Le Comité exécutif fixe des directives qui règlent au moins les points suivants :
-</text>
-<letters>
-<letter>
-<text language="de">
-Präsenzzeit;
-</text>
-<text language="fr">
-les heures de présence ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Überstunden;
-</text>
-<text language="fr">
-les heures supplémentaires ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Arbeitszeitkontrolle;
-</text>
-<text language="fr">
-le contrôle du temps de travail ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Arbeitsunfähigkeit;
-</text>
-<text language="fr">
-l'incapacité de travail ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Ferien:
-</text>
-<text language="fr">
-les vacances :
-</text>
-</letter>
-<letter>
-<text language="de">
-Elternschaftsurlaub.
-</text>
-<text language="fr">
-le congé parental.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Vorstand publiziert diese Richtlinien.
-</text>
-<text language="fr">
-Le Comité exécutif publie ces directives.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Löhne" title_fr="Salaires">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der VSS zahlt marktorientierte Löhne.
-</text>
-<text language="fr">
-L'UNES verse des salaires alignés sur le marché.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Löhne werden vom VSS-Vorstand festgesetzt und entwickeln sich gemäss einem vom VSS-Vorstand festgelegten Lohnsystem.
-</text>
-<text language="fr">
-Les salaires sont fixés par le Comité exécutif de l'UNES et évoluent selon un système salarial établi par le Comité exécutif de l'UNES.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der VSS entrichtet Monatsbruttolöhne, die in der Regel am 1. eines jeden Jahres der Teuerung angepasst werden.
-</text>
-<text language="fr">
-L'UNES verse des salaires mensuels bruts qui sont en règle générale ajustés en fonction du renchérissement le 1er de chaque année.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es wird ein 13. Monatslohn ausbezahlt. Je nach Stellenantritt geschieht dies pro rata.
-</text>
-<text language="fr">
-Un 13ème salaire mensuel est versé. Il est versé au prorata selon la date d'entrée en fonction.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Vorgesetzte Stelle" title_fr="Supérieur·e hiérarchique">
-<text language="de">
-Direkt vorgesetzte Stelle der Mitarbeitende, mit Ausnahme des Generalsekretariats, ist jeweils eine Person des Generalsekretariats.
-</text>
-<text language="fr">
-Le ou la supérieur·e hiérarchique direct·e de chaque collaborateur·trice, à l'exception du Secrétariat général, est une personne du Secrétariat général.
-</text>
-</article>
-<article title_de="Auflösung des Anstellungsverhältnisses" title_fr="Résiliation du contrat de travail">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Kündigung des Arbeitsverhältnisses kann von beiden Seiten erfolgen und hat schriftlich unter Einhaltung der im Arbeitsvertrag geregelten Kündigungsfrist zu geschehen.
-</text>
-<text language="fr">
-Le contrat de travail peut être résilié par chacune des parties ; la résiliation se fait par écrit en respectant le délai de préavis prévu dans le contrat de travail.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorbehalten bleiben die Bestimmungen des Obligationenrechts.
-</text>
-<text language="fr">
-Les dispositions du Code des obligations demeurent réservées.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei einer Beendigung des Arbeitsverhältnisses informiert die vorgesetzte Stelle:
-</text>
-<text language="fr">
-Dans le cas d'une résiliation d'un contrat de travail, le/la supérieur·e hiérarchique en informe :
-</text>
-<letters>
-<letter>
-<text language="de">
-den Vorstand;
-</text>
-<text language="fr">
-le Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-den Sektionsrat;
-</text>
-<text language="fr">
-le Conseil des Sections ;
-</text>
-</letter>
-<letter>
-<text language="de">
-das Generalsekretariat;
-</text>
-<text language="fr">
-le Secrétariat général ;
-</text>
-</letter>
-<letter>
-<text language="de">
-alle weiteren betroffenen Organe.
-</text>
-<text language="fr">
-tous les autres organes concernés.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei einer Auflösung des VSS kündigt der Vorstand alle Anstellungsverhältnisse. Die Löhne werden bis zum Ablauf der Kündigungsfrist ausbezahlt.
-</text>
-<text language="fr">
-En cas de résiliation par l'UNES, le Comité exécutif résilie tous les contrats de travail. Les salaires sont versés jusqu'à la fin du délai de préavis.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <section title_de="Allgemeines" title_fr="Généralités">
+        <articles>
+            <article title_de="Verantwortung" title_fr="Responsabilité">
+                <text language="de"> Der Vorstand trägt die oberste Verantwortung über die Angestellten. </text>
+                <text language="fr"> Le Comité exécutif assume la responsabilité supérieure sur les employé·e·s. </text>
+            </article>
+            <article title_de="Anstellung und Kündigung" title_fr="Engagement et licenciement">
+                <text language="de"> Anstellungen und Kündigungen werden durch den Vorstand, im Rahmen vom Budget, vorgenommen. </text>
+                <text language="fr"> Les engagements et les licenciements sont effectués par le Comité exécutif dans le cadre du budget. </text>
+            </article>
+            <article title_de="Probezeit" title_fr="Période d'essai">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Soweit im Anstellungsvertrag nicht anders geregelt gelten folgende Probezeiten: </text>
+                        <text language="fr"> Sauf disposition contraire dans le contrat de travail, les périodes d'essai sont les suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Unbefristete Anstellung oder befristete Anstellungen über 12 Monate: 3 Monate ; </text>
+                                <text language="fr"> engagement à durée indéterminée ou à durée déterminée de plus de 12 mois : 3 mois ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> befristete Anstellung von 3-12 Monaten: 1 Monat; </text>
+                                <text language="fr"> engagement d'une durée déterminée de 3 à 12 mois : 1 mois ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Befristete Anstellung unter 3 Monaten: 2 Wochen. </text>
+                                <text language="fr"> engagement à durée déterminée de moins de 3 mois : 2 semaines. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vor Beendigung der Probezeit hat zwischen der angestellten Person und dem*der direkten Vorgesetzten ein Auswertungsgespräch stattzufinden. </text>
+                        <text language="fr"> Avant la fin de la période d'essai, un entretien évaluatif doit avoir lieu entre l'employé·e et son/sa supérieur·e hiérarchique direct·e. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Für die fristgerechte Einberufung und Durchführung dieses Gespräches ist die*der direkte Vorgesetzte zuständig. </text>
+                        <text language="fr"> Le ou la supérieur·e hiérarchique direct·e est responsable de la convocation et de la tenue de cet entretien dans les délais impartis. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Arbeitsvertrag" title_fr="Contrat de travail">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Arbeitsvertrag bedarf der Schriftform. Dieses legt mindestens folgendes fest: </text>
+                        <text language="fr"> Le contrat de travail se fait par écrit. Dans celui-ci figurent au moins les éléments suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> die Art der Anstellung; </text>
+                                <text language="fr"> la nature du travail ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Dauer der Anstellung; </text>
+                                <text language="fr"> la durée de l'engagement ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> dem Umfang der Anstellung; </text>
+                                <text language="fr"> le volume de travail ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> den Lohn; </text>
+                                <text language="fr"> le salaire ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> den Aufgabenbeschrieb; </text>
+                                <text language="fr"> la description des tâches ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Kündigungsfrist. </text>
+                                <text language="fr"> le délai de préavis. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Er ist konform zu den Reglementen des VSS und den gesetzlichen Bestimmungen. </text>
+                        <text language="fr"> Il est conforme aux règlements de l'UNES et aux dispositions légales. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die bei Vertragsabschluss geltenden Reglemente des VSS, sowie ein Pflichtenheft sind Teil des Arbeitsvertrags. </text>
+                        <text language="fr"> Les règlements en vigueur au sein de l'UNES au moment de la conclusion du contrat ainsi qu'un cahier des charges font partie du contrat de travail. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Änderungen und Ergänzungen des Arbeitsvertrags haben schriftlich zu erfolgen. </text>
+                        <text language="fr"> Les modifications du contrat de travail ainsi que les ajouts à ce dernier doivent être faits par écrit. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es gelten die Bestimmungen zur Zeichnungsberechtigung gemäss Art. 2 des Finanzreglements. </text>
+                        <text language="fr"> Les dispositions relatives au droit de signature selon l'art. 2 du règlement des finances s'appliquent. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Ausschreibung" title_fr="Appel d'offres">
+                <text language="de"> Offene Stellen werden öffentlich ausgeschrieben. </text>
+                <text language="fr"> Les postes vacants sont publiés publiquement. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Arbeitszeit" title_fr="Temps de travail">
+        <articles>
+            <article title_de="Arbeitszeit und Präsenzzeit" title_fr="Temps de travail et heures de présence">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Arbeitszeit für eine Anstellung beträgt 40 Wochenstunden bei 100%. Der Arbeitsvertrag kann Ausnahmen vorsehen. </text>
+                        <text language="fr"> Le temps de travail pour un engagement à 100% est de 40 heures par semaine. Le contrat de travail peut prévoir des exceptions. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand erlässt Richtlinien welche mindestens folgendes regeln: </text>
+                        <text language="fr"> Le Comité exécutif fixe des directives qui règlent au moins les points suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Präsenzzeit; </text>
+                                <text language="fr"> les heures de présence ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Überstunden; </text>
+                                <text language="fr"> les heures supplémentaires ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Arbeitszeitkontrolle; </text>
+                                <text language="fr"> le contrôle du temps de travail ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Arbeitsunfähigkeit; </text>
+                                <text language="fr"> l'incapacité de travail ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Ferien: </text>
+                                <text language="fr"> les vacances : </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Elternschaftsurlaub. </text>
+                                <text language="fr"> le congé parental. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand publiziert diese Richtlinien. </text>
+                        <text language="fr"> Le Comité exécutif publie ces directives. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Löhne" title_fr="Salaires">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS zahlt marktorientierte Löhne. </text>
+                        <text language="fr"> L'UNES verse des salaires alignés sur le marché. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Löhne werden vom VSS-Vorstand festgesetzt und entwickeln sich gemäss einem vom VSS-Vorstand festgelegten Lohnsystem. </text>
+                        <text language="fr"> Les salaires sont fixés par le Comité exécutif de l'UNES et évoluent selon un système salarial établi par le Comité exécutif de l'UNES. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der VSS entrichtet Monatsbruttolöhne, die in der Regel am 1. eines jeden Jahres der Teuerung angepasst werden. </text>
+                        <text language="fr"> L'UNES verse des salaires mensuels bruts qui sont en règle générale ajustés en fonction du renchérissement le 1er de chaque année. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es wird ein 13. Monatslohn ausbezahlt. Je nach Stellenantritt geschieht dies pro rata. </text>
+                        <text language="fr"> Un 13ème salaire mensuel est versé. Il est versé au prorata selon la date d'entrée en fonction. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Vorgesetzte Stelle" title_fr="Supérieur·e hiérarchique">
+                <text language="de"> Direkt vorgesetzte Stelle der Mitarbeitende, mit Ausnahme des Generalsekretariats, ist jeweils eine Person des Generalsekretariats. </text>
+                <text language="fr"> Le ou la supérieur·e hiérarchique direct·e de chaque collaborateur·trice, à l'exception du Secrétariat général, est une personne du Secrétariat général. </text>
+            </article>
+            <article title_de="Auflösung des Anstellungsverhältnisses" title_fr="Résiliation du contrat de travail">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Kündigung des Arbeitsverhältnisses kann von beiden Seiten erfolgen und hat schriftlich unter Einhaltung der im Arbeitsvertrag geregelten Kündigungsfrist zu geschehen. </text>
+                        <text language="fr"> Le contrat de travail peut être résilié par chacune des parties ; la résiliation se fait par écrit en respectant le délai de préavis prévu dans le contrat de travail. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorbehalten bleiben die Bestimmungen des Obligationenrechts. </text>
+                        <text language="fr"> Les dispositions du Code des obligations demeurent réservées. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei einer Beendigung des Arbeitsverhältnisses informiert die vorgesetzte Stelle: </text>
+                        <text language="fr"> Dans le cas d'une résiliation d'un contrat de travail, le/la supérieur·e hiérarchique en informe : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> den Vorstand; </text>
+                                <text language="fr"> le Comité exécutif ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> den Sektionsrat; </text>
+                                <text language="fr"> le Conseil des Sections ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> das Generalsekretariat; </text>
+                                <text language="fr"> le Secrétariat général ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> alle weiteren betroffenen Organe. </text>
+                                <text language="fr"> tous les autres organes concernés. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei einer Auflösung des VSS kündigt der Vorstand alle Anstellungsverhältnisse. Die Löhne werden bis zum Ablauf der Kündigungsfrist ausbezahlt. </text>
+                        <text language="fr"> En cas de résiliation par l'UNES, le Comité exécutif résilie tous les contrats de travail. Les salaires sont versés jusqu'à la fin du délai de préavis. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>

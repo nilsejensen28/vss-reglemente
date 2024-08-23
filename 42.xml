@@ -1,1482 +1,838 @@
 <regulation id="42" title_de="Mitwirkungs- und Öffenlichkeitsreglement" short_de="MöHRe" title_fr="Reglement sur la participation et la communication" short_fr="Reglement de participation et de communication" original_implementation_date="2025-01-01">
-<section title_de="Allgemeines" title_fr="Généralités">
-<articles>
-<article title_de="Grundlagen" title_fr="Principes de base">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement regelt die Rechte der VSS-Mitglieder bezüglich der Mitwirkung und der Öffentlichkeit.
-</text>
-<text language="fr">
-Le présent règlement règle les droits des membres de l'UNES en matière de participation et de transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Dieses Reglement regelt die allgemeinen Verfahrensregeln und die Instrumente in parlamentarischen Verfahren.
-</text>
-<text language="fr">
-Le présent règlement définit les règles générales de procédure et les instruments utilisés dans les procédures parlementaires.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Ausstand" title_fr="Récusation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Jedes Mitglied ist von Gesetzeswegen vom Stimmrecht ausgeschlossen bei der Beschlussfassung über ein Rechtsgeschäft oder einen Rechtsstreit zwischen ihm, seinem Ehepartner oder einer mit ihm bis zum zweiten Grad verwandten Person einerseits und dem VSS andererseits.
-</text>
-<text language="fr">
-Tout·e membre est légalement privé·e de son droit de vote lors d'une prise de décision concernant un acte juridique ou un litige entre lui/elle, son/sa conjoint·e ou une personne avec qu'il/elle a un lien de parenté jusqu'au deuxième degré, d'une part, et l'UNES, d'autre part.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Jedes Mitglied ist vom Stimmrecht ausgeschlossen bei der Beschlussfassung über finanzielle oder anderweitige Vorteile, welche über das für das Amt übliche Mass hinausgehen.
-</text>
-<text language="fr">
-Chaque membre est privé·e de son droit de vote lors d'une prise de décision concernant des avantages financiers ou autres qui dépassent le cadre habituel de sa fonction.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Mitwirkung" title_fr="Participation">
-<articles>
-<article title_de="Mitwirkung und Stimmrecht" title_fr="Participation et droit de vote">
-<paragraphs>
-<paragraph>
-<text language="de">
-Nur in der Schweiz immatrikulierte Studierende auf Bachelor- oder Master-Stufe im Sinne von Art. 4 der Verordnung des Hochschulrates über die Koordination der Lehre an den Schweizer Hochschulen besitzen passives Wahlrecht für die Organe und Vertretungen des VSS, ausser die Statuten oder ein Reglement sehen eine Ausnahme vor.
-</text>
-<text language="fr">
-Seul·e·s les étudiant·e·s immatriculé·e·s en Suisse au niveau bachelor ou master au sens de l'art. 4 de l'Ordonnance du Conseil des hautes écoles sur la coordination de l'enseignement dans les hautes écoles suisses ont un droit de vote passif pour les organes et représentations de l'UNES, sauf si les statuts ou un règlement prévoient une exception.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Mitglieder von VSS-Sektionen, im Sinne von Mitgliedschaftsreglement Art. XX haben ausserdem:
-</text>
-<text language="fr">
-Les membres des sections de l'UNES, au sens du règlement d'adhésion, art. XX, ont en outre :
-</text>
-<letters>
-<letter>
-<text language="de">
-das Recht auf Antrag, Vorstoss, Beschwerde und Rekurs;
-</text>
-<text language="fr">
-le droit de déposer une motion, une intervention, une plainte ou un recours ;
-</text>
-</letter>
-<letter>
-<text language="de">
-das Recht auf Öffentlichkeit.
-</text>
-<text language="fr">
-le droit à la transparence.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Folgende Gremien haben zusätzlich Antragsrecht:
-</text>
-<text language="fr">
-Les organes suivants disposent également d'un droit de motion :
-</text>
-<letters>
-<letter>
-<text language="de">
-die GPK;
-</text>
-<text language="fr">
-la CdC ;
-</text>
-</letter>
-<letter>
-<text language="de">
-der Vorstand;
-</text>
-<text language="fr">
-le Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die thematischen Kommissionen.
-</text>
-<text language="fr">
-les commissions thématiques.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Mitglieder haben als Organisationseinheiten das Antragsrecht. 
-</text>
-<text language="fr">
-En tant qu'unités organisationnelles, les membres ont un droit de motion.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Angestellten und geladenen Gästen kann von der Sitzungsleitung das Wort erteilt werden. 
-</text>
-<text language="fr">
-Les employé·e·s et les invité·e·s peuvent être autorisé·e·s à prendre la parole par la présidence de séance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Zu Geschäften eines Hochschultypus haben die Sektionen dieses Typus, falls sie von Mitgliedern der anderen Hochschultypen überstimmt werden, ein gemeinsames Zurückweisungsrecht. 
-</text>
-<text language="fr">
-Pour les affaires d'un type de haute école, les sections de ce type ont un droit de rejet commun si elles sont mises en minorité par les membres des autres types de hautes écoles.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Instrumente" title_fr="Instruments">
-<articles>
-<article title_de="Allgemeines" title_fr="Généralités">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der VSS kennt folgende Instrumente:
-</text>
-<text language="fr">
-L'UNES connaît les instruments suivants :
-</text>
-<letters>
-<letter>
-<text language="de">
-Anträge;
-</text>
-<text language="fr">
-Motions ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Vorstösse.
-</text>
-<text language="fr">
-Interventions.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorstösse und Anträge müssen schriftlich auf Deutsch und Französisch eingereicht werden.
-</text>
-<text language="fr">
-Les interventions et les motions doivent être déposées par écrit en allemand et en français.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Anträge" title_fr="Motions">
-<paragraphs>
-<paragraph>
-<text language="de">
-Jedes Gremium des VSS kennt folgende Formen von Anträgen:
-</text>
-<text language="fr">
-Chaque organe de l'UNES connaît les formes de motions suivantes :
-</text>
-<letters>
-<letter>
-<text language="de">
-Materieller Antrag;
-</text>
-<text language="fr">
-motion matérielle ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Änderungsantrag;
-</text>
-<text language="fr">
-amendement ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Ordnungsantrag.
-</text>
-<text language="fr">
-motion d'ordre.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Materielle und Änderungsanträge können von allen Antragsberechtigten eingereicht werden.
-</text>
-<text language="fr">
-Les motions matérielles et les amendements peuvent être déposés par tout·e candidat·e éligible.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Vorstösse" title_fr="Interventions">
-<paragraphs>
-<paragraph>
-<text language="de">
-Nur die Delegiertenversammlung und der Sektionsrat kennen zudem folgende Formen von Vorstössen:
-</text>
-<text language="fr">
-Seul·e·s l'Assemblée des Délégué·e·s et le Conseil des Sections connaissent les formes d'interventions suivantes :
-</text>
-<letters>
-<letter>
-<text language="de">
-Motion;
-</text>
-<text language="fr">
-motion ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Postulat;
-</text>
-<text language="fr">
-postulat ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Interpellation;
-</text>
-<text language="fr">
-interpellation ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Anfrage.
-</text>
-<text language="fr">
-demande.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorstösse können sich an den VSS-Vorstand, Arbeitsgruppen, thematische Kommissionen, die Finanzkommission und die GPK richten.
-</text>
-<text language="fr">
-Les interventions peuvent être adressées au Comité exécutif de l'UNES, aux groupes de travail, aux commissions thématiques, à la commission des finances et à la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorstösse unterliegen der ordentlichen Antragsfrist des entsprechenden Gremiums.
-</text>
-<text language="fr">
-Les interventions sont soumises au délai de dépôt ordinaire de l'organe correspondant.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Antrag oder Vorstoss muss an der nächsten Sitzung dieses Gremiums behandelt werden.
-</text>
-<text language="fr">
-La motion ou l'intervention doit être traitée lors de la prochaine séance de cet organe.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Sofern wichtige Gründe vorliegen, kann das beauftragte Gremium die Beantwortung des Vorstosses oder das Treffen einer Massnahme verweigern. Dies ist dem beauftragenden Gremium unmittelbar mitzuteilen und zu begründen. Im Streitfall entscheidet die GPK über das Vorliegen wichtiger Gründe.
-</text>
-<text language="fr">
-Si des motifs importants le justifient, l'organe chargé de répondre à une intervention ou de prendre une mesure peut refuser de le faire. Ce refus doit être communiqué directement à l'organe qui l'en a chargé et doit être justifié. En cas de litige, la CdC décide de l'existence de motifs importants.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Wichtige Gründe umfassen unter anderem:
-</text>
-<text language="fr">
-Les raisons importantes incluent notamment :
-</text>
-<letters>
-<letter>
-<text language="de">
-Vertraulichkeit der Information gemäss Art. XX;
-</text>
-<text language="fr">
-la confidentialité des informations selon art. XX;
-</text>
-</letter>
-<letter>
-<text language="de">
-Verstoss gegen übergeordnete Rechtsbestimmungen oder Bestimmungen der Statuten und sonstiges höherrangiges Recht.
-</text>
-<text language="fr">
-la violation de dispositions juridiques supérieures ou de dispositions des statuts et autres droits supérieurs.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Wenn die GPK zum Schluss kommt, dass wichtige Gründe nicht vorliegen, ist das beauftragte Gremium verpflichtet, die Massnahme zu treffen oder den Vorstoss zu beantworten.
-</text>
-<text language="fr">
-Si la CdC conclut d'une absence de motifs importants, l'organe chargé de prendre une mesure ou de répondre à une intervention est tenu de le faire.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Antragstellende können ihre Vorstösse jederzeit zurückziehen, solange eine andere antragsberechtigte Person den Vorstoss nicht aufrechterhalten möchte.
-</text>
-<text language="fr">
-Les motionnaires peuvent retirer leur intervention à tout moment tant qu'une autre personne en droit de déposer des motions ne souhaite pas maintenir l'intervention.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Materieller Antrag" title_fr="Motion matérielle">
-<paragraphs>
-<paragraph>
-<text language="de">
-Mit dem materiellen Antrag wird die Behandlung einer materiellen Frage durch ein Gremium verlangt.
-</text>
-<text language="fr">
-La motion matérielle demande qu'une question matérielle soit traitée par un organe.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Jedes Mitglied einer VSS-Sektion kann fristgerecht Anträge an jedes Gremium des VSS stellen.
-</text>
-<text language="fr">
-Chaque membre d'une section de l'UNES peut déposer des motions auprès de chaque organe de l'UNES dans le délai imparti.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Antrag muss an der nächsten Sitzung dieses Gremiums behandelt werden.
-</text>
-<text language="fr">
-La motion doit être traitée lors de la prochaine séance de cet organe.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-In folgenden Fällen muss der Antrag zwingend den Zeitpunkt des Inkrafttretens enthalten:
-</text>
-<text language="fr">
-Dans les cas suivants, la motion doit obligatoirement préciser la date d'entrée en vigueur :
-</text>
-<letters>
-<letter>
-<text language="de">
-rechtsetzende Anträge zum Erlass oder zur Änderung der Statuten oder eines Reglements;
-</text>
-<text language="fr">
-les motions législatives relatives à l'adoption ou la modification des statuts ou d'un règlement ;
-</text>
-</letter>
-<letter>
-<text language="de">
-alle weiteren Anträge, deren Annahme ohne spezifiziertes Datum des Inkrafttretens zu Rechtsunsicherheit führen würde. Der Entscheid liegt bei der GPK.
-</text>
-<text language="fr">
-toute autre motion dont l'adoption sans spécification de la date d'entrée en vigueur entraînerait un flou juridique. La décision revient à la CdC.
-</text>
-</letter>
-</letters>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Änderungsantrag" title_fr="Amendement">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Antragsberechtigten können zu jedem Antrag, welcher in der Traktandenliste enthalten ist, Änderungsanträge stellen.
-</text>
-<text language="fr">
-Les personnes en droit de déposer des motions peuvent déposer des amendements à toute motion figurant à l'ordre du jour.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Änderungsanträge können Unteränderungsanträge gestellt werden.
-</text>
-<text language="fr">
-Les amendements peuvent faire l'objet de sous-amendements.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Änderungsanträge resp. Unteränderungsanträge sind nach einer mündlichen Begründung dem oder der Vorsitzenden des Gremiums schriftlich einzureichen.
-</text>
-<text language="fr">
-Après avoir été justifiés oralement, les amendements ainsi que les sous-amendements doivent être déposés par écrit auprès du/de la président·e de l'organe.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Redaktionelle Änderungen sind mit Zustimmung des oder der Vorsitzenden des jeweiligen Gremiums jederzeit möglich.
-</text>
-<text language="fr">
-Des modifications rédactionnelles sont possibles à tout moment avec l'accord du ou de la président·e de l'organe concerné.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Übernahmen von Anträgen" title_fr="Reprise de motions">
-<text language="de">
-Antragstellende können ihren Antrag jederzeit im Sinne von gestellten Änderungsanträgen modifizieren. 
-</text>
-<text language="fr">
-Les motionnaires peuvent à tout moment modifier leur motion dans le sens des amendements déposés.
-</text>
-</article>
-<article title_de="Ordnungsantrag" title_fr="Motion d'ordre">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Antragsberechtigten können jederzeit ausserhalb der Reihenfolge der Redner·innenliste einen Ordnungsantrag stellen.
-</text>
-<text language="fr">
-Les personnes en droit de déposer des motions peuvent à tout moment déposer une motion d'ordre en dehors de l'ordre prévu par la liste des intervenant·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ordnungsanträge können gestellt werden auf:
-</text>
-<text language="fr">
-Les motions d'ordre peuvent être déposées sur :
-</text>
-<letters>
-<letter>
-<text language="de">
-Änderung der Reihenfolge von Traktanden;
-</text>
-<text language="fr">
-la modification de la séquence des points à l'ordre du jour ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Rückkommen auf ein abgeschlossenes Traktandum;
-</text>
-<text language="fr">
-le réexamen d'un point clos à l'ordre du jour ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Rückweisung von Geschäften an die Antragstellende Person oder Gremium;
-</text>
-<text language="fr">
-le renvoi d'affaires à la personne ou l'organe qui a déposé la motion ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Eröffnung der Diskussion;
-</text>
-<text language="fr">
-l'ouverture de la discussion ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Abbruch der Diskussion;
-</text>
-<text language="fr">
-l'interruption de la discussion ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Beschränkung oder Erweiterung der Redezeit;
-</text>
-<text language="fr">
-la limitation ou l'extension du temps de parole ;
-</text>
-</letter>
-<letter>
-<text language="de">
- Wegweisung von Anwesenden;
-</text>
-<text language="fr">
-l'exclusion de personnes présentes ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Änderung von Modus und Form einer Abstimmung oder Wahl;
-</text>
-<text language="fr">
-le changement du mode et de la forme d'un vote ou d'une élection ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Wiederholung einer Abstimmung oder Wahl;
-</text>
-<text language="fr">
-la répétition d'un vote ou d'une élection ;
-</text>
-</letter>
-<letter>
-<text language="de">
- Unterbruch der Sitzung.
-</text>
-<text language="fr">
-l'interruption de la séance.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Ordnungsantrag muss sofort behandelt werden. Wird keine Gegenrede ergriffen, gilt der Ordnungsantrag als angenommen, ansonsten muss sofort darüber abgestimmt werden.
-</text>
-<text language="fr">
-La motion d'ordre doit être traitée immédiatement. Si aucune objection n'est formulée, la motion d'ordre est considérée comme acceptée, sinon elle doit être votée immédiatement.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Änderung der Reihenfolge der Traktandenliste" title_fr="Modification de la séquence des points à l'ordre du jour">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Reihenfolge der noch zu behandelnden Traktanden kann durch den Ordnungsantrag umgestellt werden.
-</text>
-<text language="fr">
-La séquence des points qu'il reste à traiter peut être modifiée par une motion d'ordre.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es können hierdurch keine neuen Traktanden aufgenommen werden.
-</text>
-<text language="fr">
-Aucun nouveau point ne peut être ajouté à l'ordre du jour.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Rückkommensantrag" title_fr="Demande de réexamen">
-<paragraphs>
-<paragraph>
-<text language="de">
-Durch den Ordnungsantrag kann mit 2/3-Mehr auf ein bereits abgeschlossenes Geschäft zurückgekommen werden.
-</text>
-<text language="fr">
-La motion d'ordre permet de revenir, à la majorité des 2/3, sur un point déjà clos.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es kommen nur Geschäfte derselben Sitzung infrage.
-</text>
-<text language="fr">
-Seuls les points de la même séance peuvent être concernés.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Rückweisung von Geschäften" title_fr="Renvoi d'affaires">
-<paragraphs>
-<paragraph>
-<text language="de">
-Durch den Ordnungsantrag kann ein Geschäft an den Antragsteller oder die Antragstellerin zurückgewiesen werden.
-</text>
-<text language="fr">
-La motion d'ordre permet de renvoyer une affaire au/à la motionnaire.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Antrag kann zuhanden der nächsten Sitzung des Gremiums nachbearbeitet werden.
-</text>
-<text language="fr">
-La motion peut être retravaillée en vue de la prochaine séance de l'organe.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Eröffnung der Diskussion" title_fr="Ouverture de la discussion">
-<text language="de">
-Auf den Ordnungsantrag hin ist die Sitzungsleitung verpflichtet, die Diskussion zu eröffnen oder wiederzueröffnen.
-</text>
-<text language="fr">
-Suite à une motion d'ordre, la présidence de séance est tenue d'ouvrir ou de rouvrir la discussion.
-</text>
-</article>
-<article title_de="Abbruch der Diskussion" title_fr="Interruption de la discussion">
-<paragraphs>
-<paragraph>
-<text language="de">
-Auf den Ordnungsantrag hin wird die Diskussion unterbrochen.
-</text>
-<text language="fr">
-Suite à une motion d'ordre, la discussion est interrompue.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Antrag beinhaltet, welcher Teil der Diskussion abgebrochen wird.
-</text>
-<text language="fr">
-La motion indique quelle partie de la discussion est interrompue.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung nimmt alle Personen in die Redner·innenliste auf, welche sich noch zum Thema äussern möchten. Antragstellende behalten die Redefreiheit.
-</text>
-<text language="fr">
-La présidence de séance inscrit sur la liste des intervenant·e·s toute personne qui souhaite encore s'exprimer sur le sujet. Les motionnaires conservent leur liberté de parole.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Nachdem alle Personen auf der Redner·innenliste zu Wort gekommen sind, ist die Diskussion beendet.
-</text>
-<text language="fr">
-Une fois que toutes les personnes inscrites sur la liste des intervenant·e·s ont pris la parole, la discussion est close.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschränkung oder Erweiterung der Redezeit" title_fr="Limitation ou extension du temps de parole">
-<paragraphs>
-<paragraph>
-<text language="de">
-Mit der Annahme des Ordnungsantrags wird die Redezeit für alle beschränkt.
-</text>
-<text language="fr">
-L'adoption d'une motion d'ordre limite le temps de parole pour toutes et tous.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Redezeitbeschränkung kann durch einen Ordnungsantrag auf Erweiterung der Redezeit gelockert oder aufgehoben werden.
-</text>
-<text language="fr">
-La limitation du temps de parole peut être assouplie ou levée par une motion d'ordre demandant l'extension du temps de parole.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Redezeitbeschränkung kann für ein Geschäft, ein ganzes Traktandum oder für die gesamte Sitzung erfolgen.
-</text>
-<text language="fr">
-La limitation du temps de parole peut être appliquée à une affaire, à un point entier à l'ordre du jour ou à l'ensemble de la séance.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Wegweisung von Anwesenden" title_fr="Exclusion de personnes présentes">
-<paragraphs>
-<paragraph>
-<text language="de">
-Durch den Ordnungsantrag wird die Sitzungsleitung verpflichtet, die genannten Teilnehmenden von der Sitzung wegzuweisen.
-</text>
-<text language="fr">
-La motion d'ordre contraint la présidence de la séance à exclure les participant·e·s mentionné·e·s de la séance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung entscheidet, ob die Wegweisung vorübergehend oder definitiv ist.
-</text>
-<text language="fr">
-La présidence de séance décide si l'exclusion est temporaire ou définitive.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Im Einsprachefall entscheidet das einfache Mehr.
-</text>
-<text language="fr">
-En cas d'opposition, la décision est prise à la majorité simple.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Änderung von Modus und Form einer Abstimmung oder Wahl" title_fr="Changement du mode et de la forme d'un vote ou d'une élection">
-<paragraphs>
-<paragraph>
-<text language="de">
-Modus und Form einer Abstimmung oder Wahl können mit einem Ordnungsantrag angepasst werden. Insbesondere kann eine geheime Abstimmung beantragt werden.
-</text>
-<text language="fr">
-Le mode et la forme d'un vote ou d'une élection peuvent être modifiés par une motion d'ordre. Il est notamment possible de demander un vote à bulletin secret.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Über einen Ordnungsantrag auf geheime Wahl wird nicht abgestimmt, sie muss auf Verlangen jedes bzw. jeder Stimmberechtigten durchgeführt werden.
-</text>
-<text language="fr">
-Il n'y a pas de vote sur une motion d'ordre demandant une élection à bulletin secret, celle-ci doit être organisée à la demande de chaque votant·e.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Art der benötigten Mehrheit kann mit diesem Ordnungsantrag nicht geändert werden.
-</text>
-<text language="fr">
-Le type de majorité requise ne peut pas être modifié par une telle motion d'ordre.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Wiederholung einer Abstimmung oder Wahl" title_fr="Répétition d'un vote ou d'une élection">
-<paragraphs>
-<paragraph>
-<text language="de">
-Bei Annahme des Antrags wird eine Abstimmung oder Wahl wiederholt.
-</text>
-<text language="fr">
-Si la motion est adoptée, un vote ou une élection a lieu une nouvelle fois.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Antragstellende können mit dem Antrag auch eine Änderung des Modus der Abstimmung oder Wahl beantragen.
-</text>
-<text language="fr">
-À travers la motion, les motionnaires peuvent également demander un changement de mode du vote ou de l'élection.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Art der benötigten Mehrheit kann mit diesem Ordnungsantrag nicht geändert werden.
-</text>
-<text language="fr">
-Le type de majorité requise ne peut pas être modifié par une telle motion d'ordre.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Unterbruch der Sitzung" title_fr="Interruption de la séance">
-<paragraphs>
-<paragraph>
-<text language="de">
-Bei Annahme des Antrags wird die Sitzung unterbrochen.
-</text>
-<text language="fr">
-Si la motion est adoptée, la séance est suspendue.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Antrag muss die Dauer des Unterbruchs beinhalten.
-</text>
-<text language="fr">
-La motion doit préciser la durée de l'interruption.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Motion" title_fr="Motion (forme d'intervention)">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Motion fordert das beauftragte Gremium auf, eine in seiner Kompetenz liegende Massnahme zu treffen.
-</text>
-<text language="fr">
-La motion charge l'organe visé de prendre une mesure relevant de sa compétence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Überweisung einer Motion bedarf eines absoluten Mehrs des beauftragenden Gremiums.
-</text>
-<text language="fr">
-La soumission d'une motion requiert la majorité absolue de l'organe qui l'a déposée.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Motionen sind verbindlich.
-</text>
-<text language="fr">
-Les motions sont contraignantes.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Personalfragen und rechtliche Geschäfte können nicht Gegenstand einer Motion sein.
-</text>
-<text language="fr">
-Les questions relatives au personnel ainsi que les affaires juridiques ne peuvent pas faire l'objet d'une motion.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Postulat" title_fr="Postulat">
-<paragraphs>
-<paragraph>
-<text language="de">
-Das Postulat fordert das beauftragte Gremium auf, einen Sachverhalt zu prüfen und dem beauftragenden Gremium Bericht zu erstatten, ob eine Massnahme zu treffen sei.
-</text>
-<text language="fr">
-Le postulat charge l'organe visé d'examiner une situation et de faire un rapport sur l'opportunité de prendre une mesure.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Überweisung eines Postulats bedarf eines absoluten Mehrs des beauftragenden Gremiums.
-</text>
-<text language="fr">
-La soumission d'un postulat requiert la majorité absolue de l'organe qui l'a déposé.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Interpellation" title_fr="Interpellation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Interpellation fordert das beauftragte Gremium auf, formell über eine Angelegenheit Auskunft zu geben.
-</text>
-<text language="fr">
-L'interpellation charge l'organe visé de donner, de manière formelle, des informations sur une affaire.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das beauftragte Gremium legt zur nächsten Sitzung des Organs, an dem die Interpellation gestellt wurde, eine schriftliche Stellungnahme vor. Diese wird dem Protokoll der Sitzung beigelegt.
-</text>
-<text language="fr">
-L'organe visé présente une prise de position écrite lors de la prochaine séance de l'organe au sein duquel l'interpellation a été déposée. Celle-ci est annexée au procès-verbal de la séance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Materielle Beschlüsse dürfen im Rahmen einer Interpellation nicht gefasst werden.
-</text>
-<text language="fr">
-Aucune décision matérielle ne peut être prise dans le cadre d'une interpellation.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Anfrage" title_fr="Demande">
-<text language="de">
-Die Anfrage fordert das beauftragte Gremium auf, informell über eine Angelegenheit Auskunft zu geben.
-</text>
-<text language="fr">
-La demande charge l'organe visé de donner, de manière informelle, des informations sur une affaire.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Abstimmungs- und Wahlverfahren" title_fr="Procédures de vote et d'élection">
-<articles>
-<article title_de="Mehrheiten in Abstimmungen und Wahlen" title_fr="Majorités dans les votes et les élections">
-<paragraphs>
-<paragraph>
-<text language="de">
-Ist in den Statuten oder Reglementen nichts anderes bestimmt, so werden Beschlüsse und Wahlen in den Gremien des VSS mit absolutem Mehr gefasst.
-</text>
-<text language="fr">
-Sauf convention contraire dans les statuts ou les règlements, les décisions et les élections au sein des organes de l'UNES sont prises à la majorité absolue.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Für Ordnungsanträge ist, sofern nicht anders definiert, ein einfaches Mehr nötig.
-</text>
-<text language="fr">
-Sauf convention contraire, la majorité simple est requise pour les motions d'ordre.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ein einfaches Mehr ist erreicht, wenn mehr Ja- als Nein-Stimmen vorliegen.
-</text>
-<text language="fr">
-La majorité simple est atteinte lorsqu'il y a plus de voix favorables que défavorables.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ein absolutes Mehr ist erreicht, wenn die Ja-Stimmen strikt mehr als die Hälfte aller abgegebenen Stimmen ausmachen.
-</text>
-<text language="fr">
-La majorité absolue est atteinte lorsque les voix favorables représentent strictement plus de la moitié de tous les votes exprimés.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Eine Zweidrittelmehrheit ist erreicht, wenn die Ja-Stimmen strikt mehr als zwei Drittel aller abgegebenen Stimmen ausmachen.
-</text>
-<text language="fr">
-La majorité des deux tiers est atteinte lorsque les voix favorables représentent strictement plus des deux tiers de tous les votes exprimés.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Eine Dreiviertelmehrheit ist erreicht, wenn die Ja-Stimmen strikt mehr als drei Viertel aller abgegebenen Stimmen ausmachen.
-</text>
-<text language="fr">
-La majorité des trois quarts est atteinte lorsque les voix favorables représentent strictement plus des trois quarts de tous les votes exprimés.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Ausmehrung" title_fr="Sélection">
-<paragraphs>
-<paragraph>
-<text language="de">
-Liegen zum selben Abstimmungsgegenstand zwei oder mehr Anträge vor, so sind diese mittels Abstimmung auszumehren, bis ein Antrag zur Schlussabstimmung übrig ist.
-</text>
-<text language="fr">
-Si deux ou plusieurs motions sont déposées sur le même objet de vote, elles sont examinées au moyen d'un vote jusqu'à ce qu'il ne reste plus qu'une motion à soumettre au vote final.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ist für die Abstimmungsreihenfolge der Anträge nichts anderes bestimmt, ist diese so auszugestalten, dass von den Anträgen mit der kleinsten inhaltlichen Differenz schrittweise bis zu denen mit der grössten Differenz aufgestiegen werden kann.
-</text>
-<text language="fr">
-Si rien d'autre n'est prévu en ce qui concerne l'ordre de vote des motions, celui-ci doit être organisé de manière à ce que les motions présentant la plus petite différence au niveau du contenu puissent être remontées progressivement jusqu'à celles présentant la plus grande différence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung legt die Abstimmungsreihenfolge fest.
-</text>
-<text language="fr">
-La présidence de séance détermine l'ordre des votes.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Zirkularbeschluss" title_fr="Décision par voie de circulaire">
-<paragraphs>
-<paragraph>
-<text language="de">
-In dringenden Fällen ist eine Beschlussfassung auf dem Zirkularweg möglich. Ist für den abzustimmenden Belang nichts anderes bestimmt, findet die Abstimmung mit dem absoluten Mehr aller Stimmen statt. Nicht öffentliche Stimmabgabe ist zulässig.
-</text>
-<text language="fr">
-En cas d'urgence, une décision peut être prise par voie de circulaire. Sauf convention contraire pour l'objet soumis au vote, le vote a lieu à la majorité absolue de toutes les voix. Le vote à huis clos est autorisé.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung legt für Beschlüsse auf dem Zirkularweg eine Abstimmungsfrist von mindestens fünf Tagen fest. Sie zählt das entsprechende Mehr der innerhalb dieser Frist abgegebenen Stimmen. Die Beschlüsse der Zirkularabstimmung werden nach Ablauf dieser Frist protokolliert und den Mitgliedern des Gremiums zugestellt.
-</text>
-<text language="fr">
-La présidence de la séance fixe un délai de vote d'au moins cinq jours pour les décisions prises par voie de circulaire. Elle compte la majorité correspondante des voix exprimées dans ce délai. Les décisions prises à la suite d'un vote par voie de circulaire sont inscrites au procès-verbal à l'expiration de ce délai et envoyées aux membres de l'instance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Beschlüsse von Zirkularabstimmungen gelten bereits als gefasst, wenn das entsprechende Mehr aller Stimmberechtigten erreicht ist.
-</text>
-<text language="fr">
-Les décisions prises à la suite d'un vote par voie de circulaire sont considérées comme adoptées dès lors que la majorité correspondante de l'ensemble des votant·e·s est atteinte.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Wahlverfahren" title_fr="Procédure d'élection">
-<paragraphs>
-<paragraph>
-<text language="de">
-Bei schriftlicher Stimmabgabe darf die Zahl der Namen auf den Stimmzetteln die Zahl der Sitze nicht überschreiten, sie darf sie jedoch unterschreiten. Kumulieren ist nicht gestattet.
-</text>
-<text language="fr">
-En cas de vote par écrit, le nombre de noms figurant sur les bulletins de vote ne peut être supérieur au nombre de sièges, il peut néanmoins être inférieur. Le cumul des voix n'est pas autorisé.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Sind bei Wahlen mehr Kandidierende als Sitze vorhanden, hat die Wahl schriftlich zu erfolgen.
-</text>
-<text language="fr">
-S'il y a plus de candidat·e·s que de sièges à pourvoir, l'élection doit se faire par écrit.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-In den ersten beiden Wahlgängen sind alle Kandidierenden zugelassen.
-</text>
-<text language="fr">
-Lors des deux premiers tours de scrutin, toute candidature est admise.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ab dem dritten Wahlgang sind keine weiteren Kandidierenden zulässig.
-</text>
-<text language="fr">
-À partir du troisième tour de scrutin, aucune nouvelle candidature n'est admise.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Aus der Wahl scheidet jeweils mit dem Ergebnis des zweiten und der folgenden Wahlgänge aus, wer die geringste Stimmenzahl erhält, es sei denn, dies sei mehr als eine Person.
-</text>
-<text language="fr">
-Est exclu·e de l'élection, celui/celle qui, à l'issue du deuxième tour et des tours suivants, obtient le moins de voix, sauf si plusieurs personnes sont concernées.
-</text>
-<letters>
-<letter>
-<text language="de">
-Wer aufgrund einer Quotenregelung nicht mehr wählbar ist, scheidet aus der Wahl aus. 
-</text>
-<text language="fr">
-Toute personne qui n'est plus éligible en raison d'une règle de quota est exclue de l'élection. 
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Erreichen mehr Personen das absolute Mehr, als zulässige Sitze zu vergeben sind, sind diejenigen mit den meisten Stimmen gewählt. 
-</text>
-<text language="fr">
-Si le nombre de personnes ayant obtenu la majorité absolue est supérieur au nombre de sièges à pourvoir, celles qui ont obtenu le plus de voix sont élues.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Erreichen mehr Personen als auf Grund der Quoten zulässig das absolute Mehr, so entscheidet eine Stichwahl. 
-</text>
-<text language="fr">
-Si le nombre de personnes ayant obtenu la majorité absolue dépasse celui autorisé par les quotas, un second tour est organisé. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei Stimmengleichheit entscheidet das Los.
-</text>
-<text language="fr">
-En cas d'égalité des voix, un tirage au sort a lieu.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Beschwerde und Rekurs" title_fr="Réclamation et recours">
-<articles>
-<article title_de="Beschwerde" title_fr="Réclamation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Mitglieder, Sektionen und Organe, die in den Geschäften des VSS, seiner Organe oder einzelner Personen Unregelmässigkeiten zu erkennen glauben, können bei der GPK Beschwerde erheben.
-</text>
-<text language="fr">
-Les membres, les sections et les organes qui pensent avoir constaté des irrégularités dans les affaires de l'UNES, de ses organes ou de personnes en particulier peuvent déposer une réclamation auprès de la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das Verfahren richtet sich nach Art. XX des GPK-Reglements.
-</text>
-<text language="fr">
-La procédure est régie par l'art. XX du règlement de la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Für Beschwerden betreffend der GPK ist die DV zuständig.
-</text>
-<text language="fr">
-L'AD est compétente pour les réclamations visant la CdC.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Rekurs" title_fr="Recours">
-<paragraphs>
-<paragraph>
-<text language="de">
-Mitglieder, Sektionen und Organe, welche die Rechtmässigkeit eines Beschlusses eines VSS-Organs anzweifeln, können bei der GPK Rekurs erheben.
-</text>
-<text language="fr">
-Les membres, les sections et les organes qui doutent de la légalité d'une décision d'un organe de l'UNES peuvent déposer un recours auprès de la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das Verfahren richtet sich nach Art. XX des GPK-Reglements.
-</text>
-<text language="fr">
-La procédure est régie par l'art. XX du règlement de la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Für Rekurse gegen Beschlüsse der GPK ist die DV zuständig.
-</text>
-<text language="fr">
-L'AD est compétente pour les recours contre les décisions de la CdC.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Fristen für Rekurse" title_fr="Délais pour les recours">
-<paragraphs>
-<paragraph>
-<text language="de">
-Ein Rekurs muss innert zwei Wochen nach Veröffentlichung des Protokolls mit dem beanstandeten Geschäft bei der GPK eingereicht werden.
-</text>
-<text language="fr">
-Un recours doit être déposé auprès de la CdC dans les deux semaines qui suivent la publication du procès-verbal avec l'affaire contestée.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Nach abgelaufener Frist oder nach Abweisung aller Rekurse wird das Geschäft automatisch rechtskräftig.
-</text>
-<text language="fr">
-Une fois le délai écoulé ou après le rejet de tous les recours, l'affaire devient automatiquement exécutoire.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Öffentlichkeit" title_fr="Transparence">
-<articles>
-<article title_de="Öffentlichkeit von Sitzungen" title_fr="Publicité des séances">
-<paragraphs>
-<paragraph>
-<text language="de">
-Für Mitglieder von VSS-Sektionen sowie Mitglieder von VSS-Organen sind alle Sitzungen von Verbandsorganen, sowie Vorbereitungssitzungen der Vertretungen öffentlich.
-</text>
-<text language="fr">
-Pour les membres des sections de l'UNES ainsi que les membres des organes de l'UNES, toutes les séances des organes de l'Union ainsi que les séances de préparation des représentantations sont publiques.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Veröffentlichung der dabei geführten Protokolle regelt Art. XX
-</text>
-<text language="fr">
-La publication des procès-verbaux établis à cette occasion est régie par l'art. XX
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Direktbetroffene können für die Dauer des betreffenden Traktandums von Sitzungen ausgeschlossen werden.
-</text>
-<text language="fr">
-Les personnes directement concernées peuvent être exclues des séances pour la durée du point à l'ordre du jour en question.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ausnahmen regelt Art. XX.
-</text>
-<text language="fr">
-Les exceptions sont régies par l'art. XX.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Protokolle" title_fr="Procès-verbaux">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der VSS kennt folgende Art von Protokollen:
-</text>
-<text language="fr">
-L'UNES connaît les types de procès-verbaux suivants :
-</text>
-<letters>
-<letter>
-<text language="de">
-Wortprotokoll;
-</text>
-<text language="fr">
-procès-verbal intégral ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Diskussionsprotokoll;
-</text>
-<text language="fr">
-procès-verbal de la discussion ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Argumentationsprotokoll;
-</text>
-<text language="fr">
-procès-verbal de l'argumentation ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Beschlussprotokoll.
-</text>
-<text language="fr">
-procès-verbal des décisions.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Ein Protokoll enthält mindestens folgende Angaben:
-</text>
-<text language="fr">
-Un procès-verbal contient au moins les informations suivantes :
-</text>
-<letters>
-<letter>
-<text language="de">
-die Namen der Anwesenden;
-</text>
-<text language="fr">
-les noms des personnes présentes ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Traktanden mit allen Anträgen;
-</text>
-<text language="fr">
-les points à l'ordre du jour avec toutes les motions ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Beschlüsse mit Anzahl Stimmen dafür, dagegen und Enthaltungen oder bei offensichtlich klaren Abstimmungen dem Abstimmungsresultat.
-</text>
-<text language="fr">
-les décisions avec le nombre de voix pour, de voix contre et d'abstentions ou, en cas de vote manifestement clair, le résultat du vote.
-</text>
-</letter>
-</letters>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Wortprotokoll" title_fr="Procès-verbal intégral">
-<text language="de">
-Im Wortprotokoll wird das gesprochene Wort protokolliert.
-</text>
-<text language="fr">
-Le procès-verbal intégral rapporte les propos tenus.
-</text>
-</article>
-<article title_de="Diskussionsprotokoll" title_fr="Procès-verbal de la discussion">
-<text language="de">
-Im Diskussionsprotokoll werden Aussagen sinngemäss protokolliert.
-</text>
-<text language="fr">
-Le procès-verbal de la discussion rapporte les déclarations de manière à en conserver le sens.
-</text>
-</article>
-<article title_de="Argumentationsprotokoll" title_fr="Procès-verbal de l'argumentation">
-<text language="de">
-Im Argumentationsprotokoll werden alle Argumente, die zu einer Entscheidung geführt haben, sinngemäss protokolliert.
-</text>
-<text language="fr">
-Le procès-verbal de l'argumentation rapporte tous les arguments qui ont conduit à une décision de manière à en conserver le sens.
-</text>
-</article>
-<article title_de="Beschlussprotokoll" title_fr="Procès-verbal des décisions">
-<paragraphs>
-<paragraph>
-<text language="de">
-Im Beschlussprotokoll werden neben den Beschlüssen keine zusätzlichen Inhalte protokolliert.
-</text>
-<text language="fr">
-Aucun contenu supplémentaire n'est rapporté dans le procès-verbal des décisions en dehors des décisions.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Beschlussprotokolle können nur geführt werden, wenn für die gleiche Sitzung mindestens ein höherwertiges Protokoll geführt wird.
-</text>
-<text language="fr">
-Les procès-verbaux des décisions ne peuvent être rédigés que si, pour la même séance, au moins un procès-verbal de valeur supérieure est rédigé.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Veröffentlichung von Protokollen" title_fr="Publication des procès-verbaux">
-<paragraphs>
-<paragraph>
-<text language="de">
-Alle Protokolle werden nach Genehmigung durch das betreffende Gremium den VSS-Mitgliedern auf geeignetem Weg zugänglich gemacht.
-</text>
-<text language="fr">
-Après approbation par l'organe concerné, tous les procès-verbaux sont rendus accessibles pour les membres de l'UNES par un moyen adapté, 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ausnahmen regeln Art. 40.
-</text>
-<text language="fr">
-Les exceptions sont régies par l'art. 40.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Archivierung und Öffentlichkeit von Dokumenten" title_fr="Archivage et publicité des documents">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Organe des VSS, die Administration des VSS und die Vertretungen des VSS haben ihre Protokolle, Verträge und Unterlagen zu archivieren.
-</text>
-<text language="fr">
-Les organes de l'UNES, l'administration de l'UNES et les représentations de l'UNES doivent archiver leurs procès-verbaux, contrats et documents.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Alle Dokumente des VSS werden auf Verlangen den VSS-Mitgliedern auf geeignete Art zugänglich gemacht.
-</text>
-<text language="fr">
-Sur demande, tous les documents de l'UNES sont rendus accessibles pour les membres de l'UNES par un moyen adapté.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ausnahmen regelt Art. 40.
-</text>
-<text language="fr">
-Les exceptions sont régies par l'art. 40.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Vertraulichkeit" title_fr="Confidentialité">
-<paragraphs>
-<paragraph>
-<text language="de">
-Ein Geschäft gilt als vertraulich, sobald eines der folgenden Kriterien zutrifft:
-</text>
-<text language="fr">
-Une affaire est considérée comme confidentielle dès lors que l'un des critères suivants s'applique :
-</text>
-<letters>
-<letter>
-<text language="de">
-verordnete Vertraulichkeit aufgrund übergeordneter Rechtsbestimmungen;
-</text>
-<text language="fr">
-confidentialité imposée en vertu de dispositions juridiques supérieures ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Veröffentlichung würde Persönlichkeitsrechte verletzen;
-</text>
-<text language="fr">
-la publication porterait atteinte aux droits de la personnalité ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Veröffentlichung würde nicht abgeschlossene oder zukünftige Geschäfte gefährden.
-</text>
-<text language="fr">
-la publication compromettrait des affaires inachevées ou futures.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Ist ein Geschäft gemäss Abs. 1 als vertraulich einzustufen, tagt das behandelnde Gremium geschlossen.
-</text>
-<text language="fr">
-Si une affaire doit être classée comme confidentielle conformément à l'al. 1, l'organe qui la traite siège à huis clos.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das geführte Protokoll und alle dem betreffenden Geschäft zugeordneten Dokumente sind in diesem Fall vertraulich und dürfen nicht veröffentlicht werden.
-</text>
-<text language="fr">
-Dans ce cas, le procès-verbal établi et tous les documents rattachés à l'affaire en question sont confidentiels et ne doivent pas être publiés.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Vertrauliche Protokolle dürfen einzig von den aktuellen Mitgliedern des betreffenden Organs, der GPK und, im Falle von Organen des VSS, vom VSS-Vorstand eingesehen werden.
-</text>
-<text language="fr">
-Les procès-verbaux confidentiels ne peuvent être consultés que par les membres actuels de l'organe concerné, la CdC et, dans le cas des organes de l'UNES, par le comité de l'UNES.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Im Streitfall entscheidet die GPK über die Vertraulichkeit eines Geschäfts.
-</text>
-<text language="fr">
-En cas de litige, la CdC décide de la confidentialité d'une affaire.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Verlangen ist die Vertraulichkeit durch das betreffende Organ neu zu beurteilen. Insbesondere ist zu prüfen, ob die Veröffentlichung abgeschlossene oder zukünftige Geschäfte immer noch gefährdet.
-</text>
-<text language="fr">
-Sur demande, la confidentialité doit être réévaluée par l'organe concerné. Il convient en particulier de vérifier si la publication compromet toujours des affaires conclues ou futures.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmung" title_fr="Dispositions en matière de révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <section title_de="Allgemeines" title_fr="Généralités">
+        <articles>
+            <article title_de="Grundlagen" title_fr="Principes de base">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement regelt die Rechte der VSS-Mitglieder bezüglich der Mitwirkung und der Öffentlichkeit. </text>
+                        <text language="fr"> Le présent règlement règle les droits des membres de l'UNES en matière de participation et de transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement regelt die allgemeinen Verfahrensregeln und die Instrumente in parlamentarischen Verfahren. </text>
+                        <text language="fr"> Le présent règlement définit les règles générales de procédure et les instruments utilisés dans les procédures parlementaires. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Ausstand" title_fr="Récusation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Jedes Mitglied ist von Gesetzeswegen vom Stimmrecht ausgeschlossen bei der Beschlussfassung über ein Rechtsgeschäft oder einen Rechtsstreit zwischen ihm, seinem Ehepartner oder einer mit ihm bis zum zweiten Grad verwandten Person einerseits und dem VSS andererseits. </text>
+                        <text language="fr"> Tout·e membre est légalement privé·e de son droit de vote lors d'une prise de décision concernant un acte juridique ou un litige entre lui/elle, son/sa conjoint·e ou une personne avec qu'il/elle a un lien de parenté jusqu'au deuxième degré, d'une part, et l'UNES, d'autre part. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Jedes Mitglied ist vom Stimmrecht ausgeschlossen bei der Beschlussfassung über finanzielle oder anderweitige Vorteile, welche über das für das Amt übliche Mass hinausgehen. </text>
+                        <text language="fr"> Chaque membre est privé·e de son droit de vote lors d'une prise de décision concernant des avantages financiers ou autres qui dépassent le cadre habituel de sa fonction. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Mitwirkung" title_fr="Participation">
+        <articles>
+            <article title_de="Mitwirkung und Stimmrecht" title_fr="Participation et droit de vote">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Nur in der Schweiz immatrikulierte Studierende auf Bachelor- oder Master-Stufe im Sinne von Art. 4 der Verordnung des Hochschulrates über die Koordination der Lehre an den Schweizer Hochschulen besitzen passives Wahlrecht für die Organe und Vertretungen des VSS, ausser die Statuten oder ein Reglement sehen eine Ausnahme vor. </text>
+                        <text language="fr"> Seul·e·s les étudiant·e·s immatriculé·e·s en Suisse au niveau bachelor ou master au sens de l'art. 4 de l'Ordonnance du Conseil des hautes écoles sur la coordination de l'enseignement dans les hautes écoles suisses ont un droit de vote passif pour les organes et représentations de l'UNES, sauf si les statuts ou un règlement prévoient une exception. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Mitglieder von VSS-Sektionen, im Sinne von Mitgliedschaftsreglement Art. 15 haben ausserdem: </text>
+                        <text language="fr"> Les membres des sections de l'UNES, au sens du règlement d'adhésion, art. 15, ont en outre : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> das Recht auf Antrag, Vorstoss, Beschwerde und Rekurs; </text>
+                                <text language="fr"> le droit de déposer une motion, une intervention, une plainte ou un recours ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> das Recht auf Öffentlichkeit. </text>
+                                <text language="fr"> le droit à la transparence. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Folgende Gremien haben zusätzlich Antragsrecht: </text>
+                        <text language="fr"> Les organes suivants disposent également d'un droit de motion : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> die GPK; </text>
+                                <text language="fr"> la CdC ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> der Vorstand; </text>
+                                <text language="fr"> le Comité exécutif ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die thematischen Kommissionen. </text>
+                                <text language="fr"> les commissions thématiques. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitglieder haben als Organisationseinheiten das Antragsrecht. </text>
+                        <text language="fr"> En tant qu'unités organisationnelles, les membres ont un droit de motion. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Angestellten und geladenen Gästen kann von der Sitzungsleitung das Wort erteilt werden. </text>
+                        <text language="fr"> Les employé·e·s et les invité·e·s peuvent être autorisé·e·s à prendre la parole par la présidence de séance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Zu Geschäften eines Hochschultypus haben die Sektionen dieses Typus, falls sie von Mitgliedern der anderen Hochschultypen überstimmt werden, ein gemeinsames Zurückweisungsrecht. </text>
+                        <text language="fr"> Pour les affaires d'un type de haute école, les sections de ce type ont un droit de rejet commun si elles sont mises en minorité par les membres des autres types de hautes écoles. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Instrumente" title_fr="Instruments">
+        <articles>
+            <article title_de="Allgemeines" title_fr="Généralités">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS kennt folgende Instrumente: </text>
+                        <text language="fr"> L'UNES connaît les instruments suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Anträge; </text>
+                                <text language="fr"> Motions ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Vorstösse. </text>
+                                <text language="fr"> Interventions. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstösse und Anträge müssen schriftlich auf Deutsch und Französisch eingereicht werden. </text>
+                        <text language="fr"> Les interventions et les motions doivent être déposées par écrit en allemand et en français. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Anträge" title_fr="Motions">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Jedes Gremium des VSS kennt folgende Formen von Anträgen: </text>
+                        <text language="fr"> Chaque organe de l'UNES connaît les formes de motions suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Materieller Antrag; </text>
+                                <text language="fr"> motion matérielle ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Änderungsantrag; </text>
+                                <text language="fr"> amendement ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Ordnungsantrag. </text>
+                                <text language="fr"> motion d'ordre. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Materielle und Änderungsanträge können von allen Antragsberechtigten eingereicht werden. </text>
+                        <text language="fr"> Les motions matérielles et les amendements peuvent être déposés par tout·e candidat·e éligible. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Vorstösse" title_fr="Interventions">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Nur die Delegiertenversammlung und der Sektionsrat kennen zudem folgende Formen von Vorstössen: </text>
+                        <text language="fr"> Seul·e·s l'Assemblée des Délégué·e·s et le Conseil des Sections connaissent les formes d'interventions suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Motion; </text>
+                                <text language="fr"> motion ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Postulat; </text>
+                                <text language="fr"> postulat ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Interpellation; </text>
+                                <text language="fr"> interpellation ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Anfrage. </text>
+                                <text language="fr"> demande. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstösse können sich an den VSS-Vorstand, Arbeitsgruppen, thematische Kommissionen, die Finanzkommission und die GPK richten. </text>
+                        <text language="fr"> Les interventions peuvent être adressées au Comité exécutif de l'UNES, aux groupes de travail, aux commissions thématiques, à la commission des finances et à la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstösse unterliegen der ordentlichen Antragsfrist des entsprechenden Gremiums. </text>
+                        <text language="fr"> Les interventions sont soumises au délai de dépôt ordinaire de l'organe correspondant. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Antrag oder Vorstoss muss an der nächsten Sitzung dieses Gremiums behandelt werden. </text>
+                        <text language="fr"> La motion ou l'intervention doit être traitée lors de la prochaine séance de cet organe. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sofern wichtige Gründe vorliegen, kann das beauftragte Gremium die Beantwortung des Vorstosses oder das Treffen einer Massnahme verweigern. Dies ist dem beauftragenden Gremium unmittelbar mitzuteilen und zu begründen. Im Streitfall entscheidet die GPK über das Vorliegen wichtiger Gründe. </text>
+                        <text language="fr"> Si des motifs importants le justifient, l'organe chargé de répondre à une intervention ou de prendre une mesure peut refuser de le faire. Ce refus doit être communiqué directement à l'organe qui l'en a chargé et doit être justifié. En cas de litige, la CdC décide de l'existence de motifs importants. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wichtige Gründe umfassen unter anderem: </text>
+                        <text language="fr"> Les raisons importantes incluent notamment : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Vertraulichkeit der Information gemäss Art. 40; </text>
+                                <text language="fr"> la confidentialité des informations selon art. 40; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Verstoss gegen übergeordnete Rechtsbestimmungen oder Bestimmungen der Statuten und sonstiges höherrangiges Recht. </text>
+                                <text language="fr"> la violation de dispositions juridiques supérieures ou de dispositions des statuts et autres droits supérieurs. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Wenn die GPK zum Schluss kommt, dass wichtige Gründe nicht vorliegen, ist das beauftragte Gremium verpflichtet, die Massnahme zu treffen oder den Vorstoss zu beantworten. </text>
+                        <text language="fr"> Si la CdC conclut d'une absence de motifs importants, l'organe chargé de prendre une mesure ou de répondre à une intervention est tenu de le faire. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Antragstellende können ihre Vorstösse jederzeit zurückziehen, solange eine andere antragsberechtigte Person den Vorstoss nicht aufrechterhalten möchte. </text>
+                        <text language="fr"> Les motionnaires peuvent retirer leur intervention à tout moment tant qu'une autre personne en droit de déposer des motions ne souhaite pas maintenir l'intervention. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Materieller Antrag" title_fr="Motion matérielle">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Mit dem materiellen Antrag wird die Behandlung einer materiellen Frage durch ein Gremium verlangt. </text>
+                        <text language="fr"> La motion matérielle demande qu'une question matérielle soit traitée par un organe. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Jedes Mitglied einer VSS-Sektion kann fristgerecht Anträge an jedes Gremium des VSS stellen. </text>
+                        <text language="fr"> Chaque membre d'une section de l'UNES peut déposer des motions auprès de chaque organe de l'UNES dans le délai imparti. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Antrag muss an der nächsten Sitzung dieses Gremiums behandelt werden. </text>
+                        <text language="fr"> La motion doit être traitée lors de la prochaine séance de cet organe. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> In folgenden Fällen muss der Antrag zwingend den Zeitpunkt des Inkrafttretens enthalten: </text>
+                        <text language="fr"> Dans les cas suivants, la motion doit obligatoirement préciser la date d'entrée en vigueur : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> rechtsetzende Anträge zum Erlass oder zur Änderung der Statuten oder eines Reglements; </text>
+                                <text language="fr"> les motions législatives relatives à l'adoption ou la modification des statuts ou d'un règlement ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> alle weiteren Anträge, deren Annahme ohne spezifiziertes Datum des Inkrafttretens zu Rechtsunsicherheit führen würde. Der Entscheid liegt bei der GPK. </text>
+                                <text language="fr"> toute autre motion dont l'adoption sans spécification de la date d'entrée en vigueur entraînerait un flou juridique. La décision revient à la CdC. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Änderungsantrag" title_fr="Amendement">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Antragsberechtigten können zu jedem Antrag, welcher in der Traktandenliste enthalten ist, Änderungsanträge stellen. </text>
+                        <text language="fr"> Les personnes en droit de déposer des motions peuvent déposer des amendements à toute motion figurant à l'ordre du jour. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Auf Änderungsanträge können Unteränderungsanträge gestellt werden. </text>
+                        <text language="fr"> Les amendements peuvent faire l'objet de sous-amendements. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Änderungsanträge resp. Unteränderungsanträge sind nach einer mündlichen Begründung dem oder der Vorsitzenden des Gremiums schriftlich einzureichen. </text>
+                        <text language="fr"> Après avoir été justifiés oralement, les amendements ainsi que les sous-amendements doivent être déposés par écrit auprès du/de la président·e de l'organe. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Redaktionelle Änderungen sind mit Zustimmung des oder der Vorsitzenden des jeweiligen Gremiums jederzeit möglich. </text>
+                        <text language="fr"> Des modifications rédactionnelles sont possibles à tout moment avec l'accord du ou de la président·e de l'organe concerné. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Übernahmen von Anträgen" title_fr="Reprise de motions">
+                <text language="de"> Antragstellende können ihren Antrag jederzeit im Sinne von gestellten Änderungsanträgen modifizieren. </text>
+                <text language="fr"> Les motionnaires peuvent à tout moment modifier leur motion dans le sens des amendements déposés. </text>
+            </article>
+            <article title_de="Ordnungsantrag" title_fr="Motion d'ordre">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Antragsberechtigten können jederzeit ausserhalb der Reihenfolge der Redner·innenliste einen Ordnungsantrag stellen. </text>
+                        <text language="fr"> Les personnes en droit de déposer des motions peuvent à tout moment déposer une motion d'ordre en dehors de l'ordre prévu par la liste des intervenant·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ordnungsanträge können gestellt werden auf: </text>
+                        <text language="fr"> Les motions d'ordre peuvent être déposées sur : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Änderung der Reihenfolge von Traktanden; </text>
+                                <text language="fr"> la modification de la séquence des points à l'ordre du jour ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Rückkommen auf ein abgeschlossenes Traktandum; </text>
+                                <text language="fr"> le réexamen d'un point clos à l'ordre du jour ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Rückweisung von Geschäften an die Antragstellende Person oder Gremium; </text>
+                                <text language="fr"> le renvoi d'affaires à la personne ou l'organe qui a déposé la motion ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Eröffnung der Diskussion; </text>
+                                <text language="fr"> l'ouverture de la discussion ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Abbruch der Diskussion; </text>
+                                <text language="fr"> l'interruption de la discussion ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Beschränkung oder Erweiterung der Redezeit; </text>
+                                <text language="fr"> la limitation ou l'extension du temps de parole ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Wegweisung von Anwesenden; </text>
+                                <text language="fr"> l'exclusion de personnes présentes ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Änderung von Modus und Form einer Abstimmung oder Wahl; </text>
+                                <text language="fr"> le changement du mode et de la forme d'un vote ou d'une élection ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Wiederholung einer Abstimmung oder Wahl; </text>
+                                <text language="fr"> la répétition d'un vote ou d'une élection ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Unterbruch der Sitzung. </text>
+                                <text language="fr"> l'interruption de la séance. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Ordnungsantrag muss sofort behandelt werden. Wird keine Gegenrede ergriffen, gilt der Ordnungsantrag als angenommen, ansonsten muss sofort darüber abgestimmt werden. </text>
+                        <text language="fr"> La motion d'ordre doit être traitée immédiatement. Si aucune objection n'est formulée, la motion d'ordre est considérée comme acceptée, sinon elle doit être votée immédiatement. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Änderung der Reihenfolge der Traktandenliste" title_fr="Modification de la séquence des points à l'ordre du jour">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Reihenfolge der noch zu behandelnden Traktanden kann durch den Ordnungsantrag umgestellt werden. </text>
+                        <text language="fr"> La séquence des points qu'il reste à traiter peut être modifiée par une motion d'ordre. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es können hierdurch keine neuen Traktanden aufgenommen werden. </text>
+                        <text language="fr"> Aucun nouveau point ne peut être ajouté à l'ordre du jour. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Rückkommensantrag" title_fr="Demande de réexamen">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Durch den Ordnungsantrag kann mit 2/3-Mehr auf ein bereits abgeschlossenes Geschäft zurückgekommen werden. </text>
+                        <text language="fr"> La motion d'ordre permet de revenir, à la majorité des 2/3, sur un point déjà clos. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es kommen nur Geschäfte derselben Sitzung infrage. </text>
+                        <text language="fr"> Seuls les points de la même séance peuvent être concernés. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Rückweisung von Geschäften" title_fr="Renvoi d'affaires">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Durch den Ordnungsantrag kann ein Geschäft an den Antragsteller oder die Antragstellerin zurückgewiesen werden. </text>
+                        <text language="fr"> La motion d'ordre permet de renvoyer une affaire au/à la motionnaire. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Antrag kann zuhanden der nächsten Sitzung des Gremiums nachbearbeitet werden. </text>
+                        <text language="fr"> La motion peut être retravaillée en vue de la prochaine séance de l'organe. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Eröffnung der Diskussion" title_fr="Ouverture de la discussion">
+                <text language="de"> Auf den Ordnungsantrag hin ist die Sitzungsleitung verpflichtet, die Diskussion zu eröffnen oder wiederzueröffnen. </text>
+                <text language="fr"> Suite à une motion d'ordre, la présidence de séance est tenue d'ouvrir ou de rouvrir la discussion. </text>
+            </article>
+            <article title_de="Abbruch der Diskussion" title_fr="Interruption de la discussion">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Auf den Ordnungsantrag hin wird die Diskussion unterbrochen. </text>
+                        <text language="fr"> Suite à une motion d'ordre, la discussion est interrompue. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Antrag beinhaltet, welcher Teil der Diskussion abgebrochen wird. </text>
+                        <text language="fr"> La motion indique quelle partie de la discussion est interrompue. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung nimmt alle Personen in die Redner·innenliste auf, welche sich noch zum Thema äussern möchten. Antragstellende behalten die Redefreiheit. </text>
+                        <text language="fr"> La présidence de séance inscrit sur la liste des intervenant·e·s toute personne qui souhaite encore s'exprimer sur le sujet. Les motionnaires conservent leur liberté de parole. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Nachdem alle Personen auf der Redner·innenliste zu Wort gekommen sind, ist die Diskussion beendet. </text>
+                        <text language="fr"> Une fois que toutes les personnes inscrites sur la liste des intervenant·e·s ont pris la parole, la discussion est close. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschränkung oder Erweiterung der Redezeit" title_fr="Limitation ou extension du temps de parole">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Mit der Annahme des Ordnungsantrags wird die Redezeit für alle beschränkt. </text>
+                        <text language="fr"> L'adoption d'une motion d'ordre limite le temps de parole pour toutes et tous. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Redezeitbeschränkung kann durch einen Ordnungsantrag auf Erweiterung der Redezeit gelockert oder aufgehoben werden. </text>
+                        <text language="fr"> La limitation du temps de parole peut être assouplie ou levée par une motion d'ordre demandant l'extension du temps de parole. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Redezeitbeschränkung kann für ein Geschäft, ein ganzes Traktandum oder für die gesamte Sitzung erfolgen. </text>
+                        <text language="fr"> La limitation du temps de parole peut être appliquée à une affaire, à un point entier à l'ordre du jour ou à l'ensemble de la séance. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Wegweisung von Anwesenden" title_fr="Exclusion de personnes présentes">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Durch den Ordnungsantrag wird die Sitzungsleitung verpflichtet, die genannten Teilnehmenden von der Sitzung wegzuweisen. </text>
+                        <text language="fr"> La motion d'ordre contraint la présidence de la séance à exclure les participant·e·s mentionné·e·s de la séance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung entscheidet, ob die Wegweisung vorübergehend oder definitiv ist. </text>
+                        <text language="fr"> La présidence de séance décide si l'exclusion est temporaire ou définitive. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Im Einsprachefall entscheidet das einfache Mehr. </text>
+                        <text language="fr"> En cas d'opposition, la décision est prise à la majorité simple. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Änderung von Modus und Form einer Abstimmung oder Wahl" title_fr="Changement du mode et de la forme d'un vote ou d'une élection">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Modus und Form einer Abstimmung oder Wahl können mit einem Ordnungsantrag angepasst werden. Insbesondere kann eine geheime Abstimmung beantragt werden. </text>
+                        <text language="fr"> Le mode et la forme d'un vote ou d'une élection peuvent être modifiés par une motion d'ordre. Il est notamment possible de demander un vote à bulletin secret. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Über einen Ordnungsantrag auf geheime Wahl wird nicht abgestimmt, sie muss auf Verlangen jedes bzw. jeder Stimmberechtigten durchgeführt werden. </text>
+                        <text language="fr"> Il n'y a pas de vote sur une motion d'ordre demandant une élection à bulletin secret, celle-ci doit être organisée à la demande de chaque votant·e. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Art der benötigten Mehrheit kann mit diesem Ordnungsantrag nicht geändert werden. </text>
+                        <text language="fr"> Le type de majorité requise ne peut pas être modifié par une telle motion d'ordre. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Wiederholung einer Abstimmung oder Wahl" title_fr="Répétition d'un vote ou d'une élection">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Bei Annahme des Antrags wird eine Abstimmung oder Wahl wiederholt. </text>
+                        <text language="fr"> Si la motion est adoptée, un vote ou une élection a lieu une nouvelle fois. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Antragstellende können mit dem Antrag auch eine Änderung des Modus der Abstimmung oder Wahl beantragen. </text>
+                        <text language="fr"> À travers la motion, les motionnaires peuvent également demander un changement de mode du vote ou de l'élection. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Art der benötigten Mehrheit kann mit diesem Ordnungsantrag nicht geändert werden. </text>
+                        <text language="fr"> Le type de majorité requise ne peut pas être modifié par une telle motion d'ordre. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Unterbruch der Sitzung" title_fr="Interruption de la séance">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Bei Annahme des Antrags wird die Sitzung unterbrochen. </text>
+                        <text language="fr"> Si la motion est adoptée, la séance est suspendue. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Antrag muss die Dauer des Unterbruchs beinhalten. </text>
+                        <text language="fr"> La motion doit préciser la durée de l'interruption. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Motion" title_fr="Motion (forme d'intervention)">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Motion fordert das beauftragte Gremium auf, eine in seiner Kompetenz liegende Massnahme zu treffen. </text>
+                        <text language="fr"> La motion charge l'organe visé de prendre une mesure relevant de sa compétence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Überweisung einer Motion bedarf eines absoluten Mehrs des beauftragenden Gremiums. </text>
+                        <text language="fr"> La soumission d'une motion requiert la majorité absolue de l'organe qui l'a déposée. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Motionen sind verbindlich. </text>
+                        <text language="fr"> Les motions sont contraignantes. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Personalfragen und rechtliche Geschäfte können nicht Gegenstand einer Motion sein. </text>
+                        <text language="fr"> Les questions relatives au personnel ainsi que les affaires juridiques ne peuvent pas faire l'objet d'une motion. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Postulat" title_fr="Postulat">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Das Postulat fordert das beauftragte Gremium auf, einen Sachverhalt zu prüfen und dem beauftragenden Gremium Bericht zu erstatten, ob eine Massnahme zu treffen sei. </text>
+                        <text language="fr"> Le postulat charge l'organe visé d'examiner une situation et de faire un rapport sur l'opportunité de prendre une mesure. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Überweisung eines Postulats bedarf eines absoluten Mehrs des beauftragenden Gremiums. </text>
+                        <text language="fr"> La soumission d'un postulat requiert la majorité absolue de l'organe qui l'a déposé. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Interpellation" title_fr="Interpellation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Interpellation fordert das beauftragte Gremium auf, formell über eine Angelegenheit Auskunft zu geben. </text>
+                        <text language="fr"> L'interpellation charge l'organe visé de donner, de manière formelle, des informations sur une affaire. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das beauftragte Gremium legt zur nächsten Sitzung des Organs, an dem die Interpellation gestellt wurde, eine schriftliche Stellungnahme vor. Diese wird dem Protokoll der Sitzung beigelegt. </text>
+                        <text language="fr"> L'organe visé présente une prise de position écrite lors de la prochaine séance de l'organe au sein duquel l'interpellation a été déposée. Celle-ci est annexée au procès-verbal de la séance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Materielle Beschlüsse dürfen im Rahmen einer Interpellation nicht gefasst werden. </text>
+                        <text language="fr"> Aucune décision matérielle ne peut être prise dans le cadre d'une interpellation. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Anfrage" title_fr="Demande">
+                <text language="de"> Die Anfrage fordert das beauftragte Gremium auf, informell über eine Angelegenheit Auskunft zu geben. </text>
+                <text language="fr"> La demande charge l'organe visé de donner, de manière informelle, des informations sur une affaire. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Abstimmungs- und Wahlverfahren" title_fr="Procédures de vote et d'élection">
+        <articles>
+            <article title_de="Mehrheiten in Abstimmungen und Wahlen" title_fr="Majorités dans les votes et les élections">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Ist in den Statuten oder Reglementen nichts anderes bestimmt, so werden Beschlüsse und Wahlen in den Gremien des VSS mit absolutem Mehr gefasst. </text>
+                        <text language="fr"> Sauf convention contraire dans les statuts ou les règlements, les décisions et les élections au sein des organes de l'UNES sont prises à la majorité absolue. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Für Ordnungsanträge ist, sofern nicht anders definiert, ein einfaches Mehr nötig. </text>
+                        <text language="fr"> Sauf convention contraire, la majorité simple est requise pour les motions d'ordre. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ein einfaches Mehr ist erreicht, wenn mehr Ja- als Nein-Stimmen vorliegen. </text>
+                        <text language="fr"> La majorité simple est atteinte lorsqu'il y a plus de voix favorables que défavorables. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ein absolutes Mehr ist erreicht, wenn die Ja-Stimmen strikt mehr als die Hälfte aller abgegebenen Stimmen ausmachen. </text>
+                        <text language="fr"> La majorité absolue est atteinte lorsque les voix favorables représentent strictement plus de la moitié de tous les votes exprimés. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Eine Zweidrittelmehrheit ist erreicht, wenn die Ja-Stimmen strikt mehr als zwei Drittel aller abgegebenen Stimmen ausmachen. </text>
+                        <text language="fr"> La majorité des deux tiers est atteinte lorsque les voix favorables représentent strictement plus des deux tiers de tous les votes exprimés. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Eine Dreiviertelmehrheit ist erreicht, wenn die Ja-Stimmen strikt mehr als drei Viertel aller abgegebenen Stimmen ausmachen. </text>
+                        <text language="fr"> La majorité des trois quarts est atteinte lorsque les voix favorables représentent strictement plus des trois quarts de tous les votes exprimés. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Ausmehrung" title_fr="Sélection">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Liegen zum selben Abstimmungsgegenstand zwei oder mehr Anträge vor, so sind diese mittels Abstimmung auszumehren, bis ein Antrag zur Schlussabstimmung übrig ist. </text>
+                        <text language="fr"> Si deux ou plusieurs motions sont déposées sur le même objet de vote, elles sont examinées au moyen d'un vote jusqu'à ce qu'il ne reste plus qu'une motion à soumettre au vote final. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ist für die Abstimmungsreihenfolge der Anträge nichts anderes bestimmt, ist diese so auszugestalten, dass von den Anträgen mit der kleinsten inhaltlichen Differenz schrittweise bis zu denen mit der grössten Differenz aufgestiegen werden kann. </text>
+                        <text language="fr"> Si rien d'autre n'est prévu en ce qui concerne l'ordre de vote des motions, celui-ci doit être organisé de manière à ce que les motions présentant la plus petite différence au niveau du contenu puissent être remontées progressivement jusqu'à celles présentant la plus grande différence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung legt die Abstimmungsreihenfolge fest. </text>
+                        <text language="fr"> La présidence de séance détermine l'ordre des votes. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Zirkularbeschluss" title_fr="Décision par voie de circulaire">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> In dringenden Fällen ist eine Beschlussfassung auf dem Zirkularweg möglich. Ist für den abzustimmenden Belang nichts anderes bestimmt, findet die Abstimmung mit dem absoluten Mehr aller Stimmen statt. Nicht öffentliche Stimmabgabe ist zulässig. </text>
+                        <text language="fr"> En cas d'urgence, une décision peut être prise par voie de circulaire. Sauf convention contraire pour l'objet soumis au vote, le vote a lieu à la majorité absolue de toutes les voix. Le vote à huis clos est autorisé. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung legt für Beschlüsse auf dem Zirkularweg eine Abstimmungsfrist von mindestens fünf Tagen fest. Sie zählt das entsprechende Mehr der innerhalb dieser Frist abgegebenen Stimmen. Die Beschlüsse der Zirkularabstimmung werden nach Ablauf dieser Frist protokolliert und den Mitgliedern des Gremiums zugestellt. </text>
+                        <text language="fr"> La présidence de la séance fixe un délai de vote d'au moins cinq jours pour les décisions prises par voie de circulaire. Elle compte la majorité correspondante des voix exprimées dans ce délai. Les décisions prises à la suite d'un vote par voie de circulaire sont inscrites au procès-verbal à l'expiration de ce délai et envoyées aux membres de l'instance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Beschlüsse von Zirkularabstimmungen gelten bereits als gefasst, wenn das entsprechende Mehr aller Stimmberechtigten erreicht ist. </text>
+                        <text language="fr"> Les décisions prises à la suite d'un vote par voie de circulaire sont considérées comme adoptées dès lors que la majorité correspondante de l'ensemble des votant·e·s est atteinte. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Wahlverfahren" title_fr="Procédure d'élection">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Bei schriftlicher Stimmabgabe darf die Zahl der Namen auf den Stimmzetteln die Zahl der Sitze nicht überschreiten, sie darf sie jedoch unterschreiten. Kumulieren ist nicht gestattet. </text>
+                        <text language="fr"> En cas de vote par écrit, le nombre de noms figurant sur les bulletins de vote ne peut être supérieur au nombre de sièges, il peut néanmoins être inférieur. Le cumul des voix n'est pas autorisé. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Sind bei Wahlen mehr Kandidierende als Sitze vorhanden, hat die Wahl schriftlich zu erfolgen. </text>
+                        <text language="fr"> S'il y a plus de candidat·e·s que de sièges à pourvoir, l'élection doit se faire par écrit. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> In den ersten beiden Wahlgängen sind alle Kandidierenden zugelassen. </text>
+                        <text language="fr"> Lors des deux premiers tours de scrutin, toute candidature est admise. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ab dem dritten Wahlgang sind keine weiteren Kandidierenden zulässig. </text>
+                        <text language="fr"> À partir du troisième tour de scrutin, aucune nouvelle candidature n'est admise. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Aus der Wahl scheidet jeweils mit dem Ergebnis des zweiten und der folgenden Wahlgänge aus, wer die geringste Stimmenzahl erhält, es sei denn, dies sei mehr als eine Person. </text>
+                        <text language="fr"> Est exclu·e de l'élection, celui/celle qui, à l'issue du deuxième tour et des tours suivants, obtient le moins de voix, sauf si plusieurs personnes sont concernées. </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Wer aufgrund einer Quotenregelung nicht mehr wählbar ist, scheidet aus der Wahl aus. </text>
+                                <text language="fr"> Toute personne qui n'est plus éligible en raison d'une règle de quota est exclue de l'élection. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Erreichen mehr Personen das absolute Mehr, als zulässige Sitze zu vergeben sind, sind diejenigen mit den meisten Stimmen gewählt. </text>
+                        <text language="fr"> Si le nombre de personnes ayant obtenu la majorité absolue est supérieur au nombre de sièges à pourvoir, celles qui ont obtenu le plus de voix sont élues. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Erreichen mehr Personen als auf Grund der Quoten zulässig das absolute Mehr, so entscheidet eine Stichwahl. </text>
+                        <text language="fr"> Si le nombre de personnes ayant obtenu la majorité absolue dépasse celui autorisé par les quotas, un second tour est organisé. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei Stimmengleichheit entscheidet das Los. </text>
+                        <text language="fr"> En cas d'égalité des voix, un tirage au sort a lieu. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Beschwerde und Rekurs" title_fr="Réclamation et recours">
+        <articles>
+            <article title_de="Beschwerde" title_fr="Réclamation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Mitglieder, Sektionen und Organe, die in den Geschäften des VSS, seiner Organe oder einzelner Personen Unregelmässigkeiten zu erkennen glauben, können bei der GPK Beschwerde erheben. </text>
+                        <text language="fr"> Les membres, les sections et les organes qui pensent avoir constaté des irrégularités dans les affaires de l'UNES, de ses organes ou de personnes en particulier peuvent déposer une réclamation auprès de la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das Verfahren richtet sich nach Art. 11 des GPK-Reglements. </text>
+                        <text language="fr"> La procédure est régie par l'art. 1 du règlement de la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Für Beschwerden betreffend der GPK ist die DV zuständig. </text>
+                        <text language="fr"> L'AD est compétente pour les réclamations visant la CdC. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Rekurs" title_fr="Recours">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Mitglieder, Sektionen und Organe, welche die Rechtmässigkeit eines Beschlusses eines VSS-Organs anzweifeln, können bei der GPK Rekurs erheben. </text>
+                        <text language="fr"> Les membres, les sections et les organes qui doutent de la légalité d'une décision d'un organe de l'UNES peuvent déposer un recours auprès de la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das Verfahren richtet sich nach Art. 12 des GPK-Reglements. </text>
+                        <text language="fr"> La procédure est régie par l'art. 12 du règlement de la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Für Rekurse gegen Beschlüsse der GPK ist die DV zuständig. </text>
+                        <text language="fr"> L'AD est compétente pour les recours contre les décisions de la CdC. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Fristen für Rekurse" title_fr="Délais pour les recours">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Ein Rekurs muss innert zwei Wochen nach Veröffentlichung des Protokolls mit dem beanstandeten Geschäft bei der GPK eingereicht werden. </text>
+                        <text language="fr"> Un recours doit être déposé auprès de la CdC dans les deux semaines qui suivent la publication du procès-verbal avec l'affaire contestée. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Nach abgelaufener Frist oder nach Abweisung aller Rekurse wird das Geschäft automatisch rechtskräftig. </text>
+                        <text language="fr"> Une fois le délai écoulé ou après le rejet de tous les recours, l'affaire devient automatiquement exécutoire. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Öffentlichkeit" title_fr="Transparence">
+        <articles>
+            <article title_de="Öffentlichkeit von Sitzungen" title_fr="Publicité des séances">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Für Mitglieder von VSS-Sektionen sowie Mitglieder von VSS-Organen sind alle Sitzungen von Verbandsorganen, sowie Vorbereitungssitzungen der Vertretungen öffentlich. </text>
+                        <text language="fr"> Pour les membres des sections de l'UNES ainsi que les membres des organes de l'UNES, toutes les séances des organes de l'Union ainsi que les séances de préparation des représentantations sont publiques. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Veröffentlichung der dabei geführten Protokolle regelt Art. 38 </text>
+                        <text language="fr"> La publication des procès-verbaux établis à cette occasion est régie par l'art. 38 </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Direktbetroffene können für die Dauer des betreffenden Traktandums von Sitzungen ausgeschlossen werden. </text>
+                        <text language="fr"> Les personnes directement concernées peuvent être exclues des séances pour la durée du point à l'ordre du jour en question. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ausnahmen regelt Art. 40. </text>
+                        <text language="fr"> Les exceptions sont régies par l'art. 40. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Protokolle" title_fr="Procès-verbaux">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS kennt folgende Art von Protokollen: </text>
+                        <text language="fr"> L'UNES connaît les types de procès-verbaux suivants : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Wortprotokoll; </text>
+                                <text language="fr"> procès-verbal intégral ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Diskussionsprotokoll; </text>
+                                <text language="fr"> procès-verbal de la discussion ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Argumentationsprotokoll; </text>
+                                <text language="fr"> procès-verbal de l'argumentation ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Beschlussprotokoll. </text>
+                                <text language="fr"> procès-verbal des décisions. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ein Protokoll enthält mindestens folgende Angaben: </text>
+                        <text language="fr"> Un procès-verbal contient au moins les informations suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> die Namen der Anwesenden; </text>
+                                <text language="fr"> les noms des personnes présentes ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Traktanden mit allen Anträgen; </text>
+                                <text language="fr"> les points à l'ordre du jour avec toutes les motions ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Beschlüsse mit Anzahl Stimmen dafür, dagegen und Enthaltungen oder bei offensichtlich klaren Abstimmungen dem Abstimmungsresultat. </text>
+                                <text language="fr"> les décisions avec le nombre de voix pour, de voix contre et d'abstentions ou, en cas de vote manifestement clair, le résultat du vote. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Wortprotokoll" title_fr="Procès-verbal intégral">
+                <text language="de"> Im Wortprotokoll wird das gesprochene Wort protokolliert. </text>
+                <text language="fr"> Le procès-verbal intégral rapporte les propos tenus. </text>
+            </article>
+            <article title_de="Diskussionsprotokoll" title_fr="Procès-verbal de la discussion">
+                <text language="de"> Im Diskussionsprotokoll werden Aussagen sinngemäss protokolliert. </text>
+                <text language="fr"> Le procès-verbal de la discussion rapporte les déclarations de manière à en conserver le sens. </text>
+            </article>
+            <article title_de="Argumentationsprotokoll" title_fr="Procès-verbal de l'argumentation">
+                <text language="de"> Im Argumentationsprotokoll werden alle Argumente, die zu einer Entscheidung geführt haben, sinngemäss protokolliert. </text>
+                <text language="fr"> Le procès-verbal de l'argumentation rapporte tous les arguments qui ont conduit à une décision de manière à en conserver le sens. </text>
+            </article>
+            <article title_de="Beschlussprotokoll" title_fr="Procès-verbal des décisions">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Im Beschlussprotokoll werden neben den Beschlüssen keine zusätzlichen Inhalte protokolliert. </text>
+                        <text language="fr"> Aucun contenu supplémentaire n'est rapporté dans le procès-verbal des décisions en dehors des décisions. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Beschlussprotokolle können nur geführt werden, wenn für die gleiche Sitzung mindestens ein höherwertiges Protokoll geführt wird. </text>
+                        <text language="fr"> Les procès-verbaux des décisions ne peuvent être rédigés que si, pour la même séance, au moins un procès-verbal de valeur supérieure est rédigé. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Veröffentlichung von Protokollen" title_fr="Publication des procès-verbaux">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Alle Protokolle werden nach Genehmigung durch das betreffende Gremium den VSS-Mitgliedern auf geeignetem Weg zugänglich gemacht. </text>
+                        <text language="fr"> Après approbation par l'organe concerné, tous les procès-verbaux sont rendus accessibles pour les membres de l'UNES par un moyen adapté, </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ausnahmen regeln Art. 40. </text>
+                        <text language="fr"> Les exceptions sont régies par l'art. 40. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Archivierung und Öffentlichkeit von Dokumenten" title_fr="Archivage et publicité des documents">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Organe des VSS, die Administration des VSS und die Vertretungen des VSS haben ihre Protokolle, Verträge und Unterlagen zu archivieren. </text>
+                        <text language="fr"> Les organes de l'UNES, l'administration de l'UNES et les représentations de l'UNES doivent archiver leurs procès-verbaux, contrats et documents. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Alle Dokumente des VSS werden auf Verlangen den VSS-Mitgliedern auf geeignete Art zugänglich gemacht. </text>
+                        <text language="fr"> Sur demande, tous les documents de l'UNES sont rendus accessibles pour les membres de l'UNES par un moyen adapté. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ausnahmen regelt Art. 40. </text>
+                        <text language="fr"> Les exceptions sont régies par l'art. 40. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Vertraulichkeit" title_fr="Confidentialité">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Ein Geschäft gilt als vertraulich, sobald eines der folgenden Kriterien zutrifft: </text>
+                        <text language="fr"> Une affaire est considérée comme confidentielle dès lors que l'un des critères suivants s'applique : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> verordnete Vertraulichkeit aufgrund übergeordneter Rechtsbestimmungen; </text>
+                                <text language="fr"> confidentialité imposée en vertu de dispositions juridiques supérieures ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Veröffentlichung würde Persönlichkeitsrechte verletzen; </text>
+                                <text language="fr"> la publication porterait atteinte aux droits de la personnalité ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Veröffentlichung würde nicht abgeschlossene oder zukünftige Geschäfte gefährden. </text>
+                                <text language="fr"> la publication compromettrait des affaires inachevées ou futures. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ist ein Geschäft gemäss Abs. 1 als vertraulich einzustufen, tagt das behandelnde Gremium geschlossen. </text>
+                        <text language="fr"> Si une affaire doit être classée comme confidentielle conformément à l'al. 1, l'organe qui la traite siège à huis clos. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das geführte Protokoll und alle dem betreffenden Geschäft zugeordneten Dokumente sind in diesem Fall vertraulich und dürfen nicht veröffentlicht werden. </text>
+                        <text language="fr"> Dans ce cas, le procès-verbal établi et tous les documents rattachés à l'affaire en question sont confidentiels et ne doivent pas être publiés. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vertrauliche Protokolle dürfen einzig von den aktuellen Mitgliedern des betreffenden Organs, der GPK und, im Falle von Organen des VSS, vom VSS-Vorstand eingesehen werden. </text>
+                        <text language="fr"> Les procès-verbaux confidentiels ne peuvent être consultés que par les membres actuels de l'organe concerné, la CdC et, dans le cas des organes de l'UNES, par le comité de l'UNES. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Im Streitfall entscheidet die GPK über die Vertraulichkeit eines Geschäfts. </text>
+                        <text language="fr"> En cas de litige, la CdC décide de la confidentialité d'une affaire. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Auf Verlangen ist die Vertraulichkeit durch das betreffende Organ neu zu beurteilen. Insbesondere ist zu prüfen, ob die Veröffentlichung abgeschlossene oder zukünftige Geschäfte immer noch gefährdet. </text>
+                        <text language="fr"> Sur demande, la confidentialité doit être réévaluée par l'organe concerné. Il convient en particulier de vérifier si la publication compromet toujours des affaires conclues ou futures. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmung" title_fr="Dispositions en matière de révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>

@@ -1,286 +1,166 @@
 <regulation id="13" title_de="Gremienreglement über die Finanzkommission" short_de="CoFi-Reglement" title_fr="Reglement sur la COmmision des finances" short_fr="Reglement de la COFi" original_implementation_date="2025-01-01">
-<section title_de="Allgemeines" title_fr="Généralités">
-<articles>
-<article title_de="Zweck" title_fr="But">
-<text language="de">
-Die <quote>Finanzkommission</quote>, nachfolgend <quote>CoFi</quote>, ist für die strategische Budget- und Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSS verantwortlich.
-</text>
-<text language="fr">
-La <quote> Commission des finances </quote>, ci-après <quote> CoFi </quote>, est responsable de la planification stratégique du budget et des finances ainsi que de la surveillance continue des finances de l'UNES.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Zusammensetzung" title_fr="Composition">
-<articles>
-<article title_de="Zusammensetzung" title_fr="Composition">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Finanzkommission setzt sich aus folgenden Mitgliedern zusammen:
-</text>
-<text language="fr">
-La Commission des finances se compose des membres suivant·e·s :
-</text>
-<letters>
-<letter>
-<text language="de">
-einer entsandten Person aus jeder Sektion;
-</text>
-<text language="fr">
-une personne déléguée de chaque section ;
-</text>
-</letter>
-<letter>
-<text language="de">
-einem Mitglied des Co-Präsidiums;
-</text>
-<text language="fr">
-un·e membre de la co-présidence ;
-</text>
-</letter>
-<letter>
-<text language="de">
-einem Mitglied des Generalsekretariats;
-</text>
-<text language="fr">
-un·e membre du Secrétariat général ;
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Mitglieder nach Abs 1 Bst a. und b. sind stimmberechtigt.
-</text>
-<text language="fr">
-Les membres au sens de l'al. 1 let. a. et b. jouissent d'un droit de vote.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es können Gäste an den Sitzungen teilnehmen.
-</text>
-<text language="fr">
-Des invité·e·s peuvent prendre part aux séances.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Aufgaben und Kompetenzen" title_fr="Tâches et compétences">
-<articles>
-<article title_de="Aufgaben" title_fr="Tâches">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Finanzkommission bespricht alle finanzwirksamen Geschäfte der Delegiertenversammlung vor. Hierzu gehören insbesondere:
-</text>
-<text language="fr">
-La Commission des finances discute avant l'Assemblée des Délégué·e·s de toutes les affaires ayant une incidence financière. En font notamment partie :
-</text>
-<letters>
-<letter>
-<text language="de">
-das Budget;
-</text>
-<text language="fr">
-le budget ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Rechnung;
-</text>
-<text language="fr">
-les comptes ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Stundungen und Anpassungen von Mitgliederbeiträgen;
-</text>
-<text language="fr">
-les reports et les ajustements des cotisations de membre ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Änderungen am Finanzreglement;
-</text>
-<text language="fr">
-les modifications apportées au règlement des finances ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Änderungen an spezifischen Fondsreglementen;
-</text>
-<text language="fr">
-les modifications apportées aux règlements de fonds spécifiques ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Äufnungen und Auflösungen von Fonds;
-</text>
-<text language="fr">
-les constitutions et les dissolutions de fonds ;
-</text>
-</letter>
-<letter>
-<text language="de">
-Änderungsanträge zu den oben genannten Geschäften.
-</text>
-<text language="fr">
-les amendements relatifs aux objets susmentionnés.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Finanzkommission kann zu diesen Geschäften eine Empfehlung zu Handen der Delegiertenversammlung abgeben.
-</text>
-<text language="fr">
-La Commission des finances peut émettre une recommandation sur ces objets à l'attention de l'Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Finanzkommission überwacht die generelle finanzielle Lage des Verbands.
-</text>
-<text language="fr">
-La Commission des finances surveille la situation financière générale de l'Union.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Kompetenzen" title_fr="Compétences">
-<text language="de">
-Die Kommission für Finanzen hat für die kontinuierliche Überwachung der Finanzen die volle Einsicht in die Buchhaltungsunterlagen.
-</text>
-<text language="fr">
-La Commission des finances a un accès complet aux documents comptables pour la surveillance continue des finances.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Sitzungen" title_fr="Séances">
-<articles>
-<article title_de="Sitzungen" title_fr="Séances">
-<paragraphs>
-<paragraph>
-<text language="de">
-Das Mitglied des Generalsekretariats nach Art. 2 Abs. 1 Bst. c lädt zu Sitzungen ein.
-</text>
-<text language="fr">
-Le/La membre du Secrétariat général au sens de l'art. 2 al. 1 let. c convoque les séances.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Begehren von mindestens zwei Mitgliedern ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von drei Wochen statt.
-</text>
-<text language="fr">
-À la demande d'au moins deux membres, une séance extraordinaire est convoquée. Celle-ci a lieu dans un délai de trois semaines.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Traktandenliste wird den Kommissionsmitgliedern, den Sektionen, dem Vorstand und der GPK zugestellt.
-</text>
-<text language="fr">
-L'ordre du jour est transmis aux membres de la Commission, aux sections, au Comité exécutif et à la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.
-</text>
-<text language="fr">
-L'ordre du jour comprend au moins la date et le lieu de la séance ainsi qu'une liste de tous les points à l'ordre du jour. Les points à l'ordre du jour qui sont confidentiels peuvent être mentionnés comme <quote> Confidentiel </quote>.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Finanzkommission ist beschlussfähig, wenn drei Mitglieder anwesend sind.
-</text>
-<text language="fr">
-La Commission des finances est habilitée à prendre des décisions lorsque trois membres sont présent·e·s.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Sitzungsleitung" title_fr="Présidence de séance">
-<text language="de">
-Das Mitglied des Generalsekretariats nach Art. 2 Abs. 1 Bst. c leitet die Sitzungen.
-</text>
-<text language="fr">
-Le/La membre du Secrétariat général au sens de l'art. 2 al. 1 let. c préside les séances.
-</text>
-</article>
-<article title_de="Protokoll" title_fr="Procès-verbal">
-<paragraphs>
-<paragraph>
-<text language="de">
-Es ist an jeder Sitzung ein Argumentationsprotokoll zu führen, welches den Anforderungen nach Art. 36 des Mitwirkungs- und Öffentlichkeitsreglements entspricht.
-</text>
-<text language="fr">
-Un procès-verbal d'argumentation doit être rédigé lors de chaque séance, conformément aux exigences de l'art. 36 du règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
-</text>
-<text language="fr">
-Les procès-verbaux sont publiés après leur approbation, conformément à l'art. 38 du règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung dem Vorstand, dem Sektionsrat und der GPK zugestellt. Bei vertraulichen Protokollen kann auf den Versand verzichtet werden.
-</text>
-<text language="fr">
-Les procès-verbaux sont transmis au Comité exécutif, au Conseil des Sections et à la CdC après leur approbation. Pour les procès-verbaux confidentiels, il est possible de renoncer à l'envoi.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <section title_de="Allgemeines" title_fr="Généralités">
+        <articles>
+            <article title_de="Zweck" title_fr="But">
+                <text language="de"> Die <quote>Finanzkommission</quote>, nachfolgend <quote>CoFi</quote>, ist für die strategische Budget- und Finanzplanung sowie für die kontinuierliche Überwachung der Finanzen des VSS verantwortlich. </text>
+                <text language="fr"> La <quote> Commission des finances </quote>, ci-après <quote> CoFi </quote>, est responsable de la planification stratégique du budget et des finances ainsi que de la surveillance continue des finances de l'UNES. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Zusammensetzung" title_fr="Composition">
+        <articles>
+            <article title_de="Zusammensetzung" title_fr="Composition">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Finanzkommission setzt sich aus folgenden Mitgliedern zusammen: </text>
+                        <text language="fr"> La Commission des finances se compose des membres suivant·e·s : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> einer entsandten Person aus jeder Sektion; </text>
+                                <text language="fr"> une personne déléguée de chaque section ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> einem Mitglied des Co-Präsidiums; </text>
+                                <text language="fr"> un·e membre de la co-présidence ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> einem Mitglied des Generalsekretariats; </text>
+                                <text language="fr"> un·e membre du Secrétariat général ; </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitglieder nach Abs 1 Bst a. und b. sind stimmberechtigt. </text>
+                        <text language="fr"> Les membres au sens de l'al. 1 let. a. et b. jouissent d'un droit de vote. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es können Gäste an den Sitzungen teilnehmen. </text>
+                        <text language="fr"> Des invité·e·s peuvent prendre part aux séances. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Aufgaben und Kompetenzen" title_fr="Tâches et compétences">
+        <articles>
+            <article title_de="Aufgaben" title_fr="Tâches">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Finanzkommission bespricht alle finanzwirksamen Geschäfte der Delegiertenversammlung vor. Hierzu gehören insbesondere: </text>
+                        <text language="fr"> La Commission des finances discute avant l'Assemblée des Délégué·e·s de toutes les affaires ayant une incidence financière. En font notamment partie : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> das Budget; </text>
+                                <text language="fr"> le budget ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Rechnung; </text>
+                                <text language="fr"> les comptes ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Stundungen und Anpassungen von Mitgliederbeiträgen; </text>
+                                <text language="fr"> les reports et les ajustements des cotisations de membre ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Änderungen am Finanzreglement; </text>
+                                <text language="fr"> les modifications apportées au règlement des finances ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Änderungen an spezifischen Fondsreglementen; </text>
+                                <text language="fr"> les modifications apportées aux règlements de fonds spécifiques ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Äufnungen und Auflösungen von Fonds; </text>
+                                <text language="fr"> les constitutions et les dissolutions de fonds ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Änderungsanträge zu den oben genannten Geschäften. </text>
+                                <text language="fr"> les amendements relatifs aux objets susmentionnés. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Finanzkommission kann zu diesen Geschäften eine Empfehlung zu Handen der Delegiertenversammlung abgeben. </text>
+                        <text language="fr"> La Commission des finances peut émettre une recommandation sur ces objets à l'attention de l'Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Finanzkommission überwacht die generelle finanzielle Lage des Verbands. </text>
+                        <text language="fr"> La Commission des finances surveille la situation financière générale de l'Union. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Kompetenzen" title_fr="Compétences">
+                <text language="de"> Die Kommission für Finanzen hat für die kontinuierliche Überwachung der Finanzen die volle Einsicht in die Buchhaltungsunterlagen. </text>
+                <text language="fr"> La Commission des finances a un accès complet aux documents comptables pour la surveillance continue des finances. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Sitzungen" title_fr="Séances">
+        <articles>
+            <article title_de="Sitzungen" title_fr="Séances">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Das Mitglied des Generalsekretariats nach Art. 2 Abs. 1 Bst. c lädt zu Sitzungen ein. </text>
+                        <text language="fr"> Le/La membre du Secrétariat général au sens de l'art. 2 al. 1 let. c convoque les séances. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Auf Begehren von mindestens zwei Mitgliedern ist eine ausserordentliche Sitzung einzuberufen. Diese findet innerhalb von drei Wochen statt. </text>
+                        <text language="fr"> À la demande d'au moins deux membres, une séance extraordinaire est convoquée. Celle-ci a lieu dans un délai de trois semaines. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Traktandenliste wird den Kommissionsmitgliedern, den Sektionen, dem Vorstand und der GPK zugestellt. </text>
+                        <text language="fr"> L'ordre du jour est transmis aux membres de la Commission, aux sections, au Comité exécutif et à la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden. </text>
+                        <text language="fr"> L'ordre du jour comprend au moins la date et le lieu de la séance ainsi qu'une liste de tous les points à l'ordre du jour. Les points à l'ordre du jour qui sont confidentiels peuvent être mentionnés comme <quote> Confidentiel </quote>. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Finanzkommission ist beschlussfähig, wenn drei Mitglieder anwesend sind. </text>
+                        <text language="fr"> La Commission des finances est habilitée à prendre des décisions lorsque trois membres sont présent·e·s. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Sitzungsleitung" title_fr="Présidence de séance">
+                <text language="de"> Das Mitglied des Generalsekretariats nach Art. 2 Abs. 1 Bst. c leitet die Sitzungen. </text>
+                <text language="fr"> Le/La membre du Secrétariat général au sens de l'art. 2 al. 1 let. c préside les séances. </text>
+            </article>
+            <article title_de="Protokoll" title_fr="Procès-verbal">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Es ist an jeder Sitzung ein Argumentationsprotokoll zu führen, welches den Anforderungen nach Art. 36 des Mitwirkungs- und Öffentlichkeitsreglements entspricht. </text>
+                        <text language="fr"> Un procès-verbal d'argumentation doit être rédigé lors de chaque séance, conformément aux exigences de l'art. 36 du règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht. </text>
+                        <text language="fr"> Les procès-verbaux sont publiés après leur approbation, conformément à l'art. 38 du règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung dem Vorstand, dem Sektionsrat und der GPK zugestellt. Bei vertraulichen Protokollen kann auf den Versand verzichtet werden. </text>
+                        <text language="fr"> Les procès-verbaux sont transmis au Comité exécutif, au Conseil des Sections et à la CdC après leur approbation. Pour les procès-verbaux confidentiels, il est possible de renoncer à l'envoi. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>
