@@ -47,7 +47,7 @@
   \section[(( secnum(sec) ))~(( sec.title[language] | escape_tex ))]{(( secnum(sec) ))(( changeFootnoteMark(sec.changeFootnote) ))~(( sec.title[language] | escape_tex ))}(( changeFootnote(sec.changeFootnote, False) ))
   \nobreak
   ((* for art in sec.articles -*))
-    ((- article_monolingual(art, "fr") ))
+    ((- article_monolingual(art, language) ))
   ((* endfor *))
   ((* for subsec in sec.subsections -*))
     (( subsection_monolingual(subsec, language) -))
@@ -78,7 +78,7 @@
   \subsubsection[(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))~(( subsubsec.title[language] | escape_tex ))]{(( secnum(subsubsec.parent.parent) ))(( secnum(subsubsec.parent) ))(( secnum(subsubsec) ))(( changeFootnoteMark(subsubsec.changeFootnote) ))~(( subsubsec.title[language] | escape_tex ))}(( changeFootnote(subsubsec.changeFootnote, False) ))
   \nobreak
   ((* for art in subsubsec.articles -*))
-    ((- article_monolingual(art, "fr") ))
+    ((- article_monolingual(art, language) ))
   ((* endfor -*))
 ((* endmacro -*))
 
@@ -136,10 +136,7 @@
   ((*- if lit.ended_inserted *))
     \end{insertedletters}
   ((*- endif *))
-  \item 
-  ((* for text in lit.text *))
-    ((- handle_text(text, language) ))
-  ((* endfor -*))(( changeFootnote(lit.changeFootnote) -))
+  \item ((* for text in lit.text *))((- handle_text(text, language) ))((* endfor -*))(( changeFootnote(lit.changeFootnote) -))
   ((*- if lit.numerals | length > 0 *))
     \begin{numerals}
     ((* for num in lit.numerals -*))
@@ -156,7 +153,7 @@
   ((*- if num.ended_inserted *))
     \end{insertednumerals}
   ((*- endif *))
-  \item (( handle_text(num.text, language) -))(( changeFootnote(num.changeFootnote) -))
+  \item ((* for text in num.text -*))((- handle_text(text, language) ))((* endfor -*))(( changeFootnote(num.changeFootnote) -))
 ((* endmacro *))
 
 ((* macro handle_text(text_element, language) -*))

@@ -1,5 +1,5 @@
 <regulation id="01" title_de="Statuten" short_de="Statuten" title_fr="Statuts" short_fr="Statuts" original_implementation_date="2025-01-01">
-    <section title_de="Allgemeine Bestimmungen" title_fr="Allgemeine Bestimmungen">
+    <section title_de="Allgemeine Bestimmungen" title_fr="Généralités">
         <articles>
             <article title_de="Rechtsform, Name, Sitz" title_fr="Forme juridique, nom et siège">
                 <paragraphs>
@@ -298,15 +298,18 @@
                     <letter>
                         <text language="de"> der Geschäftsstelle: </text>
                         <text language="fr"> le bureau : </text>
+                        <numerals>
+                            <numeral>
+                                <text language="de"> Generalsekretariat; </text>
+                                <text language="fr"> le secrétariat général; </text>
+                            </numeral>
+                            <numeral>
+                                <text language="de"> weitere Mitarbeitende. </text>
+                                <text language="fr"> autre collaborateur·trice·s. </text>
+                            </numeral>
+                        </numerals>
                     </letter>
-                    <letter>
-                        <text language="de"> Generalsekretariat; </text>
-                        <text language="fr"> le secrétariat général; </text>
-                    </letter>
-                    <letter>
-                        <text language="de"> weitere Mitarbeitende. </text>
-                        <text language="fr"> autre collaborateur·trice·s. </text>
-                    </letter>
+
                 </letters>
             </article>
         </articles>

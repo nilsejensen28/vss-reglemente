@@ -231,11 +231,7 @@
 		{\end{minipage}}
 \makeatother
 
-\if@bylaws@monolingual
-	\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak}{\par}
-\else
-	\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak\vspace{-\baselineskip}}{\par}
-\fi
+\newenvironment{article}[2]{\textbf{Art.\ #1\ #2}\newline\nopagebreak}{\par}
 % Paragraphs are aligned all the way on the left page margin and text flows around the labels.
 \newlist{paragraphs}{enumerate}{1}
 
@@ -275,7 +271,7 @@
 		labelsep     = 0.5ex, % Label separation of about a space.
 		labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
 		itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
-		before*      = \vspace{-\baselineskip}\nopagebreak,
+		before*      = \nopagebreak,
 		first*       = \nopagebreak,
 		topsep       = 0pt,   % Do not add any space between the text and the paragraphs.
 		beginpenalty = 100000,
@@ -327,7 +323,7 @@
 		labelsep     = 0.5ex, % Label separation of about a space.
 		labelwidth   = 1ex,   % For some reason this needs to be fixed for this to work. Makes no sense, but it works.
 		itemindent   = !,     % Calculate the indent of the first line of text based on the values above.
-		before*      = \nopagebreak,
+		before*      = \vspace{-\baselineskip}\nopagebreak,
 		first*       = \nopagebreak,
 		topsep       = 0pt,   % Do not add any space between the text and the paragraphs.
 		beginpenalty = 100000,

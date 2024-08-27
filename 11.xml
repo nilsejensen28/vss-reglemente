@@ -1,4 +1,4 @@
-<regulation id="11" title_de="Gremienreglement über die Delegiertenversammlung" short_de="DV-Reglement" title_fr="Règlement sur l'Assemblée des délégués" short_fr="Reglement de l'AD" original_implementation_date="2025-01-01">
+<regulation id="11" title_de="Gremienreglement über die Delegiertenversammlung" short_de="DV-Reglement" title_fr="Règlement sur l'Assemblée des délégués" short_fr="Règlement de l'AD" original_implementation_date="2025-01-01">
     <section title_de="Zusammensetzung" title_fr="Composition">
         <articles>
             <article title_de="Teilnehmende" title_fr="Participant·e·s">
@@ -326,8 +326,8 @@
                 </paragraphs>
             </article>
             <article title_de="Entlastung" title_fr="Décharge">
-                <text language="de"> Auf Antrag des Vorstands wird den einzelnen Organen gemäss Art. XX der Statuten, mit Ausnahme der Delegiertenversammlung selbst, die Entlastung erteilt, sofern die entsprechenden Jahresberichte und die Jahresrechnung genehmigt wurden. </text>
-                <text language="fr"> Sur demande du Comité exécutif, la décharge est accordée aux différents organes, conformément à l'art. XX des statuts, à l'exception de l'Assemblée des Délégué·e·s elle-même, et à condition que les rapports annuels correspondants et les comptes annuels aient été approuvés. </text>
+                <text language="de"> Auf Antrag des Vorstands wird den einzelnen Organen gemäss Art. 16 der Statuten, mit Ausnahme der Delegiertenversammlung selbst, die Entlastung erteilt, sofern die entsprechenden Jahresberichte und die Jahresrechnung genehmigt wurden. </text>
+                <text language="fr"> Sur demande du Comité exécutif, la décharge est accordée aux différents organes, conformément à l'art. 16 des statuts, à l'exception de l'Assemblée des Délégué·e·s elle-même, et à condition que les rapports annuels correspondants et les comptes annuels aient été approuvés. </text>
             </article>
         </articles>
     </section>
