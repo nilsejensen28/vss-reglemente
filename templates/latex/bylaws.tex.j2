@@ -4,7 +4,7 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section_monolingual, article_mononlingual with context *))
+((* from "macros.tex.j2" import header, section_monolingual, article_monolingual with context *))
 
 \documentclass[monolingual=true]{assets/latex/vseth-bylaws}
 \setdate{(( bylaws.date_last_update | format_date ))}
@@ -41,7 +41,7 @@
   ((* endif *))
 
   ((* for art in regl.articles -*))
-    ((- article_mononlingual(art, GLOBAL_LANGUAGE) ))
+    ((- article_monolingual(art, GLOBAL_LANGUAGE) -))
   ((* endfor *))
   ((* for sec in regl.sections -*))
     ((- section_monolingual(sec, GLOBAL_LANGUAGE) -))

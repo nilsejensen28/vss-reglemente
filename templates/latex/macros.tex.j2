@@ -15,16 +15,22 @@
   ((set_text(ns.title, trim=true)))
 ((* endmacro -*))
 
-((* macro set_multilingual_articles(articles, languages) -*))
-  ((* for art in articles *))
-    ((* for language in languages *))\begin{customminipage}
+((* macro set_multilingual_article(art, languages) -*))
+  ((* for language in languages *))\begin{customminipage}
     (( article_monolingual(art, language) ))
     \end{customminipage}
     \hfill
-    ((* endfor *))
+  ((* endfor *))
+((* endmacro -*))
+
+((* macro set_multilingual_articles(articles, languages) -*))
+  ((* for art in articles *))
+    (( set_multilingual_article(art, languages) ))
     ((* if not loop.last *))\par((* endif *))
   ((* endfor *))
-((* endmacro *))
+((* endmacro -*))
+
+
 
 ((* macro header(title, date) -*))
   \title{(( set_multilingual_title(title) | escape_tex ))}
