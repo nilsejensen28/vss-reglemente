@@ -18,9 +18,9 @@
   ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
 ((* endset *))
 ((* if regl.short[GLOBAL_LANGUAGE] is not none *))
-\subtitle{((- subtitle )); RSVSETH (( shortid | escape_tex -))}
+\subtitle{((- subtitle )); RSVSS (( shortid | escape_tex -))}
 ((* else *))
-\subtitle{RSVSS(( shortid | escape_tex -))}
+\subtitle{RSVSS (( shortid | escape_tex -))}
 ((* endif *))
 
 \setdate{(( regl.date_last_update | format_date ))}
