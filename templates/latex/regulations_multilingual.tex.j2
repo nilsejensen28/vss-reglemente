@@ -4,7 +4,7 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section_bilingual, article_mononlingual, set_multilingual_title, set_multilingual_article with context *))
+((* from "macros.tex.j2" import header, section_bilingual, article_mononlingual, set_multilingual_title, set_multilingual_preamble, set_multilingual_article with context *))
 
 \documentclass[monolingual=false]{assets/latex/vseth-bylaws}
 
@@ -28,7 +28,7 @@
 \maketitle
 
 ((* if regl.preamble is defined *))
-\emph{((- set_text(regl.preamble.text) -))(( changeFootnoteMark(regl.preamble.changeFootnote) ))(( changeFootnote(regl.preamble.changeFootnote) ))}
+  (( set_multilingual_preamble(regl.preamble.text, GLOBAL_LANGUAGE_LIST) -))
 ((* endif *))
 
 ((* for art in regl.articles -*))

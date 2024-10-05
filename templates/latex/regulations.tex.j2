@@ -4,7 +4,7 @@
   # Since LaTeX does not play nicely with {% %}, use ((* *))
   #))
 
-((* from "macros.tex.j2" import header, section_monolingual, article_monolingual with context *))
+((* from "macros.tex.j2" import handle_text, header, section_monolingual, article_monolingual with context *))
 
 \documentclass[headers, monolingual=true]{assets/latex/vseth-bylaws}
 
@@ -28,11 +28,14 @@
 \maketitle
 
 ((* if regl.preamble is defined *))
-\emph{((- set_text(regl.preamble.text) -))(( changeFootnoteMark(regl.preamble.changeFootnote) ))(( changeFootnote(regl.preamble.changeFootnote) ))}
+  ((* for text_element in regl.preamble.text *))
+    \emph{\large{((- handle_text(text_element, GLOBAL_LANGUAGE) -))}}
+  ((* endfor *))
+  \par
 ((* endif *))
-
 ((* for art in regl.articles -*))
   ((- article_monolingual(art, GLOBAL_LANGUAGE) -))
+  ((* if not loop.last *))\par((* endif *))
 ((* endfor -*))
 ((* for sec in regl.sections -*))
   ((- section_monolingual(sec, GLOBAL_LANGUAGE) -))

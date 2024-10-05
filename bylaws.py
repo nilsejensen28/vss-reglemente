@@ -347,7 +347,7 @@ class Preamble:
             self.text.append(element.text)
 
         for child in element:
-            match child:
+            match child.tag:
                 case "link":
                     self.text.append(Link(child, self))
                 case "quote":
@@ -357,6 +357,8 @@ class Preamble:
                 case "inserted" | "deleted" | "changed":
                     self.changeFootnote = ChangeFootnote(child, self)
                     self.text.append(self.changeFootnote)
+                case "text":
+                    self.text.append(Text(child, self))
                 case _:
                     throw_error("invalid preamble child <{}>".format(
                         child.tag), element)
