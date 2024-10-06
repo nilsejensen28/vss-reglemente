@@ -100,6 +100,7 @@
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=1em, tocnumwidth=1.25em]{section}
 \RedeclareSectionCommand[afterskip=0pt, runin=false, tocindent=3.25em, tocnumwidth=2em]{subsection}
 \RedeclareSectionCommand[afterskip=0pt, runin=false]{subsubsection}
+\renewcommand*\chapterheadstartvskip{}% removes space before chapter titles 
 \setkomafont{title}{\fontseries{b}\fontsize{26}{32}\selectfont}
 \setkomafont{subtitle}{\fontseries{m}\fontsize{15}{19}\selectfont \color{vsethcyan}}
 \setkomafont{chapter}{\fontseries{b}\fontsize{26}{32}\selectfont \color{vsethcyan}}
