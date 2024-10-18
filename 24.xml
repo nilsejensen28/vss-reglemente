@@ -1,140 +1,244 @@
-<regulation id="24" title_de="Gremienreglement über das Generalsekretariat" short_de="GS-Reglement" title_fr="Règlement relatif au Secrétariat général" short_fr="Règlement du SG" original_implementation_date="2025-01-01">
-    <section title_de="Zusammensetzung" title_fr="Composition">
-        <articles>
-            <article title_de="Zusammensetzung" title_fr="Composition">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat besteht aus zwei Personen, die vom Verband angestellt werden. </text>
-                        <text language="fr"> Le Secrétariat général est composé de deux personnes qui sont engagées par l'Union. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Diese dürfen nicht beide die gleiche Geschlechtsidentität haben, und sollen nach Möglichkeit mindestens zwei Sprachregionen des Verbands vertreten. </text>
-                        <text language="fr"> Ces dernières ne doivent pas avoir la même identité de genre et doivent, dans la mesure du possible, représenter au moins deux régions linguistiques de l'Union. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Anstellungsverhältnis" title_fr="Rapports de travail">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Anstellungen und Kündigungen von Mitgliedern des Generalsekretariats werden durch den Vorstand, nach den Bestimmungen des Anstellungsreglements, vorgenommen. </text>
-                        <text language="fr"> L'engagement et le licenciement des membres du Secrétariat général sont effectués par le Comité exécutif, conformément aux dispositions du règlement d'engagement. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Stellen werden öffentlich ausgeschrieben. </text>
-                        <text language="fr"> Les postes sont mis au concours publiquement. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Findungskommission" title_fr="Commission de recrutement">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Um die Stellen zu besetzen, setzt der Vorstand eine Findungskommission ein. </text>
-                        <text language="fr"> Afin de pourvoir les postes, le Comité exécutif met en place une commission de recrutement. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Findungskommission besteht aus mindestens: </text>
-                        <text language="fr"> La commission de recrutement se compose au minimum : </text>
-                        <letters>
-                            <letter>
-                                <text language="de"> eine delegierte Person des Sektionsrats, welche von diesem gewählt wird, und: </text>
-                                <text language="fr"> d'une personne déléguée du Conseil des Sections, élue par celui-ci, et : </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> einem Mitglied des Co-Präsidiums. </text>
-                                <text language="fr"> d'un·e membre de la co-présidence. </text>
-                            </letter>
-                        </letters>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Bei der Zusammensetzung der Findungskommission wird auf eine ausgewogene Vertretung aller Geschlechtsidentitäten und Sprachregionen des Verbandes geachtet. </text>
-                        <text language="fr"> Lors de la composition de la commission de recrutement, il est veillé à ce que toutes les identités de genre et toutes les régions linguistiques de l'Union soient représentées de manière équilibrée. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Aufgaben" title_fr="Tâches">
-        <articles>
-            <article title_de="Vorgesetzte Stelle" title_fr="Supérieur·e hiérarchique">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Direkt dem Generalsekretariats vorgesetzt ist das Co-Präsidium. </text>
-                        <text language="fr"> Le Secrétariat général est directement subordonné à la co-présidence. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Aufgabenteilung zwischen den Mitgliedern des Generalsekretariats wird durch die Mitglieder des Generalsekretariats, unter Einbezug des Co-Präsidiums, vorgenommen. </text>
-                        <text language="fr"> La répartition des tâches entre les membres du Secrétariat général est effectuée par les membres du Secrétariat général, avec la contribution de la co-présidence. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Unterstützung vom Vorstand" title_fr="Soutien du Comité exécutif">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat unterstützt den Vorstand in seiner Arbeit. </text>
-                        <text language="fr"> Le Secrétariat général soutient le Comité exécutif dans son travail. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat nimmt an den Vorstandssitzungen mit beratender Stimme teil. </text>
-                        <text language="fr"> Le Secrétariat général participe aux réunions du Comité exécutif avec une voix consultative </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Vollzug der Verbandsstrategie" title_fr="Mise en œuvre de la stratégie de l'Union">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat ist zuständig für den Vollzug der Entscheidungen der Delegiertenversammlung, des Sektionsrats und des Vorstands. </text>
-                        <text language="fr"> Le Secrétariat général est responsable de la mise en œuvre des décisions de l'Assemblée des Délégué·e·s, du Conseil des Sections et du Comité exécutif. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Dafür stellt das Generalsekretariat den Informationsfluss zwischen den verschiedenen Organen des Verbands sicher. </text>
-                        <text language="fr"> Pour ce faire, le Secrétariat général assure le flux d'informations entre les différents organes de l'Union. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Personalführung" title_fr="Gestion du personnel">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Dem Generalsekretariat obliegt die Personalführung aller weiteren Angestellten des Verbands. </text>
-                        <text language="fr"> La gestion du personnel pour toutes les autres personnes employées par l'Union incombe au Secrétariat général. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat leitet bei Neueinstellungen das Rekrutierungsverfahren und erstellt Anträge auf Anstellung zuhanden des Vorstands. </text>
-                        <text language="fr"> Le Secrétariat général dirige la procédure de recrutement pour les nouvelles embauches et établit des propositions d'engagement à l'attention du Comité exécutif. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Weitere Aufgaben" title_fr="Autres tâches">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat übernimmt weitere Aufgaben, die ihm von den Statuten oder einem Reglement zugewiesen werden. </text>
-                        <text language="fr"> Le Secrétariat général accomplit les autres tâches qui lui sont attribuées par les statuts ou par un règlement. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Das Generalsekretariat übernimmt weitere Aufgaben, die ihm der Vorstand übergibt. </text>
-                        <text language="fr"> Le Secrétariat général accomplit les autres tâches qui lui sont confiées par le Comité exécutif. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-        <articles>
-            <article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
-                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
-                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
-            </article>
-            <article title_de="Version" title_fr="Version">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
-                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
-                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
+<regulation id="24" title_de="Reglement über das Generalsekretariat des VSS" short_de="GS-Reglement" title_fr="Règlement du Secrétariat général de l'UNES" short_fr="Règlement du SG" original_implementation_date="2025-01-01">
+<preamble>
+<text language="de">
+Die Delegiertenversammlung, gestützt auf Art. 38 der Statuten, beschliesst:
+</text>
+<text language="fr">
+L’Assemblée des délégué·e·s, se fondant sur l'art. 38 des Statuts, décide:
+</text>
+</preamble>
+<section title_de="Zusammensetzung" title_fr="Composition">
+<articles>
+<article title_de="Zusammensetzung" title_fr="Composition">
+<paragraphs>
+<paragraph>
+<text language="de">
+Das Generalsekretariat besteht aus zwei Personen, die vom Verband angestellt werden.
+</text>
+<text language="fr">
+Le Secrétariat général se compose de deux personnes employées par l'association.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Diese dürfen beim Beginn des Anstellungsverhältnisses nicht beide die gleiche Geschlechtsidentität haben, und sollten nach Möglichkeit zusammen mindestens zwei Sprachen des Verbands beherrschen.
+</text>
+<text language="fr">
+Celles-ci ne doivent pas être toutes deux de la même identité de genre à l’embauche et doivent, si possible, maîtriser ensemble au moins deux langues de l'association.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Anstellungsverhältnis" title_fr="Contrat de travail">
+<paragraphs>
+<paragraph>
+<text language="de">
+Anstellungen und Kündigungen von Mitgliedern des Generalsekretariats werden durch den Vorstand, nach den Bestimmungen des Anstellungsreglements, vorgenommen.
+</text>
+<text language="fr">
+Les embauches et les licenciements des membres du Secrétariat général sont effectués par le Comité exécutif, conformément aux dispositions du règlement d'embauche.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Stellen werden öffentlich ausgeschrieben.
+</text>
+<text language="fr">
+Les postes ouverts sont publiés.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Findungskommission" title_fr="Commission de recrutement">
+<paragraphs>
+<paragraph>
+<text language="de">
+Um die Stellen zu besetzen, setzt der Vorstand eine Findungskommission ein.
+</text>
+<text language="fr">
+Pour pourvoir les postes, le Comité exécutif met en place une commission de recrutement.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Findungskommission besteht aus mindestens:
+</text>
+<text language="fr">
+La commission de recrutement est composée d'au moins:
+</text>
+<letters>
+<letter>
+<text language="de">
+eine delegierte Person des Sektionsrats, welche von diesem gewählt wird, und;
+</text>
+<text language="fr">
+une personne déléguée par le Conseil des sections, élue par ce dernier;
+</text>
+</letter>
+<letter>
+<text language="de">
+einem Mitglied des Co-Präsidiums;
+</text>
+<text language="fr">
+un membre de la coprésidence et ;
+</text>
+</letter>
+<letter>
+<text language="de">
+dem verbleibenden Mitglied des Generalsekretariats.
+</text>
+<text language="fr">
+le membre restant du Secrétariat général.
+</text>
+</letter>
+</letters>
+</paragraph>
+<paragraph>
+<text language="de">
+Bei der Zusammensetzung der Findungskommission wird auf eine ausgewogene Vertretung aller Geschlechtsidentitäten und Sprachregionen des Verbandes geachtet.
+</text>
+<text language="fr">
+Lors de la composition de la commission de recrutement, il est veillé à une représentation équilibrée de toutes les identités de genre et de toutes les régions linguistiques de l'association.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title_de="Aufgaben" title_fr="Tâches">
+<articles>
+<article title_de="Vorgesetzte Stelle" title_fr="Supérieur direct">
+<paragraphs>
+<paragraph>
+<text language="de">
+Direkt dem Generalsekretariats vorgesetzt ist das Co-Präsidium.
+</text>
+<text language="fr">
+La coprésidence est le supérieur direct du Secrétariat général.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Aufgabenteilung zwischen den Mitgliedern des Generalsekretariats wird durch die Mitglieder des Generalsekretariats, unter Einbezug des Co-Präsidiums, vorgenommen.
+</text>
+<text language="fr">
+Les tâches sont réparties au sein du Secrétariat général d’entente avec la co-Présidence.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Unterstützung vom Vorstand" title_fr="Soutien du Comité exécutif">
+<paragraphs>
+<paragraph>
+<text language="de">
+Das Generalsekretariat unterstützt den Vorstand in seiner Arbeit.
+</text>
+<text language="fr">
+Le Secrétariat général assiste le Comité exécutif dans son travail.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Das Generalsekretariat nimmt an den Vorstandssitzungen mit beratender Stimme teil.
+</text>
+<text language="fr">
+Le Secrétariat général participe aux réunions du Comité exécutif avec une voix consultative.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Vollzug der Verbandsstrategie" title_fr="Exécution de la stratégie de l'association">
+<paragraphs>
+<paragraph>
+<text language="de">
+Das Generalsekretariat ist zuständig für den Vollzug der Entscheidungen der Delegiertenversammlung, des Sektionsrats und des Vorstands.
+</text>
+<text language="fr">
+Le Secrétariat général est responsable de l'exécution des décisions de l'Assemblée des délégué·e·s, du Conseil des sections et du Comité exécutif.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Dafür stellt das Generalsekretariat den Informationsfluss zwischen den verschiedenen Organen des Verbands sicher.
+</text>
+<text language="fr">
+Pour ce faire, le Secrétariat général assure la circulation de l'information entre les différents organes de l'association.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Personalführung" title_fr="Gestion du personnel">
+<paragraphs>
+<paragraph>
+<text language="de">
+Dem Generalsekretariat obliegt die Personalführung aller weiteren Angestellten des Verbands.
+</text>
+<text language="fr">
+Le Secrétariat général est responsable de la gestion du personnel de tous les autres employé·e·s de l'association.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Das Generalsekretariat leitet bei Neueinstellungen das Rekrutierungsverfahren und erstellt Anträge auf Anstellung und Kündigungen zuhanden des Vorstands.
+</text>
+<text language="fr">
+Le Secrétariat général dirige la procédure de recrutement pour les nouvelles embauches et prépare les demandes d'embauche et de licenciement à l'attention du Comité exécutif.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Weitere Aufgaben" title_fr="Autres tâches">
+<paragraphs>
+<paragraph>
+<text language="de">
+Das Generalsekretariat übernimmt weitere Aufgaben, die ihm von den Statuten oder einem Reglement zugewiesen werden.
+</text>
+<text language="fr">
+Le Secrétariat général assume d'autres tâches qui lui sont attribuées par les Statuts ou par un règlement.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Das Generalsekretariat übernimmt weitere Aufgaben, die ihm der Vorstand übergibt.
+</text>
+<text language="fr">
+Le Secrétariat général assume d'autres tâches qui lui sont confiées par le Comité exécutif.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+<articles>
+<article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
+<text language="de">
+Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
+</text>
+<text language="fr">
+Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts.
+</text>
+</article>
+<article title_de="Version" title_fr="Version">
+<paragraphs>
+<paragraph>
+<text language="de">
+Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen.
+</text>
+<text language="fr">
+Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Es tritt am 01.01.2025 in Kraft.
+</text>
+<text language="fr">
+Il entre en vigueur le 01.01.2025.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
 </regulation>

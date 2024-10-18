@@ -1,7 +1,9 @@
 ((* macro set_multilingual_preamble(text, languages) -*))
+  \vspace{\baselineskip}
   ((* for language in languages *))
+    \vspace{-\baselineskip}
     ((* for text_element in text *))
-      \emph{\large{((- handle_text(text_element, language) -))}}
+      {\noindent\raggedright\textit{((- handle_text(text_element, language) -))}}}
     ((* endfor *))
     \par
   ((* endfor *))
@@ -106,19 +108,19 @@
 \begin{minipage}[t]{\textwidth}
 \begin{otherlanguage}{((language_code_to_babel(language)))}
 \begin{article}{(( art.number | escape_tex ))(( art.inserted_number | num2letter))((- changeFootnoteMark(art.changeFootnote) ))}{(( art.title[language] | escape_tex ))}(( changeFootnote(art.changeFootnote, False) ))
+  ((*- if art.paragraphs | length > 0 -*))
+  \begin{paragraphs}
+  ((* for abs in art.paragraphs -*))((- paragraph(abs, language) -))((* endfor -*))
+  \end{paragraphs}
+  ((* endif -*))
   ((* for text in art.text -*))((- handle_text(text, language) ))((* endfor -*))
   ((* if art.letters | length > 0 -*))
-    \vspace{-\parskip}\vspace{\partopsep}
+    \vspace{-\parskip}
     \begin{letters}
     ((* for lit in art.letters -*))
       ((- letter(lit, language) -))
     ((* endfor -*))
     \end{letters}
-  ((* endif -*))
-  ((*- if art.paragraphs | length > 0 -*))
-  \begin{paragraphs}
-  ((* for abs in art.paragraphs -*))((- paragraph(abs, language) -))((* endfor -*))
-  \end{paragraphs}
   ((* endif -*))
 \end{article}
 \end{otherlanguage}

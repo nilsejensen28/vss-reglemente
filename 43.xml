@@ -1,4 +1,8 @@
-<regulation id="43" title_de="Reglement über die Finanzen im VSS" short_de="Finanzreglement" title_fr="Règelement sur les finances de l'UNES" short_fr="Règlement de finance" original_implementation_date="2025-01-01">
+<regulation id="43" title_de="Reglement über die Finanzen des VSS" short_de="Finanzreglement" title_fr="Règlement des finances de l'UNES" short_fr="Règlement des finances" original_implementation_date="2025-01-01">
+    <preamble>
+        <text language="de"> Die Delegiertenversammlung, gestützt auf Art. 15 der Statuten, beschliesst: </text>
+        <text language="fr"> L’Assemblée des délégué·e·s, se fondant sur l'art. 15 des Statuts, décide: </text>
+    </preamble>
     <section title_de="Allgemeines" title_fr="Généralités">
         <articles>
             <article title_de="Geschäftsperiode" title_fr="Exercice comptable">
@@ -6,32 +10,36 @@
                 <text language="fr"> L’exercice comptable s'étend du 1er janvier au 31 décembre. </text>
             </article>
             <article title_de="Zeichnungsberechtigung" title_fr="Droit de signature">
-                <text language="de"> Im Rahmen der Reglemente für den Verband zeichnungsberechtigt sind: </text>
-                <text language="fr"> Sont autorisé·e·s à signer pour l'association dans le cadre des règlements : </text>
-                <letters>
-                    <letter>
-                        <text language="de"> Zu zweien das Co-Präsidium; </text>
-                        <text language="fr"> À deux, la co-présidence ; </text>
-                    </letter>
-                    <letter>
-                        <text language="de"> Zu zweien jeweils ein Mitglied des Co-Präsidiums und des Generalsekretariats. </text>
-                        <text language="fr"> À deux, respectivement un·e membre de la co-présidence et un·e membre du Secrétariat général. </text>
-                    </letter>
-                </letters>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Budgetierung" title_fr="Établissement du budget">
-        <articles>
-            <article title_de="Budget" title_fr="Budget">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Die Finanzplanung des VSS wird in Form eines Jahresbudgets vorgenommen. </text>
-                        <text language="fr"> La planification financière de l'UNES se fait sous la forme d'un budget annuel. </text>
+                        <text language="de"> Im Rahmen der Reglemente für den Verband zeichnungsberechtigt sind: </text>
+                        <text language="fr"> Sont autorisés à signer au nom de l'association dans le cadre des règlements : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Zu zweien das Co-Präsidium; </text>
+                                <text language="fr"> A deux, la coprésidence ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Zu zweien jeweils ein Mitglied des Co-Präsidiums und des Generalsekretariats. </text>
+                                <text language="fr"> Un membre de la coprésidence et un membre du secrétariat général à deux. </text>
+                            </letter>
+                        </letters>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Es umfasst alle geplanten Erträge und Aufwände des VSS für die Geschäftsperiode. </text>
-                        <text language="fr"> Il comprend tous les produits et charges de l'UNES prévus pour l’exercice comptable. </text>
+                        <text language="de"> Zusätzlich kann der Vorstand nach Art. 5 Abs. 4 Vorstandsreglement einer weiteren Vorstands-internen Person die Zeichnungsberechtigung übertragen. </text>
+                        <text language="fr"> En outre, le Comité directeur peut déléguer le droit de signature à une autre personne interne au Comité directeur, conformément à l'article 5, paragraphe 4 du Règlement du Comité directeur. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Budgetkompetenz" title_fr="Compétence budgétaire">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist berechtigt, im Rahmen vom Budget Ausgaben zu tätigen. Er kann diese Kompetenz delegieren. Das Budget stellt dabei einen Richtwert dar. Abweichungen sind im Rahmen der Berichterstattung zum Jahresabschluss zu begründen. </text>
+                        <text language="fr"> Le Comité exécutif est habilité à engager des dépenses dans le cadre du budget. Il peut déléguer cette compétence. Le budget est une valeur indicative. Tout écart doit être justifié dans le cadre du rapport sur les comptes annuels. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist rechenschaftspflichtig für die ordnungsgemässe Verwendung und Einhaltung der einzelnen Budgetpositionen. </text>
+                        <text language="fr"> Le Comité exécutif est responsable de l'utilisation correcte et du respect des différents postes budgétaires. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -39,11 +47,51 @@
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Der VSS-Vorstand beantragt die Genehmigung des Budgets bei der Delegiertenversammlung. </text>
-                        <text language="fr"> Le comité de l'UNES soumet le budget pour approbation à l'Assemblée des Délégué·e·s. </text>
+                        <text language="fr"> Le Comité de l'UNES demande l'approbation du budget à l'Assemblée des délégué·e·s. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Eine Anpassung des Budgets kann an jeder Delegiertenversammlung beschlossen werden. </text>
-                        <text language="fr"> Une révision du budget peut être décidée lors de chaque Assemblée des Délégué·e·s. </text>
+                        <text language="fr"> Une adaptation du budget peut être décidée lors de chaque Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Budgetierung" title_fr="Budgétisation">
+        <articles>
+            <article title_de="Budget" title_fr="Budget">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Finanzplanung des VSS wird in Form eines Jahresbudgets vorgenommen.Dieser gliedert sich in Budgetpositionen. </text>
+                        <text language="fr"> La planification financière de l'UNES se fait sous la forme d'un budget annuel qui se subdivise en postes comptables. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es umfasst alle geplanten Erträge und Aufwände des VSS für die Geschäftsperiode. </text>
+                        <text language="fr"> Il comprend tous les produits et charges prévus de l'UNES pour la période d'exercice. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Budgetkompetenz" title_fr="Compétence budgétaire">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist berechtigt, im Rahmen vom Budget Ausgaben zu tätigen. Er kann diese Kompetenz delegieren. Das Budget stellt dabei einen Richtwert dar. Abweichungen sind im Rahmen der Berichterstattung zum Jahresabschluss zu begründen. </text>
+                        <text language="fr"> Le Comité exécutif est habilité à engager des dépenses dans le cadre du budget. Il peut déléguer cette compétence. Le budget est une valeur indicative. Tout écart doit être justifié dans le cadre du rapport sur les comptes annuels. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist rechenschaftspflichtig für die ordnungsgemässe Verwendung und Einhaltung der einzelnen Budgetpositionen. </text>
+                        <text language="fr"> Le Comité exécutif est responsable de l'utilisation correcte et du respect des différents postes budgétaires. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Genehmigung des Budgets" title_fr="Approbation du budget">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS-Vorstand beantragt die Genehmigung des Budgets bei der Delegiertenversammlung. </text>
+                        <text language="fr"> Le Comité exécutif demande l'approbation du budget à l'Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Eine Anpassung des Budgets kann an jeder Delegiertenversammlung beschlossen werden. </text>
+                        <text language="fr"> Une adaptation du budget peut être décidée lors de chaque Assemblée des délégué·e·s. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -53,87 +101,95 @@
         <articles>
             <article title_de="Definition" title_fr="Définition">
                 <text language="de"> Fonds haben die Aufgabe, finanzielle Mittel für einen spezifischen Zweck bereitzustellen. </text>
-                <text language="fr"> Les fonds servent à fournir des ressources financières dans un but particulier. </text>
+                <text language="fr"> Les fonds ont pour vocation de fournir des ressources financières dans un but spécifique. </text>
             </article>
-            <article title_de="Fondsreglement" title_fr="Règlement des fonds">
-                <text language="de"> Die Delegiertenversammlung erlässt für jeden Fonds ein Fondsreglement. Dieses regelt mindestens folgende Punkte: </text>
-                <text language="fr"> Pour chaque fonds, l'Assemblée des Délégué·e·s édicte un règlement de fonds. Celui-ci règle au moins les points suivants : </text>
+            <article title_de="Gründung und Aufhebung" title_fr="Création et suppression">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Fonds werden von der Delegiertenversammlung geschaffen und aufgehoben. </text>
+                        <text language="fr"> Les fonds sont créés et supprimés par l'Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung kann Fonds auflösen. Sie kann in den spezifischen Bestimmungen zu den jeweiligen Fonds weitere Organe bestimmend, die eine Auflösung beschliessen können. </text>
+                        <text language="fr"> L'Assemblée des délégué·e·s peut dissoudre des fonds. Elle peut désigner, dans les dispositions spécifiques à chaque fonds, d'autres organes qui peuvent aussi décider d'une dissolution. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Spezifische Bestimmungen" title_fr="Dispositions spécifiques">
+                <text language="de"> Die Delegiertenversammlung erlässt für jeden Fonds spezifische Bestimmungen. Diese regeln mindestens folgende Punkte: </text>
+                <text language="fr"> L'Assemblée des délégué·e·s édicte des dispositions spécifiques pour chaque fonds. Celles-ci règlent au moins les points suivants : </text>
                 <letters>
                     <letter>
                         <text language="de"> Verwendungszweck; </text>
-                        <text language="fr"> Motif d'utilisation ; </text>
+                        <text language="fr"> le but de l’utilisation ; </text>
                     </letter>
                     <letter>
                         <text language="de"> Antragsberechtigte Gremien. </text>
-                        <text language="fr"> Organes habilités à présenter une demande. </text>
+                        <text language="fr"> les organes habilités à présenter des demandes. </text>
                     </letter>
                 </letters>
             </article>
-            <article title_de="Budgetierung" title_fr="Établissement du budget">
+            <article title_de="Budgetierung" title_fr="Budgétisation">
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Äufnungen bestehender Fonds sind ins Budget zu integrieren und separat zu genehmigen. </text>
-                        <text language="fr"> Les reconstitutions de fonds existants doivent être intégrées au budget et approuvées séparément. </text>
+                        <text language="fr"> Les créations de fonds existants doivent être intégrées au budget et approuvées séparément. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Bei neu geschaffenen Fonds muss eine initiale Äufnung für den Fonds im Antrag festgelegt werden. </text>
-                        <text language="fr"> Pour les fonds nouvellement créés, une provision initiale pour le fonds doit être définie dans la demande. </text>
+                        <text language="fr"> Pour les fonds nouvellement créés, une dotation initiale pour le fonds doit être définie dans la demande. </text>
                     </paragraph>
                 </paragraphs>
             </article>
         </articles>
     </section>
-    <section title_de="Ausserordentliche Mittelflüsse: Nachtragskredite" title_fr="Flux de trésorerie extraordinaires : Crédits supplémentaires">
+    <section title_de="Ausserordentliche Mittelflüsse: Nachtragskredite" title_fr="Flux de trésorerie exceptionnels : Crédits supplémentaires">
         <articles>
-            <article title_de="Grundsätze" title_fr="Principes de base">
+            <article title_de="Grundsätze" title_fr="Principes">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Nachtragskredite decken allgemeine unvorhergesehene und nicht im ordentlichen Budget veranschlagte Erträge und Aufwände. </text>
-                        <text language="fr"> Les crédits supplémentaires couvrent les produits et les charges généraux imprévus ainsi que les produits et les charges qui n'ont pas été inscrits au budget ordinaire. </text>
+                        <text language="de"> Nachtragskredite decken allgemeine unvorhergesehene und nicht im ordentlichen Budget veranschlagte Aufwände. </text>
+                        <text language="fr"> Les crédits supplémentaires couvrent des dépenses imprévues et non inscrites au budget ordinaire. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Mit Nachtragskredite können keine von der Delegiertenversammlung genehmigten Erträge und Aufwände aus dem Budget gestrichen werden. Zusätzliche Aufwands- oder Ertragsminderungen sind jedoch zulässig. </text>
-                        <text language="fr"> Les crédits supplémentaires ne permettent pas de supprimer du budget des produits et des charges approuvés par l'Assemblée des Délégué·e·s. Des réductions additionnelles des charges ou des produits sont toutefois autorisées. </text>
+                        <text language="fr"> Les crédits supplémentaires ne peuvent pas être utilisés pour supprimer du budget des recettes et des dépenses approuvées par l'Assemblée des délégué·e·s. Des réductions supplémentaires de dépenses ou de recettes sont toutefois autorisées. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Es können keine Nachtragskredite zur nachträglichen Legitimation bereits erfolgter Mittelflüsse gestellt werden. </text>
-                        <text language="fr"> Il n'est pas possible de demander des crédits supplémentaires pour légitimer a posteriori des flux de trésorerie déjà opérés. </text>
+                        <text language="fr"> Il n'est pas possible de demander des crédits supplémentaires pour légitimer a posteriori des dépenses déjà effectués. </text>
                     </paragraph>
                 </paragraphs>
             </article>
-            <article title_de="Festlegung" title_fr="Détermination">
+            <article title_de="Festlegung" title_fr="Définition">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Die Delegiertenversammlung legt zusammen mit der Genehmigung des Budgets die maximale Höhe der Erträge und Aufwände der Nachkredite für die folgende Geschäftsperiode fest. </text>
-                        <text language="fr"> L'Assemblée des Délégué·e·s fixe, en même temps que l'approbation du budget, le montant maximal des produits et des charges des crédits supplémentaires pour le prochain exercice comptable. </text>
+                        <text language="de"> Die Delegiertenversammlung legt zusammen mit der Genehmigung des Budgets die maximale Höhe der der Nachkredite für die folgende Geschäftsperiode fest. </text>
+                        <text language="fr"> L'Assemblée des délégué·e·s fixe, en même temps qu'elle approuve le budget, le montant maximal des crédits additionnels pour l'exercice suivant. </text>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Die festgelegten Beträge für den Ertrag und den Aufwand müssen jeweils zwischen 1-5% des ordentlich budgetierten Aufwandes betragen. </text>
-                        <text language="fr"> Les montants fixés pour les produits et les charges doivent chacun représenter entre 1 et 5 % des charges budgétées de manière ordinaire. </text>
+                        <text language="de"> Der festgelegte Betrag muss zwischen 1% und 5% des ordentlich budgetierten Aufwandes betragen. </text>
+                        <text language="fr"> Le montant fixé doit représenter entre 1% et 5% des charges budgétées de manière ordinaire. </text>
                     </paragraph>
                 </paragraphs>
             </article>
-            <article title_de="Einarbeitung ins Budget" title_fr="Inscription au budget">
+            <article title_de="Einarbeitung ins Budget" title_fr="Incorporation au budget">
                 <text language="de"> Die ausserordentlich gesprochenen Beträge werden in der entsprechenden Kostenstelle ins Budget aufgenommen und gekennzeichnet. </text>
-                <text language="fr"> Les montants alloués à titre exceptionnel sont inscrits au budget dans la section des coûts correspondante et sont signalés comme tels. </text>
+                <text language="fr"> Les montants alloués à titre exceptionnel sont inscrits au budget dans le centre de coûts correspondant et identifiés. </text>
             </article>
-            <article title_de="Berechtigte Gremien" title_fr="Organismes habilités">
+            <article title_de="Berechtigte Gremien" title_fr="Organes habilités">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Das Generalsekretariat kann Nachtragskredite bis jeweils maximal CHF 1’000.00 Aufwand und Ertrag sprechen. </text>
-                        <text language="fr"> Le Secrétariat général peut accorder des crédits supplémentaires jusqu'à un maximum de CHF 1'000.00 de produits et de charges à chaque fois. </text>
+                        <text language="de"> Der Vorstand kann Nachtragskredite bis jeweils maximal CHF 1’500.00 Aufwand sprechen. </text>
+                        <text language="fr"> Le Comité exécutif peut accorder des crédits supplémentaires jusqu'à un maximum de CHF 1'500.00 de dépenses à chaque fois. </text>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Der Vorstand kann Nachtragskredite bis jeweils maximal CHF 1’500.00 Aufwand und Ertrag sprechen. </text>
-                        <text language="fr"> Le Comité exécutif peut accorder des crédits supplémentaires jusqu'à un maximum de CHF 1'500.00 de produits et de charges à chaque fois. </text>
+                        <text language="de"> Der Sektionsrat kann Nachtragskredite bis jeweils maximal CHF 5’000.00 Aufwand sprechen. </text>
+                        <text language="fr"> Le Conseil des sections peut accorder des crédits supplémentaires pour un montant maximal de CHF 5'000. </text>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Der Sektionsrat kann Nachtragskredite bis jeweils maximal CHF 5’000.00 Aufwand und Ertrag sprechen. </text>
-                        <text language="fr"> Le Conseil des Sections peut accorder des crédits supplémentaires jusqu'à un maximum de CHF 5'000.00 de produits et de charges à chaque fois. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Der Vorstand informiert den Sektionsrat über alle von ihm oder dem Generalsekretariat genehmigten Anträge. </text>
-                        <text language="fr"> Le Comité exécutif informe le Conseil des Sections de toutes les propositions approuvées par lui-même ou par le Secrétariat général. </text>
+                        <text language="de"> Der Vorstand informiert den Sektionsrat und die Finanzkommission über alle von ihm genehmigten Nachtragskredite. </text>
+                        <text language="fr"> Le Comité exécutif informe le Conseil des sections et la Commission des finances de tous les crédits supplémentaires qu'il a approuvés. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -141,67 +197,71 @@
     </section>
     <section title_de="Entschädigungen" title_fr="Indemnités">
         <articles>
-            <article title_de="Mitarbeitende" title_fr="Collaborateur·trice·s">
+            <article title_de="Mitarbeitende" title_fr="Employé·e·s">
                 <text language="de"> Mitarbeitende des VSS werden gemäss Bestimmungen des Anstellungsreglement entschädigt. </text>
-                <text language="fr"> Les collaborateur·trice·s de l'UNES sont indemnisé·e·s conformément aux dispositions du règlement d'engagement. </text>
+                <text language="fr"> Les collaborateur·trice·s de l'UNES sont rémunéré·e·s conformément aux dispositions du Règlement sur l’embauche. </text>
             </article>
-            <article title_de="Vorstand" title_fr="Comité">
+            <article title_de="Vorstand" title_fr="Comité exécutif">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Vorstandsmitglieder werden für Ihre Arbeit entschädigt. Die Höhe der Entschädigung legt die Delegiertenversammlung fest. </text>
-                        <text language="fr"> Les membres du Comité exécutif sont indemnisé·e·s pour leur travail. Le montant de l'indemnité est fixé par l'Assemblée des Délégué·e·s. </text>
+                        <text language="de"> Vorstandsmitglieder werden für ihre Arbeit entschädigt. Die Höhe der Entschädigung legt die Delegiertenversammlung fest. </text>
+                        <text language="fr"> Les membres du Comité exécutif sont indemnisés pour leur travail. Le montant de l'indemnité est fixé par l'Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstandsmitglieder haben ein Anrecht auf vier Wochen Ferien im Jahr, bei voller Entschädigung. </text>
+                        <text language="fr"> Les membres du Comité exécutif ont droit à quatre semaines de vacances par an, avec une indemnisation complète. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Zusätzlich erhalten Mitglieder des Vorstandes einen Pauschalbeitrag in Höhe der Kosten eines vollen Generalabonnements 2. Klasse. </text>
-                        <text language="fr"> En outre, les membres du Comité exécutif reçoivent une somme globale équivalente à la totalité des coûts d'un abonnement général 2ème classe. </text>
+                        <text language="fr"> En outre, les membres du Comité exécutif reçoivent une contribution forfaitaire équivalente au coût d'un abonnement général complet de 2e classe. </text>
                     </paragraph>
                 </paragraphs>
             </article>
         </articles>
     </section>
-    <section title_de="Auslagen und Spesen" title_fr="Frais et dépenses">
+    <section title_de="Auslagen und Spesen" title_fr="Dépenses et frais">
         <articles>
             <article title_de="Definitionen" title_fr="Définitions">
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Eine Auslage ist ein Aufwand, den eine Person für den VSS vorgestreckt hat, unabhängig davon, ob diese Person persönlich davon profitiert hat. </text>
-                        <text language="fr"> Un frais est une charge qu'une personne a avancée pour l'UNES, indépendamment du fait que cette personne en ait personnellement profité. </text>
+                        <text language="fr"> Une dépenses est une charge qu'une personne a avancée pour l'UNES, indépendamment du fait que cette personne en ait bénéficié personnellement. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Eine Spese ist ein Aufwand, der der Erfüllung des Verbandszwecks unmittelbar dient und von dem im VSS tätige Personen gleichzeitig persönlich profitieren. </text>
-                        <text language="fr"> Une dépense est une charge, qui sert directement à la réalisation du but de l'Union et dont les personnes actives au sein de l'UNES profitent en même temps personnellement. </text>
+                        <text language="fr"> Les frais sont des charges qui servent directement à la réalisation du but de l'association et dont les personnes actives au sein de l'UNES profitent en même temps personnellement. </text>
                     </paragraph>
                 </paragraphs>
             </article>
-            <article title_de="Spesen" title_fr="Dépenses">
+            <article title_de="Spesen" title_fr="Frais">
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Den im VSS tätigen Personen sollen durch ihre Tätigkeit keine privaten Kosten entstehen. </text>
-                        <text language="fr"> L'activité au sein de l'UNES ne doit pas engendrer de coûts privés pour les personnes actives au sein de l'Union. </text>
+                        <text language="fr"> Les personnes travaillant au sein de l'UNES ne doivent pas avoir de couts liés à leur activité. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Spesen sollen allerdings keine regulären Lebenshaltungskosten decken. </text>
-                        <text language="fr"> Les dépenses ne doivent toutefois pas couvrir les coûts de subsistance réguliers. </text>
+                        <text language="fr"> Les frais ne doivent cependant pas couvrir les coûts normaux de la vie. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Falls Spesen notwendig sind, soll immer die günstigste der zumutbaren Varianten gewählt werden. </text>
-                        <text language="fr"> Si des dépenses sont nécessaires, la variante la moins chère parmi les variantes raisonnables doit être privilégiée. </text>
+                        <text language="fr"> Si des frais sont nécessaires, il faut toujours choisir la variante la moins chère parmi celles qui sont acceptables. </text>
                     </paragraph>
                 </paragraphs>
             </article>
-            <article title_de="Fahrkosten" title_fr="Frais de transport">
+            <article title_de="Fahrkosten" title_fr="Frais de déplacement">
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Es werden allgemein die Bahnkosten der 2. Klasse vergütet. </text>
-                        <text language="fr"> Les voyages ferroviaires en 2ème classe sont généralement remboursés. </text>
+                        <text language="fr"> En règle générale, les frais de train en 2e classe sont remboursés. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Ab der zweifachen Höhe der Kosten eines Halbtax-Abonnements werden die Kosten eines halben Billets erstattet. </text>
-                        <text language="fr"> À partir du double du coût d'un abonnement demi-tarif, le coût d'un demi-billet est remboursé. </text>
+                        <text language="fr"> A partir du double du coût d'un abonnement demi-tarif, le coût d'un demi-billet est remboursé. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Ein Recht auf Reisekostenvergütung für VSS-Sitzungen und Arbeitstage haben: </text>
-                        <text language="fr"> Ont droit à un remboursement des frais de transport pour les séances et les journées de travail de l'UNES : </text>
+                        <text language="fr"> Ont droit à une indemnité de déplacement pour les réunions et les journées de travail de l'UNES : </text>
                         <letters>
                             <letter>
                                 <text language="de"> die Mitglieder der Kommissionen; </text>
@@ -209,21 +269,21 @@
                             </letter>
                             <letter>
                                 <text language="de"> offizielle Gäste, welchen die Fahrtkosten nicht anderweitig entschädigt werden; </text>
-                                <text language="fr"> les invité·e·s officiel·le·s, dont les frais de transport ne sont pas indemnisés d'une autre manière ; </text>
+                                <text language="fr"> les invité·e·s officiel·le·s dont les frais de déplacement ne sont pas remboursés d'une autre manière ; </text>
                             </letter>
                             <letter>
-                                <text language="de"> die Mitarbeitenden für auswärtige Sitzungen und Arbeitstage; </text>
-                                <text language="fr"> les collaborateur·trice·s pour les séances et les journées de travail en externe ; </text>
+                                <text language="de"> die Mitarbeitenden des VSS für auswärtige Sitzungen und Arbeitstage; </text>
+                                <text language="fr"> les collaborateur·trice·s de l'UNES pour les réunions et les journées de travail à l'extérieur ; </text>
                             </letter>
                             <letter>
-                                <text language="de"> die VSS-Vertreter*innen in Gremien, falls ihre Spesen nicht vom Gremium gedeckt werden, in dem sie Einsitz nehmen. </text>
-                                <text language="fr"> les représentant·e·s de l'UNES dans les instances, si leurs dépenses ne sont pas couvertes par l'instance dans laquelle ils/elles siègent. </text>
+                                <text language="de"> die VSS-Vertreter:innen in Gremien, falls ihre Spesen nicht vom Gremium gedeckt werden, in dem sie Einsitz nehmen. </text>
+                                <text language="fr"> les représentant·e·s de l'UNES dans les organes, si leurs frais ne sont pas couverts par l’organe dans lequel ils siègent. </text>
                             </letter>
                         </letters>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Vorstandsmitglieder haben keinen Anrecht auf die Rückerstattung von Fahrspesen innerhalb der Schweiz. </text>
-                        <text language="fr"> Les membres du Comité exécutif n'ont pas droit au remboursement des frais de transport à l'intérieur de la Suisse. </text>
+                        <text language="fr"> Les membres du Comité exécutif n'ont pas droit au remboursement de leurs frais de déplacement en Suisse. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -231,11 +291,11 @@
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Auslagen werden nur erstattet, wenn zu deren Abrechnung ein vollständig ausgefülltes Auslagenerstattungsformular inklusive sämtlicher Quittungen eingereicht wird. </text>
-                        <text language="fr"> Les frais ne sont remboursés que si un formulaire de remboursement des frais dûment rempli et accompagné de tous les reçus est présenté pour le décompte. </text>
+                        <text language="fr"> Les frais ne sont remboursés que si un formulaire de demande de remboursement des frais dûment rempli et accompagné de tous les reçus est présenté pour le règlement. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Die unterzeichnende Person ist für die Richtigkeit und Vollständigkeit der Anweisungen und Belege verantwortlich. </text>
-                        <text language="fr"> La personne signataire est responsable de l'exactitude et de l'exhaustivité des indications et des pièces justificatives. </text>
+                        <text language="fr"> La personne soussignée est responsable de l'exactitude et de l'exhaustivité des instructions et des pièces justificatives. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -246,36 +306,36 @@
             <article title_de="Jahresrechnung" title_fr="Comptes annuels">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Die Delegiertenversammlung genehmigt an der Sitzung im Frühlingssemesters die Jahresrechnung. </text>
-                        <text language="fr"> L'Assemblée des Délégué·e·s approuve les comptes annuels lors de la séance du semestre de printemps. </text>
+                        <text language="de"> Die Delegiertenversammlung genehmigt an der ordentlichen Sitzung im Frühlingssemesters die Jahresrechnung. </text>
+                        <text language="fr"> L'Assemblée des délégué·e·s approuve les comptes annuels lors de la session ordinaire du semestre de printemps. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Die Jahresrechnung besteht aus: </text>
-                        <text language="fr"> Les comptes annuels comportent : </text>
+                        <text language="fr"> Les comptes annuels se composent </text>
                         <letters>
                             <letter>
                                 <text language="de"> der Erfolgsrechnung; </text>
-                                <text language="fr"> les pertes et les profits ; </text>
+                                <text language="fr"> du compte de résultat ; </text>
                             </letter>
                             <letter>
                                 <text language="de"> der Bilanz per Ende der Geschäftsperiode; </text>
-                                <text language="fr"> le bilan à la fin de l’exercice comptable ; </text>
+                                <text language="fr"> du bilan à la fin de l'exercice ; </text>
                             </letter>
                             <letter>
                                 <text language="de"> der Gegenüberstellung der Rechnung zum Budget; </text>
-                                <text language="fr"> la comparaison des comptes avec le budget ; </text>
+                                <text language="fr"> de la comparaison des comptes avec le budget ; </text>
                             </letter>
                             <letter>
                                 <text language="de"> dem Revisionsbericht; </text>
-                                <text language="fr"> le rapport de révision ; </text>
+                                <text language="fr"> du rapport de révision ; </text>
                             </letter>
                             <letter>
                                 <text language="de"> den genehmigten Nachtragskrediten; </text>
-                                <text language="fr"> les crédits supplémentaires approuvés ; </text>
+                                <text language="fr"> des crédits supplémentaires approuvés ; </text>
                             </letter>
                             <letter>
                                 <text language="de"> den Fondsrechnungen. </text>
-                                <text language="fr"> les comptes des fonds. </text>
+                                <text language="fr"> des comptes des fonds. </text>
                             </letter>
                         </letters>
                     </paragraph>
@@ -284,24 +344,24 @@
             <article title_de="Rechnungsrevision" title_fr="Révision des comptes">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Es wird eine eingeschränkte Revision durch die Revisionsstelle gemäss Art. 14 der Statuten durchgeführt. </text>
-                        <text language="fr"> Un contrôle restreint est effectué par l'organe de révision conformément à l'art. 14 des statuts. </text>
+                        <text language="de"> Es wird eine eingeschränkte Revision durch die Rechnungsrevisionsstelle gemäss Art. 13 der Statuten durchgeführt. </text>
+                        <text language="fr"> Un contrôle restreint est effectué par l'organe de révision des comptes conformément à l'art. 13 des statuts. </text>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Auf Verlangen der GPK oder Sektionsrates muss eine ordentliche Revision durchgeführt werden. </text>
-                        <text language="fr"> Sur demande de la CdC ou du Conseil des Sections, un contrôle ordinaire doit être effectué. </text>
+                        <text language="de"> Auf Verlangen der Delegiertenversammlung, des Sektionsrates oder der GPK muss eine ordentliche Revision durchgeführt werden. </text>
+                        <text language="fr"> Un contrôle ordinaire doit être effectué à la demande de l'Assemblée des délégué·e·s, du Conseil des sections ou de la CdC. </text>
                     </paragraph>
                 </paragraphs>
             </article>
-            <article title_de="Verwendung des Ergebnisses" title_fr="Utilisation du résultat">
+            <article title_de="Verwendung des Ergebnisses" title_fr="Affectation du résultat">
                 <paragraphs>
                     <paragraph>
                         <text language="de"> Das Ergebnis wird in der Regel dem Eigenkapital zugeführt. </text>
-                        <text language="fr"> Le résultat est en règle générale affecté aux fonds propres. </text>
+                        <text language="fr"> Le résultat est généralement affecté aux capitaux propres. </text>
                     </paragraph>
                     <paragraph>
-                        <text language="de"> Die Delegiertenversammlung entscheidet über Ausnahmen. </text>
-                        <text language="fr"> L'Assemblée des Délégué·e·s décide des exceptions. </text>
+                        <text language="de"> Die Delegiertenversammlung entscheidet über Ausnahmen, alternative Vorgehen können durch Änderungsanträge an die Rechnung vorgeschlagen werden. </text>
+                        <text language="fr"> L'Assemblée des délégué·e·s décide des exceptions, des procédures alternatives peuvent être proposées par des amendements aux comptes. </text>
                     </paragraph>
                 </paragraphs>
             </article>
@@ -309,15 +369,15 @@
     </section>
     <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
         <articles>
-            <article title_de="Revisionsbestimmungen" title_fr="Dispositions en matière de révision">
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
                 <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
-                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts. </text>
             </article>
             <article title_de="Version" title_fr="Version">
                 <paragraphs>
                     <paragraph>
-                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
-                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
+                        <text language="de"> Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s. </text>
                     </paragraph>
                     <paragraph>
                         <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>

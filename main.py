@@ -9,11 +9,13 @@ import re
 import urllib
 
 import bylaws
+import logging
 
 LANGUAGES = ["de", "fr"]
 
 
 def main():
+    logging.basicConfig(level=logging.INFO)
     parser = ArgumentParser()
     subparsers = parser.add_subparsers(dest="subcommand", required=True)
     parser_gen = subparsers.add_parser(

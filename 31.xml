@@ -1,280 +1,480 @@
-<regulation id="31" title_de="Gremienreglement über die Geschäftsprüfungskommission" short_de="GPK-Reglement" title_fr="Règlement relatif a la commission de controle" short_fr="Règlement de la CdC" original_implementation_date="2025-01-01">
-    <section title_de="Zusammensetzung" title_fr="Composition">
-        <articles>
-            <article title_de="Mitglieder" title_fr="Membres">
-                <text language="de"> Die GPK besteht aus drei Personen. </text>
-                <text language="fr"> La CdC est composée de trois personnes. </text>
-            </article>
-            <article title_de="Amtsdauer" title_fr="Durée du mandat">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die DV wählt die Mitglieder der GPK auf eine Amtsdauer von zwei Jahren. </text>
-                        <text language="fr"> L'AD élit les membres de la CdC pour un mandat de deux ans. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Amtszeit ist unbegrenzt. </text>
-                        <text language="fr"> La durée du mandat est illimitée. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Wählbarkeit" title_fr="Éligibilité">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Aktive oder ehemalige Mitglieder einer Sektion oder ehemalige aktive Personen im VSS besitzen passives Wahlrecht für die GPK. </text>
-                        <text language="fr"> Les membres actifs ou anciens d'une section ou les personnes anciennement actives au sein de l'UNES jouissent d'un droit de vote passif pour la CdC. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Mitglieder der GPK dürfen keine weiteren Ämter im Verband übernehmen. </text>
-                        <text language="fr"> Les membres de la CdC ne peuvent pas assurer d'autres fonctions au sein de l'Union. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="GPK-Mitglieder ad interim" title_fr="Membres de la CdC par intérim">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Als GPK-Mitglieder ad interim werden Personen bezeichnet, welche zwischen den DV-Sitzungen vom Sektionsrat gewählt werden. </text>
-                        <text language="fr"> Sont désignées comme membres de la CdC par intérim les personnes qui sont élues par le Conseil des Sections entre les séances de l'AD. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> GPK-Mitglieder ad interim haben die gleichen Rechte und Pflichten wie die von der DV gewählten GPK-Mitglieder. </text>
-                        <text language="fr"> Les membres de la CdC par intérim ont les mêmes droits et obligations que les membres de la CdC élu·e·s par l'AD. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Aufgaben, Zuständigkeiten und Kompetenzen" title_fr="Tâches, responsabilités et compétences">
-        <articles>
-            <article title_de="Tagesgeschäft" title_fr="Tâches quotidiennes">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK verfolgt und überprüft die Geschäfte aller VSS-Organe routinemässig anhand der Protokolle </text>
-                        <text language="fr"> La CdC suit et vérifie systématiquement les affaires de tous les organes de l'UNES à l'aide des procès-verbaux. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie gewährleistet die korrekte Auslegung von Statuten und Reglementen. </text>
-                        <text language="fr"> Elle garantit l'interprétation correcte des statuts et des règlements. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Stellt die GPK Unregelmässigkeiten fest, ist sie befugt, Beschlüsse der Organe des VSS für ungültig zu erklären. In diesem Fall informiert sie das Organ und die DV über die festgestellten Unregelmässigkeiten und die Entscheidung. </text>
-                        <text language="fr"> Si la CdC constate des irrégularités, elle est habilitée à déclarer les décisions des organes de l'UNES comme étant nulles. Dans ce cas, elle informe l'organe et l'AD des irrégularités constatées et de la décision. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Beratung und Unterstützung" title_fr="Conseil et soutien">
-                <text language="de"> Die GPK unterstützt und berät die VSS-Organe in rechtlichen, statutarischen und reglementarischen Belangen. </text>
-                <text language="fr"> La CdC soutient et conseille les organes de l'UNES pour les questions d'ordre juridique, statutaire et réglementaire. </text>
-            </article>
-            <article title_de="Prüfung und Berichterstattung" title_fr="Examen et établissement de rapports">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK überprüft die Jahresrechnung des VSS und erstellt zuhanden der Frühlings-DV einen Bericht zu Geschäftsführung und Finanzen. </text>
-                        <text language="fr"> La CdC vérifie les comptes annuels de l'UNES et établit un rapport sur la gestion de l'Union et les finances à l'attention de l'AD de printemps. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Zusätzlich führt die GPK einmal pro Jahr eine Kontrolle und Stichproben in mindestens einem der folgenden Themenbereiche durch: </text>
-                        <text language="fr"> En outre, la CdC effectue une fois par an un contrôle et des vérifications par échantillonnage dans au moins un des dossiers thématiques suivants : </text>
-                        <letters>
-                            <letter>
-                                <text language="de"> der VSS als Arbeitgeber; </text>
-                                <text language="fr"> l'UNES en tant qu'employeur ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Pflichtenhefte; </text>
-                                <text language="fr"> les cahiers des charges ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Finanzen; </text>
-                                <text language="fr"> les finances ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Protokollierung; </text>
-                                <text language="fr"> l'établissement de procès-verbaux ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Archivierung; </text>
-                                <text language="fr"> l'archivage ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Datenschutz; </text>
-                                <text language="fr"> la protection des données ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Vorstand; </text>
-                                <text language="fr"> le Comité exécutif ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Geschäftsführung; </text>
-                                <text language="fr"> la gestion de l'Union ; </text>
-                            </letter>
-                            <letter>
-                                <text language="de"> Weitere Themenbereiche. </text>
-                                <text language="fr"> d'autres dossiers thématiques. </text>
-                            </letter>
-                        </letters>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die Resultate dieser Kontrolle, sowie Empfehlungen und Verbesserungsvorschläge der GPK werden in einem Bericht zuhanden der Herbst-DV präsentiert. </text>
-                        <text language="fr"> Les résultats de ce contrôle, ainsi que les recommandations et les propositions d'amélioration de la CdC, sont présentés dans un rapport à l'attention de l'AD d'automne. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Akteneinsicht" title_fr="Accès aux dossiers">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK ist befugt, an allen Sitzungen sämtlicher Organe des VSS teilzunehmen. </text>
-                        <text language="fr"> La CdC est habilitée à participer à toutes les séances de tous les organes de l'UNES. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Zur Wahrnehmung ihrer Pflichten haben die Mitglieder der GPK volle Akteneinsicht in alle analogen und digitalen Unterlagen und Speichermedien. </text>
-                        <text language="fr"> Afin d'exercer leurs fonctions, les membres de la CdC ont un accès complet à tous les documents et supports de stockage analogiques et numériques. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Bei dringendem Tatverdacht haben sie jederzeit Zutritt zu Räumlichkeiten und Aktivitäten der Organe. </text>
-                        <text language="fr"> En cas de forte suspicion, ils/elles ont accès à tout moment aux locaux et aux activités des organes. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Der Persönlichkeitsschutz und die Verhältnismässigkeit müssen gewahrt werden. Einsicht in sensible, personenbezogene Daten darf nur genommen werden, wenn dies für die Erfüllung der Pflichten zwingend notwendig ist. </text>
-                        <text language="fr"> La protection de la personnalité et la proportionnalité doivent être respectées. La consultation de données sensibles et personnelles ne peut être entreprise que si elle est absolument nécessaire à l'accomplissement des fonctions. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Genehmigung Anträge zuhanden der DV" title_fr="Approbation des motions à l'attention de l'AD">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK prüft in Vorbereitung auf die DV alle Anträge zuhanden der DV. </text>
-                        <text language="fr"> La CdC examine, en préparation de l'AD, toutes les motions à l'attention de l'AD. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die GPK ist angehalten, dem Antragstellenden Feedback sowie Inputs und Änderungsvorschläge zur Verbesserung der Qualität der Formulierungen und zur Klärung für das Erreichen des Zwecks des Antrags zu geben. Insbesondere prüft sie ungewollte Konsequenzen der Anträge. </text>
-                        <text language="fr"> La CdC est tenue de donner un feed-back au/à la motionnaire ainsi que des inputs et des propositions de modification visant à améliorer la qualité des formulations et à clarifier la réalisation de l'objectif de la motion. Elle examine notamment les conséquences involontaires des motions. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die GPK genehmigt Anträge, sofern kein Widerspruch zu den VSS-Statuten, den Reglementen oder allgemeinen gesetzlichen Vorgaben besteht. Andernfalls wird der Antrag zur Überarbeitung in einer durch die GPK definierten zeitlich limitierten Überarbeitungsphase an den Antragsteller zurückgewiesen. </text>
-                        <text language="fr"> La CdC approuve les motions dans la mesure où il n'y a pas de contradiction avec les statuts de l'UNES, les règlements ou les dispositions légales générales. Dans le cas contraire, la motion est renvoyée à son auteur·trice pour être remaniée lors d'une phase de remaniement limitée dans le temps et définie par la CdC. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Delegiertenversammlung" title_fr="Assemblée des Délégué·e·s">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK unterstützt die Vorbereitung und Durchführung der DV aktiv und steht der Organisation beratend zur Seite. </text>
-                        <text language="fr"> La CdC soutient activement la préparation et le déroulement de l'AD et se tient à la disposition de l'organisation pour la conseiller. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie gewährleistet die ordentliche Durchführung der DV gemäss der Statuten und Reglemente. </text>
-                        <text language="fr"> Elle assure le déroulement ordinaire de l'AD conformément aux statuts et aux règlements. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die GPK ist für die Bestimmung der Beschlussfähigkeit, der Durchführung von Abstimmungen und Wahlen sowie für die Prüfung deren Auszählung zuständig. </text>
-                        <text language="fr"> La CdC est chargée de la détermination du quorum, du déroulement des votes et des élections ainsi que de la vérification de leur dépouillement. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Beschwerden" title_fr="Réclamations">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Auf Einreichung einer Beschwerde gemäss Art. 29 des Mitwirkungs- und Öffentlichkeitsreglements überprüft die GPK die vorgetragenen Vorwürfe im Rahmen einer Untersuchung. Sie ist hierbei verpflichtet, alle Parteien anzuhören und den Hintergründen und Umständen eines Sachverhaltes Rechnung zu tragen. </text>
-                        <text language="fr"> À la suite du dépôt d'une réclamation, conformément l'art. 29 du règlement relatif à la participation et à la transparence, la CdC examine les reproches formulés dans le cadre d'une enquête. Elle est tenue d'entendre toutes les parties et de prendre en compte le contexte et les circonstances de la situation. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie behandelt die zur Entscheidungsfindung benötigten Dokumente, insbesondere Protokolle, vertraulich. </text>
-                        <text language="fr"> Elle traite de manière confidentielle les documents nécessaires à la prise de décision, notamment les procès-verbaux. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie erstellt einen Abschlussbericht zuhanden der Delegiertenversammlung, des Beschwerdeführer bzw. der Beschwerdeführerin sowie des beschuldigten Organs bzw. der beschuldigten Personen. </text>
-                        <text language="fr"> Elle établit un rapport final à l'attention de l'Assemblée des Délégué·e·s, du/de la plaignant·e ainsi que de l'organe ou des personnes mis·es en cause. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Kann die Beschwerde nicht innerhalb von vier Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen, Organe und Sektionen innert dieser Frist über den Zwischenstand. </text>
-                        <text language="fr"> Si la réclamation ne peut pas être traitée de façon définitive dans un délai de quatre semaines, la CdC informe dans ce délai toutes les personnes, organes et sections concerné·e·s de l'état intermédiaire. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Rekurse" title_fr="Recours">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Auf Einreichung eines Rekurses gemäss Art. 30 des Mitwirkungs- und Öffentlichkeitsreglements überprüft die GPK das formelle Zustandekommen des beanstandeten Geschäfts. Sie ist hierbei verpflichtet, alle Parteien anzuhören und den Hintergründen und Umständen eines Sachverhaltes Rechnung zu tragen. </text>
-                        <text language="fr"> À la suite du dépôt d'un recours, conformément l'art. 30 du règlement relatif à la participation et à la transparence, la CdC examine la réalisation formelle de l'affaire contestée. Elle est tenue d'entendre toutes les parties et de prendre en compte le contexte et les circonstances de la situation </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie behandelt die zur Entscheidungsfindung benötigten Dokumente, insbesondere Protokolle, vertraulich. </text>
-                        <text language="fr"> Elle traite de manière confidentielle les documents nécessaires à la prise de décision, notamment les procès-verbaux. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Rekurse haben aufschiebende Wirkung. Die GPK gelangt in kürzest möglicher Frist zu einer Entscheidung. </text>
-                        <text language="fr"> Les recours ont un effet suspensif. La CdC rend sa décision dans les plus brefs délais. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Falls die GPK den Rekurs gutheisst, setzt sie den Beschluss, die Abstimmung oder die Wahl ausser Kraft und weist das Geschäft an das entsprechende Organ zurück. </text>
-                        <text language="fr"> Si la CdC accepte le recours, elle invalide la décision, le vote ou l'élection et renvoie l'affaire à l'organe correspondant. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Sie erstellt einen Abschlussbericht zuhanden der DV, der rekursführenden Partei sowie des beschuldigten Organs. </text>
-                        <text language="fr"> Elle établit un rapport final à l'attention de l'AD, de la partie à l'origine du recours ainsi que de l'organe mis en cause. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Kann der Rekurs nicht innerhalb von vier Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen, Organe und Sektionen innert dieser Frist über den Zwischenstand. </text>
-                        <text language="fr"> Si le recours ne peut pas être traité de façon définitive dans un délai de quatre semaines, la CdC informe dans ce délai toutes les personnes, organes et sections concerné·e·s de l'état intermédiaire. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Beschlussfassung" title_fr="Prise de décision">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK entscheidet als Kollegium, für einen Beschluss sind mindestens zwei der drei Stimmen notwendig. </text>
-                        <text language="fr"> La CdC prend ses décisions de manière collégiale, pour prendre une décision, au moins deux des trois voix sont nécessaires. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Die GPK vertritt die Beschlüsse gemeinsam nach aussen. </text>
-                        <text language="fr"> La CdC représente collectivement les décisions à l'extérieur. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Beschlüsse der GPK werden protokolliert. </text>
-                        <text language="fr"> Les décisions de la CdC sont consignées dans un procès-verbal. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-            <article title_de="Beizug von Fachpersonen" title_fr="Recours à des spécialistes">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Die GPK kann in schwierigen Fällen ihr geeignet erscheinende Fachpersonen zur Beratung hinzuziehen. </text>
-                        <text language="fr"> Pour des cas complexes, la CdC peut faire appel à des spécialistes, qui lui semblent approprié·e·s, pour la conseiller. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Diese können für ihre Leistungen entschädigt werden. </text>
-                        <text language="fr"> Ceux-ci/Celles-ci peuvent être indemnisé·e·s pour leurs prestations. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Berichterstattung" title_fr="Établissement de rapports">
-        <articles>
-            <article title_de="Bericht" title_fr="Rapport">
-                <text language="de"> Die GPK erstellt zu jeder ordentlichen DV einen Bericht mit den von ihnen behandelten Geschäften. </text>
-                <text language="fr"> La CdC établit un rapport pour chaque AD ordinaire contenant les affaires qu'elle a traitées. </text>
-            </article>
-        </articles>
-    </section>
-    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-        <articles>
-            <article title_de="Revision" title_fr="Révision">
-                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
-                <text language="fr"> Le présent règlement est soumis aux dispositions en matière de révision conformément à l'art. 41 des statuts. </text>
-            </article>
-            <article title_de="Version" title_fr="Version">
-                <paragraphs>
-                    <paragraph>
-                        <text language="de"> Dieses Reglement wurde von der 183. Delegiertenversammlung erlassen. </text>
-                        <text language="fr"> Le présent règlement a été adopté par la 183ème Assemblée des Délégué·e·s. </text>
-                    </paragraph>
-                    <paragraph>
-                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
-                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
-                    </paragraph>
-                </paragraphs>
-            </article>
-        </articles>
-    </section>
+<regulation id="31" title_de="Reglement über die Geschäftsprüfungskommission" short_de="GPK-Reglement" title_fr="Règlement de la Commission de contrôle" short_fr="Règlement de la CdC" original_implementation_date="2025-01-01">
+<preamble>
+<text language="de">
+Die Delegiertenversammlung, gestützt auf Art. 29 der Statuten, beschliesst:
+</text>
+<text language="fr">
+L’Assemblée des délégué·e·s, se fondant sur l'art. 29 des Statuts, décide:
+</text>
+</preamble>
+<section title_de="Zusammensetzung" title_fr="Composition">
+<articles>
+<article title_de="Mitglieder" title_fr="Membres">
+<text language="de">
+Die GPK besteht aus drei Personen.
+</text>
+<text language="fr">
+La CdC est composée de trois personnes.
+</text>
+</article>
+<article title_de="Amtsperiode, Amtszeit" title_fr="Mandat, durée du mandat">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die reguläre Amtsperiode eines GPK-Mitglieds beträgt zwei Jahre.
+</text>
+<text language="fr">
+Le mandat régulier d'un membre de la CdC est de deux ans.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Anzahl Amtsperioden ist unbegrenzt.
+</text>
+<text language="fr">
+Le nombre de mandats n’est pas limité.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Wählbarkeit" title_fr="Éligibilité">
+<paragraphs>
+<paragraph>
+<text language="de">
+Aktive oder ehemalige Mitglieder einer Sektion oder ehemalige aktive Personen im VSS besitzen passives Wahlrecht für die GPK.
+</text>
+<text language="fr">
+Seuls les membres ou anciens membres d'une section ou les anciennes personnes actives au sein de l'UNES sont éligibles pour la CdC.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Mitglieder der GPK dürfen keine weiteren Ämter im Verband übernehmen, oder vom Verband angestellt sein.
+</text>
+<text language="fr">
+Les membres de la CdC ne peuvent pas assumer d'autres fonctions au sein de l'association, ni être employés par l'association.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="GPK-Mitglieder ad interim" title_fr="Membres de la CdC par intérim">
+<paragraphs>
+<paragraph>
+<text language="de">
+Als GPK-Mitglieder ad interim werden Personen bezeichnet, welche zwischen den Sitzungen der Delgiertenversammlung vom Sektionsrat gewählt werden.
+</text>
+<text language="fr">
+Les membres de la CdC par intérim sont des personnes élues par le Conseil des sections entre les réunions de l'Assemblée des délégué·e·s.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+GPK-Mitglieder ad interim haben die gleichen Rechte und Pflichten wie die von der Delgiertenversammlung gewählten GPK-Mitglieder.
+</text>
+<text language="fr">
+Les membres de la CdC par intérim ont les mêmes droits et obligations que les membres de la CdC élus par l'Assemblée des délégué·e·s.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title_de="Aufgaben, Zuständigkeiten und Kompetenzen" title_fr="Tâches, responsabilités et compétences">
+<articles>
+<article title_de="Tagesgeschäft" title_fr="Activités quotidiennes">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK verfolgt und überprüft die Geschäfte aller VSS-Organe routinemässig anhand der Protokolle.
+</text>
+<text language="fr">
+La CdC suit et vérifie de manière routinière les affaires de tous les organes de l'UNES à l'aide des procès-verbaux.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie gewährleistet die korrekte Auslegung von Statuten und Reglementen.
+</text>
+<text language="fr">
+Elle garantit l'interprétation correcte des statuts et des règlements.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Stellt die GPK Unregelmässigkeiten fest, ist sie befugt, Beschlüsse der Organe des VSS für ungültig zu erklären. In diesem Fall informiert sie das Organ und die Delgiertenversammlung über die festgestellten Unregelmässigkeiten und die Entscheidung.
+</text>
+<text language="fr">
+Si la CdC constate des irrégularités, elle est habilitée à déclarer nulles les décisions des organes de l'UNES. Dans ce cas, elle informe l'organe et l'Assemblée des délégué·e·s des irrégularités constatées et de la décision prise.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Beratung und Unterstützung" title_fr="Conseil et assistance">
+<text language="de">
+Die GPK unterstützt und berät die VSS-Organe in rechtlichen, statutarischen und reglementarischen Belangen.
+</text>
+<text language="fr">
+La CdC soutient et conseille les organes de l'UNES dans les domaines juridiques, statutaires et réglementaires.
+</text>
+</article>
+<article title_de="Prüfung und Berichterstattung" title_fr="Audit et rapports">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK überprüft die Jahresrechnung des VSS und erstellt zuhanden der ordentlichen Delgiertenversammlung im Frühling einen Bericht zu Geschäftsführung und Finanzen.
+</text>
+<text language="fr">
+La CdC vérifie les comptes annuels de l'UNES et rédige un rapport sur la gestion et les finances à l'attention de l'Assemblée des délégué·e·s ordinaire de printemps.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Zusätzlich führt die GPK einmal pro Jahr eine Kontrolle und Stichproben in mindestens einem der folgenden Themenbereiche durch:
+</text>
+<text language="fr">
+En outre, la CdC effectue une fois par an un contrôle et une analyse dans au moins un des domaines thématiques suivants :
+</text>
+<letters>
+<letter>
+<text language="de">
+der VSS als Arbeitgeber;
+</text>
+<text language="fr">
+l'UNES en tant qu'employeur ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Pflichtenhefte;
+</text>
+<text language="fr">
+les cahiers des charges ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Finanzen;
+</text>
+<text language="fr">
+les finances ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Protokollierung;
+</text>
+<text language="fr">
+la prise des procès-verbaux ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Archivierung;
+</text>
+<text language="fr">
+l’archivage ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Datenschutz;
+</text>
+<text language="fr">
+la protection des données ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Vorstand;
+</text>
+<text language="fr">
+le Comité exécutif ;
+</text>
+</letter>
+<letter>
+<text language="de">
+Geschäftsführung.
+</text>
+<text language="fr">
+la gestion des affaires.
+</text>
+</letter>
+</letters>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Resultate dieser Kontrolle, sowie Empfehlungen und Verbesserungsvorschläge der GPK werden in einem Bericht zuhanden der ordentliche Delgiertenversammlung im Herbst präsentiert.
+</text>
+<text language="fr">
+Les résultats de ce contrôle, ainsi que les recommandations et propositions d'amélioration de la CdC, sont présentés dans un rapport à l'attention de l'Assemblée des délégué·e·s ordinaire d'automne.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Akteneinsicht" title_fr="Accès aux dossiers">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK ist befugt, an allen Sitzungen sämtlicher Organe des VSS teilzunehmen.
+</text>
+<text language="fr">
+La CdC est autorisée à participer à toutes les réunions de tous les organes de l'UNES.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Zur Wahrnehmung ihrer Pflichten haben die Mitglieder der GPK volle Akteneinsicht in alle analogen und digitalen Unterlagen und Speichermedien.
+</text>
+<text language="fr">
+Afin d'exercer leurs fonctions, les membres de la CdC ont un accès complet à tous les documents et supports de stockage analogiques et numériques.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Der Persönlichkeitsschutz und die Verhältnismässigkeit müssen gewahrt werden. Einsicht in sensible, personenbezogene Daten darf nur genommen werden, wenn dies für die Erfüllung der Pflichten zwingend notwendig ist.
+</text>
+<text language="fr">
+La protection de la personnalité et la proportionnalité doivent être respectées. Les données personnelles sensibles ne peuvent être consultées que si cela est absolument nécessaire à l'exécution des obligations.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Genehmigung Anträge zuhanden der DV" title_fr="Approbation des propositions à l'attention de l'AD">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK prüft in Vorbereitung auf die Delgiertenversammlung alle Anträge zuhanden der Delgiertenversammlung.
+</text>
+<text language="fr">
+En préparation de l'Assemblée des délégué·e·s, la CdC examine toutes les propositions soumises à l'Assemblée des délégué·e·s.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die GPK ist angehalten, Antragstellenden Rückmeldungen sowie Änderungsvorschläge zur Verbesserung der Qualität der Formulierungen und zur Klärung für das Erreichen des Zwecks des Antrags zu geben. Insbesondere prüft sie ungewollte Konsequenzen der Anträge.
+</text>
+<text language="fr">
+La CdC est tenue de donner un retour aux auteur·rice·s et de proposer des modifications afin d'améliorer la qualité de la formulation et de clarifier l'objectif de la proposition. Elle examine en particulier les conséquences non souhaitées des propositions.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die GPK genehmigt Anträge, sofern kein Widerspruch zu den VSS-Statuten, den Reglementen oder gesetzlichen Vorgaben besteht. Andernfalls werden die Anträge zur Überarbeitung in einer durch die GPK definierten zeitlich limitierten Überarbeitungsphase an die Antragstellenden zurückgewiesen.
+</text>
+<text language="fr">
+La CdC approuve les propositions dans la mesure où elles ne sont pas en contradiction avec les statuts de l'UNES, les règlements ou les dispositions légales. Dans le cas contraire, les propositions sont renvoyées à leurs auteur·rice·s pour être retravaillées dans une phase de révision limitée dans le temps et définie par la CdC.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Delegiertenversammlung" title_fr="Assemblée des délégués">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK unterstützt die Vorbereitung und Durchführung der Delgiertenversammlung aktiv und steht der Organisation beratend zur Seite.
+</text>
+<text language="fr">
+La CdC soutient activement la préparation et le déroulement de l'Assemblée des délégué·e·s et la conseille.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie gewährleistet die ordentliche Durchführung der Delgiertenversammlung gemäss der Statuten und Reglemente.
+</text>
+<text language="fr">
+Elle assure le bon déroulement de l'Assemblée des délégué·e·s conformément aux statuts et aux règlements.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die GPK ist für die Bestimmung der Beschlussfähigkeit, der Durchführung von Abstimmungen und Wahlen sowie für die Prüfung deren Auszählung zuständig.
+</text>
+<text language="fr">
+La CdC est chargée de déterminer le quorum, d'organiser les votes et les élections et de vérifier leur dépouillement.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Untersuchungsanträge" title_fr="Demandes d'enquête">
+<paragraphs>
+<paragraph>
+<text language="de">
+Auf Einreichung eines Untersuchungsantrags gemäss Art. 29 des Mitwirkungs- und Öffentlichkeitsreglements überprüft die GPK die vorgetragenen Vorwürfe im Rahmen einer Untersuchung. Sie ist hierbei verpflichtet, alle Parteien anzuhören und den Hintergründen und Umständen eines Sachverhaltes Rechnung zu tragen.
+</text>
+<text language="fr">
+Suite au dépôt d'une demande d’enquête conformément à l'article 29 du Règlement sur la participation et la transparence, la CdC examine les reproches formulés dans le cadre d'une enquête. Elle est tenue d'entendre toutes les parties et de tenir compte du contexte et des circonstances des faits.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie behandelt die zur Entscheidungsfindung benötigten Dokumente, insbesondere Protokolle, vertraulich.
+</text>
+<text language="fr">
+Elle traite de manière confidentielle les documents nécessaires à la prise de décision, notamment les procès-verbaux.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie erstellt einen Abschlussbericht zuhanden der Delegiertenversammlung, der Antragstellenden Person und des beschuldigten Organs bzw. der beschuldigten Personen.
+</text>
+<text language="fr">
+Elle rédige un rapport final à l'attention de l'Assemblée des délégué·e·s, des auteur·rice·s de la demande et de l'organe ou des personnes impliquées.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Kann den Untersuchungsantrag nicht innerhalb von vier Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen, Organe und Sektionen innert dieser Frist über den Zwischenstand.
+</text>
+<text language="fr">
+Si la demande d'enquête ne peut être traitée définitivement dans un délai de quatre semaines, la CdC informe toutes les personnes, organes et sections impliqués de l'état d'avancement intermédiaire dans ce délai.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Rekurse" title_fr="Recours">
+<paragraphs>
+<paragraph>
+<text language="de">
+Auf Einreichung eines Rekurses gemäss Art. 30 des Mitwirkungs- und Öffentlichkeitsreglements überprüft die GPK das formelle Zustandekommen des beanstandeten Geschäfts. Sie ist hierbei verpflichtet, alle Parteien anzuhören und den Hintergründen und Umständen eines Sachverhaltes Rechnung zu tragen.
+</text>
+<text language="fr">
+Suite au dépôt d'un recours selon l'art. 30 du Règlement sur la participation et la transparence, la CdC examine la réalisation formelle de l'affaire contestée. Elle est tenue d'entendre toutes les parties et de tenir compte du contexte et des circonstances de l'affaire.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie behandelt die zur Entscheidungsfindung benötigten Dokumente, insbesondere Protokolle, vertraulich.
+</text>
+<text language="fr">
+Elle traite de manière confidentielle les documents nécessaires à la prise de décision, notamment les procès-verbaux.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Rekurse haben aufschiebende Wirkung. Die GPK gelangt in kürzest möglicher Frist zu einer Entscheidung.
+</text>
+<text language="fr">
+Les recours ont un effet suspensif. La CdC rend sa décision dans le délai le plus court possible.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Falls die GPK den Rekurs gutheisst, setzt sie den Beschluss, oder die Wahl ausser Kraft und weist das Geschäft an das entsprechende Organ zurück.
+</text>
+<text language="fr">
+Si la CdC accepte le recours, elle annule la décision ou l'élection et renvoie l'affaire à l'organe concerné.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Sie erstellt einen Abschlussbericht zuhanden der Delgiertenversammlung, der rekursführenden Partei und des beschuldigten Organs.
+</text>
+<text language="fr">
+Elle rédige un rapport final à l'attention de l'Assemblée des délégué·e·s, de la partie recourante et de l'organe concerné.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Kann der Rekurs nicht innerhalb von sechs Wochen abschliessend behandelt werden, informiert die GPK alle beteiligten Personen, Organe und Sektionen innert dieser Frist über den Zwischenstand.
+</text>
+<text language="fr">
+Si le recours ne peut pas être traité définitivement dans un délai de six semaines, la CdC informe toutes les personnes, organes et sections concernés de l'état intermédiaire dans ce délai.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Beschlussfindung" title_fr="Prise de décision">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK vertritt die Beschlüsse gemeinsam nach aussen.
+</text>
+<text language="fr">
+La CdC représente collectivement les décisions à l'extérieur.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Die Modalitäten der Abstimmungsverfahren sind in Art. 25ff Mitwirkungs- und Öffentlichkeitsreglement geregelt.
+</text>
+<text language="fr">
+Les modalités des procédures de vote sont régies par les articles 25 et suivants du Règlement sur la participation et la transparence.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Beschlüsse der GPK werden protokolliert.
+</text>
+<text language="fr">
+Les décisions de la CdC sont consignées dans un procès-verbal.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+<article title_de="Beizug von Fachpersonen" title_fr="Recours à des spécialistes">
+<paragraphs>
+<paragraph>
+<text language="de">
+Die GPK kann in schwierigen Fällen ihr geeignet erscheinende Fachpersonen zur Beratung hinzuziehen.
+</text>
+<text language="fr">
+Dans les cas difficiles, la CdC peut faire appel à des experts qu'elle juge appropriés pour la conseiller.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Diese können für ihre Leistungen entschädigt werden.
+</text>
+<text language="fr">
+Ceux-ci peuvent être rémunérés pour leurs prestations.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
+<section title_de="Berichterstattung" title_fr="Rapport">
+<articles>
+<article title_de="Bericht" title_fr="Rapport">
+<text language="de">
+Die GPK informiert die Delgiertenversammlung mittels Jahresbericht über ihre Tätigkeiten.
+</text>
+<text language="fr">
+La CdC informe l'Assemblée des Délégué·e·s de ses activités par le biais d'un rapport annuel.
+</text>
+</article>
+</articles>
+</section>
+<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+<articles>
+<article title_de="Revision" title_fr="Révision">
+<text language="de">
+Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
+</text>
+<text language="fr">
+Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts.
+</text>
+</article>
+<article title_de="Version" title_fr="Version">
+<paragraphs>
+<paragraph>
+<text language="de">
+Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen.
+</text>
+<text language="fr">
+Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s.
+</text>
+</paragraph>
+<paragraph>
+<text language="de">
+Es tritt am 01.01.2025 in Kraft.
+</text>
+<text language="fr">
+Il entre en vigueur le 01.01.2025.
+</text>
+</paragraph>
+</paragraphs>
+</article>
+</articles>
+</section>
 </regulation>

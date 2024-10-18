@@ -2,6 +2,7 @@
 from xxlimited import foo
 from lxml import etree, ElementInclude
 from datetime import date
+import logging
 
 
 # Enable including xml documents using xinclude.
@@ -107,6 +108,7 @@ Attributes:
 
 class Bylaws:
     def __init__(self, element: etree.ElementBase) -> None:
+        logging.info("Parsing bylaws")
         # Sanity
         assert (element.tag == "bylaws")
         self.element = element
@@ -141,6 +143,7 @@ class Bylaws:
                     self.regulations.append(Regulation(child))
                 case _:
                     throw_error("Bylaws only contain regulations", element)
+        logging.info("Finished parsing bylaws")
 
     def numbering_pass(self):
         for regl in self.regulations:
@@ -186,6 +189,7 @@ Attributes:
 
 class Regulation:
     def __init__(self, element: etree.ElementBase) -> None:
+        logging.info("Parsing regulation")
         # Sanity
         assert (element.tag == "regulation")
         self.element = element
@@ -259,6 +263,7 @@ class Regulation:
                 case _:
                     throw_error(
                         "a regulation only contain articles, a preamble and sections", element)
+        logging.info(f"Finished parsing regulation {self.title['de']}")
 
     def numbering_pass(self):
         art_counter, art_inserted_counter = 0, 0
@@ -330,6 +335,7 @@ Attributes:
 
 class Preamble:
     def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
+        logging.info("Parsing preamble")
         # Sanity
         assert (element.tag == "preamble")
         self.element = element
@@ -362,6 +368,7 @@ class Preamble:
                 case _:
                     throw_error("invalid preamble child <{}>".format(
                         child.tag), element)
+        logging.info("Finished parsing preamble")
 
     def collect_footnotes_pass(self):
         for elem in self.text:
@@ -404,6 +411,7 @@ Attributes:
 
 class Section:
     def __init__(self, element: etree.ElementBase, parent: Regulation) -> None:
+        logging.info("Parsing section")
         # Sanity
         assert (element.tag == "section")
         self.element = element
@@ -446,6 +454,7 @@ class Section:
                 case _:
                     throw_error(
                         "a section may only cointain articles and subsections", element)
+        logging.info(f"Finished parsing section {self.title['de']}")
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -540,6 +549,7 @@ Attributes:
 
 class Subsection:
     def __init__(self, element: etree.ElementBase, parent: Section) -> None:
+        logging.info("Parsing subsection")
         # Sanity
         assert (element.tag == "subsection")
         self.element = element
@@ -582,6 +592,7 @@ class Subsection:
                 case _:
                     throw_error(
                         "a subsection may only cointain articles and subsubsections", element)
+        logging.info(f"Finished parsing subsection {self.title['de']}")
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -676,6 +687,7 @@ Attributes:
 
 class Subsubsection:
     def __init__(self, element: etree.ElementBase, parent: Subsection) -> None:
+        logging.info("Parsing subsubsection")
         # Sanity
         assert (element.tag == "subsubsection")
         self.element = element
@@ -714,6 +726,7 @@ class Subsubsection:
                 case _:
                     throw_error(
                         "a subsubsection may only cointain articles", element)
+        logging.info(f"Finished parsing subsubsection {self.title['de']}")
 
     def numbering_pass(self, number: int, inserted_number: int, art_counter: int, art_inserted_counter: int):
         # Increment counters
@@ -804,6 +817,7 @@ Attributes:
 
 class Article:
     def __init__(self, element: etree.ElementBase, parent) -> None:
+        logging.info("Parsing article")
         # Sanity
         assert (element.tag == "article")
         self.element = element
@@ -859,6 +873,7 @@ class Article:
                 case _:
                     throw_error("invalid article child {}".format(
                         child.tag), element)
+        logging.info(f"Finished parsing article {self.title['de']}")
 
     def numbering_pass(self, number: int, inserted_number: int):
         # Increment counters

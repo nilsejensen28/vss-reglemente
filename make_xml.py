@@ -3,8 +3,8 @@ import numpy as np
 import logging
 import json
 
-INPUT_DIR = "/home/nils/Dropbox/Documents/VSETH/Code/reglemente/input/"
-OUTPUT_DIR = "/home/nils/Dropbox/Documents/VSETH/Code/reglemente/"
+INPUT_DIR = "/home/nils/Dropbox/Documents/8_Ehrenamt/81_VSETH/Code/reglemente/input/"
+OUTPUT_DIR = "/home/nils/Dropbox/Documents/8_Ehrenamt/81_VSETH/Code/reglemente/"
 ADD_COMMENTS = True
 LOGGING_LEVEL = logging.INFO
 LANGUAGES = ["de", "fr"]
@@ -34,6 +34,8 @@ def main():
         number = file["number"]
         input_file = INPUT_DIR + number + ".xlsx"
         output_file = OUTPUT_DIR + number + ".xml"
+        logging.log(
+            logging.INFO, f"Started parsing {number}")
         parse_file(input_file, output_file, number, names)
         logging.log(
             logging.INFO, f"Finished parsing {number}")
@@ -61,8 +63,8 @@ def parse_df(df_bylaws: pd.DataFrame, xml_file: str, names, number):
         for language in LANGUAGES:
             name = row["art_name_"+language]
             text = row["art_text_"+language]
-            art_name[language] = name
-            art_text[language] = text
+            art_name[language] = str(name)
+            art_text[language] = str(text)
 
             if text is np.NaN:
                 if name is np.NaN:
@@ -79,6 +81,12 @@ def parse_df(df_bylaws: pd.DataFrame, xml_file: str, names, number):
             logging.log(
                 logging.WARNING, f"Line {index} has different types of blocks in different languages")
             return
+
+        if (index == 0):
+            # This could be a preamble
+            if art_name["de"][0:3] == "Die":
+                parse_preamble(art_name, xml_file)
+                continue
 
         if type_of_block[LANGUAGES[0]] == "EMPTY_LINE":
             continue
@@ -145,6 +153,13 @@ def parse_df(df_bylaws: pd.DataFrame, xml_file: str, names, number):
     close_tag("regulation", xml_file)
 
 
+def parse_preamble(text, xml_file: str):
+    open_tag("preamble", xml_file)
+    for language in LANGUAGES:
+        parse_text(text[language], xml_file, language)
+    close_tag("preamble", xml_file)
+
+
 def parse_section(names: str, xml_file: str, in_section: bool, in_subsection: bool, in_subsubsection: bool, in_articles: bool):
     if in_articles:
         close_tag("articles", xml_file)
@@ -204,7 +219,8 @@ def parse_article(name: str, text: str, xml_file: str):
             title = name[language].split("\n")[1].lstrip().rstrip()
             attributes[f"title_{language}"] = title
         except Exception:
-            logging.log(logging.WARNING, f"{name} is not a valid article name")
+            logging.log(
+                logging.WARNING, f"{name[language]} is not a valid article name in {language}")
             return
     open_tag("article", xml_file, attributes=attributes)
     # Find out if we have a single or multiple paragraphs
@@ -344,7 +360,7 @@ def parse_text(text: str, xml_file: str, language):
     parts = text.split('"')
     if len(parts) % 2 != 1:
         logging.log(logging.WARNING,
-                    "The number of quotes in {text} is not even")
+                    f"The number of quotes in {text} is not even")
         write_text(text, xml_file)
         return
     for index, part in enumerate(parts):
@@ -372,7 +388,7 @@ def open_tag(tag: str, xml_file: str, title="", new_line=True, attributes=None):
         attributes["title"] = title
     tags = ""
     for attribute, value in attributes.items():
-        tags += f' {attribute}="{value}"'
+        tags += f' {attribute}="{escape_text(value)}"'
     with open(xml_file, "a") as f:
         if new_line:
             f.write(f'<{tag}{tags}>\n')
@@ -380,9 +396,17 @@ def open_tag(tag: str, xml_file: str, title="", new_line=True, attributes=None):
             f.write(f'<{tag}{tags}>')
 
 
+def escape_text(text: str):
+    text = text.replace("⅔", "Zweidrittel")
+    text = text.replace("¾", "Dreiviertel")
+    text = text.replace("&", "&amp;")
+    return text
+
+
 def write_text(text: str, xml_file: str):
     text = text.replace("⅔", "Zweidrittel")
     text = text.replace("¾", "Dreiviertel")
+    text = text.replace("&", "&amp;")
     with open(xml_file, "a") as f:
         f.write(text)
 

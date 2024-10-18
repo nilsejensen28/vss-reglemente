@@ -1,0 +1,154 @@
+<regulation id="43.02" title_de="Spezifische Bestimmungen zu den Fonds im VSS" short_de="Fonds im VSS" title_fr="Dispositions spécifiques relatives aux fonds de l'UNES" short_fr="Fonds de l'UNES" original_implementation_date="2025-01-01">
+    <preamble>
+        <text language="de"> Die 184. Delegiertenversammlung, gestützt auf Art. 11 des Reglements über die Finanzen im VSS, beschliesst: </text>
+        <text language="fr"> La 184e Assemblée des délégué·e·s, se fondant sur l'art. 11 du Règlement sur les finances de l'UNES, décide: </text>
+    </preamble>
+    <articles>
+        <article title_de="Auflistung" title_fr="Liste">
+            <text language="de"> Der VSS hat folgende Fonds im Sinne von Art. 9ff Finanzreglement: </text>
+            <text language="fr"> L'UNES dispose des fonds suivants au sens de des art. 9 et suivants du règlement des finances : </text>
+            <letters>
+                <letter>
+                    <text language="de"> die Kommissionsfonds: </text>
+                    <text language="fr"> les fonds des commissions : </text>
+                    <numerals>
+                        <numeral>
+                            <text language="de"> Fonds der Kommission für Gleichstellung (CodEg-Fonds); </text>
+                            <text language="fr"> le fonds de la Commission pour l'égalité (Fonds de la CodEg) ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> Fonds der Kommission für Internationales und Solidarität (SOLIC-Fonds); </text>
+                            <text language="fr"> le fonds de la Commission pour l'international et la solidarité (Fonds de la SOLIC) ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> Fonds der Hochschulpolitikkommission (HoPoKo-Fonds); </text>
+                            <text language="fr"> le fonds de la Commission de politique universitaire (Fonds de la HoPoKo) ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> Fonds der Kommission für Soziales (SoKo-Fonds). </text>
+                            <text language="fr"> le fonds de la Commission des affaires sociales (Fonds de la SoKo); </text>
+                        </numeral>
+                    </numerals>
+                </letter>
+                <letter>
+                    <text language="de"> die Projektefonds: </text>
+                    <text language="fr"> les fonds des projets : </text>
+                    <numerals>
+                        <numeral>
+                            <text language="de"> Perspektiven-Studium Fonds; </text>
+                            <text language="fr"> le fonds Perspectives-Études ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> INVOST-Fonds; </text>
+                            <text language="fr"> le fonds INVOST ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> Students at Risk Fonds; </text>
+                            <text language="fr"> le fonds Students at Risk ; </text>
+                        </numeral>
+                        <numeral>
+                            <text language="de"> Akkreditierungsfonds. </text>
+                            <text language="fr"> le fonds d'accréditation; </text>
+                        </numeral>
+                    </numerals>
+                </letter>
+                <letter>
+                    <text language="de"> Information &amp; Aktion Fonds. </text>
+                    <text language="fr"> le fonds Information &amp; Action; </text>
+                </letter>
+                <letter>
+                    <text language="de"> Sozialfonds </text>
+                    <text language="fr"> le fonds social; </text>
+                </letter>
+                <letter>
+                    <text language="de"> Archivierungsfonds </text>
+                    <text language="fr"> le fonds d'archivage. </text>
+                </letter>
+            </letters>
+        </article>
+        <article title_de="Kommissionsfonds" title_fr="Fonds des commissions">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Die Kommissionsfonds dienen zur Finanzierung von punktuellen Aktionen der Kommissionen. </text>
+                    <text language="fr"> Les fonds des commissions servent à financer des actions ponctuelles des commissions. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Antragsberechtigt an den jeweiligen Kommissionsfonds sind die entsprechenden Kommissionen und der VSS-Vorstand. </text>
+                    <text language="fr"> Les commissions concernées et le comité exécutif sont habilités à faire des demandes auprès des fonds de commission respectifs. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Eine Auflösung des Fonds kann durch den VSS-Vorstand genehmigt werden. </text>
+                    <text language="fr"> Une dissolution du fonds peut être approuvée par le Comité exécutif. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Projektefonds" title_fr="Fonds pour des projets">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Die Projektefonds dienen zur Finanzierung von Projekten, welche eine definierte und terminierte Laufzeit haben. </text>
+                    <text language="fr"> Les fonds des projets servent à financer des projets qui ont une durée définie et déterminée. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Antragsberechtigt an den jeweiligen Projektfonds sind die Delegiertenversammlung, und der VSS-Vorstand. </text>
+                    <text language="fr"> l’Assemblée des délégué·e·s, le comité exécutif sont habilités à faire des propositions au fonds de projets concerné. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Eine Auflösung kann durch die Delegiertenversammlung genehmigt werden. </text>
+                    <text language="fr"> Une dissolution peut être seulement approuvée par l’Assemblée des délégué·e·s. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Information &amp; Aktion Fonds" title_fr="Fonds Information &amp; Actions">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Der Fonds “Information &amp; Aktionen” dient zur Finanzierung spezifischer Aktionen, deren Laufzeit ein Rechnungsjahr übersteigt und deren Finanzierung nicht im laufenden Basis-Budget vorgesehen ist, zur Entschädigung von Mandaten für Projekte oder für jegliche andere Aktivität, welche die statutarischen Ziele des VSS verfolgt. </text>
+                    <text language="fr"> Le fonds “Information &amp; Actions” sert à financer des actions spécifiques dont la durée dépasse un exercice comptable et dont le financement n'est pas prévu dans le budget de base actuel, à indemniser des mandats pour des projets ou pour toute autre activité qui poursuit les objectifs statutaires de l'UNES. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Antragsberechtigt an den Information &amp; Aktion Fonds ist der VSS-Vorstand, der Sektionsrat und die Delegiertenversammlung. </text>
+                    <text language="fr"> Le comité exécutif, le Conseil des sections et l’Assemblée des délégué·e·s sont habilités à faire des propositions au Fonds Information &amp; Action. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Eine Auflösung kann nur durch die Delegiertenversammlung oder den Sektionsrat genehmigt werden. </text>
+                    <text language="fr"> Une dissolution peut être approuvée par l’Assemblée des délégué·e·s ou le Conseil des sections. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Sozialfonds" title_fr="Fonds social">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Der Sozialfonds dient dazu, punktuelle, einmalige und belegte Mitgliederbeitrags Zahlungsunfähigkeit von Sektionen durch andere Sektionen des VSS ausgleichen zu lassen. </text>
+                    <text language="fr"> Le fonds social sert à compenser l'insolvabilité ponctuelle, unique et justifiée de sections par d'autres sections de l’UNES. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Antragsberechtigt an den Sozialfonds sind der VSS-Vorstand, und die Sektionen. </text>
+                    <text language="fr"> Le Comité exécutif ainsi que les sections sont habilités à faire des propositions au fonds social. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Eine Auflösung kann durch die Delegiertenversammlung genehmigt werden. </text>
+                    <text language="fr"> Une dissolution peut être approuvée que par l'Assemblée des délégué·e·s. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Archivierungsfonds" title_fr="Fonds d'archivage">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Der Archivierungsfonds dient der Finanzierung von Ausgaben für Massnahmen, die die langfristige Zugänglichkeit von Informationen im VSS sicherstellen sollen. </text>
+                    <text language="fr"> Le Fonds d'archivage sert à financer des dépenses pour des mesures visant à garantir l'accessibilité à long terme des informations dans l'UNES. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Antragsberechtigt ist der VSS-Vorstand. </text>
+                    <text language="fr"> Le Comité exécutif est habilité à faire des propositions. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Eine Auflösung kann durch die Delegiertenversammlung oder den Sektionsrat genehmigt werden. </text>
+                    <text language="fr"> Une dissolution peut être approuvée par l'Assemblée des délégué·e·s ou le Conseil des sections. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Inkrafttreten" title_fr="Entrée en vigueur">
+            <text language="de"> Dieser Beschluss tritt am 01.01.2025 in Kraft und gilt bis auf Weiteres. </text>
+            <text language="fr"> La présente décision entre en vigueur le 01.01.2025 et reste valable jusqu'à nouvel ordre. </text>
+        </article>
+    </articles>
+</regulation>

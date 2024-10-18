@@ -16,18 +16,18 @@
 
 ((* for regl in bylaws.regulations *))
   ((* set shortid *))
-    ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
+    ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev | escape_tex )); ((* endif *))(( regl.id | escape_tex -))
   ((* endset *))
   ((* set subtitle *))
     ((*- if regl.short[GLOBAL_LANGUAGE] is not none -*))(( regl.short[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
     ((*- if regl.short[GLOBAL_LANGUAGE] is not none and regl.abbrev[GLOBAL_LANGUAGE] is not none -*)); ((* endif *))
     ((*- if regl.abbrev[GLOBAL_LANGUAGE] is not none -*))(( regl.abbrev[GLOBAL_LANGUAGE] | escape_tex ))((*- endif -*))
   ((* endset *))
-  ((* if regl.short is not none *))
+  ((* if regl.short[GLOBAL_LANGUAGE] is not none *))
     \chapter*{(( regl.title[GLOBAL_LANGUAGE] | escape_tex ))}
     \vspace*{-0.5cm}
     {\usekomafont{subtitle} ((- subtitle )); RSVSS (( shortid | escape_tex -))}
-    \addtocentrydefault{chapter}{}{(( regl.short[GLOBAL_LANGUAGE] | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}
+    \addtocentrydefault{chapter}{}{(( regl.short[GLOBAL_LANGUAGE] | escape_tex )) (RSVSS (( shortid | escape_tex -)) )}  
   ((* else *))
     \chapter*{(( regl.title[GLOBAL_LANGUAGE] | escape_tex ))}
     \vspace*{-0.5cm}
