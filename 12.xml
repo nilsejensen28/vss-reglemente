@@ -1,594 +1,380 @@
 <regulation id="12" title_de="Gremienreglement über den Sektionsrat" short_de="Sektionsratsreglement" title_fr="Règlement du Conseil des sections" short_fr="Règlement du CS" original_implementation_date="2025-01-01">
-<preamble>
-<text language="de">
-Die Delegiertenversammlung, gestützt auf Art. 21 der Statuten, beschliesst:
-</text>
-<text language="fr">
-L’Assemblée des délégué·e·s, se fondant sur l'art. 21 des Statuts, décide:
-</text>
-</preamble>
-<section title_de="Zusammensetzung" title_fr="Composition">
-<articles>
-<article title_de="Teilnehmende" title_fr="Participant·e·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Sektionsrat setzt sich aus den Delegierten sowie Beobachtenden zusammen.
-</text>
-<text language="fr">
-Le Conseil des sections se compose des délégué·e·s ainsi que des observateur-rices.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Zu den Sitzungen werden pro Sektion ein Mitglied der Exekutive oder eine mandatierte Vertretung derselben als Delegierte eingeladen.
-</text>
-<text language="fr">
-Un membre de l'exécutif, ou un représentant mandaté par celui-ci, par section est invité à participer aux réunions en tant que délégué.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Zu den Sitzungen werden als Beobachtende eingeladen:
-</text>
-<text language="fr">
-Sont invités à participer aux réunions en tant qu'observateur·trice·s :
-</text>
-<letters>
-<letter>
-<text language="de">
-eine Vertretung jedes assoziierten Mitglieds;
-</text>
-<text language="fr">
-Un·e représentant·e de chaque membre associé ;
-</text>
-</letter>
-<letter>
-<text language="de">
-der Vorstand;
-</text>
-<text language="fr">
-le Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Präsidien der thematischen Kommissionen;
-</text>
-<text language="fr">
-les présidences des Commissions thématiques ;
-</text>
-</letter>
-<letter>
-<text language="de">
-das Generalsekretariat;
-</text>
-<text language="fr">
-le Secrétariat général ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die GPK.
-</text>
-<text language="fr">
-la CdC.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Zu den Sitzungen werden als Gäst:innen eingeladen:
-</text>
-<text language="fr">
-Les personnes suivantes sont invitées aux réunions:
-</text>
-<letters>
-<letter>
-<text language="de">
-weitere Angestellte des Verbands;
-</text>
-<text language="fr">
-les autres employé·e·s de l'association ;
-</text>
-</letter>
-<letter>
-<text language="de">
-weitere von den Sektionen eingeladene Personen;
-</text>
-<text language="fr">
-d’autres personnes invitées par les sections ;
-</text>
-</letter>
-<letter>
-<text language="de">
-weitere vom Vorstand eingeladene Personen;
-</text>
-<text language="fr">
-d'autres personnes invitées par le Comité exécutif;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Mitglieder der thematischen Kommissionen;
-</text>
-<text language="fr">
-les membres des commissions thématiques ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Mitglieder der Finanzkommission;
-</text>
-<text language="fr">
-les membres de la Commission des finances ;
-</text>
-</letter>
-<letter>
-<text language="de">
-alle Vertretungen des VSS gemäss Vertretungsliste;
-</text>
-<text language="fr">
-toutes les représentations de l’UNES selon la liste des représentations ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Mitglieder der Arbeitsgruppen.
-</text>
-<text language="fr">
-les membres des groupes de travail.
-</text>
-</letter>
-</letters>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Organisation" title_fr="Organisation">
-<articles>
-<article title_de="Sitzungsleitung" title_fr="Présidence de  séance">
-<paragraphs>
-<paragraph>
-<text language="de">
-Das Co-Präsidium leitet die Sitzungen des Sektionsrates.
-</text>
-<text language="fr">
-La coprésidence dirige les réunions du Conseil des sections.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Sektionsrat kann mit absolutem Mehr entscheiden, für einzelne Traktanden eine andere Sitzungsleitung zu wählen. Eine Änderung der Sitzungsleitung kann während der Sitzung von jeder anwesenden Anstragsberechtigten Person beantragt werden, und muss sofort behandelt werden.
-</text>
-<text language="fr">
-Le Conseil des sections peut décider à la majorité absolue d'élire une autre présidence de séance pour certains points de l'ordre du jour. Un changement de Présidence de séance peut être proposé pendant la séance par toute personne présente disposant du droit de proposition et doit être traité immédiatement.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Delegierte" title_fr="Délégué·e·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Delegierte Personen haben Antrags-, Stimm- und Rederecht, wobei jede Sektion über je eine Stimme verfügt.
-</text>
-<text language="fr">
-Les personnes déléguées disposent des droits de proposition et d’intervention, de vote et de parole, chaque section disposant d'une voix.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Delegierte müssen Mitglieder der entsendenden Sektion sein und an der entsprechenden Bildungsanstalt auf Bachelor- oder Master Stufe immatrikuliert sein.
-</text>
-<text language="fr">
-Les délégués doivent être membres de la section qui les envoie et être immatriculé·e·s dans l'établissement d'enseignement concerné au niveau bachelor ou master.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beobachtende" title_fr="Observateur·trice·s">
-<paragraphs>
-<paragraph>
-<text language="de">
-Beobachtenden haben Rederecht.
-</text>
-<text language="fr">
-Les observateur·trice·s disposent du droit de parole.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Beobachtende, mit Ausnahme von Mitgliedern der GPK, haben Antragsrecht.
-</text>
-<text language="fr">
-Les observateurs, à l'exception des membres de la CdC, disposent du droit de proposition et d’intervention.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Gäst:innen" title_fr="Invité·e·s">
-<text language="de">
-Gäst:innen haben Rederecht. Sind sie Mitglieder einer Sektion, so haben sie Antragsrecht.
-</text>
-<text language="fr">
-Les invité·e·s disposent du droit de parole. S'ils et elles sont membres d'une section, ils et elles disposent du droit de proposition et d’intervention.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Sitzungen" title_fr="Réunions">
-<articles>
-<article title_de="Termine" title_fr="Réunions">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Sektionsrat trifft sich in der Regel einmal pro Monat, aber mindestens neun Mal im Jahr.
-</text>
-<text language="fr">
-Le Conseil des sections se réunit en principe une fois par mois, mais au moins neuf fois par an.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Termine werden nach Möglichkeit frühzeitig bekanntgegeben.
-</text>
-<text language="fr">
-Dans la mesure du possible, les dates sont communiquées à l'avance.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Eine ausserordentliche Sitzung ist einzuberufen auf Verlangen:
-</text>
-<text language="fr">
-Une réunion extraordinaire doit être convoquée sur demande :
-</text>
-<letters>
-<letter>
-<text language="de">
-des Vorstands;
-</text>
-<text language="fr">
-du Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-der GPK;
-</text>
-<text language="fr">
-de la CdC ;
-</text>
-</letter>
-<letter>
-<text language="de">
-der Finanzkommission;
-</text>
-<text language="fr">
-de la Commission des finances ;
-</text>
-</letter>
-<letter>
-<text language="de">
-einer thematischen Kommission;
-</text>
-<text language="fr">
-d'une Commission thématique ;
-</text>
-</letter>
-<letter>
-<text language="de">
-zweier Sektionen.
-</text>
-<text language="fr">
-de deux sections.
-</text>
-</letter>
-</letters>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Einberufung" title_fr="Convocation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Einberufung einer Sektionsrats-Sitzung erfolgt schriftlich durch den Vorstand.
-</text>
-<text language="fr">
-La convocation d'une réunion du Conseil des sections est faite par écrit par le Comité exécutif.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Einladung hat Datum, Zeit und Ort der Sitzung sowie die zu behandelnden Geschäfte zu enthalten und ist bis spätestens sieben Tage vor der Sitzung zu verschicken.
-</text>
-<text language="fr">
-La convocation doit mentionner la date, l'heure et le lieu de la réunion ainsi que les objets à traiter ; elle doit être envoyée au plus tard sept jours avant la réunion.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Anträge können bis zu dieser Frist eingereicht werden. In dringenden Fällen kann von der Frist abgesehen werden.
-</text>
-<text language="fr">
-Les propositions matérielles et les interventions peuvent être soumises jusqu'à cette date. En cas d'urgence, il peut être dérogé à ce délai.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Einladung und Traktandenliste werden den Kommissionsmitgliedern, den Sektionen, dem Vorstand und der GPK zugestellt.
-</text>
-<text language="fr">
-La convocation et l'ordre du jour sont envoyés aux membres de la commission, aux sections, au Comité exécutif et à la CdC.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden.
-</text>
-<text language="fr">
-L'ordre du jour comprend au moins la date et le lieu de la réunion ainsi qu'une liste de tous les points à l'ordre du jour. Les points confidentiels de l'ordre du jour peuvent être mentionnés comme <quote>confidentiel</quote>.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschlussfähigkeit" title_fr="Quorum">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Sektionsrat ist beschlussfähig, wenn mindestens ein Drittel der Sektionen und zwei Sprachregionen vertreten sind.
-</text>
-<text language="fr">
-Le quorum du Conseil des sections est atteint lorsqu'au moins un tiers des sections et deux régions linguistiques sont représentées.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei Wahlen und Abwahlen des Vorstands und den Kommissionspräsidien muss mindestens die Hälfte der Sektionen vertreten sein.
-</text>
-<text language="fr">
-La moitié au moins des sections doit être représentée lors des élections et des destitution de membres du Comité exécutif et des présidences de commissions.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Protokoll" title_fr="Procès-Verbal">
-<paragraphs>
-<paragraph>
-<text language="de">
-Es ist an jeder Sektionsrat-Sitzung ein Diskussionsprotokoll nach Art. 35 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
-</text>
-<text language="fr">
-Un procès-verbal partiel doit être tenu à chaque séance du Conseil des sections conformément à l'art. 35 du règlement sur la participation et la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
-</text>
-<text language="fr">
-Les procès-verbaux sont publiés après leur approbation conformément à l'art. 38 du règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung dem Vorstand, dem Sektionsrat, der GPK und den Sektionen zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
-</text>
-<text language="fr">
-Une fois approuvés, les procès-verbaux sont envoyés au comité, au Conseil des sections, à la CdC et aux sections. Les procès-verbaux confidentiels ne sont envoyés qu'à la CdC et au Comité exécutif.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Teilnahme" title_fr="Participation">
-<paragraphs>
-<paragraph>
-<text language="de">
-Sitzungen des Sektionsrats werden in der Regel in Präsenz abgehalten. Jede Sektion ist jedoch zur virtuellen Teilnahme an den physischen Sitzungen berechtigt.
-</text>
-<text language="fr">
-Les réunions du Conseil des sections se tiennent en principe en présentiel. Toutefois, chaque section est autorisée à participer virtuellement aux réunions physiques.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Auf Beschluss des Vorstandes aus wichtigen Gründen kann ein Sektionsrat komplett virtuell abgehalten werden.
-</text>
-<text language="fr">
-Sur décision du Comité exécutif et pour des raisons importantes, un Conseil des sections peut avoir lieu uniquement virtuellement.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Einmal pro Semester findet eine ausschliesslich physische Sitzung statt.
-</text>
-<text language="fr">
-Une fois par semestre, une séance exclusivement physique est organisée.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Personen, die virtuell an einer Sitzung des Sektionsrats teilnehmen, gelten als anwesend im Sinne der Reglemente.
-</text>
-<text language="fr">
-Les personnes qui participent virtuellement à une réunion du Conseil des sections sont considérées comme présentes dans le sens des règlements.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschlussfindung" title_fr="Prise de décision">
-<text language="de">
-Die Modalitäten der Abstimmungs- und Wahlverfahren sind in Art. 25ff Mitwirkungs- und Öffentlichkeitsreglement geregelt.
-</text>
-<text language="fr">
-Les modalités des procédures de vote et d'élection sont régies par les articles 25 et suivants du Règlement sur la participation et la transparence.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Geschäfte" title_fr="Objets">
-<articles>
-<article title_de="Allgemeines" title_fr="Généralités">
-<text language="de">
-Der Sektionsrat:
-</text>
-<text language="fr">
-Le Conseil des sections :
-</text>
-<letters>
-<letter>
-<text language="de">
-arbeitet gemäss den Beschlüssen der Delegiertenversammlung;
-</text>
-<text language="fr">
-travaille conformément aux décisions de l'Assemblée des délégué·e·s
-</text>
-</letter>
-<letter>
-<text language="de">
-verabschiedet wichtige Stellungnahmen und Positionen im Rahmen der von der Delegiertenversammlung festgelegten Verbandspolitik;
-</text>
-<text language="fr">
-adopte des prises de position importantes dans le cadre de la politique de l'association définie par l'Assemblée des délégué·e·s ;
-</text>
-</letter>
-<letter>
-<text language="de">
-beschliesst über Zusammenarbeit mit und Beteiligungen an anderen Organisationen, Institutionen und ständigen Gremien.
-</text>
-<text language="fr">
-décide de la collaboration et de la participation à d'autres organisations, institutions et organes permanents.
-</text>
-</letter>
-</letters>
-</article>
-<article title_de="Mitteilungen" title_fr="Communications">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Sektionen informieren den Sektionsrat über laufende Geschäfte und wichtige Ereignisse an ihren Hochschulen.
-</text>
-<text language="fr">
-Les sections communiquent au Conseil des sections les affaires courantes et les événements importants survenus dans leurs établissements.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Vorstand informiert den Sektionsrat über laufende Geschäfte und wichtige Ereignisse.
-</text>
-<text language="fr">
-Le comité communique au Conseil des section sur les affaires courantes et des événements importants.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei Bedarf informieren weitere Organe, Vertretungen oder Angestellte den Sektionsrat über laufende Geschäfte und wichtige Ereignisse.
-</text>
-<text language="fr">
-Si nécessaire, d'autres organes, les représentations ou les employé·e·s communiquent au Conseil des sections sur les affaires en cours et les événements importants.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Wahlen" title_fr="Élections">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Sektionsrat wählt die Vertretungen.
-</text>
-<text language="fr">
-Le Conseil des sections élit les représentations.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der Sektionsrat kann ad-interim Mitglieder des Vorstands, der GPK und der Kommissionen wählen. Er kann auch das Co-Präsidium und die Kommissionspräsidien ad interim wählen. Ad-interim Wahlen müssen an der nächsten DV bestätigt werden.
-</text>
-<text language="fr">
-Le Conseil des sections peut élire ad interim des membres du Comité exécutif, de la CdC et des Commissions thématiques. Il peut également élire la coprésidence et les présidences de commissions par intérim. Les élections ad interim doivent être confirmées lors de l’Assemblée des délégué·e·s qui suit.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Abwahlen" title_fr="Destitution">
-<text language="de">
-Der Sektionsrat kann mit Zweidrittelmehr Mitglieder des VSS-Vorstands und der thematischen Kommissionen vorzeitig abwählen.
-</text>
-<text language="fr">
-Le Conseil des sections peut, à la majorité des deux tiers, destituer des membres du Comité exécutif, des commissions thématiques et les représentations.
-</text>
-</article>
-<article title_de="Beaufsichtigung des Vorstands" title_fr="Soutien et supervision du Comité exécutif">
-<text language="de">
-Der Sektionsrat unterstützt und beaufsichtigt den VSS-Vorstand bei der laufenden Arbeit.
-</text>
-<text language="fr">
-Le Conseil des sections soutient et supervise le Comité exécutif dans son travail quotidien.
-</text>
-</article>
-<article title_de="Vorbesprechung der DV" title_fr="Discussion préalable à l'AD">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Sektionsrat kann Geschäfte der nächsten Delegiertenversammlung vorbesprechen.
-</text>
-<text language="fr">
-Le Conseil des sections peut préaviser des objets de la prochaine Assemblée des délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Er kann zu diesen eine Empfehlung abgeben.
-</text>
-<text language="fr">
-Il peut émettre une recommandation à leur sujet.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Weitere Geschäfte" title_fr="Autres objets">
-<text language="de">
-Der Sektionsrat behandelt weitere Geschäfte, welche ihm in den Statuten und Reglementen zugewiesen sind.
-</text>
-<text language="fr">
-Le Conseil des sections traite des autres objets qui lui sont attribués par les statuts et les règlements.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <preamble>
+        <text language="de"> Die Delegiertenversammlung, gestützt auf Art. 21 der Statuten, beschliesst: </text>
+        <text language="fr"> L’Assemblée des délégué·e·s, se fondant sur l'art. 21 des Statuts, décide: </text>
+    </preamble>
+    <section title_de="Zusammensetzung" title_fr="Composition">
+        <articles>
+            <article title_de="Teilnehmende" title_fr="Participant·e·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat setzt sich aus dem Sektionsrats-Präsidium, den Delegierten sowie Beobachtenden zusammen. </text>
+                        <text language="fr"> Le Conseil des sections se compose de la présidence du conseil des sections, des délégué·e·s ainsi que des observateur-rices. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Zu den Sitzungen werden pro Sektion ein Mitglied der Exekutive oder eine mandatierte Vertretung derselben als Delegierte eingeladen. </text>
+                        <text language="fr"> Un membre de l'exécutif, ou un représentant mandaté par celui-ci, par section est invité à participer aux réunions en tant que délégué. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Zu den Sitzungen werden als Beobachtende eingeladen: </text>
+                        <text language="fr"> Sont invités à participer aux réunions en tant qu'observateur·trice·s : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> eine Vertretung jedes assoziierten Mitglieds; </text>
+                                <text language="fr"> Un·e représentant·e de chaque membre associé ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> der Vorstand; </text>
+                                <text language="fr"> le Comité exécutif ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Präsidien der thematischen Kommissionen; </text>
+                                <text language="fr"> les présidences des Commissions thématiques ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> das Generalsekretariat; </text>
+                                <text language="fr"> le Secrétariat général ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die GPK. </text>
+                                <text language="fr"> la CdC. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Zu den Sitzungen werden als Gäst:innen eingeladen: </text>
+                        <text language="fr"> Les personnes suivantes sont invitées aux réunions: </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> weitere Angestellte des Verbands; </text>
+                                <text language="fr"> les autres employé·e·s de l'association ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> weitere von den Sektionen eingeladene Personen; </text>
+                                <text language="fr"> d’autres personnes invitées par les sections ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> weitere vom Vorstand eingeladene Personen; </text>
+                                <text language="fr"> d'autres personnes invitées par le Comité exécutif; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Mitglieder der thematischen Kommissionen; </text>
+                                <text language="fr"> les membres des commissions thématiques ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Mitglieder der Finanzkommission; </text>
+                                <text language="fr"> les membres de la Commission des finances ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> alle Vertretungen des VSS gemäss Vertretungsliste; </text>
+                                <text language="fr"> toutes les représentations de l’UNES selon la liste des représentations ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> die Mitglieder der Arbeitsgruppen. </text>
+                                <text language="fr"> les membres des groupes de travail. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Organisation" title_fr="Organisation">
+        <articles>
+            <article title_de="Sektionsrats-Präsidium" title_fr="Présidence du conseil des sections">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Das Sektionsrats-Präsidium, nachfolgend <quote>SR-Präsidium</quote>, besteht aus zwei Personen mit gleichen Rechten und Aufgaben. </text>
+                        <text language="fr"> La présidence du conseil des sections, ci-après <quote>présidence du CS</quote>, est composée de deux personnes ayant des droits et des tâches identiques. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Diese sollen zusammen mindestens zwei Sprachen des Verbands beherrschen. </text>
+                        <text language="fr"> Ces personnes doivent maîtriser ensemble au moins deux langues de l'association. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Beide Personen dürfen weder Delegierte einer Sektion im Sektionsrat noch Teil des VSS-Vorstands sein. </text>
+                        <text language="fr"> Les deux personnes ne peuvent être ni délégué·e·s d'une section au conseil des sections ni membres du comité de l'UNES. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das SR-Präsidium hat folgende Aufgaben: </text>
+                        <text language="fr"> La présidence du CS a les tâches suivantes : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> Vorbereitung, Einberufung und Leitung des Sektionsrats; </text>
+                                <text language="fr"> Préparer, convoquer et diriger le conseil des sections ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> Austausch mit dem VSS-Vorstand und den Sektionen. </text>
+                                <text language="fr"> Échanger avec le comité exécutif et les sections. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das SR-Präsidium besitzt Antrags-, Vorstoss- und Rederecht. </text>
+                        <text language="fr"> La présidence du CS dispose d'un droit de proposition, d'intervention et de parole. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das SR-Präsidium vertritt Beschlüsse des SR gegenüber dem VSS-Vorstand und den weiteren Organen des VSS. </text>
+                        <text language="fr"> La présidence du CS représente les décisions du CS auprès du comité exécutif et des autres organes de l'UNES. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die reguläre Amtsperiode des SR-Präsidiums beginnt am 1. August und endet am nachfolgenden 31. Juli. </text>
+                        <text language="fr"> Le mandat régulier de la présidence du CS débute le 1er août et se termine le 31 juillet suivant. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die ordentliche Wahl erfolgt am letzten Sektionsrats des Frühlingssemesters. </text>
+                        <text language="fr"> L'élection ordinaire a lieu lors du dernier conseil des sections du semestre de printemps. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Anzahl Amtsperioden ist unbeschränkt. </text>
+                        <text language="fr"> Le nombre de mandats est illimité. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Delegierte" title_fr="Délégué·e·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Delegierte Personen haben Antrags-, Stimm- und Rederecht, wobei jede Sektion über je eine Stimme verfügt. </text>
+                        <text language="fr"> Les personnes déléguées disposent des droits de proposition et d’intervention, de vote et de parole, chaque section disposant d'une voix. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Delegierte müssen Mitglieder der entsendenden Sektion sein und an der entsprechenden Bildungsanstalt auf Bachelor- oder Master Stufe immatrikuliert sein. </text>
+                        <text language="fr"> Les délégués doivent être membres de la section qui les envoie et être immatriculé·e·s dans l'établissement d'enseignement concerné au niveau bachelor ou master. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beobachtende" title_fr="Observateur·trice·s">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Beobachtenden haben Rederecht. </text>
+                        <text language="fr"> Les observateur·trice·s disposent du droit de parole. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Beobachtende, mit Ausnahme von Mitgliedern der GPK, haben Antragsrecht. </text>
+                        <text language="fr"> Les observateurs, à l'exception des membres de la CdC, disposent du droit de proposition et d’intervention. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Gäst:innen" title_fr="Invité·e·s">
+                <text language="de"> Gäst:innen haben Rederecht. Sind sie Mitglieder einer Sektion, so haben sie Antragsrecht. </text>
+                <text language="fr"> Les invité·e·s disposent du droit de parole. S'ils et elles sont membres d'une section, ils et elles disposent du droit de proposition et d’intervention. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Sitzungen" title_fr="Réunions">
+        <articles>
+            <article title_de="Termine" title_fr="Réunions">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat trifft sich in der Regel einmal pro Monat, aber mindestens neun Mal im Jahr. </text>
+                        <text language="fr"> Le Conseil des sections se réunit en principe une fois par mois, mais au moins neuf fois par an. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Termine werden nach Möglichkeit frühzeitig bekanntgegeben. </text>
+                        <text language="fr"> Dans la mesure du possible, les dates sont communiquées à l'avance. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Eine ausserordentliche Sitzung ist einzuberufen auf Verlangen: </text>
+                        <text language="fr"> Une réunion extraordinaire doit être convoquée sur demande : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> des Vorstands; </text>
+                                <text language="fr"> du Comité exécutif ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> der GPK; </text>
+                                <text language="fr"> de la CdC ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> der Finanzkommission; </text>
+                                <text language="fr"> de la Commission des finances ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> einer thematischen Kommission; </text>
+                                <text language="fr"> d'une Commission thématique ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> zweier Sektionen; </text>
+                                <text language="fr"> de deux sections ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> des SR-Präsidiums. </text>
+                                <text language="fr"> de la présidence du CS. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Einberufung" title_fr="Convocation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Einberufung einer Sektionsrats-Sitzung erfolgt schriftlich durch das SR-Präsidium mit Unterstützung des Generalsekretariats. </text>
+                        <text language="fr"> La convocation d'une réunion du Conseil des sections est faite par écrit par la présidence du CS avec le soutien du secrétariat général. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Einladung hat Datum, Zeit und Ort der Sitzung sowie die zu behandelnden Geschäfte zu enthalten und ist bis spätestens sieben Tage vor der Sitzung zu verschicken. </text>
+                        <text language="fr"> La convocation doit mentionner la date, l'heure et le lieu de la réunion ainsi que les objets à traiter ; elle doit être envoyée au plus tard sept jours avant la réunion. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Anträge können bis zu dieser Frist eingereicht werden. In dringenden Fällen kann von der Frist abgesehen werden. </text>
+                        <text language="fr"> Les propositions matérielles et les interventions peuvent être soumises jusqu'à cette date. En cas d'urgence, il peut être dérogé à ce délai. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Einladung und Traktandenliste werden den Kommissionsmitgliedern, den Sektionen, dem Vorstand und der GPK zugestellt. </text>
+                        <text language="fr"> La convocation et l'ordre du jour sont envoyés aux membres de la commission, aux sections, au Comité exécutif et à la CdC. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Traktandenliste beinhaltet mindestens Zeitpunkt und Ort der Sitzung sowie eine Auflistung aller Traktanden. Vertrauliche Traktanden dürfen als “Vertraulich” aufgeführt werden. </text>
+                        <text language="fr"> L'ordre du jour comprend au moins la date et le lieu de la réunion ainsi qu'une liste de tous les points à l'ordre du jour. Les points confidentiels de l'ordre du jour peuvent être mentionnés comme <quote>confidentiel</quote>. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschlussfähigkeit" title_fr="Quorum">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat ist beschlussfähig, wenn mindestens ein Drittel der Sektionen und zwei Sprachregionen vertreten sind. </text>
+                        <text language="fr"> Le quorum du Conseil des sections est atteint lorsqu'au moins un tiers des sections et deux régions linguistiques sont représentées. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei Wahlen und Abwahlen des Vorstands und den Kommissionspräsidien muss mindestens die Hälfte der Sektionen vertreten sein. </text>
+                        <text language="fr"> La moitié au moins des sections doit être représentée lors des élections et des destitution de membres du Comité exécutif et des présidences de commissions. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Protokoll" title_fr="Procès-Verbal">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Es ist an jeder Sektionsrat-Sitzung ein Diskussionsprotokoll nach Art. 35 des Mitwirkungs- und Öffentlichkeitsreglements zu führen. </text>
+                        <text language="fr"> Un procès-verbal partiel doit être tenu à chaque séance du Conseil des sections conformément à l'art. 35 du règlement sur la participation et la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht. </text>
+                        <text language="fr"> Les procès-verbaux sont publiés après leur approbation conformément à l'art. 38 du règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung dem Vorstand, dem Sektionsrat, der GPK und den Sektionen zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt. </text>
+                        <text language="fr"> Une fois approuvés, les procès-verbaux sont envoyés au comité, au Conseil des sections, à la CdC et aux sections. Les procès-verbaux confidentiels ne sont envoyés qu'à la CdC et au Comité exécutif. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Teilnahme" title_fr="Participation">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Sitzungen des Sektionsrats werden in der Regel in Präsenz abgehalten. Jede Sektion ist jedoch zur virtuellen Teilnahme an den physischen Sitzungen berechtigt. </text>
+                        <text language="fr"> Les réunions du Conseil des sections se tiennent en principe en présentiel. Toutefois, chaque section est autorisée à participer virtuellement aux réunions physiques. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das SR-Präsidium kann aus wichtigen Gründen entscheiden, einen Sektionsrat komplett virtuell abzuhalten. </text>
+                        <text language="fr"> Sur décision de la présidence du CS et pour des raisons importantes, un Conseil des sections peut avoir lieu uniquement virtuellement. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Einmal pro Semester findet eine ausschliesslich physische Sitzung statt. </text>
+                        <text language="fr"> Une fois par semestre, une séance exclusivement physique est organisée. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Personen, die virtuell an einer Sitzung des Sektionsrats teilnehmen, gelten als anwesend im Sinne der Reglemente. </text>
+                        <text language="fr"> Les personnes qui participent virtuellement à une réunion du Conseil des sections sont considérées comme présentes dans le sens des règlements. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschlussfindung" title_fr="Prise de décision">
+                <text language="de"> Die Modalitäten der Abstimmungs- und Wahlverfahren sind in Art. 25ff Mitwirkungs- und Öffentlichkeitsreglement geregelt. </text>
+                <text language="fr"> Les modalités des procédures de vote et d'élection sont régies par les articles 25 et suivants du Règlement sur la participation et la transparence. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Geschäfte" title_fr="Objets">
+        <articles>
+            <article title_de="Allgemeines" title_fr="Généralités">
+                <text language="de"> Der Sektionsrat: </text>
+                <text language="fr"> Le Conseil des sections : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> arbeitet gemäss den Beschlüssen der Delegiertenversammlung; </text>
+                        <text language="fr"> travaille conformément aux décisions de l'Assemblée des délégué·e·s </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> verabschiedet wichtige Stellungnahmen und Positionen im Rahmen der von der Delegiertenversammlung festgelegten Verbandspolitik; </text>
+                        <text language="fr"> adopte des prises de position importantes dans le cadre de la politique de l'association définie par l'Assemblée des délégué·e·s ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> beschliesst über Zusammenarbeit mit und Beteiligungen an anderen Organisationen, Institutionen und ständigen Gremien. </text>
+                        <text language="fr"> décide de la collaboration et de la participation à d'autres organisations, institutions et organes permanents. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Mitteilungen" title_fr="Communications">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Sektionen informieren den Sektionsrat über laufende Geschäfte und wichtige Ereignisse an ihren Hochschulen. </text>
+                        <text language="fr"> Les sections communiquent au Conseil des sections les affaires courantes et les événements importants survenus dans leurs établissements. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Vorstand informiert den Sektionsrat über laufende Geschäfte und wichtige Ereignisse. </text>
+                        <text language="fr"> Le comité communique au Conseil des section sur les affaires courantes et des événements importants. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei Bedarf informieren weitere Organe, Vertretungen oder Angestellte den Sektionsrat über laufende Geschäfte und wichtige Ereignisse. </text>
+                        <text language="fr"> Si nécessaire, d'autres organes, les représentations ou les employé·e·s communiquent au Conseil des sections sur les affaires en cours et les événements importants. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Wahlen" title_fr="Élections">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat wählt die Vertretungen. </text>
+                        <text language="fr"> Le Conseil des sections élit les représentations. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat kann ad-interim Mitglieder des Vorstands, der GPK und der Kommissionen wählen. Er kann auch das Co-Präsidium und die Kommissionspräsidien ad interim wählen. Ad-interim Wahlen müssen an der nächsten DV bestätigt werden. </text>
+                        <text language="fr"> Le Conseil des sections peut élire ad interim des membres du Comité exécutif, de la CdC et des Commissions thématiques. Il peut également élire la coprésidence et les présidences de commissions par intérim. Les élections ad interim doivent être confirmées lors de l’Assemblée des délégué·e·s qui suit. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Abwahlen" title_fr="Destitution">
+                <text language="de"> Der Sektionsrat kann mit Zweidrittelmehr Mitglieder des VSS-Vorstands und der thematischen Kommissionen vorzeitig abwählen. </text>
+                <text language="fr"> Le Conseil des sections peut, à la majorité des deux tiers, destituer des membres du Comité exécutif, des commissions thématiques et les représentations. </text>
+            </article>
+            <article title_de="Beaufsichtigung des Vorstands" title_fr="Soutien et supervision du Comité exécutif">
+                <text language="de"> Der Sektionsrat unterstützt und beaufsichtigt den VSS-Vorstand bei der laufenden Arbeit. </text>
+                <text language="fr"> Le Conseil des sections soutient et supervise le Comité exécutif dans son travail quotidien. </text>
+            </article>
+            <article title_de="Vorbesprechung der DV" title_fr="Discussion préalable à l'AD">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Sektionsrat kann Geschäfte der nächsten Delegiertenversammlung vorbesprechen. </text>
+                        <text language="fr"> Le Conseil des sections peut préaviser des objets de la prochaine Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Er kann zu diesen eine Empfehlung abgeben. </text>
+                        <text language="fr"> Il peut émettre une recommandation à leur sujet. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Weitere Geschäfte" title_fr="Autres objets">
+                <text language="de"> Der Sektionsrat behandelt weitere Geschäfte, welche ihm in den Statuten und Reglementen zugewiesen sind. </text>
+                <text language="fr"> Le Conseil des sections traite des autres objets qui lui sont attribués par les statuts et les règlements. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>

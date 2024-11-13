@@ -1,592 +1,332 @@
 <regulation id="21" title_de="Reglement über den VSS-Vorstand" short_de="Vorstandsreglement" title_fr="Règlement du Comité exécutif de l'UNES" short_fr="Règlement du Comité" original_implementation_date="2025-01-01">
-<preamble>
-<text language="de">
-Die Delegiertenversammlung, gestützt auf Art. 25 der Statuten, beschliesst:
-</text>
-<text language="fr">
-L’Assemblée des délégué·e·s, se fondant sur l'art. 25 des Statuts, décide:
-</text>
-</preamble>
-<section title_de="Zusammensetzung" title_fr="Composition">
-<articles>
-<article title_de="Zusammensetzung" title_fr="Composition">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Vorstand setzt sich aus dem Co-Präsidium und fünf weiteren Vorstandsmitgliedern zusammen.
-</text>
-<text language="fr">
-Le Comité exécutif se compose de la coprésidence et de cinq autresd membres.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bleiben Sitze vakant, muss es bei einer allfälligen Besetzung durch Nachwahlen möglich sein, die Quoten ohne Abwahlen einzuhalten.
-</text>
-<text language="fr">
-Si des sièges restent vacants, il doit être possible, lors d'une éventuelle élection complémentaire, de respecter les quotas sans avoir à procéder à des destitutions.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Quoten im Vorstand" title_fr="Quotas au sein du Comité">
-<paragraphs>
-<paragraph>
-<text language="de">
-Bei einem vollbesetzten Vorstand muss darauf geachtet werden, dass:
-</text>
-<text language="fr">
-Lorsque le Comité exécutif est complet, il faut veiller à ce que :
-</text>
-<letters>
-<letter>
-<text language="de">
-keine Geschlechtsidentität mit mehr als vier Personen vertreten ist;
-</text>
-<text language="fr">
-aucune identité de genre ne soit représentée par plus de quatre personnes ;
-</text>
-</letter>
-<letter>
-<text language="de">
-zwei Sprachregionen des Verbandes mit mindestens zwei Personen vertreten sind;
-</text>
-<text language="fr">
-deux régions linguistiques de l'association soit représentées par au moins deux personnes chacune ;
-</text>
-</letter>
-<letter>
-<text language="de">
-mindestens eine Person an einer Fachhochschule immatrikuliert ist;
-</text>
-<text language="fr">
-au moins une personne soit inscrite dans une haute école spécialisée ;
-</text>
-</letter>
-<letter>
-<text language="de">
-mindestens eine Person an einer pädagogischen Hochschule immatrikuliert ist und;
-</text>
-<text language="fr">
-au moins une personne soit inscrite dans une haute école pédagogique, et ;
-</text>
-</letter>
-<letter>
-<text language="de">
-mindestens eine Person an einer Eidgenössischen Technische Hochschule immatrikuliert ist.
-</text>
-<text language="fr">
-au moins une personne soit inscrite dans une école polytechnique fédérale.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Sektionen des jeweiligen Hochschultypus nach Art. 3 Mitgliedschaftsreglement können auf die jeweilige Quote nach Abs.1 Bst. c-e vor oder während der Wahl verzichten. Bei Uneinigkeit entscheidet das Absolute-Mehr der Delegierten aus Sektionen, welche diesem Hochschultypus zugeordnet werden.
-</text>
-<text language="fr">
-Les sections de chaque type de haute école selon l'art. 3 du règlement d’adhésion peuvent renoncer à leur quota respectif selon l'al. 1 let. c-e avant ou pendant l'élection. En cas de désaccord, la décision est prise à la majorité absolue des délégué·e·s des sections appartenant à ce type de haute école. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Ein Verzicht gilt bis zur nächsten ordentlichen Wahl.
-</text>
-<text language="fr">
-Une renonciation porte jusqu'à la prochaine élection ordinaire.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Quoten im Co-Präsidium" title_fr="Quotas au sein de la coprésidence">
-<paragraphs>
-<paragraph>
-<text language="de">
-Bei einem vollbesetzten Co-Präsidium:
-</text>
-<text language="fr">
-Dans le cas d'une coprésidence complète :
-</text>
-<letters>
-<letter>
-<text language="de">
-dürfen beide Personen nicht gleicher Geschlechtsidentität sein und;
-</text>
-<text language="fr">
-les deux personnes ne doivent pas avoir la même identité de genre et ;
-</text>
-</letter>
-<letter>
-<text language="de">
-sollen nach Möglichkeit zwei Sprachregionen vertreten sein.
-</text>
-<text language="fr">
-doivent, dans la mesure du possible, représenter deux régions linguistiques.
-</text>
-</letter>
-</letters>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Delegiertenversammlung kann vor der Wahl des Co-Präsidiums mit Zwei-Drittel-Mehr entscheiden, von der Quote nach Abs. 1 Bst. a abzusehen. Dieser Beschluss gilt dann bis zur nächsten ordentlichen Wahl des Co-Präsidiums.
-</text>
-<text language="fr">
-Avant l'élection de la coprésidence, l'Assemblée des délégué·e·s peut décider à la majorité des deux tiers de ne pas appliquer le quota prévu à l'al. 1, let. a. Cette décision porte alors jusqu'à la prochaine élection ordinaire de la coprésidence.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Amtsperiode, Amtszeit" title_fr="Mandat, durée du mandat">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die reguläre Amtsperiode eines Vorstandsmitglieds beginnt am 1. August und endet am nachfolgenden 31. Juli.
-</text>
-<text language="fr">
-Le mandat régulier d'un membre du Comité exécutif commence le 1er août et se termine le 31 juillet suivant.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Anzahl Amtsperioden ist unbegrenzt.
-</text>
-<text language="fr">
-Le nombre de mandats n’est pas limité.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Organisation" title_fr="Organisation">
-<articles>
-<article title_de="Co-Präsidium" title_fr="Coprésidence">
-<paragraphs>
-<paragraph>
-<text language="de">
-Das Co-Präsidium des Vorstands ist zugleich Co-Präsidium des Verbands.
-</text>
-<text language="fr">
-La coprésidence du Comité exécutif est également la coprésidence de l'association.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Mitglieder des Co-Präsidiums teilen sich die Arbeit untereinander auf.
-</text>
-<text language="fr">
-Les membres de la coprésidence se répartissent le travail entre eux-mêmes.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Mitglieder des Co-Präsidiums unterstützen sich gegenseitig und vertreten einander bei Abwesenheiten.
-</text>
-<text language="fr">
-Les membres de la coprésidence s'entraident et se suppléent mutuellement en cas d'absence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Bei einer längeren Abwesenheit oder Vakanz im Co-Präsidium, kann der Vorstand intern die Aufgaben des Co-Präsidiums verteilen. Insbesondere kann der VSS-Vorstand eine Person bestimmen, welche die Zeichnungsberechtigung nach Art. 2 Finanzreglement innehat. Der Sektionsrat ist über einen solchen Beschluss zu informieren.
-</text>
-<text language="fr">
-En cas d'absence prolongée ou de vacance au sein de la coprésidence, le Comité exécutif peut répartir en interne les tâches de la coprésidence. En particulier, le Comité exécutif peut désigner une personne qui détient le droit de signature selon l'art. 2 du Règlement financier. Le Conseil des sections doit être informé d'une telle décision.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Ressorts" title_fr="Dicastères">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Geschäfte des Vorstands sind in Ressorts aufgeteilt.
-</text>
-<text language="fr">
-Les activités du Comité exécutif sont réparties en plusieurs dicastères.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Verteilung und der Inhalt der Ressorts erfolgt durch den Vorstand.
-</text>
-<text language="fr">
-La répartition et le contenu des dicastères sont décidés par le Comité exécutif.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Inhalte der Ressorts müssen den Jahreszielen entsprechen.
-</text>
-<text language="fr">
-Le contenu des dicastères doit correspondre aux objectifs annuels.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Pensen" title_fr="Taux de travail">
-<text language="de">
-Die Arbeitspensen im VSS-Vorstand betragen:
-</text>
-<text language="fr">
-Les taux de travail au sein du comité de l'UNES sont les suivants :
-</text>
-<letters>
-<letter>
-<text language="de">
-40% für Mitglieder des Co-Präsidiums;
-</text>
-<text language="fr">
-40% pour les membres de la coprésidence ;
-</text>
-</letter>
-<letter>
-<text language="de">
-30% für die restlichen Vorstandsmitglieder.
-</text>
-<text language="fr">
-30% pour les autres membres du Comité exécutif.
-</text>
-</letter>
-</letters>
-</article>
-</articles>
-</section>
-<section title_de="Aufgaben" title_fr="Tâches">
-<articles>
-<article title_de="Allgemeine Aufgaben" title_fr="Tâches générales">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der VSS-Vorstand trägt als Gremium die Verantwortung für die Geschäfte des Verbandes. Ihm obliegt die strategische Verbandsführung im Rahmen der Entscheidungen der Delegiertenversammlung und des Sektionsrats.
-</text>
-<text language="fr">
-Le Comité exécutif est responsable collectivement des affaires de l'association. Il est responsable de la gestion stratégique de l'association dans le cadre des décisions de l'Assemblée des délégué·e·s et du Conseil des sections.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Der VSS-Vorstand tritt geschlossen auf.
-</text>
-<text language="fr">
-Le Comité exécutif se présente de manière unie.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Jedes Vorstandsmitglied ist verpflichtet, sich über die Tätigkeiten der anderen Vorstandsmitglieder zu informieren.
-</text>
-<text language="fr">
-Chaque membre du Comité exécutif est tenu de s’informer des activités des autres membres du Comité exécutif.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Vorstandsmitglieder führen ihre Aufgaben selbständig nach Massgabe ihrer Pflichten aus.
-</text>
-<text language="fr">
-Les membres du Comité exécutif s'acquittent de leurs tâches de manière autonome, conformément à leurs obligations.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorstandsmitglieder vertreten den Vorstand in ihrem Arbeitsbereich und, falls vorhanden, die ihnen zugewiesenen Kommissionen.
-</text>
-<text language="fr">
-Les membres du Comité exécutif représentent le Comité exécutif dans leur dicastère et, dans les commissions qui leur sont attribuées.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Aufgaben Co-Präsidium" title_fr="Tâches de la coprésidence">
-<text language="de">
-Das Co-Präsidium
-</text>
-<text language="fr">
-La coprésidence:
-</text>
-<letters>
-<letter>
-<text language="de">
-vertritt den Verband nach aussen, soweit nicht die Statuten oder der Vorstand andere Personen mit dieser Aufgabe betrauen;
-</text>
-<text language="fr">
-représente l'association vers l'extérieur, à moins que les statuts ou le Comité exécutif ne confient cette tâche à d'autres entités;
-</text>
-</letter>
-<letter>
-<text language="de">
-koordiniert die Arbeit des Vorstands;
-</text>
-<text language="fr">
-coordonne le travail du Comité exécutif ;
-</text>
-</letter>
-<letter>
-<text language="de">
-leitet die Sektionsratssitzungen;
-</text>
-<text language="fr">
-préside les réunions du Conseil des sections ;
-</text>
-</letter>
-<letter>
-<text language="de">
-ist für die Personalführung des Generalsekretariats zuständig;
-</text>
-<text language="fr">
-est responsable de la gestion du personnel du Secrétariat général ;
-</text>
-</letter>
-<letter>
-<text language="de">
-stellt den Informationsfluss zwischen den Vorstandsmitgliedern und dem Generalsekretariat sicher;
-</text>
-<text language="fr">
-assure le flux d'informations entre les membres du Comité exécutif et le Secrétariat général ;
-</text>
-</letter>
-<letter>
-<text language="de">
-übernimmt die vorstandsinternen Aufgaben im Bezug auf Finanzen.
-</text>
-<text language="fr">
-assume les tâches internes au Comité exécutif en matière de finances.
-</text>
-</letter>
-</letters>
-</article>
-<article title_de="Austausch" title_fr="Échange">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der VSS-Vorstand hält regelmässigen Kontakt zu bildungspolitischen Gremien, Institutionen und Organisationen.
-</text>
-<text language="fr">
-Le Comité entretient des contacts réguliers avec les entités , institutions et organisations qui s'occupent de politique de formation.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Er pflegt die Beziehungen zu den Kommissionen mit einer verantwortlichen Person pro Kommission.
-</text>
-<text language="fr">
-Il gère les relations avec les commissions en désignant une personne responsable pour chaque commission.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Er setzt bei Bedarf Expertisegruppen zu seiner Beratung ein.
-</text>
-<text language="fr">
-Si nécessaire, il fait appel à des groupes d’expertise pour le conseiller.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Präsenz an Sitzungen" title_fr="Présence aux réunions">
-<text language="de">
-Die Vorstandsmitglieder:
-</text>
-<text language="fr">
-Les membres du Comité exécutif :
-</text>
-<letters>
-<letter>
-<text language="de">
-nimmt aktiv an den Vorstandssitzungen teil;
-</text>
-<text language="fr">
-participent activement aux réunions du Comité ;
-</text>
-</letter>
-<letter>
-<text language="de">
-nimmt nach Bedarf an den Sitzungen des Sektionsrats teil;
-</text>
-<text language="fr">
-assistent aux réunions du Conseil des sections selon les besoins ;
-</text>
-</letter>
-<letter>
-<text language="de">
-nimmt an den Delegiertenversammlungen teil;
-</text>
-<text language="fr">
-assistent aux Assemblées des délégué·e·s ;
-</text>
-</letter>
-<letter>
-<text language="de">
-bereitet die Sektionsratssitzungen und die Delegiertenversammlungen zusammen mit dem Generalsekretariat vor.
-</text>
-<text language="fr">
-préparent les réunions du Conseil des sections et les Assemblées des délégué·e·s en collaboration avec le Secrétariat général.
-</text>
-</letter>
-</letters>
-</article>
-<article title_de="Angestellte" title_fr="Employé·e·s">
-<text language="de">
-Der VSS-Vorstand stellt Mitarbeitende ein, amtet als Arbeitgeber sämtlichem beim VSS angestellten Personals und ist für die Erstellung und Anpassung der Lohnsysteme zuständig.
-</text>
-<text language="fr">
-Le Comité exécutif engage des employé·e·s, agit en tant qu'employeur de tout le personnel employé par l'UNES et est responsable de la mise en place et de l'adaptation des systèmes salariaux.
-</text>
-</article>
-<article title_de="Berichterstattung" title_fr="Rapports">
-<text language="de">
-Der Vorstand informiert mittels Jahresbericht über seine Tätigkeiten.
-</text>
-<text language="fr">
-Le Comité exécutif informe de ses activités au moyen d'un rapport annuel.
-</text>
-</article>
-</articles>
-</section>
-<section title_de="Sitzungen" title_fr="Réunions">
-<articles>
-<article title_de="Termine" title_fr="Dates">
-<text language="de">
-Der Vorstand trifft sich in der Regel einmal alle zwei Wochen zur Besprechung der laufenden Geschäfte. Bei Bedarf werden zusätzliche Sitzungen durchgeführt.
-</text>
-<text language="fr">
-Le Comité exécutif se réunit en général une fois toutes les deux semaines pour discuter des affaires courantes. Des réunions supplémentaires sont organisées si nécessaire.
-</text>
-</article>
-<article title_de="Durchführung" title_fr="Déroulement">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Sitzungsleitung und Einladung obliegen dem Co-Präsidium. Ist kein Mitglied des Co-Präsidiums anwesend, bestimmt der Vorstand ein anderes Vorstandsmitglied als Sitzungsleitung.
-</text>
-<text language="fr">
-La présidence de la réunion et la convocation incombent à la coprésidence. Si aucun membre de la coprésidence n'est présent, le Comité exécutif désigne un autre membre en son sein pour présider la réunion.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das Generalsekretariat ist mit beratender Stimme vertreten. 
-</text>
-<text language="fr">
-Le Secrétariat général est représenté avec une voix consultative. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Weitere Personen können eingeladen werden.
-</text>
-<text language="fr">
-D'autres personnes peuvent être invitées.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Beschlussfindung" title_fr="Prise de décision">
-<paragraphs>
-<paragraph>
-<text language="de">
-Der Vorstand ist beschlussfähig, wenn mehr als die Hälfte der Vorstandsmitglieder anwesend ist.
-</text>
-<text language="fr">
-Le quorum est atteint lorsque plus de la moitié des membres du Comité exécutif sont présent.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Vorstandsmitglieder haben Antrags- und Rederecht sowie Stimmrecht.
-</text>
-<text language="fr">
-Les membres du Comité exécutif disposent des droits de proposition, de parole et de vote.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Mitglieder des Generalsekretariat haben Rede- und Antragsrecht.
-</text>
-<text language="fr">
-Les membres du Secrétariat Général disposent des droits de parole et de proposition.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Modalitäten der Abstimmungs- und Wahlverfahren sind in Art. 25ff Mitwirkungs- und Öffentlichkeitsreglement geregelt.
-</text>
-<text language="fr">
-Les modalités des procédures de vote et d'élection sont régies par les articles 25 et suivants du Règlement sur la participation et la transparence.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Protokoll" title_fr="Procés-verbal">
-<paragraphs>
-<paragraph>
-<text language="de">
-Es ist an jeder Vorstandssitzung ein Diskussionsprotokoll nach Art. 35 des Mitwirkungs- und Öffentlichkeitsreglements zu führen.
-</text>
-<text language="fr">
-Un procès-verbal partiel doit être rédigé lors de chaque réunion du Comité exécutif, conformément à l'article 35 du règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Das Generalsekretariat ist verantwortlich für die Erstellung des Protokolls.
-</text>
-<text language="fr">
-Le Secrétariat général est responsable de la rédaction du procès-verbal.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht.
-</text>
-<text language="fr">
-Les procès-verbaux sont publiés après leur approbation conformément à l'article 38 du Règlement relatif à la participation et à la transparence.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Protokolle werden nach der Genehmigung sämtlichen Sektionen und Organen sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt.
-</text>
-<text language="fr">
-Une fois approuvés, les procès-verbaux sont envoyés à toutes les sections et à tous les organes, ainsi qu'à la CdC. Les procès-verbaux confidentiels ne sont envoyés qu'à la CdC.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
-<section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
-<articles>
-<article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
-<text language="de">
-Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten.
-</text>
-<text language="fr">
-Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts.
-</text>
-</article>
-<article title_de="Version" title_fr="Version">
-<paragraphs>
-<paragraph>
-<text language="de">
-Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen.
-</text>
-<text language="fr">
-Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Es tritt am 01.01.2025 in Kraft.
-</text>
-<text language="fr">
-Il entre en vigueur le 01.01.2025.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-</articles>
-</section>
+    <preamble>
+        <text language="de"> Die Delegiertenversammlung, gestützt auf Art. 25 der Statuten, beschliesst: </text>
+        <text language="fr"> L’Assemblée des délégué·e·s, se fondant sur l'art. 25 des Statuts, décide: </text>
+    </preamble>
+    <section title_de="Zusammensetzung" title_fr="Composition">
+        <articles>
+            <article title_de="Zusammensetzung" title_fr="Composition">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Vorstand setzt sich aus dem Co-Präsidium und fünf weiteren Vorstandsmitgliedern zusammen. </text>
+                        <text language="fr"> Le Comité exécutif se compose de la coprésidence et de cinq autresd membres. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bleiben Sitze vakant, muss es bei einer allfälligen Besetzung durch Nachwahlen möglich sein, die Quoten ohne Abwahlen einzuhalten. </text>
+                        <text language="fr"> Si des sièges restent vacants, il doit être possible, lors d'une éventuelle élection complémentaire, de respecter les quotas sans avoir à procéder à des destitutions. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Quoten im Vorstand" title_fr="Quotas au sein du Comité">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Bei einem vollbesetzten Vorstand muss darauf geachtet werden, dass: </text>
+                        <text language="fr"> Lorsque le Comité exécutif est complet, il faut veiller à ce que : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> keine Geschlechtsidentität mit mehr als vier Personen vertreten ist; </text>
+                                <text language="fr"> aucune identité de genre ne soit représentée par plus de quatre personnes ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> zwei Sprachregionen des Verbandes mit mindestens zwei Personen vertreten sind; </text>
+                                <text language="fr"> deux régions linguistiques de l'association soit représentées par au moins deux personnes chacune ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> mindestens eine Person an einer Fachhochschule immatrikuliert ist; </text>
+                                <text language="fr"> au moins une personne soit inscrite dans une haute école spécialisée ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> mindestens eine Person an einer pädagogischen Hochschule immatrikuliert ist und; </text>
+                                <text language="fr"> au moins une personne soit inscrite dans une haute école pédagogique, et ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> mindestens eine Person an einer Eidgenössischen Technische Hochschule immatrikuliert ist. </text>
+                                <text language="fr"> au moins une personne soit inscrite dans une école polytechnique fédérale. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Sektionen des jeweiligen Hochschultypus nach Art. 3 Mitgliedschaftsreglement können auf die jeweilige Quote nach Abs.1 Bst. c-e vor oder während der Wahl verzichten. Bei Uneinigkeit entscheidet das Absolute-Mehr der Delegierten aus Sektionen, welche diesem Hochschultypus zugeordnet werden. </text>
+                        <text language="fr"> Les sections de chaque type de haute école selon l'art. 3 du règlement d’adhésion peuvent renoncer à leur quota respectif selon l'al. 1 let. c-e avant ou pendant l'élection. En cas de désaccord, la décision est prise à la majorité absolue des délégué·e·s des sections appartenant à ce type de haute école. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Ein Verzicht gilt bis zur nächsten ordentlichen Wahl. </text>
+                        <text language="fr"> Une renonciation porte jusqu'à la prochaine élection ordinaire. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Quoten im Co-Präsidium" title_fr="Quotas au sein de la coprésidence">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Bei einem vollbesetzten Co-Präsidium: </text>
+                        <text language="fr"> Dans le cas d'une coprésidence complète : </text>
+                        <letters>
+                            <letter>
+                                <text language="de"> dürfen beide Personen nicht gleicher Geschlechtsidentität sein und; </text>
+                                <text language="fr"> les deux personnes ne doivent pas avoir la même identité de genre et ; </text>
+                            </letter>
+                            <letter>
+                                <text language="de"> sollen nach Möglichkeit zwei Sprachregionen vertreten sein. </text>
+                                <text language="fr"> doivent, dans la mesure du possible, représenter deux régions linguistiques. </text>
+                            </letter>
+                        </letters>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Delegiertenversammlung kann vor der Wahl des Co-Präsidiums mit Zwei-Drittel-Mehr entscheiden, von der Quote nach Abs. 1 Bst. a abzusehen. Dieser Beschluss gilt dann bis zur nächsten ordentlichen Wahl des Co-Präsidiums. </text>
+                        <text language="fr"> Avant l'élection de la coprésidence, l'Assemblée des délégué·e·s peut décider à la majorité des deux tiers de ne pas appliquer le quota prévu à l'al. 1, let. a. Cette décision porte alors jusqu'à la prochaine élection ordinaire de la coprésidence. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Amtsperiode, Amtszeit" title_fr="Mandat, durée du mandat">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die reguläre Amtsperiode eines Vorstandsmitglieds beginnt am 1. August und endet am nachfolgenden 31. Juli. </text>
+                        <text language="fr"> Le mandat régulier d'un membre du Comité exécutif commence le 1er août et se termine le 31 juillet suivant. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Anzahl Amtsperioden ist unbegrenzt. </text>
+                        <text language="fr"> Le nombre de mandats n’est pas limité. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Organisation" title_fr="Organisation">
+        <articles>
+            <article title_de="Co-Präsidium" title_fr="Coprésidence">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Das Co-Präsidium des Vorstands ist zugleich Co-Präsidium des Verbands. </text>
+                        <text language="fr"> La coprésidence du Comité exécutif est également la coprésidence de l'association. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitglieder des Co-Präsidiums teilen sich die Arbeit untereinander auf. </text>
+                        <text language="fr"> Les membres de la coprésidence se répartissent le travail entre eux-mêmes. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitglieder des Co-Präsidiums unterstützen sich gegenseitig und vertreten einander bei Abwesenheiten. </text>
+                        <text language="fr"> Les membres de la coprésidence s'entraident et se suppléent mutuellement en cas d'absence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Bei einer längeren Abwesenheit oder Vakanz im Co-Präsidium, kann der Vorstand intern die Aufgaben des Co-Präsidiums verteilen. Insbesondere kann der VSS-Vorstand eine Person bestimmen, welche die Zeichnungsberechtigung nach Art. 2 Finanzreglement innehat. Der Sektionsrat ist über einen solchen Beschluss zu informieren. </text>
+                        <text language="fr"> En cas d'absence prolongée ou de vacance au sein de la coprésidence, le Comité exécutif peut répartir en interne les tâches de la coprésidence. En particulier, le Comité exécutif peut désigner une personne qui détient le droit de signature selon l'art. 2 du Règlement financier. Le Conseil des sections doit être informé d'une telle décision. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Ressorts" title_fr="Dicastères">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Geschäfte des Vorstands sind in Ressorts aufgeteilt. </text>
+                        <text language="fr"> Les activités du Comité exécutif sont réparties en plusieurs dicastères. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Verteilung und der Inhalt der Ressorts erfolgt durch den Vorstand. </text>
+                        <text language="fr"> La répartition et le contenu des dicastères sont décidés par le Comité exécutif. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Inhalte der Ressorts müssen den Jahreszielen entsprechen. </text>
+                        <text language="fr"> Le contenu des dicastères doit correspondre aux objectifs annuels. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Pensen" title_fr="Taux de travail">
+                <text language="de"> Die Arbeitspensen im VSS-Vorstand betragen: </text>
+                <text language="fr"> Les taux de travail au sein du comité de l'UNES sont les suivants : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> 40% für Mitglieder des Co-Präsidiums; </text>
+                        <text language="fr"> 40% pour les membres de la coprésidence ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> 30% für die restlichen Vorstandsmitglieder. </text>
+                        <text language="fr"> 30% pour les autres membres du Comité exécutif. </text>
+                    </letter>
+                </letters>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Aufgaben" title_fr="Tâches">
+        <articles>
+            <article title_de="Allgemeine Aufgaben" title_fr="Tâches générales">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS-Vorstand trägt als Gremium die Verantwortung für die Geschäfte des Verbandes. Ihm obliegt die strategische Verbandsführung im Rahmen der Entscheidungen der Delegiertenversammlung und des Sektionsrats. </text>
+                        <text language="fr"> Le Comité exécutif est responsable collectivement des affaires de l'association. Il est responsable de la gestion stratégique de l'association dans le cadre des décisions de l'Assemblée des délégué·e·s et du Conseil des sections. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Der VSS-Vorstand tritt geschlossen auf. </text>
+                        <text language="fr"> Le Comité exécutif se présente de manière unie. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Jedes Vorstandsmitglied ist verpflichtet, sich über die Tätigkeiten der anderen Vorstandsmitglieder zu informieren. </text>
+                        <text language="fr"> Chaque membre du Comité exécutif est tenu de s’informer des activités des autres membres du Comité exécutif. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Vorstandsmitglieder führen ihre Aufgaben selbständig nach Massgabe ihrer Pflichten aus. </text>
+                        <text language="fr"> Les membres du Comité exécutif s'acquittent de leurs tâches de manière autonome, conformément à leurs obligations. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstandsmitglieder vertreten den Vorstand in ihrem Arbeitsbereich und, falls vorhanden, die ihnen zugewiesenen Kommissionen. </text>
+                        <text language="fr"> Les membres du Comité exécutif représentent le Comité exécutif dans leur dicastère et, dans les commissions qui leur sont attribuées. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Aufgaben Co-Präsidium" title_fr="Tâches de la coprésidence">
+                <text language="de"> Das Co-Präsidium </text>
+                <text language="fr"> La coprésidence: </text>
+                <letters>
+                    <letter>
+                        <text language="de"> vertritt den Verband nach aussen, soweit nicht die Statuten oder der Vorstand andere Personen mit dieser Aufgabe betrauen; </text>
+                        <text language="fr"> représente l'association vers l'extérieur, à moins que les statuts ou le Comité exécutif ne confient cette tâche à d'autres entités; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> koordiniert die Arbeit des Vorstands; </text>
+                        <text language="fr"> coordonne le travail du Comité exécutif ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> ist für die Personalführung des Generalsekretariats zuständig; </text>
+                        <text language="fr"> est responsable de la gestion du personnel du Secrétariat général ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> stellt den Informationsfluss zwischen den Vorstandsmitgliedern und dem Generalsekretariat sicher; </text>
+                        <text language="fr"> assure le flux d'informations entre les membres du Comité exécutif et le Secrétariat général ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> übernimmt die vorstandsinternen Aufgaben im Bezug auf Finanzen. </text>
+                        <text language="fr"> assume les tâches internes au Comité exécutif en matière de finances. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Austausch" title_fr="Échange">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der VSS-Vorstand hält regelmässigen Kontakt zu bildungspolitischen Gremien, Institutionen und Organisationen. </text>
+                        <text language="fr"> Le Comité entretient des contacts réguliers avec les entités , institutions et organisations qui s'occupent de politique de formation. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Er pflegt die Beziehungen zu den Kommissionen mit einer verantwortlichen Person pro Kommission. </text>
+                        <text language="fr"> Il gère les relations avec les commissions en désignant une personne responsable pour chaque commission. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Er setzt bei Bedarf Expertisegruppen zu seiner Beratung ein. </text>
+                        <text language="fr"> Si nécessaire, il fait appel à des groupes d’expertise pour le conseiller. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Präsenz an Sitzungen" title_fr="Présence aux réunions">
+                <text language="de"> Die Vorstandsmitglieder: </text>
+                <text language="fr"> Les membres du Comité exécutif : </text>
+                <letters>
+                    <letter>
+                        <text language="de"> nimmt aktiv an den Vorstandssitzungen teil; </text>
+                        <text language="fr"> participent activement aux réunions du Comité ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> nimmt nach Bedarf an den Sitzungen des Sektionsrats teil; </text>
+                        <text language="fr"> assistent aux réunions du Conseil des sections selon les besoins ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> nimmt an den Delegiertenversammlungen teil; </text>
+                        <text language="fr"> assistent aux Assemblées des délégué·e·s ; </text>
+                    </letter>
+                    <letter>
+                        <text language="de"> bereitet die Sektionsratssitzungen und die Delegiertenversammlungen zusammen mit dem Generalsekretariat vor. </text>
+                        <text language="fr"> préparent les réunions du Conseil des sections et les Assemblées des délégué·e·s en collaboration avec le Secrétariat général. </text>
+                    </letter>
+                </letters>
+            </article>
+            <article title_de="Angestellte" title_fr="Employé·e·s">
+                <text language="de"> Der VSS-Vorstand stellt Mitarbeitende ein, amtet als Arbeitgeber sämtlichem beim VSS angestellten Personals und ist für die Erstellung und Anpassung der Lohnsysteme zuständig. </text>
+                <text language="fr"> Le Comité exécutif engage des employé·e·s, agit en tant qu'employeur de tout le personnel employé par l'UNES et est responsable de la mise en place et de l'adaptation des systèmes salariaux. </text>
+            </article>
+            <article title_de="Berichterstattung" title_fr="Rapports">
+                <text language="de"> Der Vorstand informiert mittels Jahresbericht über seine Tätigkeiten. </text>
+                <text language="fr"> Le Comité exécutif informe de ses activités au moyen d'un rapport annuel. </text>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Sitzungen" title_fr="Réunions">
+        <articles>
+            <article title_de="Termine" title_fr="Dates">
+                <text language="de"> Der Vorstand trifft sich in der Regel einmal alle zwei Wochen zur Besprechung der laufenden Geschäfte. Bei Bedarf werden zusätzliche Sitzungen durchgeführt. </text>
+                <text language="fr"> Le Comité exécutif se réunit en général une fois toutes les deux semaines pour discuter des affaires courantes. Des réunions supplémentaires sont organisées si nécessaire. </text>
+            </article>
+            <article title_de="Durchführung" title_fr="Déroulement">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Die Sitzungsleitung und Einladung obliegen dem Co-Präsidium. Ist kein Mitglied des Co-Präsidiums anwesend, bestimmt der Vorstand ein anderes Vorstandsmitglied als Sitzungsleitung. </text>
+                        <text language="fr"> La présidence de la réunion et la convocation incombent à la coprésidence. Si aucun membre de la coprésidence n'est présent, le Comité exécutif désigne un autre membre en son sein pour présider la réunion. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das Generalsekretariat ist mit beratender Stimme vertreten. </text>
+                        <text language="fr"> Le Secrétariat général est représenté avec une voix consultative. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Weitere Personen können eingeladen werden. </text>
+                        <text language="fr"> D'autres personnes peuvent être invitées. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Beschlussfindung" title_fr="Prise de décision">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Der Vorstand ist beschlussfähig, wenn mehr als die Hälfte der Vorstandsmitglieder anwesend ist. </text>
+                        <text language="fr"> Le quorum est atteint lorsque plus de la moitié des membres du Comité exécutif sont présent. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Vorstandsmitglieder haben Antrags- und Rederecht sowie Stimmrecht. </text>
+                        <text language="fr"> Les membres du Comité exécutif disposent des droits de proposition, de parole et de vote. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Mitglieder des Generalsekretariat haben Rede- und Antragsrecht. </text>
+                        <text language="fr"> Les membres du Secrétariat Général disposent des droits de parole et de proposition. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Die Modalitäten der Abstimmungs- und Wahlverfahren sind in Art. 25ff Mitwirkungs- und Öffentlichkeitsreglement geregelt. </text>
+                        <text language="fr"> Les modalités des procédures de vote et d'élection sont régies par les articles 25 et suivants du Règlement sur la participation et la transparence. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+            <article title_de="Protokoll" title_fr="Procés-verbal">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Es ist an jeder Vorstandssitzung ein Diskussionsprotokoll nach Art. 35 des Mitwirkungs- und Öffentlichkeitsreglements zu führen. </text>
+                        <text language="fr"> Un procès-verbal partiel doit être rédigé lors de chaque réunion du Comité exécutif, conformément à l'article 35 du règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Das Generalsekretariat ist verantwortlich für die Erstellung des Protokolls. </text>
+                        <text language="fr"> Le Secrétariat général est responsable de la rédaction du procès-verbal. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung gemäss Art. 38 des Mitwirkungs- und Öffentlichkeitsreglements veröffentlicht. </text>
+                        <text language="fr"> Les procès-verbaux sont publiés après leur approbation conformément à l'article 38 du Règlement relatif à la participation et à la transparence. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Protokolle werden nach der Genehmigung sämtlichen Sektionen und Organen sowie der GPK zugestellt. Vertrauliche Protokolle werden nur der GPK zugestellt. </text>
+                        <text language="fr"> Une fois approuvés, les procès-verbaux sont envoyés à toutes les sections et à tous les organes, ainsi qu'à la CdC. Les procès-verbaux confidentiels ne sont envoyés qu'à la CdC. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
+    <section title_de="Schlussbestimmungen" title_fr="Dispositions finales">
+        <articles>
+            <article title_de="Revisionsbestimmungen" title_fr="Dispositions relatives à la révision">
+                <text language="de"> Dieses Reglement unterliegt den Revisionsbestimmungen gemäss Art. 41 der Statuten. </text>
+                <text language="fr"> Le présent règlement est soumis aux dispositions relatives à la révision conformément à l'article 41 des statuts. </text>
+            </article>
+            <article title_de="Version" title_fr="Version">
+                <paragraphs>
+                    <paragraph>
+                        <text language="de"> Dieses Reglement wurde von der 184. Delegiertenversammlung erlassen. </text>
+                        <text language="fr"> Le présent règlement a été adopté par la 184e Assemblée des délégué·e·s. </text>
+                    </paragraph>
+                    <paragraph>
+                        <text language="de"> Es tritt am 01.01.2025 in Kraft. </text>
+                        <text language="fr"> Il entre en vigueur le 01.01.2025. </text>
+                    </paragraph>
+                </paragraphs>
+            </article>
+        </articles>
+    </section>
 </regulation>
