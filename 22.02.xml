@@ -1,98 +1,54 @@
 <regulation id="22.02" title_de="Auftrag der Kommission für Internationales und Solidarität" short_de="SOLIC-Auftrag" title_fr="Mandat de la Commission internationale et de solidarité" short_fr="Mandat de la SOLIC" original_implementation_date="2025-01-01">
-<preamble>
-<text language="de">
-Die 184. Delegiertenversammlung, gestützt auf Art. 3 des Gremienreglements über die thematischen Kommissionen im VSS, beschliesst:
-</text>
-<text language="fr">
-La 184e Assemblée des délégué·e·s, se fondant sur l'art. 3 du Règlement concernant les commissions thématiques au sein de l'UNES, décide:
-</text>
-</preamble>
-<articles>
-<article title_de="Definition" title_fr="Définition">
-<text language="de">
-Unter dem Namen “Kommission für Internationales und Solidarität”, abgekürzt “SOLIC”, besteht eine thematische Kommission. 
-</text>
-<text language="fr">
-Sous le nom de “ Commission internationale et de solidarité “, abrégé ” SOLIC “, il est constitué une Commission thématique.
-</text>
-</article>
-<article title_de="Zweck" title_fr="Buts">
-<text language="de">
-Die Kommission bezweckt
-</text>
-<text language="fr">
-La commission a pour but:
-</text>
-<letters>
-<letter>
-<text language="de">
-die studentischen Forderungen sowie Anliegen bei internationalen Themen auszuformulieren und einzubringen
-</text>
-<text language="fr">
-de formuler et de faire valoir les revendications et les préoccupations des étudiant·e·s sur les questions internationales
-</text>
-</letter>
-<letter>
-<text language="de">
-die internationale Solidarität unter Studierenden;
-</text>
-<text language="fr">
-d’encourager la solidarité internationale entre étudiant·e·s ;
-</text>
-</letter>
-<letter>
-<text language="de">
-die Verbesserung der Austauschmöglichkeiten für in der Schweiz Studierende im Ausland.
-</text>
-<text language="fr">
-d'améliorer les possibilités d'échange pour les étudiant·e·s en Suisse à l'étranger.
-</text>
-</letter>
-</letters>
-</article>
-<article title_de="Arbeitsbereich" title_fr="Domaine d'activité">
-<paragraphs>
-<paragraph>
-<text language="de">
-Die Kommission erarbeitet Positionen zu europäischen und internationalen Prozessen in der Hochschulentwicklung.
-</text>
-<text language="fr">
-La commission élabore des positions sur les processus européens et internationaux en matière de développement de l'enseignement supérieur.
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Kommission leistet Solidaritätsarbeit. 
-</text>
-<text language="fr">
-La commission mène un travail de solidarité. 
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Kommission unterstützt den Vorstand in der Pflege von internationale Kontakte, insbesondere mit der European Students Union (ESU)
-</text>
-<text language="fr">
-La commission soutient le comité exécutif dans l'entretien de contacts internationaux, en particulier avec l'European Students Union (ESU).
-</text>
-</paragraph>
-<paragraph>
-<text language="de">
-Die Kommission engagiert sich politisch auf internationaler Ebene.
-</text>
-<text language="fr">
-La commission s'engage politiquement au niveau international.
-</text>
-</paragraph>
-</paragraphs>
-</article>
-<article title_de="Inkrafttreten" title_fr="Entrée en vigueur">
-<text language="de">
-Dieser Beschluss tritt am 01.01.2025 in Kraft und gilt bis auf Weiteres.
-</text>
-<text language="fr">
-La présente décision entre en vigueur le 01.01.2025 et reste valable jusqu'à nouvel ordre.
-</text>
-</article>
-</articles>
+    <preamble>
+        <text language="de"> Die 184. Delegiertenversammlung, gestützt auf Art. 3 des Gremienreglements über die thematischen Kommissionen im VSS, beschliesst: </text>
+        <text language="fr"> La 184e Assemblée des délégué·e·s, se fondant sur l'art. 3 du Règlement concernant les commissions thématiques au sein de l'UNES, décide: </text>
+    </preamble>
+    <articles>
+        <article title_de="Definition" title_fr="Définition">
+            <text language="de"> Unter dem Namen “Kommission für Internationales und Solidarität”, abgekürzt “SOLIC”, besteht eine thematische Kommission. </text>
+            <text language="fr"> Sous le nom de “ Commission internationale et de solidarité “, abrégé ” SOLIC “, il est constitué une Commission thématique. </text>
+        </article>
+        <article title_de="Zweck" title_fr="Buts">
+            <text language="de"> Die Kommission bezweckt </text>
+            <text language="fr"> La commission a pour but: </text>
+            <letters>
+                <letter>
+                    <text language="de"> die studentischen Forderungen sowie Anliegen bei internationalen Themen auszuformulieren und einzubringen </text>
+                    <text language="fr"> de formuler et de faire valoir les revendications et les préoccupations des étudiant·e·s sur les questions internationales </text>
+                </letter>
+                <letter>
+                    <text language="de"> die nationale und internationale Solidarität unter Studierenden; </text>
+                    <text language="fr"> d’encourager la solidarité nationale et internationale entre étudiant·e·s ; </text>
+                </letter>
+                <letter>
+                    <text language="de"> die Verbesserung der Austauschmöglichkeiten für in der Schweiz Studierende im Ausland. </text>
+                    <text language="fr"> d'améliorer les possibilités d'échange pour les étudiant·e·s en Suisse à l'étranger. </text>
+                </letter>
+            </letters>
+        </article>
+        <article title_de="Arbeitsbereich" title_fr="Domaine d'activité">
+            <paragraphs>
+                <paragraph>
+                    <text language="de"> Die Kommission erarbeitet Positionen zu europäischen und internationalen Prozessen in der Hochschulentwicklung. </text>
+                    <text language="fr"> La commission élabore des positions sur les processus européens et internationaux en matière de développement de l'enseignement supérieur. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Die Kommission leistet Solidaritätsarbeit. </text>
+                    <text language="fr"> La commission mène un travail de solidarité. </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Die Kommission unterstützt den Vorstand in der Pflege von internationale Kontakte, insbesondere mit der European Students Union (ESU) </text>
+                    <text language="fr"> La commission soutient le comité exécutif dans l'entretien de contacts internationaux, en particulier avec l'European Students Union (ESU). </text>
+                </paragraph>
+                <paragraph>
+                    <text language="de"> Die Kommission engagiert sich politisch auf internationaler Ebene. </text>
+                    <text language="fr"> La commission s'engage politiquement au niveau international. </text>
+                </paragraph>
+            </paragraphs>
+        </article>
+        <article title_de="Inkrafttreten" title_fr="Entrée en vigueur">
+            <text language="de"> Dieser Beschluss tritt am 01.01.2025 in Kraft und gilt bis auf Weiteres. </text>
+            <text language="fr"> La présente décision entre en vigueur le 01.01.2025 et reste valable jusqu'à nouvel ordre. </text>
+        </article>
+    </articles>
 </regulation>
