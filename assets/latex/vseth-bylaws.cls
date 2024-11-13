@@ -356,8 +356,8 @@
 
 \newlist{numerals}{enumerate}{1}
 \setlist[numerals]{
-	label        = {\arabic*.},
-	ref          = {\arabic*},
+	label        = {\roman*.},
+	ref          = {\roman*},
 	align        = left,
 	labelindent  = 0em, % Do not indent any more.
 	labelwidth   = 2em, % Needs to be a known value to calculate the labelindent for the inserted list.
