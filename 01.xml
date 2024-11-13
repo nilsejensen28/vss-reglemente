@@ -362,8 +362,12 @@
                                         <text language="fr"> entre 10'001 et 15'000 membres : six personnes déléguées ; </text>
                                     </letter>
                                     <letter>
-                                        <text language="de"> über 15’000 Mitglieder: sieben delegierte Personen. </text>
-                                        <text language="fr"> plus de 15 000 membres : sept personnes déléguées. </text>
+                                        <text language="de"> zwischen 15’001 und 20’000 Mitglieder: sieben delegierte Personen; </text>
+                                        <text language="fr"> entre 15'001 et 20'000 membres : sept personnes déléguées ; </text>
+                                    </letter>
+                                    <letter>
+                                        <text language="de"> über 20’000 Mitglieder: acht delegierte Personen. </text>
+                                        <text language="fr"> plus de 20 000 membres : huit personnes déléguées. </text>
                                     </letter>
                                 </letters>
                             </paragraph>
