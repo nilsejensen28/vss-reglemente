@@ -21,6 +21,10 @@ jobs:
           pip install -r config/requirements.txt
           pip install -i https://test.pypi.org/simple/ VSETH-Bylaw-Parser
           echo "Finished installing dependencies"
+
+      - name: Check Bylaw Structure
+        run: |
+          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-dir output/ --format csv --lang de fr
       
       - name: Install Rust
         run: |
@@ -41,4 +45,4 @@ jobs:
 
       - name: Build the book
         run: |
-          python -m VSETH_Bylaw_Parser --config config/config.yaml --output-dir output --format all --lang fr de
+          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-dir output/ --format all --lang de fr
