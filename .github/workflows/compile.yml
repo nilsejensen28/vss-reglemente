@@ -9,6 +9,10 @@ permissions:
   pages: write
   id-token: write
 
+# Publish must wait for build to finish
+
+
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -54,6 +58,7 @@ jobs:
           python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-folder output/ --format all --lang de fr
 
   publish:
+    needs: build
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
