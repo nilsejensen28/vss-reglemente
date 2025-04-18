@@ -33,3 +33,12 @@ jobs:
         run: |
           cargo install mdbook --target x86_64-unknown-linux-gnu
           echo "Finished installing mdbook"
+
+      - name: Install LaTeX
+        run: |
+          sudo apt-get install texlive-full
+          echo "Finished installing LaTeX"
+
+      - name: Build the book
+        run: |
+          python -m VSETH_Bylaw_Parser --config config/config.yaml --output-dir output --format all --lang fr de
