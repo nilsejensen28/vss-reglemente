@@ -24,7 +24,7 @@ jobs:
 
       - name: Check Bylaw Structure
         run: |
-          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-dir output/ --format csv --lang de fr
+          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-folder output/ --format csv --lang de fr
       
       - name: Install Rust
         run: |
@@ -45,4 +45,4 @@ jobs:
 
       - name: Build the book
         run: |
-          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-dir output/ --format all --lang de fr
+          python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-folder output/ --format all --lang de fr
