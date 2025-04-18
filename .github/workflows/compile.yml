@@ -9,10 +9,6 @@ permissions:
   pages: write
   id-token: write
 
-# Publish must wait for build to finish
-
-
-
 jobs:
   build:
     environment:
@@ -59,6 +55,7 @@ jobs:
       - name: Build the book
         run: |
           python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-folder output/ --format all --lang de fr
+          ll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
@@ -67,7 +64,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: '/output/mdbook/*'
+          path: './output/mdbook/'
         
       - name: Deploy to GitHub Pages
         id: deployment
