@@ -21,4 +21,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r config/requirements.txt
           pip install -i https://test.pypi.org/simple/ VSETH-Bylaw-Parser
+          echo "Finished installing dependencies"
       
+      - name: Install Rust
+        run: |
+          curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+          rustc --version
+          cargo --version
+          echo "Finished installing Rust"
