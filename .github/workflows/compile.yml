@@ -3,8 +3,11 @@ on:
   push:
     branches: [ "main" ]
 
-jobs:
 
+env:
+  MDBOOK_VERSION: 1.86.0
+
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
@@ -29,3 +32,8 @@ jobs:
           rustc --version
           cargo --version
           echo "Finished installing Rust"
+
+      - name: Install mdbook
+        run: |
+          cargo install mdbook --version $MDBOOK_VERSION --target x86_64-unknown-linux-gnu
+          echo "Finished installing mdbook"
