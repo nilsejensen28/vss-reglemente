@@ -55,7 +55,6 @@ jobs:
       - name: Build the book
         run: |
           python -m VSETH_Bylaw_Parser generate VSS_Rechtssammlung.xml --config config/config.yaml --output-folder output/ --format all --lang de fr
-          ll
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
