@@ -1,0 +1,53 @@
+configuration:
+  general:
+    institution:
+      full_name:
+        fr: Institution d'Exemple
+        de: Beispiel Institution
+      short_name:
+        fr: Exemple
+        de: Beispiel
+    languages:
+      - name: French
+        iso-code: fr
+      - name: German
+        iso-code: de
+    assets:
+      logo: ""
+    dictionary:
+      - code: Version
+        fr: Version
+        de: Version
+      - code: PDF Version
+        fr: Version PDF
+        de: PDF-Version
+      - code: Article
+        fr: Article
+        de: Artikel
+      - code: Regulation
+        fr: Règlement
+        de: Reglement
+      - code: inserted
+        fr: "Ajouté par la décision [[ORGNANIZATION_DATIF]] au point [[ITEM]] lors de la séance du [[MEETING_DATE]], en vigueur depuis le [[SINCE]]."
+        de: "Eingefügt durch den Beschluss [[ORGNANIZATION_DATIF]] in Traktandum [[ITEM]] in der Sitzung vom [[MEETING_DATE]], in Kraft seit [[SINCE]]."
+      - code: inserted-no-date
+        fr: "Ajouté par la décision de la [[MEETING_NUMBER]]. [[ORGNANIZATION_NAME]] au point [[MEETING_DATE]], en vigueur depuis le [[SINCE]]."
+        de: "Eingefügt durch den Beschluss der [[MEETING_NUMBER]]. [[ORGNANIZATION_NAME]] in Traktandum [[MEETING_DATE]], in Kraft seit [[SINCE]]." 
+    suborganizations:
+      - short_name: MR
+        name:
+          fr: Assemblée des Delégués
+          de: Mitgliederrat
+        name-datif:
+          fr: "de l'Assemblée des Délégués"
+          de: "des Mitgliederrats"
+      - short_name: FR
+        name:
+          fr: Conseil des sections
+          de: Fachvereinsrat
+        name-datif:
+          fr: "du Conseil des sections"
+          de: "des Fachvereinsrates"
+  html:
+    navbar:
+      
